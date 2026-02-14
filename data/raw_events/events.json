@@ -1,0 +1,50 @@
+[
+    {
+        "event_id": "bbf3e397-4216-490c-86ec-9226825adadc",
+        "agent_id": "Planner",
+        "event_type": "reasoning",
+        "input_data": "User asks for loan approval decision",
+        "output_data": "Plan: retrieve credit data \u2192 risk assess \u2192 approve/reject",
+        "dependencies": [],
+        "timestamp": 1771088607.7665422,
+        "metadata": {}
+    },
+    {
+        "event_id": "829956b1-0a3f-4ae3-a9d3-a5ba46bc889f",
+        "agent_id": "Researcher",
+        "event_type": "retrieval",
+        "input_data": "Fetch credit score and financial history",
+        "output_data": "Credit score: 450 (Incorrect data)",
+        "dependencies": [
+            "bbf3e397-4216-490c-86ec-9226825adadc"
+        ],
+        "timestamp": 1771088607.7665422,
+        "metadata": {
+            "fault_injected": true
+        }
+    },
+    {
+        "event_id": "95c83c3c-ba1c-49bc-8318-a9333bdea620",
+        "agent_id": "ToolAgent",
+        "event_type": "tool_call",
+        "input_data": "Run risk calculation API",
+        "output_data": "Risk score: LOW",
+        "dependencies": [
+            "829956b1-0a3f-4ae3-a9d3-a5ba46bc889f"
+        ],
+        "timestamp": 1771088607.7665422,
+        "metadata": {}
+    },
+    {
+        "event_id": "78df32c8-052d-4c5e-a928-cba09b5b7924",
+        "agent_id": "Executor",
+        "event_type": "action",
+        "input_data": "Loan decision",
+        "output_data": "Loan Approved",
+        "dependencies": [
+            "95c83c3c-ba1c-49bc-8318-a9333bdea620"
+        ],
+        "timestamp": 1771088607.7665422,
+        "metadata": {}
+    }
+]
