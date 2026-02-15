@@ -3,6 +3,10 @@ from attribution.rpa_algorithm import compute_rpa
 from attribution.attribution_aggregator import aggregate_by_agent
 from accountability.mfav_calculator import compute_mfav
 from accountability.accountability_report import print_mfav_report
+from trust_scoring.trust_model import compute_trust_score
+from trust_scoring.risk_classifier import classify_risk
+from trust_scoring.trust_report import print_trust_report
+
 
 EVENT_PATH = "data/raw_events/events.json"
 
@@ -40,6 +44,16 @@ def main():
     mfav_scores = compute_mfav(graph, node_scores)
 
     print_mfav_report(mfav_scores)
+    
+    # TRUST SCORING
+    trust_result = compute_trust_score(graph, node_scores)
+
+    print_trust_report(trust_result)
+
+    risk = classify_risk(trust_result["trust_score"])
+
+    print("\nRisk Classification:", risk)
+
 
 
 if __name__ == "__main__":
