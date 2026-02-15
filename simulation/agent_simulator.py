@@ -1,26 +1,22 @@
-# simulation/agent_simulator.py
-
 import json
-from simulation.workflow_generator import generate_workflow
-from simulation.fault_injector import inject_fault
+import os
+
+from simulation.workflow_generator import generate_full_workflow
 
 OUTPUT_PATH = "data/raw_events/events.json"
 
-def run_simulation(inject_error=False):
 
-    events = generate_workflow()
+def run_simulation():
 
-    if inject_error:
-        events = inject_fault(events)
+    events = generate_full_workflow()
 
-    # Convert to dict for JSON storage
-    event_dicts = [event.__dict__ for event in events]
+    os.makedirs("data/raw_events", exist_ok=True)
 
     with open(OUTPUT_PATH, "w") as f:
-        json.dump(event_dicts, f, indent=4)
+        json.dump([e.__dict__ for e in events], f, indent=4)
 
-    print(f"Simulation complete. {len(events)} events saved.")
+    print(f"Generated {len(events)} events.")
 
 
 if __name__ == "__main__":
-    run_simulation(inject_error=True)
+    run_simulation()

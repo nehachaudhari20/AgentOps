@@ -1,9 +1,8 @@
-# simulation/event_schema.py
-
 from dataclasses import dataclass
 from typing import List, Optional
 import uuid
 import time
+
 
 @dataclass
 class Event:
@@ -17,7 +16,9 @@ class Event:
     metadata: Optional[dict] = None
 
     @staticmethod
-    def create(agent_id, event_type, input_data, output_data, dependencies=None, metadata=None):
+    def create(agent_id, event_type, input_data, output_data,
+               dependencies=None, metadata=None):
+
         return Event(
             event_id=str(uuid.uuid4()),
             agent_id=agent_id,
