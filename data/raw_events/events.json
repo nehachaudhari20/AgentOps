@@ -1,133 +1,172 @@
 [
     {
-        "event_id": "f1dc5b30-0fce-42dc-a83a-bb2b3b3995c3",
+        "event_id": "44678994-ca69-40ae-8227-5fc5518e58f8",
         "agent_id": "User",
         "event_type": "prompt",
         "input_data": "Loan request",
-        "output_data": "Approve my loan application",
+        "output_data": "Approve my loan",
         "dependencies": [],
-        "timestamp": 1771158070.491893,
+        "timestamp": 1771159232.6315105,
         "metadata": {}
     },
     {
-        "event_id": "0e5927af-dcba-420c-bef5-e16600e8d798",
+        "event_id": "f1f551f5-58b3-4166-9993-971c15e8e265",
         "agent_id": "System",
         "event_type": "prompt",
-        "input_data": "Policy template",
-        "output_data": "Follow risk evaluation policy",
+        "input_data": "Loan policy template",
+        "output_data": "Follow risk protocol",
         "dependencies": [
-            "f1dc5b30-0fce-42dc-a83a-bb2b3b3995c3"
+            "44678994-ca69-40ae-8227-5fc5518e58f8"
         ],
-        "timestamp": 1771158070.491893,
+        "timestamp": 1771159232.6315105,
         "metadata": {}
     },
     {
-        "event_id": "8c1cefb9-c5eb-4b02-a80c-41c818300f59",
+        "event_id": "6556b292-8294-4cc5-9003-ec24a757d240",
+        "agent_id": "PolicyEngine",
+        "event_type": "document",
+        "input_data": "Bank policy",
+        "output_data": "Debt-income ratio rules",
+        "dependencies": [
+            "f1f551f5-58b3-4166-9993-971c15e8e265"
+        ],
+        "timestamp": 1771159232.6315105,
+        "metadata": {}
+    },
+    {
+        "event_id": "a2ed4960-626c-495c-bdd5-1aa29e792766",
         "agent_id": "Planner",
         "event_type": "reasoning",
         "input_data": "Analyze loan",
-        "output_data": "Retrieve credit data",
+        "output_data": "Retrieve financial + legal data",
         "dependencies": [
-            "0e5927af-dcba-420c-bef5-e16600e8d798"
+            "f1f551f5-58b3-4166-9993-971c15e8e265",
+            "6556b292-8294-4cc5-9003-ec24a757d240"
         ],
-        "timestamp": 1771158070.491893,
+        "timestamp": 1771159232.6315105,
         "metadata": {}
     },
     {
-        "event_id": "ef2917a6-5eb2-43ae-8246-bb3ce56cad14",
+        "event_id": "0a654dc3-eb0d-4fa2-830e-5e09a55fbc68",
+        "agent_id": "Memory",
+        "event_type": "retrieval",
+        "input_data": "Past loan cases",
+        "output_data": "Historical approvals",
+        "dependencies": [
+            "a2ed4960-626c-495c-bdd5-1aa29e792766"
+        ],
+        "timestamp": 1771159232.6315105,
+        "metadata": {}
+    },
+    {
+        "event_id": "e11b8f63-367d-4194-8f7b-d9206b11e07b",
         "agent_id": "Researcher",
         "event_type": "retrieval",
-        "input_data": "Fetch credit score",
-        "output_data": "Query KB",
+        "input_data": "Fetch KB data",
+        "output_data": "Financial + legal docs",
         "dependencies": [
-            "8c1cefb9-c5eb-4b02-a80c-41c818300f59"
+            "a2ed4960-626c-495c-bdd5-1aa29e792766"
         ],
-        "timestamp": 1771158070.491893,
+        "timestamp": 1771159232.6315105,
         "metadata": {}
     },
     {
-        "event_id": "e29b19ef-03bd-4c9c-a12a-0d8e588c9f51",
+        "event_id": "d396b7ec-7657-41ea-a101-65f788aadc0d",
         "agent_id": "KB",
         "event_type": "document",
-        "input_data": "Credit history",
-        "output_data": "Score 720",
+        "input_data": "Financial history",
+        "output_data": "Credit score 720",
         "dependencies": [
-            "ef2917a6-5eb2-43ae-8246-bb3ce56cad14"
+            "e11b8f63-367d-4194-8f7b-d9206b11e07b"
         ],
-        "timestamp": 1771158070.491893,
+        "timestamp": 1771159232.6315105,
         "metadata": {}
     },
     {
-        "event_id": "af7c27dd-3e75-4cae-996d-7c541ace9b6e",
+        "event_id": "6d302c37-acd5-4edc-b925-949bb767b078",
         "agent_id": "KB",
         "event_type": "document",
-        "input_data": "Income history",
-        "output_data": "Stable income",
+        "input_data": "Legal compliance",
+        "output_data": "No legal risk",
         "dependencies": [
-            "ef2917a6-5eb2-43ae-8246-bb3ce56cad14"
+            "e11b8f63-367d-4194-8f7b-d9206b11e07b"
         ],
-        "timestamp": 1771158070.491893,
+        "timestamp": 1771159232.6315105,
         "metadata": {}
     },
     {
-        "event_id": "b617c5a7-656a-4616-a3b8-f7e381ec6058",
+        "event_id": "46d71968-f5ef-4c90-9579-04bcfc762b17",
         "agent_id": "Embedder",
         "event_type": "embedding",
-        "input_data": "Vectorize doc1",
-        "output_data": "Vector D1",
+        "input_data": "Vectorize financial doc",
+        "output_data": "Vector F",
         "dependencies": [
-            "e29b19ef-03bd-4c9c-a12a-0d8e588c9f51"
+            "d396b7ec-7657-41ea-a101-65f788aadc0d"
         ],
-        "timestamp": 1771158070.491893,
+        "timestamp": 1771159232.6315105,
         "metadata": {}
     },
     {
-        "event_id": "c279fa05-b2f0-4f53-9838-ad732176fae5",
+        "event_id": "dcc3921d-7ca0-4813-8a6c-b7d16e310389",
         "agent_id": "Embedder",
         "event_type": "embedding",
-        "input_data": "Vectorize doc2",
-        "output_data": "Vector D2",
+        "input_data": "Vectorize legal doc",
+        "output_data": "Vector L",
         "dependencies": [
-            "af7c27dd-3e75-4cae-996d-7c541ace9b6e"
+            "6d302c37-acd5-4edc-b925-949bb767b078"
         ],
-        "timestamp": 1771158070.491893,
+        "timestamp": 1771159232.6315105,
         "metadata": {}
     },
     {
-        "event_id": "86cc4e0b-aba5-4b61-bf6c-84ee39580746",
+        "event_id": "8820e235-da17-4378-89b0-7aa6ee60c576",
         "agent_id": "Researcher",
         "event_type": "reasoning",
-        "input_data": "Analyze docs",
+        "input_data": "Synthesize evidence",
         "output_data": "Low risk",
         "dependencies": [
-            "b617c5a7-656a-4616-a3b8-f7e381ec6058",
-            "c279fa05-b2f0-4f53-9838-ad732176fae5"
+            "46d71968-f5ef-4c90-9579-04bcfc762b17",
+            "dcc3921d-7ca0-4813-8a6c-b7d16e310389",
+            "0a654dc3-eb0d-4fa2-830e-5e09a55fbc68"
         ],
-        "timestamp": 1771158070.491893,
+        "timestamp": 1771159232.6315105,
         "metadata": {}
     },
     {
-        "event_id": "289664bc-3ea1-4861-ab2d-3be3f7716ce0",
-        "agent_id": "ToolAgent",
+        "event_id": "ba589def-9f13-4f8b-942d-e8b9d7d656a2",
+        "agent_id": "RiskTool",
         "event_type": "tool_call",
         "input_data": "Risk API",
         "output_data": "Risk LOW",
         "dependencies": [
-            "86cc4e0b-aba5-4b61-bf6c-84ee39580746"
+            "8820e235-da17-4378-89b0-7aa6ee60c576"
         ],
-        "timestamp": 1771158070.491893,
+        "timestamp": 1771159232.6315105,
         "metadata": {}
     },
     {
-        "event_id": "39ee8615-9eba-4916-93f6-b680c52b42ae",
+        "event_id": "d165d060-23db-4f15-ac27-dcd9f8d3dedd",
+        "agent_id": "ComplianceTool",
+        "event_type": "tool_call",
+        "input_data": "Compliance API",
+        "output_data": "Compliant",
+        "dependencies": [
+            "8820e235-da17-4378-89b0-7aa6ee60c576"
+        ],
+        "timestamp": 1771159232.6315105,
+        "metadata": {}
+    },
+    {
+        "event_id": "013b9854-41a8-46a1-bebe-b06bb4eb45cd",
         "agent_id": "Executor",
         "event_type": "action",
         "input_data": "Loan decision",
         "output_data": "Loan Approved",
         "dependencies": [
-            "289664bc-3ea1-4861-ab2d-3be3f7716ce0"
+            "ba589def-9f13-4f8b-942d-e8b9d7d656a2",
+            "d165d060-23db-4f15-ac27-dcd9f8d3dedd"
         ],
-        "timestamp": 1771158070.491893,
+        "timestamp": 1771159232.6315105,
         "metadata": {}
     }
 ]

@@ -7,7 +7,7 @@ def run_responsibility_propagation(graph, outcome_node):
     responsibility = {node: 0.0 for node in graph.nodes()}
     responsibility[outcome_node] = 1.0
 
-    # Reverse topological order (backward traversal)
+    # Reverse topological order
     topo_order = list(nx.topological_sort(graph))
     topo_order.reverse()
 
@@ -18,7 +18,10 @@ def run_responsibility_propagation(graph, outcome_node):
         if not incoming_edges:
             continue
 
-        total_weight = sum(edge[2]["weight"] for edge in incoming_edges) + 1e-6
+        total_weight = sum(edge[2]["weight"] for edge in incoming_edges)
+
+        if total_weight == 0:
+            continue
 
         for parent, _, data in incoming_edges:
 
@@ -26,6 +29,7 @@ def run_responsibility_propagation(graph, outcome_node):
 
             propagated_score = responsibility[node] * (weight / total_weight)
 
+            # Distribute responsibility (not duplicate)
             responsibility[parent] += propagated_score
 
     return responsibility

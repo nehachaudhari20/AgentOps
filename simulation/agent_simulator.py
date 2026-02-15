@@ -2,13 +2,15 @@ import json
 import os
 
 from simulation.workflow_generator import generate_full_workflow
+from simulation.branched_workflow_generator import generate_branched_workflow
+
 
 OUTPUT_PATH = "data/raw_events/events.json"
 
 
 def run_simulation():
 
-    events = generate_full_workflow()
+    events = generate_branched_workflow()
 
     os.makedirs("data/raw_events", exist_ok=True)
 
