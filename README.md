@@ -1,189 +1,168 @@
-# AgentOps
+# AgentOps / AgentTrust
 
-AgentOps is the implementation repository for the **AgentTrust** research framework (governance, provenance, accountability, and auditability for multi-agent AI workflows).
+Research implementation of **AgentTrust**: observable provenance tracking and structural responsibility allocation for multi-agent AI workflows.
 
-## Phase 2.1 — Research MLPG (current foundation)
+Target venue context: ACM TRUST (research prototype).
 
-The `agenttrust/` package is the Phase 2.1 provenance layer:
+## Research objective
 
-- Versioned **EVENT + ARTIFACT** schema with strict validation
-- Typed, **unweighted** MultiDiGraph (no random edge weights)
-- `ProvenanceTrace` API with completeness / cycle diagnostics
-- Attribution projections **P1** (direct `DEPENDS_ON`) and **P2** (plus verified artifact bridges)
-- Non-destructive migration: `data/raw_events/events.json` → `data/processed_events/`
+Provide a reproducible stack that:
 
-**Documentation:** [docs/PHASE_2_1_MLPG.md](docs/PHASE_2_1_MLPG.md)
+1. Validates and represents multi-agent **execution events** and **artifacts**
+2. Builds a typed Multi-Layer Provenance Graph (MLPG)
+3. Allocates **structural** responsibility on event projections (conserved RPA)
 
-```bash
-pip install -r requirements.txt
-python -m agenttrust.migration.cli
-python -m pytest tests/ -q
+## Explicit non-claims
+
+AgentTrust **does not**:
+
+- Reconstruct hidden LLM reasoning or internal cognition
+- Prove causal influence from provenance edges alone
+- Establish legal or organizational liability
+- Claim W3C PROV compliance (design is PROV-inspired only)
+- Treat `OBSERVED_AFTER` as causal dependence
+
+## Current implementation status
+
+| Component | Status |
+|-----------|--------|
+| Event/artifact schema + validation | **Phase 2.1 — active** (`agenttrust/`) |
+| Typed MLPG + P1/P2 projections | **Phase 2.1 — active** |
+| Conserved RPA (α=0 baseline) | **Phase 2.2 — active** (`agenttrust/attribution/`) |
+| MFAV | Not implemented (package reserved) |
+| Assurance / CTSM redesign | Not implemented (package reserved) |
+| PLHC redesign | Not implemented (package reserved) |
+| Legacy prototype | Preserved under `legacy/` (historical only) |
+
+## Active architecture
+
+```text
+Raw / processed events
+        │
+        ▼
+┌───────────────────┐
+│  ProvenanceTrace  │  schema + validation + MLPG
+└─────────┬─────────┘
+          │
+          ├─ P1 / P2 event projections
+          │
+          ▼
+┌───────────────────┐
+│  Conserved RPA    │  structural allocation (α=0 baseline)
+└───────────────────┘
 ```
 
-**Important limitations (Phase 2.1):** the graph represents *observable* lineage only. It does not reconstruct hidden LLM reasoning, prove causality, or compute responsibility / trust / cryptographic integrity. Redesigned RPA, MFAV, Assurance, and PLHC are **not** implemented in this phase.
+## Project tree
 
-Legacy demo modules below (`provenance_graph/`, `attribution/`, …) remain for historical experiments and are separate from the Phase 2.1 API.
-
-## Features (legacy prototype + Phase 2.1)
-
-- **Provenance graph (MLPG)** — Phase 2.1: typed EVENT+ARTIFACT graph; legacy: event-only graph with edge weights
-- **Responsibility Propagation Algorithm (RPA)** — Backward propagation of responsibility from outcome nodes to upstream contributors
-- **Multi-Factor Accountability Vector (MFAV)** — Aggregates node-level responsibility into accountability factors (agent, prompt, data, tool, memory, execution)
-- **Trust scoring** — Weighted composite score from evidence strength, causality confidence, tool reliability, policy compliance, and model confidence, with risk classification
-- **Audit integrity** — SHA-256 hash chain over provenance events with tamper detection
-- **Simulation** — Synthetic multi-agent workflow generators (linear and branched)
-- **Visualizations** — Matplotlib plots for graphs, heatmaps, attribution, MFAV, trust components, and pie charts
-
-## Architecture
-
-```
-Event Log (JSON)
-      │
-      ▼
-┌─────────────────┐
-│  MLPG Builder   │  provenance_graph/
-└────────┬────────┘
-         │
-    ┌────┴────┬──────────────┬─────────────┐
-    ▼         ▼              ▼             ▼
-   RPA      MFAV      Trust Scoring   Hash Chain
-attribution/ accountability/ trust_scoring/ audit_integrity/
-    │         │              │             │
-    └────┬────┴──────────────┴─────────────┘
-         ▼
-  Reports & Visualizations
-```
-
-## Project Structure
-
-```
+```text
 AgentOps/
-├── provenance_graph/     # MLPG construction, nodes, edges, weights, visualization
-├── attribution/          # RPA and agent-level aggregation
-├── accountability/       # MFAV computation and entity mapping
-├── trust_scoring/        # Trust model, feature extraction, risk classification
-├── audit_integrity/      # Hash chain, tamper simulation, integrity verification
-├── simulation/           # Event schema and workflow generators
-├── visualizations/       # Matplotlib plotting utilities
-├── experiments/          # Runnable entry points
-└── data/
-    └── raw_events/       # Sample event logs (events.json)
+├── agenttrust/           # Active implementation
+│   ├── schema/
+│   ├── validation/
+│   ├── mlpg/
+│   ├── attribution/      # Conserved RPA (Phase 2.2)
+│   ├── accountability/   # Reserved
+│   ├── assurance/        # Reserved
+│   ├── integrity/        # Reserved
+│   ├── migration/
+│   └── provenance_trace.py
+├── legacy/               # Original prototype (not active)
+├── data/
+│   ├── raw/              # Immutable source inputs
+│   ├── processed/        # Migrated Phase 2.1 records
+│   ├── benchmarks/
+│   └── fixtures/
+├── experiments/
+│   ├── configs/
+│   ├── scripts/
+│   └── results/
+├── tests/
+│   ├── unit/
+│   ├── integration/
+│   ├── property/
+│   └── fixtures/
+├── docs/
+│   ├── architecture/
+│   ├── phase-reports/
+│   ├── methodology/
+│   └── research/
+├── outputs/historical/   # Legacy figures (not new results)
+├── pyproject.toml        # Package / pytest source of truth
+├── requirements.txt
+└── README.md
 ```
 
-## Requirements
-
-- Python 3.9+
-- [NetworkX](https://networkx.org/)
-- [NumPy](https://numpy.org/)
-- [Matplotlib](https://matplotlib.org/)
-
-Install dependencies:
+## Installation
 
 ```bash
-pip install networkx numpy matplotlib
+pip install -e ".[dev]"
+# or
+pip install -r requirements.txt
 ```
 
-Run all commands from the repository root so imports and data paths resolve correctly.
+Requires Python ≥ 3.10. Package discovery is configured in `pyproject.toml` (authoritative). `requirements.txt` mirrors runtime/dev pins for simple setups.
 
-## Quick Start
+## Phase 2.1 usage — provenance
 
-### 1. Generate synthetic events (optional)
+```python
+from agenttrust import ProvenanceTrace
+from agenttrust.mlpg.projections import ProjectionKind
 
-The repo includes a sample loan-approval workflow in `data/raw_events/events.json`. To regenerate it:
-
-```bash
-python -m simulation.agent_simulator
+trace = ProvenanceTrace()
+report = trace.load_records(events, artifacts)
+_ = trace.project(ProjectionKind.P1_DIRECT)
+_ = trace.project(ProjectionKind.P2_ARTIFACT_BRIDGE)
 ```
 
-### 2. Run experiments
-
-**Provenance graph**
-
-Build the MLPG and display an interactive graph visualization:
+Migrate legacy JSON without modifying raw bytes:
 
 ```bash
-python -m experiments.run_provenance_graph
+python -m agenttrust.migration.cli
 ```
 
-**Responsibility, accountability, and trust**
+## Phase 2.2 usage — conserved RPA
 
-Run RPA, agent attribution, MFAV, trust scoring, and risk classification:
+```python
+from agenttrust import ConservedRPA, ProvenanceTrace
+from agenttrust.mlpg.projections import ProjectionKind
+
+trace = ProvenanceTrace()
+trace.load_records(events, artifacts)
+
+results = ConservedRPA().allocate_from_trace(
+    trace,
+    projection_kind=ProjectionKind.P1_DIRECT,
+)
+for r in results:
+    print(r.outcome_id, r.root_allocations, r.conservation)
+```
+
+Demo script:
 
 ```bash
+python experiments/scripts/run_conserved_rpa.py
+```
+
+Baseline: **α = 0** (intermediate nodes retain no local share; roots absorb). Equal parent split is a **structural convention**, not measured causal weight.
+
+## Tests
+
+```bash
+python -c "from agenttrust import ProvenanceTrace, ConservedRPA"
+python -m pytest tests -q
+```
+
+## Documentation
+
+- Architecture (Phase 2.1 MLPG): [docs/architecture/PHASE_2_1_MLPG.md](docs/architecture/PHASE_2_1_MLPG.md)
+- Phase 2.1 report: [docs/phase-reports/PHASE_2_1_IMPLEMENTATION_REPORT.md](docs/phase-reports/PHASE_2_1_IMPLEMENTATION_REPORT.md)
+- Phase 2.2 report: [docs/phase-reports/PHASE_2_2_IMPLEMENTATION_REPORT.md](docs/phase-reports/PHASE_2_2_IMPLEMENTATION_REPORT.md)
+
+## Legacy prototype
+
+Historical code lives in [`legacy/`](legacy/README.md). It includes the original non-conserved RPA, hardcoded trust placeholders, and thin hash-chain demo. Those are **not** validated AgentTrust capabilities.
+
+```powershell
+$env:PYTHONPATH = "$PWD\legacy"
 python -m experiments.run_rpa
 ```
-
-**Audit integrity**
-
-Build a hash chain, verify integrity, simulate tampering, and re-verify:
-
-```bash
-python -m experiments.run_audit
-```
-
-**All visualizations**
-
-Generate MLPG, responsibility heatmap, agent attribution, MFAV, and trust plots:
-
-```bash
-python -m experiments.run_visualizations
-```
-
-## Event Schema
-
-Events are stored as JSON arrays. Each event has the following fields:
-
-| Field          | Type     | Description                                      |
-|----------------|----------|--------------------------------------------------|
-| `event_id`     | string   | Unique identifier (UUID)                         |
-| `agent_id`     | string   | Agent that produced the event                    |
-| `event_type`   | string   | Node type (see below)                            |
-| `input_data`   | string   | Input description                                |
-| `output_data`  | string   | Output description                               |
-| `dependencies` | string[] | List of upstream `event_id` values               |
-| `timestamp`    | float    | Unix timestamp                                   |
-| `metadata`     | object   | Optional extra metadata                          |
-
-Supported `event_type` values and their provenance layers:
-
-| Type        | Layer | Description              |
-|-------------|-------|--------------------------|
-| `reasoning` | 1     | Planning / reasoning     |
-| `prompt`    | 2     | User or system prompts   |
-| `retrieval` | 3     | Data retrieval           |
-| `document`  | 3     | Document access          |
-| `embedding` | 3     | Embedding operations     |
-| `tool_call` | 4     | External tool invocation |
-| `action`    | 5     | Final outcome / action   |
-
-## Core Concepts
-
-### Responsibility Propagation (RPA)
-
-RPA starts at the outcome node (`event_type: action`) with responsibility `1.0` and propagates backward through the graph in reverse topological order. Each parent receives a share of its child's responsibility proportional to incoming edge weights.
-
-### Multi-Factor Accountability Vector (MFAV)
-
-Node-level responsibility scores are mapped to accountability factors — `agent`, `prompt`, `data`, `tool`, `memory`, `execution`, and `other` — then normalized to produce an MFAV distribution.
-
-### Trust Score
-
-The trust model combines five weighted components:
-
-| Component          | Weight |
-|--------------------|--------|
-| Evidence strength  | 0.25   |
-| Causality confidence | 0.25 |
-| Tool reliability   | 0.20   |
-| Policy compliance  | 0.15   |
-| Model confidence   | 0.15   |
-
-Risk is classified as **LOW** (> 0.8), **MEDIUM** (> 0.5), or **HIGH** (≤ 0.5).
-
-### Audit Hash Chain
-
-Each graph node is hashed from its event payload and parent hashes (SHA-256). The chain supports integrity verification and detects tampered events.
-
-## License
-
-No license file is included yet. Add one before distributing or contributing.

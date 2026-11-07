@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agenttrust"
+version = "2.2.0"
+description = "AgentTrust research framework: provenance and conserved responsibility allocation for multi-agent workflows"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Proprietary / research use" }
+authors = [{ name = "AgentTrust research team" }]
+dependencies = [
+  "networkx>=3.0",
+  "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+viz = ["matplotlib>=3.7"]
+dev = ["pytest>=7.0", "matplotlib>=3.7"]
+
+[tool.setuptools.packages.find]
+include = ["agenttrust*"]
+exclude = ["legacy*", "tests*", "experiments*", "docs*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
