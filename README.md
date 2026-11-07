@@ -14,6 +14,7 @@ Provide a reproducible stack that:
 4. Aggregates RPA allocations into an exclusive **MFAV** factor profile
 5. Generates controlled **synthetic multi-agent benchmarks** with separate ground truth
 6. Computes an evidence-bounded **Assurance Profile** over observable records
+7. Verifies **PLHC** integrity snapshots and runs a documented **end-to-end pipeline**
 
 ## Explicit non-claims
 
@@ -40,6 +41,7 @@ AgentTrust **does not**:
 | Benchmark GT integrity + fault semantics | **Phase 2.5 / 2.5.1 — active** |
 | Evidence-bounded Assurance Profile | **Phase 2.7.1 — active** (`agenttrust/assurance/`) |
 | PLHC (Merkle + linked checkpoints) | **Phase 2.7.1 — active** (`agenttrust/integrity/`) |
+| End-to-end evaluation pipeline | **Phase 2.8 — active** (`agenttrust/pipeline/`) |
 | Legacy prototype | Preserved under `legacy/` (historical only) |
 
 ## Active architecture
@@ -48,35 +50,16 @@ AgentTrust **does not**:
 Benchmark generator (optional)
         │
         ▼
-Raw / processed / pilot events
+events.json + artifacts.json   ← algorithm inputs only (no ground truth)
         │
         ▼
-┌───────────────────┐
-│  ProvenanceTrace  │  schema + validation + MLPG
-└─────────┬─────────┘
-          │
-          ├─ P1 / P2 event projections
-          │
-          ▼
-┌───────────────────┐
-│  Conserved RPA    │  structural allocation (α=0 baseline)
-└─────────┬─────────┘
-          │
-          ▼
-┌───────────────────┐
-│  MFAV             │  exclusive factor + entity aggregation
-└─────────┬─────────┘
-          │
-          ▼
-┌───────────────────┐
-│  Assurance Profile│  evidence-bounded dimension statuses
-└─────────┬─────────┘
-          │
-          ▼
-┌───────────────────┐
-│  PLHC             │  Merkle root + linked checkpoints (tamper-evident)
-└───────────────────┘
+┌─────────────────────────────────────────────────────────────┐
+│  AgentTrustPipeline (Phase 2.8)                             │
+│  validate → MLPG → P1/P2 → RPA → MFAV → PLHC → Assurance    │
+└─────────────────────────────────────────────────────────────┘
 ```
+
+Components remain independently usable; the pipeline orchestrates them without changing their math.
 
 ## Project tree
 
@@ -232,10 +215,35 @@ python experiments/scripts/validate_phase25_fault_matrix.py
 
 See [BENCHMARK_DESIGN.md](docs/methodology/BENCHMARK_DESIGN.md) and [FINAL_EXPERIMENTAL_DATASET_PLAN.md](docs/methodology/FINAL_EXPERIMENTAL_DATASET_PLAN.md).
 
+## Phase 2.8 — end-to-end evaluation
+
+```python
+from agenttrust import AgentTrustPipeline, PipelineConfig
+
+pipe = AgentTrustPipeline(PipelineConfig())
+result = pipe.run_trace_dir("data/benchmarks/pilot/traces/<trace_id>")
+print(result.ok, result.plhc["status"], result.assurance["status"])
+```
+
+```bash
+# One trace
+python experiments/scripts/evaluate_agenttrust.py \
+  --trace data/benchmarks/pilot/traces/<trace_id> \
+  --out data/results/pipeline_2_8 --validate-only
+
+# Pilot corpus
+python experiments/scripts/evaluate_agenttrust.py \
+  --corpus data/benchmarks/pilot/traces --corpus-label pilot \
+  --out data/results/pipeline_2_8_pilot --validate-only
+```
+
+Pipeline docs: [docs/architecture/PHASE_2_8_PIPELINE.md](docs/architecture/PHASE_2_8_PIPELINE.md).
+Ground truth under `ground_truth/` is **never** opened by the pipeline.
+
 ## Tests
 
 ```bash
-python -c "from agenttrust import ProvenanceTrace, ConservedRPA, MFAV"
+python -c "from agenttrust import ProvenanceTrace, ConservedRPA, MFAV, AgentTrustPipeline"
 python -c "from agenttrust.benchmark import BenchmarkGenerator"
 python -m pytest tests -q
 ```
@@ -245,6 +253,9 @@ python -m pytest tests -q
 - MLPG: [docs/architecture/PHASE_2_1_MLPG.md](docs/architecture/PHASE_2_1_MLPG.md)
 - RPA: [docs/architecture/PHASE_2_2_RPA.md](docs/architecture/PHASE_2_2_RPA.md)
 - MFAV: [docs/architecture/PHASE_2_3_MFAV.md](docs/architecture/PHASE_2_3_MFAV.md)
+- Assurance: [docs/architecture/PHASE_2_6_ASSURANCE_PROFILE.md](docs/architecture/PHASE_2_6_ASSURANCE_PROFILE.md)
+- PLHC: [docs/architecture/PHASE_2_7_PLHC.md](docs/architecture/PHASE_2_7_PLHC.md)
+- Pipeline: [docs/architecture/PHASE_2_8_PIPELINE.md](docs/architecture/PHASE_2_8_PIPELINE.md)
 - Benchmark methodology: [docs/methodology/BENCHMARK_DESIGN.md](docs/methodology/BENCHMARK_DESIGN.md)
 - Phase reports: [docs/phase-reports/](docs/phase-reports/)
 
