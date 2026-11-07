@@ -1,0 +1,44 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "investigator",
+    "analyst",
+    "osint",
+    "risk",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "investigator-1"
+  ],
+  "artifact_count": 101,
+  "config_fingerprint": "29dd9e8948f342b0ed6fe594e746764217151381ee0bb96a1d4724192afcf980",
+  "expected_event_count": 101,
+  "fault_types": [
+    "incomplete_trace"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": true,
+  "intervention_count": 1,
+  "notes": [
+    "multi-level INVOKES delegation; callers depend on callees",
+    "incomplete_trace removed bench-fraud_investigation-delegated_multi_agent-S2-s20463-incomplete_trace-inc:e0050",
+    "multi-level INVOKES delegation; callers depend on callees",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|delegated_multi_agent|S2|fraud_investigation|incomplete_trace|r0|c276",
+    "base_seed=20462"
+  ],
+  "outcome_event_ids": [
+    "bench-fraud_investigation-delegated_multi_agent-S2-s20463-incomplete_trace-inc:e0100"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "fraud_investigation",
+  "seed": 20463,
+  "topology_id": "delegated_multi_agent",
+  "trace_id": "bench-fraud_investigation-delegated_multi_agent-S2-s20463-incomplete_trace-inc"
+}

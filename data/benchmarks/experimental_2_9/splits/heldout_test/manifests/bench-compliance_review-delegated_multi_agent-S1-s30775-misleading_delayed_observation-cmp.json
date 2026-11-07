@@ -1,0 +1,38 @@
+{
+  "actual_event_count": 51,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "auditor",
+    "researcher",
+    "reviewer",
+    "executor"
+  ],
+  "artifact_count": 51,
+  "config_fingerprint": "4f690fdbe0121cc5f429539495390277f23e570433b4d5613886c10ce1d717a9",
+  "expected_event_count": 51,
+  "fault_types": [
+    "misleading_delayed_observation"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "multi-level INVOKES delegation; callers depend on callees",
+    "multi-level INVOKES delegation; callers depend on callees",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|delegated_multi_agent|S1|compliance_review|misleading_delayed_observation|r0|c462",
+    "base_seed=30774"
+  ],
+  "outcome_event_ids": [
+    "bench-compliance_review-delegated_multi_agent-S1-s30775-misleading_delayed_observation-cmp:e0050"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "compliance_review",
+  "seed": 30775,
+  "topology_id": "delegated_multi_agent",
+  "trace_id": "bench-compliance_review-delegated_multi_agent-S1-s30775-misleading_delayed_observation-cmp"
+}

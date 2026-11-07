@@ -1,0 +1,35 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "investigator",
+    "analyst",
+    "osint",
+    "risk"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "5f3d53f9c11b26f52a5e12677323e8e6dda2f09fa01a90d96f109bfcb23290c4",
+  "expected_event_count": 50,
+  "fault_types": [],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "explicit shared artifacts consumed by multiple agents",
+    "explicit shared artifacts consumed by multiple agents",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=clean_core",
+    "design_version=experimental-design-2.9.0",
+    "base_seed=30076"
+  ],
+  "outcome_event_ids": [
+    "bench-fraud_investigation-shared_artifact-S1-s30076-clean-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "fraud_investigation",
+  "seed": 30076,
+  "topology_id": "shared_artifact",
+  "trace_id": "bench-fraud_investigation-shared_artifact-S1-s30076-clean-cmp"
+}

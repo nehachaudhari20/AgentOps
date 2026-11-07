@@ -1,0 +1,38 @@
+{
+  "actual_event_count": 51,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "validator",
+    "pricing",
+    "settlement",
+    "risk"
+  ],
+  "artifact_count": 51,
+  "config_fingerprint": "c74744d89dfc6fd8f0b371a5a3579174de890c41518c75473e2f45f32403ea64",
+  "expected_event_count": 51,
+  "fault_types": [
+    "misleading_delayed_observation"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "multi-level INVOKES delegation; callers depend on callees",
+    "multi-level INVOKES delegation; callers depend on callees",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|delegated_multi_agent|S1|transaction_execution|misleading_delayed_observation|r1|c299",
+    "base_seed=20508"
+  ],
+  "outcome_event_ids": [
+    "bench-transaction_execution-delegated_multi_agent-S1-s20509-misleading_delayed_observation-cmp:e0050"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "transaction_execution",
+  "seed": 20509,
+  "topology_id": "delegated_multi_agent",
+  "trace_id": "bench-transaction_execution-delegated_multi_agent-S1-s20509-misleading_delayed_observation-cmp"
+}

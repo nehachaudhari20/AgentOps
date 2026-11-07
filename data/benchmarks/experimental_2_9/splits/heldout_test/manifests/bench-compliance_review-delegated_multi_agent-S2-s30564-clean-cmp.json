@@ -1,0 +1,41 @@
+{
+  "actual_event_count": 101,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "auditor",
+    "researcher",
+    "reviewer",
+    "executor",
+    "memory",
+    "tool_runner",
+    "risk",
+    "coordinator-1",
+    "auditor-1"
+  ],
+  "artifact_count": 101,
+  "config_fingerprint": "02fb5eb1be62648a992bac2db4f7829b24da1e69564433d81b36b8ce7e212672",
+  "expected_event_count": 101,
+  "fault_types": [],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "multi-level INVOKES delegation; callers depend on callees",
+    "multi-level INVOKES delegation; callers depend on callees",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_clean",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|delegated_multi_agent|S2|compliance_review|delegation_failure|r0|c357",
+    "base_seed=30564"
+  ],
+  "outcome_event_ids": [
+    "bench-compliance_review-delegated_multi_agent-S2-s30564-clean-cmp:e0100"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "compliance_review",
+  "seed": 30564,
+  "topology_id": "delegated_multi_agent",
+  "trace_id": "bench-compliance_review-delegated_multi_agent-S2-s30564-clean-cmp"
+}

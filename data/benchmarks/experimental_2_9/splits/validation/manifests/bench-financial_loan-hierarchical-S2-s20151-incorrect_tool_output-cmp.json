@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "risk",
+    "policy",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "planner-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "0fbe8605c10d644d04becccbc17d21323f3d31d46abdd7958f03fd30f2338fd1",
+  "expected_event_count": 100,
+  "fault_types": [
+    "incorrect_tool_output"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|hierarchical|S2|financial_loan|incorrect_tool_output|r0|c120",
+    "base_seed=20150"
+  ],
+  "outcome_event_ids": [
+    "bench-financial_loan-hierarchical-S2-s20151-incorrect_tool_output-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "financial_loan",
+  "seed": 20151,
+  "topology_id": "hierarchical",
+  "trace_id": "bench-financial_loan-hierarchical-S2-s20151-incorrect_tool_output-cmp"
+}

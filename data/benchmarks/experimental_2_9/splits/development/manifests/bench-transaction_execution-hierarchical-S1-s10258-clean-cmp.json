@@ -1,0 +1,36 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "validator",
+    "pricing",
+    "settlement",
+    "risk"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "c8fd0bd48e11236a7f83b3384eea6acdecb4549170f3c9ece23def490807d50e",
+  "expected_event_count": 50,
+  "fault_types": [],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=development",
+    "role=pair_clean",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=development|hierarchical|S1|transaction_execution|misleading_delayed_observation|r1|c159",
+    "base_seed=10258"
+  ],
+  "outcome_event_ids": [
+    "bench-transaction_execution-hierarchical-S1-s10258-clean-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "transaction_execution",
+  "seed": 10258,
+  "topology_id": "hierarchical",
+  "trace_id": "bench-transaction_execution-hierarchical-S1-s10258-clean-cmp"
+}

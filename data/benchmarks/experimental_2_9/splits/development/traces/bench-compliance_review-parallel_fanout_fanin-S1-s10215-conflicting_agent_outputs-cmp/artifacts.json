@@ -1,0 +1,496 @@
+{
+  "artifacts": [
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0000",
+      "artifact_type": "policy_pack",
+      "content_hash": "sha256:0dfb5247b895099853bfdde532eeda3dcf10686ed5baa1ea41114ab0f45cf671",
+      "metadata": {
+        "step": "s000",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0001",
+      "artifact_type": "control_matrix",
+      "content_hash": "sha256:abc6a9506c5b07ce58923cdd1a52955559b819982cb2cceaad5ca3645137dddc",
+      "metadata": {
+        "decision": "approve",
+        "step": "s001",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0002",
+      "artifact_type": "gap_report",
+      "content_hash": "sha256:bcc21405490d845dd181c475b40397503aabaa1b052a6ed0d83add9c7fa73e36",
+      "metadata": {
+        "step": "s002",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0003",
+      "artifact_type": "attestation",
+      "content_hash": "sha256:426cdb8b1bc78e38d8901838620c81eec3fa9f53353298bfa7644320e93579f8",
+      "metadata": {
+        "decision": "reject",
+        "step": "s003",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0004",
+      "artifact_type": "policy_pack",
+      "content_hash": "sha256:c104c425754a71181d8bce6cfc0e487753b44caf5acdfaa481dfdca123762d2b",
+      "metadata": {
+        "step": "s004",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0005",
+      "artifact_type": "control_matrix",
+      "content_hash": "sha256:e7b6dc33a99e8d47850aa476b0e7cf67a964dc607ef7e8ac324d69caa512cec5",
+      "metadata": {
+        "step": "s005",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0006",
+      "artifact_type": "gap_report",
+      "content_hash": "sha256:06177537f0b1d5fc093236fbba69df7b71b89579a8f40e86beca23554cafcede",
+      "metadata": {
+        "step": "s006",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0007",
+      "artifact_type": "attestation",
+      "content_hash": "sha256:475813174f62618fc4bba531bfb16fdf5512328c734ac676c87d84e3b0376dd1",
+      "metadata": {
+        "step": "s007",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0008",
+      "artifact_type": "policy_pack",
+      "content_hash": "sha256:00defb88fb5d345c022621aa2a1338d653d1c28c3379d79e7f461c08a77e6d1a",
+      "metadata": {
+        "step": "s008",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0009",
+      "artifact_type": "control_matrix",
+      "content_hash": "sha256:c3072b1abd7c4fc174ff74c80e10850e7f8de84abcd33a4724884e42e59ee0ea",
+      "metadata": {
+        "step": "s009",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0010",
+      "artifact_type": "gap_report",
+      "content_hash": "sha256:e336b72e768f68884a81877d13f6c09896ef6588d95b0cdb2fc6f86cbb8547e5",
+      "metadata": {
+        "step": "s010",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0011",
+      "artifact_type": "attestation",
+      "content_hash": "sha256:f397cb9d60817434cdc6fc28485df70da5873635c5e267d64aa2e32c9596239f",
+      "metadata": {
+        "step": "s011",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0012",
+      "artifact_type": "policy_pack",
+      "content_hash": "sha256:5858660aa6a2b4c8634d4e8aebb7381b937be7961ad6421bbdf478595397bb98",
+      "metadata": {
+        "step": "s012",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0013",
+      "artifact_type": "control_matrix",
+      "content_hash": "sha256:61f52c8223a796850b582f15e4eca54230e041f4dce48c5fea6bcd080fb6e824",
+      "metadata": {
+        "step": "s013",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0014",
+      "artifact_type": "gap_report",
+      "content_hash": "sha256:62eddf7cd6cf8e60040cb478eeaf411450e33e4e39f15bca5f8a1415173783df",
+      "metadata": {
+        "step": "s014",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0015",
+      "artifact_type": "attestation",
+      "content_hash": "sha256:3cc0c0e7e389c4f3a266227373eed089527d30687852644d4be046cba8d10f89",
+      "metadata": {
+        "step": "s015",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0016",
+      "artifact_type": "policy_pack",
+      "content_hash": "sha256:39d14906cdb7e0dfb636dd962d1dedac1bb455123418385052065e60c2e085e0",
+      "metadata": {
+        "step": "s016",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0017",
+      "artifact_type": "control_matrix",
+      "content_hash": "sha256:f145563660083a70f1f89c98918fe5402dd4bae83a56fcde3599850237b358f9",
+      "metadata": {
+        "step": "s017",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0018",
+      "artifact_type": "gap_report",
+      "content_hash": "sha256:bd7d829464702f9b5e2cf55b58405bcec085854e2ec27c74a5e6ded32ce4f553",
+      "metadata": {
+        "step": "s018",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0019",
+      "artifact_type": "attestation",
+      "content_hash": "sha256:4100c0fc3316ee42692b83377dcdee10d155a2b8e5efca99a119a67e9a0ed3a5",
+      "metadata": {
+        "step": "s019",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0020",
+      "artifact_type": "policy_pack",
+      "content_hash": "sha256:412d5c7196b31c4cb7cde76ab465f8493ab41819aae492bbaf036d575ddc7e61",
+      "metadata": {
+        "step": "s020",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0021",
+      "artifact_type": "control_matrix",
+      "content_hash": "sha256:a06f447c9fabc6db5d5dfbaf66208fd24311a70565699f9d1eae1b33be3ce435",
+      "metadata": {
+        "step": "s021",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0022",
+      "artifact_type": "gap_report",
+      "content_hash": "sha256:949ac432419fe9d140469d442e2adaa6d6724fde1384ed0bc61eb02a3b95a769",
+      "metadata": {
+        "step": "s022",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0023",
+      "artifact_type": "attestation",
+      "content_hash": "sha256:c7f76fe7e9f882dd43b18d19180c467154eab45abfcc5d8e4688667ece984923",
+      "metadata": {
+        "step": "s023",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0024",
+      "artifact_type": "policy_pack",
+      "content_hash": "sha256:02f05deee7883ba5638c18bce05921a0940bb6b589404c1dc5932c8a6372f2a6",
+      "metadata": {
+        "step": "s024",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0025",
+      "artifact_type": "control_matrix",
+      "content_hash": "sha256:56f4dc4bb40a0de731fea91e44060772daf37bff9513ce79e06273fc69b12c31",
+      "metadata": {
+        "step": "s025",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0026",
+      "artifact_type": "gap_report",
+      "content_hash": "sha256:6788cfcccc7eb5033d6027ec7300ebd81be5f84e08cabc7c8dd8015af983794d",
+      "metadata": {
+        "step": "s026",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0027",
+      "artifact_type": "attestation",
+      "content_hash": "sha256:ec5bc23b40f888a2bf0a835887e665968838b88a7072255275479f8e39d2a820",
+      "metadata": {
+        "step": "s027",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0028",
+      "artifact_type": "policy_pack",
+      "content_hash": "sha256:edc92e573dcc4e71f697b50e9ee556fde771694d153c7124a37691324492f4b0",
+      "metadata": {
+        "step": "s028",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0029",
+      "artifact_type": "control_matrix",
+      "content_hash": "sha256:96745835e7e26ac6b393e98d26fbc1bd5e13ec2a0a43e472b389dac1cc680869",
+      "metadata": {
+        "step": "s029",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0030",
+      "artifact_type": "gap_report",
+      "content_hash": "sha256:a9c19ef70f48ee088d348ed765304d8e66f3fafa8c4f25a6c787dc406b48c0e9",
+      "metadata": {
+        "step": "s030",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0031",
+      "artifact_type": "attestation",
+      "content_hash": "sha256:426d82fc20773d637896f358619cd6b3ee6cd89d9bcafc3eea0ec463327247cd",
+      "metadata": {
+        "step": "s031",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0032",
+      "artifact_type": "policy_pack",
+      "content_hash": "sha256:4647e75ccb8c79832829635b2cbc7d9cdc3508b4027d56a5dcbe93f692953b25",
+      "metadata": {
+        "step": "s032",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0033",
+      "artifact_type": "control_matrix",
+      "content_hash": "sha256:2b05f5c8308ae100b94f227f267ef9b599f7d4557486659496079b673d8875b0",
+      "metadata": {
+        "step": "s033",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0034",
+      "artifact_type": "gap_report",
+      "content_hash": "sha256:1487159e35257e9b3fe8e24be919a5dd4d129ea75447bd95d3927edaaab50d7f",
+      "metadata": {
+        "step": "s034",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0035",
+      "artifact_type": "attestation",
+      "content_hash": "sha256:394408c6cf2b1c424f954a4d8fd716a65ba4696010924d0cba6f520c3cf86ed4",
+      "metadata": {
+        "step": "s035",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0036",
+      "artifact_type": "policy_pack",
+      "content_hash": "sha256:f95462123dc1a12632474c3f9329b4a9edecf50b5f766ee088221eed82509286",
+      "metadata": {
+        "step": "s036",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0037",
+      "artifact_type": "control_matrix",
+      "content_hash": "sha256:105e3db1e4dbbc192f68b94653077da0985f1bf744917e00a644e651bee48bd8",
+      "metadata": {
+        "step": "s037",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0038",
+      "artifact_type": "gap_report",
+      "content_hash": "sha256:e9900ce7976ff3aa668dc32cf6d7d5610c5d45a5b1cf4ac7e79e5c0d72801714",
+      "metadata": {
+        "step": "s038",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0039",
+      "artifact_type": "attestation",
+      "content_hash": "sha256:8fe03a71e8f2e7bac5d2735309fd191f9b87d9a103e19f51d7d993d210b1d78f",
+      "metadata": {
+        "step": "s039",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0040",
+      "artifact_type": "policy_pack",
+      "content_hash": "sha256:11c492c7085f198011970f72b020d4adc32ba3924f193590ce8195e8aaeaf74e",
+      "metadata": {
+        "step": "s040",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0041",
+      "artifact_type": "control_matrix",
+      "content_hash": "sha256:0cbd8622b289864a02acc2991a4c4e7096a6c52d9e5176122ed08987a57ceaf0",
+      "metadata": {
+        "step": "s041",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0042",
+      "artifact_type": "gap_report",
+      "content_hash": "sha256:69c024871787bfbe59143fe17c1ab933dc3e1f2775124f6abbf227c5efb79de2",
+      "metadata": {
+        "step": "s042",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0043",
+      "artifact_type": "attestation",
+      "content_hash": "sha256:764e8043803db9dddcda483713814e52438bd361b9c7ab63a9e377bae012d39a",
+      "metadata": {
+        "step": "s043",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0044",
+      "artifact_type": "policy_pack",
+      "content_hash": "sha256:7dc2a8a3d201c4843178971f78f77f037a0e7e4ce7fd4b0afc1e9d5a09ceb37a",
+      "metadata": {
+        "step": "s044",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0045",
+      "artifact_type": "control_matrix",
+      "content_hash": "sha256:c518cb8f86f80022254b67f4778944e548fddade2b1f861873150f08abd1c3e1",
+      "metadata": {
+        "step": "s045",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0046",
+      "artifact_type": "gap_report",
+      "content_hash": "sha256:c5288c20731f8701fc808e6dbfa04a888c32bacd6023cde228932b5e67151131",
+      "metadata": {
+        "step": "s046",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0047",
+      "artifact_type": "attestation",
+      "content_hash": "sha256:6ac815ac158a3be20ef0deb1bcf60aae29abee7401ba4a506939a439b6642720",
+      "metadata": {
+        "step": "s047",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:a0048",
+      "artifact_type": "policy_pack",
+      "content_hash": "sha256:8c152a30421da38f59059f4beb4bcc529af367d39497f1c234d4af4396fbdedc",
+      "metadata": {
+        "step": "s048",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    }
+  ]
+}

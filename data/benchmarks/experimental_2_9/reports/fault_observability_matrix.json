@@ -1,0 +1,104 @@
+{
+  "classes": [
+    "directly_observable",
+    "indirect_inconsistency",
+    "requires_ground_truth",
+    "not_reliably_detectable"
+  ],
+  "disclaimer": "Declarations describe evidence availability, not AgentTrust detection guarantees. Assurance Profile is not assumed to detect every injected fault.",
+  "faults": {
+    "artifact_corruption": {
+      "assurance_may_flag": false,
+      "notes": [
+        "Observed sentinel hash is public; mismatch vs expected requires GT."
+      ],
+      "primary": "requires_ground_truth",
+      "secondary": [
+        "directly_observable"
+      ]
+    },
+    "conflicting_agent_outputs": {
+      "assurance_may_flag": false,
+      "notes": [
+        "Two agents may emit disagreeing structured outputs publicly.",
+        "Disagreement does not identify which agent is correct without external GT."
+      ],
+      "primary": "not_reliably_detectable",
+      "secondary": [
+        "directly_observable"
+      ]
+    },
+    "delegation_failure": {
+      "assurance_may_flag": true,
+      "notes": [
+        "Missing callee or failed callee can appear as broken INVOKES / status."
+      ],
+      "primary": "indirect_inconsistency",
+      "secondary": [
+        "directly_observable"
+      ]
+    },
+    "incomplete_trace": {
+      "assurance_may_flag": true,
+      "notes": [
+        "Missing parents/events are observable as incompleteness.",
+        "Intentional vs accidental incompleteness requires GT quality flags."
+      ],
+      "primary": "indirect_inconsistency",
+      "secondary": [
+        "requires_ground_truth"
+      ]
+    },
+    "incorrect_tool_output": {
+      "assurance_may_flag": false,
+      "notes": [
+        "Public content_hash is the planted wrong hash; expected hash lives only in GT.",
+        "Without GT, the call still looks like a successful tool event."
+      ],
+      "primary": "requires_ground_truth",
+      "secondary": [
+        "directly_observable"
+      ]
+    },
+    "misleading_delayed_observation": {
+      "assurance_may_flag": false,
+      "notes": [
+        "Delayed/misleading OBSERVED_AFTER-style signals are not structural DEPENDS_ON.",
+        "Without GT intent, timing anomalies are ambiguous."
+      ],
+      "primary": "not_reliably_detectable",
+      "secondary": [
+        "directly_observable"
+      ]
+    },
+    "missing_dependency": {
+      "assurance_may_flag": true,
+      "notes": [
+        "Phantom dependency IDs appear in public dependency_event_ids.",
+        "Incomplete/reference_integrity dimensions can surface missing parents."
+      ],
+      "primary": "indirect_inconsistency",
+      "secondary": [
+        "directly_observable"
+      ]
+    },
+    "retry_storm": {
+      "assurance_may_flag": false,
+      "notes": [
+        "Retry chain and RETRIES edges are public structural evidence."
+      ],
+      "primary": "directly_observable",
+      "secondary": []
+    },
+    "tool_call_failure": {
+      "assurance_may_flag": false,
+      "notes": [
+        "status=failure is public.",
+        "Assurance Profile does not score tool reliability as a trust metric."
+      ],
+      "primary": "directly_observable",
+      "secondary": []
+    }
+  },
+  "matrix_version": "2.9.0"
+}

@@ -1,0 +1,39 @@
+{
+  "actual_event_count": 49,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "risk",
+    "policy"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "5525e9380b4350484d95d54664ad14b28a60f072d62e0846a9d8ec0f05d0fd9c",
+  "expected_event_count": 50,
+  "fault_types": [
+    "incomplete_trace"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": true,
+  "intervention_count": 1,
+  "notes": [
+    "explicit shared artifacts consumed by multiple agents",
+    "incomplete_trace removed bench-financial_loan-shared_artifact-S1-s20451-incomplete_trace-inc:e0024",
+    "explicit shared artifacts consumed by multiple agents",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|shared_artifact|S1|financial_loan|incomplete_trace|r0|c270",
+    "base_seed=20450"
+  ],
+  "outcome_event_ids": [
+    "bench-financial_loan-shared_artifact-S1-s20451-incomplete_trace-inc:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "financial_loan",
+  "seed": 20451,
+  "topology_id": "shared_artifact",
+  "trace_id": "bench-financial_loan-shared_artifact-S1-s20451-incomplete_trace-inc"
+}

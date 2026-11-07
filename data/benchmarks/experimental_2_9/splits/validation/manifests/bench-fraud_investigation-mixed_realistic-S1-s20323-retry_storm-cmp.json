@@ -1,0 +1,38 @@
+{
+  "actual_event_count": 53,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "investigator",
+    "analyst",
+    "osint",
+    "risk"
+  ],
+  "artifact_count": 53,
+  "config_fingerprint": "f78935c75bae39b9b73acc6a2879a4b90fe6151b1efb4b94ca4a20b7d4c3f0a4",
+  "expected_event_count": 50,
+  "fault_types": [
+    "retry_storm"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|mixed_realistic|S1|fraud_investigation|retry_storm|r0|c206",
+    "base_seed=20322"
+  ],
+  "outcome_event_ids": [
+    "bench-fraud_investigation-mixed_realistic-S1-s20323-retry_storm-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "fraud_investigation",
+  "seed": 20323,
+  "topology_id": "mixed_realistic",
+  "trace_id": "bench-fraud_investigation-mixed_realistic-S1-s20323-retry_storm-cmp"
+}

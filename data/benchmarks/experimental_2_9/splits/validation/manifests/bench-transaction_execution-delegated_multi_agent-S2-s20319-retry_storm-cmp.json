@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 104,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "validator",
+    "pricing",
+    "settlement",
+    "risk",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "validator-1"
+  ],
+  "artifact_count": 104,
+  "config_fingerprint": "a7560baaedfc83d882207699c882c5162d2ba947810bc8a1255325544cdeff1a",
+  "expected_event_count": 101,
+  "fault_types": [
+    "retry_storm"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "multi-level INVOKES delegation; callers depend on callees",
+    "multi-level INVOKES delegation; callers depend on callees",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|delegated_multi_agent|S2|transaction_execution|retry_storm|r0|c204",
+    "base_seed=20318"
+  ],
+  "outcome_event_ids": [
+    "bench-transaction_execution-delegated_multi_agent-S2-s20319-retry_storm-cmp:e0100"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "transaction_execution",
+  "seed": 20319,
+  "topology_id": "delegated_multi_agent",
+  "trace_id": "bench-transaction_execution-delegated_multi_agent-S2-s20319-retry_storm-cmp"
+}

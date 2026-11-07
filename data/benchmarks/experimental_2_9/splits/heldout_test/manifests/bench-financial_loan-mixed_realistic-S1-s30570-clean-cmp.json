@@ -1,0 +1,36 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "risk",
+    "policy"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "216ed43409fb4a43e9ce4653442e10559ed093322f245bab45df39775aff4814",
+  "expected_event_count": 50,
+  "fault_types": [],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_clean",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|mixed_realistic|S1|financial_loan|delegation_failure|r0|c360",
+    "base_seed=30570"
+  ],
+  "outcome_event_ids": [
+    "bench-financial_loan-mixed_realistic-S1-s30570-clean-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "financial_loan",
+  "seed": 30570,
+  "topology_id": "mixed_realistic",
+  "trace_id": "bench-financial_loan-mixed_realistic-S1-s30570-clean-cmp"
+}

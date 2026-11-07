@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "investigator",
+    "analyst",
+    "osint",
+    "risk",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "investigator-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "f35a142be2ffc6a18a4532a7a402617db1f51c055d5b95806022da4d88c9e377",
+  "expected_event_count": 100,
+  "fault_types": [
+    "tool_call_failure"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|mixed_realistic|S2|fraud_investigation|tool_call_failure|r1|c161",
+    "base_seed=20232"
+  ],
+  "outcome_event_ids": [
+    "bench-fraud_investigation-mixed_realistic-S2-s20233-tool_call_failure-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "fraud_investigation",
+  "seed": 20233,
+  "topology_id": "mixed_realistic",
+  "trace_id": "bench-fraud_investigation-mixed_realistic-S2-s20233-tool_call_failure-cmp"
+}

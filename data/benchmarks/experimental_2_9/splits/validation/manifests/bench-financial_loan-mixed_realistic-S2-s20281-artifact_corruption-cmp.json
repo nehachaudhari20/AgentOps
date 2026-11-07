@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "risk",
+    "policy",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "planner-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "f4fc86a4bd229fcec052c1603b53021cb8886339763bbeb369285bf402cf042c",
+  "expected_event_count": 100,
+  "fault_types": [
+    "artifact_corruption"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|mixed_realistic|S2|financial_loan|artifact_corruption|r1|c185",
+    "base_seed=20280"
+  ],
+  "outcome_event_ids": [
+    "bench-financial_loan-mixed_realistic-S2-s20281-artifact_corruption-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "financial_loan",
+  "seed": 20281,
+  "topology_id": "mixed_realistic",
+  "trace_id": "bench-financial_loan-mixed_realistic-S2-s20281-artifact_corruption-cmp"
+}

@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "validator",
+    "pricing",
+    "settlement",
+    "risk",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "validator-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "06a7b5b3ed280785aa43b5e253a2274834faf13fe57b3657b6ed935cd7ec1ab9",
+  "expected_event_count": 100,
+  "fault_types": [
+    "artifact_corruption"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|hierarchical|S2|transaction_execution|artifact_corruption|r1|c169",
+    "base_seed=20248"
+  ],
+  "outcome_event_ids": [
+    "bench-transaction_execution-hierarchical-S2-s20249-artifact_corruption-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "transaction_execution",
+  "seed": 20249,
+  "topology_id": "hierarchical",
+  "trace_id": "bench-transaction_execution-hierarchical-S2-s20249-artifact_corruption-cmp"
+}

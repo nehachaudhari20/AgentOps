@@ -1,0 +1,38 @@
+{
+  "actual_event_count": 49,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "validator",
+    "pricing",
+    "settlement",
+    "risk"
+  ],
+  "artifact_count": 49,
+  "config_fingerprint": "6d170b48c81d6a20ef7eb2ea97e3b926064bcc02adff3975c28ddb22e71af3f6",
+  "expected_event_count": 49,
+  "fault_types": [
+    "incorrect_tool_output"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|parallel_fanout_fanin|S1|transaction_execution|incorrect_tool_output|r1|c199",
+    "base_seed=30248"
+  ],
+  "outcome_event_ids": [
+    "bench-transaction_execution-parallel_fanout_fanin-S1-s30249-incorrect_tool_output-cmp:e0048"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "transaction_execution",
+  "seed": 30249,
+  "topology_id": "parallel_fanout_fanin",
+  "trace_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s30249-incorrect_tool_output-cmp"
+}

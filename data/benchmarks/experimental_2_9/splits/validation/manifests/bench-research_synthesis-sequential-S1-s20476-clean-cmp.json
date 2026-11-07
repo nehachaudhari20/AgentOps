@@ -1,0 +1,36 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "analyst",
+    "writer"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "ac8de3ddc41e3b1bd994f89fa02a191eae9423453730d3858b7c8b9e12b3be4b",
+  "expected_event_count": 50,
+  "fault_types": [],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "linear chain; each step depends on previous",
+    "linear chain; each step depends on previous",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_clean",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|sequential|S1|research_synthesis|misleading_delayed_observation|r1|c283",
+    "base_seed=20476"
+  ],
+  "outcome_event_ids": [
+    "bench-research_synthesis-sequential-S1-s20476-clean-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "research_synthesis",
+  "seed": 20476,
+  "topology_id": "sequential",
+  "trace_id": "bench-research_synthesis-sequential-S1-s20476-clean-cmp"
+}

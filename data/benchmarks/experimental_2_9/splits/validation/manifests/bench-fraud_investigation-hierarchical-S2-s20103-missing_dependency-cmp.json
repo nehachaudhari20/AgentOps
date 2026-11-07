@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "investigator",
+    "analyst",
+    "osint",
+    "risk",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "investigator-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "3e2c8b70c01d43f2b62dff9be0aa56fcec9170a1d0b83c4f0ac3569724b2278a",
+  "expected_event_count": 100,
+  "fault_types": [
+    "missing_dependency"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": true,
+  "intervention_count": 1,
+  "notes": [
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|hierarchical|S2|fraud_investigation|missing_dependency|r0|c96",
+    "base_seed=20102"
+  ],
+  "outcome_event_ids": [
+    "bench-fraud_investigation-hierarchical-S2-s20103-missing_dependency-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "fraud_investigation",
+  "seed": 20103,
+  "topology_id": "hierarchical",
+  "trace_id": "bench-fraud_investigation-hierarchical-S2-s20103-missing_dependency-cmp"
+}

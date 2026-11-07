@@ -1,0 +1,38 @@
+{
+  "actual_event_count": 51,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "validator",
+    "pricing",
+    "settlement",
+    "risk"
+  ],
+  "artifact_count": 51,
+  "config_fingerprint": "769cf76ff58b2062fa48c5bc8fd673d82c461cfdd809749d25f77ad1e56c22d1",
+  "expected_event_count": 51,
+  "fault_types": [
+    "artifact_corruption"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "multi-level INVOKES delegation; callers depend on callees",
+    "multi-level INVOKES delegation; callers depend on callees",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|delegated_multi_agent|S1|transaction_execution|artifact_corruption|r1|c179",
+    "base_seed=20268"
+  ],
+  "outcome_event_ids": [
+    "bench-transaction_execution-delegated_multi_agent-S1-s20269-artifact_corruption-cmp:e0050"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "transaction_execution",
+  "seed": 20269,
+  "topology_id": "delegated_multi_agent",
+  "trace_id": "bench-transaction_execution-delegated_multi_agent-S1-s20269-artifact_corruption-cmp"
+}

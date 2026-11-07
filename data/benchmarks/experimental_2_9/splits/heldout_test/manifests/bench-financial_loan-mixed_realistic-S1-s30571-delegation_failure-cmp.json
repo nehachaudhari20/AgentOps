@@ -1,0 +1,38 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "risk",
+    "policy"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "6d0f42cf2415b502802bf4672bdedef6bb5f4170f44bf2481e4fcc0c509da57e",
+  "expected_event_count": 50,
+  "fault_types": [
+    "delegation_failure"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|mixed_realistic|S1|financial_loan|delegation_failure|r0|c360",
+    "base_seed=30570"
+  ],
+  "outcome_event_ids": [
+    "bench-financial_loan-mixed_realistic-S1-s30571-delegation_failure-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "financial_loan",
+  "seed": 30571,
+  "topology_id": "mixed_realistic",
+  "trace_id": "bench-financial_loan-mixed_realistic-S1-s30571-delegation_failure-cmp"
+}

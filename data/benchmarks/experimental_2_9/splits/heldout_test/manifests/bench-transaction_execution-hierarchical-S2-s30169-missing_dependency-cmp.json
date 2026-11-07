@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "validator",
+    "pricing",
+    "settlement",
+    "risk",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "validator-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "756ab7273f5f29b233ae50095d6722066fe26df2957725c4fde382bf1b596e01",
+  "expected_event_count": 100,
+  "fault_types": [
+    "missing_dependency"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": true,
+  "intervention_count": 1,
+  "notes": [
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|hierarchical|S2|transaction_execution|missing_dependency|r0|c159",
+    "base_seed=30168"
+  ],
+  "outcome_event_ids": [
+    "bench-transaction_execution-hierarchical-S2-s30169-missing_dependency-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "transaction_execution",
+  "seed": 30169,
+  "topology_id": "hierarchical",
+  "trace_id": "bench-transaction_execution-hierarchical-S2-s30169-missing_dependency-cmp"
+}

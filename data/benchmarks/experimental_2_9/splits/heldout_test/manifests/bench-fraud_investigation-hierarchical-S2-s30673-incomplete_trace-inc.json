@@ -1,0 +1,44 @@
+{
+  "actual_event_count": 99,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "investigator",
+    "analyst",
+    "osint",
+    "risk",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "investigator-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "79f8ba8963db791fce50349f9f3e7985ebe0ff36488296875aabc82ecbeb4ab4",
+  "expected_event_count": 100,
+  "fault_types": [
+    "incomplete_trace"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": true,
+  "intervention_count": 1,
+  "notes": [
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "incomplete_trace removed bench-fraud_investigation-hierarchical-S2-s30673-incomplete_trace-inc:e0049",
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|hierarchical|S2|fraud_investigation|incomplete_trace|r0|c411",
+    "base_seed=30672"
+  ],
+  "outcome_event_ids": [
+    "bench-fraud_investigation-hierarchical-S2-s30673-incomplete_trace-inc:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "fraud_investigation",
+  "seed": 30673,
+  "topology_id": "hierarchical",
+  "trace_id": "bench-fraud_investigation-hierarchical-S2-s30673-incomplete_trace-inc"
+}

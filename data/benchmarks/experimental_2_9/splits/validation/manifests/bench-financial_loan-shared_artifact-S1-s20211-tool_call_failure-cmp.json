@@ -1,0 +1,38 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "risk",
+    "policy"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "b71dc8edde9a5a31da8613e8334f3c93c476a4601f7a94fd1a589a8555be747a",
+  "expected_event_count": 50,
+  "fault_types": [
+    "tool_call_failure"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "explicit shared artifacts consumed by multiple agents",
+    "explicit shared artifacts consumed by multiple agents",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|shared_artifact|S1|financial_loan|tool_call_failure|r0|c150",
+    "base_seed=20210"
+  ],
+  "outcome_event_ids": [
+    "bench-financial_loan-shared_artifact-S1-s20211-tool_call_failure-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "financial_loan",
+  "seed": 20211,
+  "topology_id": "shared_artifact",
+  "trace_id": "bench-financial_loan-shared_artifact-S1-s20211-tool_call_failure-cmp"
+}

@@ -1,0 +1,38 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "auditor",
+    "researcher",
+    "reviewer",
+    "executor"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "d1edb999710fe738318601b8bf47aae6f0e4dd222319ac6534166c55344fd52a",
+  "expected_event_count": 50,
+  "fault_types": [
+    "tool_call_failure"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|hierarchical|S1|compliance_review|tool_call_failure|r0|c142",
+    "base_seed=20194"
+  ],
+  "outcome_event_ids": [
+    "bench-compliance_review-hierarchical-S1-s20195-tool_call_failure-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "compliance_review",
+  "seed": 20195,
+  "topology_id": "hierarchical",
+  "trace_id": "bench-compliance_review-hierarchical-S1-s20195-tool_call_failure-cmp"
+}

@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "analyst",
+    "writer",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "planner-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "d1f439029ea294f640bf4b03772317ed0268e1bc320874d8d77ead4e68cc3669",
+  "expected_event_count": 100,
+  "fault_types": [
+    "incorrect_tool_output"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "explicit shared artifacts consumed by multiple agents",
+    "explicit shared artifacts consumed by multiple agents",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|shared_artifact|S2|research_synthesis|incorrect_tool_output|r0|c128",
+    "base_seed=20166"
+  ],
+  "outcome_event_ids": [
+    "bench-research_synthesis-shared_artifact-S2-s20167-incorrect_tool_output-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "research_synthesis",
+  "seed": 20167,
+  "topology_id": "shared_artifact",
+  "trace_id": "bench-research_synthesis-shared_artifact-S2-s20167-incorrect_tool_output-cmp"
+}

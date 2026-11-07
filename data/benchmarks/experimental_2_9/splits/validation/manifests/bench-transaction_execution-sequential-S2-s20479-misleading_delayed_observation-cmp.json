@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "validator",
+    "pricing",
+    "settlement",
+    "risk",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "validator-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "d4d39111a345b24664e002617c97fe4be060b0a2e50ec741f08ce710a4a15994",
+  "expected_event_count": 100,
+  "fault_types": [
+    "misleading_delayed_observation"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "linear chain; each step depends on previous",
+    "linear chain; each step depends on previous",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|sequential|S2|transaction_execution|misleading_delayed_observation|r0|c284",
+    "base_seed=20478"
+  ],
+  "outcome_event_ids": [
+    "bench-transaction_execution-sequential-S2-s20479-misleading_delayed_observation-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "transaction_execution",
+  "seed": 20479,
+  "topology_id": "sequential",
+  "trace_id": "bench-transaction_execution-sequential-S2-s20479-misleading_delayed_observation-cmp"
+}

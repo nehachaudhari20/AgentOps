@@ -1,0 +1,39 @@
+{
+  "actual_event_count": 49,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "validator",
+    "pricing",
+    "settlement",
+    "risk"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "203ac65426625053f74e0edbeb84f2f16f4ea63a5f260e1308cbb43ed9f6a594",
+  "expected_event_count": 50,
+  "fault_types": [
+    "incomplete_trace"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": true,
+  "intervention_count": 1,
+  "notes": [
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "incomplete_trace removed bench-transaction_execution-mixed_realistic-S1-s10249-incomplete_trace-inc:e0024",
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=development",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=development|mixed_realistic|S1|transaction_execution|incomplete_trace|r0|c154",
+    "base_seed=10248"
+  ],
+  "outcome_event_ids": [
+    "bench-transaction_execution-mixed_realistic-S1-s10249-incomplete_trace-inc:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "transaction_execution",
+  "seed": 10249,
+  "topology_id": "mixed_realistic",
+  "trace_id": "bench-transaction_execution-mixed_realistic-S1-s10249-incomplete_trace-inc"
+}

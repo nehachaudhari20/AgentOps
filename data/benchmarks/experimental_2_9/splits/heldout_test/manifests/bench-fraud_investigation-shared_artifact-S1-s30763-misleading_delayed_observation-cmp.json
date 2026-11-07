@@ -1,0 +1,38 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "investigator",
+    "analyst",
+    "osint",
+    "risk"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "b4082746825331b01a471c92fd8bbd78f9e1006aeb70d5168d5a041d644e4cf9",
+  "expected_event_count": 50,
+  "fault_types": [
+    "misleading_delayed_observation"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "explicit shared artifacts consumed by multiple agents",
+    "explicit shared artifacts consumed by multiple agents",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|shared_artifact|S1|fraud_investigation|misleading_delayed_observation|r0|c456",
+    "base_seed=30762"
+  ],
+  "outcome_event_ids": [
+    "bench-fraud_investigation-shared_artifact-S1-s30763-misleading_delayed_observation-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "fraud_investigation",
+  "seed": 30763,
+  "topology_id": "shared_artifact",
+  "trace_id": "bench-fraud_investigation-shared_artifact-S1-s30763-misleading_delayed_observation-cmp"
+}

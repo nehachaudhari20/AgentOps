@@ -1,0 +1,506 @@
+{
+  "artifacts": [
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0000",
+      "artifact_type": "order",
+      "content_hash": "sha256:07b0851b47f6ed40b798c88462e805cd4e43ed2f30483f4722f4c02acb08a4c2",
+      "metadata": {
+        "step": "s000",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0001",
+      "artifact_type": "quote",
+      "content_hash": "sha256:fcfb6363715e6866462b05f59764c5f97086affa5a0b95e6c787d8b30129e765",
+      "metadata": {
+        "decision": "approve",
+        "step": "s001",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0002",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:c0787563306e2c2529a82b26a977764663c5ef3fa9fd7abc402e61ffb7129d92",
+      "metadata": {
+        "step": "s002",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0003",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:8b8de50f6adf598667ca99ced777403b4f702b84356e4fe90cf381990b73d0d7",
+      "metadata": {
+        "decision": "reject",
+        "step": "s003",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0004",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:4c6551fac662225f56dfe2deb8f909741630134a116b84774dfd9bd27ce255ba",
+      "metadata": {
+        "step": "s004",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0005",
+      "artifact_type": "order",
+      "content_hash": "sha256:5eabb31e3c1fdbbdf47911ea6128612736d4734daaee785a3c30b934c14c84cf",
+      "metadata": {
+        "step": "s005",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0006",
+      "artifact_type": "quote",
+      "content_hash": "sha256:48801c4f30f3310c543fff1c7b5f16982ccb7a2fc21c14da6c585839c6e30f33",
+      "metadata": {
+        "step": "s006",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0007",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:d002b59b2cee7b9b44b8474b807af1e199453de88647a79c2c3c1a3c18b0035b",
+      "metadata": {
+        "step": "s007",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0008",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:0e5d7be7afd86bd9a9aeb69cdab73babe1bd0b7af7daace71393b3e1ff4bcb65",
+      "metadata": {
+        "step": "s008",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0009",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:97505c288314eca87c89fb7c2932be1f56aa5ebbb3036c2add8ea4cccdf7e6dd",
+      "metadata": {
+        "step": "s009",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0010",
+      "artifact_type": "order",
+      "content_hash": "sha256:ee9bae33d69e8162168e3926233989b08eed9b3a29ea84419246787023f1172f",
+      "metadata": {
+        "step": "s010",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0011",
+      "artifact_type": "quote",
+      "content_hash": "sha256:1380855c5d792a2925ef39fcaab4fadd23bf1926157f3af8954a3d5e1d651780",
+      "metadata": {
+        "step": "s011",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0012",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:91ec8b5fa7ab742e1136b24c6733ce38176a635d368e6c8e76147bc32573f1c5",
+      "metadata": {
+        "step": "s012",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0013",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:a8b9ce0e49cc440f62bdc53b5caf46dc0dec51aea44ca5f6007aea5b01fd672f",
+      "metadata": {
+        "step": "s013",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0014",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:c0c0477adcb0052228bca84cfbd9eadaa954f7c973685f9f3064298682e5e6c9",
+      "metadata": {
+        "step": "s014",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0015",
+      "artifact_type": "order",
+      "content_hash": "sha256:f9cb2af64595fd8f7d04ea21b88ca9a6f092e1bcdfe72aa6161aa18179e01820",
+      "metadata": {
+        "step": "s015",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0016",
+      "artifact_type": "quote",
+      "content_hash": "sha256:8274797682fa3ee0b73c742bb1b9c635a6992d69a284544a280801edb67d496a",
+      "metadata": {
+        "step": "s016",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0017",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:98e7b8006026455a75359474c123fc3e35ecfd5ddd5732c528fa3851aaa888f8",
+      "metadata": {
+        "step": "s017",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0018",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:cf321d59eb1b0dfcea3c42384f6ea7916a5e343b8a2862e80899c756e1176a79",
+      "metadata": {
+        "step": "s018",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0019",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:3c3f20562d518a01a76d917d0e43a9b375c9ef1d9489cbccc98494c170bd1b59",
+      "metadata": {
+        "step": "s019",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0020",
+      "artifact_type": "order",
+      "content_hash": "sha256:7b6cc6c4f87800019e606e22bee886f9213ba43853f7223a3cda545e2f67aedc",
+      "metadata": {
+        "step": "s020",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0021",
+      "artifact_type": "quote",
+      "content_hash": "sha256:e8d191c31830353f376482092830b2af38ad2ad34c7d77b3b537b24c6ce72abc",
+      "metadata": {
+        "step": "s021",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0022",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:d8280bd2c21d775938b681df731709cb5984fb640fcef968579985ff342b37d1",
+      "metadata": {
+        "step": "s022",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0023",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:23e67e86bd21a3cd7529ed2e986664aa350f0c612ad6704ce772868ec805d0f9",
+      "metadata": {
+        "step": "s023",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0024",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:fc4364bd014b867b0009e760f0241172cde71247048d76a3a9c4d6e09968ddea",
+      "metadata": {
+        "step": "s024",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0025",
+      "artifact_type": "order",
+      "content_hash": "sha256:e89192a4abcb50e57c2fc48d26c4d44740465a766964540b0d676b396fce27cb",
+      "metadata": {
+        "step": "s025",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0026",
+      "artifact_type": "quote",
+      "content_hash": "sha256:a68fcfff325cfebfea00ac13dabe448577479211e137419c9e87ce283404346d",
+      "metadata": {
+        "step": "s026",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0027",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:4e3b721e432cd8bd3bec2ca636edf6ba8fc4585fb1edb5b8bd0bac8c47b8716b",
+      "metadata": {
+        "step": "s027",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0028",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:7d217df34bcd2ebd568cb7ba5f0154e577adb899fe84ce8cbeacc877137277f3",
+      "metadata": {
+        "step": "s028",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0029",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:39a658722b841a8e971292e933df45cd7b303672e60e4c4048efdd6bac225f89",
+      "metadata": {
+        "step": "s029",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0030",
+      "artifact_type": "order",
+      "content_hash": "sha256:aebb504ef633cd551ef6b5d444712f4c31eb4a0f09ebee94dd0b67aaa87bdd35",
+      "metadata": {
+        "step": "s030",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0031",
+      "artifact_type": "quote",
+      "content_hash": "sha256:177a42241c1fb51ca36293d5d6f39129f186643b4427e14ccf06e8e5aa7a853f",
+      "metadata": {
+        "step": "s031",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0032",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:79b3b05bfedce8decce492ae71a9b0b862c356163aed8288ed950aefe7526d2d",
+      "metadata": {
+        "step": "s032",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0033",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:b011a413720314bc0b3e062d61609473f74413c7695b3ebd2ac67283e6c87f2e",
+      "metadata": {
+        "step": "s033",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0034",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:e217eb50c5eb29cb1b7da220fafe678451895473aee9ca38d68ae43186a6a69b",
+      "metadata": {
+        "step": "s034",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0035",
+      "artifact_type": "order",
+      "content_hash": "sha256:b237a3621b732f0a49574f599c6f7cd5028301cdc73795a17b72ea23d845da3e",
+      "metadata": {
+        "step": "s035",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0036",
+      "artifact_type": "quote",
+      "content_hash": "sha256:81c0178e87256f700b0870abc55233aa9eb15936525c1c8808c11a574cc7ed21",
+      "metadata": {
+        "step": "s036",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0037",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:a42c12758569a2e3e32d2f2f67064dc1c07c2183022009288f8194b7d780b508",
+      "metadata": {
+        "step": "s037",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0038",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:e19f6f886a619df3dbec5bc9b94299ff1b3407218e79c5dcb6bd401827a3cedf",
+      "metadata": {
+        "step": "s038",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0039",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:6b5982762e6e67cc530c5bd5d4802cc9632b930df3e268ed913ba2b2059115b1",
+      "metadata": {
+        "step": "s039",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0040",
+      "artifact_type": "order",
+      "content_hash": "sha256:976cbb7ecbf8431c5ffc5d63eaedafc66d6ce34766a6785e0f4c6350e7b4a6fd",
+      "metadata": {
+        "step": "s040",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0041",
+      "artifact_type": "quote",
+      "content_hash": "sha256:6b9809c59aacb9bde97c4cd29f8318e873685fb16b40d7f4e734539560b47884",
+      "metadata": {
+        "step": "s041",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0042",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:f803172d26b83bec364780a7557d991edd29f41cd30365eb2d3af5127d558cf7",
+      "metadata": {
+        "step": "s042",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0043",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:c8d8520a24c8fd018486f48c7ad41b3fab61a673b92cad53abe0002a9c9e7721",
+      "metadata": {
+        "step": "s043",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0044",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:d9c4ddb2e08189b704b287db12c1ef88ed27f15de91598e914026b9c64917726",
+      "metadata": {
+        "step": "s044",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0045",
+      "artifact_type": "order",
+      "content_hash": "sha256:5cf7b0b8efe6f8a7fc59a80fd4c0ef01e03c4495d6ad86a175197900596622b3",
+      "metadata": {
+        "step": "s045",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0046",
+      "artifact_type": "quote",
+      "content_hash": "sha256:6f5ac02d587ddde754830d06c30da4d84b58d666796905fe2385d103ef62382d",
+      "metadata": {
+        "step": "s046",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0047",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:c97618c2328b25784c3171cd4a0f02e2693b90b2f33006b20520f1aaf35fbf6b",
+      "metadata": {
+        "step": "s047",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0048",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:cccbe9eeb4268c795761477c88765aeb59662132f4eadb6cde3ad19e5b02c99b",
+      "metadata": {
+        "step": "s048",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp:a0049",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:17a43aea1e915bf6dde434c04277784d467957e0069534a9c7e0e5d81fd2f054",
+      "metadata": {
+        "step": "s049",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    }
+  ]
+}

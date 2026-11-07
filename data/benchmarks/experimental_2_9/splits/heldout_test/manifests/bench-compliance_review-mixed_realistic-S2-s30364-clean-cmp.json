@@ -1,0 +1,41 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "auditor",
+    "researcher",
+    "reviewer",
+    "executor",
+    "memory",
+    "tool_runner",
+    "risk",
+    "coordinator-1",
+    "auditor-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "d3bfc986f4560a95fdac75c37c2ae2c74f92f5b8cb1f80e4dec7028de2d6b10e",
+  "expected_event_count": 100,
+  "fault_types": [],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_clean",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|mixed_realistic|S2|compliance_review|tool_call_failure|r2|c257",
+    "base_seed=30364"
+  ],
+  "outcome_event_ids": [
+    "bench-compliance_review-mixed_realistic-S2-s30364-clean-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "compliance_review",
+  "seed": 30364,
+  "topology_id": "mixed_realistic",
+  "trace_id": "bench-compliance_review-mixed_realistic-S2-s30364-clean-cmp"
+}

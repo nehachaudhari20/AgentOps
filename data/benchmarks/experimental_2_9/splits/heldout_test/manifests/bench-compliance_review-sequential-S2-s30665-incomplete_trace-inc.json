@@ -1,0 +1,44 @@
+{
+  "actual_event_count": 99,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "auditor",
+    "researcher",
+    "reviewer",
+    "executor",
+    "memory",
+    "tool_runner",
+    "risk",
+    "coordinator-1",
+    "auditor-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "c95ded1a0bf5af2693e23e67e7445aafa09c481fd886c312514913a97e2fda3e",
+  "expected_event_count": 100,
+  "fault_types": [
+    "incomplete_trace"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": true,
+  "intervention_count": 1,
+  "notes": [
+    "linear chain; each step depends on previous",
+    "incomplete_trace removed bench-compliance_review-sequential-S2-s30665-incomplete_trace-inc:e0049",
+    "linear chain; each step depends on previous",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|sequential|S2|compliance_review|incomplete_trace|r2|c407",
+    "base_seed=30664"
+  ],
+  "outcome_event_ids": [
+    "bench-compliance_review-sequential-S2-s30665-incomplete_trace-inc:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "compliance_review",
+  "seed": 30665,
+  "topology_id": "sequential",
+  "trace_id": "bench-compliance_review-sequential-S2-s30665-incomplete_trace-inc"
+}

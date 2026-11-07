@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "validator",
+    "pricing",
+    "settlement",
+    "risk",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "validator-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "371aac2072e1075a1b99d13ca985080bb98a9b6c3762d66959ba50aeb1c905a8",
+  "expected_event_count": 100,
+  "fault_types": [
+    "artifact_corruption"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|parallel_fanout_fanin|S2|transaction_execution|artifact_corruption|r1|c274",
+    "base_seed=30398"
+  ],
+  "outcome_event_ids": [
+    "bench-transaction_execution-parallel_fanout_fanin-S2-s30399-artifact_corruption-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "transaction_execution",
+  "seed": 30399,
+  "topology_id": "parallel_fanout_fanin",
+  "trace_id": "bench-transaction_execution-parallel_fanout_fanin-S2-s30399-artifact_corruption-cmp"
+}

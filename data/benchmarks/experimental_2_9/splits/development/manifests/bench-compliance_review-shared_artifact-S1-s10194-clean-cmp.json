@@ -1,0 +1,36 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "auditor",
+    "researcher",
+    "reviewer",
+    "executor"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "7008f439c1a2a999a447aa590b8444f36276c0d2464ea00410c27979fdb740d8",
+  "expected_event_count": 50,
+  "fault_types": [],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "explicit shared artifacts consumed by multiple agents",
+    "explicit shared artifacts consumed by multiple agents",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=development",
+    "role=pair_clean",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=development|shared_artifact|S1|compliance_review|delegation_failure|r1|c127",
+    "base_seed=10194"
+  ],
+  "outcome_event_ids": [
+    "bench-compliance_review-shared_artifact-S1-s10194-clean-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "compliance_review",
+  "seed": 10194,
+  "topology_id": "shared_artifact",
+  "trace_id": "bench-compliance_review-shared_artifact-S1-s10194-clean-cmp"
+}

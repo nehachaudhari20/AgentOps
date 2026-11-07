@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "investigator",
+    "analyst",
+    "osint",
+    "risk",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "investigator-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "b069bf5c2740716852de8dbce4734f94b7f24d24db9834f6e29742514a52fc99",
+  "expected_event_count": 100,
+  "fault_types": [
+    "delegation_failure"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "explicit shared artifacts consumed by multiple agents",
+    "explicit shared artifacts consumed by multiple agents",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|shared_artifact|S2|fraud_investigation|delegation_failure|r0|c351",
+    "base_seed=30552"
+  ],
+  "outcome_event_ids": [
+    "bench-fraud_investigation-shared_artifact-S2-s30553-delegation_failure-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "fraud_investigation",
+  "seed": 30553,
+  "topology_id": "shared_artifact",
+  "trace_id": "bench-fraud_investigation-shared_artifact-S2-s30553-delegation_failure-cmp"
+}

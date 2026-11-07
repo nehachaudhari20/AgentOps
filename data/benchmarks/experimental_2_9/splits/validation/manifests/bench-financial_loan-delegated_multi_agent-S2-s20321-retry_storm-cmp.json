@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 104,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "risk",
+    "policy",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "planner-1"
+  ],
+  "artifact_count": 104,
+  "config_fingerprint": "e02727e2f872e0c1be050f574a124b072a14cf84bbe48c7af24a47b5f0bfca2f",
+  "expected_event_count": 101,
+  "fault_types": [
+    "retry_storm"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "multi-level INVOKES delegation; callers depend on callees",
+    "multi-level INVOKES delegation; callers depend on callees",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|delegated_multi_agent|S2|financial_loan|retry_storm|r1|c205",
+    "base_seed=20320"
+  ],
+  "outcome_event_ids": [
+    "bench-financial_loan-delegated_multi_agent-S2-s20321-retry_storm-cmp:e0100"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "financial_loan",
+  "seed": 20321,
+  "topology_id": "delegated_multi_agent",
+  "trace_id": "bench-financial_loan-delegated_multi_agent-S2-s20321-retry_storm-cmp"
+}

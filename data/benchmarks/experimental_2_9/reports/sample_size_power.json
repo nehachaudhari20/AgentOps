@@ -1,0 +1,156 @@
+{
+  "alpha": 0.05,
+  "decision": "Adopt held-out n_pairs=72 for \u0394=0.20 primary contrast; \u0394\u22640.10 and high-ceiling p0 treated as exploratory/precision-based.",
+  "derivation": "2 faults \u00d7 6 topologies \u00d7 2 scales \u00d7 3 replicates = 72",
+  "heldout_incompleteness_pairs": 72,
+  "pilot_limitation": "Historical pilot has only 2 incomplete traces; variance uncertain. Sensitivity grid required.",
+  "preferred_power": 0.9,
+  "primary_endpoint": "Paired incompleteness contrast success rate (incomplete_trace / missing_dependency vs matched clean)",
+  "primary_planning_cell": {
+    "alpha": 0.05,
+    "delta": 0.2,
+    "meets_80": true,
+    "meets_90": false,
+    "n_pairs": 72,
+    "n_sims": 10000,
+    "p0": 0.7,
+    "p1": 0.8999999999999999,
+    "power": 0.8691
+  },
+  "report_version": "2.9.0",
+  "simulation_grid": [
+    {
+      "alpha": 0.05,
+      "delta": 0.1,
+      "meets_80": false,
+      "meets_90": false,
+      "n_pairs": 72,
+      "n_sims": 10000,
+      "p0": 0.5,
+      "p1": 0.6,
+      "power": 0.2366
+    },
+    {
+      "alpha": 0.05,
+      "delta": 0.15,
+      "meets_80": false,
+      "meets_90": false,
+      "n_pairs": 72,
+      "n_sims": 10000,
+      "p0": 0.5,
+      "p1": 0.65,
+      "power": 0.4476
+    },
+    {
+      "alpha": 0.05,
+      "delta": 0.2,
+      "meets_80": false,
+      "meets_90": false,
+      "n_pairs": 72,
+      "n_sims": 10000,
+      "p0": 0.5,
+      "p1": 0.7,
+      "power": 0.694
+    },
+    {
+      "alpha": 0.05,
+      "delta": 0.3,
+      "meets_80": true,
+      "meets_90": true,
+      "n_pairs": 72,
+      "n_sims": 10000,
+      "p0": 0.5,
+      "p1": 0.8,
+      "power": 0.9711
+    },
+    {
+      "alpha": 0.05,
+      "delta": 0.1,
+      "meets_80": false,
+      "meets_90": false,
+      "n_pairs": 72,
+      "n_sims": 10000,
+      "p0": 0.7,
+      "p1": 0.7999999999999999,
+      "power": 0.2865
+    },
+    {
+      "alpha": 0.05,
+      "delta": 0.15,
+      "meets_80": false,
+      "meets_90": false,
+      "n_pairs": 72,
+      "n_sims": 10000,
+      "p0": 0.7,
+      "p1": 0.85,
+      "power": 0.5893
+    },
+    {
+      "alpha": 0.05,
+      "delta": 0.2,
+      "meets_80": true,
+      "meets_90": false,
+      "n_pairs": 72,
+      "n_sims": 10000,
+      "p0": 0.7,
+      "p1": 0.8999999999999999,
+      "power": 0.8691
+    },
+    {
+      "alpha": 0.05,
+      "delta": 0.3,
+      "meets_80": true,
+      "meets_90": true,
+      "n_pairs": 72,
+      "n_sims": 10000,
+      "p0": 0.7,
+      "p1": 1.0,
+      "power": 1.0
+    },
+    {
+      "alpha": 0.05,
+      "delta": 0.1,
+      "meets_80": false,
+      "meets_90": false,
+      "n_pairs": 72,
+      "n_sims": 10000,
+      "p0": 0.85,
+      "p1": 0.95,
+      "power": 0.5443
+    },
+    {
+      "alpha": 0.05,
+      "delta": 0.15,
+      "meets_80": true,
+      "meets_90": true,
+      "n_pairs": 72,
+      "n_sims": 10000,
+      "p0": 0.85,
+      "p1": 1.0,
+      "power": 0.9959
+    },
+    {
+      "alpha": 0.05,
+      "delta": 0.2,
+      "meets_80": true,
+      "meets_90": true,
+      "n_pairs": 72,
+      "n_sims": 10000,
+      "p0": 0.85,
+      "p1": 1.0,
+      "power": 0.9974
+    },
+    {
+      "alpha": 0.05,
+      "delta": 0.3,
+      "meets_80": true,
+      "meets_90": true,
+      "n_pairs": 72,
+      "n_sims": 10000,
+      "p0": 0.85,
+      "p1": 1.0,
+      "power": 0.9967
+    }
+  ],
+  "target_power": 0.8
+}

@@ -1,0 +1,39 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "analyst",
+    "writer"
+  ],
+  "artifact_count": 51,
+  "config_fingerprint": "256c53dd55df1a10f0dead31139c16af554d877ba05105e5b7f4ba11e8cb3d3d",
+  "expected_event_count": 51,
+  "fault_types": [
+    "incomplete_trace"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": true,
+  "intervention_count": 1,
+  "notes": [
+    "multi-level INVOKES delegation; callers depend on callees",
+    "incomplete_trace removed bench-research_synthesis-delegated_multi_agent-S1-s10247-incomplete_trace-inc:e0025",
+    "multi-level INVOKES delegation; callers depend on callees",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=development",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=development|delegated_multi_agent|S1|research_synthesis|incomplete_trace|r1|c153",
+    "base_seed=10246"
+  ],
+  "outcome_event_ids": [
+    "bench-research_synthesis-delegated_multi_agent-S1-s10247-incomplete_trace-inc:e0050"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "research_synthesis",
+  "seed": 10247,
+  "topology_id": "delegated_multi_agent",
+  "trace_id": "bench-research_synthesis-delegated_multi_agent-S1-s10247-incomplete_trace-inc"
+}

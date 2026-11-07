@@ -1,0 +1,39 @@
+{
+  "actual_event_count": 49,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "auditor",
+    "researcher",
+    "reviewer",
+    "executor"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "9fc5363683b8ca4f52c7b359bd8dec09945d5122466a55b8ade8a8eb1c83ee7c",
+  "expected_event_count": 50,
+  "fault_types": [
+    "incomplete_trace"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": true,
+  "intervention_count": 1,
+  "notes": [
+    "explicit shared artifacts consumed by multiple agents",
+    "incomplete_trace removed bench-compliance_review-shared_artifact-S1-s30695-incomplete_trace-inc:e0024",
+    "explicit shared artifacts consumed by multiple agents",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|shared_artifact|S1|compliance_review|incomplete_trace|r2|c422",
+    "base_seed=30694"
+  ],
+  "outcome_event_ids": [
+    "bench-compliance_review-shared_artifact-S1-s30695-incomplete_trace-inc:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "compliance_review",
+  "seed": 30695,
+  "topology_id": "shared_artifact",
+  "trace_id": "bench-compliance_review-shared_artifact-S1-s30695-incomplete_trace-inc"
+}

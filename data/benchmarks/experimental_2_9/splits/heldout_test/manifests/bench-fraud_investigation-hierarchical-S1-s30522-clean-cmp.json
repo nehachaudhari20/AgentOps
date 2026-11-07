@@ -1,0 +1,36 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "investigator",
+    "analyst",
+    "osint",
+    "risk"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "94cdb634b498a2e443be783bfc33021cd03f9d5b1d2bf97e3b669b2bd3b5c618",
+  "expected_event_count": 50,
+  "fault_types": [],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_clean",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|hierarchical|S1|fraud_investigation|delegation_failure|r0|c336",
+    "base_seed=30522"
+  ],
+  "outcome_event_ids": [
+    "bench-fraud_investigation-hierarchical-S1-s30522-clean-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "fraud_investigation",
+  "seed": 30522,
+  "topology_id": "hierarchical",
+  "trace_id": "bench-fraud_investigation-hierarchical-S1-s30522-clean-cmp"
+}

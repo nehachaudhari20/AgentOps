@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "analyst",
+    "writer",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "planner-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "2a22fff9c38aacabc959452d3549f9aade76cf64f20df926057c2c6327ed7a8e",
+  "expected_event_count": 100,
+  "fault_types": [
+    "tool_call_failure"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "explicit shared artifacts consumed by multiple agents",
+    "explicit shared artifacts consumed by multiple agents",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|shared_artifact|S2|research_synthesis|tool_call_failure|r1|c153",
+    "base_seed=20216"
+  ],
+  "outcome_event_ids": [
+    "bench-research_synthesis-shared_artifact-S2-s20217-tool_call_failure-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "research_synthesis",
+  "seed": 20217,
+  "topology_id": "shared_artifact",
+  "trace_id": "bench-research_synthesis-shared_artifact-S2-s20217-tool_call_failure-cmp"
+}

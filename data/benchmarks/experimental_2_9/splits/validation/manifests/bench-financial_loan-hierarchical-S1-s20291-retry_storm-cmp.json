@@ -1,0 +1,38 @@
+{
+  "actual_event_count": 53,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "risk",
+    "policy"
+  ],
+  "artifact_count": 53,
+  "config_fingerprint": "76c04125df5120bf42c79bee9eee1f70c4d0b1cb373d532f3cc9b99c10557054",
+  "expected_event_count": 50,
+  "fault_types": [
+    "retry_storm"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|hierarchical|S1|financial_loan|retry_storm|r0|c190",
+    "base_seed=20290"
+  ],
+  "outcome_event_ids": [
+    "bench-financial_loan-hierarchical-S1-s20291-retry_storm-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "financial_loan",
+  "seed": 20291,
+  "topology_id": "hierarchical",
+  "trace_id": "bench-financial_loan-hierarchical-S1-s20291-retry_storm-cmp"
+}

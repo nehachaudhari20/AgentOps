@@ -1,0 +1,44 @@
+{
+  "actual_event_count": 99,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "validator",
+    "pricing",
+    "settlement",
+    "risk",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "validator-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "6700d9634095e181275585c90dc724311b989086f459b71a9d76883ae340dbfd",
+  "expected_event_count": 100,
+  "fault_types": [
+    "incomplete_trace"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": true,
+  "intervention_count": 1,
+  "notes": [
+    "explicit shared artifacts consumed by multiple agents",
+    "incomplete_trace removed bench-transaction_execution-shared_artifact-S2-s30699-incomplete_trace-inc:e0049",
+    "explicit shared artifacts consumed by multiple agents",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|shared_artifact|S2|transaction_execution|incomplete_trace|r1|c424",
+    "base_seed=30698"
+  ],
+  "outcome_event_ids": [
+    "bench-transaction_execution-shared_artifact-S2-s30699-incomplete_trace-inc:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "transaction_execution",
+  "seed": 30699,
+  "topology_id": "shared_artifact",
+  "trace_id": "bench-transaction_execution-shared_artifact-S2-s30699-incomplete_trace-inc"
+}

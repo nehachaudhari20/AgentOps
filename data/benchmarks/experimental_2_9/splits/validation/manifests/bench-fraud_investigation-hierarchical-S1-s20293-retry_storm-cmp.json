@@ -1,0 +1,38 @@
+{
+  "actual_event_count": 53,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "investigator",
+    "analyst",
+    "osint",
+    "risk"
+  ],
+  "artifact_count": 53,
+  "config_fingerprint": "1773db712dc4c2f0b896f12de17ddcaefb96dd147ad89a0d5830000019a7b9dd",
+  "expected_event_count": 50,
+  "fault_types": [
+    "retry_storm"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|hierarchical|S1|fraud_investigation|retry_storm|r1|c191",
+    "base_seed=20292"
+  ],
+  "outcome_event_ids": [
+    "bench-fraud_investigation-hierarchical-S1-s20293-retry_storm-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "fraud_investigation",
+  "seed": 20293,
+  "topology_id": "hierarchical",
+  "trace_id": "bench-fraud_investigation-hierarchical-S1-s20293-retry_storm-cmp"
+}

@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "auditor",
+    "researcher",
+    "reviewer",
+    "executor",
+    "memory",
+    "tool_runner",
+    "risk",
+    "coordinator-1",
+    "auditor-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "7a7c3f3ed29adb6a81cd980d5dc8516e3cd2a70296f2b3755847a8ded24e8c94",
+  "expected_event_count": 100,
+  "fault_types": [
+    "misleading_delayed_observation"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|hierarchical|S2|compliance_review|misleading_delayed_observation|r0|c447",
+    "base_seed=30744"
+  ],
+  "outcome_event_ids": [
+    "bench-compliance_review-hierarchical-S2-s30745-misleading_delayed_observation-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "compliance_review",
+  "seed": 30745,
+  "topology_id": "hierarchical",
+  "trace_id": "bench-compliance_review-hierarchical-S2-s30745-misleading_delayed_observation-cmp"
+}

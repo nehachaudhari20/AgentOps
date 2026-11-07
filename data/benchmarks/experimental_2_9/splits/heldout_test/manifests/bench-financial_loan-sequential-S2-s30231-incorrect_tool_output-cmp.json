@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "risk",
+    "policy",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "planner-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "ba73a5300cddb4d82449ef671f4afb78453a879712704c77287ea5d8987e8f98",
+  "expected_event_count": 100,
+  "fault_types": [
+    "incorrect_tool_output"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "linear chain; each step depends on previous",
+    "linear chain; each step depends on previous",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|sequential|S2|financial_loan|incorrect_tool_output|r1|c190",
+    "base_seed=30230"
+  ],
+  "outcome_event_ids": [
+    "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "financial_loan",
+  "seed": 30231,
+  "topology_id": "sequential",
+  "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp"
+}

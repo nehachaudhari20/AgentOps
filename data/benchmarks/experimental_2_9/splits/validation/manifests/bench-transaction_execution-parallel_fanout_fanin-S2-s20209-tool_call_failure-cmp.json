@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "validator",
+    "pricing",
+    "settlement",
+    "risk",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "validator-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "519ea1b4345c410ed887f0f70bbf830e27bb4cb511fa7d75087e4a108e35e791",
+  "expected_event_count": 100,
+  "fault_types": [
+    "tool_call_failure"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|parallel_fanout_fanin|S2|transaction_execution|tool_call_failure|r1|c149",
+    "base_seed=20208"
+  ],
+  "outcome_event_ids": [
+    "bench-transaction_execution-parallel_fanout_fanin-S2-s20209-tool_call_failure-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "transaction_execution",
+  "seed": 20209,
+  "topology_id": "parallel_fanout_fanin",
+  "trace_id": "bench-transaction_execution-parallel_fanout_fanin-S2-s20209-tool_call_failure-cmp"
+}

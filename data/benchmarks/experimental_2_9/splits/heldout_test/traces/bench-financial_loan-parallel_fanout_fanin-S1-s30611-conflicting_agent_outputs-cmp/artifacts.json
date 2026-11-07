@@ -1,0 +1,496 @@
+{
+  "artifacts": [
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0000",
+      "artifact_type": "prompt",
+      "content_hash": "sha256:b0cf2c65b7f726fc173090b75a867b745ef09e44050fd457198a14cc6a2a6a2f",
+      "metadata": {
+        "step": "s000",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0001",
+      "artifact_type": "policy_doc",
+      "content_hash": "sha256:93fccf234cd928a9791f896cd87ecc059f737529dd746d1cc7d3c3a21149b3fb",
+      "metadata": {
+        "decision": "approve",
+        "step": "s001",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0002",
+      "artifact_type": "financial_summary",
+      "content_hash": "sha256:0deecc0ec0159dca28ebd46cc5f7b767f77342670e0dcfeba692b102a7abb6fa",
+      "metadata": {
+        "step": "s002",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0003",
+      "artifact_type": "risk_report",
+      "content_hash": "sha256:5fbe589b608192166dac82f7d0a4888f0e58e88698766d6b7c1c624c26dc895a",
+      "metadata": {
+        "decision": "reject",
+        "step": "s003",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0004",
+      "artifact_type": "decision",
+      "content_hash": "sha256:1ea86cf7671cbc1df8abd6539ce57ee6dc63995e368781c3222670b9c8c620f5",
+      "metadata": {
+        "step": "s004",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0005",
+      "artifact_type": "prompt",
+      "content_hash": "sha256:4ca0bf32809b9ed3ef356ad571819dba78ddf0cf70ac9ab5d6258a16e5593341",
+      "metadata": {
+        "step": "s005",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0006",
+      "artifact_type": "policy_doc",
+      "content_hash": "sha256:a4c4f68377835fdad33f1f212d9cd27237a3ce92226de83e7455a20bd445e4a4",
+      "metadata": {
+        "step": "s006",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0007",
+      "artifact_type": "financial_summary",
+      "content_hash": "sha256:e06c321bd63979658f105cc58eada20d2504ce3c4a70650285404a68accfb61a",
+      "metadata": {
+        "step": "s007",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0008",
+      "artifact_type": "risk_report",
+      "content_hash": "sha256:f9b6de5d94acef242a4c8b62041b44c39be22a956a91db50ae7337545d6d4566",
+      "metadata": {
+        "step": "s008",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0009",
+      "artifact_type": "decision",
+      "content_hash": "sha256:49df76e7f0be26ed1dac1fe4ed9c7c6676a9e8c611201a759d3baaffd14872e5",
+      "metadata": {
+        "step": "s009",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0010",
+      "artifact_type": "prompt",
+      "content_hash": "sha256:d6d274dd10b1724be2a3cf38f11de59d0603836a43a42497923f35b312decfbd",
+      "metadata": {
+        "step": "s010",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0011",
+      "artifact_type": "policy_doc",
+      "content_hash": "sha256:a015aed8ff3eb49ad56742019b9c6ae43adbe17732bd5cde16c0eedd1e4385a1",
+      "metadata": {
+        "step": "s011",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0012",
+      "artifact_type": "financial_summary",
+      "content_hash": "sha256:69e50adfce90501207911de43d2db321781cd216683d7d37cecdae6b2e933a2c",
+      "metadata": {
+        "step": "s012",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0013",
+      "artifact_type": "risk_report",
+      "content_hash": "sha256:dde08cde7155c7813618d1fe71f70bc91cc69364f246cdb75fa15244727d3247",
+      "metadata": {
+        "step": "s013",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0014",
+      "artifact_type": "decision",
+      "content_hash": "sha256:3c6278aa5fae8c4cbe164fc2a18f7874524307af0e9e49961ce49d4ddff18ad6",
+      "metadata": {
+        "step": "s014",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0015",
+      "artifact_type": "prompt",
+      "content_hash": "sha256:e700624bf29f73938dbe29ca54ec17e9fe63a5ade2e0879cb6ed4ba0ed3cd71a",
+      "metadata": {
+        "step": "s015",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0016",
+      "artifact_type": "policy_doc",
+      "content_hash": "sha256:085fe6607ca78c1862da338d123fcfa914d91010204a4e228a273f9f022801ee",
+      "metadata": {
+        "step": "s016",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0017",
+      "artifact_type": "financial_summary",
+      "content_hash": "sha256:5f86b48f804e531d9e931e0c3503003a86ed0dcf05fbc48d47abf8ebb704e1a3",
+      "metadata": {
+        "step": "s017",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0018",
+      "artifact_type": "risk_report",
+      "content_hash": "sha256:1b95b6754a47d47f615c7005567a6e8f6167f161b40fd4d353a02ca0100ab103",
+      "metadata": {
+        "step": "s018",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0019",
+      "artifact_type": "decision",
+      "content_hash": "sha256:f0fee1512cb540a1f7a9750b0ea21e1aba9c029952cdd95ab38e5c1bf2240acf",
+      "metadata": {
+        "step": "s019",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0020",
+      "artifact_type": "prompt",
+      "content_hash": "sha256:d04b080be782e89d09ca252013ee87d1143eb18f3fb445a15e6ff12910659904",
+      "metadata": {
+        "step": "s020",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0021",
+      "artifact_type": "policy_doc",
+      "content_hash": "sha256:e9ff2b27afe9cfffe66ad0fd9b8575bc92897dfa161c3f779b3f634df102c47c",
+      "metadata": {
+        "step": "s021",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0022",
+      "artifact_type": "financial_summary",
+      "content_hash": "sha256:f8ca52827a59bcddd0129e7722a5e50ea7ebddd037bd91c97f3a0bbf24378f71",
+      "metadata": {
+        "step": "s022",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0023",
+      "artifact_type": "risk_report",
+      "content_hash": "sha256:ec649a8d3685af6939ee9b35599506b84fe0bb9885e768349e9fc47f4b6c314c",
+      "metadata": {
+        "step": "s023",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0024",
+      "artifact_type": "decision",
+      "content_hash": "sha256:d07a9fbe09c4d984ac161e494e3b713e6b857fdf139454371c38652dcf5388e9",
+      "metadata": {
+        "step": "s024",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0025",
+      "artifact_type": "prompt",
+      "content_hash": "sha256:cd082290ef4525c6068eb7d5cc165f9abb8b602496d643d2739cfd8ed83a5733",
+      "metadata": {
+        "step": "s025",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0026",
+      "artifact_type": "policy_doc",
+      "content_hash": "sha256:87f8a9cb8b62b589dbc83f81db0a69e6755ae30cefb606ebfa5b76f30cac52cc",
+      "metadata": {
+        "step": "s026",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0027",
+      "artifact_type": "financial_summary",
+      "content_hash": "sha256:a7c66550223a9575a2e58e314f423dde06349cbb962c4d129bbe5b5bb83eb723",
+      "metadata": {
+        "step": "s027",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0028",
+      "artifact_type": "risk_report",
+      "content_hash": "sha256:1226238db648b9b6073dce98e5a4991c0099682709a175e946aac21af1607d23",
+      "metadata": {
+        "step": "s028",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0029",
+      "artifact_type": "decision",
+      "content_hash": "sha256:65367058604bc8a5b2d39b63e89b60c3c7749bd7150acae73a9e0e2ad92e7272",
+      "metadata": {
+        "step": "s029",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0030",
+      "artifact_type": "prompt",
+      "content_hash": "sha256:737250f6d3217fd581ed6be6af633e03bd3c396bebd64908fce5fa6b4cc8cfb2",
+      "metadata": {
+        "step": "s030",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0031",
+      "artifact_type": "policy_doc",
+      "content_hash": "sha256:12dd852bd0c9ab5470e02565cd514efce271e7cfff71e62a4844b5557838823b",
+      "metadata": {
+        "step": "s031",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0032",
+      "artifact_type": "financial_summary",
+      "content_hash": "sha256:24d55abfcf00dec12757fbd529f23745b3e1dbd7431ef6242980e8160658dff5",
+      "metadata": {
+        "step": "s032",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0033",
+      "artifact_type": "risk_report",
+      "content_hash": "sha256:fc4299c965665a56d7b94611d052f1ad1eb99738322bd703992ae1490acef3a6",
+      "metadata": {
+        "step": "s033",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0034",
+      "artifact_type": "decision",
+      "content_hash": "sha256:849d309904ddac0bcf63fecfc8807adc78370383e161565ea8305a6637e0b988",
+      "metadata": {
+        "step": "s034",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0035",
+      "artifact_type": "prompt",
+      "content_hash": "sha256:c57a3f274c11663c4a5ad2920b99ede1eb0fa83f1111150fde886d4e3fe204c1",
+      "metadata": {
+        "step": "s035",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0036",
+      "artifact_type": "policy_doc",
+      "content_hash": "sha256:353431b98899ac49ebd2688dbc411e33e6b9cbd0376c6a70aa2912a217dd7e35",
+      "metadata": {
+        "step": "s036",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0037",
+      "artifact_type": "financial_summary",
+      "content_hash": "sha256:b2dcf990c19392a2c00fbf69f286afa41e64d94c2193357b11506ad7466e8ae8",
+      "metadata": {
+        "step": "s037",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0038",
+      "artifact_type": "risk_report",
+      "content_hash": "sha256:7ca13be0280703c44aff71371cafa0eaed698f8b7275b0b8145865c431eb823e",
+      "metadata": {
+        "step": "s038",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0039",
+      "artifact_type": "decision",
+      "content_hash": "sha256:324d57695898906eadefa301a4e433e74bb651081201a8415b10936559b87d5c",
+      "metadata": {
+        "step": "s039",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0040",
+      "artifact_type": "prompt",
+      "content_hash": "sha256:589104b79d5119f2c2c953d094c6620317918e482187e0364c0808bd6af63a9a",
+      "metadata": {
+        "step": "s040",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0041",
+      "artifact_type": "policy_doc",
+      "content_hash": "sha256:f252bc4eeae8a9d55c2f45706b85c277669d3315e326bbf9d62f8215e38e2009",
+      "metadata": {
+        "step": "s041",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0042",
+      "artifact_type": "financial_summary",
+      "content_hash": "sha256:ae6a91a501cbfdc844c9c2e48c6e518dc6625dab00440cd27b996e9e0cc13249",
+      "metadata": {
+        "step": "s042",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0043",
+      "artifact_type": "risk_report",
+      "content_hash": "sha256:91f5002e9190d1bcc11527337b733e35553c64db0acf6034de5b7ed000575dfa",
+      "metadata": {
+        "step": "s043",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0044",
+      "artifact_type": "decision",
+      "content_hash": "sha256:4c0a907532307bb8efea4306eb27274909a8591cee699aa0bd2750d99c9f0414",
+      "metadata": {
+        "step": "s044",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0045",
+      "artifact_type": "prompt",
+      "content_hash": "sha256:3fde06ba33e1ab8e3970ac9b50e02db3ee94259e74cf6d6c10d2727ca8bf3e78",
+      "metadata": {
+        "step": "s045",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0046",
+      "artifact_type": "policy_doc",
+      "content_hash": "sha256:58f103078c5a905a8b0d1ce3347b61ca95eada11b5a43bac6892f70a78229c19",
+      "metadata": {
+        "step": "s046",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0047",
+      "artifact_type": "financial_summary",
+      "content_hash": "sha256:fdfd092f9e68ae518947fc1c0439a81134629abd7d51bedeffd6062a792bfa7d",
+      "metadata": {
+        "step": "s047",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp:a0048",
+      "artifact_type": "risk_report",
+      "content_hash": "sha256:c858f2e88dcf8774e993ff7471f1bc802e83ab1721ef8d84d8af8cf1faecd355",
+      "metadata": {
+        "step": "s048",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    }
+  ]
+}

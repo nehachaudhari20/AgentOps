@@ -1,0 +1,41 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "auditor",
+    "researcher",
+    "reviewer",
+    "executor",
+    "memory",
+    "tool_runner",
+    "risk",
+    "coordinator-1",
+    "auditor-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "6275fe90df4878c532ee59077f3cb9f37e92fa4dcbd3c2db8538b7cc57923f7c",
+  "expected_event_count": 100,
+  "fault_types": [],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_clean",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|hierarchical|S2|compliance_review|artifact_corruption|r0|c267",
+    "base_seed=30384"
+  ],
+  "outcome_event_ids": [
+    "bench-compliance_review-hierarchical-S2-s30384-clean-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "compliance_review",
+  "seed": 30384,
+  "topology_id": "hierarchical",
+  "trace_id": "bench-compliance_review-hierarchical-S2-s30384-clean-cmp"
+}

@@ -1,0 +1,39 @@
+{
+  "actual_event_count": 49,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "validator",
+    "pricing",
+    "settlement",
+    "risk"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "b30eee4cc996903aaa474c3817c7d38b235c936bef6430f3ee9c7e42a13b15da",
+  "expected_event_count": 50,
+  "fault_types": [
+    "incomplete_trace"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": true,
+  "intervention_count": 1,
+  "notes": [
+    "linear chain; each step depends on previous",
+    "incomplete_trace removed bench-transaction_execution-sequential-S1-s10229-incomplete_trace-inc:e0024",
+    "linear chain; each step depends on previous",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=development",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=development|sequential|S1|transaction_execution|incomplete_trace|r0|c144",
+    "base_seed=10228"
+  ],
+  "outcome_event_ids": [
+    "bench-transaction_execution-sequential-S1-s10229-incomplete_trace-inc:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "transaction_execution",
+  "seed": 10229,
+  "topology_id": "sequential",
+  "trace_id": "bench-transaction_execution-sequential-S1-s10229-incomplete_trace-inc"
+}

@@ -1,0 +1,39 @@
+{
+  "actual_event_count": 48,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "investigator",
+    "analyst",
+    "osint",
+    "risk"
+  ],
+  "artifact_count": 49,
+  "config_fingerprint": "8fd7687083d47402b829e3c214dcf70f90fd7503db26d9986d3f17c87042e712",
+  "expected_event_count": 49,
+  "fault_types": [
+    "incomplete_trace"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": true,
+  "intervention_count": 1,
+  "notes": [
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "incomplete_trace removed bench-fraud_investigation-parallel_fanout_fanin-S1-s20443-incomplete_trace-inc:e0024",
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|parallel_fanout_fanin|S1|fraud_investigation|incomplete_trace|r0|c266",
+    "base_seed=20442"
+  ],
+  "outcome_event_ids": [
+    "bench-fraud_investigation-parallel_fanout_fanin-S1-s20443-incomplete_trace-inc:e0048"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "fraud_investigation",
+  "seed": 20443,
+  "topology_id": "parallel_fanout_fanin",
+  "trace_id": "bench-fraud_investigation-parallel_fanout_fanin-S1-s20443-incomplete_trace-inc"
+}

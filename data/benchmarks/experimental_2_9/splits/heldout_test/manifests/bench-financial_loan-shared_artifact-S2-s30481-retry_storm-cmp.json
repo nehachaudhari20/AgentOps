@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 103,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "risk",
+    "policy",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "planner-1"
+  ],
+  "artifact_count": 103,
+  "config_fingerprint": "59592d60f5e24c6deed5df5fe44443e0f2e4f6eceaf70a01d958daafcaa38b61",
+  "expected_event_count": 100,
+  "fault_types": [
+    "retry_storm"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "explicit shared artifacts consumed by multiple agents",
+    "explicit shared artifacts consumed by multiple agents",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|shared_artifact|S2|financial_loan|retry_storm|r0|c315",
+    "base_seed=30480"
+  ],
+  "outcome_event_ids": [
+    "bench-financial_loan-shared_artifact-S2-s30481-retry_storm-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "financial_loan",
+  "seed": 30481,
+  "topology_id": "shared_artifact",
+  "trace_id": "bench-financial_loan-shared_artifact-S2-s30481-retry_storm-cmp"
+}

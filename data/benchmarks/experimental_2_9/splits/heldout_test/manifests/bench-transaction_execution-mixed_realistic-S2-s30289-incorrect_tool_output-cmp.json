@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "validator",
+    "pricing",
+    "settlement",
+    "risk",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "validator-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "bed4f1854fe07ae5b6d944a16cd4bfe305f632119e7d3052a53013f9951c207d",
+  "expected_event_count": 100,
+  "fault_types": [
+    "incorrect_tool_output"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|mixed_realistic|S2|transaction_execution|incorrect_tool_output|r0|c219",
+    "base_seed=30288"
+  ],
+  "outcome_event_ids": [
+    "bench-transaction_execution-mixed_realistic-S2-s30289-incorrect_tool_output-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "transaction_execution",
+  "seed": 30289,
+  "topology_id": "mixed_realistic",
+  "trace_id": "bench-transaction_execution-mixed_realistic-S2-s30289-incorrect_tool_output-cmp"
+}

@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "analyst",
+    "writer",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "planner-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "cbf27d37f976b0cfa728b87da9a42347805dbe3e6bf4570630bebcf0c626eb8e",
+  "expected_event_count": 100,
+  "fault_types": [
+    "conflicting_agent_outputs"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "explicit shared artifacts consumed by multiple agents",
+    "explicit shared artifacts consumed by multiple agents",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|shared_artifact|S2|research_synthesis|conflicting_agent_outputs|r0|c248",
+    "base_seed=20406"
+  ],
+  "outcome_event_ids": [
+    "bench-research_synthesis-shared_artifact-S2-s20407-conflicting_agent_outputs-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "research_synthesis",
+  "seed": 20407,
+  "topology_id": "shared_artifact",
+  "trace_id": "bench-research_synthesis-shared_artifact-S2-s20407-conflicting_agent_outputs-cmp"
+}

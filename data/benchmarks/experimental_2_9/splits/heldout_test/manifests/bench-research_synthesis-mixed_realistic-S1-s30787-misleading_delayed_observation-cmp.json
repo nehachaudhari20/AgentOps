@@ -1,0 +1,38 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "analyst",
+    "writer"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "17170f36d2b9d0a93ef3c08a53067a5ba620c4bd059c1a12a9630cf3985a0347",
+  "expected_event_count": 50,
+  "fault_types": [
+    "misleading_delayed_observation"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|mixed_realistic|S1|research_synthesis|misleading_delayed_observation|r0|c468",
+    "base_seed=30786"
+  ],
+  "outcome_event_ids": [
+    "bench-research_synthesis-mixed_realistic-S1-s30787-misleading_delayed_observation-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "research_synthesis",
+  "seed": 30787,
+  "topology_id": "mixed_realistic",
+  "trace_id": "bench-research_synthesis-mixed_realistic-S1-s30787-misleading_delayed_observation-cmp"
+}

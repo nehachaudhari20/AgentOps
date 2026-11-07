@@ -1,0 +1,41 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "validator",
+    "pricing",
+    "settlement",
+    "risk",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "validator-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "1a3e52e7ba3de08dec29bcf0a5f5a44c3f61c0a4cff8525c897d85ed87db90b8",
+  "expected_event_count": 100,
+  "fault_types": [],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_clean",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|mixed_realistic|S2|transaction_execution|artifact_corruption|r0|c184",
+    "base_seed=20278"
+  ],
+  "outcome_event_ids": [
+    "bench-transaction_execution-mixed_realistic-S2-s20278-clean-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "transaction_execution",
+  "seed": 20278,
+  "topology_id": "mixed_realistic",
+  "trace_id": "bench-transaction_execution-mixed_realistic-S2-s20278-clean-cmp"
+}

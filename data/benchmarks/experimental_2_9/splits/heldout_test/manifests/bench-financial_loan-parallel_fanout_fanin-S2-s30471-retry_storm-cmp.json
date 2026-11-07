@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 103,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "risk",
+    "policy",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "planner-1"
+  ],
+  "artifact_count": 103,
+  "config_fingerprint": "f63be24824d7de41c09a3ec74e0ad1daa8eb0bca316c9f202e8f830c814c83a1",
+  "expected_event_count": 100,
+  "fault_types": [
+    "retry_storm"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|parallel_fanout_fanin|S2|financial_loan|retry_storm|r1|c310",
+    "base_seed=30470"
+  ],
+  "outcome_event_ids": [
+    "bench-financial_loan-parallel_fanout_fanin-S2-s30471-retry_storm-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "financial_loan",
+  "seed": 30471,
+  "topology_id": "parallel_fanout_fanin",
+  "trace_id": "bench-financial_loan-parallel_fanout_fanin-S2-s30471-retry_storm-cmp"
+}

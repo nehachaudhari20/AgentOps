@@ -1,0 +1,38 @@
+{
+  "actual_event_count": 49,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "analyst",
+    "writer"
+  ],
+  "artifact_count": 49,
+  "config_fingerprint": "ff1bb02296a30a3215d7705a49ba5283dc5fdd8c8724b1bb93250c53f3f04484",
+  "expected_event_count": 49,
+  "fault_types": [
+    "incorrect_tool_output"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|parallel_fanout_fanin|S1|research_synthesis|incorrect_tool_output|r1|c123",
+    "base_seed=20156"
+  ],
+  "outcome_event_ids": [
+    "bench-research_synthesis-parallel_fanout_fanin-S1-s20157-incorrect_tool_output-cmp:e0048"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "research_synthesis",
+  "seed": 20157,
+  "topology_id": "parallel_fanout_fanin",
+  "trace_id": "bench-research_synthesis-parallel_fanout_fanin-S1-s20157-incorrect_tool_output-cmp"
+}

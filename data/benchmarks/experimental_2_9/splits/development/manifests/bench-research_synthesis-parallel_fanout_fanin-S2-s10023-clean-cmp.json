@@ -1,0 +1,40 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "analyst",
+    "writer",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "planner-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "49c9b063775926e910e88b4044c05ff418faf91f458b0686c097849c5c4b462b",
+  "expected_event_count": 100,
+  "fault_types": [],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=development",
+    "role=clean_core",
+    "design_version=experimental-design-2.9.0",
+    "base_seed=10023"
+  ],
+  "outcome_event_ids": [
+    "bench-research_synthesis-parallel_fanout_fanin-S2-s10023-clean-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "research_synthesis",
+  "seed": 10023,
+  "topology_id": "parallel_fanout_fanin",
+  "trace_id": "bench-research_synthesis-parallel_fanout_fanin-S2-s10023-clean-cmp"
+}

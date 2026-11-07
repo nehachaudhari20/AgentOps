@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 103,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "validator",
+    "pricing",
+    "settlement",
+    "risk",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "validator-1"
+  ],
+  "artifact_count": 103,
+  "config_fingerprint": "e34edd75195d922d0533b5300a4f90b946621eb8e751de45bcc125f53a69a199",
+  "expected_event_count": 100,
+  "fault_types": [
+    "retry_storm"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|hierarchical|S2|transaction_execution|retry_storm|r1|c304",
+    "base_seed=30458"
+  ],
+  "outcome_event_ids": [
+    "bench-transaction_execution-hierarchical-S2-s30459-retry_storm-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "transaction_execution",
+  "seed": 30459,
+  "topology_id": "hierarchical",
+  "trace_id": "bench-transaction_execution-hierarchical-S2-s30459-retry_storm-cmp"
+}

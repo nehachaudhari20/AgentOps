@@ -1,0 +1,38 @@
+{
+  "actual_event_count": 49,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "auditor",
+    "researcher",
+    "reviewer",
+    "executor"
+  ],
+  "artifact_count": 49,
+  "config_fingerprint": "8ea0c82317eb834a5a0b173e0d2af55b6ee2b5414169d31a0b86a9727357d74f",
+  "expected_event_count": 49,
+  "fault_types": [
+    "conflicting_agent_outputs"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=development",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=development|parallel_fanout_fanin|S1|compliance_review|conflicting_agent_outputs|r1|c137",
+    "base_seed=10214"
+  ],
+  "outcome_event_ids": [
+    "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp:e0048"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "compliance_review",
+  "seed": 10215,
+  "topology_id": "parallel_fanout_fanin",
+  "trace_id": "bench-compliance_review-parallel_fanout_fanin-S1-s10215-conflicting_agent_outputs-cmp"
+}

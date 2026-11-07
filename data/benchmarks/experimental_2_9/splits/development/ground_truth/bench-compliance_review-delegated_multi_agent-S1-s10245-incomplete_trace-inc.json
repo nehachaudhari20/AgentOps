@@ -1,0 +1,1461 @@
+{
+  "attribution_reference": {
+    "disclaimer": "equal_root_ancestor_mass assigns structural share among dependency-DAG roots reachable to each outcome. It is NOT causal responsibility, NOT legal liability, and MUST NOT be derived by copying ConservedRPA/MFAV outputs.",
+    "ground_truth_version": "gt-2.9.0",
+    "method": "equal_root_ancestor_mass.v1",
+    "outcomes": [
+      {
+        "ancestor_event_ids": [
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0026",
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0027",
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0028",
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0029",
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0030",
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0031",
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0032",
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0033",
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0034",
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0035",
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0036",
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0037",
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0038",
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0039",
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0040",
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0041",
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0042",
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0043",
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0044",
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0045",
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0046",
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0047",
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0048",
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0049",
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0050"
+        ],
+        "method": "equal_root_ancestor_mass.v1",
+        "notes": [
+          "Mass conserved over root events (sum=1 when roots non-empty).",
+          "Agent map aggregates root event shares; not causal credit."
+        ],
+        "outcome_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0050",
+        "root_agent_allocations": {
+          "reviewer": 1.0
+        },
+        "root_event_allocations": {
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0026": 1.0
+        }
+      }
+    ]
+  },
+  "disclaimer": "Ground truth records generator intent only. Graph reachability is not causal proof. Do not feed these labels into RPA/MFAV algorithm inputs. Attribution reference (if present) is equal-root structural share, not causal GT.",
+  "generator_version": "2.5.1",
+  "ground_truth_version": "gt-2.9.0",
+  "interventions": [
+    {
+      "affected_artifact_ids": [],
+      "affected_event_ids": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0025"
+      ],
+      "expected_observable_effects": [
+        "event absent from emitted trace",
+        "dependents may reference missing parent",
+        "completeness.incomplete == True"
+      ],
+      "fault_type": "incomplete_trace",
+      "generator_version": "2.5.1",
+      "injection_location": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0025",
+      "intervention_id": "iv-incomplete_trace-10245-01",
+      "notes": [
+        "Intentionally incomplete; validator must not silently repair."
+      ],
+      "parameters": {
+        "dependent_event_ids": [
+          "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0026"
+        ],
+        "removed_event_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0025"
+      },
+      "scenario_id": "compliance_review",
+      "seed": 10245
+    }
+  ],
+  "lineage": {
+    "artifact_consumers": {
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0000": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0001"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0001": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0002"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0002": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0003"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0003": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0004"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0004": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0005"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0005": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0006"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0006": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0007"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0007": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0008"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0008": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0009"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0009": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0010"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0010": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0011"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0011": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0012"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0012": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0013"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0013": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0014"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0014": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0015"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0015": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0016"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0016": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0017"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0017": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0018"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0018": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0019"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0019": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0020"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0020": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0021"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0021": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0022"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0022": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0023"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0023": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0024"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0025": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0026"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0026": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0027"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0027": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0028"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0028": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0029"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0029": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0030"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0030": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0031"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0031": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0032"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0032": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0033"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0033": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0034"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0034": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0035"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0035": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0036"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0036": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0037"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0037": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0038"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0038": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0039"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0039": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0040"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0040": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0041"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0041": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0042"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0042": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0043"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0043": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0044"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0044": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0045"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0045": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0046"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0046": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0047"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0047": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0048"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0048": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0049"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0049": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0050"
+      ]
+    },
+    "artifact_producers": {
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0000": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0000",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0001": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0001",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0002": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0002",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0003": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0003",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0004": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0004",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0005": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0005",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0006": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0006",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0007": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0007",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0008": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0008",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0009": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0009",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0010": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0010",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0011": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0011",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0012": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0012",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0013": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0013",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0014": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0014",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0015": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0015",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0016": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0016",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0017": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0017",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0018": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0018",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0019": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0019",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0020": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0020",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0021": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0021",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0022": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0022",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0023": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0023",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0024": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0024",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0026": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0026",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0027": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0027",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0028": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0028",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0029": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0029",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0030": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0030",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0031": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0031",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0032": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0032",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0033": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0033",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0034": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0034",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0035": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0035",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0036": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0036",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0037": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0037",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0038": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0038",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0039": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0039",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0040": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0040",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0041": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0041",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0042": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0042",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0043": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0043",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0044": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0044",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0045": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0045",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0046": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0046",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0047": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0047",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0048": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0048",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0049": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0049",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0050": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0050"
+    },
+    "event_dependencies": {
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0000": [],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0001": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0000"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0002": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0001"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0003": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0002"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0004": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0003"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0005": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0004"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0006": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0005"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0007": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0006"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0008": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0007"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0009": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0008"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0010": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0009"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0011": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0010"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0012": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0011"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0013": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0012"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0014": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0013"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0015": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0014"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0016": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0015"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0017": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0016"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0018": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0017"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0019": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0018"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0020": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0019"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0021": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0020"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0022": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0021"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0023": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0022"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0024": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0023"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0026": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0025"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0027": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0026"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0028": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0027"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0029": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0028"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0030": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0029"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0031": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0030"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0032": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0031"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0033": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0032"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0034": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0033"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0035": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0034"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0036": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0035"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0037": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0036"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0038": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0037"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0039": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0038"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0040": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0039"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0041": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0040"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0042": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0041"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0043": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0042"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0044": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0043"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0045": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0044"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0046": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0045"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0047": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0046"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0048": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0047"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0049": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0048"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0050": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0049"
+      ]
+    },
+    "expected_relationships": [
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0000",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0000"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0001",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0001"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0000",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0001"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0000",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0001"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0002",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0002"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0001",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0002"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0001",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0002"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0002",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0003"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0003",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0003"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0002",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0003"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0002",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0003"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0004",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0004"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0003",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0004"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0003",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0004"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0004",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0005"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0005",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0005"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0004",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0005"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0004",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0005"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0006",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0006"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0005",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0006"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0005",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0006"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0006",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0007"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0007",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0007"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0006",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0007"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0006",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0007"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0008",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0008"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0007",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0008"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0007",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0008"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0008",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0009"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0009",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0009"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0008",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0009"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0008",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0009"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0010",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0010"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0009",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0010"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0009",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0010"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0010",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0011"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0011",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0011"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0010",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0011"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0010",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0011"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0012",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0012"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0011",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0012"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0011",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0012"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0012",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0013"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0013",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0013"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0012",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0013"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0012",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0013"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0014",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0014"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0013",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0014"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0013",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0014"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0014",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0015"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0015",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0015"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0014",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0015"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0014",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0015"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0016",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0016"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0015",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0016"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0015",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0016"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0016",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0017"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0017",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0017"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0016",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0017"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0016",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0017"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0018",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0018"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0017",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0018"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0017",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0018"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0018",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0019"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0019",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0019"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0018",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0019"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0018",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0019"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0020",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0020"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0019",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0020"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0019",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0020"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0020",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0021"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0021",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0021"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0020",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0021"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0020",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0021"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0022",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0022"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0021",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0022"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0021",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0022"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0022",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0023"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0023",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0023"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0022",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0023"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0022",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0023"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0024",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0024"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0023",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0024"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0023",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0024"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0024",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0025"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0026",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0026"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0025",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0026"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0025",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0026"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0026",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0027"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0027",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0027"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0026",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0027"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0026",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0027"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0028",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0028"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0027",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0028"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0027",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0028"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0028",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0029"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0029",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0029"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0028",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0029"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0028",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0029"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0030",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0030"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0029",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0030"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0029",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0030"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0030",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0031"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0031",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0031"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0030",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0031"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0030",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0031"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0032",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0032"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0031",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0032"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0031",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0032"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0032",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0033"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0033",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0033"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0032",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0033"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0032",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0033"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0034",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0034"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0033",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0034"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0033",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0034"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0034",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0035"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0035",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0035"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0034",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0035"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0034",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0035"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0036",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0036"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0035",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0036"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0035",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0036"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0036",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0037"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0037",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0037"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0036",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0037"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0036",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0037"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0038",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0038"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0037",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0038"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0037",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0038"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0038",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0039"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0039",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0039"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0038",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0039"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0038",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0039"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0040",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0040"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0039",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0040"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0039",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0040"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0040",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0041"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0041",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0041"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0040",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0041"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0040",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0041"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0042",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0042"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0041",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0042"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0041",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0042"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0042",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0043"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0043",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0043"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0042",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0043"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0042",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0043"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0044",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0044"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0043",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0044"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0043",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0044"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0044",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0045"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0045",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0045"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0044",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0045"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0044",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0045"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0046",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0046"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0045",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0046"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0045",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0046"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0046",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0047"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0047",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0047"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0046",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0047"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0046",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0047"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0048",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0048"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0047",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0048"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0047",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0048"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0048",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0049"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0049",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0049"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0048",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0049"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0048",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0049"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0050",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0050"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:a0049",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0050"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0049",
+        "target_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0050"
+      }
+    ],
+    "invocations": {
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0002": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0003"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0004": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0005"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0006": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0007"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0008": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0009"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0010": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0011"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0012": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0013"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0014": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0015"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0016": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0017"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0018": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0019"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0020": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0021"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0022": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0023"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0024": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0025"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0026": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0027"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0028": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0029"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0030": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0031"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0032": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0033"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0034": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0035"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0036": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0037"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0038": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0039"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0040": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0041"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0042": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0043"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0044": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0045"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0046": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0047"
+      ],
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0048": [
+        "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0049"
+      ]
+    },
+    "retries": {}
+  },
+  "quality": {
+    "corrupted_artifact_ids": [],
+    "incomplete_observation_notes": [
+      "incomplete_trace removed bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0025",
+      "multi-level INVOKES delegation; callers depend on callees"
+    ],
+    "intentionally_incomplete": true,
+    "missing_dependency_refs": [
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0025"
+    ],
+    "missing_event_ids": [
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0025"
+    ]
+  },
+  "seed": 10245,
+  "structural": {
+    "agent_ids": [
+      "coordinator",
+      "auditor",
+      "researcher",
+      "reviewer",
+      "executor"
+    ],
+    "event_categories": {
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0000": "instruction",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0001": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0002": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0003": "tool",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0004": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0005": "retrieval",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0006": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0007": "knowledge",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0008": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0009": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0010": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0011": "tool",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0012": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0013": "retrieval",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0014": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0015": "knowledge",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0016": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0017": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0018": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0019": "tool",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0020": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0021": "retrieval",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0022": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0023": "knowledge",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0024": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0026": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0027": "tool",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0028": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0029": "retrieval",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0030": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0031": "knowledge",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0032": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0033": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0034": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0035": "tool",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0036": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0037": "retrieval",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0038": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0039": "knowledge",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0040": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0041": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0042": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0043": "tool",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0044": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0045": "retrieval",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0046": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0047": "knowledge",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0048": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0049": "reasoning",
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0050": "decision"
+    },
+    "model_ids": [
+      "model-audit-v1",
+      "model-coord-v1"
+    ],
+    "outcome_event_ids": [
+      "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc:e0050"
+    ],
+    "scale_tier": "S1",
+    "scenario_id": "compliance_review",
+    "tool_ids": [
+      "reg_search"
+    ],
+    "topology_id": "delegated_multi_agent"
+  },
+  "trace_id": "bench-compliance_review-delegated_multi_agent-S1-s10245-incomplete_trace-inc"
+}

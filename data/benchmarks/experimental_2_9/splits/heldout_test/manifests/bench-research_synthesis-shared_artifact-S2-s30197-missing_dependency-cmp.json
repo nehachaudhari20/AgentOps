@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "analyst",
+    "writer",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "planner-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "5f3d706b924df027e6b0cf65cd591a4d4755c76c480354bb9113b03972e2451d",
+  "expected_event_count": 100,
+  "fault_types": [
+    "missing_dependency"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": true,
+  "intervention_count": 1,
+  "notes": [
+    "explicit shared artifacts consumed by multiple agents",
+    "explicit shared artifacts consumed by multiple agents",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|shared_artifact|S2|research_synthesis|missing_dependency|r2|c173",
+    "base_seed=30196"
+  ],
+  "outcome_event_ids": [
+    "bench-research_synthesis-shared_artifact-S2-s30197-missing_dependency-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "research_synthesis",
+  "seed": 30197,
+  "topology_id": "shared_artifact",
+  "trace_id": "bench-research_synthesis-shared_artifact-S2-s30197-missing_dependency-cmp"
+}

@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 103,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "auditor",
+    "researcher",
+    "reviewer",
+    "executor",
+    "memory",
+    "tool_runner",
+    "risk",
+    "coordinator-1",
+    "auditor-1"
+  ],
+  "artifact_count": 103,
+  "config_fingerprint": "62f581eafd38914f72810995cc5fad18b98d61ab297d93add460bfc80e46c166",
+  "expected_event_count": 100,
+  "fault_types": [
+    "retry_storm"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|parallel_fanout_fanin|S2|compliance_review|retry_storm|r1|c197",
+    "base_seed=20304"
+  ],
+  "outcome_event_ids": [
+    "bench-compliance_review-parallel_fanout_fanin-S2-s20305-retry_storm-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "compliance_review",
+  "seed": 20305,
+  "topology_id": "parallel_fanout_fanin",
+  "trace_id": "bench-compliance_review-parallel_fanout_fanin-S2-s20305-retry_storm-cmp"
+}

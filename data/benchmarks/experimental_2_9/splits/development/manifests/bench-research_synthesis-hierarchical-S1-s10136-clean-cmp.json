@@ -1,0 +1,36 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "analyst",
+    "writer"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "fd4765cb539466b60cf344b2ba17eb8ef462b686536bdf0747dd9b869493cf83",
+  "expected_event_count": 50,
+  "fault_types": [],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=development",
+    "role=pair_clean",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=development|hierarchical|S1|research_synthesis|artifact_corruption|r0|c98",
+    "base_seed=10136"
+  ],
+  "outcome_event_ids": [
+    "bench-research_synthesis-hierarchical-S1-s10136-clean-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "research_synthesis",
+  "seed": 10136,
+  "topology_id": "hierarchical",
+  "trace_id": "bench-research_synthesis-hierarchical-S1-s10136-clean-cmp"
+}

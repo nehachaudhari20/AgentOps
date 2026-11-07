@@ -1,0 +1,38 @@
+{
+  "actual_event_count": 49,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "risk",
+    "policy"
+  ],
+  "artifact_count": 49,
+  "config_fingerprint": "4ad1217e67c98c7fd3fc50570a5b757c6cf45e0cb81485a882645450a784f83e",
+  "expected_event_count": 49,
+  "fault_types": [
+    "artifact_corruption"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|parallel_fanout_fanin|S1|financial_loan|artifact_corruption|r0|c270",
+    "base_seed=30390"
+  ],
+  "outcome_event_ids": [
+    "bench-financial_loan-parallel_fanout_fanin-S1-s30391-artifact_corruption-cmp:e0048"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "financial_loan",
+  "seed": 30391,
+  "topology_id": "parallel_fanout_fanin",
+  "trace_id": "bench-financial_loan-parallel_fanout_fanin-S1-s30391-artifact_corruption-cmp"
+}

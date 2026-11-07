@@ -1,0 +1,36 @@
+{
+  "actual_event_count": 51,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "analyst",
+    "writer"
+  ],
+  "artifact_count": 51,
+  "config_fingerprint": "610a1d6f1e0644487267af0c63f4d85a566983a20395790d4f876e04f95cb044",
+  "expected_event_count": 51,
+  "fault_types": [],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "multi-level INVOKES delegation; callers depend on callees",
+    "multi-level INVOKES delegation; callers depend on callees",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_clean",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|delegated_multi_agent|S1|research_synthesis|tool_call_failure|r2|c248",
+    "base_seed=30346"
+  ],
+  "outcome_event_ids": [
+    "bench-research_synthesis-delegated_multi_agent-S1-s30346-clean-cmp:e0050"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "research_synthesis",
+  "seed": 30346,
+  "topology_id": "delegated_multi_agent",
+  "trace_id": "bench-research_synthesis-delegated_multi_agent-S1-s30346-clean-cmp"
+}

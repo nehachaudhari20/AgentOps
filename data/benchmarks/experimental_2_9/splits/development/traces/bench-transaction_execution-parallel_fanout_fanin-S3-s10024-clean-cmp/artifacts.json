@@ -1,0 +1,2444 @@
+{
+  "artifacts": [
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0000",
+      "artifact_type": "order",
+      "content_hash": "sha256:6b1d97ad598f3f1e7d77771c84304a292d5439943837dd88e7acfcd54c741691",
+      "metadata": {
+        "step": "s000",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0001",
+      "artifact_type": "quote",
+      "content_hash": "sha256:9738ceedfcd86bc9c36769332e963ef63981c4bd13cd2ff876ed58c974d0380e",
+      "metadata": {
+        "step": "s001",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0002",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:966f23e9c5d4e30c58e1186200fce384dcfaef6f623b2f685458da1f0caf9169",
+      "metadata": {
+        "step": "s002",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0003",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:3522b4a4e3c0f4cf763c9c0c2ec1e86b05b453673abfe91da5ce941e0e33a0a4",
+      "metadata": {
+        "step": "s003",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0004",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:ffe1a6d7d0ae9562dda992ff41697bf981d104c882d4e8bac638a0ad16506403",
+      "metadata": {
+        "step": "s004",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0005",
+      "artifact_type": "order",
+      "content_hash": "sha256:2936767bdc563bbce3ee283b6e9b04f5db8e437d02ed74c7c052836efcd6a5a6",
+      "metadata": {
+        "step": "s005",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0006",
+      "artifact_type": "quote",
+      "content_hash": "sha256:84b4de59ba49167ec0af685bc606ea35ddad45a90ae2486de7541f692dd509b5",
+      "metadata": {
+        "step": "s006",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0007",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:2d4d2adfe2ace6c5fe6742b0e1ae53d7ee9ee2158d09cd6a4965aaa68a9a1f52",
+      "metadata": {
+        "step": "s007",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0008",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:fd8827a9ffe698334fb74891339098234b9d2e2a53f5b6bec98174658670325f",
+      "metadata": {
+        "step": "s008",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0009",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:a78d12e83c6a9d0b52e655301d49d2ebf0f9060ecb4dd92dd122e848c56aa1a1",
+      "metadata": {
+        "step": "s009",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0010",
+      "artifact_type": "order",
+      "content_hash": "sha256:0483f8faf7131a668bd0aec322682d284f23e8de0f00889275da8099efba484c",
+      "metadata": {
+        "step": "s010",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0011",
+      "artifact_type": "quote",
+      "content_hash": "sha256:7cacee6c13f67679b1fb792e0c3163486a6d75c7522e1eb651808d537e8ef492",
+      "metadata": {
+        "step": "s011",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0012",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:1902a02526f07889e53438e1c26b018909b7480c794fac9f37c2d58ac2bcd00d",
+      "metadata": {
+        "step": "s012",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0013",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:5dbfaa7a7271960ff2f191959ddc676949a1745d99dbc945f46e9d5cd99b17bd",
+      "metadata": {
+        "step": "s013",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0014",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:fc26232d9ac0233f5929310a6c67ee478939136422b304dfc02852c088d6df8c",
+      "metadata": {
+        "step": "s014",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0015",
+      "artifact_type": "order",
+      "content_hash": "sha256:ceb13a6d53f0a64729129ed9a721e11b97b6abee385b4dc80c1d1529d0eaff43",
+      "metadata": {
+        "step": "s015",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0016",
+      "artifact_type": "quote",
+      "content_hash": "sha256:81f27d02c87205c6891d8216e7f6d51502bdc2e40b46fffb384d9684258f89cf",
+      "metadata": {
+        "step": "s016",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0017",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:3cab733cad73f53c07d4b83bfb9df1bf59df64217f21dfe657cd7fb74e005d39",
+      "metadata": {
+        "step": "s017",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0018",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:75c11721207ba201b78b0b47c7619131dd93786343c275c6d722cad8b2cb4802",
+      "metadata": {
+        "step": "s018",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0019",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:c770db6c481d61dd67b71d0565e1cd2b4429e14622cb67bee78866d9805db08e",
+      "metadata": {
+        "step": "s019",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0020",
+      "artifact_type": "order",
+      "content_hash": "sha256:7c3e4f398e94a76724d9f74b0a76675c287131ed000aeae5570cb0b9d49c6e61",
+      "metadata": {
+        "step": "s020",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0021",
+      "artifact_type": "quote",
+      "content_hash": "sha256:4b213d170c5c5e4dea852e92a4a825b331b291ec2622ac6ba4d53e0f1c682fa6",
+      "metadata": {
+        "step": "s021",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0022",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:da9197a18a5b14825fed336bb72e7665e9600057cff59601dd1685b2070f9d75",
+      "metadata": {
+        "step": "s022",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0023",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:d468b44167e2f82e91b5208d689f9b5069fb72686accaa8d33e79b3aaf2f8a8a",
+      "metadata": {
+        "step": "s023",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0024",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:83fdb9b81a2aa86ef478e07b8acb47fdd2ea4760f0ebd84c97f939088b5e6924",
+      "metadata": {
+        "step": "s024",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0025",
+      "artifact_type": "order",
+      "content_hash": "sha256:2c4e6753981f9ee4e0d995432af1021ce532ef9077b93efcc62e3ada99e5b239",
+      "metadata": {
+        "step": "s025",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0026",
+      "artifact_type": "quote",
+      "content_hash": "sha256:3e6fa57ae7220a8ed1b406437a5e7e97808c31f44cb26c86fa4b5363e4ff21a5",
+      "metadata": {
+        "step": "s026",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0027",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:f96456ccb442b4a23a73f18c24241c652c69252d57e6ae34089489b7fcadaf1e",
+      "metadata": {
+        "step": "s027",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0028",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:3fcd54516d59fecdaf47084538ac22653d62938e109928269e56a718e3e1e085",
+      "metadata": {
+        "step": "s028",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0029",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:0b93047d38d894d20e0e109f0578fb713860af8741f3b8c57e3240e5294cdad6",
+      "metadata": {
+        "step": "s029",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0030",
+      "artifact_type": "order",
+      "content_hash": "sha256:0f649bda19e2f0bbd9db5dfcadd26214b77318c7a417ce1b28df90eb6f1f2119",
+      "metadata": {
+        "step": "s030",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0031",
+      "artifact_type": "quote",
+      "content_hash": "sha256:f028eba674f5ff06713b12db69710fedc1506e66edac0881c2c3a4261da5fbb4",
+      "metadata": {
+        "step": "s031",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0032",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:e8559785448329559b85a1ce6eb97a68012e72f94a9a4bca2fdb8e5053713a03",
+      "metadata": {
+        "step": "s032",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0033",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:e152a56706b1a6cb4142ced30ceb74255b036d9ba0d72424c85623355bc041ee",
+      "metadata": {
+        "step": "s033",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0034",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:1eb583033da4eba076344783d2320311cf00859c3f63699484b1d50ae1a47e1d",
+      "metadata": {
+        "step": "s034",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0035",
+      "artifact_type": "order",
+      "content_hash": "sha256:7ff267d45e14d249a96f570bb0f8274c35fa3d53c233a61ba8598ada8a41e17f",
+      "metadata": {
+        "step": "s035",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0036",
+      "artifact_type": "quote",
+      "content_hash": "sha256:ab6d40d34725b77904c6d3c0d41eb656bc7c8532fa91d730369268678066384d",
+      "metadata": {
+        "step": "s036",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0037",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:95f1eee298274bf26be37bbceb76c871c1beab6415b88cdeb77f53e8fbbd1940",
+      "metadata": {
+        "step": "s037",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0038",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:9d5f19b1dec7797f21d2198081c11227eaf683f5fb4db589d4947c2dd70c98f8",
+      "metadata": {
+        "step": "s038",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0039",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:4d3883ac936c6089138a0c96495f3f04771293fd9658c46bec56e009c3580dc3",
+      "metadata": {
+        "step": "s039",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0040",
+      "artifact_type": "order",
+      "content_hash": "sha256:3d2a3d62a6d16c93fedb305ce7df2103f729511e462edd789df12332316dcffe",
+      "metadata": {
+        "step": "s040",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0041",
+      "artifact_type": "quote",
+      "content_hash": "sha256:3c2ca38af8a6160b812c443d6ba2b92aa2842175e98deb35918e1f24844eb744",
+      "metadata": {
+        "step": "s041",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0042",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:8e9799764b2a946c3f9e1aa58d9c7b968d764dc58a96536cc61320f0bde79bc0",
+      "metadata": {
+        "step": "s042",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0043",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:15722684774c6c6aa2f2c6097d83e49d3b5d0dbd13a9b2ddf39c3b484f4ce6b2",
+      "metadata": {
+        "step": "s043",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0044",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:73b47ca3ba83ecd0b89567e33f4a4f8867ab01510fe272a77e34b95c0ec09b10",
+      "metadata": {
+        "step": "s044",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0045",
+      "artifact_type": "order",
+      "content_hash": "sha256:668af22f658522a1ea8c8434efd84fbba9006a9673dfb5ef6e1d2824f75995a8",
+      "metadata": {
+        "step": "s045",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0046",
+      "artifact_type": "quote",
+      "content_hash": "sha256:929bf2be99672071a6d9033f4fd7e207fa92b660745f99ddca1d593e3e0a683a",
+      "metadata": {
+        "step": "s046",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0047",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:6c1a9eecc5dde80038b85fd54f6c4be7e49e359eaaad6b0e76f0f5a72d9304ee",
+      "metadata": {
+        "step": "s047",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0048",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:bef8996842d52c650431e80d601ff5ce7f7144c6da2b0fe85a71f0f56cf27770",
+      "metadata": {
+        "step": "s048",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0049",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:b806d4a68183e8f2b3b38fa2594c90a0f2f62775d5f17d4d7f3c4f965153902e",
+      "metadata": {
+        "step": "s049",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0050",
+      "artifact_type": "order",
+      "content_hash": "sha256:0c98f7ccf412fb499c222ce8cf957dc2b51881b3535199206978297c62cbb32b",
+      "metadata": {
+        "step": "s050",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0051",
+      "artifact_type": "quote",
+      "content_hash": "sha256:d380134b6c4bbbc5c835191cade4d4246f506691e3e4a6051bee4e249708dcca",
+      "metadata": {
+        "step": "s051",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0052",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:36d25bedc2ab6c47ad01ccb136d4fd481a1f507acaebdc4fbd9ba0898259841a",
+      "metadata": {
+        "step": "s052",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0053",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:e680ce45d2d7c67d975a199b733488ee2de19cd56a34390e0057c1bb2a8af65a",
+      "metadata": {
+        "step": "s053",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0054",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:671cc88f9e8076bbb06c9dbfd46c368764fe2ab05d55289cfd970f8d4650e68e",
+      "metadata": {
+        "step": "s054",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0055",
+      "artifact_type": "order",
+      "content_hash": "sha256:b21840b4367d1fa753bc2456059d7cc11708e7653cdabaffcebf65eca2868689",
+      "metadata": {
+        "step": "s055",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0056",
+      "artifact_type": "quote",
+      "content_hash": "sha256:830cce5eff8e046c19e1b5fcc45bf39753d9763d3867e1b933d5d18f706b6e96",
+      "metadata": {
+        "step": "s056",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0057",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:62cc7c090eac21758634c0492beed16ee960ac6928470827782afb1849d5d4be",
+      "metadata": {
+        "step": "s057",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0058",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:3570080407a99020e81a0c95c1c75d60431272d177e1c48513262460b2b34510",
+      "metadata": {
+        "step": "s058",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0059",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:bce313ff0e14906a4163ef587e8dfbb2b5b744f3c8c56e095bc27f05ee31780f",
+      "metadata": {
+        "step": "s059",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0060",
+      "artifact_type": "order",
+      "content_hash": "sha256:9716b04bf9b8f8b60b09ceb0d449fc6d7ad1ccf9275c148bd9e29d505662e160",
+      "metadata": {
+        "step": "s060",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0061",
+      "artifact_type": "quote",
+      "content_hash": "sha256:7271248741288b2be136b02d3e70f7ac18b94fb00659c148f21c5f6106702196",
+      "metadata": {
+        "step": "s061",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0062",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:b0fdfab48a87aeb9f453459656b8a08e9ba6a0ba413644c1b3b65b8d1c69eed7",
+      "metadata": {
+        "step": "s062",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0063",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:783870fe7124be6a352e70901a9c387f875f05c1c0e1ad4cbdf586d275b2dea4",
+      "metadata": {
+        "step": "s063",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0064",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:658dd6b7bc9d4e7a7599a72237322fbac072aacf7d4f37f584df47bb4c4bca6e",
+      "metadata": {
+        "step": "s064",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0065",
+      "artifact_type": "order",
+      "content_hash": "sha256:7e7fe6c7edf636b5e40da6fb8f3b0828c202a63a33a81cf5a60aef900b9e4197",
+      "metadata": {
+        "step": "s065",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0066",
+      "artifact_type": "quote",
+      "content_hash": "sha256:2eebac968be515b9c740a0a8a5c191238fb47afa162b225216d0f8ac3588416a",
+      "metadata": {
+        "step": "s066",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0067",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:1da739881599ba47e4c46d04362aea3bf50087e308ec5325bab3280d55a983a9",
+      "metadata": {
+        "step": "s067",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0068",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:44f57791506a37b60422f002d5de02dc10566ecb76c95ca053850dd3b7f5d27f",
+      "metadata": {
+        "step": "s068",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0069",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:153f6c8632fa30eb9f57684dd5141d84e95aed65b7f1acd9684022933720dc9f",
+      "metadata": {
+        "step": "s069",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0070",
+      "artifact_type": "order",
+      "content_hash": "sha256:719d67ab1ebcb3cf54eda536488d698cf0d2d887b9720d3b84db1a0d659d1948",
+      "metadata": {
+        "step": "s070",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0071",
+      "artifact_type": "quote",
+      "content_hash": "sha256:229bdda4d14d251e2df68ca05ba9a3b9b20e99cfdbafc05079a77b0987fe26f8",
+      "metadata": {
+        "step": "s071",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0072",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:f434f7467d2d8cf483df7e8760eb9d4fd391811acd78b9135ea341c043ba4705",
+      "metadata": {
+        "step": "s072",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0073",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:189d3a5845bba5ab36fb615351e0bdfac8c2990a7b7097e18f62d5a4107a6773",
+      "metadata": {
+        "step": "s073",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0074",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:5b12b1177c7326ca187126111e9bb93184beefb748c91bd4eb3d651efcb7b98c",
+      "metadata": {
+        "step": "s074",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0075",
+      "artifact_type": "order",
+      "content_hash": "sha256:e6513504b714d656355bd313086d423b6acb2e08fc0ae735224275de9edff5b4",
+      "metadata": {
+        "step": "s075",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0076",
+      "artifact_type": "quote",
+      "content_hash": "sha256:9c388c4fcf8d724a9d073753c0357b084a3d57074794b3e036b7704a1a72ed92",
+      "metadata": {
+        "step": "s076",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0077",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:f5bb47b5907520181fe4b428f4454221b0bd6f8ff3206182781766e6904a8e38",
+      "metadata": {
+        "step": "s077",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0078",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:6a192144a1ec190d8df7d2d8194d68ee91d30d6e517e0921c152f2a7bb32383f",
+      "metadata": {
+        "step": "s078",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0079",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:6df4fb9985c78b455871a59ecdd0f41bfb467aafd759338f22d7f9e8965b0b15",
+      "metadata": {
+        "step": "s079",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0080",
+      "artifact_type": "order",
+      "content_hash": "sha256:96d145d59fceced2e23c86defeb670dc7af9132a8f4298df646662bac2d22838",
+      "metadata": {
+        "step": "s080",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0081",
+      "artifact_type": "quote",
+      "content_hash": "sha256:7c00ae7186fc5264e56c6cacb25be1285c36a969658cf0ea708e1571b5462b3f",
+      "metadata": {
+        "step": "s081",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0082",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:e5d2b95f88528bcfe65bd272087e06a90dcd3d11b612f83ceff1ba94d4666810",
+      "metadata": {
+        "step": "s082",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0083",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:3e509e15dec470bdf30321ebfc8e53e8ea252e0be35f1940157640823c443dc1",
+      "metadata": {
+        "step": "s083",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0084",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:396e3db66ee1c2b701098b5ea8f16fb5aabe39fbc350bf99e114fbef23c3d27c",
+      "metadata": {
+        "step": "s084",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0085",
+      "artifact_type": "order",
+      "content_hash": "sha256:7b7eeaa9c0c3a3edb39ff16813b3c6c5bc7526c8655452dbfc3ab466e9b5b39b",
+      "metadata": {
+        "step": "s085",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0086",
+      "artifact_type": "quote",
+      "content_hash": "sha256:01a31554fb097f4b7c839cc64449171553841617568de6e8c7fc4ed7629b49c1",
+      "metadata": {
+        "step": "s086",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0087",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:2463460ecb77dd38d2465549633f70de493aed750b6763071f4ec439667a8c61",
+      "metadata": {
+        "step": "s087",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0088",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:637baf3edc6140acc191b29c00d0a17ca84704edfb4b5e4218f7cf3d50af9f8e",
+      "metadata": {
+        "step": "s088",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0089",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:4f404ab21c9f1411dca6315148a82febbc9a95e0b72a8cc881c9eae5b09d8eaa",
+      "metadata": {
+        "step": "s089",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0090",
+      "artifact_type": "order",
+      "content_hash": "sha256:164b37b5177823f33560cb44e1e96feeafa1fc52a091b26a1dcd41a9592794ee",
+      "metadata": {
+        "step": "s090",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0091",
+      "artifact_type": "quote",
+      "content_hash": "sha256:dcbc7d78d3f309453f7e47c2c60f5779b96d91f5523a24985394a8c962e82516",
+      "metadata": {
+        "step": "s091",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0092",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:430a1ef67d813fdff84ce960ba6445691189c7430b23f637efa59376b00f7d01",
+      "metadata": {
+        "step": "s092",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0093",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:715fae56ad3aeb0a79a25b022e7b12029bb97cb117f9c205c373857873d31860",
+      "metadata": {
+        "step": "s093",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0094",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:0b677111e71ed8ff08f3adb37de8889669788923aa8621e2c416abf032dc45aa",
+      "metadata": {
+        "step": "s094",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0095",
+      "artifact_type": "order",
+      "content_hash": "sha256:4481d696a910659c0aeafd1ed04b56ce6105ee217bbc1bc8523a3590c8adf401",
+      "metadata": {
+        "step": "s095",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0096",
+      "artifact_type": "quote",
+      "content_hash": "sha256:64fb49853e5ca466e404d2a383733ad863818f183ebcd412133d824d36eca446",
+      "metadata": {
+        "step": "s096",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0097",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:2bb3184317936c18fe866bd179602f3912b0562333a17edbe819f819c50769ee",
+      "metadata": {
+        "step": "s097",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0098",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:d56bb10e006c160f11d05beb311b02385123c24a72ac7cfc92ece343aa2c7a8a",
+      "metadata": {
+        "step": "s098",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0099",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:22e324f2b311032040da0a90e841b34e4102bed3547aa9add0457f45d20d6946",
+      "metadata": {
+        "step": "s099",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0100",
+      "artifact_type": "order",
+      "content_hash": "sha256:5ac7f7a848d93fbe679803c36ad11ce7f9919e77ec8f1b078b94b39ae896b06a",
+      "metadata": {
+        "step": "s100",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0101",
+      "artifact_type": "quote",
+      "content_hash": "sha256:58934b66be700247c6345f3c1b436d5fa48d116802a9b28caa8bcd755444f5fc",
+      "metadata": {
+        "step": "s101",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0102",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:84eceb4f8bc38a3caf2b4c381a48cf0a5afe75cabc754c31e36e946ff07d0612",
+      "metadata": {
+        "step": "s102",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0103",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:0bf5f559f68b8bf205c353116131acb7e583f38067ded70830afaa808d9149a3",
+      "metadata": {
+        "step": "s103",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0104",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:7e468eff1242aa0e313681e42fbbe4d01922f08f6652cf44fe880265bda9fcf1",
+      "metadata": {
+        "step": "s104",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0105",
+      "artifact_type": "order",
+      "content_hash": "sha256:c7f312626a4d3b0e93615b3176d922ec28e001bafe34119b291480ab5a1014b8",
+      "metadata": {
+        "step": "s105",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0106",
+      "artifact_type": "quote",
+      "content_hash": "sha256:eadae5865b29aaf4237941099e6e1fa4c0126974b48d965973ccfb575fce4ad2",
+      "metadata": {
+        "step": "s106",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0107",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:5970f2c5beab859fe3f957810edbc9a505e002e07d404338c946d2e007c26a83",
+      "metadata": {
+        "step": "s107",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0108",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:fdb4e2b917b3e98be91e236c4e88d49028d446a59bef7e536a6f1ba61a0d0bc3",
+      "metadata": {
+        "step": "s108",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0109",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:53478dcfdd1e4739127064bf4c67106dfbff03e90a7a8f8c5ce6db6a7b64bae4",
+      "metadata": {
+        "step": "s109",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0110",
+      "artifact_type": "order",
+      "content_hash": "sha256:09aacc87c288261c6109ff7788af084ea18c7e035575d6359d58fde238503771",
+      "metadata": {
+        "step": "s110",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0111",
+      "artifact_type": "quote",
+      "content_hash": "sha256:6abbd95f40e5acd517852bc088f7ac980b56b12d933878c8c8d62a1633770121",
+      "metadata": {
+        "step": "s111",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0112",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:b168929e4d4a3ccd1841386f74200500d4a68d284e76195686e31d297444e1b0",
+      "metadata": {
+        "step": "s112",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0113",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:5526eefbfb4ac53c933ac62da066c9801bb7f946adf0f7613631434580579847",
+      "metadata": {
+        "step": "s113",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0114",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:1250242c6ee4593f83ee2185824019a63bf1646ca9adea5fb452828544642b1f",
+      "metadata": {
+        "step": "s114",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0115",
+      "artifact_type": "order",
+      "content_hash": "sha256:ea2313c4980cf0bcf5a7f0ac9fcca1eec85f99ca9ed0c35e31ab540646bf74a9",
+      "metadata": {
+        "step": "s115",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0116",
+      "artifact_type": "quote",
+      "content_hash": "sha256:3f5883d82ccede853109cee8c2c0d6e649887f58a8737ad5dcb4fd6e0240d989",
+      "metadata": {
+        "step": "s116",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0117",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:18abc5e4ac8c8446881866f0d4bd9e465950a3899055502e31f77b8bbca00126",
+      "metadata": {
+        "step": "s117",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0118",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:38a841534a333488fe598f033cc06170e332b783909dbf085d8a55700c2bf849",
+      "metadata": {
+        "step": "s118",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0119",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:251bc07f9cc916e7e36010015adf5ec0cd543d2f9a514f446bf8df5920ea2250",
+      "metadata": {
+        "step": "s119",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0120",
+      "artifact_type": "order",
+      "content_hash": "sha256:06487ffea91dba79e3c31b3b5a27ff1753e810edc0d5fe2a9105d9a383688bcc",
+      "metadata": {
+        "step": "s120",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0121",
+      "artifact_type": "quote",
+      "content_hash": "sha256:ddd45f61d894bad9553d4f3b3f891a3e3c8687f580c76df020ac800eee8224e6",
+      "metadata": {
+        "step": "s121",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0122",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:33bfd7e1d05e47ac37f18001913a2c38e52811b64888aed92b9d5e6c2539370e",
+      "metadata": {
+        "step": "s122",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0123",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:609453822db19507285827c23da4d69389a049309f69be071524d3df759b2e05",
+      "metadata": {
+        "step": "s123",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0124",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:f027efb99e8f810af59f3a99899b9ebcf1082d1cd36204068586d4f2d650b29c",
+      "metadata": {
+        "step": "s124",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0125",
+      "artifact_type": "order",
+      "content_hash": "sha256:c8e4c6a7603487ad28d1459ca316645f266a18840770d35207b81579fa9300e4",
+      "metadata": {
+        "step": "s125",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0126",
+      "artifact_type": "quote",
+      "content_hash": "sha256:52a77e8053fd80b218a94c2296165793503e87f868163194cec49c5adfc70594",
+      "metadata": {
+        "step": "s126",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0127",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:f806a875c5d59d589ed96b4a6dffed5a5e77142dac1107dbdbbeed044ed0b253",
+      "metadata": {
+        "step": "s127",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0128",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:e67a61529d757fb7b071093175633ed2a62038c80f8768b02316fdc9c984d0df",
+      "metadata": {
+        "step": "s128",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0129",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:9a5fcd6856fec5e7a3f0bf79016028f8704304f528f4169d3241e3a5819dbb41",
+      "metadata": {
+        "step": "s129",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0130",
+      "artifact_type": "order",
+      "content_hash": "sha256:6c9b0eee0cf98f21bf562ead7ecf9c07a32149eea819040d9fc195453375db6e",
+      "metadata": {
+        "step": "s130",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0131",
+      "artifact_type": "quote",
+      "content_hash": "sha256:77eb0b984e38943fb896ee15a60894acb5bf2d782e40db8c3e12fb185438b0c2",
+      "metadata": {
+        "step": "s131",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0132",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:b1a321c1f1888ecf5b8266411c2a0b5d3876d5ce391caf6b88f3810add8f4ffd",
+      "metadata": {
+        "step": "s132",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0133",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:ee1aa76ec02a202d4027b5b03ad15a5f1840d63e1c1c829124d5f418c44ddf40",
+      "metadata": {
+        "step": "s133",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0134",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:6501715e13318faf0f8755e7e0bbb4f6b99c1180eeedd2a92869eaebcd191470",
+      "metadata": {
+        "step": "s134",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0135",
+      "artifact_type": "order",
+      "content_hash": "sha256:bd072f743ca3f754c1995cfb80524570775c1d31cd2cd8562b1596728046450c",
+      "metadata": {
+        "step": "s135",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0136",
+      "artifact_type": "quote",
+      "content_hash": "sha256:6a23e93f796f2c068084c819ed352b6a537670d382ac3b75154ca4a85b89a198",
+      "metadata": {
+        "step": "s136",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0137",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:bd37da6c48b9c07417d7844b3feb42728156c14583a1b78b2f58593dccebd6ab",
+      "metadata": {
+        "step": "s137",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0138",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:5e5f45480e6d72c43c12e7df462fc6f48d7c8d045ff259b5186a0fe19aacf7d7",
+      "metadata": {
+        "step": "s138",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0139",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:49e687044d81a687e4fe87563552be82469e5ed5a35be116148f3050c685cfe3",
+      "metadata": {
+        "step": "s139",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0140",
+      "artifact_type": "order",
+      "content_hash": "sha256:d7618a0dabe7aafb203bc5b94174137d7a50bd20406f85c0575a61d016d97966",
+      "metadata": {
+        "step": "s140",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0141",
+      "artifact_type": "quote",
+      "content_hash": "sha256:8adb96b9a3f41360ae1a816e8224a8373d4e4775c638264ad5574854cd4f7aef",
+      "metadata": {
+        "step": "s141",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0142",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:c38bea9d560ee7393d716d2df889fcb802feb7b6a3ec35e2caa2e5056862a415",
+      "metadata": {
+        "step": "s142",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0143",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:27ddd13eeb06a13cfe5af6a5437561584cda9f400af59d281ffb86115843e8c1",
+      "metadata": {
+        "step": "s143",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0144",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:c0bb361c27915edc6a810a259284ee81cfa3acb8219ef202792b1a5ca597aae6",
+      "metadata": {
+        "step": "s144",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0145",
+      "artifact_type": "order",
+      "content_hash": "sha256:69ff4c246f37645f38250a09bf7901b558074c3d9cb786a8daeaf938815621d9",
+      "metadata": {
+        "step": "s145",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0146",
+      "artifact_type": "quote",
+      "content_hash": "sha256:75d0c49ccab46b7604ecbfc078ce8d99fee4a1cfca63c9a61659255d839598fa",
+      "metadata": {
+        "step": "s146",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0147",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:4abacdfef6aa7c5bc2f5e058b0b17cce313583ea60ce78112f357325c1df0abd",
+      "metadata": {
+        "step": "s147",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0148",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:3fd07212e2b08e4d7725999c07ed6b6792f300e04d846256fd485ce6debeaf6d",
+      "metadata": {
+        "step": "s148",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0149",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:ac2557d71e1117e7efa412c3c9a95fc11c8a29d6bfc68f91296fc4c17362bf6e",
+      "metadata": {
+        "step": "s149",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0150",
+      "artifact_type": "order",
+      "content_hash": "sha256:fde382eec55506c0d8c4b4b81e5b04484a2012666c9dc9fdc3007eef2ef39cdf",
+      "metadata": {
+        "step": "s150",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0151",
+      "artifact_type": "quote",
+      "content_hash": "sha256:4e3f4717435cd97d02eac542be405835d47f5d53a959e28dea5d4431a30838ab",
+      "metadata": {
+        "step": "s151",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0152",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:408ee38122c013f4fd08f8b3475f9bd31f494593e287eeaa83942fbaf4d9f790",
+      "metadata": {
+        "step": "s152",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0153",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:0236b1e6dfbd98e7dd7821e1f973110a379541492cf7ccfdc790bd2a2f5fb149",
+      "metadata": {
+        "step": "s153",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0154",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:85bc2f20aec2709826cccbee1da8bdb2e3c0d44b906fd5d21877c5cba16cb695",
+      "metadata": {
+        "step": "s154",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0155",
+      "artifact_type": "order",
+      "content_hash": "sha256:1ed10568ef0f2b1259479c267c7f8697f3163ab84045337bf87df7afe3a0cde2",
+      "metadata": {
+        "step": "s155",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0156",
+      "artifact_type": "quote",
+      "content_hash": "sha256:68973359ae8fa3660d6747b616d4ba7e38d0c7b8f68439e22a83894c39872d4c",
+      "metadata": {
+        "step": "s156",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0157",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:952c082eabf5a1c65a570a26f7294354d08cbffcb1fb287a9bed88c72d305677",
+      "metadata": {
+        "step": "s157",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0158",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:b2a9a38b59d943442ce815195bf29b382cc0e642d0224728668161fa9f2b9975",
+      "metadata": {
+        "step": "s158",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0159",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:3d93dce8626ae37dcdb9660971fef421e32fcb2da99982d990e9e9849c4d76d0",
+      "metadata": {
+        "step": "s159",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0160",
+      "artifact_type": "order",
+      "content_hash": "sha256:b5e2c391e02663aa0455c0a6eef411e6bb84dd3c80190dcff93e701d986af97c",
+      "metadata": {
+        "step": "s160",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0161",
+      "artifact_type": "quote",
+      "content_hash": "sha256:e4b5efd694539ccb50f4064c0b7ace44e1bc7386e2683bc35b4bda96400ff3ae",
+      "metadata": {
+        "step": "s161",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0162",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:1ed8cba715868e5fe229dfc3d02cd2e1efe0b7bde91924c6706f5a02090e58fe",
+      "metadata": {
+        "step": "s162",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0163",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:56e878f6ee64c6e38c17ce7e824f78a35e0c49479cd95db5a4e1a1076b8e9845",
+      "metadata": {
+        "step": "s163",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0164",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:05e8ca2fda77be56a79c82dc74ceb4f37650b27e7f9d972abf8741549225b64e",
+      "metadata": {
+        "step": "s164",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0165",
+      "artifact_type": "order",
+      "content_hash": "sha256:1c4d7dedfadf4aa8511c379fb0610d15a15244fe8ce3986c9b7e5b2ea2023244",
+      "metadata": {
+        "step": "s165",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0166",
+      "artifact_type": "quote",
+      "content_hash": "sha256:9cfebc0f3513c514390f0882de15c51dcaa7b07dbdc7d16ec93c55958597c590",
+      "metadata": {
+        "step": "s166",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0167",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:2d62b930154bfac858764e11b8159b627b7ec88faba2b7ca0a43493b46861663",
+      "metadata": {
+        "step": "s167",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0168",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:3d08e80087b559ff86a87e7cb84ccddd7e13956dd76313b278fee22bec7fcc7c",
+      "metadata": {
+        "step": "s168",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0169",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:0f89913f52b866a2c8c6b65609705deb4d672ec3ae86a1da1d321276d6d6f140",
+      "metadata": {
+        "step": "s169",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0170",
+      "artifact_type": "order",
+      "content_hash": "sha256:2452db8425c4a30d0b0c1b1e401a5e4f64af22b3d1ab4bb18e2ab9a7aeb70dcb",
+      "metadata": {
+        "step": "s170",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0171",
+      "artifact_type": "quote",
+      "content_hash": "sha256:b1943ee1a3aaa389cef5838a8c7ffed8e4dd2225387aa2ade3a8cffe32fd5104",
+      "metadata": {
+        "step": "s171",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0172",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:59dd30aee579b977d68ad58fb8754c2c0e5bc2687b848d95466f3139a9649e83",
+      "metadata": {
+        "step": "s172",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0173",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:ff86dde1e3d44905d80eb16755b7adb1c210a0ca0a901a9a97e54f8b797eb9ff",
+      "metadata": {
+        "step": "s173",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0174",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:e2d06e592ef151a933d3cc50a418371f09eef37cd830d539eb69c66012137015",
+      "metadata": {
+        "step": "s174",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0175",
+      "artifact_type": "order",
+      "content_hash": "sha256:547f0070b71011733d4468c625a5d0d7ba506918d1b412ef5702ea2c2369cfd9",
+      "metadata": {
+        "step": "s175",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0176",
+      "artifact_type": "quote",
+      "content_hash": "sha256:27f494ab024773dae2a4518ba273d0bcc8de32b3bbd9cd158818d2e9761b3913",
+      "metadata": {
+        "step": "s176",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0177",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:10300b16c081fcfffc43b8514014940fecc936a39779ab86007fdfce60827ef6",
+      "metadata": {
+        "step": "s177",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0178",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:8e97c58ffb1cbb4195e0254c167e784616cdbbbfecdd5f0d371698f772e12d91",
+      "metadata": {
+        "step": "s178",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0179",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:2bd6e3a0bc50f96b350545f85f85d3ad0470055a14a0429abef0fe63b6e53de8",
+      "metadata": {
+        "step": "s179",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0180",
+      "artifact_type": "order",
+      "content_hash": "sha256:10273555eccc3e6e866db92b3230d10f9b40d1ca9cf678226e7d664c2c901ebb",
+      "metadata": {
+        "step": "s180",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0181",
+      "artifact_type": "quote",
+      "content_hash": "sha256:3681ad0e9470ab465fd31dd49903098d1c1641b6141fe0f6f1133bc5290f772a",
+      "metadata": {
+        "step": "s181",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0182",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:2dff4e7b0a9b54d004aeb9c335e9820eb7bb5279d6b89dab9b2ea889bd7fb32c",
+      "metadata": {
+        "step": "s182",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0183",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:fab3c04176d18c15d83f3423cdcd05a28e603a9ef2ccfefc546aec5b091cef6a",
+      "metadata": {
+        "step": "s183",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0184",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:f23b727b430f9552a376ab2fc914d53d7c0315dc15ff201e296732a3d32e310e",
+      "metadata": {
+        "step": "s184",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0185",
+      "artifact_type": "order",
+      "content_hash": "sha256:d007736e9c601f5e296f91d859fdfa81da474a727bb6963bd2d8a59fd6c2903d",
+      "metadata": {
+        "step": "s185",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0186",
+      "artifact_type": "quote",
+      "content_hash": "sha256:7af1bde52c537960856453f02b804aa6f0347e31523b82dc1591bc84ac429c80",
+      "metadata": {
+        "step": "s186",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0187",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:43951d778a0252fb1bd466ea9bdd7adc6e8f3eee9610443ac3bbcfa2c13e9e71",
+      "metadata": {
+        "step": "s187",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0188",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:981b7cf091bfa4242ceaeac7e55c3b5456565424b0b676f987bbb5845d041495",
+      "metadata": {
+        "step": "s188",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0189",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:9c45882f8a5c1a9714caf2e3dee93be8a9f0dfb891d9b83e25ed66db3d6b2510",
+      "metadata": {
+        "step": "s189",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0190",
+      "artifact_type": "order",
+      "content_hash": "sha256:962d81b11dd8e3c43818ad768e682453932ba8ef96796129f4264ad89b1547ae",
+      "metadata": {
+        "step": "s190",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0191",
+      "artifact_type": "quote",
+      "content_hash": "sha256:132487cf4e71ff03d2022f7e2ebb947b8ea9ec019ac9e762d8c05b315db72e58",
+      "metadata": {
+        "step": "s191",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0192",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:90ac10f7488566a81ede2b5f6d318c46a5526a4103d537dd619a9c1b1c6aa910",
+      "metadata": {
+        "step": "s192",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0193",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:2156189db0f1f6ee90b4ef62544c7a23b50c8af352bdb385ba5943401b1b5f28",
+      "metadata": {
+        "step": "s193",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0194",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:1a5611a13069407759409515f503421767d88b08d3ea4da20c9b6b52b56a412b",
+      "metadata": {
+        "step": "s194",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0195",
+      "artifact_type": "order",
+      "content_hash": "sha256:cbfdd2150fbf64d15c331724dd12883b3d441de9bb236d52ac5a0c416cfa97ca",
+      "metadata": {
+        "step": "s195",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0196",
+      "artifact_type": "quote",
+      "content_hash": "sha256:358019055474a544084bf1670a8033779e03075b08a176cde0e17650071c834d",
+      "metadata": {
+        "step": "s196",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0197",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:71cf79ef6414b21ea89be243d5043749a81f9dab43f3403aea4d1c231885f773",
+      "metadata": {
+        "step": "s197",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0198",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:e93af81feddea6c78367801c7f9a607de374ccbd5994d0236bf29f29dd06be68",
+      "metadata": {
+        "step": "s198",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0199",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:e6c3151643d4d922388d17ee0c829d9ddbf8550bd2d8b6aef50cd67d3f9d2400",
+      "metadata": {
+        "step": "s199",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0200",
+      "artifact_type": "order",
+      "content_hash": "sha256:a1879155f515f59ee9afca0478590fc77e95b264bacfbdecb997ffa81f088fe2",
+      "metadata": {
+        "step": "s200",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0201",
+      "artifact_type": "quote",
+      "content_hash": "sha256:6ff7ea02e78603cd206a40e8877af4e69918afbf58be0dc01900440923293344",
+      "metadata": {
+        "step": "s201",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0202",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:50467311be56b1c135f529e58dfff3f9262f2899cf7a91b0314c5dfc5a160277",
+      "metadata": {
+        "step": "s202",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0203",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:50a69200f7e557ea3f3810bd3152db0f42f41ed9fe996a30c51baa850c6307b4",
+      "metadata": {
+        "step": "s203",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0204",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:8a7b19c56a8b73ec94f6f77275c9d916491abd1b42f627d5dd3f5088fad47429",
+      "metadata": {
+        "step": "s204",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0205",
+      "artifact_type": "order",
+      "content_hash": "sha256:f125272972cd5ce4ecf97ab2ff0665780351ae4f3ec239f9deb1e63b7cb11dfd",
+      "metadata": {
+        "step": "s205",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0206",
+      "artifact_type": "quote",
+      "content_hash": "sha256:3dcdab6fb131419a716c197316e9e34415ef289b3ad847838328d31b7e9a56b7",
+      "metadata": {
+        "step": "s206",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0207",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:42cb3170a64be4bfa7d453f199faa9466e8a1ed3a22f2a85a451e2fc9c5b43af",
+      "metadata": {
+        "step": "s207",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0208",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:4277f822ce1dd131806ef88649a9bfa9b039e59c07a4fb5a0162f96d1b84563f",
+      "metadata": {
+        "step": "s208",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0209",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:3e4de080aa5e5c68bed7e4a5d78d40bd2417402e54ab956861e959bb4605b21f",
+      "metadata": {
+        "step": "s209",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0210",
+      "artifact_type": "order",
+      "content_hash": "sha256:8d4354bc400b6bc995d8a9e259e53dc2c6f7638ddd1ebe350981c467cec49688",
+      "metadata": {
+        "step": "s210",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0211",
+      "artifact_type": "quote",
+      "content_hash": "sha256:450dbb08fc4d979bb8cca1d2b7526efd8b4b46adce5e8b0c66be0b73bda3c9a5",
+      "metadata": {
+        "step": "s211",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0212",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:056ba459b7e319fd9d58824c23c60f155c7d362f7243a1222133102ded61103a",
+      "metadata": {
+        "step": "s212",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0213",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:12abebff2539c187234bd7c07ef714e86e4156039675e8a0eceb7b29afbe3118",
+      "metadata": {
+        "step": "s213",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0214",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:3d9f71e41d3eb09d369d9831d3238dce873187f8113def06225703f50a428b19",
+      "metadata": {
+        "step": "s214",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0215",
+      "artifact_type": "order",
+      "content_hash": "sha256:dd24e75030a34791f46d7ed93bc6405d274d76cba847f46ad62935e4118d0770",
+      "metadata": {
+        "step": "s215",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0216",
+      "artifact_type": "quote",
+      "content_hash": "sha256:6ee20681819fae7df276b33e4926bcb9050315a1f927747f2a7f217ebeec4e60",
+      "metadata": {
+        "step": "s216",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0217",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:79957da07588b11257a22be3fe2c5bcaa318652280691dc3b58a808094232073",
+      "metadata": {
+        "step": "s217",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0218",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:08a3c6654f3da566d3dc8125103a62cd8eb824778bda501189ed5a9ebbeb743d",
+      "metadata": {
+        "step": "s218",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0219",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:bc14d3ad86052b141cb42d5363333277eede1d9b2aaf70f3bcf3858bfcf23dc3",
+      "metadata": {
+        "step": "s219",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0220",
+      "artifact_type": "order",
+      "content_hash": "sha256:7be054e225f8f8d4d23aed89e2ba334bb8d1570c1c8cda6a71d7407f12730b38",
+      "metadata": {
+        "step": "s220",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0221",
+      "artifact_type": "quote",
+      "content_hash": "sha256:d013ac4f1d7500709b122cf910042eafb47b92eac7aaf0812ff14a7a68921e4d",
+      "metadata": {
+        "step": "s221",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0222",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:2672086605352f20e237540ac76d62544733ac203d41672e88996561c956d2cc",
+      "metadata": {
+        "step": "s222",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0223",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:b7ab092100494a2d79f8ec346c64d5e4e52258fa26eb8619797e93daec36a279",
+      "metadata": {
+        "step": "s223",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0224",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:c2be380b886bd8e1eff673821ba87d1dd4de3349420c85da9156d9d134901d67",
+      "metadata": {
+        "step": "s224",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0225",
+      "artifact_type": "order",
+      "content_hash": "sha256:97850eb63aea82aa41bfeda0ca818ec935ec03045933a0aa36a5067e270e00d8",
+      "metadata": {
+        "step": "s225",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0226",
+      "artifact_type": "quote",
+      "content_hash": "sha256:c97e52a02796b07f09cf122a7616e10fef6914726202fa8fa06377bf8c7a4081",
+      "metadata": {
+        "step": "s226",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0227",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:096a113b4885d52e69e3b81375df22f6f7b45cbf05e82cb952a7a91464cdc0f2",
+      "metadata": {
+        "step": "s227",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0228",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:7b1fdc1aa4f040a967ac4b131a1aafd3be06a3a8259875bb409ff81504b159e3",
+      "metadata": {
+        "step": "s228",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0229",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:5e446e2a0dcc45cb1f4f97e3d66d7b56ea9c7f4d31b2233be739466f7ac6fc1c",
+      "metadata": {
+        "step": "s229",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0230",
+      "artifact_type": "order",
+      "content_hash": "sha256:072eb867c76202f0e1ecfcbcc4dcf41c5f22288efd308b1d7aa9a629d0705fa8",
+      "metadata": {
+        "step": "s230",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0231",
+      "artifact_type": "quote",
+      "content_hash": "sha256:4054174cfe8a3537cada9b59f14c847b89abcb72e8caac78ca2bd81fc04b45e7",
+      "metadata": {
+        "step": "s231",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0232",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:d643be2597798b79679d45bfa936b092d82e451f996de04f078ba4b14d134609",
+      "metadata": {
+        "step": "s232",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0233",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:5ccb1e7f223009eb6d22bd1e36910f348b8d1b99eb8171ba8eb57a2d3deb36ca",
+      "metadata": {
+        "step": "s233",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0234",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:a072f2808a8228346944dcf45a4af3bfd1efb40afbdb4735d92d12a884f0ab79",
+      "metadata": {
+        "step": "s234",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0235",
+      "artifact_type": "order",
+      "content_hash": "sha256:31ce65ac49185a68ceb7133913e9864a12656af9527b2beac9fc7d813502d33d",
+      "metadata": {
+        "step": "s235",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0236",
+      "artifact_type": "quote",
+      "content_hash": "sha256:14c7df4fd5f1f884ffaa09e11430afeaf6a78f3136ffd72df7abe3780d9410b5",
+      "metadata": {
+        "step": "s236",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0237",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:4672ec254c2d0e3271a49672b6259821e479e841eb111b679be965921d760364",
+      "metadata": {
+        "step": "s237",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0238",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:d1426ed1c8e5e5164c88b8a2b0b8ef02dd35ca36a581ddbfb62cc4270327b6d3",
+      "metadata": {
+        "step": "s238",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0239",
+      "artifact_type": "txn_result",
+      "content_hash": "sha256:e750a4580bb16249375bba700194f729d5af83c4971b945dbac5d9d80fafa002",
+      "metadata": {
+        "step": "s239",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0240",
+      "artifact_type": "order",
+      "content_hash": "sha256:0e1390ea5c5e5fbf1430b82958b64d3efdacbb121dafdce74b85b5ad38adf0e1",
+      "metadata": {
+        "step": "s240",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0241",
+      "artifact_type": "quote",
+      "content_hash": "sha256:3fff3cd9fdc7b6b786d02cb9d9977f856df32a1ecc3af42f5a2ae987db1adadb",
+      "metadata": {
+        "step": "s241",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0242",
+      "artifact_type": "aml_result",
+      "content_hash": "sha256:fa9fa9850fa28af6ba0b16a32bc3523fea51eae3cb621ecc0a035e9f6b541edb",
+      "metadata": {
+        "step": "s242",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s10024-clean-cmp:a0243",
+      "artifact_type": "settlement_receipt",
+      "content_hash": "sha256:84397742b35f54eb16cfae7112d89e45fd1be243fc1025a24b3c26e7f574bd02",
+      "metadata": {
+        "step": "s243",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    }
+  ]
+}

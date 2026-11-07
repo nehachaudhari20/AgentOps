@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 103,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "investigator",
+    "analyst",
+    "osint",
+    "risk",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "investigator-1"
+  ],
+  "artifact_count": 103,
+  "config_fingerprint": "a0a3631f537a137f40fd59f3e205866ba9c42e64b31415b3c822d8c4c1fb48b0",
+  "expected_event_count": 100,
+  "fault_types": [
+    "retry_storm"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "explicit shared artifacts consumed by multiple agents",
+    "explicit shared artifacts consumed by multiple agents",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|shared_artifact|S2|fraud_investigation|retry_storm|r1|c201",
+    "base_seed=20312"
+  ],
+  "outcome_event_ids": [
+    "bench-fraud_investigation-shared_artifact-S2-s20313-retry_storm-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "fraud_investigation",
+  "seed": 20313,
+  "topology_id": "shared_artifact",
+  "trace_id": "bench-fraud_investigation-shared_artifact-S2-s20313-retry_storm-cmp"
+}

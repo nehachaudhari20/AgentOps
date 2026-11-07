@@ -1,0 +1,2238 @@
+{
+  "events": [
+    {
+      "agent_id": "coordinator",
+      "category": "instruction",
+      "dependency_event_ids": [],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0000",
+      "event_type": "prompt",
+      "input_artifact_ids": [],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0000"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:00:02Z",
+      "ts_start": "2024-06-01T12:00:00Z"
+    },
+    {
+      "agent_id": "coordinator",
+      "category": "reasoning",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0000"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0001",
+      "event_type": "reasoning",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0000"
+      ],
+      "invokes_event_ids": [],
+      "model_id": "model-coord-v1",
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0001"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:00:07Z",
+      "ts_start": "2024-06-01T12:00:05Z"
+    },
+    {
+      "agent_id": "planner",
+      "category": "retrieval",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0001"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0002",
+      "event_type": "retrieval",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0001"
+      ],
+      "invokes_event_ids": [],
+      "metadata": {
+        "subtype": "memory"
+      },
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0002"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:00:12Z",
+      "ts_start": "2024-06-01T12:00:10Z"
+    },
+    {
+      "agent_id": "researcher",
+      "category": "knowledge",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0002"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0003",
+      "event_type": "document",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0002"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0003"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:00:17Z",
+      "ts_start": "2024-06-01T12:00:15Z"
+    },
+    {
+      "agent_id": "risk",
+      "category": "tool",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0003"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0004",
+      "event_type": "tool_call",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0003"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0004"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "tool_id": "policy_lookup",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:00:22Z",
+      "ts_start": "2024-06-01T12:00:20Z"
+    },
+    {
+      "agent_id": "policy",
+      "category": "reasoning",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0004"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0005",
+      "event_type": "reasoning",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0004"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0005"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:00:27Z",
+      "ts_start": "2024-06-01T12:00:25Z"
+    },
+    {
+      "agent_id": "memory",
+      "category": "transformation",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0005"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0006",
+      "event_type": "embedding",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0005"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0006"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:00:32Z",
+      "ts_start": "2024-06-01T12:00:30Z"
+    },
+    {
+      "agent_id": "tool_runner",
+      "category": "retrieval",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0006"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0007",
+      "event_type": "retrieval",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0006"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0007"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:00:37Z",
+      "ts_start": "2024-06-01T12:00:35Z"
+    },
+    {
+      "agent_id": "coordinator-1",
+      "category": "knowledge",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0007"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0008",
+      "event_type": "document",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0007"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0008"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:00:42Z",
+      "ts_start": "2024-06-01T12:00:40Z"
+    },
+    {
+      "agent_id": "planner-1",
+      "category": "tool",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0008"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0009",
+      "event_type": "tool_call",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0008"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0009"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "tool_id": "risk_calc",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:00:47Z",
+      "ts_start": "2024-06-01T12:00:45Z"
+    },
+    {
+      "agent_id": "planner",
+      "category": "reasoning",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0009"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0010",
+      "event_type": "reasoning",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0009"
+      ],
+      "invokes_event_ids": [],
+      "model_id": "model-plan-v1",
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0010"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:00:52Z",
+      "ts_start": "2024-06-01T12:00:50Z"
+    },
+    {
+      "agent_id": "researcher",
+      "category": "transformation",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0010"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0011",
+      "event_type": "embedding",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0010"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0011"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:00:57Z",
+      "ts_start": "2024-06-01T12:00:55Z"
+    },
+    {
+      "agent_id": "risk",
+      "category": "retrieval",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0011"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0012",
+      "event_type": "retrieval",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0011"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0012"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:01:02Z",
+      "ts_start": "2024-06-01T12:01:00Z"
+    },
+    {
+      "agent_id": "policy",
+      "category": "knowledge",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0012"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0013",
+      "event_type": "document",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0012"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0013"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:01:07Z",
+      "ts_start": "2024-06-01T12:01:05Z"
+    },
+    {
+      "agent_id": "memory",
+      "category": "tool",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0013"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0014",
+      "event_type": "tool_call",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0013"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0014"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "tool_id": "credit_score_api",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:01:12Z",
+      "ts_start": "2024-06-01T12:01:10Z"
+    },
+    {
+      "agent_id": "tool_runner",
+      "category": "reasoning",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0014"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0015",
+      "event_type": "reasoning",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0014"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0015"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:01:17Z",
+      "ts_start": "2024-06-01T12:01:15Z"
+    },
+    {
+      "agent_id": "coordinator-1",
+      "category": "transformation",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0015"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0016",
+      "event_type": "embedding",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0015"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0016"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:01:22Z",
+      "ts_start": "2024-06-01T12:01:20Z"
+    },
+    {
+      "agent_id": "planner-1",
+      "category": "retrieval",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0016"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0017",
+      "event_type": "retrieval",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0016"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0017"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:01:27Z",
+      "ts_start": "2024-06-01T12:01:25Z"
+    },
+    {
+      "agent_id": "planner",
+      "category": "knowledge",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0017"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0018",
+      "event_type": "document",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0017"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0018"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:01:32Z",
+      "ts_start": "2024-06-01T12:01:30Z"
+    },
+    {
+      "agent_id": "researcher",
+      "category": "tool",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0018"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0019",
+      "event_type": "tool_call",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0018"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0019"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "tool_id": "income_verifier",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:01:37Z",
+      "ts_start": "2024-06-01T12:01:35Z"
+    },
+    {
+      "agent_id": "risk",
+      "category": "reasoning",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0019"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0020",
+      "event_type": "reasoning",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0019"
+      ],
+      "invokes_event_ids": [],
+      "model_id": "model-risk-v1",
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0020"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:01:42Z",
+      "ts_start": "2024-06-01T12:01:40Z"
+    },
+    {
+      "agent_id": "policy",
+      "category": "transformation",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0020"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0021",
+      "event_type": "embedding",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0020"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0021"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:01:47Z",
+      "ts_start": "2024-06-01T12:01:45Z"
+    },
+    {
+      "agent_id": "memory",
+      "category": "retrieval",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0021"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0022",
+      "event_type": "retrieval",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0021"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0022"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:01:52Z",
+      "ts_start": "2024-06-01T12:01:50Z"
+    },
+    {
+      "agent_id": "tool_runner",
+      "category": "knowledge",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0022"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0023",
+      "event_type": "document",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0022"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0023"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:01:57Z",
+      "ts_start": "2024-06-01T12:01:55Z"
+    },
+    {
+      "agent_id": "coordinator-1",
+      "category": "tool",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0023"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0024",
+      "event_type": "tool_call",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0023"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0024"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "tool_id": "policy_lookup",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:02:02Z",
+      "ts_start": "2024-06-01T12:02:00Z"
+    },
+    {
+      "agent_id": "planner-1",
+      "category": "reasoning",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0024"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0025",
+      "event_type": "reasoning",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0024"
+      ],
+      "invokes_event_ids": [],
+      "model_id": "model-plan-v1",
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0025"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:02:07Z",
+      "ts_start": "2024-06-01T12:02:05Z"
+    },
+    {
+      "agent_id": "planner",
+      "category": "transformation",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0025"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0026",
+      "event_type": "embedding",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0025"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0026"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:02:12Z",
+      "ts_start": "2024-06-01T12:02:10Z"
+    },
+    {
+      "agent_id": "researcher",
+      "category": "retrieval",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0026"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0027",
+      "event_type": "retrieval",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0026"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0027"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:02:17Z",
+      "ts_start": "2024-06-01T12:02:15Z"
+    },
+    {
+      "agent_id": "risk",
+      "category": "knowledge",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0027"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0028",
+      "event_type": "document",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0027"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0028"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:02:22Z",
+      "ts_start": "2024-06-01T12:02:20Z"
+    },
+    {
+      "agent_id": "policy",
+      "category": "tool",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0028"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0029",
+      "event_type": "tool_call",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0028"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0029"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "tool_id": "risk_calc",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:02:27Z",
+      "ts_start": "2024-06-01T12:02:25Z"
+    },
+    {
+      "agent_id": "memory",
+      "category": "reasoning",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0029"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0030",
+      "event_type": "reasoning",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0029"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0030"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:02:32Z",
+      "ts_start": "2024-06-01T12:02:30Z"
+    },
+    {
+      "agent_id": "tool_runner",
+      "category": "transformation",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0030"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0031",
+      "event_type": "embedding",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0030"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0031"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:02:37Z",
+      "ts_start": "2024-06-01T12:02:35Z"
+    },
+    {
+      "agent_id": "coordinator-1",
+      "category": "retrieval",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0031"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0032",
+      "event_type": "retrieval",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0031"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0032"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:02:42Z",
+      "ts_start": "2024-06-01T12:02:40Z"
+    },
+    {
+      "agent_id": "planner-1",
+      "category": "knowledge",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0032"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0033",
+      "event_type": "document",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0032"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0033"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:02:47Z",
+      "ts_start": "2024-06-01T12:02:45Z"
+    },
+    {
+      "agent_id": "planner",
+      "category": "tool",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0033"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0034",
+      "event_type": "tool_call",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0033"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0034"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "tool_id": "credit_score_api",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:02:52Z",
+      "ts_start": "2024-06-01T12:02:50Z"
+    },
+    {
+      "agent_id": "researcher",
+      "category": "reasoning",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0034"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0035",
+      "event_type": "reasoning",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0034"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0035"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:02:57Z",
+      "ts_start": "2024-06-01T12:02:55Z"
+    },
+    {
+      "agent_id": "risk",
+      "category": "transformation",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0035"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0036",
+      "event_type": "embedding",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0035"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0036"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:03:02Z",
+      "ts_start": "2024-06-01T12:03:00Z"
+    },
+    {
+      "agent_id": "policy",
+      "category": "retrieval",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0036"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0037",
+      "event_type": "retrieval",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0036"
+      ],
+      "invokes_event_ids": [],
+      "metadata": {
+        "subtype": "memory"
+      },
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0037"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:03:07Z",
+      "ts_start": "2024-06-01T12:03:05Z"
+    },
+    {
+      "agent_id": "memory",
+      "category": "knowledge",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0037"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0038",
+      "event_type": "document",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0037"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0038"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:03:12Z",
+      "ts_start": "2024-06-01T12:03:10Z"
+    },
+    {
+      "agent_id": "tool_runner",
+      "category": "tool",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0038"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0039",
+      "event_type": "tool_call",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0038"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0039"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "tool_id": "income_verifier",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:03:17Z",
+      "ts_start": "2024-06-01T12:03:15Z"
+    },
+    {
+      "agent_id": "coordinator-1",
+      "category": "reasoning",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0039"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0040",
+      "event_type": "reasoning",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0039"
+      ],
+      "invokes_event_ids": [],
+      "model_id": "model-coord-v1",
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0040"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:03:22Z",
+      "ts_start": "2024-06-01T12:03:20Z"
+    },
+    {
+      "agent_id": "planner-1",
+      "category": "transformation",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0040"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0041",
+      "event_type": "embedding",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0040"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0041"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:03:27Z",
+      "ts_start": "2024-06-01T12:03:25Z"
+    },
+    {
+      "agent_id": "planner",
+      "category": "retrieval",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0041"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0042",
+      "event_type": "retrieval",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0041"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0042"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:03:32Z",
+      "ts_start": "2024-06-01T12:03:30Z"
+    },
+    {
+      "agent_id": "researcher",
+      "category": "knowledge",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0042"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0043",
+      "event_type": "document",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0042"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0043"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:03:37Z",
+      "ts_start": "2024-06-01T12:03:35Z"
+    },
+    {
+      "agent_id": "risk",
+      "category": "tool",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0043"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0044",
+      "event_type": "tool_call",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0043"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0044"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "tool_id": "policy_lookup",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:03:42Z",
+      "ts_start": "2024-06-01T12:03:40Z"
+    },
+    {
+      "agent_id": "policy",
+      "category": "reasoning",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0044"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0045",
+      "event_type": "reasoning",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0044"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0045"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:03:47Z",
+      "ts_start": "2024-06-01T12:03:45Z"
+    },
+    {
+      "agent_id": "memory",
+      "category": "transformation",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0045"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0046",
+      "event_type": "embedding",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0045"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0046"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:03:52Z",
+      "ts_start": "2024-06-01T12:03:50Z"
+    },
+    {
+      "agent_id": "tool_runner",
+      "category": "retrieval",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0046"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0047",
+      "event_type": "retrieval",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0046"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0047"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:03:57Z",
+      "ts_start": "2024-06-01T12:03:55Z"
+    },
+    {
+      "agent_id": "coordinator-1",
+      "category": "knowledge",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0047"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0048",
+      "event_type": "document",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0047"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0048"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:04:02Z",
+      "ts_start": "2024-06-01T12:04:00Z"
+    },
+    {
+      "agent_id": "planner-1",
+      "category": "tool",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0048"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0049",
+      "event_type": "tool_call",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0048"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0049"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "tool_id": "risk_calc",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:04:07Z",
+      "ts_start": "2024-06-01T12:04:05Z"
+    },
+    {
+      "agent_id": "planner",
+      "category": "reasoning",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0049"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0050",
+      "event_type": "reasoning",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0049"
+      ],
+      "invokes_event_ids": [],
+      "model_id": "model-plan-v1",
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0050"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:04:12Z",
+      "ts_start": "2024-06-01T12:04:10Z"
+    },
+    {
+      "agent_id": "researcher",
+      "category": "transformation",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0050"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0051",
+      "event_type": "embedding",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0050"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0051"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:04:17Z",
+      "ts_start": "2024-06-01T12:04:15Z"
+    },
+    {
+      "agent_id": "risk",
+      "category": "retrieval",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0051"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0052",
+      "event_type": "retrieval",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0051"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0052"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:04:22Z",
+      "ts_start": "2024-06-01T12:04:20Z"
+    },
+    {
+      "agent_id": "policy",
+      "category": "knowledge",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0052"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0053",
+      "event_type": "document",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0052"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0053"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:04:27Z",
+      "ts_start": "2024-06-01T12:04:25Z"
+    },
+    {
+      "agent_id": "memory",
+      "category": "tool",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0053"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0054",
+      "event_type": "tool_call",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0053"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0054"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "tool_id": "credit_score_api",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:04:32Z",
+      "ts_start": "2024-06-01T12:04:30Z"
+    },
+    {
+      "agent_id": "tool_runner",
+      "category": "reasoning",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0054"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0055",
+      "event_type": "reasoning",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0054"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0055"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:04:37Z",
+      "ts_start": "2024-06-01T12:04:35Z"
+    },
+    {
+      "agent_id": "coordinator-1",
+      "category": "transformation",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0055"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0056",
+      "event_type": "embedding",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0055"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0056"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:04:42Z",
+      "ts_start": "2024-06-01T12:04:40Z"
+    },
+    {
+      "agent_id": "planner-1",
+      "category": "retrieval",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0056"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0057",
+      "event_type": "retrieval",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0056"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0057"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:04:47Z",
+      "ts_start": "2024-06-01T12:04:45Z"
+    },
+    {
+      "agent_id": "planner",
+      "category": "knowledge",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0057"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0058",
+      "event_type": "document",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0057"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0058"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:04:52Z",
+      "ts_start": "2024-06-01T12:04:50Z"
+    },
+    {
+      "agent_id": "researcher",
+      "category": "tool",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0058"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0059",
+      "event_type": "tool_call",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0058"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0059"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "tool_id": "income_verifier",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:04:57Z",
+      "ts_start": "2024-06-01T12:04:55Z"
+    },
+    {
+      "agent_id": "risk",
+      "category": "reasoning",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0059"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0060",
+      "event_type": "reasoning",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0059"
+      ],
+      "invokes_event_ids": [],
+      "model_id": "model-risk-v1",
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0060"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:05:02Z",
+      "ts_start": "2024-06-01T12:05:00Z"
+    },
+    {
+      "agent_id": "policy",
+      "category": "transformation",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0060"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0061",
+      "event_type": "embedding",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0060"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0061"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:05:07Z",
+      "ts_start": "2024-06-01T12:05:05Z"
+    },
+    {
+      "agent_id": "memory",
+      "category": "retrieval",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0061"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0062",
+      "event_type": "retrieval",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0061"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0062"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:05:12Z",
+      "ts_start": "2024-06-01T12:05:10Z"
+    },
+    {
+      "agent_id": "tool_runner",
+      "category": "knowledge",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0062"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0063",
+      "event_type": "document",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0062"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0063"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:05:17Z",
+      "ts_start": "2024-06-01T12:05:15Z"
+    },
+    {
+      "agent_id": "coordinator-1",
+      "category": "tool",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0063"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0064",
+      "event_type": "tool_call",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0063"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0064"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "tool_id": "policy_lookup",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:05:22Z",
+      "ts_start": "2024-06-01T12:05:20Z"
+    },
+    {
+      "agent_id": "planner-1",
+      "category": "reasoning",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0064"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0065",
+      "event_type": "reasoning",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0064"
+      ],
+      "invokes_event_ids": [],
+      "model_id": "model-plan-v1",
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0065"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:05:27Z",
+      "ts_start": "2024-06-01T12:05:25Z"
+    },
+    {
+      "agent_id": "planner",
+      "category": "transformation",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0065"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0066",
+      "event_type": "embedding",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0065"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0066"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:05:32Z",
+      "ts_start": "2024-06-01T12:05:30Z"
+    },
+    {
+      "agent_id": "researcher",
+      "category": "retrieval",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0066"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0067",
+      "event_type": "retrieval",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0066"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0067"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:05:37Z",
+      "ts_start": "2024-06-01T12:05:35Z"
+    },
+    {
+      "agent_id": "risk",
+      "category": "knowledge",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0067"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0068",
+      "event_type": "document",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0067"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0068"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:05:42Z",
+      "ts_start": "2024-06-01T12:05:40Z"
+    },
+    {
+      "agent_id": "policy",
+      "category": "tool",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0068"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0069",
+      "event_type": "tool_call",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0068"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0069"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "tool_id": "risk_calc",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:05:47Z",
+      "ts_start": "2024-06-01T12:05:45Z"
+    },
+    {
+      "agent_id": "memory",
+      "category": "reasoning",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0069"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0070",
+      "event_type": "reasoning",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0069"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0070"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:05:52Z",
+      "ts_start": "2024-06-01T12:05:50Z"
+    },
+    {
+      "agent_id": "tool_runner",
+      "category": "transformation",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0070"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0071",
+      "event_type": "embedding",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0070"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0071"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:05:57Z",
+      "ts_start": "2024-06-01T12:05:55Z"
+    },
+    {
+      "agent_id": "coordinator-1",
+      "category": "retrieval",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0071"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0072",
+      "event_type": "retrieval",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0071"
+      ],
+      "invokes_event_ids": [],
+      "metadata": {
+        "subtype": "memory"
+      },
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0072"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:06:02Z",
+      "ts_start": "2024-06-01T12:06:00Z"
+    },
+    {
+      "agent_id": "planner-1",
+      "category": "knowledge",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0072"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0073",
+      "event_type": "document",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0072"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0073"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:06:07Z",
+      "ts_start": "2024-06-01T12:06:05Z"
+    },
+    {
+      "agent_id": "planner",
+      "category": "tool",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0073"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0074",
+      "event_type": "tool_call",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0073"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0074"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "tool_id": "credit_score_api",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:06:12Z",
+      "ts_start": "2024-06-01T12:06:10Z"
+    },
+    {
+      "agent_id": "researcher",
+      "category": "reasoning",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0074"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0075",
+      "event_type": "reasoning",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0074"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0075"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:06:17Z",
+      "ts_start": "2024-06-01T12:06:15Z"
+    },
+    {
+      "agent_id": "risk",
+      "category": "transformation",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0075"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0076",
+      "event_type": "embedding",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0075"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0076"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:06:22Z",
+      "ts_start": "2024-06-01T12:06:20Z"
+    },
+    {
+      "agent_id": "policy",
+      "category": "retrieval",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0076"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0077",
+      "event_type": "retrieval",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0076"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0077"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:06:27Z",
+      "ts_start": "2024-06-01T12:06:25Z"
+    },
+    {
+      "agent_id": "memory",
+      "category": "knowledge",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0077"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0078",
+      "event_type": "document",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0077"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0078"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:06:32Z",
+      "ts_start": "2024-06-01T12:06:30Z"
+    },
+    {
+      "agent_id": "tool_runner",
+      "category": "tool",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0078"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0079",
+      "event_type": "tool_call",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0078"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0079"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "tool_id": "income_verifier",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:06:37Z",
+      "ts_start": "2024-06-01T12:06:35Z"
+    },
+    {
+      "agent_id": "coordinator-1",
+      "category": "reasoning",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0079"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0080",
+      "event_type": "reasoning",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0079"
+      ],
+      "invokes_event_ids": [],
+      "model_id": "model-coord-v1",
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0080"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:06:42Z",
+      "ts_start": "2024-06-01T12:06:40Z"
+    },
+    {
+      "agent_id": "planner-1",
+      "category": "transformation",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0080"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0081",
+      "event_type": "embedding",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0080"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0081"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:06:47Z",
+      "ts_start": "2024-06-01T12:06:45Z"
+    },
+    {
+      "agent_id": "planner",
+      "category": "retrieval",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0081"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0082",
+      "event_type": "retrieval",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0081"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0082"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:06:52Z",
+      "ts_start": "2024-06-01T12:06:50Z"
+    },
+    {
+      "agent_id": "researcher",
+      "category": "knowledge",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0082"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0083",
+      "event_type": "document",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0082"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0083"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:06:57Z",
+      "ts_start": "2024-06-01T12:06:55Z"
+    },
+    {
+      "agent_id": "risk",
+      "category": "tool",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0083"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0084",
+      "event_type": "tool_call",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0083"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0084"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "tool_id": "policy_lookup",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:07:02Z",
+      "ts_start": "2024-06-01T12:07:00Z"
+    },
+    {
+      "agent_id": "policy",
+      "category": "reasoning",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0084"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0085",
+      "event_type": "reasoning",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0084"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0085"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:07:07Z",
+      "ts_start": "2024-06-01T12:07:05Z"
+    },
+    {
+      "agent_id": "memory",
+      "category": "transformation",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0085"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0086",
+      "event_type": "embedding",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0085"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0086"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:07:12Z",
+      "ts_start": "2024-06-01T12:07:10Z"
+    },
+    {
+      "agent_id": "tool_runner",
+      "category": "retrieval",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0086"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0087",
+      "event_type": "retrieval",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0086"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0087"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:07:17Z",
+      "ts_start": "2024-06-01T12:07:15Z"
+    },
+    {
+      "agent_id": "coordinator-1",
+      "category": "knowledge",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0087"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0088",
+      "event_type": "document",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0087"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0088"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:07:22Z",
+      "ts_start": "2024-06-01T12:07:20Z"
+    },
+    {
+      "agent_id": "planner-1",
+      "category": "tool",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0088"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0089",
+      "event_type": "tool_call",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0088"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0089"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "tool_id": "risk_calc",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:07:27Z",
+      "ts_start": "2024-06-01T12:07:25Z"
+    },
+    {
+      "agent_id": "planner",
+      "category": "reasoning",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0089"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0090",
+      "event_type": "reasoning",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0089"
+      ],
+      "invokes_event_ids": [],
+      "model_id": "model-plan-v1",
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0090"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:07:32Z",
+      "ts_start": "2024-06-01T12:07:30Z"
+    },
+    {
+      "agent_id": "researcher",
+      "category": "transformation",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0090"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0091",
+      "event_type": "embedding",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0090"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0091"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:07:37Z",
+      "ts_start": "2024-06-01T12:07:35Z"
+    },
+    {
+      "agent_id": "risk",
+      "category": "retrieval",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0091"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0092",
+      "event_type": "retrieval",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0091"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0092"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:07:42Z",
+      "ts_start": "2024-06-01T12:07:40Z"
+    },
+    {
+      "agent_id": "policy",
+      "category": "knowledge",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0092"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0093",
+      "event_type": "document",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0092"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0093"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:07:47Z",
+      "ts_start": "2024-06-01T12:07:45Z"
+    },
+    {
+      "agent_id": "memory",
+      "category": "tool",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0093"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0094",
+      "event_type": "tool_call",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0093"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0094"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "tool_id": "credit_score_api",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:07:52Z",
+      "ts_start": "2024-06-01T12:07:50Z"
+    },
+    {
+      "agent_id": "tool_runner",
+      "category": "reasoning",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0094"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0095",
+      "event_type": "reasoning",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0094"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0095"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:07:57Z",
+      "ts_start": "2024-06-01T12:07:55Z"
+    },
+    {
+      "agent_id": "coordinator-1",
+      "category": "transformation",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0095"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0096",
+      "event_type": "embedding",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0095"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0096"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:08:02Z",
+      "ts_start": "2024-06-01T12:08:00Z"
+    },
+    {
+      "agent_id": "planner-1",
+      "category": "retrieval",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0096"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0097",
+      "event_type": "retrieval",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0096"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0097"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:08:07Z",
+      "ts_start": "2024-06-01T12:08:05Z"
+    },
+    {
+      "agent_id": "planner",
+      "category": "knowledge",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0097"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0098",
+      "event_type": "document",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0097"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0098"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:08:12Z",
+      "ts_start": "2024-06-01T12:08:10Z"
+    },
+    {
+      "agent_id": "executor",
+      "category": "decision",
+      "dependency_event_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0098"
+      ],
+      "event_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:e0099",
+      "event_type": "action",
+      "input_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0098"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp:a0099"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "ts_end": "2024-06-01T12:08:17Z",
+      "ts_start": "2024-06-01T12:08:15Z"
+    }
+  ]
+}

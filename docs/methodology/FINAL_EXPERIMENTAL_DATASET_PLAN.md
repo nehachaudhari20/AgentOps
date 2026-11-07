@@ -1,7 +1,10 @@
-# Final Experimental Dataset Plan (Design Only)
+# Final Experimental Dataset Plan (Design Only → superseded for generation)
 
-**Status:** Design document for a future evaluation phase.  
-**Not generated in Phase 2.5.** The checked-in pilot remains a development corpus.
+**Status:** Historical planning notes. **Phase 2.9 implements** the binding design in  
+[`EXPERIMENTAL_DATASET_DESIGN.md`](EXPERIMENTAL_DATASET_DESIGN.md) and  
+[`SAMPLE_SIZE_AND_POWER.md`](SAMPLE_SIZE_AND_POWER.md).  
+Generated corpus: `data/benchmarks/experimental_2_9/`.  
+The checked-in `pilot/` remains a historical development corpus (generator 2.4.0).
 
 ## Units of analysis
 

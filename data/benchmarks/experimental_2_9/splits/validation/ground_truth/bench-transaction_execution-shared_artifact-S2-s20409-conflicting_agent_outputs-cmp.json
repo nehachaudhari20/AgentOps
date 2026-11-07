@@ -1,0 +1,2344 @@
+{
+  "attribution_reference": {
+    "disclaimer": "equal_root_ancestor_mass assigns structural share among dependency-DAG roots reachable to each outcome. It is NOT causal responsibility, NOT legal liability, and MUST NOT be derived by copying ConservedRPA/MFAV outputs.",
+    "ground_truth_version": "gt-2.9.0",
+    "method": "equal_root_ancestor_mass.v1",
+    "outcomes": [
+      {
+        "ancestor_event_ids": [
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0000",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0001",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0002",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0005",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0008",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0011",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0014",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0017",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0020",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0023",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0026",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0029",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0032",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0035",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0038",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0041",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0044",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0047",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0050",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0053",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0056",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0059",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0062",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0065",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0068",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0071",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0074",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0077",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0080",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0083",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0086",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0089",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0092",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0094",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0095",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0096",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0097",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0099"
+        ],
+        "method": "equal_root_ancestor_mass.v1",
+        "notes": [
+          "Mass conserved over root events (sum=1 when roots non-empty).",
+          "Agent map aggregates root event shares; not causal credit."
+        ],
+        "outcome_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0099",
+        "root_agent_allocations": {
+          "coordinator": 1.0
+        },
+        "root_event_allocations": {
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0000": 1.0
+        }
+      }
+    ]
+  },
+  "disclaimer": "Ground truth records generator intent only. Graph reachability is not causal proof. Do not feed these labels into RPA/MFAV algorithm inputs. Attribution reference (if present) is equal-root structural share, not causal GT.",
+  "generator_version": "2.5.1",
+  "ground_truth_version": "gt-2.9.0",
+  "interventions": [
+    {
+      "affected_artifact_ids": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0003",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0004"
+      ],
+      "affected_event_ids": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0003",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0004"
+      ],
+      "expected_observable_effects": [
+        "two artifacts expose mutually inconsistent decision values",
+        "two artifacts have distinct content_hash values"
+      ],
+      "fault_type": "conflicting_agent_outputs",
+      "generator_version": "2.5.1",
+      "injection_location": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0003",
+      "intervention_id": "iv-conflicting_agent_outputs-20409-01",
+      "notes": [
+        "Conflict is recoverable from observable decision/hash disagreement; GT records the intended semantic relation separately."
+      ],
+      "parameters": {
+        "artifact_ids": [
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0003",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0004"
+        ],
+        "expected_decisions": {
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0003": "approve",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0004": "reject"
+        },
+        "observed_content_hashes": {
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0003": "sha256:f8858dfc7ad19e6bad279fdd398286c69f85d9d6a7b9626be527ea21629b690a",
+          "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0004": "sha256:1d16cd870b41456191275f80668451136c33a385050d02d4afbfa6d456519ac7"
+        },
+        "relation": "mutually_inconsistent_decisions"
+      },
+      "scenario_id": "transaction_execution",
+      "seed": 20409
+    }
+  ],
+  "lineage": {
+    "artifact_consumers": {
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0000": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0001": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0002"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0002": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0003",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0004",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0005"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0005": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0006",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0007",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0008"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0008": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0009",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0010",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0011"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0011": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0012",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0013",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0014"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0014": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0015",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0016",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0017"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0017": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0018",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0019",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0020"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0020": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0021",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0022",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0023"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0023": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0024",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0025",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0026"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0026": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0027",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0028",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0029"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0029": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0030",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0031",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0032"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0032": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0033",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0034",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0035"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0035": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0036",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0037",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0038"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0038": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0039",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0040",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0041"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0041": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0042",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0043",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0044"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0044": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0045",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0046",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0047"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0047": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0048",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0049",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0050"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0050": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0051",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0052",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0053"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0053": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0054",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0055",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0056"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0056": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0057",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0058",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0059"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0059": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0060",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0061",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0062"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0062": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0063",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0064",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0065"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0065": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0066",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0067",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0068"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0068": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0069",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0070",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0071"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0071": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0072",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0073",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0074"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0074": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0075",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0076",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0077"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0077": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0078",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0079",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0080"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0080": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0081",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0082",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0083"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0083": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0084",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0085",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0086"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0086": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0087",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0088",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0089"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0089": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0090",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0091",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0092"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0092": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0093",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0094",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0095"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0094": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0099"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0095": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0096",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0097",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0098"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0096": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0099"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0097": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0099"
+      ]
+    },
+    "artifact_producers": {
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0000": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0000",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0001": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0001",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0002": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0002",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0003": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0003",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0004": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0004",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0005": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0005",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0006": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0006",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0007": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0007",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0008": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0008",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0009": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0009",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0010": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0010",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0011": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0011",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0012": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0012",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0013": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0013",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0014": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0014",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0015": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0015",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0016": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0016",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0017": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0017",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0018": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0018",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0019": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0019",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0020": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0020",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0021": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0021",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0022": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0022",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0023": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0023",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0024": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0024",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0025": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0025",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0026": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0026",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0027": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0027",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0028": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0028",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0029": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0029",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0030": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0030",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0031": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0031",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0032": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0032",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0033": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0033",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0034": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0034",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0035": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0035",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0036": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0036",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0037": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0037",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0038": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0038",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0039": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0039",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0040": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0040",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0041": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0041",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0042": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0042",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0043": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0043",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0044": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0044",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0045": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0045",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0046": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0046",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0047": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0047",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0048": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0048",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0049": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0049",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0050": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0050",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0051": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0051",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0052": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0052",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0053": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0053",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0054": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0054",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0055": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0055",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0056": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0056",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0057": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0057",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0058": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0058",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0059": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0059",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0060": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0060",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0061": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0061",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0062": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0062",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0063": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0063",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0064": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0064",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0065": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0065",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0066": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0066",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0067": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0067",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0068": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0068",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0069": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0069",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0070": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0070",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0071": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0071",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0072": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0072",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0073": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0073",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0074": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0074",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0075": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0075",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0076": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0076",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0077": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0077",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0078": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0078",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0079": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0079",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0080": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0080",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0081": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0081",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0082": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0082",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0083": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0083",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0084": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0084",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0085": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0085",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0086": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0086",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0087": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0087",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0088": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0088",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0089": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0089",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0090": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0090",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0091": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0091",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0092": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0092",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0093": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0093",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0094": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0094",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0095": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0095",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0096": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0096",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0097": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0097",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0098": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0098",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0099": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0099"
+    },
+    "event_dependencies": {
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0000": [],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0001": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0000"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0002": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0003": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0002"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0004": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0002"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0005": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0002"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0006": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0005"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0007": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0005"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0008": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0005"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0009": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0008"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0010": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0008"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0011": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0008"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0012": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0011"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0013": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0011"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0014": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0011"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0015": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0014"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0016": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0014"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0017": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0014"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0018": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0017"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0019": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0017"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0020": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0017"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0021": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0020"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0022": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0020"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0023": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0020"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0024": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0023"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0025": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0023"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0026": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0023"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0027": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0026"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0028": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0026"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0029": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0026"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0030": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0029"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0031": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0029"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0032": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0029"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0033": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0032"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0034": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0032"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0035": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0032"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0036": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0035"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0037": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0035"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0038": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0035"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0039": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0038"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0040": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0038"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0041": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0038"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0042": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0041"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0043": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0041"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0044": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0041"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0045": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0044"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0046": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0044"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0047": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0044"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0048": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0047"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0049": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0047"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0050": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0047"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0051": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0050"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0052": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0050"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0053": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0050"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0054": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0053"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0055": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0053"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0056": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0053"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0057": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0056"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0058": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0056"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0059": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0056"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0060": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0059"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0061": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0059"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0062": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0059"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0063": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0062"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0064": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0062"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0065": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0062"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0066": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0065"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0067": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0065"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0068": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0065"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0069": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0068"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0070": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0068"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0071": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0068"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0072": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0071"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0073": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0071"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0074": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0071"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0075": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0074"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0076": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0074"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0077": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0074"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0078": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0077"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0079": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0077"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0080": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0077"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0081": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0080"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0082": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0080"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0083": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0080"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0084": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0083"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0085": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0083"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0086": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0083"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0087": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0086"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0088": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0086"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0089": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0086"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0090": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0089"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0091": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0089"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0092": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0089"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0093": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0092"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0094": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0092"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0095": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0092"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0096": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0095"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0097": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0095"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0098": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0095"
+      ],
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0099": [
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0094",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0096",
+        "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0097"
+      ]
+    },
+    "expected_relationships": [
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0000",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0000"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0001"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0000",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0001"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0000",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0001"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0002",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0002"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0002"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0002"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0003",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0003"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0002",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0003"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0002",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0003"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0004",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0004"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0002",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0004"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0002",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0004"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0005",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0005"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0002",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0005"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0002",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0005"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0006",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0006"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0005",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0006"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0005",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0006"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0007",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0007"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0005",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0007"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0005",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0007"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0008",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0008"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0005",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0008"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0005",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0008"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0009",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0009"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0008",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0009"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0008",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0009"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0010",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0010"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0008",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0010"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0008",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0010"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0011",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0011"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0008",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0011"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0008",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0011"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0012",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0012"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0011",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0012"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0011",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0012"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0013",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0013"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0011",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0013"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0011",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0013"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0014",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0014"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0011",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0014"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0011",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0014"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0015",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0015"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0014",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0015"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0014",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0015"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0016",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0016"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0014",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0016"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0014",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0016"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0017",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0017"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0014",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0017"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0014",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0017"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0018",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0018"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0017",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0018"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0017",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0018"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0019",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0019"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0017",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0019"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0017",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0019"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0020",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0020"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0017",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0020"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0017",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0020"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0021",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0021"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0020",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0021"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0020",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0021"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0022",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0022"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0020",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0022"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0020",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0022"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0023",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0023"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0020",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0023"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0020",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0023"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0024",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0024"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0023",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0024"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0023",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0024"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0025",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0025"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0023",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0025"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0023",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0025"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0026",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0026"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0023",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0026"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0023",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0026"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0027",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0027"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0026",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0027"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0026",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0027"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0028",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0028"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0026",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0028"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0026",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0028"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0029",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0029"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0026",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0029"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0026",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0029"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0030",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0030"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0029",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0030"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0029",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0030"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0031",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0031"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0029",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0031"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0029",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0031"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0032",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0032"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0029",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0032"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0029",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0032"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0033",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0033"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0032",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0033"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0032",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0033"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0034",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0034"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0032",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0034"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0032",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0034"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0035",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0035"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0032",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0035"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0032",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0035"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0036",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0036"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0035",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0036"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0035",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0036"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0037",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0037"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0035",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0037"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0035",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0037"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0038",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0038"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0035",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0038"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0035",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0038"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0039",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0039"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0038",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0039"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0038",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0039"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0040",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0040"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0038",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0040"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0038",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0040"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0041",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0041"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0038",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0041"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0038",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0041"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0042",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0042"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0041",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0042"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0041",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0042"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0043",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0043"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0041",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0043"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0041",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0043"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0044",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0044"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0041",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0044"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0041",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0044"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0045",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0045"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0044",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0045"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0044",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0045"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0046",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0046"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0044",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0046"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0044",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0046"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0047",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0047"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0044",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0047"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0044",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0047"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0048",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0048"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0047",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0048"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0047",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0048"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0049",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0049"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0047",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0049"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0047",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0049"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0050",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0050"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0047",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0050"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0047",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0050"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0051",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0051"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0050",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0051"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0050",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0051"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0052",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0052"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0050",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0052"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0050",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0052"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0053",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0053"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0050",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0053"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0050",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0053"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0054",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0054"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0053",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0054"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0053",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0054"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0055",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0055"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0053",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0055"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0053",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0055"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0056",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0056"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0053",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0056"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0053",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0056"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0057",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0057"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0056",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0057"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0056",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0057"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0058",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0058"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0056",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0058"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0056",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0058"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0059",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0059"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0056",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0059"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0056",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0059"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0060",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0060"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0059",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0060"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0059",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0060"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0061",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0061"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0059",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0061"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0059",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0061"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0062",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0062"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0059",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0062"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0059",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0062"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0063",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0063"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0062",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0063"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0062",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0063"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0064",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0064"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0062",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0064"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0062",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0064"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0065",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0065"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0062",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0065"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0062",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0065"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0066",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0066"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0065",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0066"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0065",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0066"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0067",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0067"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0065",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0067"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0065",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0067"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0068",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0068"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0065",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0068"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0065",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0068"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0069",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0069"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0068",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0069"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0068",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0069"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0070",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0070"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0068",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0070"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0068",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0070"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0071",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0071"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0068",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0071"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0068",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0071"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0072",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0072"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0071",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0072"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0071",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0072"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0073",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0073"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0071",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0073"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0071",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0073"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0074",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0074"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0071",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0074"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0071",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0074"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0075",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0075"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0074",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0075"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0074",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0075"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0076",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0076"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0074",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0076"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0074",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0076"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0077",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0077"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0074",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0077"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0074",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0077"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0078",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0078"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0077",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0078"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0077",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0078"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0079",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0079"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0077",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0079"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0077",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0079"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0080",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0080"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0077",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0080"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0077",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0080"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0081",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0081"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0080",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0081"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0080",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0081"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0082",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0082"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0080",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0082"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0080",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0082"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0083",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0083"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0080",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0083"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0080",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0083"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0084",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0084"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0083",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0084"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0083",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0084"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0085",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0085"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0083",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0085"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0083",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0085"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0086",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0086"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0083",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0086"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0083",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0086"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0087",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0087"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0086",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0087"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0086",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0087"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0088",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0088"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0086",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0088"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0086",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0088"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0089",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0089"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0086",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0089"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0086",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0089"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0090",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0090"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0089",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0090"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0089",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0090"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0091",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0091"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0089",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0091"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0089",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0091"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0092",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0092"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0089",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0092"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0089",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0092"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0093",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0093"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0092",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0093"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0092",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0093"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0094",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0094"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0092",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0094"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0092",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0094"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0095",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0095"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0092",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0095"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0092",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0095"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0096",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0096"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0095",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0096"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0095",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0096"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0097",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0097"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0095",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0097"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0095",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0097"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0098",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0098"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0095",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0098"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0095",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0098"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0099",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0099"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0094",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0099"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0096",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0099"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:a0097",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0099"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0094",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0099"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0096",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0099"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0097",
+        "target_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0099"
+      }
+    ],
+    "invocations": {},
+    "retries": {}
+  },
+  "quality": {
+    "corrupted_artifact_ids": [],
+    "incomplete_observation_notes": [
+      "explicit shared artifacts consumed by multiple agents"
+    ],
+    "intentionally_incomplete": false,
+    "missing_dependency_refs": [],
+    "missing_event_ids": []
+  },
+  "seed": 20409,
+  "structural": {
+    "agent_ids": [
+      "coordinator",
+      "validator",
+      "pricing",
+      "settlement",
+      "risk",
+      "executor",
+      "memory",
+      "tool_runner",
+      "coordinator-1",
+      "validator-1"
+    ],
+    "event_categories": {
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0000": "instruction",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0001": "knowledge",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0002": "knowledge",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0003": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0004": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0005": "transformation",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0006": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0007": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0008": "knowledge",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0009": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0010": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0011": "transformation",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0012": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0013": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0014": "knowledge",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0015": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0016": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0017": "transformation",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0018": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0019": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0020": "knowledge",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0021": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0022": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0023": "transformation",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0024": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0025": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0026": "knowledge",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0027": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0028": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0029": "transformation",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0030": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0031": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0032": "knowledge",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0033": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0034": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0035": "transformation",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0036": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0037": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0038": "knowledge",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0039": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0040": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0041": "transformation",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0042": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0043": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0044": "knowledge",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0045": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0046": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0047": "transformation",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0048": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0049": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0050": "knowledge",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0051": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0052": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0053": "transformation",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0054": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0055": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0056": "knowledge",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0057": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0058": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0059": "transformation",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0060": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0061": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0062": "knowledge",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0063": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0064": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0065": "transformation",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0066": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0067": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0068": "knowledge",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0069": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0070": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0071": "transformation",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0072": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0073": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0074": "knowledge",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0075": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0076": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0077": "transformation",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0078": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0079": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0080": "knowledge",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0081": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0082": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0083": "transformation",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0084": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0085": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0086": "knowledge",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0087": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0088": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0089": "transformation",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0090": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0091": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0092": "knowledge",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0093": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0094": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0095": "transformation",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0096": "tool",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0097": "reasoning",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0098": "knowledge",
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0099": "decision"
+    },
+    "model_ids": [
+      "model-price-v1",
+      "model-risk-v1"
+    ],
+    "outcome_event_ids": [
+      "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp:e0099"
+    ],
+    "scale_tier": "S2",
+    "scenario_id": "transaction_execution",
+    "tool_ids": [
+      "aml_check",
+      "price_feed"
+    ],
+    "topology_id": "shared_artifact"
+  },
+  "trace_id": "bench-transaction_execution-shared_artifact-S2-s20409-conflicting_agent_outputs-cmp"
+}

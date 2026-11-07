@@ -1,0 +1,48 @@
+{
+  "fault": {
+    "artifact_corruption": 24,
+    "clean": 306,
+    "conflicting_agent_outputs": 24,
+    "delegation_failure": 24,
+    "incomplete_trace": 24,
+    "incorrect_tool_output": 24,
+    "misleading_delayed_observation": 24,
+    "missing_dependency": 24,
+    "retry_storm": 24,
+    "tool_call_failure": 24
+  },
+  "n_matched_pair_ids": 216,
+  "n_traces": 522,
+  "n_unique_seeds": 522,
+  "note": "total_events/artifacts are nested volume, not independent sample size",
+  "role": {
+    "clean_core": 90,
+    "pair_clean": 216,
+    "pair_fault": 216
+  },
+  "scale": {
+    "S1": 234,
+    "S2": 234,
+    "S3": 18,
+    "S4": 18,
+    "S5": 18
+  },
+  "scenario": {
+    "compliance_review": 104,
+    "financial_loan": 106,
+    "fraud_investigation": 104,
+    "research_synthesis": 104,
+    "transaction_execution": 104
+  },
+  "split": "validation",
+  "topology": {
+    "delegated_multi_agent": 87,
+    "hierarchical": 87,
+    "mixed_realistic": 87,
+    "parallel_fanout_fanin": 87,
+    "sequential": 87,
+    "shared_artifact": 87
+  },
+  "total_artifacts": 66690,
+  "total_events": 66666
+}

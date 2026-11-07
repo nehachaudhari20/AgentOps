@@ -1,0 +1,36 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "analyst",
+    "writer"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "f6170b0845fb0b0e7196331bc0cacc70ec7e16d627ef9204998f1f19d8067a38",
+  "expected_event_count": 50,
+  "fault_types": [],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_clean",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|mixed_realistic|S1|research_synthesis|incorrect_tool_output|r2|c218",
+    "base_seed=30286"
+  ],
+  "outcome_event_ids": [
+    "bench-research_synthesis-mixed_realistic-S1-s30286-clean-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "research_synthesis",
+  "seed": 30286,
+  "topology_id": "mixed_realistic",
+  "trace_id": "bench-research_synthesis-mixed_realistic-S1-s30286-clean-cmp"
+}

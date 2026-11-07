@@ -1,0 +1,44 @@
+{
+  "coverage_notes": [
+    "Clean core: full topology\u00d7scale; scenarios rotated (not full cross).",
+    "Fault block: all 9 faults \u00d7 6 topologies \u00d7 S1[/S2] \u00d7 R with matched cleans.",
+    "S3\u2013S5 fault injection omitted from primary matrix (documented gap).",
+    "Historical pilot seeds 1\u2013200 excluded from experimental bands."
+  ],
+  "dataset_id": "agenttrust-experimental-2.9",
+  "design_fingerprint_sha256": "ac2fd8e9a0124823c3e088396c02ee199bb2e3bec7c5039bc66c3e9e11d2729c",
+  "design_version": "experimental-design-2.9.0",
+  "generator_version": "2.5.1",
+  "splits": {
+    "development": {
+      "n_clean_core": 60,
+      "n_matched_pairs": 108,
+      "n_pair_clean": 108,
+      "n_pair_fault": 108,
+      "n_traces": 276,
+      "n_unique_seeds": 276,
+      "seed_max": 10275,
+      "seed_min": 10000
+    },
+    "heldout_test": {
+      "n_clean_core": 150,
+      "n_matched_pairs": 324,
+      "n_pair_clean": 324,
+      "n_pair_fault": 324,
+      "n_traces": 798,
+      "n_unique_seeds": 798,
+      "seed_max": 30797,
+      "seed_min": 30000
+    },
+    "validation": {
+      "n_clean_core": 90,
+      "n_matched_pairs": 216,
+      "n_pair_clean": 216,
+      "n_pair_fault": 216,
+      "n_traces": 522,
+      "n_unique_seeds": 522,
+      "seed_max": 20521,
+      "seed_min": 20000
+    }
+  }
+}

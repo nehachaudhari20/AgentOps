@@ -1,0 +1,39 @@
+{
+  "actual_event_count": 49,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "analyst",
+    "writer"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "ed5f7dbe4e324f485e6c1d51a376f628137aac3b26025750dd3b67f078bc7cbb",
+  "expected_event_count": 50,
+  "fault_types": [
+    "incomplete_trace"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": true,
+  "intervention_count": 1,
+  "notes": [
+    "linear chain; each step depends on previous",
+    "incomplete_trace removed bench-research_synthesis-sequential-S1-s30657-incomplete_trace-inc:e0024",
+    "linear chain; each step depends on previous",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|sequential|S1|research_synthesis|incomplete_trace|r1|c403",
+    "base_seed=30656"
+  ],
+  "outcome_event_ids": [
+    "bench-research_synthesis-sequential-S1-s30657-incomplete_trace-inc:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "research_synthesis",
+  "seed": 30657,
+  "topology_id": "sequential",
+  "trace_id": "bench-research_synthesis-sequential-S1-s30657-incomplete_trace-inc"
+}

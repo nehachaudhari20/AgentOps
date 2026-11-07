@@ -1,0 +1,44 @@
+{
+  "actual_event_count": 99,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "risk",
+    "policy",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "planner-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "8977885730b84a74f27a9207067fb6e92601234bb95a6d1915aaac157c86701b",
+  "expected_event_count": 100,
+  "fault_types": [
+    "incomplete_trace"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": true,
+  "intervention_count": 1,
+  "notes": [
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "incomplete_trace removed bench-financial_loan-mixed_realistic-S2-s30721-incomplete_trace-inc:e0049",
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|mixed_realistic|S2|financial_loan|incomplete_trace|r0|c435",
+    "base_seed=30720"
+  ],
+  "outcome_event_ids": [
+    "bench-financial_loan-mixed_realistic-S2-s30721-incomplete_trace-inc:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "financial_loan",
+  "seed": 30721,
+  "topology_id": "mixed_realistic",
+  "trace_id": "bench-financial_loan-mixed_realistic-S2-s30721-incomplete_trace-inc"
+}

@@ -1,0 +1,1262 @@
+{
+  "attribution_reference": {
+    "disclaimer": "equal_root_ancestor_mass assigns structural share among dependency-DAG roots reachable to each outcome. It is NOT causal responsibility, NOT legal liability, and MUST NOT be derived by copying ConservedRPA/MFAV outputs.",
+    "ground_truth_version": "gt-2.9.0",
+    "method": "equal_root_ancestor_mass.v1",
+    "outcomes": [
+      {
+        "ancestor_event_ids": [
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0000",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0001",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0002",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0003",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0004",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0005",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0006",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0007",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0008",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0009",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0010",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0011",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0012",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0013",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0014",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0015",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0016",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0017",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0018",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0019",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0020",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0021",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0022",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0023",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0024",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0025",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0026",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0027",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0028",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0029",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0030",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0031",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0032",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0033",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0034",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0035",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0036",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0037",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0038",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0039",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0040",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0041",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0042",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0043",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0044",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0045",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0046",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0047",
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0048"
+        ],
+        "method": "equal_root_ancestor_mass.v1",
+        "notes": [
+          "Mass conserved over root events (sum=1 when roots non-empty).",
+          "Agent map aggregates root event shares; not causal credit."
+        ],
+        "outcome_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0048",
+        "root_agent_allocations": {
+          "coordinator": 1.0
+        },
+        "root_event_allocations": {
+          "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0000": 1.0
+        }
+      }
+    ]
+  },
+  "disclaimer": "Ground truth records generator intent only. Graph reachability is not causal proof. Do not feed these labels into RPA/MFAV algorithm inputs. Attribution reference (if present) is equal-root structural share, not causal GT.",
+  "generator_version": "2.5.1",
+  "ground_truth_version": "gt-2.9.0",
+  "interventions": [],
+  "lineage": {
+    "artifact_consumers": {
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0000": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0001"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0001": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0002",
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0017",
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0032"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0002": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0003"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0003": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0004"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0004": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0005"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0005": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0006"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0006": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0007"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0007": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0008"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0008": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0009"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0009": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0010"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0010": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0011"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0011": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0012"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0012": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0013"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0013": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0014"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0014": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0015"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0015": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0016"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0016": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0047"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0017": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0018"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0018": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0019"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0019": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0020"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0020": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0021"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0021": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0022"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0022": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0023"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0023": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0024"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0024": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0025"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0025": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0026"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0026": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0027"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0027": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0028"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0028": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0029"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0029": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0030"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0030": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0031"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0031": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0047"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0032": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0033"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0033": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0034"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0034": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0035"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0035": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0036"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0036": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0037"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0037": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0038"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0038": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0039"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0039": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0040"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0040": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0041"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0041": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0042"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0042": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0043"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0043": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0044"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0044": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0045"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0045": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0046"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0046": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0047"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0047": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0048"
+      ]
+    },
+    "artifact_producers": {
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0000": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0000",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0001": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0001",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0002": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0002",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0003": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0003",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0004": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0004",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0005": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0005",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0006": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0006",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0007": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0007",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0008": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0008",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0009": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0009",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0010": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0010",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0011": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0011",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0012": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0012",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0013": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0013",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0014": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0014",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0015": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0015",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0016": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0016",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0017": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0017",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0018": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0018",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0019": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0019",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0020": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0020",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0021": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0021",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0022": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0022",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0023": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0023",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0024": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0024",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0025": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0025",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0026": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0026",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0027": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0027",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0028": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0028",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0029": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0029",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0030": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0030",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0031": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0031",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0032": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0032",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0033": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0033",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0034": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0034",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0035": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0035",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0036": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0036",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0037": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0037",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0038": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0038",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0039": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0039",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0040": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0040",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0041": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0041",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0042": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0042",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0043": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0043",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0044": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0044",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0045": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0045",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0046": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0046",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0047": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0047",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0048": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0048"
+    },
+    "event_dependencies": {
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0000": [],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0001": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0000"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0002": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0001"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0003": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0002"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0004": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0003"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0005": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0004"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0006": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0005"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0007": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0006"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0008": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0007"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0009": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0008"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0010": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0009"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0011": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0010"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0012": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0011"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0013": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0012"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0014": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0013"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0015": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0014"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0016": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0015"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0017": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0001"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0018": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0017"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0019": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0018"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0020": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0019"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0021": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0020"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0022": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0021"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0023": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0022"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0024": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0023"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0025": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0024"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0026": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0025"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0027": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0026"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0028": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0027"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0029": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0028"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0030": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0029"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0031": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0030"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0032": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0001"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0033": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0032"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0034": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0033"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0035": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0034"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0036": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0035"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0037": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0036"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0038": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0037"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0039": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0038"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0040": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0039"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0041": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0040"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0042": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0041"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0043": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0042"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0044": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0043"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0045": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0044"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0046": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0045"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0047": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0016",
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0031",
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0046"
+      ],
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0048": [
+        "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0047"
+      ]
+    },
+    "expected_relationships": [
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0000",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0000"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0001",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0001"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0000",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0001"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0000",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0001"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0002",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0002"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0001",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0002"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0001",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0002"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0003",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0003"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0002",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0003"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0002",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0003"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0004",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0004"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0003",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0004"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0003",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0004"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0005",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0005"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0004",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0005"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0004",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0005"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0006",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0006"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0005",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0006"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0005",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0006"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0007",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0007"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0006",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0007"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0006",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0007"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0008",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0008"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0007",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0008"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0007",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0008"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0009",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0009"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0008",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0009"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0008",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0009"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0010",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0010"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0009",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0010"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0009",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0010"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0011",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0011"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0010",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0011"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0010",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0011"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0012",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0012"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0011",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0012"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0011",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0012"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0013",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0013"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0012",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0013"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0012",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0013"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0014",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0014"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0013",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0014"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0013",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0014"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0015",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0015"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0014",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0015"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0014",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0015"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0016",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0016"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0015",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0016"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0015",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0016"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0017",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0017"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0001",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0017"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0001",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0017"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0018",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0018"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0017",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0018"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0017",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0018"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0019",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0019"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0018",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0019"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0018",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0019"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0020",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0020"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0019",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0020"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0019",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0020"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0021",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0021"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0020",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0021"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0020",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0021"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0022",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0022"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0021",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0022"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0021",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0022"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0023",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0023"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0022",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0023"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0022",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0023"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0024",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0024"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0023",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0024"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0023",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0024"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0025",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0025"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0024",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0025"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0024",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0025"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0026",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0026"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0025",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0026"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0025",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0026"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0027",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0027"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0026",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0027"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0026",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0027"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0028",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0028"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0027",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0028"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0027",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0028"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0029",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0029"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0028",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0029"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0028",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0029"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0030",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0030"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0029",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0030"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0029",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0030"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0031",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0031"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0030",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0031"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0030",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0031"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0032",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0032"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0001",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0032"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0001",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0032"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0033",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0033"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0032",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0033"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0032",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0033"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0034",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0034"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0033",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0034"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0033",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0034"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0035",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0035"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0034",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0035"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0034",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0035"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0036",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0036"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0035",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0036"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0035",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0036"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0037",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0037"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0036",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0037"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0036",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0037"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0038",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0038"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0037",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0038"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0037",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0038"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0039",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0039"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0038",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0039"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0038",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0039"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0040",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0040"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0039",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0040"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0039",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0040"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0041",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0041"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0040",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0041"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0040",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0041"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0042",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0042"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0041",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0042"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0041",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0042"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0043",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0043"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0042",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0043"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0042",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0043"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0044",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0044"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0043",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0044"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0043",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0044"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0045",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0045"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0044",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0045"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0044",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0045"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0046",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0046"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0045",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0046"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0045",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0046"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0047",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0047"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0016",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0047"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0031",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0047"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0046",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0047"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0016",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0047"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0031",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0047"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0046",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0047"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0048",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0048"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:a0047",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0048"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0047",
+        "target_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0048"
+      }
+    ],
+    "invocations": {},
+    "retries": {}
+  },
+  "quality": {
+    "corrupted_artifact_ids": [],
+    "incomplete_observation_notes": [
+      "fan-out to parallel branches; fan-in merge before outcome"
+    ],
+    "intentionally_incomplete": false,
+    "missing_dependency_refs": [],
+    "missing_event_ids": []
+  },
+  "seed": 20108,
+  "structural": {
+    "agent_ids": [
+      "coordinator",
+      "validator",
+      "pricing",
+      "settlement",
+      "risk"
+    ],
+    "event_categories": {
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0000": "instruction",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0001": "reasoning",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0002": "retrieval",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0003": "tool",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0004": "knowledge",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0005": "retrieval",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0006": "tool",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0007": "knowledge",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0008": "retrieval",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0009": "tool",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0010": "knowledge",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0011": "retrieval",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0012": "tool",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0013": "knowledge",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0014": "retrieval",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0015": "tool",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0016": "knowledge",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0017": "retrieval",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0018": "tool",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0019": "knowledge",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0020": "retrieval",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0021": "tool",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0022": "knowledge",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0023": "retrieval",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0024": "tool",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0025": "knowledge",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0026": "retrieval",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0027": "tool",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0028": "knowledge",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0029": "retrieval",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0030": "tool",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0031": "knowledge",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0032": "retrieval",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0033": "tool",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0034": "knowledge",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0035": "retrieval",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0036": "tool",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0037": "knowledge",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0038": "retrieval",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0039": "tool",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0040": "knowledge",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0041": "retrieval",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0042": "tool",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0043": "knowledge",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0044": "retrieval",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0045": "tool",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0046": "knowledge",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0047": "reasoning",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0048": "decision"
+    },
+    "model_ids": [
+      "model-coord-v1"
+    ],
+    "outcome_event_ids": [
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp:e0048"
+    ],
+    "scale_tier": "S1",
+    "scenario_id": "transaction_execution",
+    "tool_ids": [
+      "aml_check",
+      "ledger_write",
+      "price_feed"
+    ],
+    "topology_id": "parallel_fanout_fanin"
+  },
+  "trace_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s20108-clean-cmp"
+}

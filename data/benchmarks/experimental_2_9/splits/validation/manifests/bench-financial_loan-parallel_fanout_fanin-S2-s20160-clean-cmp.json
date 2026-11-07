@@ -1,0 +1,41 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "risk",
+    "policy",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "planner-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "78701c5c504aff6d6487094d646a4af455a5c3ba25d01d1419141a465d31060c",
+  "expected_event_count": 100,
+  "fault_types": [],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_clean",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|parallel_fanout_fanin|S2|financial_loan|incorrect_tool_output|r1|c125",
+    "base_seed=20160"
+  ],
+  "outcome_event_ids": [
+    "bench-financial_loan-parallel_fanout_fanin-S2-s20160-clean-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "financial_loan",
+  "seed": 20160,
+  "topology_id": "parallel_fanout_fanin",
+  "trace_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20160-clean-cmp"
+}

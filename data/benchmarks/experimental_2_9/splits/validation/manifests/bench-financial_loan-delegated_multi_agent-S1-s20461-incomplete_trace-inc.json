@@ -1,0 +1,39 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "risk",
+    "policy"
+  ],
+  "artifact_count": 51,
+  "config_fingerprint": "30fe669832c7b8dca7147294496f3962345b3f45d3d624870646e587ef7de951",
+  "expected_event_count": 51,
+  "fault_types": [
+    "incomplete_trace"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": true,
+  "intervention_count": 1,
+  "notes": [
+    "multi-level INVOKES delegation; callers depend on callees",
+    "incomplete_trace removed bench-financial_loan-delegated_multi_agent-S1-s20461-incomplete_trace-inc:e0025",
+    "multi-level INVOKES delegation; callers depend on callees",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|delegated_multi_agent|S1|financial_loan|incomplete_trace|r1|c275",
+    "base_seed=20460"
+  ],
+  "outcome_event_ids": [
+    "bench-financial_loan-delegated_multi_agent-S1-s20461-incomplete_trace-inc:e0050"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "financial_loan",
+  "seed": 20461,
+  "topology_id": "delegated_multi_agent",
+  "trace_id": "bench-financial_loan-delegated_multi_agent-S1-s20461-incomplete_trace-inc"
+}

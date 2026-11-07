@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 104,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "auditor",
+    "researcher",
+    "reviewer",
+    "executor",
+    "memory",
+    "tool_runner",
+    "risk",
+    "coordinator-1",
+    "auditor-1"
+  ],
+  "artifact_count": 104,
+  "config_fingerprint": "e524ead011c5a9c98540f7081fe7ad6d393526acfac1ae25e8fd5aa1ec135480",
+  "expected_event_count": 101,
+  "fault_types": [
+    "retry_storm"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "multi-level INVOKES delegation; callers depend on callees",
+    "multi-level INVOKES delegation; callers depend on callees",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|delegated_multi_agent|S2|compliance_review|retry_storm|r1|c322",
+    "base_seed=30494"
+  ],
+  "outcome_event_ids": [
+    "bench-compliance_review-delegated_multi_agent-S2-s30495-retry_storm-cmp:e0100"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "compliance_review",
+  "seed": 30495,
+  "topology_id": "delegated_multi_agent",
+  "trace_id": "bench-compliance_review-delegated_multi_agent-S2-s30495-retry_storm-cmp"
+}

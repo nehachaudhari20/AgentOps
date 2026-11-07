@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 103,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "auditor",
+    "researcher",
+    "reviewer",
+    "executor",
+    "memory",
+    "tool_runner",
+    "risk",
+    "coordinator-1",
+    "auditor-1"
+  ],
+  "artifact_count": 103,
+  "config_fingerprint": "1828aba8d52ac8a4ed0405941424c6248926eb1d669d65fe76757c3d54b51371",
+  "expected_event_count": 100,
+  "fault_types": [
+    "retry_storm"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|hierarchical|S2|compliance_review|retry_storm|r0|c192",
+    "base_seed=20294"
+  ],
+  "outcome_event_ids": [
+    "bench-compliance_review-hierarchical-S2-s20295-retry_storm-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "compliance_review",
+  "seed": 20295,
+  "topology_id": "hierarchical",
+  "trace_id": "bench-compliance_review-hierarchical-S2-s20295-retry_storm-cmp"
+}

@@ -1,0 +1,38 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "auditor",
+    "researcher",
+    "reviewer",
+    "executor"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "f55e2b4ef21abf3fe7eba920b7a8ab17bb3af6f0705df3804ba0775c7eaf3485",
+  "expected_event_count": 50,
+  "fault_types": [
+    "conflicting_agent_outputs"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "linear chain; each step depends on previous",
+    "linear chain; each step depends on previous",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|sequential|S1|compliance_review|conflicting_agent_outputs|r1|c367",
+    "base_seed=30584"
+  ],
+  "outcome_event_ids": [
+    "bench-compliance_review-sequential-S1-s30585-conflicting_agent_outputs-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "compliance_review",
+  "seed": 30585,
+  "topology_id": "sequential",
+  "trace_id": "bench-compliance_review-sequential-S1-s30585-conflicting_agent_outputs-cmp"
+}

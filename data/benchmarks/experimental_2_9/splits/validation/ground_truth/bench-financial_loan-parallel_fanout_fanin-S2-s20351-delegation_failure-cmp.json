@@ -1,0 +1,2584 @@
+{
+  "attribution_reference": {
+    "disclaimer": "equal_root_ancestor_mass assigns structural share among dependency-DAG roots reachable to each outcome. It is NOT causal responsibility, NOT legal liability, and MUST NOT be derived by copying ConservedRPA/MFAV outputs.",
+    "ground_truth_version": "gt-2.9.0",
+    "method": "equal_root_ancestor_mass.v1",
+    "outcomes": [
+      {
+        "ancestor_event_ids": [
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0000",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0002",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0003",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0004",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0005",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0006",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0007",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0008",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0009",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0010",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0011",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0012",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0013",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0014",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0015",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0016",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0017",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0018",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0019",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0020",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0021",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0022",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0023",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0024",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0025",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0026",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0027",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0028",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0029",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0030",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0031",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0032",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0033",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0034",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0035",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0036",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0037",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0038",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0039",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0040",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0041",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0042",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0043",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0044",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0045",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0046",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0047",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0048",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0049",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0050",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0051",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0052",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0053",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0054",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0055",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0056",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0057",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0058",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0059",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0060",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0061",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0062",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0063",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0064",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0065",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0066",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0067",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0068",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0069",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0070",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0071",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0072",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0073",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0074",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0075",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0076",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0077",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0078",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0079",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0080",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0081",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0082",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0083",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0084",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0085",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0086",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0087",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0088",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0089",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0090",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0091",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0092",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0093",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0094",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0095",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0096",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0097",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098",
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0099"
+        ],
+        "method": "equal_root_ancestor_mass.v1",
+        "notes": [
+          "Mass conserved over root events (sum=1 when roots non-empty).",
+          "Agent map aggregates root event shares; not causal credit."
+        ],
+        "outcome_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0099",
+        "root_agent_allocations": {
+          "coordinator": 1.0
+        },
+        "root_event_allocations": {
+          "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0000": 1.0
+        }
+      }
+    ]
+  },
+  "disclaimer": "Ground truth records generator intent only. Graph reachability is not causal proof. Do not feed these labels into RPA/MFAV algorithm inputs. Attribution reference (if present) is equal-root structural share, not causal GT.",
+  "generator_version": "2.5.1",
+  "ground_truth_version": "gt-2.9.0",
+  "interventions": [
+    {
+      "affected_artifact_ids": [],
+      "affected_event_ids": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001"
+      ],
+      "expected_observable_effects": [
+        "INVOKES points at absent event"
+      ],
+      "fault_type": "delegation_failure",
+      "generator_version": "2.5.1",
+      "injection_location": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001",
+      "intervention_id": "iv-delegation_failure-20351-01",
+      "notes": [
+        "Missing callee is distinct from a callee that exists but fails."
+      ],
+      "parameters": {
+        "mode": "missing_callee",
+        "phantom_callee": "missing-callee-20351"
+      },
+      "scenario_id": "financial_loan",
+      "seed": 20351
+    }
+  ],
+  "lineage": {
+    "artifact_consumers": {
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0000": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0001": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0002",
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0014",
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0026",
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0038",
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0050",
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0062",
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0074",
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0086"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0002": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0003"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0003": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0004"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0004": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0005"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0005": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0006"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0006": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0007"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0007": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0008"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0008": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0009"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0009": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0010"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0010": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0011"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0011": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0012"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0012": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0013"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0013": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0014": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0015"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0015": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0016"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0016": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0017"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0017": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0018"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0018": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0019"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0019": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0020"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0020": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0021"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0021": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0022"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0022": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0023"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0023": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0024"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0024": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0025"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0025": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0026": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0027"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0027": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0028"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0028": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0029"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0029": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0030"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0030": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0031"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0031": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0032"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0032": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0033"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0033": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0034"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0034": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0035"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0035": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0036"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0036": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0037"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0037": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0038": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0039"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0039": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0040"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0040": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0041"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0041": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0042"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0042": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0043"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0043": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0044"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0044": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0045"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0045": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0046"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0046": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0047"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0047": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0048"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0048": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0049"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0049": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0050": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0051"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0051": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0052"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0052": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0053"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0053": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0054"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0054": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0055"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0055": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0056"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0056": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0057"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0057": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0058"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0058": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0059"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0059": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0060"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0060": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0061"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0061": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0062": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0063"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0063": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0064"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0064": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0065"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0065": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0066"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0066": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0067"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0067": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0068"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0068": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0069"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0069": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0070"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0070": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0071"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0071": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0072"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0072": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0073"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0073": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0074": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0075"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0075": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0076"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0076": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0077"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0077": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0078"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0078": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0079"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0079": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0080"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0080": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0081"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0081": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0082"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0082": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0083"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0083": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0084"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0084": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0085"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0085": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0086": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0087"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0087": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0088"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0088": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0089"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0089": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0090"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0090": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0091"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0091": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0092"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0092": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0093"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0093": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0094"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0094": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0095"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0095": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0096"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0096": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0097"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0097": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0098": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0099"
+      ]
+    },
+    "artifact_producers": {
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0000": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0000",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0001": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0002": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0002",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0003": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0003",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0004": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0004",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0005": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0005",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0006": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0006",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0007": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0007",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0008": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0008",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0009": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0009",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0010": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0010",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0011": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0011",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0012": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0012",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0013": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0013",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0014": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0014",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0015": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0015",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0016": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0016",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0017": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0017",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0018": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0018",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0019": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0019",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0020": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0020",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0021": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0021",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0022": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0022",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0023": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0023",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0024": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0024",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0025": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0025",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0026": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0026",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0027": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0027",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0028": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0028",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0029": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0029",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0030": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0030",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0031": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0031",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0032": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0032",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0033": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0033",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0034": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0034",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0035": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0035",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0036": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0036",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0037": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0037",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0038": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0038",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0039": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0039",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0040": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0040",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0041": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0041",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0042": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0042",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0043": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0043",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0044": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0044",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0045": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0045",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0046": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0046",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0047": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0047",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0048": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0048",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0049": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0049",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0050": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0050",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0051": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0051",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0052": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0052",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0053": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0053",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0054": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0054",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0055": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0055",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0056": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0056",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0057": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0057",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0058": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0058",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0059": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0059",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0060": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0060",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0061": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0061",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0062": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0062",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0063": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0063",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0064": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0064",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0065": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0065",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0066": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0066",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0067": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0067",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0068": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0068",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0069": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0069",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0070": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0070",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0071": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0071",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0072": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0072",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0073": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0073",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0074": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0074",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0075": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0075",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0076": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0076",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0077": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0077",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0078": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0078",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0079": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0079",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0080": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0080",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0081": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0081",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0082": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0082",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0083": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0083",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0084": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0084",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0085": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0085",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0086": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0086",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0087": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0087",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0088": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0088",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0089": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0089",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0090": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0090",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0091": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0091",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0092": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0092",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0093": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0093",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0094": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0094",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0095": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0095",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0096": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0096",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0097": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0097",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0098": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0099": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0099"
+    },
+    "event_dependencies": {
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0000": [],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0000"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0002": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0003": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0002"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0004": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0003"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0005": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0004"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0006": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0005"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0007": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0006"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0008": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0007"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0009": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0008"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0010": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0009"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0011": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0010"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0012": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0011"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0013": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0012"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0014": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0015": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0014"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0016": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0015"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0017": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0016"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0018": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0017"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0019": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0018"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0020": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0019"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0021": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0020"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0022": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0021"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0023": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0022"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0024": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0023"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0025": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0024"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0026": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0027": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0026"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0028": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0027"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0029": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0028"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0030": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0029"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0031": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0030"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0032": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0031"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0033": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0032"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0034": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0033"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0035": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0034"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0036": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0035"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0037": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0036"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0038": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0039": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0038"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0040": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0039"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0041": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0040"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0042": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0041"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0043": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0042"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0044": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0043"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0045": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0044"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0046": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0045"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0047": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0046"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0048": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0047"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0049": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0048"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0050": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0051": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0050"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0052": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0051"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0053": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0052"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0054": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0053"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0055": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0054"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0056": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0055"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0057": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0056"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0058": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0057"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0059": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0058"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0060": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0059"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0061": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0060"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0062": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0063": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0062"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0064": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0063"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0065": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0064"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0066": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0065"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0067": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0066"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0068": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0067"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0069": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0068"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0070": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0069"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0071": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0070"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0072": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0071"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0073": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0072"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0074": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0075": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0074"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0076": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0075"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0077": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0076"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0078": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0077"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0079": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0078"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0080": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0079"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0081": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0080"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0082": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0081"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0083": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0082"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0084": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0083"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0085": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0084"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0086": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0087": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0086"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0088": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0087"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0089": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0088"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0090": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0089"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0091": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0090"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0092": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0091"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0093": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0092"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0094": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0093"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0095": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0094"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0096": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0095"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0097": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0096"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0013",
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0025",
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0037",
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0049",
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0061",
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0073",
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0085",
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0097"
+      ],
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0099": [
+        "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098"
+      ]
+    },
+    "expected_relationships": [
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0000",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0000"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0001"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0000",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0000",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001",
+        "target_id": "missing-callee-20351"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0002",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0002"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0001",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0002"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0002"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0003",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0003"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0002",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0003"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0002",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0003"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0004",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0004"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0003",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0004"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0003",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0004"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0005",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0005"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0004",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0005"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0004",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0005"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0006",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0006"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0005",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0006"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0005",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0006"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0007",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0007"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0006",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0007"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0006",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0007"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0008",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0008"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0007",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0008"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0007",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0008"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0009",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0009"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0008",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0009"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0008",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0009"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0010",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0010"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0009",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0010"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0009",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0010"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0011",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0011"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0010",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0011"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0010",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0011"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0012",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0012"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0011",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0012"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0011",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0012"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0013",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0013"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0012",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0013"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0012",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0013"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0014",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0014"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0001",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0014"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0014"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0015",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0015"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0014",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0015"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0014",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0015"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0016",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0016"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0015",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0016"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0015",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0016"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0017",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0017"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0016",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0017"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0016",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0017"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0018",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0018"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0017",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0018"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0017",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0018"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0019",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0019"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0018",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0019"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0018",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0019"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0020",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0020"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0019",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0020"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0019",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0020"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0021",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0021"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0020",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0021"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0020",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0021"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0022",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0022"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0021",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0022"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0021",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0022"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0023",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0023"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0022",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0023"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0022",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0023"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0024",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0024"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0023",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0024"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0023",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0024"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0025",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0025"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0024",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0025"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0024",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0025"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0026",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0026"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0001",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0026"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0026"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0027",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0027"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0026",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0027"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0026",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0027"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0028",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0028"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0027",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0028"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0027",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0028"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0029",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0029"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0028",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0029"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0028",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0029"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0030",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0030"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0029",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0030"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0029",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0030"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0031",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0031"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0030",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0031"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0030",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0031"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0032",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0032"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0031",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0032"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0031",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0032"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0033",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0033"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0032",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0033"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0032",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0033"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0034",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0034"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0033",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0034"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0033",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0034"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0035",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0035"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0034",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0035"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0034",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0035"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0036",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0036"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0035",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0036"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0035",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0036"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0037",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0037"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0036",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0037"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0036",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0037"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0038",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0038"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0001",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0038"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0038"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0039",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0039"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0038",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0039"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0038",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0039"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0040",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0040"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0039",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0040"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0039",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0040"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0041",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0041"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0040",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0041"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0040",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0041"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0042",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0042"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0041",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0042"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0041",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0042"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0043",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0043"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0042",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0043"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0042",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0043"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0044",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0044"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0043",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0044"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0043",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0044"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0045",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0045"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0044",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0045"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0044",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0045"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0046",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0046"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0045",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0046"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0045",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0046"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0047",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0047"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0046",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0047"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0046",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0047"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0048",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0048"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0047",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0048"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0047",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0048"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0049",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0049"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0048",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0049"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0048",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0049"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0050",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0050"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0001",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0050"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0050"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0051",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0051"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0050",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0051"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0050",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0051"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0052",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0052"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0051",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0052"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0051",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0052"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0053",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0053"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0052",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0053"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0052",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0053"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0054",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0054"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0053",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0054"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0053",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0054"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0055",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0055"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0054",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0055"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0054",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0055"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0056",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0056"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0055",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0056"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0055",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0056"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0057",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0057"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0056",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0057"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0056",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0057"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0058",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0058"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0057",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0058"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0057",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0058"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0059",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0059"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0058",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0059"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0058",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0059"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0060",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0060"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0059",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0060"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0059",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0060"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0061",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0061"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0060",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0061"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0060",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0061"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0062",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0062"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0001",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0062"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0062"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0063",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0063"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0062",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0063"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0062",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0063"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0064",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0064"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0063",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0064"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0063",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0064"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0065",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0065"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0064",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0065"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0064",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0065"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0066",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0066"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0065",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0066"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0065",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0066"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0067",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0067"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0066",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0067"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0066",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0067"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0068",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0068"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0067",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0068"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0067",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0068"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0069",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0069"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0068",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0069"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0068",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0069"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0070",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0070"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0069",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0070"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0069",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0070"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0071",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0071"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0070",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0071"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0070",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0071"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0072",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0072"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0071",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0072"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0071",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0072"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0073",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0073"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0072",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0073"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0072",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0073"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0074",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0074"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0001",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0074"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0074"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0075",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0075"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0074",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0075"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0074",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0075"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0076",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0076"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0075",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0076"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0075",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0076"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0077",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0077"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0076",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0077"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0076",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0077"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0078",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0078"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0077",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0078"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0077",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0078"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0079",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0079"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0078",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0079"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0078",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0079"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0080",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0080"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0079",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0080"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0079",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0080"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0081",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0081"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0080",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0081"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0080",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0081"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0082",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0082"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0081",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0082"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0081",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0082"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0083",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0083"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0082",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0083"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0082",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0083"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0084",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0084"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0083",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0084"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0083",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0084"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0085",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0085"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0084",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0085"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0084",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0085"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0086",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0086"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0001",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0086"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0086"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0087",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0087"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0086",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0087"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0086",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0087"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0088",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0088"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0087",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0088"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0087",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0088"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0089",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0089"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0088",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0089"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0088",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0089"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0090",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0090"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0089",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0090"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0089",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0090"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0091",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0091"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0090",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0091"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0090",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0091"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0092",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0092"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0091",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0092"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0091",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0092"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0093",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0093"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0092",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0093"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0092",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0093"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0094",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0094"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0093",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0094"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0093",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0094"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0095",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0095"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0094",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0095"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0094",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0095"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0096",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0096"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0095",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0096"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0095",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0096"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0097",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0097"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0096",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0097"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0096",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0097"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0098"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0013",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0025",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0037",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0049",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0061",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0073",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0085",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0097",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0013",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0025",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0037",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0049",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0061",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0073",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0085",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0097",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0099",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0099"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:a0098",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0099"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098",
+        "target_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0099"
+      }
+    ],
+    "invocations": {
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001": [
+        "missing-callee-20351"
+      ]
+    },
+    "retries": {}
+  },
+  "quality": {
+    "corrupted_artifact_ids": [],
+    "incomplete_observation_notes": [
+      "fan-out to parallel branches; fan-in merge before outcome"
+    ],
+    "intentionally_incomplete": false,
+    "missing_dependency_refs": [],
+    "missing_event_ids": []
+  },
+  "seed": 20351,
+  "structural": {
+    "agent_ids": [
+      "coordinator",
+      "planner",
+      "researcher",
+      "risk",
+      "policy",
+      "executor",
+      "memory",
+      "tool_runner",
+      "coordinator-1",
+      "planner-1"
+    ],
+    "event_categories": {
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0000": "instruction",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0001": "reasoning",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0002": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0003": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0004": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0005": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0006": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0007": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0008": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0009": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0010": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0011": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0012": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0013": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0014": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0015": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0016": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0017": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0018": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0019": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0020": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0021": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0022": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0023": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0024": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0025": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0026": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0027": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0028": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0029": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0030": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0031": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0032": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0033": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0034": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0035": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0036": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0037": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0038": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0039": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0040": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0041": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0042": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0043": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0044": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0045": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0046": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0047": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0048": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0049": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0050": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0051": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0052": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0053": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0054": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0055": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0056": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0057": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0058": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0059": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0060": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0061": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0062": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0063": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0064": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0065": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0066": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0067": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0068": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0069": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0070": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0071": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0072": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0073": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0074": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0075": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0076": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0077": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0078": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0079": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0080": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0081": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0082": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0083": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0084": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0085": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0086": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0087": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0088": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0089": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0090": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0091": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0092": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0093": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0094": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0095": "retrieval",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0096": "tool",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0097": "knowledge",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0098": "reasoning",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0099": "decision"
+    },
+    "model_ids": [
+      "model-coord-v1"
+    ],
+    "outcome_event_ids": [
+      "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp:e0099"
+    ],
+    "scale_tier": "S2",
+    "scenario_id": "financial_loan",
+    "tool_ids": [
+      "credit_score_api",
+      "income_verifier",
+      "policy_lookup",
+      "risk_calc"
+    ],
+    "topology_id": "parallel_fanout_fanin"
+  },
+  "trace_id": "bench-financial_loan-parallel_fanout_fanin-S2-s20351-delegation_failure-cmp"
+}

@@ -1,0 +1,50 @@
+{
+  "actual_event_count": 250,
+  "agent_count": 20,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "analyst",
+    "writer",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "planner-1",
+    "researcher-1",
+    "analyst-1",
+    "writer-1",
+    "executor-1",
+    "memory-1",
+    "tool_runner-1",
+    "coordinator-2",
+    "planner-2",
+    "researcher-2",
+    "analyst-2"
+  ],
+  "artifact_count": 250,
+  "config_fingerprint": "a465330909d2b85b0e0a6fd53c4fce60ea1ed84104e74f245c9fad1b2cd0b190",
+  "expected_event_count": 250,
+  "fault_types": [],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "explicit shared artifacts consumed by multiple agents",
+    "explicit shared artifacts consumed by multiple agents",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=clean_core",
+    "design_version=experimental-design-2.9.0",
+    "base_seed=20053"
+  ],
+  "outcome_event_ids": [
+    "bench-research_synthesis-shared_artifact-S3-s20053-clean-cmp:e0249"
+  ],
+  "scale_tier": "S3",
+  "scenario_id": "research_synthesis",
+  "seed": 20053,
+  "topology_id": "shared_artifact",
+  "trace_id": "bench-research_synthesis-shared_artifact-S3-s20053-clean-cmp"
+}

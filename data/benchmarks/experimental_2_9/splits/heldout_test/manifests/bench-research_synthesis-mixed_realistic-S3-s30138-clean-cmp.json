@@ -1,0 +1,50 @@
+{
+  "actual_event_count": 250,
+  "agent_count": 20,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "analyst",
+    "writer",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "planner-1",
+    "researcher-1",
+    "analyst-1",
+    "writer-1",
+    "executor-1",
+    "memory-1",
+    "tool_runner-1",
+    "coordinator-2",
+    "planner-2",
+    "researcher-2",
+    "analyst-2"
+  ],
+  "artifact_count": 250,
+  "config_fingerprint": "0499695f4a9e597fa123b6d60a3ffe94424b26135ad948e500e77662279117b4",
+  "expected_event_count": 250,
+  "fault_types": [],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=clean_core",
+    "design_version=experimental-design-2.9.0",
+    "base_seed=30138"
+  ],
+  "outcome_event_ids": [
+    "bench-research_synthesis-mixed_realistic-S3-s30138-clean-cmp:e0249"
+  ],
+  "scale_tier": "S3",
+  "scenario_id": "research_synthesis",
+  "seed": 30138,
+  "topology_id": "mixed_realistic",
+  "trace_id": "bench-research_synthesis-mixed_realistic-S3-s30138-clean-cmp"
+}

@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 101,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "risk",
+    "policy",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "planner-1"
+  ],
+  "artifact_count": 101,
+  "config_fingerprint": "bc2c7807cb1d0dec9b08f4b797ad1dff407400c4f36460dd42d610955e9f3fec",
+  "expected_event_count": 101,
+  "fault_types": [
+    "artifact_corruption"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "multi-level INVOKES delegation; callers depend on callees",
+    "multi-level INVOKES delegation; callers depend on callees",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|delegated_multi_agent|S2|financial_loan|artifact_corruption|r0|c285",
+    "base_seed=30420"
+  ],
+  "outcome_event_ids": [
+    "bench-financial_loan-delegated_multi_agent-S2-s30421-artifact_corruption-cmp:e0100"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "financial_loan",
+  "seed": 30421,
+  "topology_id": "delegated_multi_agent",
+  "trace_id": "bench-financial_loan-delegated_multi_agent-S2-s30421-artifact_corruption-cmp"
+}

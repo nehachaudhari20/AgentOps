@@ -23,6 +23,12 @@ from agenttrust.benchmark.validation import (
     validate_generated_trace,
     validate_package,
 )
+from agenttrust.benchmark.dataset import (
+    DATASET_ID,
+    DESIGN_VERSION,
+    DatasetSplit,
+    design_fingerprint,
+)
 
 __all__ = [
     "GENERATOR_VERSION",
@@ -42,4 +48,8 @@ __all__ = [
     "validate_generated_trace",
     "validate_package",
     "load_and_validate_trace_dir",
+    "DATASET_ID",
+    "DESIGN_VERSION",
+    "DatasetSplit",
+    "design_fingerprint",
 ]

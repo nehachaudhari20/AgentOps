@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 101,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "auditor",
+    "researcher",
+    "reviewer",
+    "executor",
+    "memory",
+    "tool_runner",
+    "risk",
+    "coordinator-1",
+    "auditor-1"
+  ],
+  "artifact_count": 101,
+  "config_fingerprint": "23d3e2da537e3831623c81dc5ef6270235552c9ca8b09df7b3a152dc479df79b",
+  "expected_event_count": 101,
+  "fault_types": [
+    "incorrect_tool_output"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "multi-level INVOKES delegation; callers depend on callees",
+    "multi-level INVOKES delegation; callers depend on callees",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|delegated_multi_agent|S2|compliance_review|incorrect_tool_output|r0|c132",
+    "base_seed=20174"
+  ],
+  "outcome_event_ids": [
+    "bench-compliance_review-delegated_multi_agent-S2-s20175-incorrect_tool_output-cmp:e0100"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "compliance_review",
+  "seed": 20175,
+  "topology_id": "delegated_multi_agent",
+  "trace_id": "bench-compliance_review-delegated_multi_agent-S2-s20175-incorrect_tool_output-cmp"
+}

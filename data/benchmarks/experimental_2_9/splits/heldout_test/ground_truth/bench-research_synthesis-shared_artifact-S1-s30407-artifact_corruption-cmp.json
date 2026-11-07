@@ -1,0 +1,1229 @@
+{
+  "attribution_reference": {
+    "disclaimer": "equal_root_ancestor_mass assigns structural share among dependency-DAG roots reachable to each outcome. It is NOT causal responsibility, NOT legal liability, and MUST NOT be derived by copying ConservedRPA/MFAV outputs.",
+    "ground_truth_version": "gt-2.9.0",
+    "method": "equal_root_ancestor_mass.v1",
+    "outcomes": [
+      {
+        "ancestor_event_ids": [
+          "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0000",
+          "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0001",
+          "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0002",
+          "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0005",
+          "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0008",
+          "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0011",
+          "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0014",
+          "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0017",
+          "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0020",
+          "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0023",
+          "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0026",
+          "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0029",
+          "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0032",
+          "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0035",
+          "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0038",
+          "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0041",
+          "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0044",
+          "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0045",
+          "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0046",
+          "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0047",
+          "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0048",
+          "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0049"
+        ],
+        "method": "equal_root_ancestor_mass.v1",
+        "notes": [
+          "Mass conserved over root events (sum=1 when roots non-empty).",
+          "Agent map aggregates root event shares; not causal credit."
+        ],
+        "outcome_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0049",
+        "root_agent_allocations": {
+          "coordinator": 1.0
+        },
+        "root_event_allocations": {
+          "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0000": 1.0
+        }
+      }
+    ]
+  },
+  "disclaimer": "Ground truth records generator intent only. Graph reachability is not causal proof. Do not feed these labels into RPA/MFAV algorithm inputs. Attribution reference (if present) is equal-root structural share, not causal GT.",
+  "generator_version": "2.5.1",
+  "ground_truth_version": "gt-2.9.0",
+  "interventions": [
+    {
+      "affected_artifact_ids": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0025"
+      ],
+      "affected_event_ids": [],
+      "expected_observable_effects": [
+        "artifact content_hash equals observed sentinel",
+        "GT expected_content_hash differs from observed"
+      ],
+      "fault_type": "artifact_corruption",
+      "generator_version": "2.5.1",
+      "injection_location": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0025",
+      "intervention_id": "iv-artifact_corruption-30407-01",
+      "notes": [
+        "Corruption = planted hash mismatch vs independently retained expected hash."
+      ],
+      "parameters": {
+        "artifact_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0025",
+        "expected_content_hash": "sha256:0ca47da4472c6cf292477d9393537812ad4c331149f7f3b3c31304c31a5f7c0e",
+        "mode": "hash_replacement",
+        "observed_content_hash": "sha256:ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+      },
+      "scenario_id": "research_synthesis",
+      "seed": 30407
+    }
+  ],
+  "lineage": {
+    "artifact_consumers": {
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0000": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0001"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0001": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0002"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0002": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0003",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0004",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0005"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0005": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0006",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0007",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0008"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0008": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0009",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0010",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0011"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0011": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0012",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0013",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0014"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0014": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0015",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0016",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0017"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0017": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0018",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0019",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0020"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0020": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0021",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0022",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0023"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0023": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0024",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0025",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0026"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0026": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0027",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0028",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0029"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0029": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0030",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0031",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0032"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0032": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0033",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0034",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0035"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0035": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0036",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0037",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0038"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0038": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0039",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0040",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0041"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0041": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0042",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0043",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0044"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0044": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0045",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0046",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0047"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0045": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0049"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0046": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0049"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0047": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0048"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0048": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0049"
+      ]
+    },
+    "artifact_producers": {
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0000": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0000",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0001": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0001",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0002": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0002",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0003": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0003",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0004": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0004",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0005": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0005",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0006": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0006",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0007": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0007",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0008": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0008",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0009": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0009",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0010": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0010",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0011": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0011",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0012": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0012",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0013": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0013",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0014": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0014",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0015": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0015",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0016": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0016",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0017": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0017",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0018": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0018",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0019": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0019",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0020": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0020",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0021": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0021",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0022": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0022",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0023": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0023",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0024": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0024",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0025": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0025",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0026": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0026",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0027": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0027",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0028": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0028",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0029": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0029",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0030": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0030",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0031": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0031",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0032": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0032",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0033": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0033",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0034": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0034",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0035": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0035",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0036": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0036",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0037": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0037",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0038": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0038",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0039": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0039",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0040": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0040",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0041": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0041",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0042": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0042",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0043": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0043",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0044": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0044",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0045": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0045",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0046": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0046",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0047": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0047",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0048": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0048",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0049": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0049"
+    },
+    "event_dependencies": {
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0000": [],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0001": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0000"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0002": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0001"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0003": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0002"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0004": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0002"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0005": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0002"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0006": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0005"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0007": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0005"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0008": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0005"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0009": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0008"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0010": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0008"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0011": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0008"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0012": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0011"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0013": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0011"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0014": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0011"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0015": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0014"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0016": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0014"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0017": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0014"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0018": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0017"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0019": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0017"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0020": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0017"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0021": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0020"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0022": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0020"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0023": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0020"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0024": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0023"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0025": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0023"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0026": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0023"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0027": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0026"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0028": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0026"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0029": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0026"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0030": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0029"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0031": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0029"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0032": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0029"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0033": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0032"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0034": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0032"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0035": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0032"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0036": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0035"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0037": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0035"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0038": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0035"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0039": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0038"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0040": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0038"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0041": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0038"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0042": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0041"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0043": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0041"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0044": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0041"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0045": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0044"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0046": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0044"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0047": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0044"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0048": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0047"
+      ],
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0049": [
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0045",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0046",
+        "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0048"
+      ]
+    },
+    "expected_relationships": [
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0000",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0000"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0001",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0001"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0000",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0001"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0000",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0001"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0002",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0002"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0001",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0002"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0001",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0002"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0003",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0003"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0002",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0003"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0002",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0003"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0004",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0004"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0002",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0004"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0002",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0004"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0005",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0005"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0002",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0005"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0002",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0005"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0006",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0006"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0005",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0006"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0005",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0006"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0007",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0007"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0005",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0007"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0005",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0007"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0008",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0008"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0005",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0008"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0005",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0008"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0009",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0009"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0008",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0009"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0008",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0009"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0010",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0010"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0008",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0010"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0008",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0010"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0011",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0011"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0008",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0011"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0008",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0011"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0012",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0012"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0011",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0012"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0011",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0012"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0013",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0013"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0011",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0013"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0011",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0013"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0014",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0014"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0011",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0014"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0011",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0014"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0015",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0015"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0014",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0015"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0014",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0015"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0016",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0016"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0014",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0016"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0014",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0016"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0017",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0017"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0014",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0017"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0014",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0017"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0018",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0018"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0017",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0018"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0017",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0018"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0019",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0019"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0017",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0019"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0017",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0019"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0020",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0020"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0017",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0020"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0017",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0020"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0021",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0021"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0020",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0021"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0020",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0021"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0022",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0022"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0020",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0022"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0020",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0022"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0023",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0023"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0020",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0023"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0020",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0023"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0024",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0024"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0023",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0024"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0023",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0024"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0025",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0025"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0023",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0025"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0023",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0025"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0026",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0026"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0023",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0026"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0023",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0026"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0027",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0027"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0026",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0027"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0026",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0027"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0028",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0028"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0026",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0028"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0026",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0028"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0029",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0029"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0026",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0029"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0026",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0029"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0030",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0030"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0029",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0030"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0029",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0030"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0031",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0031"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0029",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0031"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0029",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0031"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0032",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0032"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0029",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0032"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0029",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0032"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0033",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0033"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0032",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0033"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0032",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0033"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0034",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0034"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0032",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0034"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0032",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0034"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0035",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0035"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0032",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0035"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0032",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0035"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0036",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0036"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0035",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0036"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0035",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0036"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0037",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0037"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0035",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0037"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0035",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0037"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0038",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0038"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0035",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0038"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0035",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0038"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0039",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0039"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0038",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0039"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0038",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0039"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0040",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0040"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0038",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0040"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0038",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0040"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0041",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0041"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0038",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0041"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0038",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0041"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0042",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0042"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0041",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0042"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0041",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0042"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0043",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0043"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0041",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0043"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0041",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0043"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0044",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0044"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0041",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0044"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0041",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0044"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0045",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0045"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0044",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0045"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0044",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0045"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0046",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0046"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0044",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0046"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0044",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0046"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0047",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0047"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0044",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0047"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0044",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0047"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0048",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0048"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0047",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0048"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0047",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0048"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0049",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0049"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0045",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0049"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0046",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0049"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0048",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0049"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0045",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0049"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0046",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0049"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0048",
+        "target_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0049"
+      }
+    ],
+    "invocations": {},
+    "retries": {}
+  },
+  "quality": {
+    "corrupted_artifact_ids": [
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:a0025"
+    ],
+    "incomplete_observation_notes": [
+      "explicit shared artifacts consumed by multiple agents"
+    ],
+    "intentionally_incomplete": false,
+    "missing_dependency_refs": [],
+    "missing_event_ids": []
+  },
+  "seed": 30407,
+  "structural": {
+    "agent_ids": [
+      "coordinator",
+      "planner",
+      "researcher",
+      "analyst",
+      "writer"
+    ],
+    "event_categories": {
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0000": "instruction",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0001": "knowledge",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0002": "knowledge",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0003": "reasoning",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0004": "tool",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0005": "transformation",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0006": "tool",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0007": "reasoning",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0008": "knowledge",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0009": "reasoning",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0010": "tool",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0011": "transformation",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0012": "tool",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0013": "reasoning",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0014": "knowledge",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0015": "reasoning",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0016": "tool",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0017": "transformation",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0018": "tool",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0019": "reasoning",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0020": "knowledge",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0021": "reasoning",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0022": "tool",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0023": "transformation",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0024": "tool",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0025": "reasoning",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0026": "knowledge",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0027": "reasoning",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0028": "tool",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0029": "transformation",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0030": "tool",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0031": "reasoning",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0032": "knowledge",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0033": "reasoning",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0034": "tool",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0035": "transformation",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0036": "tool",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0037": "reasoning",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0038": "knowledge",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0039": "reasoning",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0040": "tool",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0041": "transformation",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0042": "tool",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0043": "reasoning",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0044": "knowledge",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0045": "reasoning",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0046": "tool",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0047": "transformation",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0048": "tool",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0049": "decision"
+    },
+    "model_ids": [
+      "model-ana-v1"
+    ],
+    "outcome_event_ids": [
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp:e0049"
+    ],
+    "scale_tier": "S1",
+    "scenario_id": "research_synthesis",
+    "tool_ids": [
+      "embedder",
+      "web_search"
+    ],
+    "topology_id": "shared_artifact"
+  },
+  "trace_id": "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp"
+}

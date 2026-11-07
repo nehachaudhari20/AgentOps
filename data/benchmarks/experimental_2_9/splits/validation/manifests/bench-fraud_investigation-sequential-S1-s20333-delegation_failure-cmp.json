@@ -1,0 +1,38 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "investigator",
+    "analyst",
+    "osint",
+    "risk"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "dfdacfc57146692add4389e793cad1a8b381bde074c5e253c00ba82717a2b1da",
+  "expected_event_count": 50,
+  "fault_types": [
+    "delegation_failure"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "linear chain; each step depends on previous",
+    "linear chain; each step depends on previous",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|sequential|S1|fraud_investigation|delegation_failure|r1|c211",
+    "base_seed=20332"
+  ],
+  "outcome_event_ids": [
+    "bench-fraud_investigation-sequential-S1-s20333-delegation_failure-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "fraud_investigation",
+  "seed": 20333,
+  "topology_id": "sequential",
+  "trace_id": "bench-fraud_investigation-sequential-S1-s20333-delegation_failure-cmp"
+}

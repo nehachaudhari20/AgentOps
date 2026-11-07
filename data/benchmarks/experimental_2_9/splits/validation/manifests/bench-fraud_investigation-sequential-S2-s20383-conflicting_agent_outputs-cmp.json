@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "investigator",
+    "analyst",
+    "osint",
+    "risk",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "investigator-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "6a26ead8e7eb32545b87a98cdc4859b902fafcf936a8ad4bbb211292ffb220d9",
+  "expected_event_count": 100,
+  "fault_types": [
+    "conflicting_agent_outputs"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "linear chain; each step depends on previous",
+    "linear chain; each step depends on previous",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|sequential|S2|fraud_investigation|conflicting_agent_outputs|r0|c236",
+    "base_seed=20382"
+  ],
+  "outcome_event_ids": [
+    "bench-fraud_investigation-sequential-S2-s20383-conflicting_agent_outputs-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "fraud_investigation",
+  "seed": 20383,
+  "topology_id": "sequential",
+  "trace_id": "bench-fraud_investigation-sequential-S2-s20383-conflicting_agent_outputs-cmp"
+}

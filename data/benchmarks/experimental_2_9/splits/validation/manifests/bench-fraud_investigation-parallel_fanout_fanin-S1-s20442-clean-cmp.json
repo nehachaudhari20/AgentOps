@@ -1,0 +1,36 @@
+{
+  "actual_event_count": 49,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "investigator",
+    "analyst",
+    "osint",
+    "risk"
+  ],
+  "artifact_count": 49,
+  "config_fingerprint": "87906fcb3f74157eaa0c4c5eb70f45f86f1279060d9766843eacedacf8e0f185",
+  "expected_event_count": 49,
+  "fault_types": [],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_clean",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|parallel_fanout_fanin|S1|fraud_investigation|incomplete_trace|r0|c266",
+    "base_seed=20442"
+  ],
+  "outcome_event_ids": [
+    "bench-fraud_investigation-parallel_fanout_fanin-S1-s20442-clean-cmp:e0048"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "fraud_investigation",
+  "seed": 20442,
+  "topology_id": "parallel_fanout_fanin",
+  "trace_id": "bench-fraud_investigation-parallel_fanout_fanin-S1-s20442-clean-cmp"
+}

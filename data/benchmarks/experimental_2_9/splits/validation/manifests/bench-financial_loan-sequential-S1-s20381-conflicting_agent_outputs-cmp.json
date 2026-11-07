@@ -1,0 +1,38 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "risk",
+    "policy"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "4853c8d6f02fcf6f47cf0829214c8e6c856da670b1f2237262f9d37f556e48dd",
+  "expected_event_count": 50,
+  "fault_types": [
+    "conflicting_agent_outputs"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "linear chain; each step depends on previous",
+    "linear chain; each step depends on previous",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|sequential|S1|financial_loan|conflicting_agent_outputs|r1|c235",
+    "base_seed=20380"
+  ],
+  "outcome_event_ids": [
+    "bench-financial_loan-sequential-S1-s20381-conflicting_agent_outputs-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "financial_loan",
+  "seed": 20381,
+  "topology_id": "sequential",
+  "trace_id": "bench-financial_loan-sequential-S1-s20381-conflicting_agent_outputs-cmp"
+}

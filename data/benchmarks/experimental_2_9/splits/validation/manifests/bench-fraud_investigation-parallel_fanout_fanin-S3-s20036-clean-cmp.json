@@ -1,0 +1,50 @@
+{
+  "actual_event_count": 244,
+  "agent_count": 20,
+  "agent_ids": [
+    "coordinator",
+    "investigator",
+    "analyst",
+    "osint",
+    "risk",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "investigator-1",
+    "analyst-1",
+    "osint-1",
+    "risk-1",
+    "executor-1",
+    "memory-1",
+    "tool_runner-1",
+    "coordinator-2",
+    "investigator-2",
+    "analyst-2",
+    "osint-2"
+  ],
+  "artifact_count": 244,
+  "config_fingerprint": "206558a8938fb617a178dedfbec8da2ae584bd9a45b9ba768301eef87ec4f779",
+  "expected_event_count": 244,
+  "fault_types": [],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=clean_core",
+    "design_version=experimental-design-2.9.0",
+    "base_seed=20036"
+  ],
+  "outcome_event_ids": [
+    "bench-fraud_investigation-parallel_fanout_fanin-S3-s20036-clean-cmp:e0243"
+  ],
+  "scale_tier": "S3",
+  "scenario_id": "fraud_investigation",
+  "seed": 20036,
+  "topology_id": "parallel_fanout_fanin",
+  "trace_id": "bench-fraud_investigation-parallel_fanout_fanin-S3-s20036-clean-cmp"
+}

@@ -42,6 +42,7 @@ AgentTrust **does not**:
 | Evidence-bounded Assurance Profile | **Phase 2.7.1 — active** (`agenttrust/assurance/`) |
 | PLHC (Merkle + linked checkpoints) | **Phase 2.7.1 — active** (`agenttrust/integrity/`) |
 | End-to-end evaluation pipeline | **Phase 2.8 — active** (`agenttrust/pipeline/`) |
+| Experimental dataset (dev/val/test) | **Phase 2.9 — active** (`agenttrust/benchmark/dataset/`) |
 | Legacy prototype | Preserved under `legacy/` (historical only) |
 
 ## Active architecture
@@ -202,6 +203,17 @@ python experiments/scripts/validate_benchmark_pilot.py --pipeline
 Pilot outputs live under `data/benchmarks/pilot/` with **ground truth in a separate directory** from algorithm inputs. See [docs/methodology/BENCHMARK_DESIGN.md](docs/methodology/BENCHMARK_DESIGN.md).
 
 Scale tiers S1–S5 (5–50 agents, ~50–1000 events), six topologies, five domain scenarios, and controlled fault injection are supported. The pilot validates the generator; it is **not** a final experimental evaluation.
+
+### Phase 2.9 experimental corpus
+
+Design + power rationale: [docs/methodology/EXPERIMENTAL_DATASET_DESIGN.md](docs/methodology/EXPERIMENTAL_DATASET_DESIGN.md), [SAMPLE_SIZE_AND_POWER.md](docs/methodology/SAMPLE_SIZE_AND_POWER.md).
+
+```bash
+python experiments/scripts/generate_experimental_dataset.py
+python experiments/scripts/validate_experimental_dataset.py
+```
+
+Output: `data/benchmarks/experimental_2_9/` with isolated `development` / `validation` / `heldout_test` splits, separate ground truth, fingerprints, and coverage reports. The independent unit is the **trace**; event totals are nested volume only.
 
 Phase 2.5 / 2.5.1 hardens ground-truth consistency and fault semantics (incorrect tool content vs tool-call failure; conflicting outputs via structured decisions without `conflict_label`). The checked-in pilot remains Phase 2.4 (`2.4.0`); active generation uses generator `2.5.1`.
 

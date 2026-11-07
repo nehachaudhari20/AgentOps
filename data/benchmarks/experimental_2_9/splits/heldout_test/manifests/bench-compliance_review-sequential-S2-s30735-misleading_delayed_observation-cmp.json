@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "auditor",
+    "researcher",
+    "reviewer",
+    "executor",
+    "memory",
+    "tool_runner",
+    "risk",
+    "coordinator-1",
+    "auditor-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "3b8171cfe1ccb93e2aada9ab0e67b32622604e7a3484d0fb643f5122411804e4",
+  "expected_event_count": 100,
+  "fault_types": [
+    "misleading_delayed_observation"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "linear chain; each step depends on previous",
+    "linear chain; each step depends on previous",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|sequential|S2|compliance_review|misleading_delayed_observation|r1|c442",
+    "base_seed=30734"
+  ],
+  "outcome_event_ids": [
+    "bench-compliance_review-sequential-S2-s30735-misleading_delayed_observation-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "compliance_review",
+  "seed": 30735,
+  "topology_id": "sequential",
+  "trace_id": "bench-compliance_review-sequential-S2-s30735-misleading_delayed_observation-cmp"
+}

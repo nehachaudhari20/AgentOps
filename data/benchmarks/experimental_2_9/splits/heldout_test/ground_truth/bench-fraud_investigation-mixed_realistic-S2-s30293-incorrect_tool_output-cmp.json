@@ -1,0 +1,2610 @@
+{
+  "attribution_reference": {
+    "disclaimer": "equal_root_ancestor_mass assigns structural share among dependency-DAG roots reachable to each outcome. It is NOT causal responsibility, NOT legal liability, and MUST NOT be derived by copying ConservedRPA/MFAV outputs.",
+    "ground_truth_version": "gt-2.9.0",
+    "method": "equal_root_ancestor_mass.v1",
+    "outcomes": [
+      {
+        "ancestor_event_ids": [
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0000",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0001",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0002",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0003",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0004",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0005",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0006",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0007",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0008",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0009",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0010",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0011",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0012",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0013",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0014",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0015",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0016",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0017",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0018",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0019",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0020",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0021",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0022",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0023",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0024",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0025",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0026",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0027",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0028",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0029",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0030",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0031",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0032",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0033",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0034",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0035",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0036",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0037",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0038",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0039",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0040",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0041",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0042",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0043",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0044",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0045",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0046",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0047",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0048",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0049",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0050",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0051",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0052",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0053",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0054",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0055",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0056",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0057",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0058",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0059",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0060",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0061",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0062",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0063",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0064",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0065",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0066",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0067",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0068",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0069",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0070",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0071",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0072",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0073",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0074",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0075",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0076",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0077",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0078",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0079",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0080",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0081",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0082",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0083",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0084",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0085",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0086",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0087",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0088",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0089",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0091",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0092",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0093",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0094",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0095",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0096",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0097",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0098",
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0099"
+        ],
+        "method": "equal_root_ancestor_mass.v1",
+        "notes": [
+          "Mass conserved over root events (sum=1 when roots non-empty).",
+          "Agent map aggregates root event shares; not causal credit."
+        ],
+        "outcome_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0099",
+        "root_agent_allocations": {
+          "coordinator": 1.0
+        },
+        "root_event_allocations": {
+          "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0000": 1.0
+        }
+      }
+    ]
+  },
+  "disclaimer": "Ground truth records generator intent only. Graph reachability is not causal proof. Do not feed these labels into RPA/MFAV algorithm inputs. Attribution reference (if present) is equal-root structural share, not causal GT.",
+  "generator_version": "2.5.1",
+  "ground_truth_version": "gt-2.9.0",
+  "interventions": [
+    {
+      "affected_artifact_ids": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0003"
+      ],
+      "affected_event_ids": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0003"
+      ],
+      "expected_observable_effects": [
+        "tool/transform event status remains success",
+        "output artifact content_hash differs from GT expected_content_hash"
+      ],
+      "fault_type": "incorrect_tool_output",
+      "generator_version": "2.5.1",
+      "injection_location": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0003",
+      "intervention_id": "iv-incorrect_tool_output-30293-01",
+      "notes": [
+        "Models incorrect successful tool content, not a transport/tool crash."
+      ],
+      "parameters": {
+        "artifact_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0003",
+        "expected_content_hash": "sha256:727143e99c2e7ab7793c4d25c31e948179a70e899e1f9d7beb46cc8b72cf270a",
+        "mode": "incorrect_success",
+        "observed_content_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "scenario_id": "fraud_investigation",
+      "seed": 30293
+    }
+  ],
+  "lineage": {
+    "artifact_consumers": {
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0000": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0001",
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0091"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0001": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0002",
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0013",
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0024",
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0035",
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0046",
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0057",
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0068",
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0079"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0002": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0003"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0003": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0004"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0004": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0005"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0005": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0006"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0006": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0007"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0007": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0008"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0008": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0009"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0009": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0010"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0010": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0011"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0011": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0012"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0012": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0013": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0014"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0014": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0015"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0015": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0016"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0016": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0017"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0017": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0018"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0018": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0019"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0019": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0020"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0020": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0021"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0021": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0022"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0022": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0023"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0023": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0024": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0025"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0025": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0026"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0026": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0027"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0027": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0028"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0028": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0029"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0029": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0030"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0030": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0031"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0031": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0032"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0032": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0033"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0033": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0034"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0034": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0035": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0036"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0036": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0037"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0037": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0038"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0038": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0039"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0039": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0040"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0040": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0041"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0041": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0042"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0042": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0043"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0043": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0044"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0044": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0045"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0045": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0046": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0047"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0047": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0048"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0048": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0049"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0049": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0050"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0050": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0051"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0051": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0052"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0052": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0053"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0053": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0054"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0054": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0055"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0055": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0056"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0056": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0057": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0058"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0058": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0059"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0059": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0060"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0060": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0061"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0061": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0062"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0062": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0063"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0063": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0064"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0064": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0065"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0065": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0066"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0066": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0067"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0067": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0068": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0069"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0069": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0070"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0070": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0071"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0071": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0072"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0072": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0073"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0073": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0074"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0074": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0075"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0075": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0076"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0076": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0077"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0077": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0078"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0078": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0079": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0080"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0080": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0081"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0081": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0082"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0082": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0083"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0083": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0084"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0084": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0085"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0085": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0086"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0086": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0087"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0087": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0088"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0088": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0089"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0089": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0090": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0099"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0091": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0092"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0092": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0093"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0093": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0094"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0094": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0095"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0095": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0096"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0096": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0097"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0097": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0098"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0098": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0099"
+      ]
+    },
+    "artifact_producers": {
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0000": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0000",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0001": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0001",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0002": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0002",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0003": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0003",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0004": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0004",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0005": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0005",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0006": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0006",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0007": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0007",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0008": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0008",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0009": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0009",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0010": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0010",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0011": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0011",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0012": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0012",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0013": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0013",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0014": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0014",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0015": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0015",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0016": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0016",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0017": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0017",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0018": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0018",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0019": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0019",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0020": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0020",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0021": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0021",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0022": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0022",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0023": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0023",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0024": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0024",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0025": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0025",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0026": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0026",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0027": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0027",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0028": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0028",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0029": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0029",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0030": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0030",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0031": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0031",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0032": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0032",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0033": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0033",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0034": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0034",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0035": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0035",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0036": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0036",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0037": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0037",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0038": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0038",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0039": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0039",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0040": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0040",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0041": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0041",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0042": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0042",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0043": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0043",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0044": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0044",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0045": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0045",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0046": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0046",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0047": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0047",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0048": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0048",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0049": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0049",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0050": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0050",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0051": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0051",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0052": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0052",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0053": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0053",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0054": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0054",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0055": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0055",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0056": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0056",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0057": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0057",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0058": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0058",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0059": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0059",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0060": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0060",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0061": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0061",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0062": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0062",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0063": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0063",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0064": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0064",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0065": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0065",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0066": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0066",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0067": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0067",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0068": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0068",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0069": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0069",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0070": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0070",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0071": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0071",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0072": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0072",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0073": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0073",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0074": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0074",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0075": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0075",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0076": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0076",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0077": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0077",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0078": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0078",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0079": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0079",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0080": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0080",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0081": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0081",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0082": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0082",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0083": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0083",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0084": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0084",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0085": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0085",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0086": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0086",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0087": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0087",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0088": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0088",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0089": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0089",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0090": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0091": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0091",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0092": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0092",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0093": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0093",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0094": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0094",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0095": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0095",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0096": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0096",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0097": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0097",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0098": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0098",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0099": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0099"
+    },
+    "event_dependencies": {
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0000": [],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0001": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0000"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0002": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0001"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0003": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0002"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0004": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0003"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0005": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0004"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0006": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0005"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0007": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0006"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0008": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0007"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0009": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0008"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0010": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0009"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0011": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0010"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0012": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0011"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0013": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0001"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0014": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0013"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0015": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0014"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0016": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0015"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0017": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0016"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0018": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0017"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0019": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0018"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0020": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0019"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0021": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0020"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0022": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0021"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0023": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0022"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0024": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0001"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0025": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0024"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0026": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0025"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0027": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0026"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0028": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0027"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0029": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0028"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0030": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0029"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0031": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0030"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0032": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0031"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0033": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0032"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0034": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0033"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0035": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0001"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0036": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0035"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0037": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0036"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0038": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0037"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0039": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0038"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0040": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0039"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0041": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0040"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0042": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0041"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0043": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0042"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0044": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0043"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0045": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0044"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0046": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0001"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0047": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0046"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0048": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0047"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0049": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0048"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0050": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0049"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0051": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0050"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0052": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0051"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0053": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0052"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0054": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0053"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0055": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0054"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0056": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0055"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0057": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0001"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0058": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0057"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0059": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0058"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0060": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0059"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0061": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0060"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0062": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0061"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0063": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0062"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0064": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0063"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0065": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0064"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0066": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0065"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0067": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0066"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0068": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0001"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0069": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0068"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0070": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0069"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0071": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0070"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0072": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0071"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0073": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0072"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0074": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0073"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0075": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0074"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0076": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0075"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0077": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0076"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0078": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0077"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0079": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0001"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0080": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0079"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0081": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0080"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0082": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0081"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0083": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0082"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0084": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0083"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0085": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0084"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0086": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0085"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0087": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0086"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0088": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0087"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0089": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0088"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0012",
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0023",
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0034",
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0045",
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0056",
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0067",
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0078",
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0089"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0091": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0000"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0092": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0091"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0093": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0092"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0094": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0093"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0095": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0094"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0096": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0095"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0097": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0096"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0098": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0097"
+      ],
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0099": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0098",
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090"
+      ]
+    },
+    "expected_relationships": [
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0000",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0000"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0001",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0001"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0000",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0001"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0000",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0001"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0002",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0002"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0001",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0002"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0001",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0002"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0003",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0003"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0002",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0003"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0002",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0003"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0004",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0004"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0003",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0004"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0003",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0004"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0005",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0005"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0004",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0005"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0004",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0005"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0006",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0006"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0005",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0006"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0005",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0006"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0007",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0007"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0006",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0007"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0006",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0007"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0008",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0008"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0007",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0008"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0007",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0008"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0009",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0009"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0008",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0009"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0008",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0009"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0010",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0010"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0009",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0010"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0009",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0010"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0011",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0011"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0010",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0011"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0010",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0011"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0012",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0012"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0011",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0012"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0011",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0012"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0013",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0013"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0001",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0013"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0001",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0013"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0014",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0014"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0013",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0014"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0013",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0014"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0015",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0015"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0014",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0015"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0014",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0015"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0016",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0016"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0015",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0016"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0015",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0016"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0017",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0017"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0016",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0017"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0016",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0017"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0018",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0018"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0017",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0018"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0017",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0018"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0019",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0019"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0018",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0019"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0018",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0019"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0020",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0020"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0019",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0020"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0019",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0020"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0021",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0021"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0020",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0021"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0020",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0021"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0022",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0022"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0021",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0022"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0021",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0022"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0023",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0023"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0022",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0023"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0022",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0023"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0024",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0024"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0001",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0024"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0001",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0024"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0025",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0025"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0024",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0025"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0024",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0025"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0026",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0026"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0025",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0026"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0025",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0026"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0027",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0027"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0026",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0027"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0026",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0027"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0028",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0028"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0027",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0028"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0027",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0028"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0029",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0029"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0028",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0029"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0028",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0029"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0030",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0030"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0029",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0030"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0029",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0030"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0031",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0031"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0030",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0031"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0030",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0031"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0032",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0032"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0031",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0032"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0031",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0032"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0033",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0033"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0032",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0033"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0032",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0033"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0034",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0034"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0033",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0034"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0033",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0034"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0035",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0035"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0001",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0035"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0001",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0035"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0036",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0036"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0035",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0036"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0035",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0036"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0037",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0037"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0036",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0037"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0036",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0037"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0038",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0038"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0037",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0038"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0037",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0038"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0039",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0039"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0038",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0039"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0038",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0039"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0040",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0040"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0039",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0040"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0039",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0040"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0041",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0041"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0040",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0041"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0040",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0041"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0042",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0042"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0041",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0042"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0041",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0042"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0043",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0043"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0042",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0043"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0042",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0043"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0044",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0044"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0043",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0044"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0043",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0044"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0045",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0045"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0044",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0045"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0044",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0045"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0046",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0046"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0001",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0046"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0001",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0046"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0047",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0047"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0046",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0047"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0046",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0047"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0048",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0048"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0047",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0048"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0047",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0048"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0049",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0049"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0048",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0049"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0048",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0049"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0050",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0050"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0049",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0050"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0049",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0050"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0051",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0051"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0050",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0051"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0050",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0051"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0052",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0052"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0051",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0052"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0051",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0052"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0053",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0053"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0052",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0053"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0052",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0053"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0054",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0054"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0053",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0054"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0053",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0054"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0055",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0055"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0054",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0055"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0054",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0055"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0056",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0056"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0055",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0056"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0055",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0056"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0057",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0057"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0001",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0057"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0001",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0057"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0058",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0058"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0057",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0058"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0057",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0058"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0059",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0059"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0058",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0059"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0058",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0059"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0060",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0060"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0059",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0060"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0059",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0060"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0061",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0061"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0060",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0061"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0060",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0061"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0062",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0062"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0061",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0062"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0061",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0062"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0063",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0063"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0062",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0063"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0062",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0063"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0064",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0064"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0063",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0064"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0063",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0064"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0065",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0065"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0064",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0065"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0064",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0065"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0066",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0066"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0065",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0066"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0065",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0066"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0067",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0067"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0066",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0067"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0066",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0067"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0068",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0068"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0001",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0068"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0001",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0068"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0069",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0069"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0068",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0069"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0068",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0069"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0070",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0070"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0069",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0070"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0069",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0070"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0071",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0071"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0070",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0071"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0070",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0071"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0072",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0072"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0071",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0072"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0071",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0072"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0073",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0073"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0072",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0073"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0072",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0073"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0074",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0074"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0073",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0074"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0073",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0074"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0075",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0075"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0074",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0075"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0074",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0075"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0076",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0076"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0075",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0076"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0075",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0076"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0077",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0077"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0076",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0077"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0076",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0077"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0078",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0078"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0077",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0078"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0077",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0078"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0079",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0079"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0001",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0079"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0001",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0079"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0080",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0080"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0079",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0080"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0079",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0080"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0081",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0081"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0080",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0081"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0080",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0081"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0082",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0082"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0081",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0082"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0081",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0082"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0083",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0083"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0082",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0083"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0082",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0083"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0084",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0084"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0083",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0084"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0083",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0084"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0085",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0085"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0084",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0085"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0084",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0085"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0086",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0086"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0085",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0086"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0085",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0086"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0087",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0087"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0086",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0087"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0086",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0087"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0088",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0088"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0087",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0088"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0087",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0088"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0089",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0089"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0088",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0089"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0088",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0089"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0090"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0012",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0023",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0034",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0045",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0056",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0067",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0078",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0089",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0012",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0023",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0034",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0045",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0056",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0067",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0078",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0089",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0091",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0091"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0000",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0091"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0000",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0091"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0092",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0092"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0091",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0092"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0091",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0092"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0093",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0093"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0092",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0093"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0092",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0093"
+      },
+      {
+        "rel_type": "RETRIES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0093",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0092"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0094",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0094"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0093",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0094"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0093",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0094"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0094",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0095"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0095",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0095"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0094",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0095"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0094",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0095"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0096",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0096"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0095",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0096"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0095",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0096"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0097",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0097"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0096",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0097"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0096",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0097"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0098",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0098"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0097",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0098"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0097",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0098"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0099",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0099"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0098",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0099"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0090",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0099"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0098",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0099"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090",
+        "target_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0099"
+      }
+    ],
+    "invocations": {
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0094": [
+        "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0095"
+      ]
+    },
+    "retries": {
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0093": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0092"
+    }
+  },
+  "quality": {
+    "corrupted_artifact_ids": [
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:a0003"
+    ],
+    "incomplete_observation_notes": [
+      "combines parallel evidence, shared artifacts, delegation, and retry"
+    ],
+    "intentionally_incomplete": false,
+    "missing_dependency_refs": [],
+    "missing_event_ids": []
+  },
+  "seed": 30293,
+  "structural": {
+    "agent_ids": [
+      "coordinator",
+      "investigator",
+      "analyst",
+      "osint",
+      "risk",
+      "executor",
+      "memory",
+      "tool_runner",
+      "coordinator-1",
+      "investigator-1"
+    ],
+    "event_categories": {
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0000": "instruction",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0001": "reasoning",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0002": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0003": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0004": "knowledge",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0005": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0006": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0007": "knowledge",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0008": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0009": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0010": "knowledge",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0011": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0012": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0013": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0014": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0015": "knowledge",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0016": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0017": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0018": "knowledge",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0019": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0020": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0021": "knowledge",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0022": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0023": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0024": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0025": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0026": "knowledge",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0027": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0028": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0029": "knowledge",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0030": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0031": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0032": "knowledge",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0033": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0034": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0035": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0036": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0037": "knowledge",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0038": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0039": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0040": "knowledge",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0041": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0042": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0043": "knowledge",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0044": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0045": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0046": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0047": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0048": "knowledge",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0049": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0050": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0051": "knowledge",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0052": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0053": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0054": "knowledge",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0055": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0056": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0057": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0058": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0059": "knowledge",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0060": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0061": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0062": "knowledge",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0063": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0064": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0065": "knowledge",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0066": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0067": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0068": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0069": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0070": "knowledge",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0071": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0072": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0073": "knowledge",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0074": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0075": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0076": "knowledge",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0077": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0078": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0079": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0080": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0081": "knowledge",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0082": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0083": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0084": "knowledge",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0085": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0086": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0087": "knowledge",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0088": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0089": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0090": "reasoning",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0091": "knowledge",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0092": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0093": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0094": "reasoning",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0095": "retrieval",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0096": "reasoning",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0097": "tool",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0098": "knowledge",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0099": "decision"
+    },
+    "model_ids": [
+      "model-coord-v1"
+    ],
+    "outcome_event_ids": [
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp:e0099"
+    ],
+    "scale_tier": "S2",
+    "scenario_id": "fraud_investigation",
+    "tool_ids": [
+      "device_fingerprint",
+      "score_model",
+      "txn_graph_query",
+      "watchlist_check"
+    ],
+    "topology_id": "mixed_realistic"
+  },
+  "trace_id": "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp"
+}

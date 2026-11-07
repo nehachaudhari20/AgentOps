@@ -1,0 +1,50 @@
+{
+  "actual_event_count": 244,
+  "agent_count": 20,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "risk",
+    "policy",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "planner-1",
+    "researcher-1",
+    "risk-1",
+    "policy-1",
+    "executor-1",
+    "memory-1",
+    "tool_runner-1",
+    "coordinator-2",
+    "planner-2",
+    "researcher-2",
+    "risk-2"
+  ],
+  "artifact_count": 244,
+  "config_fingerprint": "268ec9480bfbca48439ea2f6dd1a286aa199a1ed8cbc0c6b293fd9b164981cf1",
+  "expected_event_count": 244,
+  "fault_types": [],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=development",
+    "role=clean_core",
+    "design_version=experimental-design-2.9.0",
+    "base_seed=10025"
+  ],
+  "outcome_event_ids": [
+    "bench-financial_loan-parallel_fanout_fanin-S3-s10025-clean-cmp:e0243"
+  ],
+  "scale_tier": "S3",
+  "scenario_id": "financial_loan",
+  "seed": 10025,
+  "topology_id": "parallel_fanout_fanin",
+  "trace_id": "bench-financial_loan-parallel_fanout_fanin-S3-s10025-clean-cmp"
+}

@@ -1,0 +1,38 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "analyst",
+    "writer"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "f3dfdb5ddd2fa508a6ed3348aed6775b1b51ea03fd650c882b32e4cecd55d996",
+  "expected_event_count": 50,
+  "fault_types": [
+    "conflicting_agent_outputs"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "linear chain; each step depends on previous",
+    "linear chain; each step depends on previous",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|sequential|S1|research_synthesis|conflicting_agent_outputs|r2|c368",
+    "base_seed=30586"
+  ],
+  "outcome_event_ids": [
+    "bench-research_synthesis-sequential-S1-s30587-conflicting_agent_outputs-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "research_synthesis",
+  "seed": 30587,
+  "topology_id": "sequential",
+  "trace_id": "bench-research_synthesis-sequential-S1-s30587-conflicting_agent_outputs-cmp"
+}

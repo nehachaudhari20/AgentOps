@@ -1,0 +1,36 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "validator",
+    "pricing",
+    "settlement",
+    "risk"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "7bf2d95d58d7db89be2a2fc7d447a3fd07f7f31be3c27d9013e9106cb125d819",
+  "expected_event_count": 50,
+  "fault_types": [],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "linear chain; each step depends on previous",
+    "linear chain; each step depends on previous",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_clean",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|sequential|S1|transaction_execution|conflicting_agent_outputs|r0|c234",
+    "base_seed=20378"
+  ],
+  "outcome_event_ids": [
+    "bench-transaction_execution-sequential-S1-s20378-clean-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "transaction_execution",
+  "seed": 20378,
+  "topology_id": "sequential",
+  "trace_id": "bench-transaction_execution-sequential-S1-s20378-clean-cmp"
+}

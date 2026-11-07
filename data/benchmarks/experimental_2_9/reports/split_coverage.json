@@ -1,0 +1,146 @@
+{
+  "development": {
+    "fault": {
+      "artifact_corruption": 12,
+      "clean": 168,
+      "conflicting_agent_outputs": 12,
+      "delegation_failure": 12,
+      "incomplete_trace": 12,
+      "incorrect_tool_output": 12,
+      "misleading_delayed_observation": 12,
+      "missing_dependency": 12,
+      "retry_storm": 12,
+      "tool_call_failure": 12
+    },
+    "n_matched_pair_ids": 108,
+    "n_traces": 276,
+    "n_unique_seeds": 276,
+    "note": "total_events/artifacts are nested volume, not independent sample size",
+    "role": {
+      "clean_core": 60,
+      "pair_clean": 108,
+      "pair_fault": 108
+    },
+    "scale": {
+      "S1": 228,
+      "S2": 12,
+      "S3": 12,
+      "S4": 12,
+      "S5": 12
+    },
+    "scenario": {
+      "compliance_review": 56,
+      "financial_loan": 56,
+      "fraud_investigation": 56,
+      "research_synthesis": 54,
+      "transaction_execution": 54
+    },
+    "split": "development",
+    "topology": {
+      "delegated_multi_agent": 46,
+      "hierarchical": 46,
+      "mixed_realistic": 46,
+      "parallel_fanout_fanin": 46,
+      "sequential": 46,
+      "shared_artifact": 46
+    },
+    "total_artifacts": 33624,
+    "total_events": 33612
+  },
+  "heldout_test": {
+    "fault": {
+      "artifact_corruption": 36,
+      "clean": 474,
+      "conflicting_agent_outputs": 36,
+      "delegation_failure": 36,
+      "incomplete_trace": 36,
+      "incorrect_tool_output": 36,
+      "misleading_delayed_observation": 36,
+      "missing_dependency": 36,
+      "retry_storm": 36,
+      "tool_call_failure": 36
+    },
+    "n_matched_pair_ids": 324,
+    "n_traces": 798,
+    "n_unique_seeds": 798,
+    "note": "total_events/artifacts are nested volume, not independent sample size",
+    "role": {
+      "clean_core": 150,
+      "pair_clean": 324,
+      "pair_fault": 324
+    },
+    "scale": {
+      "S1": 354,
+      "S2": 354,
+      "S3": 30,
+      "S4": 30,
+      "S5": 30
+    },
+    "scenario": {
+      "compliance_review": 160,
+      "financial_loan": 160,
+      "fraud_investigation": 160,
+      "research_synthesis": 160,
+      "transaction_execution": 158
+    },
+    "split": "heldout_test",
+    "topology": {
+      "delegated_multi_agent": 133,
+      "hierarchical": 133,
+      "mixed_realistic": 133,
+      "parallel_fanout_fanin": 133,
+      "sequential": 133,
+      "shared_artifact": 133
+    },
+    "total_artifacts": 105732,
+    "total_events": 105696
+  },
+  "validation": {
+    "fault": {
+      "artifact_corruption": 24,
+      "clean": 306,
+      "conflicting_agent_outputs": 24,
+      "delegation_failure": 24,
+      "incomplete_trace": 24,
+      "incorrect_tool_output": 24,
+      "misleading_delayed_observation": 24,
+      "missing_dependency": 24,
+      "retry_storm": 24,
+      "tool_call_failure": 24
+    },
+    "n_matched_pair_ids": 216,
+    "n_traces": 522,
+    "n_unique_seeds": 522,
+    "note": "total_events/artifacts are nested volume, not independent sample size",
+    "role": {
+      "clean_core": 90,
+      "pair_clean": 216,
+      "pair_fault": 216
+    },
+    "scale": {
+      "S1": 234,
+      "S2": 234,
+      "S3": 18,
+      "S4": 18,
+      "S5": 18
+    },
+    "scenario": {
+      "compliance_review": 104,
+      "financial_loan": 106,
+      "fraud_investigation": 104,
+      "research_synthesis": 104,
+      "transaction_execution": 104
+    },
+    "split": "validation",
+    "topology": {
+      "delegated_multi_agent": 87,
+      "hierarchical": 87,
+      "mixed_realistic": 87,
+      "parallel_fanout_fanin": 87,
+      "sequential": 87,
+      "shared_artifact": 87
+    },
+    "total_artifacts": 66690,
+    "total_events": 66666
+  }
+}

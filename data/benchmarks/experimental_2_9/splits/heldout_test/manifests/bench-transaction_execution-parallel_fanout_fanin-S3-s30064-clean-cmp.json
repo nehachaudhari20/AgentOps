@@ -1,0 +1,50 @@
+{
+  "actual_event_count": 244,
+  "agent_count": 20,
+  "agent_ids": [
+    "coordinator",
+    "validator",
+    "pricing",
+    "settlement",
+    "risk",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "validator-1",
+    "pricing-1",
+    "settlement-1",
+    "risk-1",
+    "executor-1",
+    "memory-1",
+    "tool_runner-1",
+    "coordinator-2",
+    "validator-2",
+    "pricing-2",
+    "settlement-2"
+  ],
+  "artifact_count": 244,
+  "config_fingerprint": "44fad3ac8f6c3a05f9e50dd6aed218abb2dc30cd12907472a6722c9f511e4fcc",
+  "expected_event_count": 244,
+  "fault_types": [],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=clean_core",
+    "design_version=experimental-design-2.9.0",
+    "base_seed=30064"
+  ],
+  "outcome_event_ids": [
+    "bench-transaction_execution-parallel_fanout_fanin-S3-s30064-clean-cmp:e0243"
+  ],
+  "scale_tier": "S3",
+  "scenario_id": "transaction_execution",
+  "seed": 30064,
+  "topology_id": "parallel_fanout_fanin",
+  "trace_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s30064-clean-cmp"
+}

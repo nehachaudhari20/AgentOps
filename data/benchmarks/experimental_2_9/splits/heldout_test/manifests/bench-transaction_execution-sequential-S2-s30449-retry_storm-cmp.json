@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 103,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "validator",
+    "pricing",
+    "settlement",
+    "risk",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "validator-1"
+  ],
+  "artifact_count": 103,
+  "config_fingerprint": "4aeaa7006cc03f4dd955d2a8bf3fe27ef529af7f287211e2fe0317b9760532e4",
+  "expected_event_count": 100,
+  "fault_types": [
+    "retry_storm"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "linear chain; each step depends on previous",
+    "linear chain; each step depends on previous",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|sequential|S2|transaction_execution|retry_storm|r2|c299",
+    "base_seed=30448"
+  ],
+  "outcome_event_ids": [
+    "bench-transaction_execution-sequential-S2-s30449-retry_storm-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "transaction_execution",
+  "seed": 30449,
+  "topology_id": "sequential",
+  "trace_id": "bench-transaction_execution-sequential-S2-s30449-retry_storm-cmp"
+}

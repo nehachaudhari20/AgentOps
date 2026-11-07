@@ -1,0 +1,1354 @@
+{
+  "attribution_reference": {
+    "disclaimer": "equal_root_ancestor_mass assigns structural share among dependency-DAG roots reachable to each outcome. It is NOT causal responsibility, NOT legal liability, and MUST NOT be derived by copying ConservedRPA/MFAV outputs.",
+    "ground_truth_version": "gt-2.9.0",
+    "method": "equal_root_ancestor_mass.v1",
+    "outcomes": [
+      {
+        "ancestor_event_ids": [
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0000",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0001",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0002",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0003",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0004",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0005",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0006",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0007",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0008",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0009",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0010",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0011",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0012",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0013",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0014",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0015",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0016",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0017",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0018",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0019",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0020",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0021",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0022",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0023",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0024",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0025",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0026",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0027",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0028",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0029",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0030",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0031",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0032",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0033",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0034",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0035",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0036",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0037",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0038",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0039",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0040",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0041",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0042",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0043",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0044",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0045",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0046",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0047",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0048",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0049"
+        ],
+        "method": "equal_root_ancestor_mass.v1",
+        "notes": [
+          "Mass conserved over root events (sum=1 when roots non-empty).",
+          "Agent map aggregates root event shares; not causal credit."
+        ],
+        "outcome_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0049",
+        "root_agent_allocations": {
+          "coordinator": 1.0
+        },
+        "root_event_allocations": {
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0000": 1.0
+        }
+      }
+    ]
+  },
+  "disclaimer": "Ground truth records generator intent only. Graph reachability is not causal proof. Do not feed these labels into RPA/MFAV algorithm inputs. Attribution reference (if present) is equal-root structural share, not causal GT.",
+  "generator_version": "2.5.1",
+  "ground_truth_version": "gt-2.9.0",
+  "interventions": [
+    {
+      "affected_artifact_ids": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0001",
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0003"
+      ],
+      "affected_event_ids": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0001",
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0003"
+      ],
+      "expected_observable_effects": [
+        "two artifacts expose mutually inconsistent decision values",
+        "two artifacts have distinct content_hash values"
+      ],
+      "fault_type": "conflicting_agent_outputs",
+      "generator_version": "2.5.1",
+      "injection_location": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0001",
+      "intervention_id": "iv-conflicting_agent_outputs-20421-01",
+      "notes": [
+        "Conflict is recoverable from observable decision/hash disagreement; GT records the intended semantic relation separately."
+      ],
+      "parameters": {
+        "artifact_ids": [
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0001",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0003"
+        ],
+        "expected_decisions": {
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0001": "approve",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0003": "reject"
+        },
+        "observed_content_hashes": {
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0001": "sha256:8b80aa6cb90fa5139df1fa696e34d5e415f01eed5e98b792cf240101f15bb846",
+          "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0003": "sha256:f0b3830bee6c9016dd925f07c578e56ad227a10ed7c15eb2e455f64a4ef133f2"
+        },
+        "relation": "mutually_inconsistent_decisions"
+      },
+      "scenario_id": "financial_loan",
+      "seed": 20421
+    }
+  ],
+  "lineage": {
+    "artifact_consumers": {
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0000": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0001",
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0039"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0001": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0002",
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0014",
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0026"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0002": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0003"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0003": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0004"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0004": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0005"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0005": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0006"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0006": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0007"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0007": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0008"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0008": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0009"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0009": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0010"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0010": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0011"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0011": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0012"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0012": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0013"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0013": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0038"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0014": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0015"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0015": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0016"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0016": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0017"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0017": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0018"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0018": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0019"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0019": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0020"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0020": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0021"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0021": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0022"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0022": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0023"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0023": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0024"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0024": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0025"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0025": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0038"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0026": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0027"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0027": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0028"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0028": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0029"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0029": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0030"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0030": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0031"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0031": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0032"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0032": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0033"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0033": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0034"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0034": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0035"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0035": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0036"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0036": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0037"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0037": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0038"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0038": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0049"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0039": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0040"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0040": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0041"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0041": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0042"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0042": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0043"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0043": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0044"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0044": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0045"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0045": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0046"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0046": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0047"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0047": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0048"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0048": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0049"
+      ]
+    },
+    "artifact_producers": {
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0000": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0000",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0001": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0001",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0002": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0002",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0003": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0003",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0004": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0004",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0005": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0005",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0006": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0006",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0007": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0007",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0008": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0008",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0009": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0009",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0010": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0010",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0011": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0011",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0012": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0012",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0013": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0013",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0014": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0014",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0015": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0015",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0016": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0016",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0017": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0017",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0018": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0018",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0019": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0019",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0020": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0020",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0021": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0021",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0022": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0022",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0023": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0023",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0024": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0024",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0025": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0025",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0026": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0026",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0027": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0027",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0028": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0028",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0029": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0029",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0030": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0030",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0031": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0031",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0032": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0032",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0033": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0033",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0034": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0034",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0035": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0035",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0036": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0036",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0037": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0037",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0038": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0038",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0039": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0039",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0040": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0040",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0041": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0041",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0042": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0042",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0043": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0043",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0044": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0044",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0045": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0045",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0046": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0046",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0047": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0047",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0048": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0048",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0049": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0049"
+    },
+    "event_dependencies": {
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0000": [],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0001": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0000"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0002": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0003": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0002"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0004": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0003"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0005": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0004"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0006": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0005"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0007": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0006"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0008": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0007"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0009": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0008"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0010": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0009"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0011": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0010"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0012": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0011"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0013": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0012"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0014": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0015": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0014"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0016": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0015"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0017": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0016"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0018": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0017"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0019": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0018"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0020": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0019"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0021": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0020"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0022": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0021"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0023": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0022"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0024": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0023"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0025": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0024"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0026": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0027": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0026"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0028": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0027"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0029": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0028"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0030": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0029"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0031": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0030"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0032": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0031"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0033": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0032"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0034": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0033"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0035": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0034"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0036": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0035"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0037": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0036"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0038": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0013",
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0025",
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0037"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0039": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0000"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0040": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0039"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0041": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0040"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0042": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0041"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0043": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0042"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0044": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0043"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0045": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0044"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0046": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0045"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0047": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0046"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0048": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0047"
+      ],
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0049": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0048",
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0038"
+      ]
+    },
+    "expected_relationships": [
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0000",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0000"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0001"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0000",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0001"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0000",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0001"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0002",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0002"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0002"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0002"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0003",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0003"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0002",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0003"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0002",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0003"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0004",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0004"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0003",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0004"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0003",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0004"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0005",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0005"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0004",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0005"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0004",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0005"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0006",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0006"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0005",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0006"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0005",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0006"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0007",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0007"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0006",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0007"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0006",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0007"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0008",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0008"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0007",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0008"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0007",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0008"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0009",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0009"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0008",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0009"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0008",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0009"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0010",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0010"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0009",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0010"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0009",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0010"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0011",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0011"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0010",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0011"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0010",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0011"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0012",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0012"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0011",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0012"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0011",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0012"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0013",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0013"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0012",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0013"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0012",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0013"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0014",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0014"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0014"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0014"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0015",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0015"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0014",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0015"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0014",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0015"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0016",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0016"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0015",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0016"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0015",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0016"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0017",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0017"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0016",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0017"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0016",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0017"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0018",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0018"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0017",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0018"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0017",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0018"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0019",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0019"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0018",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0019"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0018",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0019"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0020",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0020"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0019",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0020"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0019",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0020"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0021",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0021"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0020",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0021"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0020",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0021"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0022",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0022"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0021",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0022"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0021",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0022"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0023",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0023"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0022",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0023"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0022",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0023"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0024",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0024"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0023",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0024"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0023",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0024"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0025",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0025"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0024",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0025"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0024",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0025"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0026",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0026"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0026"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0026"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0027",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0027"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0026",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0027"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0026",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0027"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0028",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0028"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0027",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0028"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0027",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0028"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0029",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0029"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0028",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0029"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0028",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0029"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0030",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0030"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0029",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0030"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0029",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0030"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0031",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0031"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0030",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0031"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0030",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0031"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0032",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0032"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0031",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0032"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0031",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0032"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0033",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0033"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0032",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0033"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0032",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0033"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0034",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0034"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0033",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0034"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0033",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0034"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0035",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0035"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0034",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0035"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0034",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0035"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0036",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0036"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0035",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0036"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0035",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0036"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0037",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0037"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0036",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0037"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0036",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0037"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0038",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0038"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0013",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0038"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0025",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0038"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0037",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0038"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0013",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0038"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0025",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0038"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0037",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0038"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0039",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0039"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0000",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0039"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0000",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0039"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0040",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0040"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0039",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0040"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0039",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0040"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0041",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0041"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0040",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0041"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0040",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0041"
+      },
+      {
+        "rel_type": "RETRIES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0041",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0040"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0042",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0042"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0041",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0042"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0041",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0042"
+      },
+      {
+        "rel_type": "INVOKES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0042",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0043"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0043",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0043"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0042",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0043"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0042",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0043"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0044",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0044"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0043",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0044"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0043",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0044"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0045",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0045"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0044",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0045"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0044",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0045"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0046",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0046"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0045",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0046"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0045",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0046"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0047",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0047"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0046",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0047"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0046",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0047"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0048",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0048"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0047",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0048"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0047",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0048"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0049",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0049"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0048",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0049"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:a0038",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0049"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0048",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0049"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0038",
+        "target_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0049"
+      }
+    ],
+    "invocations": {
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0042": [
+        "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0043"
+      ]
+    },
+    "retries": {
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0041": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0040"
+    }
+  },
+  "quality": {
+    "corrupted_artifact_ids": [],
+    "incomplete_observation_notes": [
+      "combines parallel evidence, shared artifacts, delegation, and retry"
+    ],
+    "intentionally_incomplete": false,
+    "missing_dependency_refs": [],
+    "missing_event_ids": []
+  },
+  "seed": 20421,
+  "structural": {
+    "agent_ids": [
+      "coordinator",
+      "planner",
+      "researcher",
+      "risk",
+      "policy"
+    ],
+    "event_categories": {
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0000": "instruction",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0001": "reasoning",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0002": "retrieval",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0003": "tool",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0004": "knowledge",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0005": "retrieval",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0006": "tool",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0007": "knowledge",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0008": "retrieval",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0009": "tool",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0010": "knowledge",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0011": "retrieval",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0012": "tool",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0013": "knowledge",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0014": "retrieval",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0015": "tool",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0016": "knowledge",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0017": "retrieval",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0018": "tool",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0019": "knowledge",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0020": "retrieval",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0021": "tool",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0022": "knowledge",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0023": "retrieval",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0024": "tool",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0025": "knowledge",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0026": "retrieval",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0027": "tool",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0028": "knowledge",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0029": "retrieval",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0030": "tool",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0031": "knowledge",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0032": "retrieval",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0033": "tool",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0034": "knowledge",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0035": "retrieval",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0036": "tool",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0037": "knowledge",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0038": "reasoning",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0039": "knowledge",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0040": "tool",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0041": "tool",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0042": "reasoning",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0043": "retrieval",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0044": "reasoning",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0045": "tool",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0046": "knowledge",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0047": "reasoning",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0048": "tool",
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0049": "decision"
+    },
+    "model_ids": [
+      "model-coord-v1",
+      "model-risk-v1"
+    ],
+    "outcome_event_ids": [
+      "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp:e0049"
+    ],
+    "scale_tier": "S1",
+    "scenario_id": "financial_loan",
+    "tool_ids": [
+      "credit_score_api",
+      "income_verifier",
+      "policy_lookup"
+    ],
+    "topology_id": "mixed_realistic"
+  },
+  "trace_id": "bench-financial_loan-mixed_realistic-S1-s20421-conflicting_agent_outputs-cmp"
+}

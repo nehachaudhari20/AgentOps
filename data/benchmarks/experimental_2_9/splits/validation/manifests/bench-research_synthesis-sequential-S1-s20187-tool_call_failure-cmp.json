@@ -1,0 +1,38 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "analyst",
+    "writer"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "e33ba831978bc39563ef66a5e9a4bfd5690c74f5ae81e6625783735adb272185",
+  "expected_event_count": 50,
+  "fault_types": [
+    "tool_call_failure"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "linear chain; each step depends on previous",
+    "linear chain; each step depends on previous",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|sequential|S1|research_synthesis|tool_call_failure|r0|c138",
+    "base_seed=20186"
+  ],
+  "outcome_event_ids": [
+    "bench-research_synthesis-sequential-S1-s20187-tool_call_failure-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "research_synthesis",
+  "seed": 20187,
+  "topology_id": "sequential",
+  "trace_id": "bench-research_synthesis-sequential-S1-s20187-tool_call_failure-cmp"
+}

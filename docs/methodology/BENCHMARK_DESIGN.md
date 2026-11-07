@@ -17,7 +17,7 @@ A single 14-event loan fixture is a smoke test, not a research corpus. Synthetic
 |-------|------|
 | Unit / property tests | Algorithm and schema correctness on small fixtures |
 | Pilot generation (this phase) | Generator + data-model validation |
-| Final experimental evaluation | **Later phase** — not claimed here |
+| Final experimental evaluation | **Phase 2.9 corpus** under `data/benchmarks/experimental_2_9/` (design + held-out splits); algorithm baselines later |
 
 The pilot does **not** validate production-scale behavior or AgentTrust “performance.”
 

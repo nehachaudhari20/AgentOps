@@ -1,0 +1,38 @@
+{
+  "actual_event_count": 52,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "analyst",
+    "writer"
+  ],
+  "artifact_count": 52,
+  "config_fingerprint": "61a52061bbff5074c0166b4e43144ce627191195e3a3d2ed1b6ab12423d736e4",
+  "expected_event_count": 49,
+  "fault_types": [
+    "retry_storm"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|parallel_fanout_fanin|S1|research_synthesis|retry_storm|r2|c308",
+    "base_seed=30466"
+  ],
+  "outcome_event_ids": [
+    "bench-research_synthesis-parallel_fanout_fanin-S1-s30467-retry_storm-cmp:e0048"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "research_synthesis",
+  "seed": 30467,
+  "topology_id": "parallel_fanout_fanin",
+  "trace_id": "bench-research_synthesis-parallel_fanout_fanin-S1-s30467-retry_storm-cmp"
+}

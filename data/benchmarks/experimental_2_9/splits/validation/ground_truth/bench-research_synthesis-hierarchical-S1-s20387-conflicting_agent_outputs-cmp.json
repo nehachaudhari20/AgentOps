@@ -1,0 +1,1196 @@
+{
+  "attribution_reference": {
+    "disclaimer": "equal_root_ancestor_mass assigns structural share among dependency-DAG roots reachable to each outcome. It is NOT causal responsibility, NOT legal liability, and MUST NOT be derived by copying ConservedRPA/MFAV outputs.",
+    "ground_truth_version": "gt-2.9.0",
+    "method": "equal_root_ancestor_mass.v1",
+    "outcomes": [
+      {
+        "ancestor_event_ids": [
+          "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0000",
+          "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+          "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0045",
+          "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0046",
+          "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0047",
+          "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0048",
+          "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0049"
+        ],
+        "method": "equal_root_ancestor_mass.v1",
+        "notes": [
+          "Mass conserved over root events (sum=1 when roots non-empty).",
+          "Agent map aggregates root event shares; not causal credit."
+        ],
+        "outcome_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0049",
+        "root_agent_allocations": {
+          "coordinator": 1.0
+        },
+        "root_event_allocations": {
+          "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0000": 1.0
+        }
+      }
+    ]
+  },
+  "disclaimer": "Ground truth records generator intent only. Graph reachability is not causal proof. Do not feed these labels into RPA/MFAV algorithm inputs. Attribution reference (if present) is equal-root structural share, not causal GT.",
+  "generator_version": "2.5.1",
+  "ground_truth_version": "gt-2.9.0",
+  "interventions": [
+    {
+      "affected_artifact_ids": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0003"
+      ],
+      "affected_event_ids": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0003"
+      ],
+      "expected_observable_effects": [
+        "two artifacts expose mutually inconsistent decision values",
+        "two artifacts have distinct content_hash values"
+      ],
+      "fault_type": "conflicting_agent_outputs",
+      "generator_version": "2.5.1",
+      "injection_location": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+      "intervention_id": "iv-conflicting_agent_outputs-20387-01",
+      "notes": [
+        "Conflict is recoverable from observable decision/hash disagreement; GT records the intended semantic relation separately."
+      ],
+      "parameters": {
+        "artifact_ids": [
+          "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+          "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0003"
+        ],
+        "expected_decisions": {
+          "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001": "approve",
+          "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0003": "reject"
+        },
+        "observed_content_hashes": {
+          "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001": "sha256:c2bffc1f5dd9a87ab404d0c906551083ab3d867677d5469bd8dbba2ba312e626",
+          "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0003": "sha256:3e550b688dd634b614b333cba6a88ea4cf15002e6d256197ddcf90d869bd3b92"
+        },
+        "relation": "mutually_inconsistent_decisions"
+      },
+      "scenario_id": "research_synthesis",
+      "seed": 20387
+    }
+  ],
+  "lineage": {
+    "artifact_consumers": {
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0000": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0002",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0003",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0004",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0005",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0006",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0007",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0008",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0009",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0010",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0011",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0012",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0013",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0014",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0015",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0016",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0017",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0018",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0019",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0020",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0021",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0022",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0023",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0024",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0025",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0026",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0027",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0028",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0029",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0030",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0031",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0032",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0033",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0034",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0035",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0036",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0037",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0038",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0039",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0040",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0041",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0042",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0043",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0044",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0045",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0046",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0047"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0045": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0048"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0046": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0048"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0047": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0048"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0048": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0049"
+      ]
+    },
+    "artifact_producers": {
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0000": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0000",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0002": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0002",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0003": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0003",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0004": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0004",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0005": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0005",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0006": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0006",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0007": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0007",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0008": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0008",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0009": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0009",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0010": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0010",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0011": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0011",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0012": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0012",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0013": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0013",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0014": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0014",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0015": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0015",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0016": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0016",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0017": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0017",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0018": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0018",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0019": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0019",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0020": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0020",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0021": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0021",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0022": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0022",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0023": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0023",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0024": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0024",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0025": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0025",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0026": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0026",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0027": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0027",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0028": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0028",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0029": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0029",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0030": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0030",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0031": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0031",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0032": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0032",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0033": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0033",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0034": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0034",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0035": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0035",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0036": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0036",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0037": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0037",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0038": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0038",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0039": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0039",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0040": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0040",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0041": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0041",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0042": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0042",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0043": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0043",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0044": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0044",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0045": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0045",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0046": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0046",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0047": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0047",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0048": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0048",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0049": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0049"
+    },
+    "event_dependencies": {
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0000": [],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0000"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0002": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0003": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0004": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0005": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0006": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0007": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0008": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0009": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0010": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0011": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0012": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0013": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0014": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0015": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0016": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0017": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0018": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0019": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0020": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0021": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0022": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0023": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0024": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0025": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0026": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0027": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0028": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0029": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0030": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0031": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0032": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0033": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0034": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0035": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0036": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0037": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0038": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0039": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0040": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0041": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0042": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0043": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0044": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0045": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0046": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0047": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0048": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0045",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0046",
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0047"
+      ],
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0049": [
+        "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0048"
+      ]
+    },
+    "expected_relationships": [
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0000",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0000"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0000",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0000",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0002",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0002"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0002"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0002"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0003",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0003"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0003"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0003"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0004",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0004"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0004"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0004"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0005",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0005"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0005"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0005"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0006",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0006"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0006"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0006"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0007",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0007"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0007"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0007"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0008",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0008"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0008"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0008"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0009",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0009"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0009"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0009"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0010",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0010"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0010"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0010"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0011",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0011"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0011"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0011"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0012",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0012"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0012"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0012"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0013",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0013"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0013"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0013"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0014",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0014"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0014"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0014"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0015",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0015"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0015"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0015"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0016",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0016"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0016"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0016"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0017",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0017"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0017"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0017"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0018",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0018"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0018"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0018"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0019",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0019"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0019"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0019"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0020",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0020"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0020"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0020"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0021",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0021"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0021"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0021"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0022",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0022"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0022"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0022"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0023",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0023"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0023"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0023"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0024",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0024"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0024"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0024"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0025",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0025"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0025"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0025"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0026",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0026"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0026"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0026"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0027",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0027"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0027"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0027"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0028",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0028"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0028"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0028"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0029",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0029"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0029"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0029"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0030",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0030"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0030"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0030"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0031",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0031"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0031"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0031"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0032",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0032"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0032"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0032"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0033",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0033"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0033"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0033"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0034",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0034"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0034"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0034"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0035",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0035"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0035"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0035"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0036",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0036"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0036"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0036"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0037",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0037"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0037"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0037"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0038",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0038"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0038"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0038"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0039",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0039"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0039"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0039"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0040",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0040"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0040"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0040"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0041",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0041"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0041"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0041"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0042",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0042"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0042"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0042"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0043",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0043"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0043"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0043"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0044",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0044"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0044"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0044"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0045",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0045"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0045"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0045"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0046",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0046"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0046"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0046"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0047",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0047"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0047"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0047"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0048",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0048"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0045",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0048"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0046",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0048"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0047",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0048"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0045",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0048"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0046",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0048"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0047",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0048"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0049",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0049"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:a0048",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0049"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0048",
+        "target_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0049"
+      }
+    ],
+    "invocations": {},
+    "retries": {}
+  },
+  "quality": {
+    "corrupted_artifact_ids": [],
+    "incomplete_observation_notes": [
+      "coordinator delegates; specialists report; coordinator synthesizes"
+    ],
+    "intentionally_incomplete": false,
+    "missing_dependency_refs": [],
+    "missing_event_ids": []
+  },
+  "seed": 20387,
+  "structural": {
+    "agent_ids": [
+      "coordinator",
+      "planner",
+      "researcher",
+      "analyst",
+      "writer"
+    ],
+    "event_categories": {
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0000": "instruction",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0001": "reasoning",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0002": "retrieval",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0003": "tool",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0004": "knowledge",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0005": "tool",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0006": "knowledge",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0007": "reasoning",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0008": "knowledge",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0009": "reasoning",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0010": "retrieval",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0011": "reasoning",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0012": "retrieval",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0013": "tool",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0014": "retrieval",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0015": "tool",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0016": "knowledge",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0017": "tool",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0018": "knowledge",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0019": "reasoning",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0020": "knowledge",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0021": "reasoning",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0022": "retrieval",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0023": "reasoning",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0024": "retrieval",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0025": "tool",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0026": "retrieval",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0027": "tool",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0028": "knowledge",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0029": "tool",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0030": "knowledge",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0031": "reasoning",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0032": "knowledge",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0033": "reasoning",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0034": "retrieval",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0035": "reasoning",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0036": "retrieval",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0037": "tool",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0038": "retrieval",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0039": "tool",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0040": "knowledge",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0041": "tool",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0042": "knowledge",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0043": "reasoning",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0044": "knowledge",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0045": "reasoning",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0046": "retrieval",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0047": "reasoning",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0048": "reasoning",
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0049": "decision"
+    },
+    "model_ids": [
+      "model-ana-v1",
+      "model-coord-v1",
+      "model-plan-v1"
+    ],
+    "outcome_event_ids": [
+      "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp:e0049"
+    ],
+    "scale_tier": "S1",
+    "scenario_id": "research_synthesis",
+    "tool_ids": [
+      "pdf_extract"
+    ],
+    "topology_id": "hierarchical"
+  },
+  "trace_id": "bench-research_synthesis-hierarchical-S1-s20387-conflicting_agent_outputs-cmp"
+}

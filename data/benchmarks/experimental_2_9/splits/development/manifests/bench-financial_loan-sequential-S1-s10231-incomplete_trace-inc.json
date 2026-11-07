@@ -1,0 +1,39 @@
+{
+  "actual_event_count": 49,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "risk",
+    "policy"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "0651eb52df86ccb781dae589f2439888d38353517515b9326cf4b739baa452e4",
+  "expected_event_count": 50,
+  "fault_types": [
+    "incomplete_trace"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": true,
+  "intervention_count": 1,
+  "notes": [
+    "linear chain; each step depends on previous",
+    "incomplete_trace removed bench-financial_loan-sequential-S1-s10231-incomplete_trace-inc:e0024",
+    "linear chain; each step depends on previous",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=development",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=development|sequential|S1|financial_loan|incomplete_trace|r1|c145",
+    "base_seed=10230"
+  ],
+  "outcome_event_ids": [
+    "bench-financial_loan-sequential-S1-s10231-incomplete_trace-inc:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "financial_loan",
+  "seed": 10231,
+  "topology_id": "sequential",
+  "trace_id": "bench-financial_loan-sequential-S1-s10231-incomplete_trace-inc"
+}

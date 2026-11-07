@@ -1,0 +1,44 @@
+{
+  "actual_event_count": 99,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "investigator",
+    "analyst",
+    "osint",
+    "risk",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "investigator-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "d7dd7827f915ea9ee222d213b5e66ba4268bacf2cdcccd288f99f978830ab118",
+  "expected_event_count": 100,
+  "fault_types": [
+    "incomplete_trace"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": true,
+  "intervention_count": 1,
+  "notes": [
+    "linear chain; each step depends on previous",
+    "incomplete_trace removed bench-fraud_investigation-sequential-S2-s20433-incomplete_trace-inc:e0049",
+    "linear chain; each step depends on previous",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=validation",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=validation|sequential|S2|fraud_investigation|incomplete_trace|r1|c261",
+    "base_seed=20432"
+  ],
+  "outcome_event_ids": [
+    "bench-fraud_investigation-sequential-S2-s20433-incomplete_trace-inc:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "fraud_investigation",
+  "seed": 20433,
+  "topology_id": "sequential",
+  "trace_id": "bench-fraud_investigation-sequential-S2-s20433-incomplete_trace-inc"
+}

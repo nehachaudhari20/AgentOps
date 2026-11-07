@@ -63,22 +63,30 @@ class BenchmarkGroundTruth:
     interventions: list[InterventionRecord] = field(default_factory=list)
     structural: StructuralGroundTruth = field(default_factory=StructuralGroundTruth)
     quality: TraceQualityGroundTruth = field(default_factory=TraceQualityGroundTruth)
+    ground_truth_version: str = "gt-2.5.1"
+    attribution_reference: Any = None  # AttributionReferenceGT | dict | None (Phase 2.9)
     disclaimer: str = (
         "Ground truth records generator intent only. "
         "Graph reachability is not causal proof. "
-        "Do not feed these labels into RPA/MFAV algorithm inputs."
+        "Do not feed these labels into RPA/MFAV algorithm inputs. "
+        "Attribution reference (if present) is equal-root structural share, not causal GT."
     )
 
     def to_dict(self) -> dict[str, Any]:
+        attr = self.attribution_reference
+        if attr is not None and hasattr(attr, "to_dict"):
+            attr = attr.to_dict()
         return {
             "trace_id": self.trace_id,
             "generator_version": self.generator_version,
             "seed": self.seed,
+            "ground_truth_version": self.ground_truth_version,
             "disclaimer": self.disclaimer,
             "lineage": self.lineage.to_dict(),
             "interventions": [i.to_dict() for i in self.interventions],
             "structural": self.structural.to_dict(),
             "quality": self.quality.to_dict(),
+            "attribution_reference": attr,
         }
 
     @classmethod
@@ -95,6 +103,8 @@ class BenchmarkGroundTruth:
             interventions=interventions,
             structural=structural,
             quality=quality,
+            ground_truth_version=data.get("ground_truth_version", "gt-2.5.1"),
+            attribution_reference=data.get("attribution_reference"),
             disclaimer=data.get("disclaimer", ""),
         )
 

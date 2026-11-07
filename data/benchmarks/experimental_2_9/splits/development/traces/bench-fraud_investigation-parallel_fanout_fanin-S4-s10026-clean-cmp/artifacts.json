@@ -1,0 +1,5004 @@
+{
+  "artifacts": [
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0000",
+      "artifact_type": "alert",
+      "content_hash": "sha256:335f52514846f20da6c29df12fbd71854aa94ce8599af52229f71b71bf4a7fdc",
+      "metadata": {
+        "step": "s000",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0001",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:093d3d6dfaac384ca1630e382b3f3828d2cef2e81e3ec37e96ffe73d9f2a5898",
+      "metadata": {
+        "step": "s001",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0002",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:fce1cb65bcdb1dea4404575c9e5d0047cdc4d9fd794136f4676bac78ecb9fdb4",
+      "metadata": {
+        "step": "s002",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0003",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:b75c77fbad0a1def0b34b2068a5ff327be5098ad3fc19d3dd627db811269ebbd",
+      "metadata": {
+        "step": "s003",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0004",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:b26b46b7c47353e2e580b117a7fd8d8300823e6fb2b47221b161324d55a72f27",
+      "metadata": {
+        "step": "s004",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0005",
+      "artifact_type": "alert",
+      "content_hash": "sha256:96d4e7d3a5f0a22c8138adb1916115e6c5775e95c246adefa405e959cd842e11",
+      "metadata": {
+        "step": "s005",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0006",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:23d902beaaf4a33a1d90d4ec9180e989bb7dfa3f3af1af092f2b98723f881e28",
+      "metadata": {
+        "step": "s006",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0007",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:57599c5fc8d615cd4a3476ab9e8e2a9c82a9dd66036aad4437484d1ee159811d",
+      "metadata": {
+        "step": "s007",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0008",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:378798ae1c84ce1ed61f3bc7f64d801289d98e44abf40e5a41ef40390c523e05",
+      "metadata": {
+        "step": "s008",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0009",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:fdebd82a1e490d6c55e45e02c1efeba07d3bcf5e98966445533cceb870bf02bc",
+      "metadata": {
+        "step": "s009",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0010",
+      "artifact_type": "alert",
+      "content_hash": "sha256:83d43d9fc72661e8ba5405ac3575e8cfed083f9cca745a0e6b61741a528a7c9d",
+      "metadata": {
+        "step": "s010",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0011",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:ddd5fc71d5935eaf9626a6e1fa6dd3ccea00de30da403de8ad4c98a13f790d08",
+      "metadata": {
+        "step": "s011",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0012",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:1d858f4a0ee18b204edf0dd328a00f2295e8592916655590d9bc747f5b088ae2",
+      "metadata": {
+        "step": "s012",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0013",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:4c24d1a35cfb91fe6dc3fe69e6bff12a4dbbbcf72d24fb7432aa69181629057d",
+      "metadata": {
+        "step": "s013",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0014",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:a24839266fe26197f4ca5abb5680d5a01710b2c1910647b9aa78269bb2727690",
+      "metadata": {
+        "step": "s014",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0015",
+      "artifact_type": "alert",
+      "content_hash": "sha256:0f51f52e041153a972cd970ce2dfdb89a2d7faacb53dd624ab982497e9f79b86",
+      "metadata": {
+        "step": "s015",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0016",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:c3227a48faf534439a439f472523c1788a7cef76f9a51d09050fa32207019f48",
+      "metadata": {
+        "step": "s016",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0017",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:34eed1cd6e0d88fa20136f91c7c95f021f30f8b7fa5af3978bbb251095fba964",
+      "metadata": {
+        "step": "s017",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0018",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:d78053487c3939d9057315a16899c329202723ed60d44efd6fafc6324b3b5673",
+      "metadata": {
+        "step": "s018",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0019",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:cd2dc1152f2373b09be8ed4d03e43543c6ccf91dafc2238edc9996e4ca3f46d0",
+      "metadata": {
+        "step": "s019",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0020",
+      "artifact_type": "alert",
+      "content_hash": "sha256:380540451e6d513c52218792929e401a2ec20f0b91750ebdd48cc9781106a448",
+      "metadata": {
+        "step": "s020",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0021",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:5d60eda99847714ebe05780d44f31a8c0e04a7b1f7bc26ce1c6ee45d05a08cd2",
+      "metadata": {
+        "step": "s021",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0022",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:517a4a386cfbf4fff48188d8bb910599156ef3f57e089eb02c71e24ed2c21dde",
+      "metadata": {
+        "step": "s022",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0023",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:6aaa3199276e8e1d673a390d07d85b6de314d16c3b3bd42c9613ceb5356a8db5",
+      "metadata": {
+        "step": "s023",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0024",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:02ece327cd3fc56145ca259540c7af2c8f712cff7eebf51b407d159779ee8a83",
+      "metadata": {
+        "step": "s024",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0025",
+      "artifact_type": "alert",
+      "content_hash": "sha256:e96b8d9448193597797f5c36a057a8cc35a1f927a53342b7eac354a193eb2531",
+      "metadata": {
+        "step": "s025",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0026",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:1873ddab5b6e6da1339383da15d0cce48cda50c7249cb68abd5e8bfd7833dd92",
+      "metadata": {
+        "step": "s026",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0027",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:e672b6a0bef89d1961a4b0a95e417d7faffff79bc2368bdb924d7b2afde205c4",
+      "metadata": {
+        "step": "s027",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0028",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:5ba89724b4cca021d92a0b171d520180085b11e079375bec5cc038ec7c59d12b",
+      "metadata": {
+        "step": "s028",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0029",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:8f942ce38e17c8a262dea597cf7fa09937646052b20d07b02cc8b61cfb8d84b9",
+      "metadata": {
+        "step": "s029",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0030",
+      "artifact_type": "alert",
+      "content_hash": "sha256:c42f9cdd7976063dcbc96d069aee3e6479c9c91dffb8a22d68986ae346a2ffd8",
+      "metadata": {
+        "step": "s030",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0031",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:cc5b9578bda28d21f0dca4abbf2e25fead1a1cabc4ea735cd5491a6ddc263172",
+      "metadata": {
+        "step": "s031",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0032",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:245f01b3da3d7166a64756450ade25b12f244877b3162434023a86ffbf8e309c",
+      "metadata": {
+        "step": "s032",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0033",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:3656b8e8b5d98c069d5d18f3898525b8da75f13e36a10d9715012a77f25770a9",
+      "metadata": {
+        "step": "s033",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0034",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:15788d383bb69a8568a7a7c3206007d5a4f58debadc357f040d528a64ffb6914",
+      "metadata": {
+        "step": "s034",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0035",
+      "artifact_type": "alert",
+      "content_hash": "sha256:4c195bfbcccfb6c009bc8c37cb07a5419b435c4b64ca4e76220ee2dc4ffa9ebe",
+      "metadata": {
+        "step": "s035",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0036",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:463a6a2f68ce0ebc88217e8474f06b8988b3b450aaa2dd6e35c439e73a3f44f6",
+      "metadata": {
+        "step": "s036",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0037",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:fea691a33c571f6d0619e8d32c351cfaee258ce13036ffe70f98dab06ef75f2d",
+      "metadata": {
+        "step": "s037",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0038",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:bfeb7c0f9ea0c29e34d8ddc54b1c0e190e35d4b39e584ff564e619c264a9bbd2",
+      "metadata": {
+        "step": "s038",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0039",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:69c57ed1ab3d670e127a6295067ced9c21006e65c4344e0eac623cbe05d645b2",
+      "metadata": {
+        "step": "s039",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0040",
+      "artifact_type": "alert",
+      "content_hash": "sha256:e228538b3458301736c2dc34e64b03230dc05cfcf53ee66eae026e59effa89f4",
+      "metadata": {
+        "step": "s040",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0041",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:cf911e9f5ea20c3be5a999045d80fcc9053b1d7270df9368166246c1501d4f16",
+      "metadata": {
+        "step": "s041",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0042",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:0939bfa6f4d73d1655e395ebf30b827549b95da638e263eabcfb5ac214969738",
+      "metadata": {
+        "step": "s042",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0043",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:149a9d271b1d4c42f05be4645da1f14f3e32f79cb608881fb01b24c91ef71046",
+      "metadata": {
+        "step": "s043",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0044",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:60cc4e6d3dcf8f377b76876b5e6fb0a844975eea8571ed853029cfa0a98bd316",
+      "metadata": {
+        "step": "s044",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0045",
+      "artifact_type": "alert",
+      "content_hash": "sha256:93166818230689843ee0e050ae5b4e788aa4f562614d1ed1f3bd9046aa206646",
+      "metadata": {
+        "step": "s045",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0046",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:12f63834a8f0418096a02a328162e2a0fd32e209e249e8cd2030568bb3299707",
+      "metadata": {
+        "step": "s046",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0047",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:6431370da01df1e0bac69aff1ba5012f6d96d902dada92b02fbcb0196d96ecec",
+      "metadata": {
+        "step": "s047",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0048",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:75f390ac098b1a240ef569b46f9b8b18313c4444dd52822aaeaa04117a05be5d",
+      "metadata": {
+        "step": "s048",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0049",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:d2a41c12eafa27ef2c5fcfaf319b63b3f9801e7f061c629bd63180b896a6d2b3",
+      "metadata": {
+        "step": "s049",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0050",
+      "artifact_type": "alert",
+      "content_hash": "sha256:db5bbd85d5de29b578166ec16d2c3a246261cc966e6f6d1bb02324ef679eff78",
+      "metadata": {
+        "step": "s050",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0051",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:e21eea9da6bf9558aec3377da8f215919d57fd4e77eb6c10789535d3b2491845",
+      "metadata": {
+        "step": "s051",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0052",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:fd78098404119038f985d1753fb14cf33ce5db4eeba5c0fe21b0df2226594205",
+      "metadata": {
+        "step": "s052",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0053",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:8b0a239d4dd1649778508ab3da166c39189783aeb16216727c5753fce06453a9",
+      "metadata": {
+        "step": "s053",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0054",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:04dc0242cabe49e0377aa27daadb8304b8ba0a22e91df4c9f01e1530b96bc0ee",
+      "metadata": {
+        "step": "s054",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0055",
+      "artifact_type": "alert",
+      "content_hash": "sha256:3b7a284be587f179462d7f44857ebc6575225ff4ef65e17156409c872db375a3",
+      "metadata": {
+        "step": "s055",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0056",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:d37bc35633ac00b5378e74af645a9a9eed4c44b7f07690edd141b17747cb8b84",
+      "metadata": {
+        "step": "s056",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0057",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:2442bd7736c3d73d9a26e7c136964bd763abfed862bcd72fceb9f14062dcef05",
+      "metadata": {
+        "step": "s057",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0058",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:2a2cb5652dcc670706c592b30d0033123396d70a806888bad44ac0df57ac822a",
+      "metadata": {
+        "step": "s058",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0059",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:81cb8aab7e469796d52f643a322d03b1e40859c5c6bb62e9e4509e5f982576d6",
+      "metadata": {
+        "step": "s059",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0060",
+      "artifact_type": "alert",
+      "content_hash": "sha256:3bacaa25c7b3ff768f413f056a183d9fcb67778cb79a08be32bf647e998eddab",
+      "metadata": {
+        "step": "s060",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0061",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:cdec9f68f6fc682ddb257dcdf275953435990f8fbdd7d8285fa975be79dcbec7",
+      "metadata": {
+        "step": "s061",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0062",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:5b8f33633ffc12b6b13d579303a62ee89034471f3f4fa3b96cc6f5044cf3563b",
+      "metadata": {
+        "step": "s062",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0063",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:3b5d52b007395665f6eb69abc9e8f6825913c042ae97e1c94410a2c4f51a0aa3",
+      "metadata": {
+        "step": "s063",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0064",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:fb0eb73632d312cd5cd58e22f68b99a76cd0405535c1a41723e45816314e21cd",
+      "metadata": {
+        "step": "s064",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0065",
+      "artifact_type": "alert",
+      "content_hash": "sha256:497a81ca98f215aca6390cb6a38958cbf4e0216f8c04f57f3c5da0b79b6e5acc",
+      "metadata": {
+        "step": "s065",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0066",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:72957b586fe87b90b0e1449d5f0b9581b397c2dbeee2661dd3bfae9b57ea7262",
+      "metadata": {
+        "step": "s066",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0067",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:4d4f0f845e168d962d8587632aacc720c33219800b386793e7bb5c39c033162a",
+      "metadata": {
+        "step": "s067",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0068",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:79eef10eb5f52bdb976a8ba73de7681484f69bdf8401dcc4227df6e133d3a2b7",
+      "metadata": {
+        "step": "s068",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0069",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:46b9dd8402ed1caad5a6de26246622767969a52f6607803eec00562e329f2f4b",
+      "metadata": {
+        "step": "s069",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0070",
+      "artifact_type": "alert",
+      "content_hash": "sha256:cfb1c9a16ede194abe73d0d9e81b7f6de92221d29c0784106cecd09901ef6154",
+      "metadata": {
+        "step": "s070",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0071",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:8939ddcccb13e253c71ae567e66ce4c0e727bf75b5c8b52d68457ed7ff2e3468",
+      "metadata": {
+        "step": "s071",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0072",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:e20dd709cb5bcf8bce0d45972f64ca6ba01bebe3445f6e2b9dc00409c2017e21",
+      "metadata": {
+        "step": "s072",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0073",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:d237edddf00eedf70ce0ac3db42102ef65bab08d79dfb7934019e7a427203fd3",
+      "metadata": {
+        "step": "s073",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0074",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:4b34c91fbed17373d33ec8926bbfc6beb2b1dfbf8a0b7148eed3d82ff6670e49",
+      "metadata": {
+        "step": "s074",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0075",
+      "artifact_type": "alert",
+      "content_hash": "sha256:543cd0865bcf355787cfff6c08c36d85235ed4e83185f259bfc656533a3bc055",
+      "metadata": {
+        "step": "s075",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0076",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:984d8c2497fa2bbe65f91170fe59ef6437312b219e578376319f2ca6978c9ddb",
+      "metadata": {
+        "step": "s076",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0077",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:087d5a4847703abfe5c8c1e999944dfb1cc044c1a22796284f5ceb01d39dce3a",
+      "metadata": {
+        "step": "s077",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0078",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:bc840b464b44a7bd2ad917192ea09e0c7cf828ad4aa195151438b36904ce11a4",
+      "metadata": {
+        "step": "s078",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0079",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:7949017c281bf8893733c06f4035114533c9df6b7a4625a4464e8f7e1e1f3c8c",
+      "metadata": {
+        "step": "s079",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0080",
+      "artifact_type": "alert",
+      "content_hash": "sha256:03614492ea82fdad3657d79488491dea01093b6a36884302608a2e7d283cf35c",
+      "metadata": {
+        "step": "s080",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0081",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:a06ed2aef762d415fa95b89e1fde30ca327eb84654355ca20792e3f578355e18",
+      "metadata": {
+        "step": "s081",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0082",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:5e363f270c570206fde606e8a88ae0a3541bca99db9b0db867fae3521bd34aaa",
+      "metadata": {
+        "step": "s082",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0083",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:da577377307d5c49503b477dbcfb388611d29ad015dbf8ef55d88d9f391d1088",
+      "metadata": {
+        "step": "s083",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0084",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:39f029d350dd3aafa513a5906d7e3f293447b7c56438b403cc34b10f9efcbeeb",
+      "metadata": {
+        "step": "s084",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0085",
+      "artifact_type": "alert",
+      "content_hash": "sha256:8cb1fbb211bd1d578cc026802e67a9b2d3aac54b14b32306dd274a5c4f99e6ca",
+      "metadata": {
+        "step": "s085",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0086",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:b0ebc716b513c80e0691a9c1366e3c3eff467875c142201692160925883de262",
+      "metadata": {
+        "step": "s086",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0087",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:29c157f8d459057c9169d7016657cf794d3160f2eb5a6e487edf636a353e2348",
+      "metadata": {
+        "step": "s087",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0088",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:8d860915ae49f395e2dfec11f88cf061aa54049271a5af56c9da3fee2ea2c303",
+      "metadata": {
+        "step": "s088",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0089",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:54515117b78df466c53c2bfc27c7b6eac12e74f945a4f310f3fa864b80ddc3fc",
+      "metadata": {
+        "step": "s089",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0090",
+      "artifact_type": "alert",
+      "content_hash": "sha256:3732172a27c251ee6f4bf07a7ae8965822575512a97e3c5fdf832bade0bd788d",
+      "metadata": {
+        "step": "s090",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0091",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:b30ce9a3e31a917f4e2aed6c2be51610bd6371b70eff076849db8e8c7273e9bc",
+      "metadata": {
+        "step": "s091",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0092",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:c615f89d32b8038fdea761e458cb6a04f9ef1e11045fbae190ecc604b71125a1",
+      "metadata": {
+        "step": "s092",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0093",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:0b5dcfd6cba7503af2dfb5861c759128696681fbb3e8730b9cb135c3a34f5e48",
+      "metadata": {
+        "step": "s093",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0094",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:912863b95b2decd8add0f2f767f661fe137da1b6dfdf21a7292a526c494382bc",
+      "metadata": {
+        "step": "s094",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0095",
+      "artifact_type": "alert",
+      "content_hash": "sha256:fae73ea19d58efedd244c8643869353873ed60519d483515b407d6b734388a7b",
+      "metadata": {
+        "step": "s095",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0096",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:d65912d3ebac6918832b664930a42d054caa7250f47b8a1a0277981e6af7f5c4",
+      "metadata": {
+        "step": "s096",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0097",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:55ceeb55d7a5d7a971d40e7873a6c35b17c68d1bf1d62e38d9b895f4eade6229",
+      "metadata": {
+        "step": "s097",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0098",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:db6f3a93364d05a2f0474eba8543c0adec5e5f3ba4afbe5a0dfa34b6eaf37fc3",
+      "metadata": {
+        "step": "s098",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0099",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:788886751ef161ce879b8c45ce9b279cd61f4de06368a1297d2da2aa79b37847",
+      "metadata": {
+        "step": "s099",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0100",
+      "artifact_type": "alert",
+      "content_hash": "sha256:9e6b9067a1b38166d2dc417f1727581ed045fe95be15dbec744f66186ca93aac",
+      "metadata": {
+        "step": "s100",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0101",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:e6af86c0cb3bcd92826abd316da30a3c680d819f4386c45b4ffde936482b4e66",
+      "metadata": {
+        "step": "s101",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0102",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:cd154d137a2fceecd02646d7b175b243913cc87eb80820bcc29fb4b8234c120e",
+      "metadata": {
+        "step": "s102",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0103",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:eb2131e244220a24b4b0d72c2196bb74f1d60d8448bb5df0f4411b993baaa98c",
+      "metadata": {
+        "step": "s103",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0104",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:208bb7b82ae7ff5fbb81e5edbdd653acef43daeb5056597902c7c4e2073fb6b2",
+      "metadata": {
+        "step": "s104",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0105",
+      "artifact_type": "alert",
+      "content_hash": "sha256:71e61f28cd924c0a35ea03ca6354d75ae94749d7ebb573be84837c535af0329f",
+      "metadata": {
+        "step": "s105",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0106",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:bc4886a45a11a16cb4a26f51be56161c73c32a25e3391faddb3ae4c84dcda60e",
+      "metadata": {
+        "step": "s106",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0107",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:521f69043b16f75aa12eb7c013891a587a45f1002f289f9b6fe6d5e9318644cf",
+      "metadata": {
+        "step": "s107",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0108",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:ea5ff435f85728ec8c5af9c7604e25ad995b4721dbf6b2993f8981064d5e2b3a",
+      "metadata": {
+        "step": "s108",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0109",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:80c27ab7b1739c3a16671ff7575113d812ed4af09ef925e6f90f298428f58092",
+      "metadata": {
+        "step": "s109",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0110",
+      "artifact_type": "alert",
+      "content_hash": "sha256:6388cef036072d60dac2700e2124b11b3bd171f9c5e9f62bb8398f4aa9c2cf74",
+      "metadata": {
+        "step": "s110",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0111",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:8d78763eef40332d6809caf2d94addae21262a9ec62a168a75d8cd123b5b8416",
+      "metadata": {
+        "step": "s111",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0112",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:f581dcd137ff00a9af40ad3a8dfc7efa44c1d7a2f3816de93f911770603f66f0",
+      "metadata": {
+        "step": "s112",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0113",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:4b6b2cf2819136d2cb9de7854222d0481489e1f07ffbe25b833f4ecbcb5f40a1",
+      "metadata": {
+        "step": "s113",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0114",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:9ea71160bca788f13a11854ebe6161837c3bf1940ee5b227a6223d08569cd5a3",
+      "metadata": {
+        "step": "s114",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0115",
+      "artifact_type": "alert",
+      "content_hash": "sha256:50b3e8bd9fea09f7b659f1e8ccf95c4a36ee2dd3fb79d6588e4d0ead7fef776d",
+      "metadata": {
+        "step": "s115",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0116",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:766c164dd9bd18fa1b74afb58c4bdc25bede26165ea4f3e5047b807c629605ad",
+      "metadata": {
+        "step": "s116",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0117",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:cd373a1c91aedfd25dfd5715f64b5610a97d75797de788023370d841cf8a49d9",
+      "metadata": {
+        "step": "s117",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0118",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:5eb7b23c28f8c164e9823d0df720cb88b7773f402fb81ce41eade68a717b8e8e",
+      "metadata": {
+        "step": "s118",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0119",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:cf0a28afcf2d722408ebe423faf612c30e6a6f98a3e92ccfc1311d5d86d57706",
+      "metadata": {
+        "step": "s119",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0120",
+      "artifact_type": "alert",
+      "content_hash": "sha256:1fa28271fc91917a00ea5575b63217f08646bf0ab530ce63827c75a34d38697d",
+      "metadata": {
+        "step": "s120",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0121",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:f5a187778343fa80e5da35215752781782d7ee08865164d9bfbddcc2f4962de2",
+      "metadata": {
+        "step": "s121",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0122",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:b0d8839667a4daa9f86bda4500813077578f18b224474e5469a7ea8f1867f92b",
+      "metadata": {
+        "step": "s122",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0123",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:fd90971841480c86fdca55af57361a84fa831c0e762f811f78320be2f7de3523",
+      "metadata": {
+        "step": "s123",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0124",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:701e6257516eb07259ba4b9972ec70119a3ccfcd77f33ca0eb4565b1ee6d8ed5",
+      "metadata": {
+        "step": "s124",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0125",
+      "artifact_type": "alert",
+      "content_hash": "sha256:d4fdee802d04f9b778f951bcd4f1ac50d43173add286ad1d9a8cb80826a54b64",
+      "metadata": {
+        "step": "s125",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0126",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:5b87ddc6ab75bbcf8e8aa68b20997e0e4d8578492dacc9fda38e0da47da6532b",
+      "metadata": {
+        "step": "s126",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0127",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:cd87c8ab1c0ba9be6d22396a7b3174a16ca6d000f6bfe17aeedfd020fa6e877f",
+      "metadata": {
+        "step": "s127",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0128",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:b136a403f10569f42ca3785c86b10f71dca4bcec64b1fdd78c2a68f30661d2a3",
+      "metadata": {
+        "step": "s128",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0129",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:3ad8cb84e197cb2315badc902c032a3de5b08c63bbd793b119c3a0391b8a463e",
+      "metadata": {
+        "step": "s129",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0130",
+      "artifact_type": "alert",
+      "content_hash": "sha256:21b1ac9b902c9c5dc909dab3d6c76ed4160fa2443578055253d78734a4cc4381",
+      "metadata": {
+        "step": "s130",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0131",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:d2a704c86e78798831209da322c5cb5743231d15c594b49f6121f21ab37561ff",
+      "metadata": {
+        "step": "s131",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0132",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:ad2a8b43bbd36d84392355e9e7880b05c954b841cd973c6cee5c6afab10890e9",
+      "metadata": {
+        "step": "s132",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0133",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:5b7cf583a8e9e8745caa3d1ef2c91dafe243151a5cbcdb1650b769b32d9409af",
+      "metadata": {
+        "step": "s133",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0134",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:a0727f34a553e92dbe42040b6858d149c1fe01a58cd4eaf645ac32157fe6c3e8",
+      "metadata": {
+        "step": "s134",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0135",
+      "artifact_type": "alert",
+      "content_hash": "sha256:b36eb2f250991edf458b798cb6d31e4b0b40f118f66e3378c6a701fbc0370dd6",
+      "metadata": {
+        "step": "s135",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0136",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:f8a597527114495b7988e1d1f8dac6e44dbebae917d8bbe25ca8ee307a60c4e1",
+      "metadata": {
+        "step": "s136",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0137",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:787ad2fd58df20bfe14228b3bbc1827eadd22e035d647f75874dfc633b394032",
+      "metadata": {
+        "step": "s137",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0138",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:48e58c57b19fe90c869bff9940cdef1a1d0edff491276754525d48f62c7f5899",
+      "metadata": {
+        "step": "s138",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0139",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:fb8a66b7bcdc46a75fca2fe5566a71037e6c0ed2098e80dc0d66d3fca433a018",
+      "metadata": {
+        "step": "s139",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0140",
+      "artifact_type": "alert",
+      "content_hash": "sha256:2cf363a8f7953baf15f8a0933b9771023a9ba09fb4225b154d958325dc01eb66",
+      "metadata": {
+        "step": "s140",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0141",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:f98dfbb668aa6f9aa2ebe6d5922435b1c322755964eb24fc55f88298cb413c26",
+      "metadata": {
+        "step": "s141",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0142",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:77b049823628d913e714fdcdbf7f39696a3d771a71da2319759ea8b1aa676dc5",
+      "metadata": {
+        "step": "s142",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0143",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:838c4041b461888f1ea611e398536f410e76d25b4023cd5ed84cf9c9472d1a48",
+      "metadata": {
+        "step": "s143",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0144",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:ab02fe8c6eef6c31eb890f327d81cd5eb54ab747bab5f4cf100e82b4dc9f2789",
+      "metadata": {
+        "step": "s144",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0145",
+      "artifact_type": "alert",
+      "content_hash": "sha256:445a10943a79c294425dcdcc51c74b176b6ea6a0a3bd1d142c0afadbb1300439",
+      "metadata": {
+        "step": "s145",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0146",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:0d17cc7e49ff1cb5c64d2df8919546a47d5a7e683f47efb51fa8f7e1dc8bc13d",
+      "metadata": {
+        "step": "s146",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0147",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:396a0896c9abecfa6c35650025c348143c67ffedf603a0b6f845fb6bebd85692",
+      "metadata": {
+        "step": "s147",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0148",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:0ce2b59e117deb0a615ed8f15a96d88a721fedc15278a9733bdc44ed5cc766bd",
+      "metadata": {
+        "step": "s148",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0149",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:c79139a26c272cb69993368b9265f2c30ecb17b565a50cdd9c0a9b2b332eb8af",
+      "metadata": {
+        "step": "s149",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0150",
+      "artifact_type": "alert",
+      "content_hash": "sha256:0d2fd99cfb1401c7493523d7396b932796cd0f8613f860317349be1fe25fcdac",
+      "metadata": {
+        "step": "s150",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0151",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:0ff7c638b44ce48df4f2cfefd1cf118be7e30ca322430ff28df7908a8facd215",
+      "metadata": {
+        "step": "s151",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0152",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:9ea8f365d03aa45d73a67aaaeb99b9c77f9cf5d202fcfe7e46d86e13b974d788",
+      "metadata": {
+        "step": "s152",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0153",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:e30fa7167fe6920546ba57faa7f4d5ac8172584b4cd796bf7036f9f0f2bacc71",
+      "metadata": {
+        "step": "s153",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0154",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:ab8f3ed6671295b5143321f227860c19ed58e59bc87521bf14b7584852e4a930",
+      "metadata": {
+        "step": "s154",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0155",
+      "artifact_type": "alert",
+      "content_hash": "sha256:4b99ade2c7c7b0b427f5a5785aa57a2590e924654c8cabf61976830182604196",
+      "metadata": {
+        "step": "s155",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0156",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:bb561650311c5a223e82e646be1e0950bb93eba01fcd0ae0728d66f75fa23fb0",
+      "metadata": {
+        "step": "s156",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0157",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:3a33857c890caca6139b2dd965fe3e034b05eac234e178e5e8140b8953e0a4d4",
+      "metadata": {
+        "step": "s157",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0158",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:67b11a35d74e7098cf66f8251560288f7612530de28295c880db6465efa2cb7c",
+      "metadata": {
+        "step": "s158",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0159",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:25395db781df2526a6fdc8434be33b38fe39b833a82b70f71567832c9fe337e9",
+      "metadata": {
+        "step": "s159",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0160",
+      "artifact_type": "alert",
+      "content_hash": "sha256:37dfe549a49f4ab302fa577ed5876acc53f7eee55e088e158ba68f29cbb4801b",
+      "metadata": {
+        "step": "s160",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0161",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:6420aec384ce617bae27a0ba6886563b482ba96c266f4de9c5665068950fda3f",
+      "metadata": {
+        "step": "s161",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0162",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:1efe917309c197ee19f3f083b52cdedb7ea518b2fdb4f32a6866a22ee90d5422",
+      "metadata": {
+        "step": "s162",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0163",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:109209a81094e14a3dd2e15a5d49b94cfaa893beae6070112e555345d8cc3a79",
+      "metadata": {
+        "step": "s163",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0164",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:f18c5becb125d3e258655adef73fc18df67be6018bf5b2556d081f42845e3070",
+      "metadata": {
+        "step": "s164",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0165",
+      "artifact_type": "alert",
+      "content_hash": "sha256:4fd798db8acc60c804097903dee7119418925e42dfcaa6c44f5536352c9a044d",
+      "metadata": {
+        "step": "s165",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0166",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:db6c1e5fbb3600ed5c704f56741cc35a544c411b3d7d2c0be137b8c075111705",
+      "metadata": {
+        "step": "s166",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0167",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:e847fedb3d69b0cfdaa8c70b499d3f2f7a46d5538a589b649737e779fae18115",
+      "metadata": {
+        "step": "s167",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0168",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:7e792ff24128d06477cf262a08cae34f9d66b3b5c92541c60d02adba849d897a",
+      "metadata": {
+        "step": "s168",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0169",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:e73e9eb4603f70075b15fa14af092c93e754e8e1db4fe4202db16f64d65c1842",
+      "metadata": {
+        "step": "s169",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0170",
+      "artifact_type": "alert",
+      "content_hash": "sha256:0dd57fe72f546e589b80c492017949f99f0892138ffc520b0b21a80911d6b1a6",
+      "metadata": {
+        "step": "s170",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0171",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:33a8837bdee6ce52c3e2626e59f9442b29856f96874cbf4594d9acaf8e104ac8",
+      "metadata": {
+        "step": "s171",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0172",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:d304819e40f107b6b5e3864fb2e2fba2b304249d64a8729e89b9c96802250072",
+      "metadata": {
+        "step": "s172",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0173",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:4f9c76d15f8708fc30582fb2c58cb87c7b72806f8e2040062fa152b18742b25c",
+      "metadata": {
+        "step": "s173",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0174",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:d37072b085b5e29e9abd1e3e2158823fb12f35e89421f9bc59d1f47e0fd31cf8",
+      "metadata": {
+        "step": "s174",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0175",
+      "artifact_type": "alert",
+      "content_hash": "sha256:1355e246b9bd229fa8355827877869129bd50b5d660b2d52d95181dd47bb1294",
+      "metadata": {
+        "step": "s175",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0176",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:b8f6b182bbf5a14e9a64ea2fbb6dfe57ad0bddf5ad6119f2fadf96ec2fb13096",
+      "metadata": {
+        "step": "s176",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0177",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:8bc75e8d073a1e422e126ef154ba26604f612f63f7d0a17d3177c8abb9c26584",
+      "metadata": {
+        "step": "s177",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0178",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:2124ff74a196084c273615b5e57aaf681dc19f943bfeebc897838a020c9ffc8a",
+      "metadata": {
+        "step": "s178",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0179",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:e2f5f010944a7888d6faa5a5830c5a5a0bf3fed493e1b03fe2b25d0c591d528f",
+      "metadata": {
+        "step": "s179",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0180",
+      "artifact_type": "alert",
+      "content_hash": "sha256:303dfdf3e57988fc3627b2e13cc708da3a811b8eabeea5e2234217b6554a7269",
+      "metadata": {
+        "step": "s180",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0181",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:4d01a1f97d77cd1e0c2dc9c51dada6a38a6413bab73080a3fd50e11f9d568549",
+      "metadata": {
+        "step": "s181",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0182",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:4c3cad855cf92c41726a1056d8f63fd81aec2a0ffc0e3556ebfb6917efdbfb99",
+      "metadata": {
+        "step": "s182",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0183",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:03aab793c1cd6e3d622a6dec121baae83cc12d034142e42897edcd9d9133ed28",
+      "metadata": {
+        "step": "s183",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0184",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:7e83291e5e138b43c12120dd3df221396f1c5121fe13e63c82c0982151a504d2",
+      "metadata": {
+        "step": "s184",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0185",
+      "artifact_type": "alert",
+      "content_hash": "sha256:ff082a9b59dd63d4acb4daffce469d01702eb91a15d3190007c38ffe2b8f2021",
+      "metadata": {
+        "step": "s185",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0186",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:0d8101400f2c5a8774b71ae994e2a25c0c52e28185483d2782a32634be832e54",
+      "metadata": {
+        "step": "s186",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0187",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:0b1d97e496f383192e59db691bec606050560881ee4466094446d5a91f295f54",
+      "metadata": {
+        "step": "s187",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0188",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:a19d4559aeb68c0cd2b3ea2291493dcec6056f2696f897c86cadd1d29ab5cbb5",
+      "metadata": {
+        "step": "s188",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0189",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:bce1656f5abb1aa13a79906df1cd306a8dd087542e9667f3f9b8f3d4fdd3ee89",
+      "metadata": {
+        "step": "s189",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0190",
+      "artifact_type": "alert",
+      "content_hash": "sha256:a1c404d8994909fbdbfb76717f2a4e7166e17a2d373df5c7feaf6e731d98e17a",
+      "metadata": {
+        "step": "s190",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0191",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:79aefef1b36a6a0c8d3ac3522e2951773da30d4376b2f6c85e2d2815c346d02a",
+      "metadata": {
+        "step": "s191",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0192",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:7bd0efdda31a5ca9bc37e85aaf3415d4feff65c4c5aa76739d84bb50aad0c405",
+      "metadata": {
+        "step": "s192",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0193",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:8cd3894353e782bb7abeecc2b5383c84d9808d97c117dec7db4390597981b3a6",
+      "metadata": {
+        "step": "s193",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0194",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:0c6cfaa0791362b18e0ac9ff613d20eea8cd9c2b9211d13973630f1c74ece725",
+      "metadata": {
+        "step": "s194",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0195",
+      "artifact_type": "alert",
+      "content_hash": "sha256:c9fe59e5ce965f60277bc2823df0cd2f0a1d6c44abdf366f88fd1fac2b01ef3c",
+      "metadata": {
+        "step": "s195",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0196",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:965c011aaf2e1b023320b590302e5b08763973e32c0c7972df59bbe028d74c0a",
+      "metadata": {
+        "step": "s196",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0197",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:6983235a5471714dc01130f754f702ca1c015c96aa9612e7b89ddc5541326f5c",
+      "metadata": {
+        "step": "s197",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0198",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:5296ffb72feaaac0e05f2f568b32c67b432b805c22766bb6b465466e93c19a84",
+      "metadata": {
+        "step": "s198",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0199",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:d59c47a661f33be06290451fea14f43936168bf397c04583c894baa4e28c6c77",
+      "metadata": {
+        "step": "s199",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0200",
+      "artifact_type": "alert",
+      "content_hash": "sha256:a521612c8ea9ed3bf50dc56bc40a9ec2d9062f32d2ee9983b1ea4a10a98d6f6c",
+      "metadata": {
+        "step": "s200",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0201",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:93a7b660d63872b728a4e72f97f594f29b4440b4cbfeda7e01e1a55799b4095d",
+      "metadata": {
+        "step": "s201",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0202",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:127de096dff071eb030aa558ab1915800ee37110a67ce3252edba12041741bcc",
+      "metadata": {
+        "step": "s202",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0203",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:9d392ff2d9b61bd43c6701dc01813f02e899eee6c565006d465d0e2ae6c0437d",
+      "metadata": {
+        "step": "s203",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0204",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:bde3141bb5f1b952dabe8e5329f98fd73501e3cd0be3d683f0eba1d46951df75",
+      "metadata": {
+        "step": "s204",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0205",
+      "artifact_type": "alert",
+      "content_hash": "sha256:d36a4db779f766e8960d88e98e1b30f33142e09d940b99591e48c99b529ad5fc",
+      "metadata": {
+        "step": "s205",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0206",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:a151e9f0560406ba584b71ad520a1b5ec9d92b635f16211e70c61f411be3959e",
+      "metadata": {
+        "step": "s206",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0207",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:25c4fd0ae808a04816c3b0fcbd4e981a0c1b8da88993c1290cc210a7b8ffbde1",
+      "metadata": {
+        "step": "s207",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0208",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:ef6c891c90130e2abe5937ae0d2b8069b8e67b0c265d3f91e1db37279d66f694",
+      "metadata": {
+        "step": "s208",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0209",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:db5eddb3871603b3d0e18a3c1385351ce2ca23d9a7516d63477333dd9a1307ca",
+      "metadata": {
+        "step": "s209",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0210",
+      "artifact_type": "alert",
+      "content_hash": "sha256:5d4cdbd631d937c6b771199aa4df3fb8889b0a99d7723c592d0d27ee4adb8b6a",
+      "metadata": {
+        "step": "s210",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0211",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:6091b7b41073712fa155133fa93c37afa0a7221a3fb71ae880438b04e12de89c",
+      "metadata": {
+        "step": "s211",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0212",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:d9e61e14fac4a3d091cc786f7bf7fddb6ed3128ed9a7687811d259da19f47bc5",
+      "metadata": {
+        "step": "s212",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0213",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:15f2e9b35c694b7fb890f5e8f73ac506c0e3325a0b46d6d072ea4e3c44a80c23",
+      "metadata": {
+        "step": "s213",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0214",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:3f266ce17a49afe800e4ae5e041ebb2ca91a9995e4e85ac20f6113f082662a25",
+      "metadata": {
+        "step": "s214",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0215",
+      "artifact_type": "alert",
+      "content_hash": "sha256:2bf4b89549f90246cb1057b4e01f6c40ea80955be481e67671afb1c4deaa7cc1",
+      "metadata": {
+        "step": "s215",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0216",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:e86b750652472c183f3e99f90b3fabd7e213def314e301913a1148c4830a38e8",
+      "metadata": {
+        "step": "s216",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0217",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:1ac5edf74bd5dc7d32d3f155f8e2b863d9fee1de08f24876aef45997ba9074e7",
+      "metadata": {
+        "step": "s217",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0218",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:d28d6671bcaa4a4a763b105707f4f85ae0b621480f9e01de7d0c975f2ec2713a",
+      "metadata": {
+        "step": "s218",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0219",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:a487e3be9bb9362473b444778cb28d0341d11776ccb8ac168d8ee6707a49736e",
+      "metadata": {
+        "step": "s219",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0220",
+      "artifact_type": "alert",
+      "content_hash": "sha256:f1f22c3d91a0ecf7a493dfb8e58962f2d25b22b92c49ed386e54a2bcca0c8c98",
+      "metadata": {
+        "step": "s220",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0221",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:16e1021fcdfd9e696628fb93ee0765bffb1bdc052c8d39d8cb2103e55a579dce",
+      "metadata": {
+        "step": "s221",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0222",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:db1fbe97b640b6f9b2678ceb93d67a1b77b5e448ead977dabdae70af669059ae",
+      "metadata": {
+        "step": "s222",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0223",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:e85ca3bf2660ea9b5897475f1c0195503fa6ba977753e40fbb446e72df3a17d7",
+      "metadata": {
+        "step": "s223",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0224",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:7d7a574b856913ac90337130d3b0d03332670a0d77b6e4b437042596e74661f8",
+      "metadata": {
+        "step": "s224",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0225",
+      "artifact_type": "alert",
+      "content_hash": "sha256:7fcd38c24e6bf4092f7e3097f5e1b3b8cccc7731fef659c6ed5eff7f63c6adaa",
+      "metadata": {
+        "step": "s225",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0226",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:6f6fb5af49c67bb7e85befdc1e9cabaad628ee1cf548700655313ae4c6288b8d",
+      "metadata": {
+        "step": "s226",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0227",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:46a805994975b8eeeaaa69fb75ddb523bf396af62a5fa1633a39658c41c528a3",
+      "metadata": {
+        "step": "s227",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0228",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:deb0f98a9cc32628810c7875a16b8a3090beb69d52beb65bea9946cbea9dece9",
+      "metadata": {
+        "step": "s228",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0229",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:5cf51cfcdcf957b00007992319a56ad8d272d5105e9557243e90688f98a1e81d",
+      "metadata": {
+        "step": "s229",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0230",
+      "artifact_type": "alert",
+      "content_hash": "sha256:226580f03b1ae77f15c0309d5250e593e2dfbdfe7a1efb6f7a6aa1d0854f6179",
+      "metadata": {
+        "step": "s230",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0231",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:f455d5a67232cd7367dc4230d618c7ee07df60e40427b91266331eccf5718288",
+      "metadata": {
+        "step": "s231",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0232",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:913359f74cbbb665dbb5581bd5e2dff502061f5a8b9f64cdf5bbe4f6d03eaacf",
+      "metadata": {
+        "step": "s232",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0233",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:858b2ff51ddaf76c6ebc46ea4fd40ffd09d577953e70bdecae1a492b5e9011f7",
+      "metadata": {
+        "step": "s233",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0234",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:9c0fe56351344a19d715ac815b6ce48c8b10bf3258e47d54a14e856f8a0ae4bf",
+      "metadata": {
+        "step": "s234",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0235",
+      "artifact_type": "alert",
+      "content_hash": "sha256:9e7b7a0f9abeea090bed6c1f446017a7c447f342298cadd6ca504e04319b44b9",
+      "metadata": {
+        "step": "s235",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0236",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:9c6f42d1a9a58c329fa46e2d45580a89819898b1d13005aef248eab0a3d2ebc2",
+      "metadata": {
+        "step": "s236",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0237",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:4abfd7720ff6a6d35c5f2890155dd21456b7070ec87877069cd203e2a6cbe671",
+      "metadata": {
+        "step": "s237",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0238",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:eaa92ab31272f512415207faf70a075a253e1bf89450f0d38d3cb262fef2b8f0",
+      "metadata": {
+        "step": "s238",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0239",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:32c737e623ae9bc7d75979e164285c16949a39571df2d509daaaf7829d88f65f",
+      "metadata": {
+        "step": "s239",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0240",
+      "artifact_type": "alert",
+      "content_hash": "sha256:3be3a3065bd3e72010f652c14fadc773f9815941474469ca2057c9e5540cf281",
+      "metadata": {
+        "step": "s240",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0241",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:728cf59607582e83a49af01d080f61a3bfd517678089da912583a548f12122ff",
+      "metadata": {
+        "step": "s241",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0242",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:bc64d8e1b215b712d1cbaa4ffe0b5d219c8948b6875297efd3bdc6dbf6382f66",
+      "metadata": {
+        "step": "s242",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0243",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:55959395d366675464f31972be1dcea2347c681058c90ba2da54884f653d9f98",
+      "metadata": {
+        "step": "s243",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0244",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:0433c57e04de89dbaa4904656447f45c9398bfba80d0fc8dc2e878f6578d03fd",
+      "metadata": {
+        "step": "s244",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0245",
+      "artifact_type": "alert",
+      "content_hash": "sha256:7bde4a577aaf3758849a545db5c8722ba73e0cc11aa4bcaa524d0ba97801779c",
+      "metadata": {
+        "step": "s245",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0246",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:1ea81f504ea94a27191df7f76c99cf02b71a58a040b44f2e4b5d3c86a9127428",
+      "metadata": {
+        "step": "s246",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0247",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:92a8893381408acbf9a63582e6212d0e908ddd9a615b25f1f7e5462af5236bf5",
+      "metadata": {
+        "step": "s247",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0248",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:192c16d1e49f9559013a196005fca83a93a6156d164a47231611457db63f6ea5",
+      "metadata": {
+        "step": "s248",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0249",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:029fc9e4e91372cb661ed241a786e34c6d03a8b295c14d6c187bf9c404eb7ec3",
+      "metadata": {
+        "step": "s249",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0250",
+      "artifact_type": "alert",
+      "content_hash": "sha256:37127f0f47422f42d210628492db85424d21e38d7764ba46f129f1bf5feba0ff",
+      "metadata": {
+        "step": "s250",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0251",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:480bf9d5a7e62f7a987d363ff4ed09983c171375aaf81f7e24f9bee7d66bd0a2",
+      "metadata": {
+        "step": "s251",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0252",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:b518a1f556d53ff2fe344bdea372f2cb55e93c00be6b1298b79195270a5d9a86",
+      "metadata": {
+        "step": "s252",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0253",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:2129a4834dd1646127d685492658d5b8a7633463a456c74532c25cc231440b60",
+      "metadata": {
+        "step": "s253",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0254",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:07a8fac445ab662dac90a52324d01e8eb568f2a5723a06a32cedd761a0bb46c9",
+      "metadata": {
+        "step": "s254",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0255",
+      "artifact_type": "alert",
+      "content_hash": "sha256:9afdebc66d756e1a5ea979bc830fbe7a6a295e4ae40b708eaca0ef63d1b970f8",
+      "metadata": {
+        "step": "s255",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0256",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:8a82be8c62d825709e910722482d6bd1aa3ff262f5c08cae9b4a227debd472e5",
+      "metadata": {
+        "step": "s256",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0257",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:37f60b25285bb40d6d2417c918fec7534f5c3446d6547e37fe72571061ec240e",
+      "metadata": {
+        "step": "s257",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0258",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:d2e8bd76732a42dbae917e2a7d78e6fa3a69f34e1744a283357da28fe79ca9bd",
+      "metadata": {
+        "step": "s258",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0259",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:85bb70802bbd420ea8c9236429cc4b1ae101c8a3835d40375fd0e94e4017edbc",
+      "metadata": {
+        "step": "s259",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0260",
+      "artifact_type": "alert",
+      "content_hash": "sha256:168295f8315a77c076de46352c139dc19d66d9a29d07cc919c743726987cec5d",
+      "metadata": {
+        "step": "s260",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0261",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:8c5de0ed12b65c8e953575dade1b7715fda84102e7744d3f6ced619b89d27491",
+      "metadata": {
+        "step": "s261",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0262",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:f28ba8f028e4890912feb6fb1eccbc7f495161d67a945e93f390c76e1939bcd7",
+      "metadata": {
+        "step": "s262",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0263",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:c08911d1a4e02345684d64612e97d7a6f551809371b246ef43bd3e53550334b9",
+      "metadata": {
+        "step": "s263",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0264",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:5bfe025e0b36ccaabc876c990b0b7ee6662267973f3fa865e58be3ed5cac57bc",
+      "metadata": {
+        "step": "s264",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0265",
+      "artifact_type": "alert",
+      "content_hash": "sha256:9f7a6b9de605366eecdd68d791f08e008289f6c9db41385fc30c47857037833c",
+      "metadata": {
+        "step": "s265",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0266",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:f28e9dc4834181d99c7d25314a17c2ddf9b5829277aafbe11b988c6579c3e673",
+      "metadata": {
+        "step": "s266",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0267",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:200127c1571ea05a95f63d6010b58715269ec532bf36479c738e555637d1acfa",
+      "metadata": {
+        "step": "s267",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0268",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:25af2681b0901bd496c2f65ba9f0de05b71b3598d7c0735134962e6e1ccee56a",
+      "metadata": {
+        "step": "s268",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0269",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:12b362e006390fee69ad3e355fef4d4d9e21f827f2b862fb70ade675ea698487",
+      "metadata": {
+        "step": "s269",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0270",
+      "artifact_type": "alert",
+      "content_hash": "sha256:32109bc88114f70ff3cf508fb6fcadcac262564502485806a9ba962ce2b5ee77",
+      "metadata": {
+        "step": "s270",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0271",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:912adf89822cb2c945b68408a03691bce79a47cfd9e0c88ff199623bc38b1549",
+      "metadata": {
+        "step": "s271",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0272",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:d7bf6543e6725c2af63f72c48d1eb7279f87ef9cb80e18945496447751641bb8",
+      "metadata": {
+        "step": "s272",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0273",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:adc503476ab5ab38599482685a7eaced8de8458a73e0f6e019676aec7f11a50c",
+      "metadata": {
+        "step": "s273",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0274",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:76fe4bc274451cbee0447bde3fc6cf3fbf8316aba3cb5357193885da8e273482",
+      "metadata": {
+        "step": "s274",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0275",
+      "artifact_type": "alert",
+      "content_hash": "sha256:19e9465461ab41e63d3094ce778d28647fdfd3a7a1e7fd99795a7f4802f2441b",
+      "metadata": {
+        "step": "s275",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0276",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:a95158470c11047bf414678893482d731a354c6f56fe840224da201490384b36",
+      "metadata": {
+        "step": "s276",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0277",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:22aba116ab691366c8b70219d55528ff52819c305bacb216c9c190a5de334610",
+      "metadata": {
+        "step": "s277",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0278",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:a8490928024d3973973f04ed47a1df35915940e6a56656bc37ec76f5604cad05",
+      "metadata": {
+        "step": "s278",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0279",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:f8662ab1a898046ada33552373db6b1b44a433e28db4a0142fa3484ecc821754",
+      "metadata": {
+        "step": "s279",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0280",
+      "artifact_type": "alert",
+      "content_hash": "sha256:20507d69d31fd7ec81c76744de02ec874a67fef4fd629e069bdc83de91ef3c16",
+      "metadata": {
+        "step": "s280",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0281",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:39665219bbab6a2f8068bf03797fd98a2824f75c4da4a3e91c5609210ccfc7d0",
+      "metadata": {
+        "step": "s281",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0282",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:187c8010fc2e9a6de71a5d36a9e52fe43499b7d0c5be490e951fbdb01cb330be",
+      "metadata": {
+        "step": "s282",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0283",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:d5b030e5de7cb8632368d367043f4b6ec9699a76976f1d1147b8c0319a2c5a60",
+      "metadata": {
+        "step": "s283",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0284",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:f951cace84b45ec20c1082d5ae37363ffb55b32111ff8b5c084965f9a8298ede",
+      "metadata": {
+        "step": "s284",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0285",
+      "artifact_type": "alert",
+      "content_hash": "sha256:f9c0e3bdf2ed1472c5e1ebfd564c8a6d8cbec56ddd169d5f41372035686071ee",
+      "metadata": {
+        "step": "s285",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0286",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:48f4144bd41cf809ae7342189ea3a2b218ade40c22c5626a6dead132cfb167f7",
+      "metadata": {
+        "step": "s286",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0287",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:6c7bf5916a3cb8128312e3a055871d06a9470c3c7c76ee33e7172d7a570e4b68",
+      "metadata": {
+        "step": "s287",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0288",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:d44b5ef58286cecd7457331d90e5bb9e1ec7fc075fef432e0e0226ecc4060d58",
+      "metadata": {
+        "step": "s288",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0289",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:341c1fd22525bcc4e0f3f172ebc64aa69d9ae6a1ae28056e2907ef22f071dafe",
+      "metadata": {
+        "step": "s289",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0290",
+      "artifact_type": "alert",
+      "content_hash": "sha256:7121c8636840105196aca56de80e472d43d62adc7e733d8cdc8942d0b9b5f515",
+      "metadata": {
+        "step": "s290",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0291",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:96f0c834c0a2cbe40a311caf3078741010c4e5350a8981e7ae311117ceda0349",
+      "metadata": {
+        "step": "s291",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0292",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:a38f384a470b12f9eb9e61cc7d3c53ac85ff5c1248e42625dbfb9416dc926ce8",
+      "metadata": {
+        "step": "s292",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0293",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:6971b66eaeae0ae2f843e714a078c0105f19880f1b47ed602944a0897a7862cd",
+      "metadata": {
+        "step": "s293",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0294",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:3742f5640567bba063a17092d370841406c59f559a84a9b542d6c0ce1e0520b0",
+      "metadata": {
+        "step": "s294",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0295",
+      "artifact_type": "alert",
+      "content_hash": "sha256:2f95dad33c40dfef2ea5c12c6115d700b921e6237f15fdf6292668724a8bcc44",
+      "metadata": {
+        "step": "s295",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0296",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:06221b6dfb0d50c98e175b58ea48b49b81a00cf1a534b80950c6f9ef7bb5c43a",
+      "metadata": {
+        "step": "s296",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0297",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:637faabd101ac88c037462aed573e06344ac2e96d4c149a0f8872fda687889f1",
+      "metadata": {
+        "step": "s297",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0298",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:fecb23c39ee55d0ea2c8d68882fac1fd4198791eb183cc8c41402cdfdeefa7eb",
+      "metadata": {
+        "step": "s298",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0299",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:95f24ddf161c14e72f7a9974b9db66778ae9ef012565eabef76ad6f34e7826e4",
+      "metadata": {
+        "step": "s299",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0300",
+      "artifact_type": "alert",
+      "content_hash": "sha256:eb0506640815a7ccd16c3bd6f99e0774be7143ab246e2a1a666886a80e8ee893",
+      "metadata": {
+        "step": "s300",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0301",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:7e4713401333a546a70e5b068c60d5bf295d2543528526b4937897b7c6fe6923",
+      "metadata": {
+        "step": "s301",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0302",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:51f791bf8475306f3d59722c1fa8101aedc99e1381c81cbd8ac9ea4467a767e4",
+      "metadata": {
+        "step": "s302",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0303",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:12dc90e5d2dbc8edd2c738488e1bcb26f9eb0b3d7f37e64d76ca650db595c5ea",
+      "metadata": {
+        "step": "s303",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0304",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:c4c90c2670c12d2bbb0fea550d61cc94941f90659d1524450e4da134ef4a7a34",
+      "metadata": {
+        "step": "s304",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0305",
+      "artifact_type": "alert",
+      "content_hash": "sha256:f92c6e42084e5b5a10b1b703c007365a002a73281b57d9f6c03cd60d984a6622",
+      "metadata": {
+        "step": "s305",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0306",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:a6bf4facd6ae587f5caaf3e4ed167be66c8769d674d6cc296c36979f916aae48",
+      "metadata": {
+        "step": "s306",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0307",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:a6e5f9e08d45d649ae94efc64e94613bd3e965cbd08c103e20b53ac1fc42bd22",
+      "metadata": {
+        "step": "s307",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0308",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:95c872b425b64376ebc119bf4ac0ec442330d0cfab822b088091ef51633053f7",
+      "metadata": {
+        "step": "s308",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0309",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:e005297d6f3dbc1dc65ac21ae595491367b362cdb2883088d4d5794ca31c475c",
+      "metadata": {
+        "step": "s309",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0310",
+      "artifact_type": "alert",
+      "content_hash": "sha256:fa9b0bc8a31409165e804fe8b64c9578908e0a0f0a8c7a30c4be2691cab28879",
+      "metadata": {
+        "step": "s310",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0311",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:0cb039fea9e7c7ca009681bcc1f69771681dc78e9e0a7e9c855f773cdb42a665",
+      "metadata": {
+        "step": "s311",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0312",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:675e69ff15980d18e351e195fc010755e222b25208be8a2e54b66bd79f8a4f83",
+      "metadata": {
+        "step": "s312",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0313",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:8e4e1e3295ec9f5a3bc3695470fe53d808feb86c6366a20ac51a7446fe24df01",
+      "metadata": {
+        "step": "s313",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0314",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:84a0b9ad32e9d40f16607550c6e9473fc1e34b0db219e0a390db184cdd96826f",
+      "metadata": {
+        "step": "s314",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0315",
+      "artifact_type": "alert",
+      "content_hash": "sha256:e1d9de9af54aa1ed73bdf8e4314dbf2d485fa4e736070c33cc7c18acae1fddb4",
+      "metadata": {
+        "step": "s315",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0316",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:403157dcd3179af8bf785ee6e94f2069790b955ed0c87a642127e7d2df6567a2",
+      "metadata": {
+        "step": "s316",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0317",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:5792986612d862d214b7ed6afa7b5e9670a5ca1aa5c8ac2e3c41a07d93707c56",
+      "metadata": {
+        "step": "s317",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0318",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:6623a950f933bb5c1aace2f652792ab2dd90ea1dada9de418758bc2934d06f6e",
+      "metadata": {
+        "step": "s318",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0319",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:5d1dce09c21944ea1f21ed2ae447facec3cb30cbe4e77fd5ae827d419a524e5e",
+      "metadata": {
+        "step": "s319",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0320",
+      "artifact_type": "alert",
+      "content_hash": "sha256:bb9abc4ba843bfd7365b7206ed02c52610157058ba579deb2524aa131c178722",
+      "metadata": {
+        "step": "s320",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0321",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:1011fcbd6705423bda843c13251f9310b4b11010d1defcf1ae068a48d7cf0fee",
+      "metadata": {
+        "step": "s321",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0322",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:f4370f2c120522dfabd86b2a7c5654c6c7ecda68197d6804e1e3701f6ac943fe",
+      "metadata": {
+        "step": "s322",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0323",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:5337e6357c4912bd50de68d0e6a86100732fff00cc00d1141a57ab1001d06210",
+      "metadata": {
+        "step": "s323",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0324",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:5db3fe4853e55b617cabf700c51f83b7ad6cad269eca0669b110657a9c9b0c68",
+      "metadata": {
+        "step": "s324",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0325",
+      "artifact_type": "alert",
+      "content_hash": "sha256:1120142c650a080feb058e5d7b5b47633037af0623b6151c3b1a99985f2b4cd3",
+      "metadata": {
+        "step": "s325",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0326",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:55f2e6d8478cb9bc4c6d3e14c303952511bc3cf01660cf6b088f0b25878b0c79",
+      "metadata": {
+        "step": "s326",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0327",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:f3ee6c1be9cbd7fc5df3205f3513184b7796764ca9733db87d211769206e858f",
+      "metadata": {
+        "step": "s327",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0328",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:49d517af9ecdff452c12c3d7aa65465cb143cdf75c8c8ad1041f860819e9f8b0",
+      "metadata": {
+        "step": "s328",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0329",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:28f0955b6502d7dc58a82d683d61c1771a0fa79747c274c5e65c8f86a68ad4eb",
+      "metadata": {
+        "step": "s329",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0330",
+      "artifact_type": "alert",
+      "content_hash": "sha256:73eb2264e7b321bec131f75c52a1f16b8c3946212042e254be9410a492896aaa",
+      "metadata": {
+        "step": "s330",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0331",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:8e6636957d96a129565890e0d4187fdfe6df216829517d3e842ed0561b9e36c4",
+      "metadata": {
+        "step": "s331",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0332",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:aac5ed540232c47aabdd1deff33b24cd419607b1cc0b9457705bf150d1bb1953",
+      "metadata": {
+        "step": "s332",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0333",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:91dde7edfbbc703362b2ef1efceb717da6e882352cf7c648bbd4caf01ae93ceb",
+      "metadata": {
+        "step": "s333",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0334",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:3ced5f343c87a0d424864b668111884ce8811c471520782e66921d8ccef68f29",
+      "metadata": {
+        "step": "s334",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0335",
+      "artifact_type": "alert",
+      "content_hash": "sha256:aed953661c143ea92fb087caef16f3af0b700310d378b9c739d019677b906020",
+      "metadata": {
+        "step": "s335",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0336",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:89693b129dfaeb60e676ee073da3e86edea0ca662698e79c408872ac34b244b7",
+      "metadata": {
+        "step": "s336",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0337",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:44af947363ff4d4ab80eef40bfeedff9b5d6d673e5ff253e4234b7d9f042393b",
+      "metadata": {
+        "step": "s337",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0338",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:99f83a51b58877744b0593d814dff07c702dd523fba45000c4b1a4db6510f2ba",
+      "metadata": {
+        "step": "s338",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0339",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:f471ac4947789749d1dc111324264cd1c550ef478a633dfbccaa76ae96b643f4",
+      "metadata": {
+        "step": "s339",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0340",
+      "artifact_type": "alert",
+      "content_hash": "sha256:1f4d75faaff9431ec250541cf1756526de152e221165d0684c17dabcbdc9e1db",
+      "metadata": {
+        "step": "s340",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0341",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:42cdb55c109284ee67530b6e4291fff60bd9385074a245a4ca8fcda023253aba",
+      "metadata": {
+        "step": "s341",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0342",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:459dbcef4d6516ad6d7cc57006471a17a6853f43716674975f8fb03a6e447d1f",
+      "metadata": {
+        "step": "s342",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0343",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:0fb246f5044f771740050f9f7bc8a3dd35bdbe2a8b3fbebb70cf7a59c27ce8c8",
+      "metadata": {
+        "step": "s343",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0344",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:a3160c54a022c5f81b8b4fe01107ec07e94151f69c0c2c6a87029a6f49a8958e",
+      "metadata": {
+        "step": "s344",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0345",
+      "artifact_type": "alert",
+      "content_hash": "sha256:3ea49e4aee871208c7549b7030c1d0a997aaa08415824d79972f068b0b3c5038",
+      "metadata": {
+        "step": "s345",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0346",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:9e5f866653f9696da2d0cfdcb3c93de8d23f75b9ddcca5c3d7b6c69e16dfa623",
+      "metadata": {
+        "step": "s346",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0347",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:d17b7cc9cf2b157306755330156d0d3a54dbc127fccbf9cfddeaee64654b196b",
+      "metadata": {
+        "step": "s347",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0348",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:579698de8fec4d307166c3c48fbd8585d5887349fdf4f237709be14e1d63c206",
+      "metadata": {
+        "step": "s348",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0349",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:022e4dc8a312888f104ebeb18dabf386a302b595007fad0776834513aad822bc",
+      "metadata": {
+        "step": "s349",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0350",
+      "artifact_type": "alert",
+      "content_hash": "sha256:280bfb0bef58545f78357150e1af797b48112ef0b87c158b1afa280266d469f0",
+      "metadata": {
+        "step": "s350",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0351",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:7f3ddecaab417b50788c8a0b77e08b6d58eddfd1f2c586d2521e76b3834f3ade",
+      "metadata": {
+        "step": "s351",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0352",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:e25b79e821955823ea3fa97c7a35c31be66f4d71fa558ee2eeab66a1512676b7",
+      "metadata": {
+        "step": "s352",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0353",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:8cd948933778198f795bca5fa3fee6e582121de9df8a6cb66f0029a0aab65a67",
+      "metadata": {
+        "step": "s353",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0354",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:f2bdeb5e39b14322fc2cb0ab67f1c7cf394bc4b905483ad706d3d16f30dd4cf2",
+      "metadata": {
+        "step": "s354",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0355",
+      "artifact_type": "alert",
+      "content_hash": "sha256:0ad3c9e87858a3cab2ca79f3acc7e4fa50340ba7ae97354400cb6842aab36bc1",
+      "metadata": {
+        "step": "s355",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0356",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:e0907c39ab207692d7557ed49e839f3da929f4a5b8d7492b266c93b223d2915c",
+      "metadata": {
+        "step": "s356",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0357",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:a72037c6c5bdf81c972ca4a9ba1a6ec5d0411de7e1994bb23da0f86b8d51686b",
+      "metadata": {
+        "step": "s357",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0358",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:a6870a911b5a42808c0361d0fa31332d34364b53c87d417aec9e1c14f49ec928",
+      "metadata": {
+        "step": "s358",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0359",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:ba2c60e372fe1e343534bf3f4f6a421f8167994184a16dcb688b76ca0262fbde",
+      "metadata": {
+        "step": "s359",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0360",
+      "artifact_type": "alert",
+      "content_hash": "sha256:bbae0d7babf7b137680994fe952e748a04b59eeee1fc97b22409b3f906e7aa05",
+      "metadata": {
+        "step": "s360",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0361",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:5292a1ab0fe329685eba5436a8502b6e706e6a44e8830307c147db06a09a7c5c",
+      "metadata": {
+        "step": "s361",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0362",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:9cddaef96cfb9812e43be9ecebc90f2567e1e8059d264a70ef5c0de81cb762a0",
+      "metadata": {
+        "step": "s362",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0363",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:60b577ca0239b20e92d2fb0b4ee0f95d4effe074c8ea418b17b09a4d5717eb91",
+      "metadata": {
+        "step": "s363",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0364",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:ac6af35f1bd35ef32cffc722cc2cc411bf799f7895195c660c076433109c6694",
+      "metadata": {
+        "step": "s364",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0365",
+      "artifact_type": "alert",
+      "content_hash": "sha256:44b70485b95d25ac11ae94b66c0ff428992664f9a44279d57e278b45ba1ae89b",
+      "metadata": {
+        "step": "s365",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0366",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:876b896afec1a2e386b66df6f0fdd8db0f063bb23648e4246682e54fc16ce169",
+      "metadata": {
+        "step": "s366",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0367",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:bdd8a8a4010782b89f3e36b04c20e45b10f7ce205f7ef6a27bb30128d49b2fa3",
+      "metadata": {
+        "step": "s367",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0368",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:a594466c0097a276265d37479cee5e97738747ace55433233167e2aff13f19d4",
+      "metadata": {
+        "step": "s368",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0369",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:424cd54d66ba7f2d7cc522d0e7d30c375a465edee09b38387e419d41df76275b",
+      "metadata": {
+        "step": "s369",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0370",
+      "artifact_type": "alert",
+      "content_hash": "sha256:82f3de1a3e349dfabdb2923e687702a85411733fe8778a3f378e41d6d635bde5",
+      "metadata": {
+        "step": "s370",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0371",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:bde0e5dcf99cba390ad622278bfb2f9eecbf53995fbad6fc803700047e95ab80",
+      "metadata": {
+        "step": "s371",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0372",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:7a303360cab6867f7234d1ed948d84156073a73a5a47838537b618f31ace21e1",
+      "metadata": {
+        "step": "s372",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0373",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:79e480557d00779ad967f62e064758f0fdb97ac789f2f3ac2fe5f43f9bfa0342",
+      "metadata": {
+        "step": "s373",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0374",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:63dcf12b973fc8757529e6417c01c739e215b904e47957613a0c33080f98c476",
+      "metadata": {
+        "step": "s374",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0375",
+      "artifact_type": "alert",
+      "content_hash": "sha256:44bcc9ee05f843b92f78744931a7f0831c3a1cd0b1fb873a580d7fd362f8dc31",
+      "metadata": {
+        "step": "s375",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0376",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:4fc94bd51eb3ae373223b1b4c93408279932c73814ee55c55b801e1ae1825377",
+      "metadata": {
+        "step": "s376",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0377",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:dc71e6846d2bd1fc69aff0bf7bbe697159b47ee8b3dc825d19c856c0d64f6b74",
+      "metadata": {
+        "step": "s377",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0378",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:6e57bbf487e71ea407a3f5c1c270b8c934905e00bc14658df1205b684769b30f",
+      "metadata": {
+        "step": "s378",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0379",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:d9417e40c4b4300321fd4fb9a6ddcebb2ac482fca83f35d6f8e1745db8877f35",
+      "metadata": {
+        "step": "s379",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0380",
+      "artifact_type": "alert",
+      "content_hash": "sha256:014e7ff0304a9a48a798e80d2e28d00dbc7fd3eb26a3bbe8a7c5c75c0bc95297",
+      "metadata": {
+        "step": "s380",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0381",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:af04714b59e1a14c7de52d7dfb91f6ed67a9f199d6dc2aee6496b3260713f107",
+      "metadata": {
+        "step": "s381",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0382",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:47ec4fdaa84fe6c6adb8195bd731f36c4bb7ca32bc4a93b7f1668ba6eb0c33cf",
+      "metadata": {
+        "step": "s382",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0383",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:14ff2414d48e3ae1b11c7656be282c22a50bcf7000b393b02ca80fc2fa9bbec5",
+      "metadata": {
+        "step": "s383",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0384",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:7d0d6512c1035a7916102824c13e0067c2ee6cffc58b3a480bd682eb39a9abcb",
+      "metadata": {
+        "step": "s384",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0385",
+      "artifact_type": "alert",
+      "content_hash": "sha256:790a061f11d58798e8678272f55bf8e1e99155091b5e54ac7983808052a9b01a",
+      "metadata": {
+        "step": "s385",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0386",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:4ac8de83c6f0273bf99c6ad2d3aa998ef323f3c64f342a9c8f6daff7681e47d2",
+      "metadata": {
+        "step": "s386",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0387",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:99722cdf2e8e4acf0476aab55ae745fcd7dc0317b9f2ad0e920f65ffb907bed3",
+      "metadata": {
+        "step": "s387",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0388",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:1b2283c0da9901c4641170d559272545f627041ad3867cf360a3a6670fce64f0",
+      "metadata": {
+        "step": "s388",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0389",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:cf5437bbc7d7dccb879347edf1dd2d75afc0a86040a1019ca0c01b2802530df0",
+      "metadata": {
+        "step": "s389",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0390",
+      "artifact_type": "alert",
+      "content_hash": "sha256:1fc3221017742641d539f291e679ebc2be0aaf674ae2c94aa2cd5a96297c3379",
+      "metadata": {
+        "step": "s390",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0391",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:d28769fc21dad3c60ee5e0f9940745635aa3528eda79f2a88c3ef859f8c7222c",
+      "metadata": {
+        "step": "s391",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0392",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:dd228493f80b926f8174d0d5a7f80436724d26295b02f0f0baec7d3f757f63f6",
+      "metadata": {
+        "step": "s392",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0393",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:5f2dbe1388cb7ea7a547f01e7f065f0a09db0303955c813348c120be357e965e",
+      "metadata": {
+        "step": "s393",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0394",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:482351972664cc81d720732697ae16f011090abfcd274b0eac72f8e6e2b816e4",
+      "metadata": {
+        "step": "s394",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0395",
+      "artifact_type": "alert",
+      "content_hash": "sha256:06177c429e8ca807edfb091f6a2b28d4a09ffb52eb4d8398cf6f7aa38aeeaa91",
+      "metadata": {
+        "step": "s395",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0396",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:979e57331128a7dbc0a10c24e5d6b817e75cd2451f9515acdbfaa9da74f582cd",
+      "metadata": {
+        "step": "s396",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0397",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:e663424fa02833f09d45966627be91cea5c6d7d51332e7297739e15561565e85",
+      "metadata": {
+        "step": "s397",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0398",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:8672bc87b9d6e2daa72c79b5fc9e4de793f4a505205ec6d0922039a074886384",
+      "metadata": {
+        "step": "s398",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0399",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:f1f03c1fd51ca51ddf2580385cf20f8698ccfde4365f75a2a0c904cac799321b",
+      "metadata": {
+        "step": "s399",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0400",
+      "artifact_type": "alert",
+      "content_hash": "sha256:dcb23e2800492454aed25626c1108aff08c5a7a34e4e0d337ddbeebeddcb77dd",
+      "metadata": {
+        "step": "s400",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0401",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:35e229bea09014ae18cee5ff9deff3a66a4e2b0ea144e68f5b64aa5bc2f6b704",
+      "metadata": {
+        "step": "s401",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0402",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:51b65359336eca7021e11bc99e6f202811ab3bb9680ed79ac2055fe3f728ad96",
+      "metadata": {
+        "step": "s402",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0403",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:756af6a211f4e83388fea84f27ddc1fd1d55121e52410a5e784c680a62e1cc79",
+      "metadata": {
+        "step": "s403",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0404",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:c5108f1855e238c15022200d0f9e40f34ca4c36b0503567ff0b96c2e7569e655",
+      "metadata": {
+        "step": "s404",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0405",
+      "artifact_type": "alert",
+      "content_hash": "sha256:3eb96585aae0c5e7c0d714ef6c26426e2ed77fd26db4e8ce5cd21b62ef447ce3",
+      "metadata": {
+        "step": "s405",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0406",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:995f352431b7658965cf377e9de5300f1622eb5b63633e0f8e825faf2f2d0c70",
+      "metadata": {
+        "step": "s406",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0407",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:217595601faf79a7453feb3237724c7058bc04d15dc4d56fd5fdfb8baabc0741",
+      "metadata": {
+        "step": "s407",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0408",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:95ec833a3b9647f2547853b3826d41b67472c36e0b00c5e8a4a2d63d4a7f86fc",
+      "metadata": {
+        "step": "s408",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0409",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:c1664426b2c0da0bcbf14d30d0c7a7bcb413902d8f6e9cf0c65ba4d7573e9193",
+      "metadata": {
+        "step": "s409",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0410",
+      "artifact_type": "alert",
+      "content_hash": "sha256:1fb4f9517260dfdc9965a3439ed0e177117aa0051f710d3631ad670ce3337054",
+      "metadata": {
+        "step": "s410",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0411",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:fec841e3f7b2a06ea666410275981b57933d4071bb339f2893af59512df948ce",
+      "metadata": {
+        "step": "s411",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0412",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:8e2c384b913c7e35dd75b836ea9d2b2bf8fe8ca7c213b3741ac336abd3119c93",
+      "metadata": {
+        "step": "s412",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0413",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:402420152ae28387973b24e0b405e6c63898ba74fe20b5fb2be6055b9aefc3a9",
+      "metadata": {
+        "step": "s413",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0414",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:5a652d390b8077a7e2dcf2505fe39313a6c7568b76c9af34b173e75a85abd72b",
+      "metadata": {
+        "step": "s414",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0415",
+      "artifact_type": "alert",
+      "content_hash": "sha256:28508853da10fbd1ceb60fcf7b81a4f64473d29682236c0d41d12242fd68a46e",
+      "metadata": {
+        "step": "s415",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0416",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:7094041600ad42e55af9de1f2691bd5d267c1da35400233525642f6d9af5858c",
+      "metadata": {
+        "step": "s416",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0417",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:e97c324b684b4155cc60b4d07c9332b584f489100dd85335d8c2581e53d7c5cf",
+      "metadata": {
+        "step": "s417",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0418",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:1a27b5ef7303124de81a615a80c5f5e0ec90092e07db850bb2ff98a973ffd4d0",
+      "metadata": {
+        "step": "s418",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0419",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:22189de1166488818c40223ca30447d10fa877fd7ddd760a286c6182fd279c12",
+      "metadata": {
+        "step": "s419",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0420",
+      "artifact_type": "alert",
+      "content_hash": "sha256:74269e5ce688b8f58e5cb1405dc9e10f0e14f59b6e688fd0a31799ad66c7e4d7",
+      "metadata": {
+        "step": "s420",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0421",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:ef00d9b450cc9454eaf8fecda6eaefa81aa7ec1a6e3433cf32d1b631fecc73a8",
+      "metadata": {
+        "step": "s421",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0422",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:0b2537582a90afe6f651766b4edf25622a85e21831704d900c96e78e460039bb",
+      "metadata": {
+        "step": "s422",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0423",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:c459a82bcd18f1fede17f47c0e2b1e6859608cd37d614dcf7eca4e535029b8a6",
+      "metadata": {
+        "step": "s423",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0424",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:848d18693dfedfc033d51f78e80ad2e858497410556f7c4e84bd97f542daee95",
+      "metadata": {
+        "step": "s424",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0425",
+      "artifact_type": "alert",
+      "content_hash": "sha256:1e83c6685a89b2751a8494ec66ff807ffa9e5482507ab7af2f64799ab6f36ad5",
+      "metadata": {
+        "step": "s425",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0426",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:aef865083a78141f7e328b4c3e12d133dc7ebed7fc96f955b36426e68794fc30",
+      "metadata": {
+        "step": "s426",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0427",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:33564910a6574be66945a3ec2e5ce04054a0eb6843e606d6f84641eb91d99fbe",
+      "metadata": {
+        "step": "s427",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0428",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:28c45a51704fc461ff1530524801016efaff2e1498eb629ef587ee3877e7af80",
+      "metadata": {
+        "step": "s428",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0429",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:ba0e48ba6d6fbd345cefff1cf2b2a042e1fb24d982ff157c354881f5076539f9",
+      "metadata": {
+        "step": "s429",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0430",
+      "artifact_type": "alert",
+      "content_hash": "sha256:ae00c35d96a7403a46483923c0c6a7c170b76a8e48c0fdd17b92cd83e5bb6278",
+      "metadata": {
+        "step": "s430",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0431",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:e72b1f1fe4d755efab5e75faa925642ceb943b378b73d34b9de0d175a6fddb89",
+      "metadata": {
+        "step": "s431",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0432",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:ed63527126f67f004e4ee5fa170ce021130ce75eae7677bf7753becdf83c02cb",
+      "metadata": {
+        "step": "s432",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0433",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:aa0e5d61bb8d05878cd65a1e853e1317fa8573965ed391ab8521b2cc6f34d93e",
+      "metadata": {
+        "step": "s433",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0434",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:b2b3f73c25267d6bba37cf15ea2dd13f52d8902ad98ea926c0f0fa5db115e806",
+      "metadata": {
+        "step": "s434",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0435",
+      "artifact_type": "alert",
+      "content_hash": "sha256:96b72c4ff99e3a44ea6468533dba2452e73424d6dea6f2af6cb6833674370feb",
+      "metadata": {
+        "step": "s435",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0436",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:cfe915eb5c910ae3c3b79b8fdf66fb2e2624934fb899bd325d99402301b42057",
+      "metadata": {
+        "step": "s436",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0437",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:4d574f6c0eeeefe010c0db1450d029080015455c89f439ef338953e2a44b930f",
+      "metadata": {
+        "step": "s437",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0438",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:10805f6dfafb643f36b6ffd191ba003562aa58f5959e7a9671a01513f77eb80c",
+      "metadata": {
+        "step": "s438",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0439",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:c45bbe3f84260138e966a6ab7dd395b88940cfda55251273f6812d6854216c98",
+      "metadata": {
+        "step": "s439",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0440",
+      "artifact_type": "alert",
+      "content_hash": "sha256:969a5b42569e851db2f6f63a445b4866b21e0b8b6d6fa82d6bf0233b98f51fbf",
+      "metadata": {
+        "step": "s440",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0441",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:4ad8bdf911bce588dce8a0a6b4d648b3f4f64be421a1ded1f79f98e53a7b0e4e",
+      "metadata": {
+        "step": "s441",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0442",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:5cd51d6b23edb28d3f692135a0cda4b2c0bdcbdac3b0b7fc10fad1cc64336131",
+      "metadata": {
+        "step": "s442",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0443",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:7686afcb9564bd35ba4cf1bb52614764b47673e29a1aa192be909373ac81133a",
+      "metadata": {
+        "step": "s443",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0444",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:e3546bb8d35acd2c62cd58b3197adf5575c123dee78b28404bb72eae8c0c0a8a",
+      "metadata": {
+        "step": "s444",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0445",
+      "artifact_type": "alert",
+      "content_hash": "sha256:b624004a522b185cefdb3e8bc86afd33451b6b04722436c050bece424ebecb71",
+      "metadata": {
+        "step": "s445",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0446",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:26c5c83ab60f13648e3d73b3ebe3639a3f13d925eda8d0229530d9c0878ba650",
+      "metadata": {
+        "step": "s446",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0447",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:f45f291a1706a96d2429be16c1e826006be1987c8c806f75ac97d472cf712cc6",
+      "metadata": {
+        "step": "s447",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0448",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:2c23ca5ddc01028629c13a25f630f9a8569538f1528130b8f960ea70f043bf8b",
+      "metadata": {
+        "step": "s448",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0449",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:6eb6b59a4805fb143759449d0aeda4fd751afc55a93f51460e49935552e0f520",
+      "metadata": {
+        "step": "s449",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0450",
+      "artifact_type": "alert",
+      "content_hash": "sha256:6c05c3b7236488d8062f9805b7a703a41c80040adfcd9df90e51b3b1f2962501",
+      "metadata": {
+        "step": "s450",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0451",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:0bb52ead58b2693dd51ae21f65fbbd6cf5a11a670b7080ba43644f49cb2d780c",
+      "metadata": {
+        "step": "s451",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0452",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:428047ae61d54e7297b3411c6f7bd2502140c7ea8569f859be02a6e5646c9005",
+      "metadata": {
+        "step": "s452",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0453",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:7143fe46719e02a0e869c2337931bca3e4dcfd1a8422a3f86e964a62ef7e5d25",
+      "metadata": {
+        "step": "s453",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0454",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:ba0bf46001ee3657df6975a0818319f6bcce0c21477b62850a53376a885d0d46",
+      "metadata": {
+        "step": "s454",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0455",
+      "artifact_type": "alert",
+      "content_hash": "sha256:fa9b81614e7f825daccf87374c4e2f7d79ef9efac97e8a5bf13512418b5cdf4c",
+      "metadata": {
+        "step": "s455",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0456",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:dd8e2e19c6333b9023392096eccfa6f099819f7db1ad9e9959d085ee1a18a1ec",
+      "metadata": {
+        "step": "s456",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0457",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:3cf6717cfedb465a78a28b65d8e906f04300a09fb9e3819dba13bf09e6755266",
+      "metadata": {
+        "step": "s457",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0458",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:f2987511c174c9b641bffbe50eb60cf76050ccd9016ac65804b12a8f1cc96ae0",
+      "metadata": {
+        "step": "s458",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0459",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:2a7359fd1cdd9459cc06c5141f9231a5f92efa9ad5afdf3a3772704ecd4a2fe1",
+      "metadata": {
+        "step": "s459",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0460",
+      "artifact_type": "alert",
+      "content_hash": "sha256:1d3afabc363a25b302dd9536332c12c056de5e29619a35a013a3db26a0fb3259",
+      "metadata": {
+        "step": "s460",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0461",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:b8d6efff6f758c69a127eebb8738cb9d39e9415ca3984baac5b85432c0aa2822",
+      "metadata": {
+        "step": "s461",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0462",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:fdc84e892b54027118cf709c984bc2eaca6925f56c38d5107ebf85b5152df86c",
+      "metadata": {
+        "step": "s462",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0463",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:4320631249910098b8eeb44e78d3d19bc06e210b088349d1365278536c76535b",
+      "metadata": {
+        "step": "s463",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0464",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:7ac4a9b10c64c477a1978b20389729ae9e1bfc0030bbe971b68be83ded25ccab",
+      "metadata": {
+        "step": "s464",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0465",
+      "artifact_type": "alert",
+      "content_hash": "sha256:dc1e82a4b6b65f9446481eb0a55270ed5e29ccdfd9a690085af4d39968cd5771",
+      "metadata": {
+        "step": "s465",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0466",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:5cd1b4576121cd28e1709544dd3e2083052668ec392406f78088067f2d51cb51",
+      "metadata": {
+        "step": "s466",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0467",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:450b2465b2be908fc92a2dc9d4f613a3ce098374c559cd9c350eaba647df9c59",
+      "metadata": {
+        "step": "s467",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0468",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:01620e041d6e323dd3b2b3687224367e2ac4f38c1edfc570f637501182a27da1",
+      "metadata": {
+        "step": "s468",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0469",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:4ab18b967d1cf7bbf0b56ee96374d4617577f31bb74cf7ccfafca1cf2e7438ab",
+      "metadata": {
+        "step": "s469",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0470",
+      "artifact_type": "alert",
+      "content_hash": "sha256:75a82640d96ecaf7e8ac4dc0f629549a454c2df2f52cdddc18dbac2e40944a70",
+      "metadata": {
+        "step": "s470",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0471",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:ef78819bde3950690a398817ab800412a2e41be945f4847f4e5b9af25dfd11eb",
+      "metadata": {
+        "step": "s471",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0472",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:868dbf346ba4a4aa8ef0e1ed639e66117d5d5e39939e7e54fc829abc3aed36c4",
+      "metadata": {
+        "step": "s472",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0473",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:6225919e3c57d92ad0db9014628f4b680fd8c3a2ddb1c51ba37ba5e6845eb349",
+      "metadata": {
+        "step": "s473",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0474",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:a7a224f3846d4e4c8b1c386da80e80873118a3932c97709df3618d80f69ac67e",
+      "metadata": {
+        "step": "s474",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0475",
+      "artifact_type": "alert",
+      "content_hash": "sha256:7311fdf747e60fc385ba082779cb45002d43be9c166f6b5de221b722ab66466c",
+      "metadata": {
+        "step": "s475",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0476",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:5647a5b55a605653f60c2f773dbf4f7e628f0a3634128cf5bc655cdc74370fa7",
+      "metadata": {
+        "step": "s476",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0477",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:44e2ab43ec688019f777ac398dadcf2140fc7b00b7842f9f7b765842e5a7f38f",
+      "metadata": {
+        "step": "s477",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0478",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:41b92cf6d57326e8e3b695ad49da4454fd6c2104366e1d2e3e4f44a90b32996f",
+      "metadata": {
+        "step": "s478",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0479",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:ca25f007d8382c381d4184935077a419a63e01ecb0288be22ff16f974c977134",
+      "metadata": {
+        "step": "s479",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0480",
+      "artifact_type": "alert",
+      "content_hash": "sha256:8e7680e607e5b2193beba8d25d5bcd8b3251b4d08fda9b455818139f9932e40b",
+      "metadata": {
+        "step": "s480",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0481",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:0e399a5488e2e0227552a94b8b955aedbd96e7811ed526b03a1ef7c875562e9c",
+      "metadata": {
+        "step": "s481",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0482",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:b76b9c019794d7778563f74340079a926b134f47dd731b8479aafa3ac9a3b54e",
+      "metadata": {
+        "step": "s482",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0483",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:a1995939d85ceff4ed79a5d2bb1e84095877fb1e8288bb109ef1f01516501669",
+      "metadata": {
+        "step": "s483",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0484",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:eab4d0f20fc3fa6574a0199840e397f80e7ce048cba0ed26bab14aecc748e7ee",
+      "metadata": {
+        "step": "s484",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0485",
+      "artifact_type": "alert",
+      "content_hash": "sha256:f0d4661f60d302f9192b66683eca2584dfca8b57a24e181e5f6eec90b0c2ef30",
+      "metadata": {
+        "step": "s485",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0486",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:59858091619dc28f04fc37c1cd644340071a1cba57aea771a52c09a2738c7b94",
+      "metadata": {
+        "step": "s486",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0487",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:b8ff9224e2979ec865c473ca84876e41a09770d7d7f80fb84c955766713bd553",
+      "metadata": {
+        "step": "s487",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0488",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:a51cc4cd269a6feb514804da0734b8ed89347fe9b9f8315fbb0e0c675c562b69",
+      "metadata": {
+        "step": "s488",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0489",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:73a081caba739f9289784871a4f1397b5ae8756cc90f34cd4d017e406db18e18",
+      "metadata": {
+        "step": "s489",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0490",
+      "artifact_type": "alert",
+      "content_hash": "sha256:c21cc95b7a3cb65305afc54c776a4e0921bed35eff55c3b1225d02a57b69513a",
+      "metadata": {
+        "step": "s490",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0491",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:7562a60644babc125de7d3db9358afb6f3414bd4d022d21497f22015af4888ea",
+      "metadata": {
+        "step": "s491",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0492",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:b0f32d7854d27eee8abe4d1777a44057d9c72bd8f55144765b444935d76749f2",
+      "metadata": {
+        "step": "s492",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0493",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:1fb1542b6185981e78ea527afdb50a24885163557a9656a68457a357bf59d751",
+      "metadata": {
+        "step": "s493",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0494",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:eb89fddab583248580035de9689e476447e62a8ed5c8179fbe2029257b4d3241",
+      "metadata": {
+        "step": "s494",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0495",
+      "artifact_type": "alert",
+      "content_hash": "sha256:61280f3b8187a4411542d4fa9fd024ef36834ed93e892190508abe695ed8250b",
+      "metadata": {
+        "step": "s495",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0496",
+      "artifact_type": "txn_bundle",
+      "content_hash": "sha256:c0d530dbd14ba444671b6a098b576ed68e0b1a4be5042b3e2530c5e81eef689e",
+      "metadata": {
+        "step": "s496",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0497",
+      "artifact_type": "evidence_note",
+      "content_hash": "sha256:1184a94007a4d03f99a2cae2b1ae0a6a64404102576d1457d4bccca83bceff67",
+      "metadata": {
+        "step": "s497",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0498",
+      "artifact_type": "risk_score",
+      "content_hash": "sha256:e444435ed48cdf0dfec0008cc3afeb0f8a0f6a8da7f773a65de6f66751536d5f",
+      "metadata": {
+        "step": "s498",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    },
+    {
+      "artifact_id": "bench-fraud_investigation-parallel_fanout_fanin-S4-s10026-clean-cmp:a0499",
+      "artifact_type": "case_decision",
+      "content_hash": "sha256:18d91ebdd79c27d1772bdb9ca1ca20eaa4a66f3c77e82c77de4e043db905f6e6",
+      "metadata": {
+        "step": "s499",
+        "synthetic": "true"
+      },
+      "schema_version": "2.1.0"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "actual_event_count": 103,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "analyst",
+    "writer",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "planner-1"
+  ],
+  "artifact_count": 103,
+  "config_fingerprint": "ae086a346b73c7b54f5c55216079b4d6f454fa1e07762e0f5e2c04f838aa61b4",
+  "expected_event_count": 100,
+  "fault_types": [
+    "retry_storm"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|hierarchical|S2|research_synthesis|retry_storm|r0|c303",
+    "base_seed=30456"
+  ],
+  "outcome_event_ids": [
+    "bench-research_synthesis-hierarchical-S2-s30457-retry_storm-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "research_synthesis",
+  "seed": 30457,
+  "topology_id": "hierarchical",
+  "trace_id": "bench-research_synthesis-hierarchical-S2-s30457-retry_storm-cmp"
+}

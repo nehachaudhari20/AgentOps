@@ -1,0 +1,38 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "investigator",
+    "analyst",
+    "osint",
+    "risk"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "7e777f06e0b291faf897b58f80b61e1ca62a9bcba2ff2bae9b7e5ba254d9b640",
+  "expected_event_count": 50,
+  "fault_types": [
+    "missing_dependency"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": true,
+  "intervention_count": 1,
+  "notes": [
+    "linear chain; each step depends on previous",
+    "linear chain; each step depends on previous",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=pair_fault",
+    "design_version=experimental-design-2.9.0",
+    "matched_pair_id=heldout_test|sequential|S1|fraud_investigation|missing_dependency|r1|c151",
+    "base_seed=30152"
+  ],
+  "outcome_event_ids": [
+    "bench-fraud_investigation-sequential-S1-s30153-missing_dependency-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "fraud_investigation",
+  "seed": 30153,
+  "topology_id": "sequential",
+  "trace_id": "bench-fraud_investigation-sequential-S1-s30153-missing_dependency-cmp"
+}

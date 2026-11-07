@@ -1,0 +1,2585 @@
+{
+  "attribution_reference": {
+    "disclaimer": "equal_root_ancestor_mass assigns structural share among dependency-DAG roots reachable to each outcome. It is NOT causal responsibility, NOT legal liability, and MUST NOT be derived by copying ConservedRPA/MFAV outputs.",
+    "ground_truth_version": "gt-2.9.0",
+    "method": "equal_root_ancestor_mass.v1",
+    "outcomes": [
+      {
+        "ancestor_event_ids": [
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0000",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0001",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0002",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0003",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0005",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0006",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0007",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0008",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0009",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0010",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0011",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0012",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0013",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0014",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0015",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0016",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0017",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0018",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0019",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0020",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0021",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0022",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0023",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0024",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0025",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0026",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0027",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0028",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0029",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0030",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0031",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0032",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0033",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0034",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0035",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0036",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0037",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0038",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0039",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0040",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0041",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0042",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0043",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0044",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0045",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0046",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0047",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0048",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0049",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0050",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0051",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0052",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0053",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0054",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0055",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0056",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0057",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0058",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0059",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0060",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0061",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0062",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0063",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0064",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0065",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0066",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0067",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0068",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0069",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0070",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0071",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0072",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0073",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0074",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0075",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0076",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0077",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0078",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0079",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0080",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0081",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0082",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0083",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0084",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0085",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0086",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0087",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0088",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0089",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0090",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0091",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0092",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0093",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0094",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0095",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0096",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0097",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0098",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0099"
+        ],
+        "method": "equal_root_ancestor_mass.v1",
+        "notes": [
+          "Mass conserved over root events (sum=1 when roots non-empty).",
+          "Agent map aggregates root event shares; not causal credit."
+        ],
+        "outcome_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0099",
+        "root_agent_allocations": {
+          "coordinator": 1.0
+        },
+        "root_event_allocations": {
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0000": 1.0
+        }
+      }
+    ]
+  },
+  "disclaimer": "Ground truth records generator intent only. Graph reachability is not causal proof. Do not feed these labels into RPA/MFAV algorithm inputs. Attribution reference (if present) is equal-root structural share, not causal GT.",
+  "generator_version": "2.5.1",
+  "ground_truth_version": "gt-2.9.0",
+  "interventions": [
+    {
+      "affected_artifact_ids": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-0:out",
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-1:out",
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-2:out"
+      ],
+      "affected_event_ids": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004",
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-0",
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-1",
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-2"
+      ],
+      "expected_observable_effects": [
+        "additional events with retries_event_id chain",
+        "MLPG RETRIES edges present for each retry"
+      ],
+      "fault_type": "retry_storm",
+      "generator_version": "2.5.1",
+      "injection_location": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004",
+      "intervention_id": "iv-retry_storm-30447-01",
+      "notes": [],
+      "parameters": {
+        "retries_added": 3,
+        "retry_event_ids": [
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-0",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-1",
+          "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-2"
+        ]
+      },
+      "scenario_id": "research_synthesis",
+      "seed": 30447
+    }
+  ],
+  "lineage": {
+    "artifact_consumers": {
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0000": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0001"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0001": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0002"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0002": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0003"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0003": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0004": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0005",
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-0",
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-1",
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-2"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0005": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0006"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0006": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0007"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0007": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0008"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0008": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0009"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0009": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0010"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0010": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0011"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0011": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0012"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0012": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0013"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0013": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0014"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0014": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0015"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0015": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0016"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0016": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0017"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0017": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0018"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0018": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0019"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0019": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0020"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0020": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0021"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0021": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0022"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0022": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0023"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0023": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0024"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0024": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0025"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0025": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0026"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0026": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0027"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0027": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0028"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0028": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0029"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0029": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0030"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0030": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0031"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0031": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0032"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0032": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0033"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0033": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0034"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0034": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0035"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0035": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0036"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0036": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0037"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0037": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0038"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0038": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0039"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0039": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0040"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0040": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0041"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0041": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0042"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0042": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0043"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0043": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0044"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0044": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0045"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0045": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0046"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0046": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0047"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0047": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0048"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0048": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0049"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0049": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0050"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0050": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0051"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0051": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0052"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0052": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0053"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0053": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0054"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0054": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0055"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0055": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0056"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0056": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0057"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0057": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0058"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0058": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0059"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0059": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0060"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0060": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0061"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0061": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0062"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0062": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0063"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0063": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0064"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0064": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0065"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0065": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0066"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0066": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0067"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0067": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0068"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0068": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0069"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0069": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0070"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0070": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0071"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0071": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0072"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0072": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0073"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0073": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0074"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0074": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0075"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0075": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0076"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0076": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0077"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0077": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0078"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0078": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0079"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0079": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0080"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0080": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0081"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0081": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0082"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0082": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0083"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0083": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0084"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0084": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0085"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0085": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0086"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0086": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0087"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0087": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0088"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0088": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0089"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0089": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0090"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0090": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0091"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0091": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0092"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0092": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0093"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0093": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0094"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0094": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0095"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0095": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0096"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0096": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0097"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0097": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0098"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0098": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0099"
+      ]
+    },
+    "artifact_producers": {
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0000": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0000",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0001": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0001",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0002": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0002",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0003": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0003",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0004": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0005": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0005",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0006": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0006",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0007": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0007",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0008": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0008",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0009": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0009",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0010": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0010",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0011": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0011",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0012": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0012",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0013": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0013",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0014": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0014",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0015": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0015",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0016": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0016",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0017": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0017",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0018": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0018",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0019": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0019",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0020": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0020",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0021": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0021",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0022": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0022",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0023": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0023",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0024": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0024",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0025": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0025",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0026": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0026",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0027": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0027",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0028": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0028",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0029": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0029",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0030": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0030",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0031": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0031",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0032": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0032",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0033": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0033",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0034": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0034",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0035": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0035",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0036": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0036",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0037": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0037",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0038": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0038",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0039": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0039",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0040": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0040",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0041": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0041",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0042": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0042",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0043": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0043",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0044": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0044",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0045": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0045",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0046": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0046",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0047": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0047",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0048": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0048",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0049": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0049",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0050": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0050",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0051": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0051",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0052": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0052",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0053": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0053",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0054": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0054",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0055": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0055",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0056": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0056",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0057": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0057",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0058": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0058",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0059": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0059",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0060": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0060",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0061": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0061",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0062": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0062",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0063": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0063",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0064": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0064",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0065": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0065",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0066": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0066",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0067": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0067",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0068": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0068",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0069": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0069",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0070": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0070",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0071": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0071",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0072": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0072",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0073": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0073",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0074": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0074",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0075": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0075",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0076": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0076",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0077": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0077",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0078": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0078",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0079": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0079",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0080": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0080",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0081": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0081",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0082": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0082",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0083": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0083",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0084": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0084",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0085": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0085",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0086": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0086",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0087": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0087",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0088": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0088",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0089": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0089",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0090": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0090",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0091": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0091",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0092": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0092",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0093": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0093",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0094": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0094",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0095": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0095",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0096": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0096",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0097": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0097",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0098": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0098",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0099": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0099",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-0:out": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-0",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-1:out": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-1",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-2:out": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-2"
+    },
+    "event_dependencies": {
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0000": [],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0001": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0000"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0002": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0001"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0003": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0002"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0003"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-0": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-1": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-2": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0005": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0006": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0005"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0007": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0006"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0008": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0007"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0009": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0008"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0010": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0009"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0011": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0010"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0012": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0011"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0013": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0012"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0014": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0013"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0015": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0014"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0016": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0015"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0017": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0016"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0018": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0017"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0019": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0018"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0020": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0019"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0021": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0020"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0022": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0021"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0023": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0022"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0024": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0023"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0025": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0024"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0026": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0025"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0027": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0026"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0028": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0027"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0029": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0028"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0030": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0029"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0031": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0030"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0032": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0031"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0033": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0032"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0034": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0033"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0035": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0034"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0036": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0035"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0037": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0036"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0038": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0037"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0039": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0038"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0040": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0039"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0041": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0040"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0042": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0041"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0043": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0042"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0044": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0043"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0045": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0044"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0046": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0045"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0047": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0046"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0048": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0047"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0049": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0048"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0050": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0049"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0051": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0050"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0052": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0051"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0053": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0052"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0054": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0053"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0055": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0054"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0056": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0055"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0057": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0056"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0058": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0057"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0059": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0058"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0060": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0059"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0061": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0060"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0062": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0061"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0063": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0062"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0064": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0063"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0065": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0064"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0066": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0065"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0067": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0066"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0068": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0067"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0069": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0068"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0070": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0069"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0071": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0070"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0072": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0071"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0073": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0072"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0074": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0073"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0075": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0074"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0076": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0075"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0077": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0076"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0078": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0077"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0079": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0078"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0080": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0079"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0081": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0080"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0082": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0081"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0083": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0082"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0084": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0083"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0085": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0084"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0086": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0085"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0087": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0086"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0088": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0087"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0089": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0088"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0090": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0089"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0091": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0090"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0092": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0091"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0093": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0092"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0094": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0093"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0095": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0094"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0096": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0095"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0097": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0096"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0098": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0097"
+      ],
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0099": [
+        "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0098"
+      ]
+    },
+    "expected_relationships": [
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0000",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0000"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0001",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0001"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0000",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0001"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0000",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0001"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0002",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0002"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0001",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0002"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0001",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0002"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0003",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0003"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0002",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0003"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0002",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0003"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0004"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0003",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0003",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0005",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0005"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0004",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0005"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0005"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0006",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0006"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0005",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0006"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0005",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0006"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0007",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0007"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0006",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0007"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0006",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0007"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0008",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0008"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0007",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0008"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0007",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0008"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0009",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0009"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0008",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0009"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0008",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0009"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0010",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0010"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0009",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0010"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0009",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0010"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0011",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0011"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0010",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0011"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0010",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0011"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0012",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0012"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0011",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0012"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0011",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0012"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0013",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0013"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0012",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0013"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0012",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0013"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0014",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0014"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0013",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0014"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0013",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0014"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0015",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0015"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0014",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0015"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0014",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0015"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0016",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0016"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0015",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0016"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0015",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0016"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0017",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0017"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0016",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0017"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0016",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0017"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0018",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0018"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0017",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0018"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0017",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0018"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0019",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0019"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0018",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0019"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0018",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0019"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0020",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0020"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0019",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0020"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0019",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0020"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0021",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0021"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0020",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0021"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0020",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0021"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0022",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0022"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0021",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0022"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0021",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0022"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0023",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0023"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0022",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0023"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0022",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0023"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0024",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0024"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0023",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0024"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0023",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0024"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0025",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0025"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0024",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0025"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0024",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0025"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0026",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0026"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0025",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0026"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0025",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0026"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0027",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0027"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0026",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0027"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0026",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0027"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0028",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0028"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0027",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0028"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0027",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0028"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0029",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0029"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0028",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0029"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0028",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0029"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0030",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0030"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0029",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0030"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0029",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0030"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0031",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0031"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0030",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0031"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0030",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0031"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0032",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0032"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0031",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0032"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0031",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0032"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0033",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0033"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0032",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0033"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0032",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0033"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0034",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0034"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0033",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0034"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0033",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0034"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0035",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0035"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0034",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0035"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0034",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0035"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0036",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0036"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0035",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0036"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0035",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0036"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0037",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0037"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0036",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0037"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0036",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0037"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0038",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0038"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0037",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0038"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0037",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0038"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0039",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0039"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0038",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0039"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0038",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0039"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0040",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0040"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0039",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0040"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0039",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0040"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0041",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0041"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0040",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0041"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0040",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0041"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0042",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0042"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0041",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0042"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0041",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0042"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0043",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0043"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0042",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0043"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0042",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0043"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0044",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0044"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0043",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0044"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0043",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0044"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0045",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0045"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0044",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0045"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0044",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0045"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0046",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0046"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0045",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0046"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0045",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0046"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0047",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0047"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0046",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0047"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0046",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0047"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0048",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0048"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0047",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0048"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0047",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0048"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0049",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0049"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0048",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0049"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0048",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0049"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0050",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0050"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0049",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0050"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0049",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0050"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0051",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0051"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0050",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0051"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0050",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0051"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0052",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0052"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0051",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0052"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0051",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0052"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0053",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0053"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0052",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0053"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0052",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0053"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0054",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0054"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0053",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0054"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0053",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0054"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0055",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0055"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0054",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0055"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0054",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0055"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0056",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0056"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0055",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0056"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0055",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0056"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0057",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0057"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0056",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0057"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0056",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0057"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0058",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0058"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0057",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0058"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0057",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0058"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0059",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0059"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0058",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0059"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0058",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0059"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0060",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0060"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0059",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0060"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0059",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0060"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0061",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0061"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0060",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0061"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0060",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0061"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0062",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0062"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0061",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0062"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0061",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0062"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0063",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0063"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0062",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0063"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0062",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0063"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0064",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0064"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0063",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0064"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0063",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0064"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0065",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0065"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0064",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0065"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0064",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0065"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0066",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0066"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0065",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0066"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0065",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0066"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0067",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0067"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0066",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0067"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0066",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0067"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0068",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0068"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0067",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0068"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0067",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0068"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0069",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0069"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0068",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0069"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0068",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0069"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0070",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0070"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0069",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0070"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0069",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0070"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0071",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0071"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0070",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0071"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0070",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0071"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0072",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0072"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0071",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0072"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0071",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0072"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0073",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0073"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0072",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0073"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0072",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0073"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0074",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0074"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0073",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0074"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0073",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0074"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0075",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0075"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0074",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0075"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0074",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0075"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0076",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0076"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0075",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0076"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0075",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0076"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0077",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0077"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0076",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0077"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0076",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0077"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0078",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0078"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0077",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0078"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0077",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0078"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0079",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0079"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0078",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0079"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0078",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0079"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0080",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0080"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0079",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0080"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0079",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0080"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0081",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0081"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0080",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0081"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0080",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0081"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0082",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0082"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0081",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0082"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0081",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0082"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0083",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0083"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0082",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0083"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0082",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0083"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0084",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0084"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0083",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0084"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0083",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0084"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0085",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0085"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0084",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0085"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0084",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0085"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0086",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0086"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0085",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0086"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0085",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0086"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0087",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0087"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0086",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0087"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0086",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0087"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0088",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0088"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0087",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0088"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0087",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0088"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0089",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0089"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0088",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0089"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0088",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0089"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0090",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0090"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0089",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0090"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0089",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0090"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0091",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0091"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0090",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0091"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0090",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0091"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0092",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0092"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0091",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0092"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0091",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0092"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0093",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0093"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0092",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0093"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0092",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0093"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0094",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0094"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0093",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0094"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0093",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0094"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0095",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0095"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0094",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0095"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0094",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0095"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0096",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0096"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0095",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0096"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0095",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0096"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0097",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0097"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0096",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0097"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0096",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0097"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0098",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0098"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0097",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0098"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0097",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0098"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0099",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0099"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0098",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0099"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0098",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0099"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-0",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-0:out"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0004",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-0"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-0"
+      },
+      {
+        "rel_type": "RETRIES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-0",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-1",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-1:out"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0004",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-1"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-1"
+      },
+      {
+        "rel_type": "RETRIES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-1",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-0"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-2",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-2:out"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:a0004",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-2"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-2"
+      },
+      {
+        "rel_type": "RETRIES",
+        "source_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-2",
+        "target_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-1"
+      }
+    ],
+    "invocations": {},
+    "retries": {
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-0": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-1": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-0",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-2": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-1"
+    }
+  },
+  "quality": {
+    "corrupted_artifact_ids": [],
+    "incomplete_observation_notes": [
+      "linear chain; each step depends on previous"
+    ],
+    "intentionally_incomplete": false,
+    "missing_dependency_refs": [],
+    "missing_event_ids": []
+  },
+  "seed": 30447,
+  "structural": {
+    "agent_ids": [
+      "coordinator",
+      "planner",
+      "researcher",
+      "analyst",
+      "writer",
+      "executor",
+      "memory",
+      "tool_runner",
+      "coordinator-1",
+      "planner-1"
+    ],
+    "event_categories": {
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0000": "instruction",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0001": "reasoning",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0002": "retrieval",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0003": "knowledge",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004": "tool",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-0": "tool",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-1": "tool",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0004-retry-2": "tool",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0005": "reasoning",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0006": "transformation",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0007": "retrieval",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0008": "knowledge",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0009": "tool",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0010": "reasoning",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0011": "transformation",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0012": "retrieval",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0013": "knowledge",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0014": "tool",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0015": "reasoning",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0016": "transformation",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0017": "retrieval",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0018": "knowledge",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0019": "tool",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0020": "reasoning",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0021": "transformation",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0022": "retrieval",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0023": "knowledge",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0024": "tool",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0025": "reasoning",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0026": "transformation",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0027": "retrieval",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0028": "knowledge",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0029": "tool",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0030": "reasoning",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0031": "transformation",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0032": "retrieval",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0033": "knowledge",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0034": "tool",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0035": "reasoning",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0036": "transformation",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0037": "retrieval",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0038": "knowledge",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0039": "tool",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0040": "reasoning",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0041": "transformation",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0042": "retrieval",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0043": "knowledge",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0044": "tool",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0045": "reasoning",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0046": "transformation",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0047": "retrieval",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0048": "knowledge",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0049": "tool",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0050": "reasoning",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0051": "transformation",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0052": "retrieval",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0053": "knowledge",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0054": "tool",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0055": "reasoning",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0056": "transformation",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0057": "retrieval",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0058": "knowledge",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0059": "tool",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0060": "reasoning",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0061": "transformation",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0062": "retrieval",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0063": "knowledge",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0064": "tool",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0065": "reasoning",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0066": "transformation",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0067": "retrieval",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0068": "knowledge",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0069": "tool",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0070": "reasoning",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0071": "transformation",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0072": "retrieval",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0073": "knowledge",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0074": "tool",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0075": "reasoning",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0076": "transformation",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0077": "retrieval",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0078": "knowledge",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0079": "tool",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0080": "reasoning",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0081": "transformation",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0082": "retrieval",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0083": "knowledge",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0084": "tool",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0085": "reasoning",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0086": "transformation",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0087": "retrieval",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0088": "knowledge",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0089": "tool",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0090": "reasoning",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0091": "transformation",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0092": "retrieval",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0093": "knowledge",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0094": "tool",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0095": "reasoning",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0096": "transformation",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0097": "retrieval",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0098": "knowledge",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0099": "decision"
+    },
+    "model_ids": [
+      "model-ana-v1",
+      "model-coord-v1",
+      "model-plan-v1"
+    ],
+    "outcome_event_ids": [
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp:e0099"
+    ],
+    "scale_tier": "S2",
+    "scenario_id": "research_synthesis",
+    "tool_ids": [
+      "embedder",
+      "pdf_extract",
+      "summarizer",
+      "web_search"
+    ],
+    "topology_id": "sequential"
+  },
+  "trace_id": "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp"
+}

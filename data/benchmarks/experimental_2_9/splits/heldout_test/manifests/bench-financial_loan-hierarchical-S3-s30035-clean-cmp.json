@@ -1,0 +1,50 @@
+{
+  "actual_event_count": 250,
+  "agent_count": 20,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "risk",
+    "policy",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "planner-1",
+    "researcher-1",
+    "risk-1",
+    "policy-1",
+    "executor-1",
+    "memory-1",
+    "tool_runner-1",
+    "coordinator-2",
+    "planner-2",
+    "researcher-2",
+    "risk-2"
+  ],
+  "artifact_count": 250,
+  "config_fingerprint": "1223179ff8cc8446e643a6e57e953cbba8021d75a2a08021cd3ab25ea296c53e",
+  "expected_event_count": 250,
+  "fault_types": [],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "dataset_id=agenttrust-experimental-2.9",
+    "split=heldout_test",
+    "role=clean_core",
+    "design_version=experimental-design-2.9.0",
+    "base_seed=30035"
+  ],
+  "outcome_event_ids": [
+    "bench-financial_loan-hierarchical-S3-s30035-clean-cmp:e0249"
+  ],
+  "scale_tier": "S3",
+  "scenario_id": "financial_loan",
+  "seed": 30035,
+  "topology_id": "hierarchical",
+  "trace_id": "bench-financial_loan-hierarchical-S3-s30035-clean-cmp"
+}
