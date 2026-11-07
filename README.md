@@ -118,6 +118,7 @@ python -m pytest tests -q
 | Phase 2.13 validity | [PHASE_2_13_RESEARCH_VALIDITY_REPORT.md](docs/results/PHASE_2_13_RESEARCH_VALIDITY_REPORT.md) |
 | Phase 2 freeze report | [PHASE_2_FINAL_REPORT.md](docs/phase-reports/PHASE_2_FINAL_REPORT.md) |
 | Architecture (MLPG / RPA / MFAV / Assurance / PLHC / Pipeline) | [docs/architecture/](docs/architecture/) |
+| Paper figures (Figs. 2–6) | [docs/figures/](docs/figures/) |
 
 ## License
 
