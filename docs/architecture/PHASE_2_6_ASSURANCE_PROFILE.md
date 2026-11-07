@@ -1,14 +1,13 @@
-# Phase 2.6 — Evidence-Bounded Assurance Profile
+# Phase 2.6 / 2.6.1 — Evidence-Bounded Assurance Profile
 
 ## Purpose
 
 The Assurance Profile is a **transparent, evidence-bounded assessment** of observable multi-agent execution records. It reports what can be said about:
 
 - Trace completeness for analysis
-- Structural reference integrity
-- Provenance coverage of recorded lineage references
+- Typed structural reference integrity (and resolved fraction when references exist)
 - Whether structural responsibility allocation (RPA) is computable and conserved
-- Sensitivity of factor profiles across P1/P2 (when comparable)
+- Sensitivity of factor profiles across P1/P2 (when comparable under strict preconditions)
 - Descriptive MFAV factor allocation
 
 It does **not** measure inherent trustworthiness, honesty, intelligence, reliability, or probability of responsibility. It does **not** reconstruct hidden LLM reasoning. It does **not** prove causal or legal responsibility.
@@ -41,6 +40,8 @@ Every dimension carries exactly one status:
 
 Never replace missing information with zero, a default confidence, or an arbitrary constant.
 
+A profile with any `contradicted` or `incomplete` required dimension **cannot** have overall status `verified`.
+
 ## Shared dimension result fields
 
 Each dimension result includes:
@@ -60,69 +61,68 @@ Each dimension result includes:
 
 **Inputs.** `ProvenanceTrace.completeness()` only (no ground truth).
 
-**Rule `assurance.completeness.v1`:**
+**Rule `assurance.completeness.v1_1`:**
 
 | Condition | Status | Value |
 |-----------|--------|-------|
 | `incomplete=False` and `suitable_for_dag_attribution=True` and no dependency cycle | `verified` | `"complete"` |
 | `incomplete=True` and no dependency cycle | `incomplete` | `"incomplete"` |
-| dependency cycle or unsuitable for DAG attribution with cycle evidence | `contradicted` | `"invalid"` |
-| completeness unavailable | `unavailable` | `null` |
+| dependency cycle | `contradicted` | `"invalid"` |
+| otherwise unclassifiable | `unavailable` | `null` |
 
-**Intentional vs unexpected incompleteness** is **not** decided inside the profile calculator (that would require ground truth). Evaluation harnesses may classify planted incompleteness separately using GT.
+**Unexpected missing parents** surface as `incomplete` via the completeness report. Wrong-namespace references are handled under reference integrity (`contradicted`), not by inventing GT-based excuses.
 
-**Limits.** Completeness ≠ trustworthiness; incomplete ≠ agent fault.
+**Intentional vs unexpected incompleteness** is **not** decided inside the profile calculator (that would require ground truth). Evaluation harnesses may annotate planted incompleteness separately using GT.
 
-## Dimension B — Reference integrity
+**Limits.** Completeness ≠ trustworthiness; incomplete ≠ agent fault. Missing optional metadata (e.g. `model_id`) does not make a trace incomplete.
 
-**Meaning.** Whether dependency, invocation, retry, and artifact references resolve to known event/artifact IDs in the loaded trace.
+## Dimension B — Reference integrity (typed; Phase 2.6.1 consolidation)
+
+**Meaning.** Typed referential validity of required lineage references, plus a resolved fraction when \(n>0\).
+
+**Phase 2.6.1 decision.** Prior Phase 2.6 exposed both `reference_integrity` and `provenance_coverage` with the **same** untyped numerator/denominator (\(r \in K_e \cup K_a\)). That duplicated a single quantity and incorrectly accepted cross-namespace IDs. Research meaning:
+
+- Reference integrity must report **typed** referential validity (event refs → events only; artifact refs → artifacts only).
+- A separate “coverage” dimension would need a genuinely distinct property. No such distinct, non-invented coverage property is available from current records without inventing optional-evidence penalties.
+
+**Therefore:** `provenance_coverage` is **removed**. One dimension `reference_integrity` reports typed resolution counts and fraction.
 
 **Inputs.** `trace.events`, `trace.artifacts` only.
 
-**Rule `assurance.reference_integrity.v1`:**
+**Rule `assurance.reference_integrity.v1_1`:**
 
-Collect required references:
+Collect required references as `(owner_event_id, ref_type, target_id)`:
 
-- each `dependency_event_ids` entry
-- each `invokes_event_ids` entry
-- `retries_event_id` if set
-- each `input_artifact_ids` / `output_artifact_ids` entry
+| Field | Namespace |
+|-------|-----------|
+| `dependency_event_ids` | event |
+| `invokes_event_ids` | event |
+| `retries_event_id` | event |
+| `input_artifact_ids` | artifact |
+| `output_artifact_ids` | artifact |
 
-Let \(R\) be that multiset, \(K_e\) known event ids, \(K_a\) known artifact ids.
+Resolution classes:
+
+- `resolved` — target exists in the **correct** namespace
+- `wrong_namespace` — target exists only in the **other** namespace
+- `missing` — target exists in neither
+
+Optional metadata (`model_id`, `tool_id`, …) is **never** required.
+
+Let \(n\) be the number of collected refs, \(n_{\mathrm{resolved}}\) those resolved in-namespace.
 
 \[
-n_{\mathrm{ok}} = |\{r \in R : r \in K_e \cup K_a\}|,
-\quad
-n = |R|
+C = \frac{n_{\mathrm{resolved}}}{n} \quad (n>0)
 \]
 
 | Condition | Status | Value |
 |-----------|--------|-------|
-| \(n>0\) and \(n_{\mathrm{ok}}=n\) | `verified` | `{"resolved": n_ok, "total": n, "fraction": 1}` |
-| \(n>0\) and \(0 \le n_{\mathrm{ok}} < n\) | `incomplete` | fraction \(n_{\mathrm{ok}}/n\) |
-| \(n=0\) | `unavailable` | `null` (no required refs) |
-
-Unexplained missing refs are reported in evidence; GT is not used to “excuse” them inside the calculator.
-
-## Dimension C — Provenance coverage
-
-**Meaning.** Fraction of required lineage references that resolve.
-
-**Definition (same \(n_{\mathrm{ok}}, n\) as B):**
-
-\[
-C = \frac{n_{\mathrm{ok}}}{n} \quad (n>0)
-\]
-
-| Condition | Status | Value |
-|-----------|--------|-------|
-| \(n>0\) and \(C=1\) | `verified` | \(C\) |
-| \(n>0\) and \(C<1\) | `incomplete` | \(C\) |
+| \(n>0\) and no wrong-namespace and no missing | `verified` | structured counts + fraction \(C=1\) |
+| \(n>0\) and any wrong-namespace | `contradicted` | counts + `wrong_namespace` list (owner, ref_type, target_id) |
+| \(n>0\) and missing only | `incomplete` | counts + `missing` list |
 | \(n=0\) | `unavailable` | `null` |
 
-Optional metadata absence (e.g. missing `model_id`) is **not** counted in the denominator.
-
-## Dimension D — Attribution computability
+## Dimension C — Attribution computability
 
 **Meaning.** Whether a provided `RPAResult` is a valid conserved structural allocation for the requested projection, or why not.
 
@@ -139,28 +139,34 @@ Optional metadata absence (e.g. missing `model_id`) is **not** counted in the de
 
 Value includes projection kind, alpha, conservation summary, cycle flag, warnings. Conserved allocation ≠ causal responsibility.
 
-## Dimension E — Attribution sensitivity
+## Dimension D — Attribution sensitivity
 
-**Meaning.** Descriptive difference between P1 and P2 MFAV normalized factor vectors for the **same** outcome, when both are defined.
+**Meaning.** Descriptive difference between P1 and P2 MFAV normalized factor vectors for the **same** outcome, when both pass strict preconditions.
 
-**Inputs.** Optional pair `(MFAVResult_P1, MFAVResult_P2)` with matching `outcome_id` and defined normalized vectors.
+**Inputs.** Optional pair `(MFAVResult_P1, MFAVResult_P2)`.
 
-**Definition.** Let \(M^{P1}, M^{P2}\) be normalized factor vectors over exclusive factor set \(F\):
+**Preconditions (`assurance.attribution_sensitivity.v1_1`):**
+
+1. Both results provided
+2. `mfav_p1.projection_kind` is exactly `P1_DIRECT`
+3. `mfav_p2.projection_kind` is exactly `P2_ARTIFACT_BRIDGE`
+4. Same `outcome_id`
+5. Both normalized vectors defined
+6. Both vectors have **exactly** the exclusive taxonomy factor keys (no zero-fill of missing keys)
+7. Every value finite and non-negative
+8. Each vector sums to 1 within absolute tolerance \(10^{-9}\)
+
+Failed identity/outcome/missing-input preconditions → `unavailable`. Failed numeric/support preconditions → `contradicted`.
+
+**Definition.** Let \(M^{P1}, M^{P2}\) be validated normalized factor vectors over exclusive factor set \(F\):
 
 \[
 \delta = \tfrac{1}{2}\sum_{f\in F}\lvert M^{P1}_f - M^{P2}_f\rvert \in [0,1]
 \]
 
-(total variation distance).
+**δ measures descriptive allocation sensitivity only** — not uncertainty, causal disagreement, or fault probability.
 
-| Condition | Status |
-|-----------|--------|
-| Both vectors defined, same outcome | `verified` (δ is descriptive, not “fault”) |
-| Either undefined / outcomes differ / missing inputs | `unavailable` |
-
-**Limits.** δ ≠ uncertainty, ≠ agent fault, ≠ causal disagreement.
-
-## Dimension F — Factor profile
+## Dimension E — Factor profile
 
 **Meaning.** Descriptive exclusive MFAV factor allocation for one outcome/projection.
 
@@ -174,7 +180,7 @@ Value includes projection kind, alpha, conservation summary, cycle flag, warning
 
 Value embeds raw/normalized factors (including `other`), conservation error, MFAV status. Factor concentration/entropy are **not** computed as trust scores.
 
-## Profile API (design)
+## Profile API
 
 ```text
 AssuranceProfileCalculator.compute(
@@ -191,19 +197,18 @@ AssuranceProfileCalculator.compute(
 - Does not mutate trace/graph/RPA/MFAV
 - Does not read benchmark ground truth
 - No single scalar “trust score”
+- Algorithm version `2.6.1`
+
+## Evaluation runner (fail-closed)
+
+`experiments/scripts/evaluate_assurance_profiles.py`:
+
+- Accounts for every trace directory
+- Records a profile outcome or an explicit error per trace
+- Writes diagnostics under `experiments/results/assurance_phase26/`
+- Exits non-zero if any trace/corpus evaluation error occurred
+- Does not silently skip unsupported traces
 
 ## Explicit exclusions
 
 No CTSM weighted trust score; no hardcoded policy/model confidence; no PLHC/Merkle; no causal/legal claims; no final eval corpus generation; no RPA/MFAV math changes.
-
-## Unit / property tests (planned)
-
-- Complete vs incomplete traces
-- Missing / invalid references
-- Zero-denominator coverage → unavailable
-- RPA conservation / cycle / missing result
-- P1/P2 comparable and incomparable cases
-- MFAV integration
-- Determinism and no mutation
-- Calculator never imports/reads ground truth
-- Generator version mismatch hard-fails strict validation

@@ -1,5 +1,5 @@
 """
-Assurance Profile calculator.
+Assurance Profile calculator (Phase 2.6.1).
 
 Does not mutate inputs. Does not read benchmark ground truth.
 Does not produce a trust score.
@@ -15,7 +15,6 @@ from agenttrust.assurance.dimensions import (
     evaluate_attribution_computability,
     evaluate_attribution_sensitivity,
     evaluate_factor_profile,
-    evaluate_provenance_coverage,
     evaluate_reference_integrity,
     evaluate_trace_completeness,
 )
@@ -48,10 +47,10 @@ class AssuranceProfileCalculator:
         """
         before_fp = trace.fingerprint()
 
+        # Five dimensions after consolidating provenance_coverage into reference_integrity
         dims = {
             "trace_completeness": evaluate_trace_completeness(trace),
             "reference_integrity": evaluate_reference_integrity(trace),
-            "provenance_coverage": evaluate_provenance_coverage(trace),
             "attribution_computability": evaluate_attribution_computability(rpa_result),
             "attribution_sensitivity": evaluate_attribution_sensitivity(mfav_p1, mfav_p2),
             "factor_profile": evaluate_factor_profile(mfav_result),
@@ -61,7 +60,10 @@ class AssuranceProfileCalculator:
         if before_fp != after_fp:
             raise RuntimeError("AssuranceProfileCalculator mutated provenance graph.")
 
-        # Snapshot RPA/MFAV dicts for reproducibility metadata only (no mutation)
+        # worst_status precedence ensures overall is never verified when any
+        # dimension is contradicted or incomplete.
+        overall = AssuranceProfile.compute_overall(dims)
+
         profile = AssuranceProfile(
             algorithm_name=ASSURANCE_ALGORITHM_NAME,
             algorithm_version=ASSURANCE_ALGORITHM_VERSION,
@@ -72,12 +74,8 @@ class AssuranceProfileCalculator:
                 else (mfav_result.projection_kind if mfav_result else None)
             ),
             dimensions=dims,
-            overall_status=AssuranceProfile.compute_overall(dims),
-            warnings=[
-                w
-                for d in dims.values()
-                for w in d.warnings
-            ],
+            overall_status=overall,
+            warnings=[w for d in dims.values() for w in d.warnings],
             reproducibility={
                 "algorithm": ASSURANCE_ALGORITHM_NAME,
                 "version": ASSURANCE_ALGORITHM_VERSION,
@@ -89,6 +87,5 @@ class AssuranceProfileCalculator:
                 "dimension_ids": sorted(dims.keys()),
             },
         )
-        # Defensive: ensure we did not alias mutable RPA/MFAV dicts into profile values unexpectedly
         _ = deepcopy(profile.to_dict())
         return profile
