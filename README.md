@@ -43,6 +43,8 @@ AgentTrust **does not**:
 | PLHC (Merkle + linked checkpoints) | **Phase 2.7.1 — active** (`agenttrust/integrity/`) |
 | End-to-end evaluation pipeline | **Phase 2.8 — active** (`agenttrust/pipeline/`) |
 | Experimental dataset (dev/val/test) | **Phase 2.9 — active** (`agenttrust/benchmark/dataset/`) |
+| Baselines / ablations | **Phase 2.10 — active** (`agenttrust/evaluation/`) |
+| Statistical evaluation | **Phase 2.11 — active** (`experiments/results/final_evaluation/`) |
 | Legacy prototype | Preserved under `legacy/` (historical only) |
 
 ## Active architecture
