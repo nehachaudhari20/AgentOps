@@ -83,7 +83,7 @@ def test_complete_trace_verified_dimensions():
     rpa = ConservedRPA().allocate_from_trace(trace, projection_kind=ProjectionKind.P1_DIRECT)[0]
     mfav = MFAV().compute(rpa, trace=trace)
     profile = AssuranceProfileCalculator().compute(trace, rpa_result=rpa, mfav_result=mfav)
-    assert ASSURANCE_ALGORITHM_VERSION == "2.6.1"
+    assert ASSURANCE_ALGORITHM_VERSION == "2.6.2"
     assert "provenance_coverage" not in profile.dimensions
     assert set(profile.dimensions) == {
         "trace_completeness",

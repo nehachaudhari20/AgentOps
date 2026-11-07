@@ -1,5 +1,5 @@
 """
-Assurance dimension evaluators (Phase 2.6.1).
+Assurance dimension evaluators (Phase 2.6.2).
 
 Uses only ProvenanceTrace / RPAResult / MFAVResult.
 Must not import or read benchmark ground truth.
@@ -8,11 +8,16 @@ Must not import or read benchmark ground truth.
 from __future__ import annotations
 
 import math
-from typing import Optional
+from typing import Any, Optional
 
 from agenttrust.accountability.result import MFAVResult, MFAVStatus
 from agenttrust.accountability.taxonomy import FACTOR_ORDER
-from agenttrust.assurance.models import CONSERVATION_ABS_TOL, AssuranceStatus
+from agenttrust.assurance.models import (
+    ALLOCATION_NONNEG_TOL,
+    CONSERVATION_ABS_TOL,
+    REPORT_AGREEMENT_TOL,
+    AssuranceStatus,
+)
 from agenttrust.assurance.result import DimensionResult
 from agenttrust.attribution.rpa import RPAResult
 from agenttrust.mlpg.projections import ProjectionKind
@@ -24,6 +29,8 @@ NORMALIZED_SUM_TOL = 1e-9
 
 EVENT_REF_KINDS = frozenset({"dependency", "invokes", "retries"})
 ARTIFACT_REF_KINDS = frozenset({"input_artifact", "output_artifact"})
+
+_REQUIRED_CONSERVATION_KEYS = ("abs_error_from_one_nodes", "sum_node_allocations")
 
 
 def _collect_typed_refs(
@@ -68,6 +75,11 @@ def _resolve_typed(
             return "wrong_namespace"
         return "missing"
     return "missing"
+
+
+def _is_real_number(v: Any) -> bool:
+    """True iff v is an int/float suitable for numeric validation (not bool)."""
+    return isinstance(v, (int, float)) and not isinstance(v, bool)
 
 
 def evaluate_trace_completeness(trace: ProvenanceTrace) -> DimensionResult:
@@ -226,48 +238,171 @@ def evaluate_reference_integrity(trace: ProvenanceTrace) -> DimensionResult:
     )
 
 
+def _validate_rpa_conservation_evidence(rpa: RPAResult) -> tuple[Optional[str], Optional[str]]:
+    """
+    Fail-closed RPA conservation validation (Phase 2.6.2).
+
+    Returns (kind, reason) where kind is:
+      None — valid conservation evidence
+      "unavailable" — required evidence missing (not treated as zero)
+      "contradicted" — malformed / inconsistent / non-conserved / cycle / bad alpha
+    """
+    limitations_note = ""  # unused; kept for clarity of return contract
+
+    # --- Alpha ---
+    if not _is_real_number(rpa.alpha):
+        return "contradicted", f"alpha is non-numeric: {rpa.alpha!r}"
+    alpha = float(rpa.alpha)
+    if not math.isfinite(alpha):
+        return "contradicted", f"alpha is non-finite: {alpha}"
+    if not (0.0 <= alpha <= 1.0):
+        return "contradicted", f"alpha={alpha} outside [0, 1]"
+
+    # --- Conservation dict presence ---
+    cons = rpa.conservation
+    if cons is None or not isinstance(cons, dict):
+        return "unavailable", "conservation dictionary missing"
+    if not cons:
+        return "unavailable", "conservation dictionary empty"
+
+    missing_keys = [k for k in _REQUIRED_CONSERVATION_KEYS if k not in cons]
+    if missing_keys:
+        return "unavailable", f"missing required conservation fields: {missing_keys}"
+
+    # --- Required conservation field values ---
+    for key in _REQUIRED_CONSERVATION_KEYS:
+        raw = cons[key]
+        if not _is_real_number(raw):
+            return "contradicted", f"conservation.{key} is non-numeric: {raw!r}"
+        fv = float(raw)
+        if not math.isfinite(fv):
+            return "contradicted", f"conservation.{key} is non-finite: {fv}"
+        if fv < -ALLOCATION_NONNEG_TOL:
+            return "contradicted", f"conservation.{key} is negative: {fv}"
+
+    reported_sum = float(cons["sum_node_allocations"])
+    reported_abs_err = float(cons["abs_error_from_one_nodes"])
+
+    # --- Node allocations ---
+    nodes = rpa.node_allocations
+    if nodes is None or not isinstance(nodes, dict):
+        return "contradicted", "node_allocations missing or not a mapping"
+    if len(nodes) == 0:
+        return "contradicted", "node_allocations is empty; not a valid conserved result"
+
+    s = 0.0
+    for nid, aval in nodes.items():
+        if not _is_real_number(aval):
+            return "contradicted", f"node_allocations[{nid!r}] is non-numeric: {aval!r}"
+        fv = float(aval)
+        if not math.isfinite(fv):
+            return "contradicted", f"node_allocations[{nid!r}] is non-finite: {fv}"
+        if fv < -ALLOCATION_NONNEG_TOL:
+            return "contradicted", f"node_allocations[{nid!r}] is negative: {fv}"
+        s += fv
+
+    eps_computed = abs(s - 1.0)
+
+    if abs(reported_sum - s) > REPORT_AGREEMENT_TOL:
+        return (
+            "contradicted",
+            f"reported sum_node_allocations={reported_sum} disagrees with "
+            f"recomputed S={s} (tol={REPORT_AGREEMENT_TOL})",
+        )
+    if abs(reported_abs_err - eps_computed) > REPORT_AGREEMENT_TOL:
+        return (
+            "contradicted",
+            f"reported abs_error_from_one_nodes={reported_abs_err} disagrees with "
+            f"recomputed |S-1|={eps_computed} (tol={REPORT_AGREEMENT_TOL})",
+        )
+    if eps_computed > CONSERVATION_ABS_TOL:
+        return (
+            "contradicted",
+            f"allocations not conserved: |S-1|={eps_computed} > {CONSERVATION_ABS_TOL}",
+        )
+
+    # --- Cycle diagnostics ---
+    cycle = rpa.cycle_diagnostics or {}
+    if bool(cycle.get("has_cycle")):
+        return "contradicted", "cycle_diagnostics.has_cycle is true"
+
+    _ = limitations_note
+    return None, None
+
+
 def evaluate_attribution_computability(rpa: Optional[RPAResult]) -> DimensionResult:
+    """
+    Fail-closed attribution computability (rule assurance.attribution_computability.v1_2).
+
+    Missing conservation evidence → unavailable (never treated as zero).
+    Malformed / inconsistent / non-conserved / cycle / bad alpha → contradicted.
+    Valid under incomplete/overridden guards → incomplete (never verified).
+    Valid conserved finite consistent result → verified.
+    """
+    limitations = [
+        "Conserved allocation is not causal responsibility.",
+        f"Conservation abs tol={CONSERVATION_ABS_TOL}; report agreement tol={REPORT_AGREEMENT_TOL}.",
+        f"Non-negativity float allowance={ALLOCATION_NONNEG_TOL}.",
+        "Missing conservation metrics are not substituted with zero.",
+    ]
     if rpa is None:
         return DimensionResult(
             dimension_id="attribution_computability",
             status=AssuranceStatus.UNAVAILABLE,
             value=None,
-            rule_id="assurance.attribution_computability.v1",
+            rule_id="assurance.attribution_computability.v1_2",
             explanation="No RPAResult provided.",
-            limitations=["Conserved allocation is not causal responsibility."],
+            limitations=limitations,
         )
-    cons = rpa.conservation or {}
-    abs_err = float(cons.get("abs_error_from_one_nodes", float("nan")))
+
+    cons = rpa.conservation if isinstance(rpa.conservation, dict) else {}
     has_cycle = bool((rpa.cycle_diagnostics or {}).get("has_cycle"))
     value = {
         "projection_kind": rpa.projection_kind,
         "alpha": rpa.alpha,
-        "conservation": dict(cons),
+        "conservation": dict(cons) if isinstance(cons, dict) else cons,
         "has_cycle": has_cycle,
         "overridden_guards": list(rpa.overridden_guards),
         "warnings": list(rpa.warnings),
+        "n_node_allocations": (
+            len(rpa.node_allocations) if isinstance(rpa.node_allocations, dict) else None
+        ),
     }
     evidence = [rpa.outcome_id, rpa.projection_kind, rpa.algorithm_version]
-    if has_cycle or (abs_err == abs_err and abs_err > CONSERVATION_ABS_TOL):
+
+    kind, reason = _validate_rpa_conservation_evidence(rpa)
+    if kind == "unavailable":
+        return DimensionResult(
+            dimension_id="attribution_computability",
+            status=AssuranceStatus.UNAVAILABLE,
+            value=value,
+            evidence_refs=evidence,
+            rule_id="assurance.attribution_computability.v1_2",
+            explanation=reason or "Required RPA conservation evidence unavailable.",
+            limitations=limitations,
+            warnings=list(rpa.warnings),
+        )
+    if kind == "contradicted":
         return DimensionResult(
             dimension_id="attribution_computability",
             status=AssuranceStatus.CONTRADICTED,
             value=value,
             evidence_refs=evidence,
-            rule_id="assurance.attribution_computability.v1",
-            explanation="RPA result shows cycle and/or conservation failure beyond tolerance.",
-            limitations=["Conserved allocation is not causal responsibility."],
+            rule_id="assurance.attribution_computability.v1_2",
+            explanation=reason or "RPA conservation evidence contradicted.",
+            limitations=limitations,
             warnings=list(rpa.warnings),
         )
+
     if rpa.overridden_guards or bool((rpa.completeness or {}).get("incomplete")):
         return DimensionResult(
             dimension_id="attribution_computability",
             status=AssuranceStatus.INCOMPLETE,
             value=value,
             evidence_refs=evidence,
-            rule_id="assurance.attribution_computability.v1",
+            rule_id="assurance.attribution_computability.v1_2",
             explanation="RPA ran under incomplete/overridden conditions.",
-            limitations=["Conserved allocation is not causal responsibility."],
+            limitations=limitations,
             warnings=list(rpa.warnings) + list(rpa.overridden_guards),
         )
     return DimensionResult(
@@ -275,9 +410,9 @@ def evaluate_attribution_computability(rpa: Optional[RPAResult]) -> DimensionRes
         status=AssuranceStatus.VERIFIED,
         value=value,
         evidence_refs=evidence,
-        rule_id="assurance.attribution_computability.v1",
-        explanation="RPA result is conserved within tolerance without cycle flags.",
-        limitations=["Conserved allocation is not causal responsibility."],
+        rule_id="assurance.attribution_computability.v1_2",
+        explanation="RPA result is conserved, internally consistent, and free of cycle flags.",
+        limitations=limitations,
         warnings=list(rpa.warnings),
     )
 
@@ -297,12 +432,12 @@ def _validate_normalized_vector(
     total = 0.0
     for f in FACTOR_ORDER:
         v = vec[f.value]
-        if not isinstance(v, (int, float)) or isinstance(v, bool):
+        if not _is_real_number(v):
             return f"{label}: non-numeric value for {f.value}"
         fv = float(v)
         if not math.isfinite(fv):
             return f"{label}: non-finite value for {f.value}"
-        if fv < 0.0:
+        if fv < -ALLOCATION_NONNEG_TOL:
             return f"{label}: negative value for {f.value}"
         total += fv
     if abs(total - 1.0) > NORMALIZED_SUM_TOL:
@@ -395,17 +530,98 @@ def evaluate_attribution_sensitivity(
     )
 
 
+def _validate_mfav_factor_profile(mfav: MFAVResult) -> tuple[Optional[str], Optional[str]]:
+    """
+    Returns (kind, reason): None/None if structurally valid for COMPLETE verification path;
+    "unavailable" or "contradicted" otherwise.
+    """
+    if not isinstance(mfav.outcome_id, str) or not mfav.outcome_id:
+        return "contradicted", "outcome_id missing or invalid"
+    if not isinstance(mfav.projection_kind, str) or not mfav.projection_kind:
+        return "contradicted", "projection_kind missing or invalid"
+
+    raw = mfav.raw_factor_allocations
+    if raw is None or not isinstance(raw, dict):
+        return "unavailable", "raw_factor_allocations missing"
+
+    expected = {f.value for f in FACTOR_ORDER}
+    raw_keys = set(raw.keys())
+    if raw_keys != expected:
+        return (
+            "contradicted",
+            f"raw factor support mismatch missing={sorted(expected - raw_keys)} "
+            f"extra={sorted(raw_keys - expected)}",
+        )
+
+    raw_sum = 0.0
+    for f in FACTOR_ORDER:
+        v = raw[f.value]
+        if not _is_real_number(v):
+            return "contradicted", f"raw[{f.value}] non-numeric: {v!r}"
+        fv = float(v)
+        if not math.isfinite(fv):
+            return "contradicted", f"raw[{f.value}] non-finite: {fv}"
+        if fv < -ALLOCATION_NONNEG_TOL:
+            return "contradicted", f"raw[{f.value}] negative: {fv}"
+        raw_sum += fv
+
+    if not _is_real_number(mfav.total_raw_allocation):
+        return "contradicted", f"total_raw_allocation non-numeric: {mfav.total_raw_allocation!r}"
+    total_raw = float(mfav.total_raw_allocation)
+    if not math.isfinite(total_raw):
+        return "contradicted", f"total_raw_allocation non-finite: {total_raw}"
+    if total_raw < -ALLOCATION_NONNEG_TOL:
+        return "contradicted", f"total_raw_allocation negative: {total_raw}"
+    if abs(total_raw - raw_sum) > REPORT_AGREEMENT_TOL:
+        return (
+            "contradicted",
+            f"total_raw_allocation={total_raw} disagrees with sum(raw)={raw_sum}",
+        )
+
+    if not _is_real_number(mfav.conservation_error):
+        return "unavailable", "conservation_error missing or non-numeric"
+    cerr = float(mfav.conservation_error)
+    if not math.isfinite(cerr):
+        return "contradicted", f"conservation_error non-finite: {cerr}"
+    if cerr < -ALLOCATION_NONNEG_TOL:
+        return "contradicted", f"conservation_error negative: {cerr}"
+
+    norm = mfav.normalized_factor_vector
+    if norm is None:
+        return "unavailable", "normalized_factor_vector missing"
+
+    nerr = _validate_normalized_vector(norm, label="normalized")
+    if nerr:
+        return "contradicted", nerr
+
+    # For a COMPLETE verified claim, conservation_error must be within research tol
+    if mfav.status == MFAVStatus.COMPLETE and cerr > CONSERVATION_ABS_TOL:
+        return (
+            "contradicted",
+            f"conservation_error={cerr} exceeds tol={CONSERVATION_ABS_TOL} for COMPLETE MFAV",
+        )
+
+    return None, None
+
+
 def evaluate_factor_profile(mfav: Optional[MFAVResult]) -> DimensionResult:
+    """
+    Factor-profile validation (rule assurance.factor_profile.v1_1).
+
+    Does not trust MFAVStatus alone. Does not zero-fill missing factors.
+    """
     limitations = [
         "Factor allocation is descriptive structural distribution, not a trust score.",
         "Factor concentration/entropy are not computed as assurance metrics.",
+        "Missing factors are not silently inserted as zeros during validation.",
+        f"Normalized sum tol={NORMALIZED_SUM_TOL}; agreement tol={REPORT_AGREEMENT_TOL}.",
     ]
     if mfav is None:
         return DimensionResult(
             dimension_id="factor_profile",
             status=AssuranceStatus.UNAVAILABLE,
             value=None,
-            rule_id="assurance.factor_profile.v1",
+            rule_id="assurance.factor_profile.v1_1",
             explanation="No MFAVResult provided.",
             limitations=limitations,
         )
@@ -419,22 +635,76 @@ def evaluate_factor_profile(mfav: Optional[MFAVResult]) -> DimensionResult:
         "mfav_status": mfav.status.value,
         "complete": mfav.complete,
     }
+    evidence = [mfav.outcome_id, mfav.projection_kind, mfav.mfav_algorithm_version]
+
+    if mfav.status in (MFAVStatus.ZERO_ALLOCATION, MFAVStatus.UNDEFINED):
+        return DimensionResult(
+            dimension_id="factor_profile",
+            status=AssuranceStatus.UNAVAILABLE,
+            value=value,
+            evidence_refs=evidence,
+            rule_id="assurance.factor_profile.v1_1",
+            explanation=f"MFAV status {mfav.status.value}; factor vector not defined.",
+            limitations=limitations,
+            warnings=list(mfav.classification_warnings)[:5],
+        )
+
+    kind, reason = _validate_mfav_factor_profile(mfav)
+    if kind == "unavailable":
+        return DimensionResult(
+            dimension_id="factor_profile",
+            status=AssuranceStatus.UNAVAILABLE,
+            value=value,
+            evidence_refs=evidence,
+            rule_id="assurance.factor_profile.v1_1",
+            explanation=reason or "Required MFAV factor evidence unavailable.",
+            limitations=limitations,
+            warnings=list(mfav.classification_warnings)[:5],
+        )
+    if kind == "contradicted":
+        return DimensionResult(
+            dimension_id="factor_profile",
+            status=AssuranceStatus.CONTRADICTED,
+            value=value,
+            evidence_refs=evidence,
+            rule_id="assurance.factor_profile.v1_1",
+            explanation=reason or "MFAV factor profile evidence contradicted.",
+            limitations=limitations,
+            warnings=list(mfav.classification_warnings)[:5],
+        )
+
+    if mfav.status in (MFAVStatus.INCOMPLETE, MFAVStatus.OVERRIDDEN) or not mfav.complete:
+        return DimensionResult(
+            dimension_id="factor_profile",
+            status=AssuranceStatus.INCOMPLETE,
+            value=value,
+            evidence_refs=evidence,
+            rule_id="assurance.factor_profile.v1_1",
+            explanation=f"MFAV status {mfav.status.value}; profile incomplete or overridden.",
+            limitations=limitations,
+            warnings=list(mfav.classification_warnings)[:5],
+        )
+
     if mfav.status == MFAVStatus.COMPLETE and mfav.normalized_factor_vector is not None:
-        status = AssuranceStatus.VERIFIED
-        explanation = "MFAV factor profile is complete with a defined normalized vector."
-    elif mfav.status in (MFAVStatus.ZERO_ALLOCATION, MFAVStatus.UNDEFINED):
-        status = AssuranceStatus.UNAVAILABLE
-        explanation = f"MFAV status {mfav.status.value}; factor vector not defined."
-    else:
-        status = AssuranceStatus.INCOMPLETE
-        explanation = f"MFAV status {mfav.status.value}; profile incomplete or overridden."
+        return DimensionResult(
+            dimension_id="factor_profile",
+            status=AssuranceStatus.VERIFIED,
+            value=value,
+            evidence_refs=evidence,
+            rule_id="assurance.factor_profile.v1_1",
+            explanation="MFAV factor profile validated: taxonomy support, finite non-negative "
+            "allocations, normalized sum≈1, totals consistent.",
+            limitations=limitations,
+            warnings=list(mfav.classification_warnings)[:5],
+        )
+
     return DimensionResult(
         dimension_id="factor_profile",
-        status=status,
+        status=AssuranceStatus.UNAVAILABLE,
         value=value,
-        evidence_refs=[mfav.outcome_id, mfav.projection_kind, mfav.mfav_algorithm_version],
-        rule_id="assurance.factor_profile.v1",
-        explanation=explanation,
+        evidence_refs=evidence,
+        rule_id="assurance.factor_profile.v1_1",
+        explanation=f"MFAV status {mfav.status.value}; cannot verify factor profile.",
         limitations=limitations,
         warnings=list(mfav.classification_warnings)[:5],
     )

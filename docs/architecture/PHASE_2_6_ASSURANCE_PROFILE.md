@@ -128,14 +128,27 @@ C = \frac{n_{\mathrm{resolved}}}{n} \quad (n>0)
 
 **Inputs.** Optional `RPAResult` (caller supplies; profile does not silently invent allocations). If absent → `unavailable`.
 
-**Rule `assurance.attribution_computability.v1`:**
+**Rule `assurance.attribution_computability.v1_2` (Phase 2.6.2 fail-closed):**
+
+Tolerances (absolute): conservation \(10^{-9}\); reported↔recomputed agreement \(10^{-9}\); non-negativity float allowance \(10^{-12}\).
+
+Before `verified`, all of the following must hold:
+
+1. Conservation dict present with required keys `abs_error_from_one_nodes`, `sum_node_allocations` (missing → `unavailable`; never treated as zero).
+2. Required conservation values numeric (not bool), finite, non-negative (within float allowance).
+3. Independently recompute \(S=\sum_v a(v)\) from `node_allocations` and \(\epsilon=|S-1|\); reported sum and abs-error must agree within agreement tolerance.
+4. Every node allocation numeric, finite, non-negative (within float allowance); empty map → `contradicted`.
+5. \(0 \le \alpha \le 1\) and α finite.
+6. `cycle_diagnostics.has_cycle` must be false (else `contradicted`).
+7. \(\epsilon \le 10^{-9}\).
+8. Incomplete/overridden guards → `incomplete` (never `verified`), even when conservation is valid.
 
 | Condition | Status |
 |-----------|--------|
-| Result present, no cycle flag, conservation abs error ≤ \(10^{-9}\), no overridden guards that break validity claims | `verified` |
-| Overridden incomplete guard or incomplete completeness flag | `incomplete` |
-| Cycle / conservation abs error > tolerance | `contradicted` |
-| No RPA result provided | `unavailable` |
+| Valid conserved consistent result, no cycle, no incomplete guards | `verified` |
+| Valid under incomplete/overridden conditions | `incomplete` |
+| Malformed / non-finite / inconsistent / negative / non-conserved / cycle / bad α | `contradicted` |
+| Missing RPA result or missing required conservation fields | `unavailable` |
 
 Value includes projection kind, alpha, conservation summary, cycle flag, warnings. Conserved allocation ≠ causal responsibility.
 
@@ -172,11 +185,23 @@ Failed identity/outcome/missing-input preconditions → `unavailable`. Failed nu
 
 **Inputs.** Optional `MFAVResult`.
 
+**Rule `assurance.factor_profile.v1_1` (Phase 2.6.2):** does **not** trust `MFAVStatus.COMPLETE` alone. Missing factors are **not** zero-filled.
+
+When claiming `verified` for a complete profile, validate:
+
+1. Exact exclusive taxonomy factor-key support on raw and normalized maps.
+2. Normalized values numeric, finite, non-negative; sum to 1 within \(10^{-9}\).
+3. Raw values numeric, finite, non-negative.
+4. `total_raw_allocation` agrees with \(\sum\) raw within \(10^{-9}\).
+5. `conservation_error` present, finite, non-negative; for COMPLETE ≤ \(10^{-9}\).
+6. `outcome_id` and `projection_kind` present and non-empty.
+
 | Condition | Status |
 |-----------|--------|
-| MFAV complete with defined normalized vector | `verified` |
-| MFAV incomplete/overridden/zero | `incomplete` or `unavailable` per MFAV status |
-| No MFAV result | `unavailable` |
+| COMPLETE + validated vectors/totals | `verified` |
+| Valid but incomplete/overridden | `incomplete` |
+| Malformed support / non-finite / negative / inconsistent totals | `contradicted` |
+| No MFAV / ZERO / UNDEFINED / missing normalized vector | `unavailable` |
 
 Value embeds raw/normalized factors (including `other`), conservation error, MFAV status. Factor concentration/entropy are **not** computed as trust scores.
 
@@ -197,7 +222,7 @@ AssuranceProfileCalculator.compute(
 - Does not mutate trace/graph/RPA/MFAV
 - Does not read benchmark ground truth
 - No single scalar “trust score”
-- Algorithm version `2.6.1`
+- Algorithm version `2.6.2`
 
 ## Evaluation runner (fail-closed)
 

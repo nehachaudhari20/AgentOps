@@ -37,7 +37,11 @@ def worst_status(statuses: list[AssuranceStatus]) -> AssuranceStatus:
 
 
 ASSURANCE_ALGORITHM_NAME = "evidence_bounded_assurance_profile"
-ASSURANCE_ALGORITHM_VERSION = "2.6.1"
+ASSURANCE_ALGORITHM_VERSION = "2.6.2"
 
-# Conservation tolerance aligned with research float policy
+# Conservation / agreement tolerances (absolute). Do not weaken to pass tests.
 CONSERVATION_ABS_TOL = 1e-9
+# Floating-point allowance for non-negativity of allocations
+ALLOCATION_NONNEG_TOL = 1e-12
+# Reported vs independently recomputed agreement
+REPORT_AGREEMENT_TOL = 1e-9

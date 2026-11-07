@@ -9,7 +9,9 @@ Assurance Profile correctness and evaluation hardening.
 | Branch | `master` |
 | Start commit | `7c073da0d37d5bb3272965916acf6ed58b69d386` — Add assurance dimensions over provenance, RPA, and MFAV… |
 | Working tree at start | Clean |
-| Commit/push | **Not performed** |
+| Implementation commit | `270127ea0ed57dd1639b86a5e75e599551acd6a1` — Evluation hardening |
+
+**Historical note (corrected in Phase 2.6.2):** The original draft of this report stated that commit/push was not performed. The Phase 2.6.1 implementation was subsequently committed on `master` as `270127e`. That commit is the authoritative record of the 2.6.1 tree; this note does not rewrite earlier working-session instructions, only the repository fact.
 
 ## 2. Typed reference integrity
 
