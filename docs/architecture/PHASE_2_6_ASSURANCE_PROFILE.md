@@ -185,25 +185,30 @@ Failed identity/outcome/missing-input preconditions → `unavailable`. Failed nu
 
 **Inputs.** Optional `MFAVResult`.
 
-**Rule `assurance.factor_profile.v1_1` (Phase 2.6.2):** does **not** trust `MFAVStatus.COMPLETE` alone. Missing factors are **not** zero-filled.
+**Rule `assurance.factor_profile.v1_2` (Phase 2.6.2.1):** does **not** trust `MFAVStatus.COMPLETE` alone. Missing factors are **not** zero-filled. Missing evidence is **never** replaced with zero.
 
 When claiming `verified` for a complete profile, validate:
 
 1. Exact exclusive taxonomy factor-key support on raw and normalized maps.
 2. Normalized values numeric, finite, non-negative; sum to 1 within \(10^{-9}\).
 3. Raw values numeric, finite, non-negative.
-4. `total_raw_allocation` agrees with \(\sum\) raw within \(10^{-9}\).
-5. `conservation_error` present, finite, non-negative; for COMPLETE ≤ \(10^{-9}\).
-6. `outcome_id` and `projection_kind` present and non-empty.
+4. \(T_{\mathrm{reported}}\approx T_{\mathrm{factors}}=\sum_f A_f\) within `REPORT_AGREEMENT_TOL` (\(10^{-9}\)).
+5. Every `EventAssignment`: non-empty `event_id`, taxonomy factor, finite non-negative allocation; **no duplicate event IDs**.
+6. \(T_{\mathrm{events}}=\sum_e a(e)\approx T_{\mathrm{factors}}\).
+7. Per-factor aggregation: \(A_f \approx \sum_{e:\mathrm{factor}(e)=f} a(e)\) for every exclusive factor.
+8. Independently recompute \(\epsilon_{\mathrm{MFAV}}=\lvert T_{\mathrm{factors}}-T_{\mathrm{events}}\rvert\); reported `conservation_error` must agree within \(10^{-9}\); for COMPLETE \(\epsilon_{\mathrm{MFAV}}\le 10^{-9}\).
+9. `outcome_id` and `projection_kind` present and non-empty.
+
+(Empty assignments with positive \(T_{\mathrm{factors}}\) → `contradicted`. Missing assignment list → `unavailable`.)
 
 | Condition | Status |
 |-----------|--------|
-| COMPLETE + validated vectors/totals | `verified` |
+| COMPLETE + validated vectors/assignments/totals/ε | `verified` |
 | Valid but incomplete/overridden | `incomplete` |
-| Malformed support / non-finite / negative / inconsistent totals | `contradicted` |
-| No MFAV / ZERO / UNDEFINED / missing normalized vector | `unavailable` |
+| Duplicate IDs / bad factors / non-finite / aggregation inconsistency | `contradicted` |
+| No MFAV / ZERO / UNDEFINED / missing normalized or assignment evidence | `unavailable` |
 
-Value embeds raw/normalized factors (including `other`), conservation error, MFAV status. Factor concentration/entropy are **not** computed as trust scores.
+Value embeds raw/normalized factors (including `other`), conservation error, MFAV status, assignment count. Factor concentration/entropy are **not** computed as trust scores.
 
 ## Profile API
 
@@ -222,7 +227,7 @@ AssuranceProfileCalculator.compute(
 - Does not mutate trace/graph/RPA/MFAV
 - Does not read benchmark ground truth
 - No single scalar “trust score”
-- Algorithm version `2.6.2`
+- Algorithm version `2.6.2.1`
 
 ## Evaluation runner (fail-closed)
 

@@ -38,7 +38,7 @@ AgentTrust **does not**:
 | MFAV (exclusive factor aggregation) | **Phase 2.3 — active** (`agenttrust/accountability/`) |
 | Synthetic benchmark generator + pilot | **Phase 2.4 — active** (`agenttrust/benchmark/`) |
 | Benchmark GT integrity + fault semantics | **Phase 2.5 / 2.5.1 — active** |
-| Evidence-bounded Assurance Profile | **Phase 2.6.2 — active** (`agenttrust/assurance/`) |
+| Evidence-bounded Assurance Profile | **Phase 2.6.2.1 — active** (`agenttrust/assurance/`) |
 | PLHC redesign | Not implemented (package reserved) |
 | Legacy prototype | Preserved under `legacy/` (historical only) |
 
@@ -158,7 +158,7 @@ assurance = AssuranceProfileCalculator().compute(
 print(assurance.overall_status, assurance.dimensions["reference_integrity"].value)
 ```
 
-The Assurance Profile reports typed evidence availability and structural consistency (algorithm `2.6.2`). It is **not** a trust score. `provenance_coverage` was consolidated into typed `reference_integrity` in Phase 2.6.1; Phase 2.6.2 fail-closes RPA/MFAV conservation validation.
+The Assurance Profile reports typed evidence availability and structural consistency (algorithm `2.6.2.1`). It is **not** a trust score. Phase 2.6.2.1 independently verifies MFAV event-assignment ↔ factor-total conservation.
 
 Architecture: [docs/architecture/PHASE_2_6_ASSURANCE_PROFILE.md](docs/architecture/PHASE_2_6_ASSURANCE_PROFILE.md)
 

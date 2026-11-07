@@ -9,7 +9,9 @@ Assurance validation closure and final correctness audit.
 | Branch | `master` (no branch created or switched) |
 | Start / expected HEAD | `270127ea0ed57dd1639b86a5e75e599551acd6a1` — Evluation hardening |
 | Working tree at start | Clean |
-| Commit/push this phase | **Not performed** |
+| Implementation commit | `ed69eb1fa667177f4a8a9658d3a040295ab3c344` — Evluation hardening |
+
+**Historical note (corrected in Phase 2.6.2.1):** During the original 2.6.2 working session the local tree was left dirty and that session did not itself run `git commit`/`git push`. The Phase 2.6.2 implementation was subsequently committed on `master` as `ed69eb1` and is present in the repository. Do not treat 2.6.2 as absent from GitHub; the commit above is authoritative for the 2.6.2 tree.
 
 ## 2. Objective
 
@@ -119,7 +121,11 @@ python experiments/scripts/evaluate_assurance_profiles.py
 
 ## 8. Documentation correction (2.6.1)
 
-Phase 2.6.1 implementation is committed as `270127ea0ed57dd1639b86a5e75e599551acd6a1`. The 2.6.1 report now records that fact. Phase 2.6.2 is tracked separately (this report); no commit of 2.6.2 was performed in this session.
+Phase 2.6.1 implementation is committed as `270127ea0ed57dd1639b86a5e75e599551acd6a1`. The 2.6.1 report records that fact.
+
+## 8b. Repository fact (2.6.2)
+
+Phase 2.6.2 implementation is committed as `ed69eb1fa667177f4a8a9658d3a040295ab3c344`. Further MFAV event-assignment conservation closure is Phase **2.6.2.1** (separate report).
 
 ## 9. Remaining limitations
 
@@ -128,10 +134,10 @@ Phase 2.6.1 implementation is committed as `270127ea0ed57dd1639b86a5e75e599551ac
 - No cryptographic / PLHC integrity dimension.
 - Assurance does not measure trustworthiness, causal responsibility, or legal liability.
 - MFAV `conservation_error` consistency check for COMPLETE uses the assurance absolute tol \(10^{-9}\); the MFAV aggregator internally uses \(10^{-12}\) when constructing results.
+- (Addressed in 2.6.2.1) Event-assignment ↔ factor-map aggregation was not yet independently verified in 2.6.2.
 
-## 10. Stop conditions
+## 10. Stop conditions (original session)
 
-- Working tree: **dirty** (Phase 2.6.2 changes uncommitted).
-- No branch created or switched (remained on `master`).
-- No commit or push performed.
-- STOP after Phase 2.6.2 — do not start PLHC until review.
+- Original working session left a dirty tree and did not itself commit/push.
+- Repository commit `ed69eb1` later recorded the 2.6.2 implementation on `master`.
+- No branch was created or switched during 2.6.2 work.

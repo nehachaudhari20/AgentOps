@@ -14,7 +14,7 @@ from agenttrust import (
     MFAV,
     ProvenanceTrace,
 )
-from agenttrust.accountability.result import MFAVResult, MFAVStatus
+from agenttrust.accountability.result import EventAssignment, MFAVResult, MFAVStatus
 from agenttrust.accountability.taxonomy import FACTOR_ORDER
 from agenttrust.assurance.dimensions import (
     evaluate_attribution_computability,
@@ -29,6 +29,27 @@ from tests.conftest import make_artifact, make_event
 def _uniform() -> dict[str, float]:
     n = len(FACTOR_ORDER)
     return {f.value: 1.0 / n for f in FACTOR_ORDER}
+
+
+def _agent_mass_vector(mass: float = 1.0) -> dict[str, float]:
+    raw = {f.value: 0.0 for f in FACTOR_ORDER}
+    raw["agent"] = mass
+    return raw
+
+
+def _assignment(
+    event_id: str,
+    factor: str,
+    allocation: float,
+) -> EventAssignment:
+    return EventAssignment(
+        event_id=event_id,
+        factor=factor,
+        allocation=allocation,
+        entity_id="E",
+        entity_kind="agent",
+        unidentified=False,
+    )
 
 
 def _valid_rpa(**overrides) -> RPAResult:
@@ -61,7 +82,8 @@ def _valid_rpa(**overrides) -> RPAResult:
 
 
 def _valid_mfav(**overrides) -> MFAVResult:
-    vec = _uniform()
+    """COMPLETE MFAV with consistent event assignment ↔ raw factor mass on agent."""
+    vec = _agent_mass_vector(1.0)
     base = dict(
         outcome_id="out",
         projection_kind=ProjectionKind.P1_DIRECT.value,
@@ -80,7 +102,7 @@ def _valid_mfav(**overrides) -> MFAVResult:
         status=MFAVStatus.COMPLETE,
         complete=True,
         entity_contributions=[],
-        event_assignments=[],
+        event_assignments=[_assignment("e1", "agent", 1.0)],
         secondary_subtype_totals={},
         unidentified_contributions=[],
     )
@@ -256,7 +278,7 @@ def test_pipeline_rpa_still_verified():
 def test_mfav_valid_complete_verified():
     dim = evaluate_factor_profile(_valid_mfav())
     assert dim.status == AssuranceStatus.VERIFIED
-    assert dim.rule_id == "assurance.factor_profile.v1_1"
+    assert dim.rule_id == "assurance.factor_profile.v1_2"
 
 
 def test_mfav_missing_factor_key():
@@ -287,17 +309,15 @@ def test_mfav_extra_factor_key():
 
 @pytest.mark.parametrize("bad", [float("nan"), float("inf"), -0.2])
 def test_mfav_bad_normalized_value(bad):
-    vec = _uniform()
+    vec = _agent_mass_vector(1.0)
     vec["agent"] = bad
-    dim = evaluate_factor_profile(
-        _valid_mfav(normalized_factor_vector=dict(vec), raw_factor_allocations=_uniform())
-    )
+    dim = evaluate_factor_profile(_valid_mfav(normalized_factor_vector=dict(vec)))
     assert dim.status == AssuranceStatus.CONTRADICTED
 
 
 def test_mfav_non_normalized_vector():
-    vec = _uniform()
-    vec["agent"] = vec["agent"] + 0.5
+    vec = _agent_mass_vector(1.0)
+    vec["agent"] = 1.5
     dim = evaluate_factor_profile(_valid_mfav(normalized_factor_vector=dict(vec)))
     assert dim.status == AssuranceStatus.CONTRADICTED
     assert "sum" in dim.explanation
@@ -354,12 +374,163 @@ def test_mfav_overridden_never_verified():
 
 def test_mfav_complete_status_alone_insufficient():
     """COMPLETE status with malformed vector must not verify."""
-    vec = _uniform()
+    vec = _agent_mass_vector(1.0)
     vec["agent"] = float("nan")
     dim = evaluate_factor_profile(
         _valid_mfav(status=MFAVStatus.COMPLETE, complete=True, normalized_factor_vector=vec)
     )
     assert dim.status == AssuranceStatus.CONTRADICTED
+
+
+# --- Phase 2.6.2.1 event-assignment conservation ---
+
+
+def test_mfav_missing_event_assignments():
+    dim = evaluate_factor_profile(_valid_mfav(event_assignments=None))  # type: ignore[arg-type]
+    assert dim.status == AssuranceStatus.UNAVAILABLE
+    assert "event_assignments" in dim.explanation.lower()
+
+
+def test_mfav_empty_assignments_with_positive_raw():
+    dim = evaluate_factor_profile(_valid_mfav(event_assignments=[]))
+    assert dim.status == AssuranceStatus.CONTRADICTED
+    assert "empty" in dim.explanation.lower()
+
+
+def test_mfav_duplicate_event_ids():
+    dim = evaluate_factor_profile(
+        _valid_mfav(
+            event_assignments=[
+                _assignment("e1", "agent", 0.5),
+                _assignment("e1", "agent", 0.5),
+            ]
+        )
+    )
+    assert dim.status == AssuranceStatus.CONTRADICTED
+    assert "duplicate" in dim.explanation.lower()
+
+
+def test_mfav_unknown_factor_label_in_assignment():
+    dim = evaluate_factor_profile(
+        _valid_mfav(event_assignments=[_assignment("e1", "not_a_factor", 1.0)])
+    )
+    assert dim.status == AssuranceStatus.CONTRADICTED
+    assert "taxonomy" in dim.explanation.lower() or "factor" in dim.explanation.lower()
+
+
+@pytest.mark.parametrize("bad", [float("nan"), float("inf"), float("-inf"), -0.4])
+def test_mfav_bad_event_allocation(bad):
+    dim = evaluate_factor_profile(
+        _valid_mfav(event_assignments=[_assignment("e1", "agent", bad)])
+    )
+    assert dim.status == AssuranceStatus.CONTRADICTED
+
+
+def test_mfav_event_sum_differs_from_raw_total():
+    dim = evaluate_factor_profile(
+        _valid_mfav(event_assignments=[_assignment("e1", "agent", 0.5)])
+    )
+    assert dim.status == AssuranceStatus.CONTRADICTED
+    assert "T_events" in dim.explanation or "disagrees" in dim.explanation
+
+
+def test_mfav_event_factor_totals_differ_from_raw_map():
+    """Mass moved between factors in assignments while totals still match."""
+    raw = _agent_mass_vector(1.0)
+    # assignments put mass on tool; raw still says agent
+    dim = evaluate_factor_profile(
+        _valid_mfav(
+            raw_factor_allocations=raw,
+            normalized_factor_vector=raw,
+            event_assignments=[_assignment("e1", "tool", 1.0)],
+            total_raw_allocation=1.0,
+            conservation_error=0.0,
+        )
+    )
+    assert dim.status == AssuranceStatus.CONTRADICTED
+    assert "tool" in dim.explanation or "agent" in dim.explanation
+
+
+def test_mfav_one_factor_inconsistent_while_totals_match():
+    """Swap mass between two factors in raw vs assignments with equal totals."""
+    raw = {f.value: 0.0 for f in FACTOR_ORDER}
+    raw["agent"] = 0.6
+    raw["tool"] = 0.4
+    # assignments reverse the split
+    dim = evaluate_factor_profile(
+        _valid_mfav(
+            raw_factor_allocations=raw,
+            normalized_factor_vector=raw,
+            total_raw_allocation=1.0,
+            conservation_error=0.0,
+            event_assignments=[
+                _assignment("e1", "agent", 0.4),
+                _assignment("e2", "tool", 0.6),
+            ],
+        )
+    )
+    assert dim.status == AssuranceStatus.CONTRADICTED
+
+
+def test_mfav_reported_conservation_error_disagrees():
+    dim = evaluate_factor_profile(_valid_mfav(conservation_error=1e-3))
+    assert dim.status == AssuranceStatus.CONTRADICTED
+    assert "conservation_error" in dim.explanation
+
+
+def test_mfav_tampered_assignments_unchanged_raw():
+    dim = evaluate_factor_profile(
+        _valid_mfav(
+            event_assignments=[
+                _assignment("e1", "agent", 0.7),
+                _assignment("e2", "model", 0.3),
+            ]
+        )
+    )
+    assert dim.status == AssuranceStatus.CONTRADICTED
+
+
+def test_mfav_tampered_raw_unchanged_assignments():
+    raw = _agent_mass_vector(1.0)
+    raw["agent"] = 0.5
+    raw["model"] = 0.5
+    dim = evaluate_factor_profile(
+        _valid_mfav(
+            raw_factor_allocations=raw,
+            normalized_factor_vector=raw,
+            total_raw_allocation=1.0,
+            event_assignments=[_assignment("e1", "agent", 1.0)],
+            conservation_error=0.0,
+        )
+    )
+    assert dim.status == AssuranceStatus.CONTRADICTED
+
+
+def test_mfav_zero_allocation_remains_unavailable():
+    zero = {f.value: 0.0 for f in FACTOR_ORDER}
+    dim = evaluate_factor_profile(
+        _valid_mfav(
+            status=MFAVStatus.ZERO_ALLOCATION,
+            complete=False,
+            raw_factor_allocations=zero,
+            normalized_factor_vector=None,
+            total_raw_allocation=0.0,
+            conservation_error=0.0,
+            event_assignments=[],
+        )
+    )
+    assert dim.status == AssuranceStatus.UNAVAILABLE
+
+
+def test_mfav_undefined_remains_unavailable():
+    dim = evaluate_factor_profile(
+        _valid_mfav(
+            status=MFAVStatus.UNDEFINED,
+            complete=False,
+            normalized_factor_vector=None,
+        )
+    )
+    assert dim.status == AssuranceStatus.UNAVAILABLE
 
 
 def test_pipeline_mfav_still_verified():
@@ -415,11 +586,11 @@ def test_no_fabricated_zero_for_missing_conservation():
     # Must not claim verified with invented zero error
 
 
-def test_algorithm_version_262():
-    assert ASSURANCE_ALGORITHM_VERSION == "2.6.2"
+def test_algorithm_version_2621():
+    assert ASSURANCE_ALGORITHM_VERSION == "2.6.2.1"
     t = _complete_trace()
     profile = AssuranceProfileCalculator().compute(t)
-    assert profile.algorithm_version == "2.6.2"
+    assert profile.algorithm_version == "2.6.2.1"
     blob = json.dumps(profile.to_dict())
     assert '"value": null' in blob or profile.dimensions["attribution_computability"].value is None
 

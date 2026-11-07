@@ -534,6 +534,10 @@ def _validate_mfav_factor_profile(mfav: MFAVResult) -> tuple[Optional[str], Opti
     """
     Returns (kind, reason): None/None if structurally valid for COMPLETE verification path;
     "unavailable" or "contradicted" otherwise.
+
+    Phase 2.6.2.1: independently verifies event_assignments ↔ raw factors ↔
+    reported totals ↔ conservation_error. Does not trust MFAVStatus.COMPLETE alone.
+    Missing evidence is never replaced with zero.
     """
     if not isinstance(mfav.outcome_id, str) or not mfav.outcome_id:
         return "contradicted", "outcome_id missing or invalid"
@@ -553,7 +557,7 @@ def _validate_mfav_factor_profile(mfav: MFAVResult) -> tuple[Optional[str], Opti
             f"extra={sorted(raw_keys - expected)}",
         )
 
-    raw_sum = 0.0
+    t_factors = 0.0
     for f in FACTOR_ORDER:
         v = raw[f.value]
         if not _is_real_number(v):
@@ -563,20 +567,80 @@ def _validate_mfav_factor_profile(mfav: MFAVResult) -> tuple[Optional[str], Opti
             return "contradicted", f"raw[{f.value}] non-finite: {fv}"
         if fv < -ALLOCATION_NONNEG_TOL:
             return "contradicted", f"raw[{f.value}] negative: {fv}"
-        raw_sum += fv
+        t_factors += fv
 
     if not _is_real_number(mfav.total_raw_allocation):
         return "contradicted", f"total_raw_allocation non-numeric: {mfav.total_raw_allocation!r}"
-    total_raw = float(mfav.total_raw_allocation)
-    if not math.isfinite(total_raw):
-        return "contradicted", f"total_raw_allocation non-finite: {total_raw}"
-    if total_raw < -ALLOCATION_NONNEG_TOL:
-        return "contradicted", f"total_raw_allocation negative: {total_raw}"
-    if abs(total_raw - raw_sum) > REPORT_AGREEMENT_TOL:
+    t_reported = float(mfav.total_raw_allocation)
+    if not math.isfinite(t_reported):
+        return "contradicted", f"total_raw_allocation non-finite: {t_reported}"
+    if t_reported < -ALLOCATION_NONNEG_TOL:
+        return "contradicted", f"total_raw_allocation negative: {t_reported}"
+    if abs(t_reported - t_factors) > REPORT_AGREEMENT_TOL:
         return (
             "contradicted",
-            f"total_raw_allocation={total_raw} disagrees with sum(raw)={raw_sum}",
+            f"total_raw_allocation={t_reported} disagrees with sum(raw)={t_factors}",
         )
+
+    # --- Event assignments (Phase 2.6.2.1) ---
+    assignments = mfav.event_assignments
+    if assignments is None:
+        return "unavailable", "event_assignments missing"
+    if not isinstance(assignments, list):
+        return "contradicted", "event_assignments is not a list"
+
+    if len(assignments) == 0 and t_factors > REPORT_AGREEMENT_TOL:
+        return (
+            "contradicted",
+            f"event_assignments empty but T_factors={t_factors} > 0",
+        )
+    if len(assignments) == 0 and abs(t_factors) <= REPORT_AGREEMENT_TOL:
+        # Zero mass with no assignments: only admissible when status is ZERO/UNDEFINED
+        # (handled before this validator). Treat as missing assignment evidence.
+        return "unavailable", "event_assignments empty with zero factor mass"
+
+    seen_ids: set[str] = set()
+    t_events = 0.0
+    by_factor = {f.value: 0.0 for f in FACTOR_ORDER}
+
+    for i, a in enumerate(assignments):
+        eid = getattr(a, "event_id", None)
+        factor = getattr(a, "factor", None)
+        alloc = getattr(a, "allocation", None)
+        if not isinstance(eid, str) or not eid:
+            return "contradicted", f"event_assignments[{i}].event_id missing or empty"
+        if eid in seen_ids:
+            return "contradicted", f"duplicate event_id in event_assignments: {eid!r}"
+        seen_ids.add(eid)
+        if not isinstance(factor, str) or factor not in expected:
+            return (
+                "contradicted",
+                f"event_assignments[{i}] factor {factor!r} not in exclusive taxonomy",
+            )
+        if not _is_real_number(alloc):
+            return "contradicted", f"event_assignments[{i}].allocation non-numeric: {alloc!r}"
+        av = float(alloc)
+        if not math.isfinite(av):
+            return "contradicted", f"event_assignments[{i}].allocation non-finite: {av}"
+        if av < -ALLOCATION_NONNEG_TOL:
+            return "contradicted", f"event_assignments[{i}].allocation negative: {av}"
+        t_events += av
+        by_factor[factor] += av
+
+    if abs(t_events - t_factors) > REPORT_AGREEMENT_TOL:
+        return (
+            "contradicted",
+            f"T_events={t_events} disagrees with T_factors={t_factors}",
+        )
+
+    for f in FACTOR_ORDER:
+        fv = float(raw[f.value])
+        if abs(by_factor[f.value] - fv) > REPORT_AGREEMENT_TOL:
+            return (
+                "contradicted",
+                f"factor {f.value}: assignment sum={by_factor[f.value]} "
+                f"disagrees with raw={fv}",
+            )
 
     if not _is_real_number(mfav.conservation_error):
         return "unavailable", "conservation_error missing or non-numeric"
@@ -586,6 +650,16 @@ def _validate_mfav_factor_profile(mfav: MFAVResult) -> tuple[Optional[str], Opti
     if cerr < -ALLOCATION_NONNEG_TOL:
         return "contradicted", f"conservation_error negative: {cerr}"
 
+    # Reconstructed MFAV conservation: |T_factors − T_events|
+    # (equals |factor_total − incoming_total| when each RPA node becomes one assignment).
+    eps_mfav = abs(t_factors - t_events)
+    if abs(cerr - eps_mfav) > REPORT_AGREEMENT_TOL:
+        return (
+            "contradicted",
+            f"reported conservation_error={cerr} disagrees with "
+            f"recomputed |T_factors-T_events|={eps_mfav}",
+        )
+
     norm = mfav.normalized_factor_vector
     if norm is None:
         return "unavailable", "normalized_factor_vector missing"
@@ -594,7 +668,11 @@ def _validate_mfav_factor_profile(mfav: MFAVResult) -> tuple[Optional[str], Opti
     if nerr:
         return "contradicted", nerr
 
-    # For a COMPLETE verified claim, conservation_error must be within research tol
+    if mfav.status == MFAVStatus.COMPLETE and eps_mfav > CONSERVATION_ABS_TOL:
+        return (
+            "contradicted",
+            f"ε_MFAV={eps_mfav} exceeds tol={CONSERVATION_ABS_TOL} for COMPLETE MFAV",
+        )
     if mfav.status == MFAVStatus.COMPLETE and cerr > CONSERVATION_ABS_TOL:
         return (
             "contradicted",
@@ -606,22 +684,25 @@ def _validate_mfav_factor_profile(mfav: MFAVResult) -> tuple[Optional[str], Opti
 
 def evaluate_factor_profile(mfav: Optional[MFAVResult]) -> DimensionResult:
     """
-    Factor-profile validation (rule assurance.factor_profile.v1_1).
+    Factor-profile validation (rule assurance.factor_profile.v1_2).
 
     Does not trust MFAVStatus alone. Does not zero-fill missing factors.
+    Independently checks event_assignments ↔ raw factors ↔ conservation_error.
     """
     limitations = [
         "Factor allocation is descriptive structural distribution, not a trust score.",
         "Factor concentration/entropy are not computed as assurance metrics.",
         "Missing factors are not silently inserted as zeros during validation.",
+        "ε_MFAV = |T_factors − T_events| from event_assignments and raw factor map.",
         f"Normalized sum tol={NORMALIZED_SUM_TOL}; agreement tol={REPORT_AGREEMENT_TOL}.",
     ]
+    rule_id = "assurance.factor_profile.v1_2"
     if mfav is None:
         return DimensionResult(
             dimension_id="factor_profile",
             status=AssuranceStatus.UNAVAILABLE,
             value=None,
-            rule_id="assurance.factor_profile.v1_1",
+            rule_id=rule_id,
             explanation="No MFAVResult provided.",
             limitations=limitations,
         )
@@ -634,6 +715,9 @@ def evaluate_factor_profile(mfav: Optional[MFAVResult]) -> DimensionResult:
         "conservation_error": mfav.conservation_error,
         "mfav_status": mfav.status.value,
         "complete": mfav.complete,
+        "n_event_assignments": (
+            len(mfav.event_assignments) if isinstance(mfav.event_assignments, list) else None
+        ),
     }
     evidence = [mfav.outcome_id, mfav.projection_kind, mfav.mfav_algorithm_version]
 
@@ -643,7 +727,7 @@ def evaluate_factor_profile(mfav: Optional[MFAVResult]) -> DimensionResult:
             status=AssuranceStatus.UNAVAILABLE,
             value=value,
             evidence_refs=evidence,
-            rule_id="assurance.factor_profile.v1_1",
+            rule_id=rule_id,
             explanation=f"MFAV status {mfav.status.value}; factor vector not defined.",
             limitations=limitations,
             warnings=list(mfav.classification_warnings)[:5],
@@ -656,7 +740,7 @@ def evaluate_factor_profile(mfav: Optional[MFAVResult]) -> DimensionResult:
             status=AssuranceStatus.UNAVAILABLE,
             value=value,
             evidence_refs=evidence,
-            rule_id="assurance.factor_profile.v1_1",
+            rule_id=rule_id,
             explanation=reason or "Required MFAV factor evidence unavailable.",
             limitations=limitations,
             warnings=list(mfav.classification_warnings)[:5],
@@ -667,7 +751,7 @@ def evaluate_factor_profile(mfav: Optional[MFAVResult]) -> DimensionResult:
             status=AssuranceStatus.CONTRADICTED,
             value=value,
             evidence_refs=evidence,
-            rule_id="assurance.factor_profile.v1_1",
+            rule_id=rule_id,
             explanation=reason or "MFAV factor profile evidence contradicted.",
             limitations=limitations,
             warnings=list(mfav.classification_warnings)[:5],
@@ -679,7 +763,7 @@ def evaluate_factor_profile(mfav: Optional[MFAVResult]) -> DimensionResult:
             status=AssuranceStatus.INCOMPLETE,
             value=value,
             evidence_refs=evidence,
-            rule_id="assurance.factor_profile.v1_1",
+            rule_id=rule_id,
             explanation=f"MFAV status {mfav.status.value}; profile incomplete or overridden.",
             limitations=limitations,
             warnings=list(mfav.classification_warnings)[:5],
@@ -691,9 +775,11 @@ def evaluate_factor_profile(mfav: Optional[MFAVResult]) -> DimensionResult:
             status=AssuranceStatus.VERIFIED,
             value=value,
             evidence_refs=evidence,
-            rule_id="assurance.factor_profile.v1_1",
-            explanation="MFAV factor profile validated: taxonomy support, finite non-negative "
-            "allocations, normalized sum≈1, totals consistent.",
+            rule_id=rule_id,
+            explanation=(
+                "MFAV factor profile validated: event assignments, per-factor aggregation, "
+                "raw totals, normalized vector, and conservation_error are consistent."
+            ),
             limitations=limitations,
             warnings=list(mfav.classification_warnings)[:5],
         )
@@ -703,7 +789,7 @@ def evaluate_factor_profile(mfav: Optional[MFAVResult]) -> DimensionResult:
         status=AssuranceStatus.UNAVAILABLE,
         value=value,
         evidence_refs=evidence,
-        rule_id="assurance.factor_profile.v1_1",
+        rule_id=rule_id,
         explanation=f"MFAV status {mfav.status.value}; cannot verify factor profile.",
         limitations=limitations,
         warnings=list(mfav.classification_warnings)[:5],
