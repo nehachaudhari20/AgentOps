@@ -1,0 +1,80 @@
+{
+  "events": [
+    {
+      "agent_id": "agent_A",
+      "category": "reasoning",
+      "dependency_event_ids": [],
+      "event_id": "eA",
+      "event_type": "reasoning",
+      "input_artifact_ids": [],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "a1"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "multi_stage_artifact_chain",
+      "ts_end": "2020-01-01T00:00:01+00:00",
+      "ts_start": "2020-01-01T00:00:00+00:00"
+    },
+    {
+      "agent_id": "agent_B",
+      "category": "reasoning",
+      "dependency_event_ids": [],
+      "event_id": "eB",
+      "event_type": "reasoning",
+      "input_artifact_ids": [
+        "a1"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "a2"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "multi_stage_artifact_chain",
+      "ts_end": "2020-01-01T00:00:03+00:00",
+      "ts_start": "2020-01-01T00:00:02+00:00"
+    },
+    {
+      "agent_id": "agent_C",
+      "category": "reasoning",
+      "dependency_event_ids": [],
+      "event_id": "eC",
+      "event_type": "reasoning",
+      "input_artifact_ids": [
+        "a2"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "a3"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "multi_stage_artifact_chain",
+      "ts_end": "2020-01-01T00:00:05+00:00",
+      "ts_start": "2020-01-01T00:00:04+00:00"
+    },
+    {
+      "agent_id": "agent_D",
+      "category": "decision",
+      "dependency_event_ids": [],
+      "event_id": "eD",
+      "event_type": "action",
+      "input_artifact_ids": [
+        "a3"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "multi_stage_artifact_chain",
+      "ts_end": "2020-01-01T00:00:07+00:00",
+      "ts_start": "2020-01-01T00:00:06+00:00"
+    }
+  ]
+}

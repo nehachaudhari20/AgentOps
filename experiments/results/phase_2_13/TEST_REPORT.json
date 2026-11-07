@@ -1,0 +1,26 @@
+{
+  "phase": "2.13",
+  "pytest": {
+    "command": "python -m pytest tests -q",
+    "collected": 488,
+    "exit_code": 0,
+    "result": "all_passed"
+  },
+  "validators": {
+    "validate_phase_2_13": 0,
+    "validate_benchmark_pilot": 0,
+    "validate_phase25_fault_matrix": 0,
+    "validate_plhc": 0,
+    "evaluate_assurance_profiles": 0,
+    "validate_experimental_dataset": 0,
+    "check_repeatability": 0
+  },
+  "evaluation": {
+    "heldout_rq_summary": "experiments/results/phase_2_13/heldout_test_rq_summary.json",
+    "intervention_attribution": "experiments/results/phase_2_13/intervention_attribution_heldout.json",
+    "comparison_source": "experiments/results/phase_2_10 (skip-rerun)",
+    "paired_power_primary": 0.3816,
+    "suggested_n_pairs_for_80": 176
+  },
+  "note": "Do not fabricate counts; these reflect commands actually executed in Phase 2.13."
+}

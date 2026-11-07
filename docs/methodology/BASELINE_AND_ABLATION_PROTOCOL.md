@@ -2,8 +2,9 @@
 
 **Status:** Binding comparison protocol. Locked before held-out evaluation.  
 **Dataset:** Phase 2.9 `data/benchmarks/experimental_2_9/` (generator `2.5.1`).  
-**Ground truth:** evaluation-only; independent `equal_root_ancestor_mass.v1` agent allocations.  
-**Held-out rule:** No tuning or definition changes against `heldout_test` after lock.
+**Ground truth:** evaluation-only. `equal_root_ancestor_mass.v1` is **structurally aligned** with RPA α=0 (disclose; do not treat MAE≈0 as independent accuracy). Secondary: `intervention_participation_mass.v1` when interventions exist.  
+**Held-out rule:** No tuning or definition changes against `heldout_test` after lock.  
+**Disclosure:** B2 is an alias of RPA-P1; B3 Markov is not independently implemented.
 
 ## 1. Input contract (all online methods)
 

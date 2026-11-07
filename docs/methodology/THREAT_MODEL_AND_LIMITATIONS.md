@@ -36,5 +36,10 @@ A **local-only** hash chain does **not** imply:
 
 - Synthetic generator evidence only (experimental corpus `2.5.1`; historical pilot `2.4.0`).
 - Trace is the independent unit; nested events are not N.
-- Equal-root attribution reference is structurally aligned with ConservedRPA α=0 → weak RQ2/RQ3 discrimination.
+- Equal-root attribution reference is structurally aligned with RPA α=0 → weak RQ2/RQ3 discrimination; intervention reference undefined on clean traces.
+- RQ1 measures reconstruction fidelity vs simulator declarations, not independent real-world lineage recovery.
+- RQ4 is diagnostic (completeness + observability), not comprehensive fault detection.
+- RQ5 is tamper-evidence vs retained checkpoint, not immutability.
+- Phase 2.9 corpus often has DEPENDS_ON covering artifact paths → empty bridge subgroup; see `experimental_2_13_bridges`.
 - Markov baseline not independently implemented (equivalence to RPA α=0 documented).
+- Paired power supersedes Phase 2.9 independent two-proportion planning figures.

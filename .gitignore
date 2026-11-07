@@ -28,9 +28,15 @@ htmlcov/
 .DS_Store
 Thumbs.db
 
-# Local experiment scratch (keep tracked results intentional)
+# Local experiment scratch — preserve versioned Phase 2.13 compact evidence
 experiments/results/*
 !experiments/results/.gitkeep
+!experiments/results/phase_2_13/
+!experiments/results/phase_2_13/**
+experiments/results/phase_2_13/comparisons/
+experiments/results/phase_2_13/comparisons/**
+experiments/results/repro_scratch/
+experiments/results/repro_scratch/**
 
 # Temporary logs
 *.log

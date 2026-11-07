@@ -172,7 +172,12 @@ def paired_mean_diff_ci(
 
 
 def cliffs_delta(a: Sequence[float], b: Sequence[float]) -> float:
-    """Effect size Cliff's δ for paired or unpaired samples of equal interest."""
+    """
+    Unpaired Cliff's δ (dominance over all pairs of observations).
+
+    Do NOT use as the sole effect size for matched-pair contrasts — prefer
+    paired_cliffs_delta / paired_standardized_mean_diff.
+    """
     xs = [float(v) for v in a if v == v]
     ys = [float(v) for v in b if v == v]
     if not xs or not ys:
@@ -180,6 +185,49 @@ def cliffs_delta(a: Sequence[float], b: Sequence[float]) -> float:
     gt = sum(1 for x in xs for y in ys if x > y)
     lt = sum(1 for x in xs for y in ys if x < y)
     return (gt - lt) / float(len(xs) * len(ys))
+
+
+def paired_cliffs_delta(a: Sequence[float], b: Sequence[float]) -> float:
+    """Paired Cliff's δ: (n_pos - n_neg) / n over matched differences a_i - b_i."""
+    diffs = [float(x) - float(y) for x, y in zip(a, b) if x == x and y == y]
+    if not diffs:
+        return float("nan")
+    pos = sum(1 for d in diffs if d > 0)
+    neg = sum(1 for d in diffs if d < 0)
+    return (pos - neg) / float(len(diffs))
+
+
+def paired_standardized_mean_diff(
+    a: Sequence[float], b: Sequence[float]
+) -> dict[str, float]:
+    """
+    Paired Cohen-style d: mean(diff) / sd(diff). Empty/constant → NaN.
+    Also returns mean_diff and n.
+    """
+    diffs = [float(x) - float(y) for x, y in zip(a, b) if x == x and y == y]
+    n = len(diffs)
+    if n == 0:
+        return {"d": float("nan"), "mean_diff": float("nan"), "sd_diff": float("nan"), "n": 0.0}
+    mean = sum(diffs) / n
+    if n == 1:
+        return {"d": float("nan"), "mean_diff": mean, "sd_diff": float("nan"), "n": 1.0}
+    var = sum((d - mean) ** 2 for d in diffs) / (n - 1)
+    sd = math.sqrt(var)
+    d = mean / sd if sd > 0 else float("nan")
+    return {"d": d, "mean_diff": mean, "sd_diff": sd, "n": float(n)}
+
+
+def validate_finite(values: Iterable[float], *, name: str = "values") -> list[float]:
+    """Return finite floats; raise ValueError if non-finite present among non-NaN."""
+    out: list[float] = []
+    for v in values:
+        fv = float(v)
+        if fv != fv:
+            continue  # drop NaN
+        if not math.isfinite(fv):
+            raise ValueError(f"{name} contains non-finite value: {fv}")
+        out.append(fv)
+    return out
 
 
 def holm_correct(pvalues: Sequence[tuple[str, float]]) -> dict[str, float]:
@@ -194,3 +242,21 @@ def holm_correct(pvalues: Sequence[tuple[str, float]]) -> dict[str, float]:
         adj[k] = val
         prev = val
     return adj
+
+
+def confusion_rates(tp: int, fp: int, tn: int, fn: int) -> dict[str, float]:
+    """Precision/recall/specificity/FPR with explicit empty denominators → NaN."""
+    def _div(num: float, den: float) -> float:
+        return num / den if den else float("nan")
+
+    return {
+        "tp": float(tp),
+        "fp": float(fp),
+        "tn": float(tn),
+        "fn": float(fn),
+        "precision": _div(tp, tp + fp),
+        "recall": _div(tp, tp + fn),
+        "specificity": _div(tn, tn + fp),
+        "false_positive_rate": _div(fp, fp + tn),
+        "n": float(tp + fp + tn + fn),
+    }

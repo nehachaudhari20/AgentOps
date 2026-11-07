@@ -1,0 +1,42 @@
+{
+  "events": [
+    {
+      "agent_id": "a1",
+      "category": "reasoning",
+      "dependency_event_ids": [],
+      "event_id": "e1",
+      "event_type": "reasoning",
+      "input_artifact_ids": [],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "ax"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "explicit_depends_negative",
+      "ts_end": "2020-01-01T00:00:01+00:00",
+      "ts_start": "2020-01-01T00:00:00+00:00"
+    },
+    {
+      "agent_id": "a2",
+      "category": "decision",
+      "dependency_event_ids": [
+        "e1"
+      ],
+      "event_id": "e2",
+      "event_type": "action",
+      "input_artifact_ids": [
+        "ax"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "explicit_depends_negative",
+      "ts_end": "2020-01-01T00:00:03+00:00",
+      "ts_start": "2020-01-01T00:00:02+00:00"
+    }
+  ]
+}

@@ -247,10 +247,19 @@ def write_design_and_reports(root: Path = DEFAULT_ROOT) -> None:
         json.dumps(design_document_dict(), indent=2, sort_keys=True) + "\n",
         encoding="utf-8",
     )
-    (reports / "sample_size_power.json").write_text(
-        json.dumps(power_report(), indent=2, sort_keys=True) + "\n",
+    # Phase 2.13: write corrected paired-power report; do not silently overwrite
+    # a frozen historical independent-z report if already present — write sibling.
+    paired = power_report()
+    (reports / "sample_size_power_2_13.json").write_text(
+        json.dumps(paired, indent=2, sort_keys=True) + "\n",
         encoding="utf-8",
     )
+    legacy = reports / "sample_size_power.json"
+    if not legacy.is_file():
+        legacy.write_text(
+            json.dumps(paired, indent=2, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
     (reports / "fault_observability_matrix.json").write_text(
         json.dumps(observability_matrix(), indent=2, sort_keys=True) + "\n",
         encoding="utf-8",

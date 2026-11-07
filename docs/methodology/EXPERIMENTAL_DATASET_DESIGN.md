@@ -128,10 +128,15 @@ Stored only under `ground_truth/` (never in `events.json` / `artifacts.json`).
 | Interventions | Planted fault records + expected observables | Which agent is “at fault” morally |
 | Structural | Agents, tools, models, outcomes, topology | |
 | Quality | Intentional incompleteness, missing refs, corrupt artifacts | |
-| **Attribution reference** | Equal mass over **root ancestors** of each outcome in the post-generation event DAG (simulator lineage), keyed by `event_id` / `agent_id` | Causal responsibility; **not** copied from ConservedRPA |
+| **Attribution reference** | Equal mass over **root ancestors** of each outcome in the post-generation event DAG (simulator lineage), keyed by `event_id` / `agent_id` | Causal responsibility; **structurally aligned with RPA α=0** — not independent accuracy proof |
+| **Intervention attribution (2.13)** | Equal mass over agents on planted `InterventionRecord.affected_event_ids` (`intervention_participation_mass.v1`); undefined when absent | Causal/legal responsibility |
 
-Reference attribution method id: `equal_root_ancestor_mass.v1`.  
+Reference method ids: `equal_root_ancestor_mass.v1` (historical/aligned), `intervention_participation_mass.v1` (independent when defined).  
 Validators prove algorithm inputs lack prohibited answer keys and GT paths.
+
+### Phase 2.13 bridge corpus (separate)
+
+`data/benchmarks/experimental_2_13_bridges/` — versioned artifact-mediated scenarios where P1/P2 differ by construction. **Does not modify** the frozen Phase 2.9 corpus.
 
 ## 7. Fault observability (declaration classes)
 

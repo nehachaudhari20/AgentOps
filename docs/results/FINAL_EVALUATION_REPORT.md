@@ -1,20 +1,24 @@
-# Final Evaluation Report (Phase 2.11)
+# Final Evaluation Report (Phase 2.11 + 2.13 validity correction)
 
-Machine-readable sources: `experiments/results/final_evaluation/` and `experiments/results/phase_2_10/`.  
+Machine-readable sources: `experiments/results/final_evaluation/` (historical), `experiments/results/phase_2_10/`, and **`experiments/results/phase_2_13/`** (corrected protocols).  
 Confirmatory split: **`heldout_test`** (n_examined=798 traces; n_failed=0).  
 Experimental unit: **trace**. Event totals are not N.
 
 Dataset fingerprint (held-out corpus): see `heldout_test_rq_summary.json` → `dataset_fingerprint` (matches Phase 2.9 `fingerprint_manifest.json`).
 
+**Phase 2.13 protocol changes (do not rewrite historical JSON):** paired McNemar power; stratified RQ4/RQ5 sampling; observability-aware Assurance; expanded PLHC attacks with CIs; intervention attribution reference; versioned bridge corpus; reproduction cannot fake success on skipped mandatory stages.
+
 ---
 
-## RQ1 — Provenance reconstruction fidelity
+## RQ1 — MLPG reconstruction fidelity (simulator-declared lineage)
 
-**Question.** Can MLPG represent independently recorded observable lineage?
+**Question.** Fidelity of MLPG reconstruction against **simulator-declared** lineage.
 
-**Method.** Edge precision/recall/F1 of MLPG relationships vs GT `expected_relationships` (DEPENDS_ON, PRODUCES, CONSUMES).
+**Not claimed.** Independent real-world lineage recovery.
 
-**Data.** Held-out 798 traces.
+**Method.** Edge precision/recall/F1 of MLPG relationships vs GT `expected_relationships` (DEPENDS_ON, PRODUCES, CONSUMES). Negative relationship diagnostics in Phase 2.13 evaluator.
+
+**Data.** Held-out 798 traces (historical aggregate; Phase 2.13 uses stratified sampling when limited).
 
 | Relation | Mean F1 | 95% CI (bootstrap) | n |
 |----------|--------:|--------------------|--:|
@@ -72,20 +76,23 @@ P2 did not reduce MAE vs P1. In this generator, artifact bridges are often alrea
 
 ## RQ4 — Assurance Profile diagnostics
 
-**Method.** `trace_completeness` incomplete/contradicted vs GT `intentionally_incomplete` (sample n=100 held-out).
+**Method (historical first-N sample).** `trace_completeness` incomplete/contradicted vs GT `intentionally_incomplete` (sample n=100 held-out).
 
 | TP | FP | TN | FN | Detection rate | False-alarm rate |
 |---:|---:|---:|---:|---------------:|-----------------:|
 | 8 | 0 | 91 | 1 | 0.889 | 0.000 |
 
-**Verdict: Partially supported** for incompleteness signaling on this sample.  
-**Caveat:** Faults marked `not_reliably_detectable` (e.g., conflicting outputs) are **not** scored as Assurance failures. Assurance is not a fraud/trust probability.
+**Phase 2.13:** stratified sampling; separate completeness endpoint; observability-aware eligibility (`directly_observable` / `indirect_inconsistency` / `requires_ground_truth` / `not_reliably_detectable`); confusion metrics + Wilson CIs. See `phase_2_13` RQ4 outputs.
+
+**Verdict: Partially supported** for incompleteness signaling.  
+**Not claimed:** comprehensive fault detection, fraud detection, or trustworthiness scoring.  
+**Caveat:** `not_reliably_detectable` faults are excluded from ordinary Assurance FN denominators.
 
 ---
 
 ## RQ5 — PLHC integrity verification
 
-**Method.** Controlled attacks vs retained genesis checkpoint (n=50 held-out).
+**Method (historical first-N).** Controlled attacks vs retained genesis checkpoint (n=50 held-out).
 
 | Check | Rate |
 |-------|-----:|
@@ -96,7 +103,10 @@ P2 did not reduce MAE vs P1. In this generator, artifact bridges are often alrea
 | leaf_removal / equivalent mutate detected | 1.00 |
 | checkpoint_alteration detected | 1.00 |
 
-**Verdict: Supported** under the declared threat model (**tamper-evident vs retained checkpoint**; not immutability / signatures / external anchoring).
+**Phase 2.13:** stratified sampling; expanded attack classes (artifact deletion, relationship modification, reordering via timestamps, identity substitution, checkpoint chain); per-attack Wilson 95% CIs; sampling manifest.
+
+**Verdict: Supported** under the declared threat model (**tamper-evident vs retained checkpoint**).  
+**Not claimed:** immutability, external anchoring, or dual-rewrite resistance.
 
 ---
 

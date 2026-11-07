@@ -1,0 +1,83 @@
+{
+  "events": [
+    {
+      "agent_id": "producer",
+      "category": "reasoning",
+      "dependency_event_ids": [],
+      "event_id": "eProd",
+      "event_type": "reasoning",
+      "input_artifact_ids": [],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "shared"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "shared_fanout_fanin",
+      "ts_end": "2020-01-01T00:00:01+00:00",
+      "ts_start": "2020-01-01T00:00:00+00:00"
+    },
+    {
+      "agent_id": "consumer_1",
+      "category": "reasoning",
+      "dependency_event_ids": [],
+      "event_id": "eC1",
+      "event_type": "reasoning",
+      "input_artifact_ids": [
+        "shared"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "m1"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "shared_fanout_fanin",
+      "ts_end": "2020-01-01T00:00:03+00:00",
+      "ts_start": "2020-01-01T00:00:02+00:00"
+    },
+    {
+      "agent_id": "consumer_2",
+      "category": "reasoning",
+      "dependency_event_ids": [],
+      "event_id": "eC2",
+      "event_type": "reasoning",
+      "input_artifact_ids": [
+        "shared"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "m2"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "shared_fanout_fanin",
+      "ts_end": "2020-01-01T00:00:05+00:00",
+      "ts_start": "2020-01-01T00:00:04+00:00"
+    },
+    {
+      "agent_id": "merger",
+      "category": "decision",
+      "dependency_event_ids": [],
+      "event_id": "eMerge",
+      "event_type": "action",
+      "input_artifact_ids": [
+        "m1",
+        "m2"
+      ],
+      "invokes_event_ids": [],
+      "observed_after_event_ids": [],
+      "output_artifact_ids": [
+        "out"
+      ],
+      "schema_version": "2.1.0",
+      "status": "success",
+      "trace_id": "shared_fanout_fanin",
+      "ts_end": "2020-01-01T00:00:07+00:00",
+      "ts_start": "2020-01-01T00:00:06+00:00"
+    }
+  ]
+}

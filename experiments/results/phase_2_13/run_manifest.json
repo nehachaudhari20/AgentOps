@@ -1,0 +1,45 @@
+{
+  "algorithm_versions": {
+    "assurance": "2.7.1",
+    "pipeline_package": "2.12.0",
+    "rpa": "2.2.0"
+  },
+  "branch": "master",
+  "commands": [
+    "python experiments/scripts/run_final_evaluation.py --skip-rerun-comparison --out experiments/results/phase_2_13 --splits heldout_test --rq4-limit 120 --rq5-limit 80"
+  ],
+  "commit_sha": "242d628b900ebcc599d07a7decbdb4de5eaec211",
+  "config_fingerprint": null,
+  "content_hash_sha256": "f96d4013e23ecd44cf8856127e06865f6e479e9623ecd97b6d1919b3ff2c3cfe",
+  "dataset_fingerprint": "ac2fd8e9a0124823c3e088396c02ee199bb2e3bec7c5039bc66c3e9e11d2729c",
+  "dependency_versions": {
+    "agenttrust": "2.12.0",
+    "networkx": "3.5",
+    "numpy": "2.2.6",
+    "pytest": "8.3.5"
+  },
+  "disclaimer": "started_at/ended_at/host excluded from content_hash_sha256 (nondeterministic execution metadata).",
+  "ended_at": "2026-11-07T13:14:45.064975+00:00",
+  "generator_version": "2.5.1",
+  "host": "DESKTOP-ULSI5F0",
+  "notes": [
+    "comparisons reused from phase_2_10 (skip-rerun); RQ1 full heldout; RQ4 n=120 stratified; RQ5 n=80 stratified"
+  ],
+  "output_paths": [
+    "experiments/results/phase_2_13/heldout_test_rq_summary.json",
+    "experiments/results/phase_2_13/final_rq_master.json"
+  ],
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python_version": "3.13.9",
+  "repository": "https://github.com/nehachaudhari20/AgentOps.git",
+  "run_id": "phase-2-13-eval",
+  "schema_version": "2.1.0",
+  "seeds": [
+    213101,
+    213401,
+    213501
+  ],
+  "stage": "phase_2_13_heldout_rq",
+  "started_at": "2026-11-07T13:14:45.064950+00:00",
+  "validation_status": "ok"
+}

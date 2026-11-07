@@ -1,0 +1,193 @@
+{
+  "all_expectations_met": true,
+  "corpus_version": "experimental_2_13_bridges.v1",
+  "n_negative": 3,
+  "n_positive_bridge": 3,
+  "n_scenarios": 6,
+  "note": "Phase 2.9 frozen corpus unchanged. This block isolates artifact-mediated lineage where P1/P2 are distinguishable by construction.",
+  "scenarios": [
+    {
+      "bridge_edge_list": [
+        {
+          "path": [
+            "eA",
+            "a1",
+            "eB"
+          ],
+          "source": "eA",
+          "target": "eB"
+        },
+        {
+          "path": [
+            "eB",
+            "a2",
+            "eC"
+          ],
+          "source": "eB",
+          "target": "eC"
+        },
+        {
+          "path": [
+            "eC",
+            "a3",
+            "eD"
+          ],
+          "source": "eC",
+          "target": "eD"
+        }
+      ],
+      "expect_bridge_edges": 3,
+      "expect_p1_p2_differ": true,
+      "incomplete": false,
+      "match_expectation": true,
+      "n_artifact_bridge_edges": 3,
+      "n_p1_edges": 0,
+      "n_p2_edges": 3,
+      "p1_p2_differ": true,
+      "scenario_id": "multi_stage_artifact_chain",
+      "tags": [
+        "chain",
+        "multi_stage"
+      ]
+    },
+    {
+      "bridge_edge_list": [
+        {
+          "path": [
+            "eC1",
+            "m1",
+            "eMerge"
+          ],
+          "source": "eC1",
+          "target": "eMerge"
+        },
+        {
+          "path": [
+            "eC2",
+            "m2",
+            "eMerge"
+          ],
+          "source": "eC2",
+          "target": "eMerge"
+        },
+        {
+          "path": [
+            "eProd",
+            "shared",
+            "eC1"
+          ],
+          "source": "eProd",
+          "target": "eC1"
+        },
+        {
+          "path": [
+            "eProd",
+            "shared",
+            "eC2"
+          ],
+          "source": "eProd",
+          "target": "eC2"
+        }
+      ],
+      "expect_bridge_edges": 4,
+      "expect_p1_p2_differ": true,
+      "incomplete": false,
+      "match_expectation": true,
+      "n_artifact_bridge_edges": 4,
+      "n_p1_edges": 0,
+      "n_p2_edges": 4,
+      "p1_p2_differ": true,
+      "scenario_id": "shared_fanout_fanin",
+      "tags": [
+        "shared",
+        "fanout",
+        "fanin",
+        "reuse"
+      ]
+    },
+    {
+      "bridge_edge_list": [
+        {
+          "path": [
+            "eCoord",
+            "brief",
+            "eDel"
+          ],
+          "source": "eCoord",
+          "target": "eDel"
+        },
+        {
+          "path": [
+            "eDel",
+            "result",
+            "eFinal"
+          ],
+          "source": "eDel",
+          "target": "eFinal"
+        }
+      ],
+      "expect_bridge_edges": 2,
+      "expect_p1_p2_differ": true,
+      "incomplete": false,
+      "match_expectation": true,
+      "n_artifact_bridge_edges": 2,
+      "n_p1_edges": 0,
+      "n_p2_edges": 2,
+      "p1_p2_differ": true,
+      "scenario_id": "delegated_artifact_exchange",
+      "tags": [
+        "delegated",
+        "exchange"
+      ]
+    },
+    {
+      "bridge_edge_list": [],
+      "expect_bridge_edges": 0,
+      "expect_p1_p2_differ": false,
+      "incomplete": false,
+      "match_expectation": true,
+      "n_artifact_bridge_edges": 0,
+      "n_p1_edges": 1,
+      "n_p2_edges": 1,
+      "p1_p2_differ": false,
+      "scenario_id": "explicit_depends_negative",
+      "tags": [
+        "negative",
+        "dedupe"
+      ]
+    },
+    {
+      "bridge_edge_list": [],
+      "expect_bridge_edges": 0,
+      "expect_p1_p2_differ": false,
+      "incomplete": true,
+      "match_expectation": true,
+      "n_artifact_bridge_edges": 0,
+      "n_p1_edges": 0,
+      "n_p2_edges": 0,
+      "p1_p2_differ": false,
+      "scenario_id": "missing_artifact_ref",
+      "tags": [
+        "negative",
+        "missing"
+      ]
+    },
+    {
+      "bridge_edge_list": [],
+      "expect_bridge_edges": 0,
+      "expect_p1_p2_differ": false,
+      "incomplete": true,
+      "match_expectation": true,
+      "n_artifact_bridge_edges": 0,
+      "n_p1_edges": 0,
+      "n_p2_edges": 0,
+      "p1_p2_differ": false,
+      "scenario_id": "corrupted_artifact_evidence",
+      "tags": [
+        "negative",
+        "corrupted"
+      ]
+    }
+  ],
+  "seed": 213100
+}

@@ -116,11 +116,32 @@ def test_all_fault_families_in_observability():
 
 
 def test_power_simulation_deterministic():
-    a = simulate_power(n_pairs=72, p0=0.7, delta=0.2, n_sims=500, seed=1)
-    b = simulate_power(n_pairs=72, p0=0.7, delta=0.2, n_sims=500, seed=1)
+    # Phase 2.13: paired McNemar simulation (independent p0/delta API removed)
+    import pytest
+    from agenttrust.benchmark.dataset.power import simulate_paired_power
+
+    with pytest.raises(ValueError):
+        simulate_power(n_pairs=72, p0=0.7, delta=0.2, n_sims=500, seed=1)
+    a = simulate_paired_power(
+        n_pairs=72,
+        p_both=0.35,
+        p_fault_only=0.21,
+        p_clean_only=0.09,
+        n_sims=500,
+        seed=1,
+    )
+    b = simulate_paired_power(
+        n_pairs=72,
+        p_both=0.35,
+        p_fault_only=0.21,
+        p_clean_only=0.09,
+        n_sims=500,
+        seed=1,
+    )
     assert a == b
     report = power_report(n_sims=200)
     assert report["heldout_incompleteness_pairs"] == 72
+    assert report["report_version"] == "2.13.0"
     assert "simulation_grid" in report
 
 

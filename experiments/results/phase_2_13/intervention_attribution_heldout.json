@@ -1,0 +1,1490 @@
+{
+  "disclaimer": "Intervention participation mass is planted-simulator semantics, not causal/legal responsibility. Attribution accuracy RQ remains limited if defined n is small.",
+  "inconclusive_if": "n_defined == 0 or reference structurally insufficient",
+  "methods": {
+    "B0_uniform_agent": {
+      "mae": {
+        "ci_high": 0.2314285714285714,
+        "ci_low": 0.1842857142857143,
+        "mean": 0.20714285714285713,
+        "n": 14.0
+      },
+      "n_scored": 14
+    },
+    "B1_last_touch": {
+      "mae": {
+        "ci_high": 0.7380952380952381,
+        "ci_low": 0.5595238095238095,
+        "mean": 0.6428571428571429,
+        "n": 14.0
+      },
+      "n_scored": 14
+    },
+    "rpa_p1": {
+      "mae": {
+        "ci_high": 0.5476190476190476,
+        "ci_low": 0.33333333333333337,
+        "mean": 0.4523809523809524,
+        "n": 14.0
+      },
+      "n_scored": 14
+    },
+    "rpa_p2": {
+      "mae": {
+        "ci_high": 0.5357142857142857,
+        "ci_low": 0.34523809523809523,
+        "mean": 0.4523809523809524,
+        "n": 14.0
+      },
+      "n_scored": 14
+    }
+  },
+  "n_defined": 14,
+  "n_failed": 0,
+  "n_undefined": 66,
+  "reference_method": "intervention_participation_mass.v1",
+  "sampling": {
+    "mode": "stratified_proportional",
+    "population_n": 798,
+    "population_trace_ids": [
+      "bench-compliance_review-delegated_multi_agent-S1-s30102-clean-cmp",
+      "bench-compliance_review-delegated_multi_agent-S1-s30274-clean-cmp",
+      "bench-compliance_review-delegated_multi_agent-S1-s30275-incorrect_tool_output-cmp",
+      "bench-compliance_review-delegated_multi_agent-S1-s30344-clean-cmp",
+      "bench-compliance_review-delegated_multi_agent-S1-s30345-tool_call_failure-cmp",
+      "bench-compliance_review-delegated_multi_agent-S1-s30414-clean-cmp",
+      "bench-compliance_review-delegated_multi_agent-S1-s30415-artifact_corruption-cmp",
+      "bench-compliance_review-delegated_multi_agent-S1-s30634-clean-cmp",
+      "bench-compliance_review-delegated_multi_agent-S1-s30635-conflicting_agent_outputs-cmp",
+      "bench-compliance_review-delegated_multi_agent-S1-s30704-clean-cmp",
+      "bench-compliance_review-delegated_multi_agent-S1-s30705-incomplete_trace-inc",
+      "bench-compliance_review-delegated_multi_agent-S1-s30774-clean-cmp",
+      "bench-compliance_review-delegated_multi_agent-S1-s30775-misleading_delayed_observation-cmp",
+      "bench-compliance_review-delegated_multi_agent-S2-s30107-clean-cmp",
+      "bench-compliance_review-delegated_multi_agent-S2-s30204-clean-cmp",
+      "bench-compliance_review-delegated_multi_agent-S2-s30205-missing_dependency-cmp",
+      "bench-compliance_review-delegated_multi_agent-S2-s30424-clean-cmp",
+      "bench-compliance_review-delegated_multi_agent-S2-s30425-artifact_corruption-cmp",
+      "bench-compliance_review-delegated_multi_agent-S2-s30494-clean-cmp",
+      "bench-compliance_review-delegated_multi_agent-S2-s30495-retry_storm-cmp",
+      "bench-compliance_review-delegated_multi_agent-S2-s30564-clean-cmp",
+      "bench-compliance_review-delegated_multi_agent-S2-s30565-delegation_failure-cmp",
+      "bench-compliance_review-delegated_multi_agent-S2-s30784-clean-cmp",
+      "bench-compliance_review-delegated_multi_agent-S2-s30785-misleading_delayed_observation-cmp",
+      "bench-compliance_review-delegated_multi_agent-S3-s30112-clean-cmp",
+      "bench-compliance_review-delegated_multi_agent-S4-s30117-clean-cmp",
+      "bench-compliance_review-delegated_multi_agent-S5-s30122-clean-cmp",
+      "bench-compliance_review-hierarchical-S1-s30027-clean-cmp",
+      "bench-compliance_review-hierarchical-S1-s30164-clean-cmp",
+      "bench-compliance_review-hierarchical-S1-s30165-missing_dependency-cmp",
+      "bench-compliance_review-hierarchical-S1-s30234-clean-cmp",
+      "bench-compliance_review-hierarchical-S1-s30235-incorrect_tool_output-cmp",
+      "bench-compliance_review-hierarchical-S1-s30454-clean-cmp",
+      "bench-compliance_review-hierarchical-S1-s30455-retry_storm-cmp",
+      "bench-compliance_review-hierarchical-S1-s30524-clean-cmp",
+      "bench-compliance_review-hierarchical-S1-s30525-delegation_failure-cmp",
+      "bench-compliance_review-hierarchical-S1-s30594-clean-cmp",
+      "bench-compliance_review-hierarchical-S1-s30595-conflicting_agent_outputs-cmp",
+      "bench-compliance_review-hierarchical-S2-s30032-clean-cmp",
+      "bench-compliance_review-hierarchical-S2-s30244-clean-cmp",
+      "bench-compliance_review-hierarchical-S2-s30245-incorrect_tool_output-cmp",
+      "bench-compliance_review-hierarchical-S2-s30314-clean-cmp",
+      "bench-compliance_review-hierarchical-S2-s30315-tool_call_failure-cmp",
+      "bench-compliance_review-hierarchical-S2-s30384-clean-cmp",
+      "bench-compliance_review-hierarchical-S2-s30385-artifact_corruption-cmp",
+      "bench-compliance_review-hierarchical-S2-s30604-clean-cmp",
+      "bench-compliance_review-hierarchical-S2-s30605-conflicting_agent_outputs-cmp",
+      "bench-compliance_review-hierarchical-S2-s30674-clean-cmp",
+      "bench-compliance_review-hierarchical-S2-s30675-incomplete_trace-inc",
+      "bench-compliance_review-hierarchical-S2-s30744-clean-cmp",
+      "bench-compliance_review-hierarchical-S2-s30745-misleading_delayed_observation-cmp",
+      "bench-compliance_review-hierarchical-S3-s30037-clean-cmp",
+      "bench-compliance_review-hierarchical-S4-s30042-clean-cmp",
+      "bench-compliance_review-hierarchical-S5-s30047-clean-cmp",
+      "bench-compliance_review-mixed_realistic-S1-s30127-clean-cmp",
+      "bench-compliance_review-mixed_realistic-S1-s30214-clean-cmp",
+      "bench-compliance_review-mixed_realistic-S1-s30215-missing_dependency-cmp",
+      "bench-compliance_review-mixed_realistic-S1-s30284-clean-cmp",
+      "bench-compliance_review-mixed_realistic-S1-s30285-incorrect_tool_output-cmp",
+      "bench-compliance_review-mixed_realistic-S1-s30354-clean-cmp",
+      "bench-compliance_review-mixed_realistic-S1-s30355-tool_call_failure-cmp",
+      "bench-compliance_review-mixed_realistic-S1-s30574-clean-cmp",
+      "bench-compliance_review-mixed_realistic-S1-s30575-delegation_failure-cmp",
+      "bench-compliance_review-mixed_realistic-S1-s30644-clean-cmp",
+      "bench-compliance_review-mixed_realistic-S1-s30645-conflicting_agent_outputs-cmp",
+      "bench-compliance_review-mixed_realistic-S1-s30714-clean-cmp",
+      "bench-compliance_review-mixed_realistic-S1-s30715-incomplete_trace-inc",
+      "bench-compliance_review-mixed_realistic-S2-s30132-clean-cmp",
+      "bench-compliance_review-mixed_realistic-S2-s30364-clean-cmp",
+      "bench-compliance_review-mixed_realistic-S2-s30365-tool_call_failure-cmp",
+      "bench-compliance_review-mixed_realistic-S2-s30434-clean-cmp",
+      "bench-compliance_review-mixed_realistic-S2-s30435-artifact_corruption-cmp",
+      "bench-compliance_review-mixed_realistic-S2-s30504-clean-cmp",
+      "bench-compliance_review-mixed_realistic-S2-s30505-retry_storm-cmp",
+      "bench-compliance_review-mixed_realistic-S2-s30724-clean-cmp",
+      "bench-compliance_review-mixed_realistic-S2-s30725-incomplete_trace-inc",
+      "bench-compliance_review-mixed_realistic-S2-s30794-clean-cmp",
+      "bench-compliance_review-mixed_realistic-S2-s30795-misleading_delayed_observation-cmp",
+      "bench-compliance_review-mixed_realistic-S3-s30137-clean-cmp",
+      "bench-compliance_review-mixed_realistic-S4-s30142-clean-cmp",
+      "bench-compliance_review-mixed_realistic-S5-s30147-clean-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S1-s30052-clean-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S1-s30174-clean-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S1-s30175-missing_dependency-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S1-s30394-clean-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S1-s30395-artifact_corruption-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S1-s30464-clean-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S1-s30465-retry_storm-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S1-s30534-clean-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S1-s30535-delegation_failure-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S1-s30754-clean-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S1-s30755-misleading_delayed_observation-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S2-s30057-clean-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S2-s30184-clean-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S2-s30185-missing_dependency-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S2-s30254-clean-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S2-s30255-incorrect_tool_output-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S2-s30324-clean-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S2-s30325-tool_call_failure-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S2-s30544-clean-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S2-s30545-delegation_failure-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S2-s30614-clean-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S2-s30615-conflicting_agent_outputs-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S2-s30684-clean-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S2-s30685-incomplete_trace-inc",
+      "bench-compliance_review-parallel_fanout_fanin-S3-s30062-clean-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S4-s30067-clean-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S5-s30072-clean-cmp",
+      "bench-compliance_review-sequential-S1-s30002-clean-cmp",
+      "bench-compliance_review-sequential-S1-s30154-clean-cmp",
+      "bench-compliance_review-sequential-S1-s30155-missing_dependency-cmp",
+      "bench-compliance_review-sequential-S1-s30224-clean-cmp",
+      "bench-compliance_review-sequential-S1-s30225-incorrect_tool_output-cmp",
+      "bench-compliance_review-sequential-S1-s30294-clean-cmp",
+      "bench-compliance_review-sequential-S1-s30295-tool_call_failure-cmp",
+      "bench-compliance_review-sequential-S1-s30514-clean-cmp",
+      "bench-compliance_review-sequential-S1-s30515-delegation_failure-cmp",
+      "bench-compliance_review-sequential-S1-s30584-clean-cmp",
+      "bench-compliance_review-sequential-S1-s30585-conflicting_agent_outputs-cmp",
+      "bench-compliance_review-sequential-S1-s30654-clean-cmp",
+      "bench-compliance_review-sequential-S1-s30655-incomplete_trace-inc",
+      "bench-compliance_review-sequential-S2-s30007-clean-cmp",
+      "bench-compliance_review-sequential-S2-s30304-clean-cmp",
+      "bench-compliance_review-sequential-S2-s30305-tool_call_failure-cmp",
+      "bench-compliance_review-sequential-S2-s30374-clean-cmp",
+      "bench-compliance_review-sequential-S2-s30375-artifact_corruption-cmp",
+      "bench-compliance_review-sequential-S2-s30444-clean-cmp",
+      "bench-compliance_review-sequential-S2-s30445-retry_storm-cmp",
+      "bench-compliance_review-sequential-S2-s30664-clean-cmp",
+      "bench-compliance_review-sequential-S2-s30665-incomplete_trace-inc",
+      "bench-compliance_review-sequential-S2-s30734-clean-cmp",
+      "bench-compliance_review-sequential-S2-s30735-misleading_delayed_observation-cmp",
+      "bench-compliance_review-sequential-S3-s30012-clean-cmp",
+      "bench-compliance_review-sequential-S4-s30017-clean-cmp",
+      "bench-compliance_review-sequential-S5-s30022-clean-cmp",
+      "bench-compliance_review-shared_artifact-S1-s30077-clean-cmp",
+      "bench-compliance_review-shared_artifact-S1-s30334-clean-cmp",
+      "bench-compliance_review-shared_artifact-S1-s30335-tool_call_failure-cmp",
+      "bench-compliance_review-shared_artifact-S1-s30404-clean-cmp",
+      "bench-compliance_review-shared_artifact-S1-s30405-artifact_corruption-cmp",
+      "bench-compliance_review-shared_artifact-S1-s30474-clean-cmp",
+      "bench-compliance_review-shared_artifact-S1-s30475-retry_storm-cmp",
+      "bench-compliance_review-shared_artifact-S1-s30694-clean-cmp",
+      "bench-compliance_review-shared_artifact-S1-s30695-incomplete_trace-inc",
+      "bench-compliance_review-shared_artifact-S1-s30764-clean-cmp",
+      "bench-compliance_review-shared_artifact-S1-s30765-misleading_delayed_observation-cmp",
+      "bench-compliance_review-shared_artifact-S2-s30082-clean-cmp",
+      "bench-compliance_review-shared_artifact-S2-s30194-clean-cmp",
+      "bench-compliance_review-shared_artifact-S2-s30195-missing_dependency-cmp",
+      "bench-compliance_review-shared_artifact-S2-s30264-clean-cmp",
+      "bench-compliance_review-shared_artifact-S2-s30265-incorrect_tool_output-cmp",
+      "bench-compliance_review-shared_artifact-S2-s30484-clean-cmp",
+      "bench-compliance_review-shared_artifact-S2-s30485-retry_storm-cmp",
+      "bench-compliance_review-shared_artifact-S2-s30554-clean-cmp",
+      "bench-compliance_review-shared_artifact-S2-s30555-delegation_failure-cmp",
+      "bench-compliance_review-shared_artifact-S2-s30624-clean-cmp",
+      "bench-compliance_review-shared_artifact-S2-s30625-conflicting_agent_outputs-cmp",
+      "bench-compliance_review-shared_artifact-S3-s30087-clean-cmp",
+      "bench-compliance_review-shared_artifact-S4-s30092-clean-cmp",
+      "bench-compliance_review-shared_artifact-S5-s30097-clean-cmp",
+      "bench-financial_loan-delegated_multi_agent-S1-s30100-clean-cmp",
+      "bench-financial_loan-delegated_multi_agent-S1-s30200-clean-cmp",
+      "bench-financial_loan-delegated_multi_agent-S1-s30201-missing_dependency-cmp",
+      "bench-financial_loan-delegated_multi_agent-S1-s30270-clean-cmp",
+      "bench-financial_loan-delegated_multi_agent-S1-s30271-incorrect_tool_output-cmp",
+      "bench-financial_loan-delegated_multi_agent-S1-s30490-clean-cmp",
+      "bench-financial_loan-delegated_multi_agent-S1-s30491-retry_storm-cmp",
+      "bench-financial_loan-delegated_multi_agent-S1-s30560-clean-cmp",
+      "bench-financial_loan-delegated_multi_agent-S1-s30561-delegation_failure-cmp",
+      "bench-financial_loan-delegated_multi_agent-S1-s30630-clean-cmp",
+      "bench-financial_loan-delegated_multi_agent-S1-s30631-conflicting_agent_outputs-cmp",
+      "bench-financial_loan-delegated_multi_agent-S2-s30105-clean-cmp",
+      "bench-financial_loan-delegated_multi_agent-S2-s30280-clean-cmp",
+      "bench-financial_loan-delegated_multi_agent-S2-s30281-incorrect_tool_output-cmp",
+      "bench-financial_loan-delegated_multi_agent-S2-s30350-clean-cmp",
+      "bench-financial_loan-delegated_multi_agent-S2-s30351-tool_call_failure-cmp",
+      "bench-financial_loan-delegated_multi_agent-S2-s30420-clean-cmp",
+      "bench-financial_loan-delegated_multi_agent-S2-s30421-artifact_corruption-cmp",
+      "bench-financial_loan-delegated_multi_agent-S2-s30640-clean-cmp",
+      "bench-financial_loan-delegated_multi_agent-S2-s30641-conflicting_agent_outputs-cmp",
+      "bench-financial_loan-delegated_multi_agent-S2-s30710-clean-cmp",
+      "bench-financial_loan-delegated_multi_agent-S2-s30711-incomplete_trace-inc",
+      "bench-financial_loan-delegated_multi_agent-S2-s30780-clean-cmp",
+      "bench-financial_loan-delegated_multi_agent-S2-s30781-misleading_delayed_observation-cmp",
+      "bench-financial_loan-delegated_multi_agent-S3-s30110-clean-cmp",
+      "bench-financial_loan-delegated_multi_agent-S4-s30115-clean-cmp",
+      "bench-financial_loan-delegated_multi_agent-S5-s30120-clean-cmp",
+      "bench-financial_loan-hierarchical-S1-s30025-clean-cmp",
+      "bench-financial_loan-hierarchical-S1-s30310-clean-cmp",
+      "bench-financial_loan-hierarchical-S1-s30311-tool_call_failure-cmp",
+      "bench-financial_loan-hierarchical-S1-s30380-clean-cmp",
+      "bench-financial_loan-hierarchical-S1-s30381-artifact_corruption-cmp",
+      "bench-financial_loan-hierarchical-S1-s30450-clean-cmp",
+      "bench-financial_loan-hierarchical-S1-s30451-retry_storm-cmp",
+      "bench-financial_loan-hierarchical-S1-s30670-clean-cmp",
+      "bench-financial_loan-hierarchical-S1-s30671-incomplete_trace-inc",
+      "bench-financial_loan-hierarchical-S1-s30740-clean-cmp",
+      "bench-financial_loan-hierarchical-S1-s30741-misleading_delayed_observation-cmp",
+      "bench-financial_loan-hierarchical-S2-s30030-clean-cmp",
+      "bench-financial_loan-hierarchical-S2-s30170-clean-cmp",
+      "bench-financial_loan-hierarchical-S2-s30171-missing_dependency-cmp",
+      "bench-financial_loan-hierarchical-S2-s30240-clean-cmp",
+      "bench-financial_loan-hierarchical-S2-s30241-incorrect_tool_output-cmp",
+      "bench-financial_loan-hierarchical-S2-s30460-clean-cmp",
+      "bench-financial_loan-hierarchical-S2-s30461-retry_storm-cmp",
+      "bench-financial_loan-hierarchical-S2-s30530-clean-cmp",
+      "bench-financial_loan-hierarchical-S2-s30531-delegation_failure-cmp",
+      "bench-financial_loan-hierarchical-S2-s30600-clean-cmp",
+      "bench-financial_loan-hierarchical-S2-s30601-conflicting_agent_outputs-cmp",
+      "bench-financial_loan-hierarchical-S3-s30035-clean-cmp",
+      "bench-financial_loan-hierarchical-S4-s30040-clean-cmp",
+      "bench-financial_loan-hierarchical-S5-s30045-clean-cmp",
+      "bench-financial_loan-mixed_realistic-S1-s30125-clean-cmp",
+      "bench-financial_loan-mixed_realistic-S1-s30210-clean-cmp",
+      "bench-financial_loan-mixed_realistic-S1-s30211-missing_dependency-cmp",
+      "bench-financial_loan-mixed_realistic-S1-s30430-clean-cmp",
+      "bench-financial_loan-mixed_realistic-S1-s30431-artifact_corruption-cmp",
+      "bench-financial_loan-mixed_realistic-S1-s30500-clean-cmp",
+      "bench-financial_loan-mixed_realistic-S1-s30501-retry_storm-cmp",
+      "bench-financial_loan-mixed_realistic-S1-s30570-clean-cmp",
+      "bench-financial_loan-mixed_realistic-S1-s30571-delegation_failure-cmp",
+      "bench-financial_loan-mixed_realistic-S1-s30790-clean-cmp",
+      "bench-financial_loan-mixed_realistic-S1-s30791-misleading_delayed_observation-cmp",
+      "bench-financial_loan-mixed_realistic-S2-s30130-clean-cmp",
+      "bench-financial_loan-mixed_realistic-S2-s30220-clean-cmp",
+      "bench-financial_loan-mixed_realistic-S2-s30221-missing_dependency-cmp",
+      "bench-financial_loan-mixed_realistic-S2-s30290-clean-cmp",
+      "bench-financial_loan-mixed_realistic-S2-s30291-incorrect_tool_output-cmp",
+      "bench-financial_loan-mixed_realistic-S2-s30360-clean-cmp",
+      "bench-financial_loan-mixed_realistic-S2-s30361-tool_call_failure-cmp",
+      "bench-financial_loan-mixed_realistic-S2-s30580-clean-cmp",
+      "bench-financial_loan-mixed_realistic-S2-s30581-delegation_failure-cmp",
+      "bench-financial_loan-mixed_realistic-S2-s30650-clean-cmp",
+      "bench-financial_loan-mixed_realistic-S2-s30651-conflicting_agent_outputs-cmp",
+      "bench-financial_loan-mixed_realistic-S2-s30720-clean-cmp",
+      "bench-financial_loan-mixed_realistic-S2-s30721-incomplete_trace-inc",
+      "bench-financial_loan-mixed_realistic-S3-s30135-clean-cmp",
+      "bench-financial_loan-mixed_realistic-S4-s30140-clean-cmp",
+      "bench-financial_loan-mixed_realistic-S5-s30145-clean-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S1-s30050-clean-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S1-s30250-clean-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S1-s30251-incorrect_tool_output-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S1-s30320-clean-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S1-s30321-tool_call_failure-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S1-s30390-clean-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S1-s30391-artifact_corruption-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S1-s30610-clean-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S1-s30680-clean-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S1-s30681-incomplete_trace-inc",
+      "bench-financial_loan-parallel_fanout_fanin-S1-s30750-clean-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S1-s30751-misleading_delayed_observation-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s30055-clean-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s30180-clean-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s30181-missing_dependency-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s30400-clean-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s30401-artifact_corruption-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s30470-clean-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s30471-retry_storm-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s30540-clean-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s30541-delegation_failure-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s30760-clean-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S2-s30761-misleading_delayed_observation-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S3-s30060-clean-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S4-s30065-clean-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S5-s30070-clean-cmp",
+      "bench-financial_loan-sequential-S1-s30000-clean-cmp",
+      "bench-financial_loan-sequential-S1-s30150-clean-cmp",
+      "bench-financial_loan-sequential-S1-s30151-missing_dependency-cmp",
+      "bench-financial_loan-sequential-S1-s30370-clean-cmp",
+      "bench-financial_loan-sequential-S1-s30371-artifact_corruption-cmp",
+      "bench-financial_loan-sequential-S1-s30440-clean-cmp",
+      "bench-financial_loan-sequential-S1-s30441-retry_storm-cmp",
+      "bench-financial_loan-sequential-S1-s30510-clean-cmp",
+      "bench-financial_loan-sequential-S1-s30511-delegation_failure-cmp",
+      "bench-financial_loan-sequential-S1-s30730-clean-cmp",
+      "bench-financial_loan-sequential-S1-s30731-misleading_delayed_observation-cmp",
+      "bench-financial_loan-sequential-S2-s30005-clean-cmp",
+      "bench-financial_loan-sequential-S2-s30160-clean-cmp",
+      "bench-financial_loan-sequential-S2-s30161-missing_dependency-cmp",
+      "bench-financial_loan-sequential-S2-s30230-clean-cmp",
+      "bench-financial_loan-sequential-S2-s30231-incorrect_tool_output-cmp",
+      "bench-financial_loan-sequential-S2-s30300-clean-cmp",
+      "bench-financial_loan-sequential-S2-s30301-tool_call_failure-cmp",
+      "bench-financial_loan-sequential-S2-s30520-clean-cmp",
+      "bench-financial_loan-sequential-S2-s30521-delegation_failure-cmp",
+      "bench-financial_loan-sequential-S2-s30590-clean-cmp",
+      "bench-financial_loan-sequential-S2-s30591-conflicting_agent_outputs-cmp",
+      "bench-financial_loan-sequential-S2-s30660-clean-cmp",
+      "bench-financial_loan-sequential-S2-s30661-incomplete_trace-inc",
+      "bench-financial_loan-sequential-S3-s30010-clean-cmp",
+      "bench-financial_loan-sequential-S4-s30015-clean-cmp",
+      "bench-financial_loan-sequential-S5-s30020-clean-cmp",
+      "bench-financial_loan-shared_artifact-S1-s30075-clean-cmp",
+      "bench-financial_loan-shared_artifact-S1-s30190-clean-cmp",
+      "bench-financial_loan-shared_artifact-S1-s30191-missing_dependency-cmp",
+      "bench-financial_loan-shared_artifact-S1-s30260-clean-cmp",
+      "bench-financial_loan-shared_artifact-S1-s30261-incorrect_tool_output-cmp",
+      "bench-financial_loan-shared_artifact-S1-s30330-clean-cmp",
+      "bench-financial_loan-shared_artifact-S1-s30331-tool_call_failure-cmp",
+      "bench-financial_loan-shared_artifact-S1-s30550-clean-cmp",
+      "bench-financial_loan-shared_artifact-S1-s30551-delegation_failure-cmp",
+      "bench-financial_loan-shared_artifact-S1-s30620-clean-cmp",
+      "bench-financial_loan-shared_artifact-S1-s30621-conflicting_agent_outputs-cmp",
+      "bench-financial_loan-shared_artifact-S1-s30690-clean-cmp",
+      "bench-financial_loan-shared_artifact-S1-s30691-incomplete_trace-inc",
+      "bench-financial_loan-shared_artifact-S2-s30080-clean-cmp",
+      "bench-financial_loan-shared_artifact-S2-s30340-clean-cmp",
+      "bench-financial_loan-shared_artifact-S2-s30341-tool_call_failure-cmp",
+      "bench-financial_loan-shared_artifact-S2-s30410-clean-cmp",
+      "bench-financial_loan-shared_artifact-S2-s30411-artifact_corruption-cmp",
+      "bench-financial_loan-shared_artifact-S2-s30480-clean-cmp",
+      "bench-financial_loan-shared_artifact-S2-s30481-retry_storm-cmp",
+      "bench-financial_loan-shared_artifact-S2-s30700-clean-cmp",
+      "bench-financial_loan-shared_artifact-S2-s30701-incomplete_trace-inc",
+      "bench-financial_loan-shared_artifact-S2-s30770-clean-cmp",
+      "bench-financial_loan-shared_artifact-S2-s30771-misleading_delayed_observation-cmp",
+      "bench-financial_loan-shared_artifact-S3-s30085-clean-cmp",
+      "bench-financial_loan-shared_artifact-S4-s30090-clean-cmp",
+      "bench-financial_loan-shared_artifact-S5-s30095-clean-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S1-s30101-clean-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S1-s30202-clean-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S1-s30203-missing_dependency-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S1-s30272-clean-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S1-s30273-incorrect_tool_output-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S1-s30342-clean-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S1-s30343-tool_call_failure-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S1-s30562-clean-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S1-s30563-delegation_failure-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S1-s30632-clean-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S1-s30633-conflicting_agent_outputs-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S1-s30702-clean-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S1-s30703-incomplete_trace-inc",
+      "bench-fraud_investigation-delegated_multi_agent-S2-s30106-clean-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S2-s30352-clean-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S2-s30353-tool_call_failure-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S2-s30422-clean-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S2-s30423-artifact_corruption-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S2-s30492-clean-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S2-s30493-retry_storm-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S2-s30712-clean-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S2-s30713-incomplete_trace-inc",
+      "bench-fraud_investigation-delegated_multi_agent-S2-s30782-clean-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S2-s30783-misleading_delayed_observation-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S3-s30111-clean-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S4-s30116-clean-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S5-s30121-clean-cmp",
+      "bench-fraud_investigation-hierarchical-S1-s30026-clean-cmp",
+      "bench-fraud_investigation-hierarchical-S1-s30162-clean-cmp",
+      "bench-fraud_investigation-hierarchical-S1-s30163-missing_dependency-cmp",
+      "bench-fraud_investigation-hierarchical-S1-s30382-clean-cmp",
+      "bench-fraud_investigation-hierarchical-S1-s30383-artifact_corruption-cmp",
+      "bench-fraud_investigation-hierarchical-S1-s30452-clean-cmp",
+      "bench-fraud_investigation-hierarchical-S1-s30453-retry_storm-cmp",
+      "bench-fraud_investigation-hierarchical-S1-s30522-clean-cmp",
+      "bench-fraud_investigation-hierarchical-S1-s30523-delegation_failure-cmp",
+      "bench-fraud_investigation-hierarchical-S1-s30742-clean-cmp",
+      "bench-fraud_investigation-hierarchical-S1-s30743-misleading_delayed_observation-cmp",
+      "bench-fraud_investigation-hierarchical-S2-s30031-clean-cmp",
+      "bench-fraud_investigation-hierarchical-S2-s30172-clean-cmp",
+      "bench-fraud_investigation-hierarchical-S2-s30173-missing_dependency-cmp",
+      "bench-fraud_investigation-hierarchical-S2-s30242-clean-cmp",
+      "bench-fraud_investigation-hierarchical-S2-s30243-incorrect_tool_output-cmp",
+      "bench-fraud_investigation-hierarchical-S2-s30312-clean-cmp",
+      "bench-fraud_investigation-hierarchical-S2-s30313-tool_call_failure-cmp",
+      "bench-fraud_investigation-hierarchical-S2-s30532-clean-cmp",
+      "bench-fraud_investigation-hierarchical-S2-s30533-delegation_failure-cmp",
+      "bench-fraud_investigation-hierarchical-S2-s30602-clean-cmp",
+      "bench-fraud_investigation-hierarchical-S2-s30603-conflicting_agent_outputs-cmp",
+      "bench-fraud_investigation-hierarchical-S2-s30672-clean-cmp",
+      "bench-fraud_investigation-hierarchical-S2-s30673-incomplete_trace-inc",
+      "bench-fraud_investigation-hierarchical-S3-s30036-clean-cmp",
+      "bench-fraud_investigation-hierarchical-S4-s30041-clean-cmp",
+      "bench-fraud_investigation-hierarchical-S5-s30046-clean-cmp",
+      "bench-fraud_investigation-mixed_realistic-S1-s30126-clean-cmp",
+      "bench-fraud_investigation-mixed_realistic-S1-s30212-clean-cmp",
+      "bench-fraud_investigation-mixed_realistic-S1-s30213-missing_dependency-cmp",
+      "bench-fraud_investigation-mixed_realistic-S1-s30282-clean-cmp",
+      "bench-fraud_investigation-mixed_realistic-S1-s30283-incorrect_tool_output-cmp",
+      "bench-fraud_investigation-mixed_realistic-S1-s30502-clean-cmp",
+      "bench-fraud_investigation-mixed_realistic-S1-s30503-retry_storm-cmp",
+      "bench-fraud_investigation-mixed_realistic-S1-s30572-clean-cmp",
+      "bench-fraud_investigation-mixed_realistic-S1-s30573-delegation_failure-cmp",
+      "bench-fraud_investigation-mixed_realistic-S1-s30642-clean-cmp",
+      "bench-fraud_investigation-mixed_realistic-S1-s30643-conflicting_agent_outputs-cmp",
+      "bench-fraud_investigation-mixed_realistic-S2-s30131-clean-cmp",
+      "bench-fraud_investigation-mixed_realistic-S2-s30292-clean-cmp",
+      "bench-fraud_investigation-mixed_realistic-S2-s30293-incorrect_tool_output-cmp",
+      "bench-fraud_investigation-mixed_realistic-S2-s30362-clean-cmp",
+      "bench-fraud_investigation-mixed_realistic-S2-s30363-tool_call_failure-cmp",
+      "bench-fraud_investigation-mixed_realistic-S2-s30432-clean-cmp",
+      "bench-fraud_investigation-mixed_realistic-S2-s30433-artifact_corruption-cmp",
+      "bench-fraud_investigation-mixed_realistic-S2-s30652-clean-cmp",
+      "bench-fraud_investigation-mixed_realistic-S2-s30653-conflicting_agent_outputs-cmp",
+      "bench-fraud_investigation-mixed_realistic-S2-s30722-clean-cmp",
+      "bench-fraud_investigation-mixed_realistic-S2-s30723-incomplete_trace-inc",
+      "bench-fraud_investigation-mixed_realistic-S2-s30792-clean-cmp",
+      "bench-fraud_investigation-mixed_realistic-S2-s30793-misleading_delayed_observation-cmp",
+      "bench-fraud_investigation-mixed_realistic-S3-s30136-clean-cmp",
+      "bench-fraud_investigation-mixed_realistic-S4-s30141-clean-cmp",
+      "bench-fraud_investigation-mixed_realistic-S5-s30146-clean-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S1-s30051-clean-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S1-s30322-clean-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S1-s30323-tool_call_failure-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S1-s30392-clean-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S1-s30393-artifact_corruption-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S1-s30462-clean-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S1-s30463-retry_storm-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S1-s30682-clean-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S1-s30683-incomplete_trace-inc",
+      "bench-fraud_investigation-parallel_fanout_fanin-S1-s30752-clean-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S1-s30753-misleading_delayed_observation-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S2-s30056-clean-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S2-s30182-clean-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S2-s30183-missing_dependency-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S2-s30252-clean-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S2-s30253-incorrect_tool_output-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S2-s30472-clean-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S2-s30473-retry_storm-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S2-s30542-clean-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S2-s30543-delegation_failure-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S2-s30612-clean-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S2-s30613-conflicting_agent_outputs-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S3-s30061-clean-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S4-s30066-clean-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S5-s30071-clean-cmp",
+      "bench-fraud_investigation-sequential-S1-s30001-clean-cmp",
+      "bench-fraud_investigation-sequential-S1-s30152-clean-cmp",
+      "bench-fraud_investigation-sequential-S1-s30153-missing_dependency-cmp",
+      "bench-fraud_investigation-sequential-S1-s30222-clean-cmp",
+      "bench-fraud_investigation-sequential-S1-s30223-incorrect_tool_output-cmp",
+      "bench-fraud_investigation-sequential-S1-s30442-clean-cmp",
+      "bench-fraud_investigation-sequential-S1-s30443-retry_storm-cmp",
+      "bench-fraud_investigation-sequential-S1-s30512-clean-cmp",
+      "bench-fraud_investigation-sequential-S1-s30513-delegation_failure-cmp",
+      "bench-fraud_investigation-sequential-S1-s30582-clean-cmp",
+      "bench-fraud_investigation-sequential-S1-s30583-conflicting_agent_outputs-cmp",
+      "bench-fraud_investigation-sequential-S2-s30006-clean-cmp",
+      "bench-fraud_investigation-sequential-S2-s30232-clean-cmp",
+      "bench-fraud_investigation-sequential-S2-s30233-incorrect_tool_output-cmp",
+      "bench-fraud_investigation-sequential-S2-s30302-clean-cmp",
+      "bench-fraud_investigation-sequential-S2-s30303-tool_call_failure-cmp",
+      "bench-fraud_investigation-sequential-S2-s30372-clean-cmp",
+      "bench-fraud_investigation-sequential-S2-s30373-artifact_corruption-cmp",
+      "bench-fraud_investigation-sequential-S2-s30592-clean-cmp",
+      "bench-fraud_investigation-sequential-S2-s30593-conflicting_agent_outputs-cmp",
+      "bench-fraud_investigation-sequential-S2-s30662-clean-cmp",
+      "bench-fraud_investigation-sequential-S2-s30663-incomplete_trace-inc",
+      "bench-fraud_investigation-sequential-S2-s30732-clean-cmp",
+      "bench-fraud_investigation-sequential-S2-s30733-misleading_delayed_observation-cmp",
+      "bench-fraud_investigation-sequential-S3-s30011-clean-cmp",
+      "bench-fraud_investigation-sequential-S4-s30016-clean-cmp",
+      "bench-fraud_investigation-sequential-S5-s30021-clean-cmp",
+      "bench-fraud_investigation-shared_artifact-S1-s30076-clean-cmp",
+      "bench-fraud_investigation-shared_artifact-S1-s30262-clean-cmp",
+      "bench-fraud_investigation-shared_artifact-S1-s30263-incorrect_tool_output-cmp",
+      "bench-fraud_investigation-shared_artifact-S1-s30332-clean-cmp",
+      "bench-fraud_investigation-shared_artifact-S1-s30333-tool_call_failure-cmp",
+      "bench-fraud_investigation-shared_artifact-S1-s30402-clean-cmp",
+      "bench-fraud_investigation-shared_artifact-S1-s30403-artifact_corruption-cmp",
+      "bench-fraud_investigation-shared_artifact-S1-s30622-clean-cmp",
+      "bench-fraud_investigation-shared_artifact-S1-s30623-conflicting_agent_outputs-cmp",
+      "bench-fraud_investigation-shared_artifact-S1-s30692-clean-cmp",
+      "bench-fraud_investigation-shared_artifact-S1-s30693-incomplete_trace-inc",
+      "bench-fraud_investigation-shared_artifact-S1-s30762-clean-cmp",
+      "bench-fraud_investigation-shared_artifact-S1-s30763-misleading_delayed_observation-cmp",
+      "bench-fraud_investigation-shared_artifact-S2-s30081-clean-cmp",
+      "bench-fraud_investigation-shared_artifact-S2-s30192-clean-cmp",
+      "bench-fraud_investigation-shared_artifact-S2-s30193-missing_dependency-cmp",
+      "bench-fraud_investigation-shared_artifact-S2-s30412-clean-cmp",
+      "bench-fraud_investigation-shared_artifact-S2-s30413-artifact_corruption-cmp",
+      "bench-fraud_investigation-shared_artifact-S2-s30482-clean-cmp",
+      "bench-fraud_investigation-shared_artifact-S2-s30483-retry_storm-cmp",
+      "bench-fraud_investigation-shared_artifact-S2-s30552-clean-cmp",
+      "bench-fraud_investigation-shared_artifact-S2-s30553-delegation_failure-cmp",
+      "bench-fraud_investigation-shared_artifact-S2-s30772-clean-cmp",
+      "bench-fraud_investigation-shared_artifact-S2-s30773-misleading_delayed_observation-cmp",
+      "bench-fraud_investigation-shared_artifact-S3-s30086-clean-cmp",
+      "bench-fraud_investigation-shared_artifact-S4-s30091-clean-cmp",
+      "bench-fraud_investigation-shared_artifact-S5-s30096-clean-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S1-s30103-clean-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S1-s30346-clean-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S1-s30347-tool_call_failure-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S1-s30416-clean-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S1-s30417-artifact_corruption-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S1-s30486-clean-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S1-s30487-retry_storm-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S1-s30706-clean-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S1-s30707-incomplete_trace-inc",
+      "bench-research_synthesis-delegated_multi_agent-S1-s30776-clean-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S1-s30777-misleading_delayed_observation-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S2-s30108-clean-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S2-s30206-clean-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S2-s30207-missing_dependency-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S2-s30276-clean-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S2-s30277-incorrect_tool_output-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S2-s30496-clean-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S2-s30497-retry_storm-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S2-s30566-clean-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S2-s30567-delegation_failure-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S2-s30636-clean-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S2-s30637-conflicting_agent_outputs-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S3-s30113-clean-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S4-s30118-clean-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S5-s30123-clean-cmp",
+      "bench-research_synthesis-hierarchical-S1-s30028-clean-cmp",
+      "bench-research_synthesis-hierarchical-S1-s30166-clean-cmp",
+      "bench-research_synthesis-hierarchical-S1-s30167-missing_dependency-cmp",
+      "bench-research_synthesis-hierarchical-S1-s30236-clean-cmp",
+      "bench-research_synthesis-hierarchical-S1-s30237-incorrect_tool_output-cmp",
+      "bench-research_synthesis-hierarchical-S1-s30306-clean-cmp",
+      "bench-research_synthesis-hierarchical-S1-s30307-tool_call_failure-cmp",
+      "bench-research_synthesis-hierarchical-S1-s30526-clean-cmp",
+      "bench-research_synthesis-hierarchical-S1-s30527-delegation_failure-cmp",
+      "bench-research_synthesis-hierarchical-S1-s30596-clean-cmp",
+      "bench-research_synthesis-hierarchical-S1-s30597-conflicting_agent_outputs-cmp",
+      "bench-research_synthesis-hierarchical-S1-s30666-clean-cmp",
+      "bench-research_synthesis-hierarchical-S1-s30667-incomplete_trace-inc",
+      "bench-research_synthesis-hierarchical-S2-s30033-clean-cmp",
+      "bench-research_synthesis-hierarchical-S2-s30316-clean-cmp",
+      "bench-research_synthesis-hierarchical-S2-s30317-tool_call_failure-cmp",
+      "bench-research_synthesis-hierarchical-S2-s30386-clean-cmp",
+      "bench-research_synthesis-hierarchical-S2-s30387-artifact_corruption-cmp",
+      "bench-research_synthesis-hierarchical-S2-s30456-clean-cmp",
+      "bench-research_synthesis-hierarchical-S2-s30457-retry_storm-cmp",
+      "bench-research_synthesis-hierarchical-S2-s30676-clean-cmp",
+      "bench-research_synthesis-hierarchical-S2-s30677-incomplete_trace-inc",
+      "bench-research_synthesis-hierarchical-S2-s30746-clean-cmp",
+      "bench-research_synthesis-hierarchical-S2-s30747-misleading_delayed_observation-cmp",
+      "bench-research_synthesis-hierarchical-S3-s30038-clean-cmp",
+      "bench-research_synthesis-hierarchical-S4-s30043-clean-cmp",
+      "bench-research_synthesis-hierarchical-S5-s30048-clean-cmp",
+      "bench-research_synthesis-mixed_realistic-S1-s30128-clean-cmp",
+      "bench-research_synthesis-mixed_realistic-S1-s30286-clean-cmp",
+      "bench-research_synthesis-mixed_realistic-S1-s30287-incorrect_tool_output-cmp",
+      "bench-research_synthesis-mixed_realistic-S1-s30356-clean-cmp",
+      "bench-research_synthesis-mixed_realistic-S1-s30357-tool_call_failure-cmp",
+      "bench-research_synthesis-mixed_realistic-S1-s30426-clean-cmp",
+      "bench-research_synthesis-mixed_realistic-S1-s30427-artifact_corruption-cmp",
+      "bench-research_synthesis-mixed_realistic-S1-s30646-clean-cmp",
+      "bench-research_synthesis-mixed_realistic-S1-s30647-conflicting_agent_outputs-cmp",
+      "bench-research_synthesis-mixed_realistic-S1-s30716-clean-cmp",
+      "bench-research_synthesis-mixed_realistic-S1-s30717-incomplete_trace-inc",
+      "bench-research_synthesis-mixed_realistic-S1-s30786-clean-cmp",
+      "bench-research_synthesis-mixed_realistic-S1-s30787-misleading_delayed_observation-cmp",
+      "bench-research_synthesis-mixed_realistic-S2-s30133-clean-cmp",
+      "bench-research_synthesis-mixed_realistic-S2-s30216-clean-cmp",
+      "bench-research_synthesis-mixed_realistic-S2-s30217-missing_dependency-cmp",
+      "bench-research_synthesis-mixed_realistic-S2-s30436-clean-cmp",
+      "bench-research_synthesis-mixed_realistic-S2-s30437-artifact_corruption-cmp",
+      "bench-research_synthesis-mixed_realistic-S2-s30506-clean-cmp",
+      "bench-research_synthesis-mixed_realistic-S2-s30507-retry_storm-cmp",
+      "bench-research_synthesis-mixed_realistic-S2-s30576-clean-cmp",
+      "bench-research_synthesis-mixed_realistic-S2-s30577-delegation_failure-cmp",
+      "bench-research_synthesis-mixed_realistic-S2-s30796-clean-cmp",
+      "bench-research_synthesis-mixed_realistic-S2-s30797-misleading_delayed_observation-cmp",
+      "bench-research_synthesis-mixed_realistic-S3-s30138-clean-cmp",
+      "bench-research_synthesis-mixed_realistic-S4-s30143-clean-cmp",
+      "bench-research_synthesis-mixed_realistic-S5-s30148-clean-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S1-s30053-clean-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S1-s30176-clean-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S1-s30177-missing_dependency-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S1-s30246-clean-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S1-s30247-incorrect_tool_output-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S1-s30466-clean-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S1-s30467-retry_storm-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S1-s30536-clean-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S1-s30537-delegation_failure-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S1-s30606-clean-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S1-s30607-conflicting_agent_outputs-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S2-s30058-clean-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S2-s30256-clean-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S2-s30257-incorrect_tool_output-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S2-s30326-clean-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S2-s30327-tool_call_failure-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S2-s30396-clean-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S2-s30397-artifact_corruption-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S2-s30616-clean-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S2-s30617-conflicting_agent_outputs-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S2-s30686-clean-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S2-s30687-incomplete_trace-inc",
+      "bench-research_synthesis-parallel_fanout_fanin-S2-s30756-clean-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S2-s30757-misleading_delayed_observation-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S3-s30063-clean-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S4-s30068-clean-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S5-s30073-clean-cmp",
+      "bench-research_synthesis-sequential-S1-s30003-clean-cmp",
+      "bench-research_synthesis-sequential-S1-s30226-clean-cmp",
+      "bench-research_synthesis-sequential-S1-s30227-incorrect_tool_output-cmp",
+      "bench-research_synthesis-sequential-S1-s30296-clean-cmp",
+      "bench-research_synthesis-sequential-S1-s30297-tool_call_failure-cmp",
+      "bench-research_synthesis-sequential-S1-s30366-clean-cmp",
+      "bench-research_synthesis-sequential-S1-s30367-artifact_corruption-cmp",
+      "bench-research_synthesis-sequential-S1-s30586-clean-cmp",
+      "bench-research_synthesis-sequential-S1-s30587-conflicting_agent_outputs-cmp",
+      "bench-research_synthesis-sequential-S1-s30656-clean-cmp",
+      "bench-research_synthesis-sequential-S1-s30657-incomplete_trace-inc",
+      "bench-research_synthesis-sequential-S1-s30726-clean-cmp",
+      "bench-research_synthesis-sequential-S1-s30727-misleading_delayed_observation-cmp",
+      "bench-research_synthesis-sequential-S2-s30008-clean-cmp",
+      "bench-research_synthesis-sequential-S2-s30156-clean-cmp",
+      "bench-research_synthesis-sequential-S2-s30157-missing_dependency-cmp",
+      "bench-research_synthesis-sequential-S2-s30376-clean-cmp",
+      "bench-research_synthesis-sequential-S2-s30377-artifact_corruption-cmp",
+      "bench-research_synthesis-sequential-S2-s30446-clean-cmp",
+      "bench-research_synthesis-sequential-S2-s30447-retry_storm-cmp",
+      "bench-research_synthesis-sequential-S2-s30516-clean-cmp",
+      "bench-research_synthesis-sequential-S2-s30517-delegation_failure-cmp",
+      "bench-research_synthesis-sequential-S2-s30736-clean-cmp",
+      "bench-research_synthesis-sequential-S2-s30737-misleading_delayed_observation-cmp",
+      "bench-research_synthesis-sequential-S3-s30013-clean-cmp",
+      "bench-research_synthesis-sequential-S4-s30018-clean-cmp",
+      "bench-research_synthesis-sequential-S5-s30023-clean-cmp",
+      "bench-research_synthesis-shared_artifact-S1-s30078-clean-cmp",
+      "bench-research_synthesis-shared_artifact-S1-s30186-clean-cmp",
+      "bench-research_synthesis-shared_artifact-S1-s30187-missing_dependency-cmp",
+      "bench-research_synthesis-shared_artifact-S1-s30406-clean-cmp",
+      "bench-research_synthesis-shared_artifact-S1-s30407-artifact_corruption-cmp",
+      "bench-research_synthesis-shared_artifact-S1-s30476-clean-cmp",
+      "bench-research_synthesis-shared_artifact-S1-s30477-retry_storm-cmp",
+      "bench-research_synthesis-shared_artifact-S1-s30546-clean-cmp",
+      "bench-research_synthesis-shared_artifact-S1-s30547-delegation_failure-cmp",
+      "bench-research_synthesis-shared_artifact-S1-s30766-clean-cmp",
+      "bench-research_synthesis-shared_artifact-S1-s30767-misleading_delayed_observation-cmp",
+      "bench-research_synthesis-shared_artifact-S2-s30083-clean-cmp",
+      "bench-research_synthesis-shared_artifact-S2-s30196-clean-cmp",
+      "bench-research_synthesis-shared_artifact-S2-s30197-missing_dependency-cmp",
+      "bench-research_synthesis-shared_artifact-S2-s30266-clean-cmp",
+      "bench-research_synthesis-shared_artifact-S2-s30267-incorrect_tool_output-cmp",
+      "bench-research_synthesis-shared_artifact-S2-s30336-clean-cmp",
+      "bench-research_synthesis-shared_artifact-S2-s30337-tool_call_failure-cmp",
+      "bench-research_synthesis-shared_artifact-S2-s30556-clean-cmp",
+      "bench-research_synthesis-shared_artifact-S2-s30557-delegation_failure-cmp",
+      "bench-research_synthesis-shared_artifact-S2-s30626-clean-cmp",
+      "bench-research_synthesis-shared_artifact-S2-s30627-conflicting_agent_outputs-cmp",
+      "bench-research_synthesis-shared_artifact-S2-s30696-clean-cmp",
+      "bench-research_synthesis-shared_artifact-S2-s30697-incomplete_trace-inc",
+      "bench-research_synthesis-shared_artifact-S3-s30088-clean-cmp",
+      "bench-research_synthesis-shared_artifact-S4-s30093-clean-cmp",
+      "bench-research_synthesis-shared_artifact-S5-s30098-clean-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S1-s30104-clean-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S1-s30198-clean-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S1-s30199-missing_dependency-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S1-s30418-clean-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S1-s30419-artifact_corruption-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S1-s30488-clean-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S1-s30489-retry_storm-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S1-s30558-clean-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S1-s30559-delegation_failure-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S1-s30778-clean-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S1-s30779-misleading_delayed_observation-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S2-s30109-clean-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S2-s30208-clean-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S2-s30209-missing_dependency-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S2-s30278-clean-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S2-s30279-incorrect_tool_output-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S2-s30348-clean-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S2-s30349-tool_call_failure-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S2-s30568-clean-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S2-s30569-delegation_failure-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S2-s30638-clean-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S2-s30639-conflicting_agent_outputs-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S2-s30708-clean-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S2-s30709-incomplete_trace-inc",
+      "bench-transaction_execution-delegated_multi_agent-S3-s30114-clean-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S4-s30119-clean-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S5-s30124-clean-cmp",
+      "bench-transaction_execution-hierarchical-S1-s30029-clean-cmp",
+      "bench-transaction_execution-hierarchical-S1-s30238-clean-cmp",
+      "bench-transaction_execution-hierarchical-S1-s30239-incorrect_tool_output-cmp",
+      "bench-transaction_execution-hierarchical-S1-s30308-clean-cmp",
+      "bench-transaction_execution-hierarchical-S1-s30309-tool_call_failure-cmp",
+      "bench-transaction_execution-hierarchical-S1-s30378-clean-cmp",
+      "bench-transaction_execution-hierarchical-S1-s30379-artifact_corruption-cmp",
+      "bench-transaction_execution-hierarchical-S1-s30598-clean-cmp",
+      "bench-transaction_execution-hierarchical-S1-s30599-conflicting_agent_outputs-cmp",
+      "bench-transaction_execution-hierarchical-S1-s30668-clean-cmp",
+      "bench-transaction_execution-hierarchical-S1-s30669-incomplete_trace-inc",
+      "bench-transaction_execution-hierarchical-S1-s30738-clean-cmp",
+      "bench-transaction_execution-hierarchical-S1-s30739-misleading_delayed_observation-cmp",
+      "bench-transaction_execution-hierarchical-S2-s30034-clean-cmp",
+      "bench-transaction_execution-hierarchical-S2-s30168-clean-cmp",
+      "bench-transaction_execution-hierarchical-S2-s30169-missing_dependency-cmp",
+      "bench-transaction_execution-hierarchical-S2-s30388-clean-cmp",
+      "bench-transaction_execution-hierarchical-S2-s30389-artifact_corruption-cmp",
+      "bench-transaction_execution-hierarchical-S2-s30458-clean-cmp",
+      "bench-transaction_execution-hierarchical-S2-s30459-retry_storm-cmp",
+      "bench-transaction_execution-hierarchical-S2-s30528-clean-cmp",
+      "bench-transaction_execution-hierarchical-S2-s30529-delegation_failure-cmp",
+      "bench-transaction_execution-hierarchical-S2-s30748-clean-cmp",
+      "bench-transaction_execution-hierarchical-S2-s30749-misleading_delayed_observation-cmp",
+      "bench-transaction_execution-hierarchical-S3-s30039-clean-cmp",
+      "bench-transaction_execution-hierarchical-S4-s30044-clean-cmp",
+      "bench-transaction_execution-hierarchical-S5-s30049-clean-cmp",
+      "bench-transaction_execution-mixed_realistic-S1-s30129-clean-cmp",
+      "bench-transaction_execution-mixed_realistic-S1-s30358-clean-cmp",
+      "bench-transaction_execution-mixed_realistic-S1-s30359-tool_call_failure-cmp",
+      "bench-transaction_execution-mixed_realistic-S1-s30428-clean-cmp",
+      "bench-transaction_execution-mixed_realistic-S1-s30429-artifact_corruption-cmp",
+      "bench-transaction_execution-mixed_realistic-S1-s30498-clean-cmp",
+      "bench-transaction_execution-mixed_realistic-S1-s30499-retry_storm-cmp",
+      "bench-transaction_execution-mixed_realistic-S1-s30718-clean-cmp",
+      "bench-transaction_execution-mixed_realistic-S1-s30719-incomplete_trace-inc",
+      "bench-transaction_execution-mixed_realistic-S1-s30788-clean-cmp",
+      "bench-transaction_execution-mixed_realistic-S1-s30789-misleading_delayed_observation-cmp",
+      "bench-transaction_execution-mixed_realistic-S2-s30134-clean-cmp",
+      "bench-transaction_execution-mixed_realistic-S2-s30218-clean-cmp",
+      "bench-transaction_execution-mixed_realistic-S2-s30219-missing_dependency-cmp",
+      "bench-transaction_execution-mixed_realistic-S2-s30288-clean-cmp",
+      "bench-transaction_execution-mixed_realistic-S2-s30289-incorrect_tool_output-cmp",
+      "bench-transaction_execution-mixed_realistic-S2-s30508-clean-cmp",
+      "bench-transaction_execution-mixed_realistic-S2-s30509-retry_storm-cmp",
+      "bench-transaction_execution-mixed_realistic-S2-s30578-clean-cmp",
+      "bench-transaction_execution-mixed_realistic-S2-s30579-delegation_failure-cmp",
+      "bench-transaction_execution-mixed_realistic-S2-s30648-clean-cmp",
+      "bench-transaction_execution-mixed_realistic-S2-s30649-conflicting_agent_outputs-cmp",
+      "bench-transaction_execution-mixed_realistic-S3-s30139-clean-cmp",
+      "bench-transaction_execution-mixed_realistic-S4-s30144-clean-cmp",
+      "bench-transaction_execution-mixed_realistic-S5-s30149-clean-cmp",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s30054-clean-cmp",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s30178-clean-cmp",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s30179-missing_dependency-cmp",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s30248-clean-cmp",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s30249-incorrect_tool_output-cmp",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s30318-clean-cmp",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s30319-tool_call_failure-cmp",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s30538-clean-cmp",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s30539-delegation_failure-cmp",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s30608-clean-cmp",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s30609-conflicting_agent_outputs-cmp",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s30678-clean-cmp",
+      "bench-transaction_execution-parallel_fanout_fanin-S1-s30679-incomplete_trace-inc",
+      "bench-transaction_execution-parallel_fanout_fanin-S2-s30059-clean-cmp",
+      "bench-transaction_execution-parallel_fanout_fanin-S2-s30328-clean-cmp",
+      "bench-transaction_execution-parallel_fanout_fanin-S2-s30329-tool_call_failure-cmp",
+      "bench-transaction_execution-parallel_fanout_fanin-S2-s30398-clean-cmp",
+      "bench-transaction_execution-parallel_fanout_fanin-S2-s30399-artifact_corruption-cmp",
+      "bench-transaction_execution-parallel_fanout_fanin-S2-s30468-clean-cmp",
+      "bench-transaction_execution-parallel_fanout_fanin-S2-s30469-retry_storm-cmp",
+      "bench-transaction_execution-parallel_fanout_fanin-S2-s30688-clean-cmp",
+      "bench-transaction_execution-parallel_fanout_fanin-S2-s30689-incomplete_trace-inc",
+      "bench-transaction_execution-parallel_fanout_fanin-S2-s30758-clean-cmp",
+      "bench-transaction_execution-parallel_fanout_fanin-S2-s30759-misleading_delayed_observation-cmp",
+      "bench-transaction_execution-parallel_fanout_fanin-S3-s30064-clean-cmp",
+      "bench-transaction_execution-parallel_fanout_fanin-S4-s30069-clean-cmp",
+      "bench-transaction_execution-parallel_fanout_fanin-S5-s30074-clean-cmp",
+      "bench-transaction_execution-sequential-S1-s30004-clean-cmp",
+      "bench-transaction_execution-sequential-S1-s30298-clean-cmp",
+      "bench-transaction_execution-sequential-S1-s30299-tool_call_failure-cmp",
+      "bench-transaction_execution-sequential-S1-s30368-clean-cmp",
+      "bench-transaction_execution-sequential-S1-s30369-artifact_corruption-cmp",
+      "bench-transaction_execution-sequential-S1-s30438-clean-cmp",
+      "bench-transaction_execution-sequential-S1-s30439-retry_storm-cmp",
+      "bench-transaction_execution-sequential-S1-s30658-clean-cmp",
+      "bench-transaction_execution-sequential-S1-s30659-incomplete_trace-inc",
+      "bench-transaction_execution-sequential-S1-s30728-clean-cmp",
+      "bench-transaction_execution-sequential-S1-s30729-misleading_delayed_observation-cmp",
+      "bench-transaction_execution-sequential-S2-s30009-clean-cmp",
+      "bench-transaction_execution-sequential-S2-s30158-clean-cmp",
+      "bench-transaction_execution-sequential-S2-s30159-missing_dependency-cmp",
+      "bench-transaction_execution-sequential-S2-s30228-clean-cmp",
+      "bench-transaction_execution-sequential-S2-s30229-incorrect_tool_output-cmp",
+      "bench-transaction_execution-sequential-S2-s30448-clean-cmp",
+      "bench-transaction_execution-sequential-S2-s30449-retry_storm-cmp",
+      "bench-transaction_execution-sequential-S2-s30518-clean-cmp",
+      "bench-transaction_execution-sequential-S2-s30519-delegation_failure-cmp",
+      "bench-transaction_execution-sequential-S2-s30588-clean-cmp",
+      "bench-transaction_execution-sequential-S2-s30589-conflicting_agent_outputs-cmp",
+      "bench-transaction_execution-sequential-S3-s30014-clean-cmp",
+      "bench-transaction_execution-sequential-S4-s30019-clean-cmp",
+      "bench-transaction_execution-sequential-S5-s30024-clean-cmp",
+      "bench-transaction_execution-shared_artifact-S1-s30079-clean-cmp",
+      "bench-transaction_execution-shared_artifact-S1-s30188-clean-cmp",
+      "bench-transaction_execution-shared_artifact-S1-s30189-missing_dependency-cmp",
+      "bench-transaction_execution-shared_artifact-S1-s30258-clean-cmp",
+      "bench-transaction_execution-shared_artifact-S1-s30259-incorrect_tool_output-cmp",
+      "bench-transaction_execution-shared_artifact-S1-s30478-clean-cmp",
+      "bench-transaction_execution-shared_artifact-S1-s30479-retry_storm-cmp",
+      "bench-transaction_execution-shared_artifact-S1-s30548-clean-cmp",
+      "bench-transaction_execution-shared_artifact-S1-s30549-delegation_failure-cmp",
+      "bench-transaction_execution-shared_artifact-S1-s30618-clean-cmp",
+      "bench-transaction_execution-shared_artifact-S1-s30619-conflicting_agent_outputs-cmp",
+      "bench-transaction_execution-shared_artifact-S2-s30084-clean-cmp",
+      "bench-transaction_execution-shared_artifact-S2-s30268-clean-cmp",
+      "bench-transaction_execution-shared_artifact-S2-s30269-incorrect_tool_output-cmp",
+      "bench-transaction_execution-shared_artifact-S2-s30338-clean-cmp",
+      "bench-transaction_execution-shared_artifact-S2-s30339-tool_call_failure-cmp",
+      "bench-transaction_execution-shared_artifact-S2-s30408-clean-cmp",
+      "bench-transaction_execution-shared_artifact-S2-s30409-artifact_corruption-cmp",
+      "bench-transaction_execution-shared_artifact-S2-s30628-clean-cmp",
+      "bench-transaction_execution-shared_artifact-S2-s30629-conflicting_agent_outputs-cmp",
+      "bench-transaction_execution-shared_artifact-S2-s30698-clean-cmp",
+      "bench-transaction_execution-shared_artifact-S2-s30699-incomplete_trace-inc",
+      "bench-transaction_execution-shared_artifact-S2-s30768-clean-cmp",
+      "bench-transaction_execution-shared_artifact-S2-s30769-misleading_delayed_observation-cmp",
+      "bench-transaction_execution-shared_artifact-S3-s30089-clean-cmp",
+      "bench-transaction_execution-shared_artifact-S4-s30094-clean-cmp",
+      "bench-transaction_execution-shared_artifact-S5-s30099-clean-cmp"
+    ],
+    "requested_n": 80,
+    "sampled_n": 80,
+    "sampling_version": "2.13.0",
+    "seed": 213201,
+    "selected_trace_ids": [
+      "bench-compliance_review-delegated_multi_agent-S2-s30565-delegation_failure-cmp",
+      "bench-compliance_review-delegated_multi_agent-S4-s30117-clean-cmp",
+      "bench-compliance_review-delegated_multi_agent-S5-s30122-clean-cmp",
+      "bench-compliance_review-hierarchical-S1-s30595-conflicting_agent_outputs-cmp",
+      "bench-compliance_review-hierarchical-S4-s30042-clean-cmp",
+      "bench-compliance_review-mixed_realistic-S1-s30354-clean-cmp",
+      "bench-compliance_review-mixed_realistic-S1-s30645-conflicting_agent_outputs-cmp",
+      "bench-compliance_review-mixed_realistic-S2-s30724-clean-cmp",
+      "bench-compliance_review-mixed_realistic-S2-s30794-clean-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S1-s30395-artifact_corruption-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S2-s30614-clean-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S2-s30615-conflicting_agent_outputs-cmp",
+      "bench-compliance_review-parallel_fanout_fanin-S2-s30684-clean-cmp",
+      "bench-compliance_review-sequential-S2-s30304-clean-cmp",
+      "bench-compliance_review-sequential-S5-s30022-clean-cmp",
+      "bench-compliance_review-shared_artifact-S1-s30334-clean-cmp",
+      "bench-compliance_review-shared_artifact-S1-s30405-artifact_corruption-cmp",
+      "bench-compliance_review-shared_artifact-S3-s30087-clean-cmp",
+      "bench-compliance_review-shared_artifact-S4-s30092-clean-cmp",
+      "bench-financial_loan-delegated_multi_agent-S1-s30200-clean-cmp",
+      "bench-financial_loan-delegated_multi_agent-S1-s30270-clean-cmp",
+      "bench-financial_loan-delegated_multi_agent-S2-s30280-clean-cmp",
+      "bench-financial_loan-delegated_multi_agent-S2-s30421-artifact_corruption-cmp",
+      "bench-financial_loan-delegated_multi_agent-S2-s30640-clean-cmp",
+      "bench-financial_loan-delegated_multi_agent-S3-s30110-clean-cmp",
+      "bench-financial_loan-hierarchical-S2-s30601-conflicting_agent_outputs-cmp",
+      "bench-financial_loan-hierarchical-S3-s30035-clean-cmp",
+      "bench-financial_loan-parallel_fanout_fanin-S1-s30611-conflicting_agent_outputs-cmp",
+      "bench-financial_loan-sequential-S2-s30591-conflicting_agent_outputs-cmp",
+      "bench-financial_loan-sequential-S3-s30010-clean-cmp",
+      "bench-financial_loan-shared_artifact-S1-s30190-clean-cmp",
+      "bench-financial_loan-shared_artifact-S1-s30690-clean-cmp",
+      "bench-financial_loan-shared_artifact-S2-s30340-clean-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S1-s30563-delegation_failure-cmp",
+      "bench-fraud_investigation-delegated_multi_agent-S1-s30633-conflicting_agent_outputs-cmp",
+      "bench-fraud_investigation-hierarchical-S1-s30742-clean-cmp",
+      "bench-fraud_investigation-hierarchical-S2-s30312-clean-cmp",
+      "bench-fraud_investigation-hierarchical-S2-s30532-clean-cmp",
+      "bench-fraud_investigation-mixed_realistic-S1-s30572-clean-cmp",
+      "bench-fraud_investigation-mixed_realistic-S2-s30433-artifact_corruption-cmp",
+      "bench-fraud_investigation-mixed_realistic-S2-s30653-conflicting_agent_outputs-cmp",
+      "bench-fraud_investigation-mixed_realistic-S2-s30722-clean-cmp",
+      "bench-fraud_investigation-mixed_realistic-S3-s30136-clean-cmp",
+      "bench-fraud_investigation-mixed_realistic-S4-s30141-clean-cmp",
+      "bench-fraud_investigation-mixed_realistic-S5-s30146-clean-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S1-s30322-clean-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S1-s30392-clean-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S1-s30752-clean-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S4-s30066-clean-cmp",
+      "bench-fraud_investigation-parallel_fanout_fanin-S5-s30071-clean-cmp",
+      "bench-fraud_investigation-sequential-S1-s30512-clean-cmp",
+      "bench-fraud_investigation-sequential-S2-s30232-clean-cmp",
+      "bench-fraud_investigation-sequential-S4-s30016-clean-cmp",
+      "bench-fraud_investigation-shared_artifact-S2-s30552-clean-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S1-s30103-clean-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S1-s30417-artifact_corruption-cmp",
+      "bench-research_synthesis-delegated_multi_agent-S2-s30108-clean-cmp",
+      "bench-research_synthesis-hierarchical-S2-s30387-artifact_corruption-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S2-s30397-artifact_corruption-cmp",
+      "bench-research_synthesis-parallel_fanout_fanin-S2-s30756-clean-cmp",
+      "bench-research_synthesis-sequential-S1-s30226-clean-cmp",
+      "bench-research_synthesis-sequential-S1-s30587-conflicting_agent_outputs-cmp",
+      "bench-research_synthesis-sequential-S2-s30377-artifact_corruption-cmp",
+      "bench-transaction_execution-delegated_multi_agent-S2-s30639-conflicting_agent_outputs-cmp",
+      "bench-transaction_execution-hierarchical-S1-s30378-clean-cmp",
+      "bench-transaction_execution-hierarchical-S1-s30379-artifact_corruption-cmp",
+      "bench-transaction_execution-hierarchical-S1-s30668-clean-cmp",
+      "bench-transaction_execution-hierarchical-S2-s30458-clean-cmp",
+      "bench-transaction_execution-hierarchical-S5-s30049-clean-cmp",
+      "bench-transaction_execution-mixed_realistic-S1-s30129-clean-cmp",
+      "bench-transaction_execution-mixed_realistic-S1-s30429-artifact_corruption-cmp",
+      "bench-transaction_execution-parallel_fanout_fanin-S3-s30064-clean-cmp",
+      "bench-transaction_execution-sequential-S1-s30369-artifact_corruption-cmp",
+      "bench-transaction_execution-sequential-S1-s30438-clean-cmp",
+      "bench-transaction_execution-sequential-S2-s30228-clean-cmp",
+      "bench-transaction_execution-shared_artifact-S1-s30619-conflicting_agent_outputs-cmp",
+      "bench-transaction_execution-shared_artifact-S2-s30409-artifact_corruption-cmp",
+      "bench-transaction_execution-shared_artifact-S2-s30629-conflicting_agent_outputs-cmp",
+      "bench-transaction_execution-shared_artifact-S2-s30768-clean-cmp",
+      "bench-transaction_execution-shared_artifact-S5-s30099-clean-cmp"
+    ],
+    "stratum_coverage": {
+      "('artifact_corruption', 'delegated_multi_agent', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 1
+      },
+      "('artifact_corruption', 'delegated_multi_agent', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 1
+      },
+      "('artifact_corruption', 'hierarchical', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 1
+      },
+      "('artifact_corruption', 'hierarchical', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 1
+      },
+      "('artifact_corruption', 'mixed_realistic', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 1
+      },
+      "('artifact_corruption', 'mixed_realistic', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 1
+      },
+      "('artifact_corruption', 'parallel_fanout_fanin', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 1
+      },
+      "('artifact_corruption', 'parallel_fanout_fanin', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 1
+      },
+      "('artifact_corruption', 'sequential', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 1
+      },
+      "('artifact_corruption', 'sequential', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 1
+      },
+      "('artifact_corruption', 'shared_artifact', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 1
+      },
+      "('artifact_corruption', 'shared_artifact', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 1
+      },
+      "('clean', 'delegated_multi_agent', 'S1', 'clean')": {
+        "population": 32,
+        "sampled": 3
+      },
+      "('clean', 'delegated_multi_agent', 'S2', 'clean')": {
+        "population": 32,
+        "sampled": 3
+      },
+      "('clean', 'delegated_multi_agent', 'S3', 'clean')": {
+        "population": 5,
+        "sampled": 1
+      },
+      "('clean', 'delegated_multi_agent', 'S4', 'clean')": {
+        "population": 5,
+        "sampled": 1
+      },
+      "('clean', 'delegated_multi_agent', 'S5', 'clean')": {
+        "population": 5,
+        "sampled": 1
+      },
+      "('clean', 'hierarchical', 'S1', 'clean')": {
+        "population": 32,
+        "sampled": 3
+      },
+      "('clean', 'hierarchical', 'S2', 'clean')": {
+        "population": 32,
+        "sampled": 3
+      },
+      "('clean', 'hierarchical', 'S3', 'clean')": {
+        "population": 5,
+        "sampled": 1
+      },
+      "('clean', 'hierarchical', 'S4', 'clean')": {
+        "population": 5,
+        "sampled": 1
+      },
+      "('clean', 'hierarchical', 'S5', 'clean')": {
+        "population": 5,
+        "sampled": 1
+      },
+      "('clean', 'mixed_realistic', 'S1', 'clean')": {
+        "population": 32,
+        "sampled": 3
+      },
+      "('clean', 'mixed_realistic', 'S2', 'clean')": {
+        "population": 32,
+        "sampled": 3
+      },
+      "('clean', 'mixed_realistic', 'S3', 'clean')": {
+        "population": 5,
+        "sampled": 1
+      },
+      "('clean', 'mixed_realistic', 'S4', 'clean')": {
+        "population": 5,
+        "sampled": 1
+      },
+      "('clean', 'mixed_realistic', 'S5', 'clean')": {
+        "population": 5,
+        "sampled": 1
+      },
+      "('clean', 'parallel_fanout_fanin', 'S1', 'clean')": {
+        "population": 32,
+        "sampled": 3
+      },
+      "('clean', 'parallel_fanout_fanin', 'S2', 'clean')": {
+        "population": 32,
+        "sampled": 3
+      },
+      "('clean', 'parallel_fanout_fanin', 'S3', 'clean')": {
+        "population": 5,
+        "sampled": 1
+      },
+      "('clean', 'parallel_fanout_fanin', 'S4', 'clean')": {
+        "population": 5,
+        "sampled": 1
+      },
+      "('clean', 'parallel_fanout_fanin', 'S5', 'clean')": {
+        "population": 5,
+        "sampled": 1
+      },
+      "('clean', 'sequential', 'S1', 'clean')": {
+        "population": 32,
+        "sampled": 3
+      },
+      "('clean', 'sequential', 'S2', 'clean')": {
+        "population": 32,
+        "sampled": 3
+      },
+      "('clean', 'sequential', 'S3', 'clean')": {
+        "population": 5,
+        "sampled": 1
+      },
+      "('clean', 'sequential', 'S4', 'clean')": {
+        "population": 5,
+        "sampled": 1
+      },
+      "('clean', 'sequential', 'S5', 'clean')": {
+        "population": 5,
+        "sampled": 1
+      },
+      "('clean', 'shared_artifact', 'S1', 'clean')": {
+        "population": 32,
+        "sampled": 3
+      },
+      "('clean', 'shared_artifact', 'S2', 'clean')": {
+        "population": 32,
+        "sampled": 3
+      },
+      "('clean', 'shared_artifact', 'S3', 'clean')": {
+        "population": 5,
+        "sampled": 1
+      },
+      "('clean', 'shared_artifact', 'S4', 'clean')": {
+        "population": 5,
+        "sampled": 1
+      },
+      "('clean', 'shared_artifact', 'S5', 'clean')": {
+        "population": 5,
+        "sampled": 1
+      },
+      "('conflicting_agent_outputs', 'delegated_multi_agent', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 1
+      },
+      "('conflicting_agent_outputs', 'delegated_multi_agent', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 1
+      },
+      "('conflicting_agent_outputs', 'hierarchical', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 1
+      },
+      "('conflicting_agent_outputs', 'hierarchical', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 1
+      },
+      "('conflicting_agent_outputs', 'mixed_realistic', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 1
+      },
+      "('conflicting_agent_outputs', 'mixed_realistic', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 1
+      },
+      "('conflicting_agent_outputs', 'parallel_fanout_fanin', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 1
+      },
+      "('conflicting_agent_outputs', 'parallel_fanout_fanin', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 1
+      },
+      "('conflicting_agent_outputs', 'sequential', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 1
+      },
+      "('conflicting_agent_outputs', 'sequential', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 1
+      },
+      "('conflicting_agent_outputs', 'shared_artifact', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 1
+      },
+      "('conflicting_agent_outputs', 'shared_artifact', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 1
+      },
+      "('delegation_failure', 'delegated_multi_agent', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 1
+      },
+      "('delegation_failure', 'delegated_multi_agent', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 1
+      },
+      "('delegation_failure', 'hierarchical', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('delegation_failure', 'hierarchical', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('delegation_failure', 'mixed_realistic', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('delegation_failure', 'mixed_realistic', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('delegation_failure', 'parallel_fanout_fanin', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('delegation_failure', 'parallel_fanout_fanin', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('delegation_failure', 'sequential', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('delegation_failure', 'sequential', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('delegation_failure', 'shared_artifact', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('delegation_failure', 'shared_artifact', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('incomplete_trace', 'delegated_multi_agent', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('incomplete_trace', 'delegated_multi_agent', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('incomplete_trace', 'hierarchical', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('incomplete_trace', 'hierarchical', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('incomplete_trace', 'mixed_realistic', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('incomplete_trace', 'mixed_realistic', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('incomplete_trace', 'parallel_fanout_fanin', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('incomplete_trace', 'parallel_fanout_fanin', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('incomplete_trace', 'sequential', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('incomplete_trace', 'sequential', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('incomplete_trace', 'shared_artifact', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('incomplete_trace', 'shared_artifact', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('incorrect_tool_output', 'delegated_multi_agent', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('incorrect_tool_output', 'delegated_multi_agent', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('incorrect_tool_output', 'hierarchical', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('incorrect_tool_output', 'hierarchical', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('incorrect_tool_output', 'mixed_realistic', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('incorrect_tool_output', 'mixed_realistic', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('incorrect_tool_output', 'parallel_fanout_fanin', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('incorrect_tool_output', 'parallel_fanout_fanin', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('incorrect_tool_output', 'sequential', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('incorrect_tool_output', 'sequential', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('incorrect_tool_output', 'shared_artifact', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('incorrect_tool_output', 'shared_artifact', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('misleading_delayed_observation', 'delegated_multi_agent', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('misleading_delayed_observation', 'delegated_multi_agent', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('misleading_delayed_observation', 'hierarchical', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('misleading_delayed_observation', 'hierarchical', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('misleading_delayed_observation', 'mixed_realistic', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('misleading_delayed_observation', 'mixed_realistic', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('misleading_delayed_observation', 'parallel_fanout_fanin', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('misleading_delayed_observation', 'parallel_fanout_fanin', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('misleading_delayed_observation', 'sequential', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('misleading_delayed_observation', 'sequential', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('misleading_delayed_observation', 'shared_artifact', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('misleading_delayed_observation', 'shared_artifact', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('missing_dependency', 'delegated_multi_agent', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('missing_dependency', 'delegated_multi_agent', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('missing_dependency', 'hierarchical', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('missing_dependency', 'hierarchical', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('missing_dependency', 'mixed_realistic', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('missing_dependency', 'mixed_realistic', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('missing_dependency', 'parallel_fanout_fanin', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('missing_dependency', 'parallel_fanout_fanin', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('missing_dependency', 'sequential', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('missing_dependency', 'sequential', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('missing_dependency', 'shared_artifact', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('missing_dependency', 'shared_artifact', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('retry_storm', 'delegated_multi_agent', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('retry_storm', 'delegated_multi_agent', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('retry_storm', 'hierarchical', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('retry_storm', 'hierarchical', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('retry_storm', 'mixed_realistic', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('retry_storm', 'mixed_realistic', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('retry_storm', 'parallel_fanout_fanin', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('retry_storm', 'parallel_fanout_fanin', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('retry_storm', 'sequential', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('retry_storm', 'sequential', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('retry_storm', 'shared_artifact', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('retry_storm', 'shared_artifact', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('tool_call_failure', 'delegated_multi_agent', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('tool_call_failure', 'delegated_multi_agent', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('tool_call_failure', 'hierarchical', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('tool_call_failure', 'hierarchical', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('tool_call_failure', 'mixed_realistic', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('tool_call_failure', 'mixed_realistic', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('tool_call_failure', 'parallel_fanout_fanin', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('tool_call_failure', 'parallel_fanout_fanin', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('tool_call_failure', 'sequential', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('tool_call_failure', 'sequential', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('tool_call_failure', 'shared_artifact', 'S1', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      },
+      "('tool_call_failure', 'shared_artifact', 'S2', 'fault')": {
+        "population": 3,
+        "sampled": 0
+      }
+    }
+  }
+}

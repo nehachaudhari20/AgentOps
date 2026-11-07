@@ -21,7 +21,7 @@ ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from agenttrust import ConservedRPA, MFAV, PLHC, ProvenanceTrace
+from agenttrust import AssuranceProfileCalculator, ConservedRPA, MFAV, PLHC, ProvenanceTrace
 from agenttrust.evaluation.baselines import allocate_b0_uniform, allocate_rpa
 from agenttrust.mlpg.projections import ProjectionKind
 
@@ -67,6 +67,21 @@ def _snapshot(pt: ProvenanceTrace) -> dict:
         "leaf_count": snap.leaf_count,
         "status": ver.status.value,
     }
+    # Assurance profile (deterministic payload)
+    rpa_res = None
+    mfav_res = None
+    if oid and out.get("rpa_p1", {}).get("status") == "ok":
+        try:
+            rpa_res = ConservedRPA().allocate_from_trace(
+                pt, [oid], projection_kind=ProjectionKind.P1_DIRECT
+            )[0]
+            mfav_res = MFAV().compute(rpa_res, trace=pt)
+        except Exception:  # noqa: BLE001
+            pass
+    profile = AssuranceProfileCalculator().compute(
+        pt, rpa_result=rpa_res, mfav_result=mfav_res, plhc_result=ver
+    )
+    out["assurance"] = profile.to_dict()
     return out
 
 

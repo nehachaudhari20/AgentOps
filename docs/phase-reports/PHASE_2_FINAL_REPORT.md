@@ -124,3 +124,9 @@ Removed/qualified in public docs:
 ## 13. Research readiness assessment
 
 **Phase 2 research prototype is frozen for audit/reproduction** with explicit limitations. Suitable as synthetic-benchmark evidence for ACM TRUST–style methodology discussion. **Not** a production assurance product.
+
+## 14. Phase 2.13 research-validity correction (post-freeze)
+
+See `PHASE_2_13_IMPLEMENTATION_REPORT.md` and `docs/results/PHASE_2_13_RESEARCH_VALIDITY_REPORT.md`.
+
+Corrections: paired power (72 pairs → power≈0.38 under primary cell; suggested ≈176; corpus not regenerated); attribution alignment disclosure + intervention reference; bridge corpus; stratified RQ4/RQ5; reproduction mandatory-stage integrity. Compact results under `experiments/results/phase_2_13/` are trackable.

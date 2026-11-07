@@ -84,11 +84,17 @@ python experiments/scripts/run_baseline_comparison.py --split development --limi
 
 ```bash
 python experiments/scripts/reproduce.py --all-safe
+# Complete reproduction (full evaluation + Phase 2.13 validator):
+python experiments/scripts/reproduce.py --complete
 ```
 
-Stage-level logs and exit codes; scratch outputs under `experiments/results/repro_scratch/` (does not overwrite frozen eval dirs by default).
+Stage-level logs and exit codes. Mandatory skipped stages cannot report complete success. Scratch under `experiments/results/repro_scratch/`; compact Phase 2.13 evidence under `experiments/results/phase_2_13/`.
 
 Details: [docs/methodology/REPRODUCIBILITY.md](docs/methodology/REPRODUCIBILITY.md).
+
+## Research status (Phase 2.13)
+
+Scientific-validity corrections: paired McNemar power; attribution alignment disclosure + intervention reference; artifact-bridge corpus; stratified RQ4/RQ5; observability-aware Assurance; paired effect sizes. See [PHASE_2_13_RESEARCH_VALIDITY_REPORT.md](docs/results/PHASE_2_13_RESEARCH_VALIDITY_REPORT.md) and [PHASE_2_13_CLAIM_EVIDENCE_MATRIX.md](docs/results/PHASE_2_13_CLAIM_EVIDENCE_MATRIX.md).
 
 ## Tests
 
@@ -109,6 +115,7 @@ python -m pytest tests -q
 | Statistical plan | [STATISTICAL_ANALYSIS_PLAN.md](docs/methodology/STATISTICAL_ANALYSIS_PLAN.md) |
 | Evaluation results | [FINAL_EVALUATION_REPORT.md](docs/results/FINAL_EVALUATION_REPORT.md) |
 | Claim–evidence matrix | [CLAIM_EVIDENCE_MATRIX.md](docs/results/CLAIM_EVIDENCE_MATRIX.md) |
+| Phase 2.13 validity | [PHASE_2_13_RESEARCH_VALIDITY_REPORT.md](docs/results/PHASE_2_13_RESEARCH_VALIDITY_REPORT.md) |
 | Phase 2 freeze report | [PHASE_2_FINAL_REPORT.md](docs/phase-reports/PHASE_2_FINAL_REPORT.md) |
 | Architecture (MLPG / RPA / MFAV / Assurance / PLHC / Pipeline) | [docs/architecture/](docs/architecture/) |
 

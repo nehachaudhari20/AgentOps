@@ -1,65 +1,57 @@
-# Sample-Size and Power Planning (Phase 2.9)
+# Sample-Size and Power Planning (Phase 2.13 correction)
 
-Committed **before** held-out corpus generation. Primary unit = **trace**.
+Primary unit = **trace** (matched clean/fault **pair** for the primary incompleteness endpoint).
 
 ## 1. Prespecified primary endpoint
 
-**Endpoint:** Indicator that an incompleteness-inducing fault pair is distinguished by the evaluation harness using **public observables + Assurance structural dimensions**, without reading planted responsibility:
+**Endpoint:** Matched-pair binary contrast for incompleteness-inducing faults
+(`incomplete_trace` / `missing_dependency`) vs clean twin (same `matched_pair_id`).
 
-- Fault member: `incomplete_trace` or `missing_dependency`
-- Success criterion (binary): `TraceCompleteness.incomplete == True` on the fault member **and** `incomplete == False` on the matched clean twin (same `matched_pair_id`).
+**Test:** Exact McNemar / binomial test on discordant pairs  
+H₀: P(fault-only success) = P(clean-only success) among discordant pairs.
 
-This is a **paired** binary outcome at the pair level.
+This replaces the Phase 2.9 planning stand-in that simulated **independent** Bernoulli groups with an unpooled two-proportion z-test. That figure (power ≈ 0.8691 at 72 pairs) is **invalid** for the paired design and must not be cited.
 
-## 2. Effect size and error rates
+## 2. Joint outcome model
 
-| Parameter | Value | Justification |
-|-----------|------:|---------------|
-| Smallest meaningful effect Δ | 0.20 | Absolute pair-success rate vs a null of uninformative labeling; smaller effects are exploratory |
-| α (two-sided) | 0.05 | Conventional |
-| Target power | 0.80 (prefer 0.90) | Spec requirement |
-| Multiple comparisons | Primary family = 1 contrast; secondary topology/fault contrasts use Benjamini–Hochberg only in exploratory reports | Avoid overclaiming |
+Each pair is drawn from a 4-cell multinomial:
 
-## 3. Pilot uncertainty
+| Cell | Meaning |
+|------|---------|
+| both | fault and clean both “succeed” on the endpoint |
+| fault_only | fault succeeds, clean fails |
+| clean_only | clean succeeds, fault fails |
+| neither | neither succeeds |
 
-Historical pilot: 2 intentionally incomplete traces, 66 complete-looking for pipeline eligibility.  
-Variance of detection rates is **poorly estimated**. Therefore:
+Power simulations use `agenttrust/benchmark/dataset/power.py` (`simulate_paired_power`, ≥10_000 sims, fixed seeds).
 
-1. Analytic normal approximation is treated as a lower bound check only.
-2. **Simulation-based** power (Monte Carlo Bernoulli pairs) is authoritative.
-3. Sensitivity: null/control success rate p₀ ∈ {0.50, 0.70, 0.85} with alternative p₁ = min(1, p₀ + Δ).
+## 3. Sensitivity grid and decision
 
-## 4. Simulation procedure
+Machine-readable: `data/benchmarks/experimental_2_9/reports/sample_size_power_2_13.json`  
+(Historical `sample_size_power.json` preserved if present; do not treat it as valid paired evidence.)
 
-For proposed pair count n_pairs:
+Primary planning cell: discordant rate 0.30, discordant asymmetry 0.40.
 
-1. Draw n_pairs i.i.d. Bernoulli(p₀) under H₀ and Bernoulli(p₁) under H₁ (independent across pairs for planning; analysis will use McNemar / paired bootstrap on real data).
-2. Two-proportion z-test (unpooled) as a conservative planning stand-in; confirm with McNemar when discordant pairs dominate.
-3. Power = fraction of 10_000 sims rejecting H₀ at α=0.05.
-4. Repeat across p₀ grid and Δ ∈ {0.10, 0.15, 0.20, 0.30}.
+- If primary-cell power ≥ 0.80 at n=72 → retain held-out incompleteness pair count.
+- Otherwise → report suggested n for 80% and **do not silently regenerate** the Phase 2.9 corpus; regeneration requires explicit approval.
 
-Machine-readable results: `data/benchmarks/experimental_2_9/reports/sample_size_power.json` (written by the planning script).
+## 4. Chosen N (catalog preserved) and 2.13 decision
 
-## 5. Chosen N
-
-Held-out incompleteness-relevant pairs:
+Held-out incompleteness-relevant pairs remain:
 
 `2 faults × 6 topologies × 2 scales (S1,S2) × 3 replicates = **72 pairs**` (144 traces).
 
-Simulation (see report) shows power ≥ 0.80 for Δ=0.20 at mid p₀; at p₀=0.85 ceiling effects reduce power for Δ=0.10 — those contrasts remain **exploratory / precision-based**.
+**Phase 2.13 paired simulation (10_000 sims):** primary-cell power at n=72 ≈ **0.3816** (does **not** meet 0.80). Suggested n_pairs ≈ **176** under the same primary joint cell. Historical Phase 2.9 corpus is **preserved**; regeneration requires explicit approval (not auto-run).
 
-Clean-core held-out n=150 supports bootstrap CIs for cell means (5 seeds per topology×scale) without claiming powered multi-way ANOVA.
-
-## 6. Explicit exploratory analyses
+## 5. Exploratory analyses (not powered superiority claims)
 
 - Full 9-fault observability agreement rates
 - MFAV vector distances across topologies
-- P1/P2 δ
+- P1/P2 δ (requires bridge-eligible traces; see `experimental_2_13_bridges`)
 
-These use precision-based reporting (CI width), not powered superiority claims.
+## 6. What we refuse to claim
 
-## 7. What we refuse to claim
-
+- That independent two-proportion power justifies the paired design.
 - That 1,596 traces create external validity.
 - That event totals are the sample size.
-- That an arbitrary round number is “statistically justified” without the above.
+- 80%/90% power unless the paired simulation supports it.
