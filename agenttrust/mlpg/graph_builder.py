@@ -58,6 +58,9 @@ class MLPGBuilder:
                 dependency_event_ids=list(ev.dependency_event_ids),
                 schema_version=ev.schema_version,
                 trace_id=ev.trace_id,
+                model_id=ev.model_id,
+                tool_id=ev.tool_id,
+                metadata=dict(ev.metadata),
             )
 
         for rel in sorted(relationships, key=lambda r: r.edge_key()):

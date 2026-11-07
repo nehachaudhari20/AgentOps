@@ -94,6 +94,17 @@ def test_cycle_rejected():
         ConservedRPA().allocate(p, "A")
 
 
+def test_allow_cycles_true_still_unsupported():
+    """allow_cycles does not enable cyclic propagation; ConservedRPA remains DAG-only."""
+    g = nx.DiGraph()
+    g.add_nodes_from(["A", "B"])
+    g.add_edge("A", "B")
+    g.add_edge("B", "A")
+    p = AttributionProjection(ProjectionKind.P1_DIRECT, g, [])
+    with pytest.raises(RPAError, match="not implemented"):
+        ConservedRPA().allocate(p, "A", config=RPAConfig(allow_cycles=True))
+
+
 def test_incomplete_trace_rejected_and_override():
     from agenttrust.provenance_trace import TraceCompleteness
 

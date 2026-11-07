@@ -11,6 +11,7 @@ Provide a reproducible stack that:
 1. Validates and represents multi-agent **execution events** and **artifacts**
 2. Builds a typed Multi-Layer Provenance Graph (MLPG)
 3. Allocates **structural** responsibility on event projections (conserved RPA)
+4. Aggregates RPA allocations into an exclusive **MFAV** factor profile
 
 ## Explicit non-claims
 
@@ -21,6 +22,7 @@ AgentTrust **does not**:
 - Establish legal or organizational liability
 - Claim W3C PROV compliance (design is PROV-inspired only)
 - Treat `OBSERVED_AFTER` as causal dependence
+- Treat MFAV as fault probability, trust scoring, or legal accountability
 
 ## Current implementation status
 
@@ -29,7 +31,7 @@ AgentTrust **does not**:
 | Event/artifact schema + validation | **Phase 2.1 — active** (`agenttrust/`) |
 | Typed MLPG + P1/P2 projections | **Phase 2.1 — active** |
 | Conserved RPA (α=0 baseline) | **Phase 2.2 — active** (`agenttrust/attribution/`) |
-| MFAV | Not implemented (package reserved) |
+| MFAV (exclusive factor aggregation) | **Phase 2.3 — active** (`agenttrust/accountability/`) |
 | Assurance / CTSM redesign | Not implemented (package reserved) |
 | PLHC redesign | Not implemented (package reserved) |
 | Legacy prototype | Preserved under `legacy/` (historical only) |
@@ -49,6 +51,11 @@ Raw / processed events
           ▼
 ┌───────────────────┐
 │  Conserved RPA    │  structural allocation (α=0 baseline)
+└─────────┬─────────┘
+          │
+          ▼
+┌───────────────────┐
+│  MFAV             │  exclusive factor + entity aggregation
 └───────────────────┘
 ```
 
@@ -61,7 +68,7 @@ AgentOps/
 │   ├── validation/
 │   ├── mlpg/
 │   ├── attribution/      # Conserved RPA (Phase 2.2)
-│   ├── accountability/   # Reserved
+│   ├── accountability/   # MFAV (Phase 2.3)
 │   ├── assurance/        # Reserved
 │   ├── integrity/        # Reserved
 │   ├── migration/
@@ -145,18 +152,42 @@ python experiments/scripts/run_conserved_rpa.py
 
 Baseline: **α = 0** (intermediate nodes retain no local share; roots absorb). Equal parent split is a **structural convention**, not measured causal weight.
 
+## Phase 2.3 usage — MFAV
+
+```python
+from agenttrust import ProvenanceTrace, ConservedRPA, MFAV
+from agenttrust.mlpg.projections import ProjectionKind
+
+trace = ProvenanceTrace()
+trace.load_records(events, artifacts)
+
+rpa_results = ConservedRPA().allocate_from_trace(
+    trace,
+    projection_kind=ProjectionKind.P1_DIRECT,
+)
+
+profiles = [MFAV().compute(result, trace=trace) for result in rpa_results]
+for p in profiles:
+    print(p.outcome_id, p.normalized_factor_vector, p.status)
+```
+
+MFAV maps each RPA event allocation to exactly one primary factor (`agent`, `model`, `prompt`, `data`, `tool`, `execution`, `other`). Optional `model_id` / `tool_id` / memory metadata are used only when explicitly present.
+
 ## Tests
 
 ```bash
-python -c "from agenttrust import ProvenanceTrace, ConservedRPA"
+python -c "from agenttrust import ProvenanceTrace, ConservedRPA, MFAV"
 python -m pytest tests -q
 ```
 
 ## Documentation
 
 - Architecture (Phase 2.1 MLPG): [docs/architecture/PHASE_2_1_MLPG.md](docs/architecture/PHASE_2_1_MLPG.md)
+- Architecture (Phase 2.2 RPA): [docs/architecture/PHASE_2_2_RPA.md](docs/architecture/PHASE_2_2_RPA.md)
+- Architecture (Phase 2.3 MFAV): [docs/architecture/PHASE_2_3_MFAV.md](docs/architecture/PHASE_2_3_MFAV.md)
 - Phase 2.1 report: [docs/phase-reports/PHASE_2_1_IMPLEMENTATION_REPORT.md](docs/phase-reports/PHASE_2_1_IMPLEMENTATION_REPORT.md)
 - Phase 2.2 report: [docs/phase-reports/PHASE_2_2_IMPLEMENTATION_REPORT.md](docs/phase-reports/PHASE_2_2_IMPLEMENTATION_REPORT.md)
+- Phase 2.3 report: [docs/phase-reports/PHASE_2_3_IMPLEMENTATION_REPORT.md](docs/phase-reports/PHASE_2_3_IMPLEMENTATION_REPORT.md)
 
 ## Legacy prototype
 

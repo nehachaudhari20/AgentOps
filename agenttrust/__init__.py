@@ -1,5 +1,6 @@
-"""AgentTrust: provenance (Phase 2.1) and conserved RPA (Phase 2.2)."""
+"""AgentTrust: provenance, conserved RPA, and MFAV."""
 
+from agenttrust.accountability import MFAV, MFAVResult, MFAVStatus
 from agenttrust.attribution.rpa import ConservedRPA, RPAConfig, RPAResult
 from agenttrust.provenance_trace import ProvenanceTrace
 from agenttrust.schema.enums import (
@@ -15,6 +16,9 @@ __all__ = [
     "ConservedRPA",
     "RPAConfig",
     "RPAResult",
+    "MFAV",
+    "MFAVResult",
+    "MFAVStatus",
     "EventCategory",
     "EventStatus",
     "NodeKind",
@@ -22,4 +26,4 @@ __all__ = [
     "SCHEMA_VERSION",
 ]
 
-__version__ = "2.2.0"
+__version__ = "2.3.0"

@@ -31,7 +31,7 @@ Baseline: `equal_parents` — equal structural split among inbound parents. This
 ## Guards
 
 - Incomplete traces: rejected unless `allow_incomplete=True` (result marked overridden).
-- Cycles: rejected by default (DAG required).
+- Cycles: always rejected — ConservedRPA requires a DAG. `allow_cycles=True` does **not** enable cyclic propagation; it raises an explicit unsupported error (corrected in Phase 2.3).
 - Provenance MultiDiGraph is never mutated by projection or RPA.
 
 ## API

@@ -38,7 +38,9 @@ class RPAConfig:
     alpha: float = 0.0
     parent_policy: ParentAllocationPolicy = ParentAllocationPolicy.EQUAL_PARENTS
     allow_incomplete: bool = False
-    allow_cycles: bool = False  # must remain False for DAG RPA; override only for diagnostics
+    # ConservedRPA requires a DAG. This flag does not enable cyclic propagation;
+    # setting True still rejects cycles with an explicit unsupported error.
+    allow_cycles: bool = False
 
     def __post_init__(self) -> None:
         if not (0.0 <= float(self.alpha) <= 1.0):
@@ -142,16 +144,19 @@ class ConservedRPA:
             overridden.append("incomplete_trace")
             warnings.append("Attribution run with allow_incomplete=True on an incomplete trace.")
 
-        # Cycle guard
+        # Cycle guard — cyclic propagation is not implemented
         cycle_info = self._cycle_diagnostics(graph)
         if cycle_info["has_cycle"]:
-            if not cfg.allow_cycles:
+            if cfg.allow_cycles:
                 raise RPAError(
-                    "Attribution projection contains a cycle; DAG required. "
+                    "Attribution projection contains a cycle; ConservedRPA does not "
+                    "support cyclic propagation (allow_cycles=True is not implemented). "
                     f"Cycle evidence: {cycle_info.get('cycle_nodes')}"
                 )
-            overridden.append("dependency_cycle")
-            warnings.append("Attribution run with allow_cycles=True; results are not DAG-valid.")
+            raise RPAError(
+                "Attribution projection contains a cycle; DAG required. "
+                f"Cycle evidence: {cycle_info.get('cycle_nodes')}"
+            )
 
         node_alloc, root_alloc = self._propagate(graph, outcome_id, cfg)
 

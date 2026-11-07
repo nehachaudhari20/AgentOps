@@ -613,6 +613,55 @@ class TraceValidator:
                 )
                 return None, diags
 
+        model_id = raw.get("model_id")
+        if model_id is not None:
+            if not isinstance(model_id, str):
+                diags.append(
+                    _diag(
+                        "invalid_model_id",
+                        "model_id must be a string or null.",
+                        severity=DiagnosticSeverity.ERROR,
+                        disposition=RecordDisposition.REJECTED,
+                        record_kind="event",
+                        record_id=event_id,
+                    )
+                )
+                return None, diags
+            model_id = model_id.strip() or None
+
+        tool_id = raw.get("tool_id")
+        if tool_id is not None:
+            if not isinstance(tool_id, str):
+                diags.append(
+                    _diag(
+                        "invalid_tool_id",
+                        "tool_id must be a string or null.",
+                        severity=DiagnosticSeverity.ERROR,
+                        disposition=RecordDisposition.REJECTED,
+                        record_kind="event",
+                        record_id=event_id,
+                    )
+                )
+                return None, diags
+            tool_id = tool_id.strip() or None
+
+        meta_raw = raw.get("metadata") or {}
+        if meta_raw is None:
+            meta_raw = {}
+        if not isinstance(meta_raw, dict):
+            diags.append(
+                _diag(
+                    "invalid_metadata",
+                    "Event metadata must be an object when present.",
+                    severity=DiagnosticSeverity.ERROR,
+                    disposition=RecordDisposition.REJECTED,
+                    record_kind="event",
+                    record_id=event_id,
+                )
+            )
+            return None, diags
+        metadata = tuple(sorted((str(k), str(v)) for k, v in meta_raw.items()))
+
         return (
             EventRecord(
                 event_id=event_id,
@@ -630,6 +679,9 @@ class TraceValidator:
                 invokes_event_ids=invokes,
                 retries_event_id=retries,
                 observed_after_event_ids=observed_after,
+                model_id=model_id,
+                tool_id=tool_id,
+                metadata=metadata,
             ),
             diags,
         )

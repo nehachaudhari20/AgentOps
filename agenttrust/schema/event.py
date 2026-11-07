@@ -69,6 +69,11 @@ class EventRecord:
     invokes_event_ids: tuple[str, ...] = ()
     retries_event_id: Optional[str] = None
     observed_after_event_ids: tuple[str, ...] = ()
+    # Optional accountability identities (absent ⇒ unobserved; never inferred)
+    model_id: Optional[str] = None
+    tool_id: Optional[str] = None
+    # Non-sensitive key/value tags only (e.g. subtype=memory). Historical records omit this.
+    metadata: tuple[tuple[str, str], ...] = ()
 
     def to_public_dict(self) -> dict[str, Any]:
         """Serializable view without inventing fields."""
@@ -88,6 +93,9 @@ class EventRecord:
             "invokes_event_ids": list(self.invokes_event_ids),
             "retries_event_id": self.retries_event_id,
             "observed_after_event_ids": list(self.observed_after_event_ids),
+            "model_id": self.model_id,
+            "tool_id": self.tool_id,
+            "metadata": dict(self.metadata),
         }
 
     @staticmethod
