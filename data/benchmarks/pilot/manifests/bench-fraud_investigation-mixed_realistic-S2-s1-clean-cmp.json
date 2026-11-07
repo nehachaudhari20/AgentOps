@@ -1,0 +1,35 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "investigator",
+    "analyst",
+    "osint",
+    "risk",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "investigator-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "89172b8a968f760c0eadc498594613143b0c804ed4da581b9216f94d2a83925e",
+  "expected_event_count": 100,
+  "fault_types": [],
+  "generator_version": "2.4.0",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "combines parallel evidence, shared artifacts, delegation, and retry"
+  ],
+  "outcome_event_ids": [
+    "bench-fraud_investigation-mixed_realistic-S2-s1-clean-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "fraud_investigation",
+  "seed": 1,
+  "topology_id": "mixed_realistic",
+  "trace_id": "bench-fraud_investigation-mixed_realistic-S2-s1-clean-cmp"
+}

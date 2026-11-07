@@ -1,0 +1,35 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "validator",
+    "pricing",
+    "settlement",
+    "risk",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "validator-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "a1c0d0cbbe7bd2a5d696adfca2a011d8c30abaa3b3df37e70404c89c45ec6edd",
+  "expected_event_count": 100,
+  "fault_types": [],
+  "generator_version": "2.4.0",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "explicit shared artifacts consumed by multiple agents",
+    "explicit shared artifacts consumed by multiple agents"
+  ],
+  "outcome_event_ids": [
+    "bench-transaction_execution-shared_artifact-S2-s1-clean-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "transaction_execution",
+  "seed": 1,
+  "topology_id": "shared_artifact",
+  "trace_id": "bench-transaction_execution-shared_artifact-S2-s1-clean-cmp"
+}

@@ -1,0 +1,32 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "auditor",
+    "researcher",
+    "reviewer",
+    "executor"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "df08a1f1f0593d1f1c45b3111fc47b317b5ebf7fd2178322bd7e0c02fc5031e8",
+  "expected_event_count": 50,
+  "fault_types": [
+    "misleading_delayed_observation"
+  ],
+  "generator_version": "2.4.0",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "combines parallel evidence, shared artifacts, delegation, and retry"
+  ],
+  "outcome_event_ids": [
+    "bench-compliance_review-mixed_realistic-S1-s107-misleading_delayed_observation-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "compliance_review",
+  "seed": 107,
+  "topology_id": "mixed_realistic",
+  "trace_id": "bench-compliance_review-mixed_realistic-S1-s107-misleading_delayed_observation-cmp"
+}

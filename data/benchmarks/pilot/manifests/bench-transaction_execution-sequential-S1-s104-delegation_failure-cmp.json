@@ -1,0 +1,32 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "validator",
+    "pricing",
+    "settlement",
+    "risk"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "ed52ad52abea749116ea96ce66063e97f4e20737e58f4616abd6cd1b5ee660ee",
+  "expected_event_count": 50,
+  "fault_types": [
+    "delegation_failure"
+  ],
+  "generator_version": "2.4.0",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "linear chain; each step depends on previous",
+    "linear chain; each step depends on previous"
+  ],
+  "outcome_event_ids": [
+    "bench-transaction_execution-sequential-S1-s104-delegation_failure-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "transaction_execution",
+  "seed": 104,
+  "topology_id": "sequential",
+  "trace_id": "bench-transaction_execution-sequential-S1-s104-delegation_failure-cmp"
+}

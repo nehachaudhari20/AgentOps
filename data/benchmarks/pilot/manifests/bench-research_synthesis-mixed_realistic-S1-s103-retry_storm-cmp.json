@@ -1,0 +1,32 @@
+{
+  "actual_event_count": 53,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "analyst",
+    "writer"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "a4bb51993d049d3cba0b79a79c2d97c4b57f62e0fafb4f1583153e77901f3435",
+  "expected_event_count": 50,
+  "fault_types": [
+    "retry_storm"
+  ],
+  "generator_version": "2.4.0",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "combines parallel evidence, shared artifacts, delegation, and retry"
+  ],
+  "outcome_event_ids": [
+    "bench-research_synthesis-mixed_realistic-S1-s103-retry_storm-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "research_synthesis",
+  "seed": 103,
+  "topology_id": "mixed_realistic",
+  "trace_id": "bench-research_synthesis-mixed_realistic-S1-s103-retry_storm-cmp"
+}

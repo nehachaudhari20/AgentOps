@@ -1,0 +1,35 @@
+{
+  "actual_event_count": 101,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "risk",
+    "policy",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "planner-1"
+  ],
+  "artifact_count": 101,
+  "config_fingerprint": "707cd743c3f049446a3bad7b539ef3151e58ddda1fc3658fb88764f3752ae371",
+  "expected_event_count": 101,
+  "fault_types": [],
+  "generator_version": "2.4.0",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "multi-level INVOKES delegation; callers depend on callees",
+    "multi-level INVOKES delegation; callers depend on callees"
+  ],
+  "outcome_event_ids": [
+    "bench-financial_loan-delegated_multi_agent-S2-s1-clean-cmp:e0100"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "financial_loan",
+  "seed": 1,
+  "topology_id": "delegated_multi_agent",
+  "trace_id": "bench-financial_loan-delegated_multi_agent-S2-s1-clean-cmp"
+}

@@ -1,0 +1,45 @@
+{
+  "actual_event_count": 250,
+  "agent_count": 20,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "risk",
+    "policy",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "planner-1",
+    "researcher-1",
+    "risk-1",
+    "policy-1",
+    "executor-1",
+    "memory-1",
+    "tool_runner-1",
+    "coordinator-2",
+    "planner-2",
+    "researcher-2",
+    "risk-2"
+  ],
+  "artifact_count": 250,
+  "config_fingerprint": "298421c963aafec2156ee2c5fd0876f87f2acf3da6e220e2cf08cc4a40850089",
+  "expected_event_count": 250,
+  "fault_types": [],
+  "generator_version": "2.4.0",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "explicit shared artifacts consumed by multiple agents",
+    "explicit shared artifacts consumed by multiple agents"
+  ],
+  "outcome_event_ids": [
+    "bench-financial_loan-shared_artifact-S3-s2-clean-cmp:e0249"
+  ],
+  "scale_tier": "S3",
+  "scenario_id": "financial_loan",
+  "seed": 2,
+  "topology_id": "shared_artifact",
+  "trace_id": "bench-financial_loan-shared_artifact-S3-s2-clean-cmp"
+}

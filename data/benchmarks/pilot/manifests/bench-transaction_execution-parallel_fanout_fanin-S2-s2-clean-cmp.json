@@ -1,0 +1,35 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "validator",
+    "pricing",
+    "settlement",
+    "risk",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "validator-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "4f0410da77c416428da28969eaa777cc5c1f6dc013bcc3a4f4451332c39d0281",
+  "expected_event_count": 100,
+  "fault_types": [],
+  "generator_version": "2.4.0",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "fan-out to parallel branches; fan-in merge before outcome",
+    "fan-out to parallel branches; fan-in merge before outcome"
+  ],
+  "outcome_event_ids": [
+    "bench-transaction_execution-parallel_fanout_fanin-S2-s2-clean-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "transaction_execution",
+  "seed": 2,
+  "topology_id": "parallel_fanout_fanin",
+  "trace_id": "bench-transaction_execution-parallel_fanout_fanin-S2-s2-clean-cmp"
+}

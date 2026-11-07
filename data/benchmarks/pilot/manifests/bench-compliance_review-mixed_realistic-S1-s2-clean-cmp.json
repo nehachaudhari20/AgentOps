@@ -1,0 +1,30 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "auditor",
+    "researcher",
+    "reviewer",
+    "executor"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "cca161fac5dc9260d106588ecbb55e5e74406b80369f27fab0b5e31aa55e764b",
+  "expected_event_count": 50,
+  "fault_types": [],
+  "generator_version": "2.4.0",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "combines parallel evidence, shared artifacts, delegation, and retry"
+  ],
+  "outcome_event_ids": [
+    "bench-compliance_review-mixed_realistic-S1-s2-clean-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "compliance_review",
+  "seed": 2,
+  "topology_id": "mixed_realistic",
+  "trace_id": "bench-compliance_review-mixed_realistic-S1-s2-clean-cmp"
+}

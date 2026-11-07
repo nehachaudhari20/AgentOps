@@ -1,0 +1,1159 @@
+{
+  "generator_version": "2.4.0",
+  "n_configs": 68,
+  "totals": {
+    "agent_count_distribution": {
+      "max": 50,
+      "mean": 24.41176470588235,
+      "min": 5,
+      "n": 68
+    },
+    "event_count_distribution": {
+      "max": 1001,
+      "mean": 341.02941176470586,
+      "min": 49,
+      "n": 68
+    },
+    "fault_distribution": {
+      "artifact_corruption": 1,
+      "conflicting_agent_outputs": 1,
+      "delegation_failure": 1,
+      "incomplete_trace": 1,
+      "incorrect_tool_output": 1,
+      "misleading_delayed_observation": 1,
+      "missing_dependency": 1,
+      "retry_storm": 1
+    },
+    "n_artifacts": 23188,
+    "n_events": 23190,
+    "n_fault_free_traces": 60,
+    "n_fault_injected_traces": 8,
+    "n_intentionally_incomplete_traces": 2,
+    "n_outcomes": 68,
+    "n_traces": 68,
+    "n_unique_agents": 107,
+    "n_validation_failures": 0,
+    "scenario_distribution": {
+      "compliance_review": 17,
+      "financial_loan": 12,
+      "fraud_investigation": 17,
+      "research_synthesis": 11,
+      "transaction_execution": 11
+    },
+    "topology_distribution": {
+      "delegated_multi_agent": 10,
+      "hierarchical": 10,
+      "mixed_realistic": 14,
+      "parallel_fanout_fanin": 10,
+      "sequential": 14,
+      "shared_artifact": 10
+    }
+  },
+  "traces": [
+    {
+      "actual_event_count": 50,
+      "agent_count": 5,
+      "artifact_count": 50,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-sequential-S1-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-sequential-S1-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-fraud_investigation-sequential-S1-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-fraud_investigation-sequential-S1-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-fraud_investigation-sequential-S1-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 50,
+      "agent_count": 5,
+      "artifact_count": 50,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-sequential-S1-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-sequential-S1-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-compliance_review-sequential-S1-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-compliance_review-sequential-S1-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-compliance_review-sequential-S1-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 100,
+      "agent_count": 10,
+      "artifact_count": 100,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-sequential-S2-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-sequential-S2-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-fraud_investigation-sequential-S2-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-fraud_investigation-sequential-S2-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-fraud_investigation-sequential-S2-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 100,
+      "agent_count": 10,
+      "artifact_count": 100,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-sequential-S2-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-sequential-S2-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-compliance_review-sequential-S2-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-compliance_review-sequential-S2-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-compliance_review-sequential-S2-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 250,
+      "agent_count": 20,
+      "artifact_count": 250,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-sequential-S3-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-sequential-S3-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-fraud_investigation-sequential-S3-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-fraud_investigation-sequential-S3-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-fraud_investigation-sequential-S3-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 250,
+      "agent_count": 20,
+      "artifact_count": 250,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-sequential-S3-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-sequential-S3-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-compliance_review-sequential-S3-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-compliance_review-sequential-S3-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-compliance_review-sequential-S3-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 500,
+      "agent_count": 50,
+      "artifact_count": 500,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-sequential-S4-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-sequential-S4-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-fraud_investigation-sequential-S4-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-fraud_investigation-sequential-S4-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-fraud_investigation-sequential-S4-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 500,
+      "agent_count": 50,
+      "artifact_count": 500,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-sequential-S4-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-sequential-S4-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-compliance_review-sequential-S4-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-compliance_review-sequential-S4-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-compliance_review-sequential-S4-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 1000,
+      "agent_count": 50,
+      "artifact_count": 1000,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-sequential-S5-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-sequential-S5-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-fraud_investigation-sequential-S5-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-fraud_investigation-sequential-S5-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-fraud_investigation-sequential-S5-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 1000,
+      "agent_count": 50,
+      "artifact_count": 1000,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-sequential-S5-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-sequential-S5-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-compliance_review-sequential-S5-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-compliance_review-sequential-S5-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-compliance_review-sequential-S5-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 50,
+      "agent_count": 5,
+      "artifact_count": 50,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-hierarchical-S1-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-hierarchical-S1-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-compliance_review-hierarchical-S1-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-compliance_review-hierarchical-S1-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-compliance_review-hierarchical-S1-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 50,
+      "agent_count": 5,
+      "artifact_count": 50,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-research_synthesis-hierarchical-S1-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-research_synthesis-hierarchical-S1-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-research_synthesis-hierarchical-S1-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-research_synthesis-hierarchical-S1-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-research_synthesis-hierarchical-S1-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 100,
+      "agent_count": 10,
+      "artifact_count": 100,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-hierarchical-S2-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-hierarchical-S2-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-compliance_review-hierarchical-S2-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-compliance_review-hierarchical-S2-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-compliance_review-hierarchical-S2-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 100,
+      "agent_count": 10,
+      "artifact_count": 100,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-research_synthesis-hierarchical-S2-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-research_synthesis-hierarchical-S2-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-research_synthesis-hierarchical-S2-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-research_synthesis-hierarchical-S2-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-research_synthesis-hierarchical-S2-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 250,
+      "agent_count": 20,
+      "artifact_count": 250,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-hierarchical-S3-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-hierarchical-S3-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-compliance_review-hierarchical-S3-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-compliance_review-hierarchical-S3-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-compliance_review-hierarchical-S3-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 250,
+      "agent_count": 20,
+      "artifact_count": 250,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-research_synthesis-hierarchical-S3-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-research_synthesis-hierarchical-S3-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-research_synthesis-hierarchical-S3-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-research_synthesis-hierarchical-S3-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-research_synthesis-hierarchical-S3-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 500,
+      "agent_count": 50,
+      "artifact_count": 500,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-hierarchical-S4-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-hierarchical-S4-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-compliance_review-hierarchical-S4-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-compliance_review-hierarchical-S4-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-compliance_review-hierarchical-S4-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 500,
+      "agent_count": 50,
+      "artifact_count": 500,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-research_synthesis-hierarchical-S4-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-research_synthesis-hierarchical-S4-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-research_synthesis-hierarchical-S4-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-research_synthesis-hierarchical-S4-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-research_synthesis-hierarchical-S4-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 1000,
+      "agent_count": 50,
+      "artifact_count": 1000,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-hierarchical-S5-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-hierarchical-S5-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-compliance_review-hierarchical-S5-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-compliance_review-hierarchical-S5-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-compliance_review-hierarchical-S5-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 1000,
+      "agent_count": 50,
+      "artifact_count": 1000,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-research_synthesis-hierarchical-S5-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-research_synthesis-hierarchical-S5-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-research_synthesis-hierarchical-S5-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-research_synthesis-hierarchical-S5-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-research_synthesis-hierarchical-S5-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 49,
+      "agent_count": 5,
+      "artifact_count": 49,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-research_synthesis-parallel_fanout_fanin-S1-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-research_synthesis-parallel_fanout_fanin-S1-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-research_synthesis-parallel_fanout_fanin-S1-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-research_synthesis-parallel_fanout_fanin-S1-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-research_synthesis-parallel_fanout_fanin-S1-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 49,
+      "agent_count": 5,
+      "artifact_count": 49,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-transaction_execution-parallel_fanout_fanin-S1-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-transaction_execution-parallel_fanout_fanin-S1-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-transaction_execution-parallel_fanout_fanin-S1-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-transaction_execution-parallel_fanout_fanin-S1-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-transaction_execution-parallel_fanout_fanin-S1-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 100,
+      "agent_count": 10,
+      "artifact_count": 100,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-research_synthesis-parallel_fanout_fanin-S2-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-research_synthesis-parallel_fanout_fanin-S2-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-research_synthesis-parallel_fanout_fanin-S2-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-research_synthesis-parallel_fanout_fanin-S2-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-research_synthesis-parallel_fanout_fanin-S2-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 100,
+      "agent_count": 10,
+      "artifact_count": 100,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-transaction_execution-parallel_fanout_fanin-S2-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-transaction_execution-parallel_fanout_fanin-S2-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-transaction_execution-parallel_fanout_fanin-S2-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-transaction_execution-parallel_fanout_fanin-S2-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-transaction_execution-parallel_fanout_fanin-S2-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 244,
+      "agent_count": 20,
+      "artifact_count": 244,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-research_synthesis-parallel_fanout_fanin-S3-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-research_synthesis-parallel_fanout_fanin-S3-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-research_synthesis-parallel_fanout_fanin-S3-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-research_synthesis-parallel_fanout_fanin-S3-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-research_synthesis-parallel_fanout_fanin-S3-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 244,
+      "agent_count": 20,
+      "artifact_count": 244,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-transaction_execution-parallel_fanout_fanin-S3-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-transaction_execution-parallel_fanout_fanin-S3-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-transaction_execution-parallel_fanout_fanin-S3-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-transaction_execution-parallel_fanout_fanin-S3-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-transaction_execution-parallel_fanout_fanin-S3-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 500,
+      "agent_count": 50,
+      "artifact_count": 500,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-research_synthesis-parallel_fanout_fanin-S4-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-research_synthesis-parallel_fanout_fanin-S4-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-research_synthesis-parallel_fanout_fanin-S4-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-research_synthesis-parallel_fanout_fanin-S4-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-research_synthesis-parallel_fanout_fanin-S4-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 500,
+      "agent_count": 50,
+      "artifact_count": 500,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-transaction_execution-parallel_fanout_fanin-S4-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-transaction_execution-parallel_fanout_fanin-S4-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-transaction_execution-parallel_fanout_fanin-S4-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-transaction_execution-parallel_fanout_fanin-S4-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-transaction_execution-parallel_fanout_fanin-S4-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 996,
+      "agent_count": 50,
+      "artifact_count": 996,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-research_synthesis-parallel_fanout_fanin-S5-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-research_synthesis-parallel_fanout_fanin-S5-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-research_synthesis-parallel_fanout_fanin-S5-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-research_synthesis-parallel_fanout_fanin-S5-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-research_synthesis-parallel_fanout_fanin-S5-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 996,
+      "agent_count": 50,
+      "artifact_count": 996,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-transaction_execution-parallel_fanout_fanin-S5-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-transaction_execution-parallel_fanout_fanin-S5-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-transaction_execution-parallel_fanout_fanin-S5-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-transaction_execution-parallel_fanout_fanin-S5-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-transaction_execution-parallel_fanout_fanin-S5-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 50,
+      "agent_count": 5,
+      "artifact_count": 50,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-transaction_execution-shared_artifact-S1-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-transaction_execution-shared_artifact-S1-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-transaction_execution-shared_artifact-S1-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-transaction_execution-shared_artifact-S1-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-transaction_execution-shared_artifact-S1-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 50,
+      "agent_count": 5,
+      "artifact_count": 50,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-financial_loan-shared_artifact-S1-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-financial_loan-shared_artifact-S1-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-financial_loan-shared_artifact-S1-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-financial_loan-shared_artifact-S1-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-financial_loan-shared_artifact-S1-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 100,
+      "agent_count": 10,
+      "artifact_count": 100,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-transaction_execution-shared_artifact-S2-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-transaction_execution-shared_artifact-S2-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-transaction_execution-shared_artifact-S2-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-transaction_execution-shared_artifact-S2-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-transaction_execution-shared_artifact-S2-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 100,
+      "agent_count": 10,
+      "artifact_count": 100,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-financial_loan-shared_artifact-S2-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-financial_loan-shared_artifact-S2-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-financial_loan-shared_artifact-S2-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-financial_loan-shared_artifact-S2-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-financial_loan-shared_artifact-S2-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 250,
+      "agent_count": 20,
+      "artifact_count": 250,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-transaction_execution-shared_artifact-S3-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-transaction_execution-shared_artifact-S3-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-transaction_execution-shared_artifact-S3-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-transaction_execution-shared_artifact-S3-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-transaction_execution-shared_artifact-S3-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 250,
+      "agent_count": 20,
+      "artifact_count": 250,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-financial_loan-shared_artifact-S3-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-financial_loan-shared_artifact-S3-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-financial_loan-shared_artifact-S3-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-financial_loan-shared_artifact-S3-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-financial_loan-shared_artifact-S3-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 500,
+      "agent_count": 50,
+      "artifact_count": 500,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-transaction_execution-shared_artifact-S4-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-transaction_execution-shared_artifact-S4-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-transaction_execution-shared_artifact-S4-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-transaction_execution-shared_artifact-S4-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-transaction_execution-shared_artifact-S4-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 500,
+      "agent_count": 50,
+      "artifact_count": 500,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-financial_loan-shared_artifact-S4-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-financial_loan-shared_artifact-S4-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-financial_loan-shared_artifact-S4-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-financial_loan-shared_artifact-S4-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-financial_loan-shared_artifact-S4-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 1000,
+      "agent_count": 50,
+      "artifact_count": 1000,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-transaction_execution-shared_artifact-S5-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-transaction_execution-shared_artifact-S5-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-transaction_execution-shared_artifact-S5-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-transaction_execution-shared_artifact-S5-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-transaction_execution-shared_artifact-S5-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 1000,
+      "agent_count": 50,
+      "artifact_count": 1000,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-financial_loan-shared_artifact-S5-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-financial_loan-shared_artifact-S5-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-financial_loan-shared_artifact-S5-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-financial_loan-shared_artifact-S5-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-financial_loan-shared_artifact-S5-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 51,
+      "agent_count": 5,
+      "artifact_count": 51,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-financial_loan-delegated_multi_agent-S1-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-financial_loan-delegated_multi_agent-S1-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-financial_loan-delegated_multi_agent-S1-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-financial_loan-delegated_multi_agent-S1-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-financial_loan-delegated_multi_agent-S1-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 51,
+      "agent_count": 5,
+      "artifact_count": 51,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-delegated_multi_agent-S1-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-delegated_multi_agent-S1-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-fraud_investigation-delegated_multi_agent-S1-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-fraud_investigation-delegated_multi_agent-S1-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-fraud_investigation-delegated_multi_agent-S1-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 101,
+      "agent_count": 10,
+      "artifact_count": 101,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-financial_loan-delegated_multi_agent-S2-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-financial_loan-delegated_multi_agent-S2-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-financial_loan-delegated_multi_agent-S2-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-financial_loan-delegated_multi_agent-S2-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-financial_loan-delegated_multi_agent-S2-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 101,
+      "agent_count": 10,
+      "artifact_count": 101,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-delegated_multi_agent-S2-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-delegated_multi_agent-S2-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-fraud_investigation-delegated_multi_agent-S2-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-fraud_investigation-delegated_multi_agent-S2-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-fraud_investigation-delegated_multi_agent-S2-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 251,
+      "agent_count": 20,
+      "artifact_count": 251,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-financial_loan-delegated_multi_agent-S3-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-financial_loan-delegated_multi_agent-S3-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-financial_loan-delegated_multi_agent-S3-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-financial_loan-delegated_multi_agent-S3-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-financial_loan-delegated_multi_agent-S3-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 251,
+      "agent_count": 20,
+      "artifact_count": 251,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-delegated_multi_agent-S3-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-delegated_multi_agent-S3-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-fraud_investigation-delegated_multi_agent-S3-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-fraud_investigation-delegated_multi_agent-S3-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-fraud_investigation-delegated_multi_agent-S3-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 501,
+      "agent_count": 50,
+      "artifact_count": 501,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-financial_loan-delegated_multi_agent-S4-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-financial_loan-delegated_multi_agent-S4-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-financial_loan-delegated_multi_agent-S4-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-financial_loan-delegated_multi_agent-S4-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-financial_loan-delegated_multi_agent-S4-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 501,
+      "agent_count": 50,
+      "artifact_count": 501,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-delegated_multi_agent-S4-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-delegated_multi_agent-S4-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-fraud_investigation-delegated_multi_agent-S4-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-fraud_investigation-delegated_multi_agent-S4-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-fraud_investigation-delegated_multi_agent-S4-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 1001,
+      "agent_count": 50,
+      "artifact_count": 1001,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-financial_loan-delegated_multi_agent-S5-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-financial_loan-delegated_multi_agent-S5-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-financial_loan-delegated_multi_agent-S5-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-financial_loan-delegated_multi_agent-S5-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-financial_loan-delegated_multi_agent-S5-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 1001,
+      "agent_count": 50,
+      "artifact_count": 1001,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-delegated_multi_agent-S5-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-delegated_multi_agent-S5-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-fraud_investigation-delegated_multi_agent-S5-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-fraud_investigation-delegated_multi_agent-S5-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-fraud_investigation-delegated_multi_agent-S5-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 50,
+      "agent_count": 5,
+      "artifact_count": 50,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-mixed_realistic-S1-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-mixed_realistic-S1-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-fraud_investigation-mixed_realistic-S1-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-fraud_investigation-mixed_realistic-S1-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-fraud_investigation-mixed_realistic-S1-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 50,
+      "agent_count": 5,
+      "artifact_count": 50,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-mixed_realistic-S1-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-mixed_realistic-S1-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-compliance_review-mixed_realistic-S1-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-compliance_review-mixed_realistic-S1-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-compliance_review-mixed_realistic-S1-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 100,
+      "agent_count": 10,
+      "artifact_count": 100,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-mixed_realistic-S2-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-mixed_realistic-S2-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-fraud_investigation-mixed_realistic-S2-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-fraud_investigation-mixed_realistic-S2-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-fraud_investigation-mixed_realistic-S2-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 100,
+      "agent_count": 10,
+      "artifact_count": 100,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-mixed_realistic-S2-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-mixed_realistic-S2-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-compliance_review-mixed_realistic-S2-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-compliance_review-mixed_realistic-S2-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-compliance_review-mixed_realistic-S2-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 250,
+      "agent_count": 20,
+      "artifact_count": 250,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-mixed_realistic-S3-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-mixed_realistic-S3-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-fraud_investigation-mixed_realistic-S3-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-fraud_investigation-mixed_realistic-S3-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-fraud_investigation-mixed_realistic-S3-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 250,
+      "agent_count": 20,
+      "artifact_count": 250,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-mixed_realistic-S3-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-mixed_realistic-S3-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-compliance_review-mixed_realistic-S3-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-compliance_review-mixed_realistic-S3-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-compliance_review-mixed_realistic-S3-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 500,
+      "agent_count": 50,
+      "artifact_count": 500,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-mixed_realistic-S4-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-mixed_realistic-S4-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-fraud_investigation-mixed_realistic-S4-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-fraud_investigation-mixed_realistic-S4-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-fraud_investigation-mixed_realistic-S4-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 500,
+      "agent_count": 50,
+      "artifact_count": 500,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-mixed_realistic-S4-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-mixed_realistic-S4-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-compliance_review-mixed_realistic-S4-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-compliance_review-mixed_realistic-S4-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-compliance_review-mixed_realistic-S4-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 1000,
+      "agent_count": 50,
+      "artifact_count": 1000,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-mixed_realistic-S5-s1-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-mixed_realistic-S5-s1-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-fraud_investigation-mixed_realistic-S5-s1-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-fraud_investigation-mixed_realistic-S5-s1-clean-cmp.json"
+      },
+      "trace_id": "bench-fraud_investigation-mixed_realistic-S5-s1-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 1000,
+      "agent_count": 50,
+      "artifact_count": 1000,
+      "fault_types": [],
+      "incomplete": false,
+      "intervention_count": 0,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-mixed_realistic-S5-s2-clean-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-mixed_realistic-S5-s2-clean-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-compliance_review-mixed_realistic-S5-s2-clean-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-compliance_review-mixed_realistic-S5-s2-clean-cmp.json"
+      },
+      "trace_id": "bench-compliance_review-mixed_realistic-S5-s2-clean-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 50,
+      "agent_count": 5,
+      "artifact_count": 50,
+      "fault_types": [
+        "missing_dependency"
+      ],
+      "incomplete": true,
+      "intervention_count": 1,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-financial_loan-sequential-S1-s100-missing_dependency-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-financial_loan-sequential-S1-s100-missing_dependency-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-financial_loan-sequential-S1-s100-missing_dependency-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-financial_loan-sequential-S1-s100-missing_dependency-cmp.json"
+      },
+      "trace_id": "bench-financial_loan-sequential-S1-s100-missing_dependency-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 50,
+      "agent_count": 5,
+      "artifact_count": 50,
+      "fault_types": [
+        "incorrect_tool_output"
+      ],
+      "incomplete": false,
+      "intervention_count": 1,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-mixed_realistic-S1-s101-incorrect_tool_output-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-mixed_realistic-S1-s101-incorrect_tool_output-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-fraud_investigation-mixed_realistic-S1-s101-incorrect_tool_output-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-fraud_investigation-mixed_realistic-S1-s101-incorrect_tool_output-cmp.json"
+      },
+      "trace_id": "bench-fraud_investigation-mixed_realistic-S1-s101-incorrect_tool_output-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 50,
+      "agent_count": 5,
+      "artifact_count": 50,
+      "fault_types": [
+        "artifact_corruption"
+      ],
+      "incomplete": false,
+      "intervention_count": 1,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-sequential-S1-s102-artifact_corruption-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-sequential-S1-s102-artifact_corruption-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-compliance_review-sequential-S1-s102-artifact_corruption-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-compliance_review-sequential-S1-s102-artifact_corruption-cmp.json"
+      },
+      "trace_id": "bench-compliance_review-sequential-S1-s102-artifact_corruption-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 53,
+      "agent_count": 5,
+      "artifact_count": 50,
+      "fault_types": [
+        "retry_storm"
+      ],
+      "incomplete": false,
+      "intervention_count": 1,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-research_synthesis-mixed_realistic-S1-s103-retry_storm-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-research_synthesis-mixed_realistic-S1-s103-retry_storm-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-research_synthesis-mixed_realistic-S1-s103-retry_storm-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-research_synthesis-mixed_realistic-S1-s103-retry_storm-cmp.json"
+      },
+      "trace_id": "bench-research_synthesis-mixed_realistic-S1-s103-retry_storm-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 50,
+      "agent_count": 5,
+      "artifact_count": 50,
+      "fault_types": [
+        "delegation_failure"
+      ],
+      "incomplete": false,
+      "intervention_count": 1,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-transaction_execution-sequential-S1-s104-delegation_failure-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-transaction_execution-sequential-S1-s104-delegation_failure-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-transaction_execution-sequential-S1-s104-delegation_failure-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-transaction_execution-sequential-S1-s104-delegation_failure-cmp.json"
+      },
+      "trace_id": "bench-transaction_execution-sequential-S1-s104-delegation_failure-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 50,
+      "agent_count": 5,
+      "artifact_count": 50,
+      "fault_types": [
+        "conflicting_agent_outputs"
+      ],
+      "incomplete": false,
+      "intervention_count": 1,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-financial_loan-mixed_realistic-S1-s105-conflicting_agent_outputs-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-financial_loan-mixed_realistic-S1-s105-conflicting_agent_outputs-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-financial_loan-mixed_realistic-S1-s105-conflicting_agent_outputs-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-financial_loan-mixed_realistic-S1-s105-conflicting_agent_outputs-cmp.json"
+      },
+      "trace_id": "bench-financial_loan-mixed_realistic-S1-s105-conflicting_agent_outputs-cmp",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 49,
+      "agent_count": 5,
+      "artifact_count": 50,
+      "fault_types": [
+        "incomplete_trace"
+      ],
+      "incomplete": true,
+      "intervention_count": 1,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-sequential-S1-s106-incomplete_trace-inc\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-fraud_investigation-sequential-S1-s106-incomplete_trace-inc\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-fraud_investigation-sequential-S1-s106-incomplete_trace-inc.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-fraud_investigation-sequential-S1-s106-incomplete_trace-inc.json"
+      },
+      "trace_id": "bench-fraud_investigation-sequential-S1-s106-incomplete_trace-inc",
+      "validation_ok": true
+    },
+    {
+      "actual_event_count": 50,
+      "agent_count": 5,
+      "artifact_count": 50,
+      "fault_types": [
+        "misleading_delayed_observation"
+      ],
+      "incomplete": false,
+      "intervention_count": 1,
+      "paths": {
+        "artifacts": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-mixed_realistic-S1-s107-misleading_delayed_observation-cmp\\artifacts.json",
+        "events": "data\\benchmarks\\pilot\\traces\\bench-compliance_review-mixed_realistic-S1-s107-misleading_delayed_observation-cmp\\events.json",
+        "ground_truth": "data\\benchmarks\\pilot\\ground_truth\\bench-compliance_review-mixed_realistic-S1-s107-misleading_delayed_observation-cmp.json",
+        "manifest": "data\\benchmarks\\pilot\\manifests\\bench-compliance_review-mixed_realistic-S1-s107-misleading_delayed_observation-cmp.json"
+      },
+      "trace_id": "bench-compliance_review-mixed_realistic-S1-s107-misleading_delayed_observation-cmp",
+      "validation_ok": true
+    }
+  ],
+  "validation_failures": []
+}

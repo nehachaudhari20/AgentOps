@@ -12,6 +12,7 @@ Provide a reproducible stack that:
 2. Builds a typed Multi-Layer Provenance Graph (MLPG)
 3. Allocates **structural** responsibility on event projections (conserved RPA)
 4. Aggregates RPA allocations into an exclusive **MFAV** factor profile
+5. Generates controlled **synthetic multi-agent benchmarks** with separate ground truth
 
 ## Explicit non-claims
 
@@ -23,6 +24,7 @@ AgentTrust **does not**:
 - Claim W3C PROV compliance (design is PROV-inspired only)
 - Treat `OBSERVED_AFTER` as causal dependence
 - Treat MFAV as fault probability, trust scoring, or legal accountability
+- Treat synthetic pilot benchmarks as production-scale validation
 
 ## Current implementation status
 
@@ -32,6 +34,7 @@ AgentTrust **does not**:
 | Typed MLPG + P1/P2 projections | **Phase 2.1 — active** |
 | Conserved RPA (α=0 baseline) | **Phase 2.2 — active** (`agenttrust/attribution/`) |
 | MFAV (exclusive factor aggregation) | **Phase 2.3 — active** (`agenttrust/accountability/`) |
+| Synthetic benchmark generator + pilot | **Phase 2.4 — active** (`agenttrust/benchmark/`) |
 | Assurance / CTSM redesign | Not implemented (package reserved) |
 | PLHC redesign | Not implemented (package reserved) |
 | Legacy prototype | Preserved under `legacy/` (historical only) |
@@ -39,7 +42,10 @@ AgentTrust **does not**:
 ## Active architecture
 
 ```text
-Raw / processed events
+Benchmark generator (optional)
+        │
+        ▼
+Raw / processed / pilot events
         │
         ▼
 ┌───────────────────┐
@@ -69,6 +75,7 @@ AgentOps/
 │   ├── mlpg/
 │   ├── attribution/      # Conserved RPA (Phase 2.2)
 │   ├── accountability/   # MFAV (Phase 2.3)
+│   ├── benchmark/        # Synthetic corpus generator (Phase 2.4)
 │   ├── assurance/        # Reserved
 │   ├── integrity/        # Reserved
 │   ├── migration/
@@ -77,7 +84,7 @@ AgentOps/
 ├── data/
 │   ├── raw/              # Immutable source inputs
 │   ├── processed/        # Migrated Phase 2.1 records
-│   ├── benchmarks/
+│   ├── benchmarks/       # Pilot / generated corpora + separate GT
 │   └── fixtures/
 ├── experiments/
 │   ├── configs/
@@ -93,8 +100,8 @@ AgentOps/
 │   ├── phase-reports/
 │   ├── methodology/
 │   └── research/
-├── outputs/historical/   # Legacy figures (not new results)
-├── pyproject.toml        # Package / pytest source of truth
+├── outputs/historical/
+├── pyproject.toml
 ├── requirements.txt
 └── README.md
 ```
@@ -107,52 +114,11 @@ pip install -e ".[dev]"
 pip install -r requirements.txt
 ```
 
-Requires Python ≥ 3.10. Package discovery is configured in `pyproject.toml` (authoritative). `requirements.txt` mirrors runtime/dev pins for simple setups.
+Requires Python ≥ 3.10. Package discovery is configured in `pyproject.toml` (authoritative).
 
-## Phase 2.1 usage — provenance
+## Phase 2.1–2.3 usage
 
-```python
-from agenttrust import ProvenanceTrace
-from agenttrust.mlpg.projections import ProjectionKind
-
-trace = ProvenanceTrace()
-report = trace.load_records(events, artifacts)
-_ = trace.project(ProjectionKind.P1_DIRECT)
-_ = trace.project(ProjectionKind.P2_ARTIFACT_BRIDGE)
-```
-
-Migrate legacy JSON without modifying raw bytes:
-
-```bash
-python -m agenttrust.migration.cli
-```
-
-## Phase 2.2 usage — conserved RPA
-
-```python
-from agenttrust import ConservedRPA, ProvenanceTrace
-from agenttrust.mlpg.projections import ProjectionKind
-
-trace = ProvenanceTrace()
-trace.load_records(events, artifacts)
-
-results = ConservedRPA().allocate_from_trace(
-    trace,
-    projection_kind=ProjectionKind.P1_DIRECT,
-)
-for r in results:
-    print(r.outcome_id, r.root_allocations, r.conservation)
-```
-
-Demo script:
-
-```bash
-python experiments/scripts/run_conserved_rpa.py
-```
-
-Baseline: **α = 0** (intermediate nodes retain no local share; roots absorb). Equal parent split is a **structural convention**, not measured causal weight.
-
-## Phase 2.3 usage — MFAV
+Provenance, conserved RPA, and MFAV:
 
 ```python
 from agenttrust import ProvenanceTrace, ConservedRPA, MFAV
@@ -165,35 +131,60 @@ rpa_results = ConservedRPA().allocate_from_trace(
     trace,
     projection_kind=ProjectionKind.P1_DIRECT,
 )
-
-profiles = [MFAV().compute(result, trace=trace) for result in rpa_results]
-for p in profiles:
-    print(p.outcome_id, p.normalized_factor_vector, p.status)
+profiles = [MFAV().compute(r, trace=trace) for r in rpa_results]
 ```
 
-MFAV maps each RPA event allocation to exactly one primary factor (`agent`, `model`, `prompt`, `data`, `tool`, `execution`, `other`). Optional `model_id` / `tool_id` / memory metadata are used only when explicitly present.
+## Phase 2.4 usage — synthetic benchmarks
+
+```python
+from agenttrust.benchmark import (
+    BenchmarkGenerator,
+    BenchmarkConfig,
+    ScenarioId,
+    TopologyId,
+    ScaleTier,
+)
+
+gen = BenchmarkGenerator()
+pkg = gen.generate(
+    BenchmarkConfig(
+        scenario_id=ScenarioId.FINANCIAL_LOAN,
+        topology_id=TopologyId.HIERARCHICAL,
+        scale_tier=ScaleTier.S1,
+        seed=1,
+    )
+)
+events, artifacts = pkg.algorithm_inputs()  # no ground-truth labels
+gt = pkg.ground_truth                       # separate object / files
+```
+
+Generate / validate the pilot corpus:
+
+```bash
+python experiments/scripts/generate_benchmark_pilot.py
+python experiments/scripts/validate_benchmark_pilot.py --pipeline
+```
+
+Pilot outputs live under `data/benchmarks/pilot/` with **ground truth in a separate directory** from algorithm inputs. See [docs/methodology/BENCHMARK_DESIGN.md](docs/methodology/BENCHMARK_DESIGN.md).
+
+Scale tiers S1–S5 (5–50 agents, ~50–1000 events), six topologies, five domain scenarios, and controlled fault injection are supported. The pilot validates the generator; it is **not** a final experimental evaluation.
 
 ## Tests
 
 ```bash
 python -c "from agenttrust import ProvenanceTrace, ConservedRPA, MFAV"
+python -c "from agenttrust.benchmark import BenchmarkGenerator"
 python -m pytest tests -q
 ```
 
 ## Documentation
 
-- Architecture (Phase 2.1 MLPG): [docs/architecture/PHASE_2_1_MLPG.md](docs/architecture/PHASE_2_1_MLPG.md)
-- Architecture (Phase 2.2 RPA): [docs/architecture/PHASE_2_2_RPA.md](docs/architecture/PHASE_2_2_RPA.md)
-- Architecture (Phase 2.3 MFAV): [docs/architecture/PHASE_2_3_MFAV.md](docs/architecture/PHASE_2_3_MFAV.md)
-- Phase 2.1 report: [docs/phase-reports/PHASE_2_1_IMPLEMENTATION_REPORT.md](docs/phase-reports/PHASE_2_1_IMPLEMENTATION_REPORT.md)
-- Phase 2.2 report: [docs/phase-reports/PHASE_2_2_IMPLEMENTATION_REPORT.md](docs/phase-reports/PHASE_2_2_IMPLEMENTATION_REPORT.md)
-- Phase 2.3 report: [docs/phase-reports/PHASE_2_3_IMPLEMENTATION_REPORT.md](docs/phase-reports/PHASE_2_3_IMPLEMENTATION_REPORT.md)
+- MLPG: [docs/architecture/PHASE_2_1_MLPG.md](docs/architecture/PHASE_2_1_MLPG.md)
+- RPA: [docs/architecture/PHASE_2_2_RPA.md](docs/architecture/PHASE_2_2_RPA.md)
+- MFAV: [docs/architecture/PHASE_2_3_MFAV.md](docs/architecture/PHASE_2_3_MFAV.md)
+- Benchmark methodology: [docs/methodology/BENCHMARK_DESIGN.md](docs/methodology/BENCHMARK_DESIGN.md)
+- Phase reports: [docs/phase-reports/](docs/phase-reports/)
 
 ## Legacy prototype
 
-Historical code lives in [`legacy/`](legacy/README.md). It includes the original non-conserved RPA, hardcoded trust placeholders, and thin hash-chain demo. Those are **not** validated AgentTrust capabilities.
-
-```powershell
-$env:PYTHONPATH = "$PWD\legacy"
-python -m experiments.run_rpa
-```
+Historical code lives in [`legacy/`](legacy/README.md). Legacy simulation generators are **not** the active Phase 2.4 path.

@@ -1,4 +1,4 @@
-"""AgentTrust: provenance, conserved RPA, and MFAV."""
+"""AgentTrust: provenance, conserved RPA, MFAV, and synthetic benchmarks."""
 
 from agenttrust.accountability import MFAV, MFAVResult, MFAVStatus
 from agenttrust.attribution.rpa import ConservedRPA, RPAConfig, RPAResult
@@ -26,4 +26,4 @@ __all__ = [
     "SCHEMA_VERSION",
 ]
 
-__version__ = "2.3.0"
+__version__ = "2.4.0"

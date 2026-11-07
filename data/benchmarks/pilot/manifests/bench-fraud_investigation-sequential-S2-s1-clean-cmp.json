@@ -1,0 +1,35 @@
+{
+  "actual_event_count": 100,
+  "agent_count": 10,
+  "agent_ids": [
+    "coordinator",
+    "investigator",
+    "analyst",
+    "osint",
+    "risk",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "investigator-1"
+  ],
+  "artifact_count": 100,
+  "config_fingerprint": "dded57663ce87516ddf81fdeae51d743dd78d076b643e7b1b6df221e5dbc89be",
+  "expected_event_count": 100,
+  "fault_types": [],
+  "generator_version": "2.4.0",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "linear chain; each step depends on previous",
+    "linear chain; each step depends on previous"
+  ],
+  "outcome_event_ids": [
+    "bench-fraud_investigation-sequential-S2-s1-clean-cmp:e0099"
+  ],
+  "scale_tier": "S2",
+  "scenario_id": "fraud_investigation",
+  "seed": 1,
+  "topology_id": "sequential",
+  "trace_id": "bench-fraud_investigation-sequential-S2-s1-clean-cmp"
+}

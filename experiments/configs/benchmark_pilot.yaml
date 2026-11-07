@@ -1,0 +1,35 @@
+# Phase 2.4 pilot benchmark configuration
+# Generation targets — actual counts are recorded in manifests after generation.
+
+generator_version: "2.4.0"
+output_root: "data/benchmarks/pilot"
+
+seeds: [1, 2]
+include_fault_samples: true
+
+scale_tiers:
+  S1: {agents: 5, target_events: 50}
+  S2: {agents: 10, target_events: 100}
+  S3: {agents: 20, target_events: 250}
+  S4: {agents: 50, target_events: 500}
+  S5: {agents: 50, target_events: 1000}
+
+topologies:
+  - sequential
+  - hierarchical
+  - parallel_fanout_fanin
+  - shared_artifact
+  - delegated_multi_agent
+  - mixed_realistic
+
+scenarios:
+  - financial_loan
+  - fraud_investigation
+  - compliance_review
+  - research_synthesis
+  - transaction_execution
+
+notes:
+  - Pilot validates the generator and data model only.
+  - Not a final experimental evaluation corpus.
+  - Ground truth is written under data/benchmarks/ground_truth/ (sibling of pilot inputs).

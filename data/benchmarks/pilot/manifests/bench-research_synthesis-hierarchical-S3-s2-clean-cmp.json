@@ -1,0 +1,45 @@
+{
+  "actual_event_count": 250,
+  "agent_count": 20,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "analyst",
+    "writer",
+    "executor",
+    "memory",
+    "tool_runner",
+    "coordinator-1",
+    "planner-1",
+    "researcher-1",
+    "analyst-1",
+    "writer-1",
+    "executor-1",
+    "memory-1",
+    "tool_runner-1",
+    "coordinator-2",
+    "planner-2",
+    "researcher-2",
+    "analyst-2"
+  ],
+  "artifact_count": 250,
+  "config_fingerprint": "c571f0adbb56af7c31cf29fc11dab28f6b1733103511670de41b40ac30cb1cf5",
+  "expected_event_count": 250,
+  "fault_types": [],
+  "generator_version": "2.4.0",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "coordinator delegates; specialists report; coordinator synthesizes",
+    "coordinator delegates; specialists report; coordinator synthesizes"
+  ],
+  "outcome_event_ids": [
+    "bench-research_synthesis-hierarchical-S3-s2-clean-cmp:e0249"
+  ],
+  "scale_tier": "S3",
+  "scenario_id": "research_synthesis",
+  "seed": 2,
+  "topology_id": "hierarchical",
+  "trace_id": "bench-research_synthesis-hierarchical-S3-s2-clean-cmp"
+}

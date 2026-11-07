@@ -1,0 +1,32 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "planner",
+    "researcher",
+    "risk",
+    "policy"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "7e7223edbad809133deb6f2d50df595d737cd43c6e00c46b28c3cc7431980946",
+  "expected_event_count": 50,
+  "fault_types": [
+    "missing_dependency"
+  ],
+  "generator_version": "2.4.0",
+  "incomplete": true,
+  "intervention_count": 1,
+  "notes": [
+    "linear chain; each step depends on previous",
+    "linear chain; each step depends on previous"
+  ],
+  "outcome_event_ids": [
+    "bench-financial_loan-sequential-S1-s100-missing_dependency-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "financial_loan",
+  "seed": 100,
+  "topology_id": "sequential",
+  "trace_id": "bench-financial_loan-sequential-S1-s100-missing_dependency-cmp"
+}

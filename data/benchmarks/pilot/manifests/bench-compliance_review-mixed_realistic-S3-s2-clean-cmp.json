@@ -1,0 +1,45 @@
+{
+  "actual_event_count": 250,
+  "agent_count": 20,
+  "agent_ids": [
+    "coordinator",
+    "auditor",
+    "researcher",
+    "reviewer",
+    "executor",
+    "memory",
+    "tool_runner",
+    "risk",
+    "coordinator-1",
+    "auditor-1",
+    "researcher-1",
+    "reviewer-1",
+    "executor-1",
+    "memory-1",
+    "tool_runner-1",
+    "risk-1",
+    "coordinator-2",
+    "auditor-2",
+    "researcher-2",
+    "reviewer-2"
+  ],
+  "artifact_count": 250,
+  "config_fingerprint": "fec7bae61b4930e6b02d95fd3c3697208afa777d97ff13379edeb93b429a2544",
+  "expected_event_count": 250,
+  "fault_types": [],
+  "generator_version": "2.4.0",
+  "incomplete": false,
+  "intervention_count": 0,
+  "notes": [
+    "combines parallel evidence, shared artifacts, delegation, and retry",
+    "combines parallel evidence, shared artifacts, delegation, and retry"
+  ],
+  "outcome_event_ids": [
+    "bench-compliance_review-mixed_realistic-S3-s2-clean-cmp:e0249"
+  ],
+  "scale_tier": "S3",
+  "scenario_id": "compliance_review",
+  "seed": 2,
+  "topology_id": "mixed_realistic",
+  "trace_id": "bench-compliance_review-mixed_realistic-S3-s2-clean-cmp"
+}
