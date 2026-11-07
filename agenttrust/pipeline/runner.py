@@ -49,7 +49,7 @@ def _versions() -> dict[str, str]:
         "schema_version": SCHEMA_VERSION,
         "rpa_algorithm_version": RPA_VERSION,
         "assurance_algorithm_version": ASSURANCE_ALGORITHM_VERSION,
-        "agenttrust_package_version": "2.8.0",
+        "agenttrust_package_version": "2.12.0",
     }
 
 

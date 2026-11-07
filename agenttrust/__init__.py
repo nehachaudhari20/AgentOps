@@ -38,4 +38,4 @@ __all__ = [
     "SCHEMA_VERSION",
 ]
 
-__version__ = "2.8.0"
+__version__ = "2.12.0"

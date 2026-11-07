@@ -1,5 +1,7 @@
-# Convenience install pins. Authoritative packaging metadata: pyproject.toml
-networkx>=3.0
-numpy>=1.24
+# Convenience install. Authoritative metadata: pyproject.toml
+# Tested freeze (Phase 2.12): Python 3.13.9 / Windows 11; networkx 3.5; numpy 2.2.6
+# Supported: Python >= 3.10
+networkx>=3.0,<4
+numpy>=1.24,<3
 matplotlib>=3.7
 pytest>=7.0
