@@ -81,8 +81,16 @@ Categories:
 | `delegation_failure` | Modes `missing_callee` vs `callee_failed` |
 | `misleading_delayed_observation` | `OBSERVED_AFTER` without `DEPENDS_ON`; excluded from P1/P2 |
 | `missing_dependency` / `incomplete_trace` | Intentional defects; validator must not silently repair |
+| `conflicting_agent_outputs` | Distinct structured `decision` values + hashes (no `conflict_label`); relation only in GT |
 
-Active generator version: **`2.5.0`**. The checked-in pilot corpus remains **`2.4.0`** historical data (not overwritten in Phase 2.5).
+Active generator version: **`2.5.1`**. The checked-in pilot corpus remains **`2.4.0`** historical data (not overwritten).
+
+### Validation modes
+
+| Mode | Command | Claims |
+|------|---------|--------|
+| A — Historical pilot | `python experiments/scripts/validate_benchmark_pilot.py [--pipeline]` | Package/schema/GT/pipeline for `data/benchmarks/pilot/` — **not** Phase 2.5.1 fault-observable certification |
+| B — Strict 2.5 fault matrix | `python experiments/scripts/validate_phase25_fault_matrix.py` | Fresh generator traces with `check_fault_observables=True` for every fault type |
 
 ## Reproducibility
 

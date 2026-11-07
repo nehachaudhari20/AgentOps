@@ -56,7 +56,7 @@ This is large enough for per-cell means with **n=3 seeds** but **not** a high-po
 | Clean core | 6 × 5 × **5 seeds** | 150 |
 | Fault block | 9 × 6 × {S1,S2,S3} × **5 seeds** | 810 |
 | Scenario locked replicate | 1 fixed scenario × 6 × 5 × 5 (clean) | 150 |
-| **Total (strong)** | | **≈ 1,100** |
+| **Total (strong)** | | **≈ 1,110** |
 
 Approx. event volume: order **10⁵–10⁶** events depending on scale mix.
 

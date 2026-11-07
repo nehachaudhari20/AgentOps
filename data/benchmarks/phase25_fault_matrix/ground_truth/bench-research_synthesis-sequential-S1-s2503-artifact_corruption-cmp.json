@@ -1,0 +1,1219 @@
+{
+  "disclaimer": "Ground truth records generator intent only. Graph reachability is not causal proof. Do not feed these labels into RPA/MFAV algorithm inputs.",
+  "generator_version": "2.5.1",
+  "interventions": [
+    {
+      "affected_artifact_ids": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0025"
+      ],
+      "affected_event_ids": [],
+      "expected_observable_effects": [
+        "artifact content_hash equals observed sentinel",
+        "GT expected_content_hash differs from observed"
+      ],
+      "fault_type": "artifact_corruption",
+      "generator_version": "2.5.1",
+      "injection_location": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0025",
+      "intervention_id": "iv-artifact_corruption-2503-01",
+      "notes": [
+        "Corruption = planted hash mismatch vs independently retained expected hash."
+      ],
+      "parameters": {
+        "artifact_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0025",
+        "expected_content_hash": "sha256:5899b64514c9b32805422a7680d92cf8b41a5b94065a7324c4083ba4df9b1a32",
+        "mode": "hash_replacement",
+        "observed_content_hash": "sha256:ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+      },
+      "scenario_id": "research_synthesis",
+      "seed": 2503
+    }
+  ],
+  "lineage": {
+    "artifact_consumers": {
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0000": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0001"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0001": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0002"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0002": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0003"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0003": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0004"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0004": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0005"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0005": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0006"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0006": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0007"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0007": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0008"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0008": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0009"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0009": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0010"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0010": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0011"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0011": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0012"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0012": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0013"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0013": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0014"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0014": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0015"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0015": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0016"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0016": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0017"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0017": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0018"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0018": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0019"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0019": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0020"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0020": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0021"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0021": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0022"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0022": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0023"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0023": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0024"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0024": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0025"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0025": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0026"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0026": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0027"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0027": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0028"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0028": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0029"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0029": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0030"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0030": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0031"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0031": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0032"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0032": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0033"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0033": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0034"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0034": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0035"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0035": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0036"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0036": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0037"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0037": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0038"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0038": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0039"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0039": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0040"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0040": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0041"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0041": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0042"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0042": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0043"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0043": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0044"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0044": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0045"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0045": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0046"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0046": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0047"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0047": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0048"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0048": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0049"
+      ]
+    },
+    "artifact_producers": {
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0000": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0000",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0001": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0001",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0002": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0002",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0003": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0003",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0004": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0004",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0005": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0005",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0006": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0006",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0007": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0007",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0008": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0008",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0009": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0009",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0010": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0010",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0011": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0011",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0012": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0012",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0013": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0013",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0014": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0014",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0015": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0015",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0016": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0016",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0017": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0017",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0018": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0018",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0019": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0019",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0020": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0020",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0021": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0021",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0022": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0022",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0023": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0023",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0024": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0024",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0025": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0025",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0026": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0026",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0027": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0027",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0028": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0028",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0029": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0029",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0030": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0030",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0031": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0031",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0032": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0032",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0033": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0033",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0034": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0034",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0035": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0035",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0036": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0036",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0037": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0037",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0038": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0038",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0039": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0039",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0040": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0040",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0041": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0041",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0042": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0042",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0043": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0043",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0044": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0044",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0045": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0045",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0046": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0046",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0047": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0047",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0048": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0048",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0049": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0049"
+    },
+    "event_dependencies": {
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0000": [],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0001": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0000"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0002": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0001"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0003": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0002"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0004": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0003"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0005": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0004"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0006": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0005"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0007": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0006"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0008": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0007"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0009": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0008"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0010": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0009"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0011": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0010"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0012": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0011"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0013": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0012"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0014": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0013"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0015": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0014"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0016": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0015"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0017": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0016"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0018": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0017"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0019": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0018"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0020": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0019"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0021": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0020"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0022": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0021"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0023": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0022"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0024": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0023"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0025": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0024"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0026": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0025"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0027": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0026"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0028": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0027"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0029": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0028"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0030": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0029"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0031": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0030"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0032": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0031"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0033": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0032"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0034": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0033"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0035": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0034"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0036": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0035"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0037": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0036"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0038": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0037"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0039": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0038"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0040": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0039"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0041": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0040"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0042": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0041"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0043": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0042"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0044": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0043"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0045": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0044"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0046": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0045"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0047": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0046"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0048": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0047"
+      ],
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0049": [
+        "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0048"
+      ]
+    },
+    "expected_relationships": [
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0000",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0000"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0001",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0001"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0000",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0001"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0000",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0001"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0002",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0002"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0001",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0002"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0001",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0002"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0003",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0003"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0002",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0003"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0002",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0003"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0004",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0004"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0003",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0004"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0003",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0004"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0005",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0005"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0004",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0005"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0004",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0005"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0006",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0006"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0005",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0006"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0005",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0006"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0007",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0007"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0006",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0007"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0006",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0007"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0008",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0008"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0007",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0008"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0007",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0008"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0009",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0009"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0008",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0009"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0008",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0009"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0010",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0010"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0009",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0010"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0009",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0010"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0011",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0011"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0010",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0011"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0010",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0011"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0012",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0012"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0011",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0012"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0011",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0012"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0013",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0013"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0012",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0013"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0012",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0013"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0014",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0014"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0013",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0014"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0013",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0014"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0015",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0015"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0014",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0015"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0014",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0015"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0016",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0016"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0015",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0016"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0015",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0016"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0017",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0017"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0016",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0017"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0016",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0017"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0018",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0018"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0017",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0018"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0017",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0018"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0019",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0019"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0018",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0019"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0018",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0019"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0020",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0020"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0019",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0020"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0019",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0020"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0021",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0021"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0020",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0021"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0020",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0021"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0022",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0022"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0021",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0022"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0021",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0022"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0023",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0023"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0022",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0023"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0022",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0023"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0024",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0024"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0023",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0024"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0023",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0024"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0025",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0025"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0024",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0025"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0024",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0025"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0026",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0026"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0025",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0026"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0025",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0026"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0027",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0027"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0026",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0027"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0026",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0027"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0028",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0028"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0027",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0028"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0027",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0028"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0029",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0029"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0028",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0029"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0028",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0029"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0030",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0030"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0029",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0030"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0029",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0030"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0031",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0031"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0030",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0031"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0030",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0031"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0032",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0032"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0031",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0032"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0031",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0032"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0033",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0033"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0032",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0033"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0032",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0033"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0034",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0034"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0033",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0034"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0033",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0034"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0035",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0035"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0034",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0035"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0034",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0035"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0036",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0036"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0035",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0036"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0035",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0036"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0037",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0037"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0036",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0037"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0036",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0037"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0038",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0038"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0037",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0038"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0037",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0038"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0039",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0039"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0038",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0039"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0038",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0039"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0040",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0040"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0039",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0040"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0039",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0040"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0041",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0041"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0040",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0041"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0040",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0041"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0042",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0042"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0041",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0042"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0041",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0042"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0043",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0043"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0042",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0043"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0042",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0043"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0044",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0044"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0043",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0044"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0043",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0044"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0045",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0045"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0044",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0045"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0044",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0045"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0046",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0046"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0045",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0046"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0045",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0046"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0047",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0047"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0046",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0047"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0046",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0047"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0048",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0048"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0047",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0048"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0047",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0048"
+      },
+      {
+        "rel_type": "PRODUCES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0049",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0049"
+      },
+      {
+        "rel_type": "CONSUMES",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0048",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0049"
+      },
+      {
+        "rel_type": "DEPENDS_ON",
+        "source_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0048",
+        "target_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0049"
+      }
+    ],
+    "invocations": {},
+    "retries": {}
+  },
+  "quality": {
+    "corrupted_artifact_ids": [
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:a0025"
+    ],
+    "incomplete_observation_notes": [
+      "linear chain; each step depends on previous"
+    ],
+    "intentionally_incomplete": false,
+    "missing_dependency_refs": [],
+    "missing_event_ids": []
+  },
+  "seed": 2503,
+  "structural": {
+    "agent_ids": [
+      "coordinator",
+      "planner",
+      "researcher",
+      "analyst",
+      "writer"
+    ],
+    "event_categories": {
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0000": "instruction",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0001": "reasoning",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0002": "retrieval",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0003": "knowledge",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0004": "tool",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0005": "reasoning",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0006": "transformation",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0007": "retrieval",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0008": "knowledge",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0009": "tool",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0010": "reasoning",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0011": "transformation",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0012": "retrieval",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0013": "knowledge",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0014": "tool",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0015": "reasoning",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0016": "transformation",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0017": "retrieval",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0018": "knowledge",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0019": "tool",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0020": "reasoning",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0021": "transformation",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0022": "retrieval",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0023": "knowledge",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0024": "tool",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0025": "reasoning",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0026": "transformation",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0027": "retrieval",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0028": "knowledge",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0029": "tool",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0030": "reasoning",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0031": "transformation",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0032": "retrieval",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0033": "knowledge",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0034": "tool",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0035": "reasoning",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0036": "transformation",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0037": "retrieval",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0038": "knowledge",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0039": "tool",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0040": "reasoning",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0041": "transformation",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0042": "retrieval",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0043": "knowledge",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0044": "tool",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0045": "reasoning",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0046": "transformation",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0047": "retrieval",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0048": "knowledge",
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0049": "decision"
+    },
+    "model_ids": [
+      "model-ana-v1",
+      "model-coord-v1",
+      "model-plan-v1"
+    ],
+    "outcome_event_ids": [
+      "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp:e0049"
+    ],
+    "scale_tier": "S1",
+    "scenario_id": "research_synthesis",
+    "tool_ids": [
+      "embedder",
+      "pdf_extract",
+      "summarizer",
+      "web_search"
+    ],
+    "topology_id": "sequential"
+  },
+  "trace_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp"
+}

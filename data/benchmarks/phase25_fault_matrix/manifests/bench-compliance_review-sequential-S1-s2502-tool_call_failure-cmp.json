@@ -1,0 +1,32 @@
+{
+  "actual_event_count": 50,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "auditor",
+    "researcher",
+    "reviewer",
+    "executor"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "bb68a71e96238cfd0406e6c84ac73c54225eb5a0dc634602d043c5aaf9f45a09",
+  "expected_event_count": 50,
+  "fault_types": [
+    "tool_call_failure"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": false,
+  "intervention_count": 1,
+  "notes": [
+    "linear chain; each step depends on previous",
+    "linear chain; each step depends on previous"
+  ],
+  "outcome_event_ids": [
+    "bench-compliance_review-sequential-S1-s2502-tool_call_failure-cmp:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "compliance_review",
+  "seed": 2502,
+  "topology_id": "sequential",
+  "trace_id": "bench-compliance_review-sequential-S1-s2502-tool_call_failure-cmp"
+}

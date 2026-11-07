@@ -31,6 +31,19 @@ class FaultType(str, Enum):
 SENTINEL_INCORRECT_OUTPUT_HASH = "sha256:" + ("0" * 64)
 SENTINEL_CORRUPTION_HASH = "sha256:" + ("f" * 64)
 
+# Answer-revealing metadata keys forbidden in algorithm-facing records.
+PROHIBITED_ANSWER_KEYS = frozenset(
+    {
+        "conflict_label",
+        "is_conflicting",
+        "conflicting",
+        "planted_conflict",
+        "conflict_marker",
+        "gt_conflict",
+        "answer_label",
+    }
+)
+
 
 @dataclass
 class InterventionRecord:
@@ -381,6 +394,8 @@ def apply_interventions(
                     )
 
         elif fault == FaultType.CONFLICTING_OUTPUTS:
+            # Disagreement via observable structured decision values + distinct content
+            # hashes. Do NOT plant conflict_label / is_conflicting answer markers.
             candidates = [
                 e
                 for e in events
@@ -391,16 +406,40 @@ def apply_interventions(
                 continue
             a, b = candidates[0], candidates[1]
             affected_arts: list[str] = []
-            for ev, label in ((a, "approve"), (b, "reject")):
+            decision_by_artifact: dict[str, str] = {}
+            hash_by_artifact: dict[str, str] = {}
+            for ev, decision in ((a, "approve"), (b, "reject")):
                 outs = list(ev.get("output_artifact_ids") or [])
                 if outs and outs[0] in arts_by_id:
-                    meta = arts_by_id[outs[0]].get("metadata") or {}
+                    art = arts_by_id[outs[0]]
+                    content = f"structured_decision|{decision}|event={ev['event_id']}|seed={seed}"
+                    digest = hashlib.sha256(content.encode("utf-8")).hexdigest()
+                    new_hash = f"sha256:{digest}"
+                    art["content_hash"] = new_hash
+                    meta = art.get("metadata") or {}
                     if not isinstance(meta, dict):
                         meta = {}
-                    meta = dict(meta)
-                    meta["conflict_label"] = label  # planted observable effect, not gt_* answer
-                    arts_by_id[outs[0]]["metadata"] = meta
+                    meta = {
+                        k: v
+                        for k, v in dict(meta).items()
+                        if k
+                        not in PROHIBITED_ANSWER_KEYS
+                        and not str(k).startswith("gt_")
+                    }
+                    # Domain-structured output value (not a planted-fault flag)
+                    meta["decision"] = decision
+                    meta["synthetic"] = "true"
+                    art["metadata"] = meta
                     affected_arts.append(outs[0])
+                    decision_by_artifact[outs[0]] = decision
+                    hash_by_artifact[outs[0]] = new_hash
+            if len(affected_arts) < 2:
+                notes.append("conflicting_agent_outputs skipped: need two output artifacts")
+                continue
+            decisions = list(decision_by_artifact.values())
+            if len(set(decisions)) < 2:
+                notes.append("conflicting_agent_outputs skipped: decisions not distinct")
+                continue
             interventions.append(
                 InterventionRecord(
                     intervention_id=iid,
@@ -409,13 +448,22 @@ def apply_interventions(
                     affected_event_ids=[a["event_id"], b["event_id"]],
                     affected_artifact_ids=affected_arts,
                     injection_location=a["event_id"],
-                    parameters={"labels": ["approve", "reject"]},
+                    parameters={
+                        "relation": "mutually_inconsistent_decisions",
+                        "expected_decisions": dict(decision_by_artifact),
+                        "observed_content_hashes": dict(hash_by_artifact),
+                        "artifact_ids": list(affected_arts),
+                    },
                     expected_observable_effects=[
-                        "two artifacts tagged with conflicting conflict_label metadata"
+                        "two artifacts expose mutually inconsistent decision values",
+                        "two artifacts have distinct content_hash values",
                     ],
                     seed=seed,
                     generator_version=generator_version,
-                    notes=["Conflict is synthetic metadata only; not legal disagreement."],
+                    notes=[
+                        "Conflict is recoverable from observable decision/hash disagreement; "
+                        "GT records the intended semantic relation separately."
+                    ],
                 )
             )
 

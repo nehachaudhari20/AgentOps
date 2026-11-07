@@ -170,7 +170,17 @@ Pilot outputs live under `data/benchmarks/pilot/` with **ground truth in a separ
 
 Scale tiers S1–S5 (5–50 agents, ~50–1000 events), six topologies, five domain scenarios, and controlled fault injection are supported. The pilot validates the generator; it is **not** a final experimental evaluation.
 
-Phase 2.5 hardens ground-truth consistency checks and fault semantics (e.g. incorrect successful tool content vs tool-call failure). The checked-in pilot remains the Phase 2.4 (`2.4.0`) corpus; active generation uses generator `2.5.0`. See [BENCHMARK_DESIGN.md](docs/methodology/BENCHMARK_DESIGN.md) and [FINAL_EXPERIMENTAL_DATASET_PLAN.md](docs/methodology/FINAL_EXPERIMENTAL_DATASET_PLAN.md).
+Phase 2.5 / 2.5.1 hardens ground-truth consistency and fault semantics (incorrect tool content vs tool-call failure; conflicting outputs via structured decisions without `conflict_label`). The checked-in pilot remains Phase 2.4 (`2.4.0`); active generation uses generator `2.5.1`.
+
+```bash
+# Mode A — historical pilot (not 2.5.1 fault-semantic certification)
+python experiments/scripts/validate_benchmark_pilot.py --pipeline
+
+# Mode B — fresh strict fault matrix
+python experiments/scripts/validate_phase25_fault_matrix.py
+```
+
+See [BENCHMARK_DESIGN.md](docs/methodology/BENCHMARK_DESIGN.md) and [FINAL_EXPERIMENTAL_DATASET_PLAN.md](docs/methodology/FINAL_EXPERIMENTAL_DATASET_PLAN.md).
 
 ## Tests
 

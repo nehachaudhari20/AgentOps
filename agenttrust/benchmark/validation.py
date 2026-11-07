@@ -13,6 +13,7 @@ from typing import Any, Optional
 
 from agenttrust.benchmark.faults import (
     FaultType,
+    PROHIBITED_ANSWER_KEYS,
     SENTINEL_CORRUPTION_HASH,
     SENTINEL_INCORRECT_OUTPUT_HASH,
     intentional_missing_dependency_refs,
@@ -27,6 +28,20 @@ from agenttrust.schema.enums import RelationshipType
 
 
 PROHIBITED_META_PREFIXES = ("gt_",)
+
+
+def _scan_prohibited_metadata(meta: Any, *, owner: str) -> list[str]:
+    """Return leakage errors for prohibited answer-revealing metadata keys."""
+    errors: list[str] = []
+    if not isinstance(meta, dict):
+        return errors
+    for k in meta:
+        key = str(k)
+        if any(key.startswith(p) for p in PROHIBITED_META_PREFIXES):
+            errors.append(f"{owner} contains prohibited metadata key {key}")
+        if key in PROHIBITED_ANSWER_KEYS or key.lower() in PROHIBITED_ANSWER_KEYS:
+            errors.append(f"{owner} contains answer-revealing metadata key {key}")
+    return errors
 
 
 @dataclass
@@ -264,21 +279,29 @@ def validate_package(
         elif events_by_id[eid].get("category") != cat:
             result.errors.append(f"Structural category mismatch for {eid}")
 
-    # No gt_* labels in algorithm-facing metadata
+    # No gt_* / conflict_label / equivalent answer leakage in algorithm-facing metadata.
+    # Historical Phase 2.4.0 pilot fixtures may still contain conflict_label; treat those
+    # as warnings (not Mode-A hard failures) so pilot package/pipeline checks remain usable
+    # without claiming 2.5.1 fault-semantic cleanliness.
+    historical_24 = str(manifest.generator_version).startswith("2.4")
     for e in events:
-        meta = e.get("metadata") or {}
-        if isinstance(meta, dict):
-            for k in meta:
-                if any(str(k).startswith(p) for p in PROHIBITED_META_PREFIXES):
-                    result.errors.append(f"Event {e.get('event_id')} contains prohibited metadata key {k}")
+        leaks = _scan_prohibited_metadata(
+            e.get("metadata") or {}, owner=f"Event {e.get('event_id')}"
+        )
+        for msg in leaks:
+            if historical_24 and "answer-revealing" in msg:
+                result.warnings.append(msg + " [historical 2.4.0 fixture; not 2.5.1-clean]")
+            else:
+                result.errors.append(msg)
     for a in artifacts:
-        meta = a.get("metadata") or {}
-        if isinstance(meta, dict):
-            for k in meta:
-                if any(str(k).startswith(p) for p in PROHIBITED_META_PREFIXES):
-                    result.errors.append(
-                        f"Artifact {a.get('artifact_id')} contains prohibited metadata key {k}"
-                    )
+        leaks = _scan_prohibited_metadata(
+            a.get("metadata") or {}, owner=f"Artifact {a.get('artifact_id')}"
+        )
+        for msg in leaks:
+            if historical_24 and "answer-revealing" in msg:
+                result.warnings.append(msg + " [historical 2.4.0 fixture; not 2.5.1-clean]")
+            else:
+                result.errors.append(msg)
 
     # Fingerprint — prefer exact config match; allow historical case where
     # manifest.incomplete reflects post-fault quality while the fingerprint
@@ -511,15 +534,44 @@ def _check_fault_observables(
                     )
 
         elif ft == FaultType.CONFLICTING_OUTPUTS.value:
-            labels = set()
-            for aid in iv.affected_artifact_ids:
-                art = arts_by_id.get(aid)
-                if art and isinstance(art.get("metadata"), dict):
-                    labels.add(art["metadata"].get("conflict_label"))
-            if labels != {"approve", "reject"}:
+            arts = [arts_by_id.get(aid) for aid in iv.affected_artifact_ids]
+            arts = [a for a in arts if a is not None]
+            if len(arts) < 2:
                 result.errors.append(
-                    f"Intervention {iv.intervention_id} conflicting labels not observable: {labels}"
+                    f"Intervention {iv.intervention_id} needs ≥2 affected artifacts"
                 )
+            else:
+                decisions = []
+                hashes = []
+                for art in arts:
+                    meta = art.get("metadata") or {}
+                    if isinstance(meta, dict):
+                        for bad in PROHIBITED_ANSWER_KEYS:
+                            if bad in meta:
+                                result.errors.append(
+                                    f"Intervention {iv.intervention_id} leaked {bad} into algorithm input"
+                                )
+                        decisions.append(meta.get("decision"))
+                    hashes.append(art.get("content_hash"))
+                if len(set(decisions)) < 2:
+                    result.errors.append(
+                        f"Intervention {iv.intervention_id} decisions not observably inconsistent: {decisions}"
+                    )
+                if len(set(hashes)) < 2:
+                    result.errors.append(
+                        f"Intervention {iv.intervention_id} content hashes not distinct"
+                    )
+                expected = params.get("expected_decisions") or {}
+                if expected and set(expected.values()) != set(d for d in decisions if d is not None):
+                    # Allow GT to be the source of truth for intended semantics
+                    if sorted(expected.values()) != sorted(d for d in decisions if d is not None):
+                        result.errors.append(
+                            f"Intervention {iv.intervention_id} observed decisions diverge from GT expected_decisions"
+                        )
+                if params.get("relation") != "mutually_inconsistent_decisions":
+                    result.errors.append(
+                        f"Intervention {iv.intervention_id} missing GT relation mutually_inconsistent_decisions"
+                    )
 
         elif ft == FaultType.INCOMPLETE_TRACE.value:
             removed = params.get("removed_event_id")

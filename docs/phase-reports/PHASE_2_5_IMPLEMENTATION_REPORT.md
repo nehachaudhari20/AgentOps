@@ -7,9 +7,11 @@ Benchmark audit, ground-truth integrity, and fault-semantics hardening.
 | Item | Value |
 |------|--------|
 | Branch | `master` only |
-| Start commit | `77aa635ac32ac6945ef88a923ea9553b1b04acfa` — `Add benchmark` |
-| Working tree at start | Clean |
-| Commits by this phase | **None** (left uncommitted per instructions) |
+| Start commit (Phase 2.5 work began from) | `77aa635ac32ac6945ef88a923ea9553b1b04acfa` — `Add benchmark` |
+| Phase 2.5 implementation commit | **`583b57ad213c22f219eaa3cc906fd3569d9a3bbe`** — `harden benchmark ground-truth integrity and fault semantics` |
+| Phase 2.5.1 | Corrective follow-up on top of `583b57a` (see §14); not a rewrite of Phase 2.5 historical results |
+
+> An earlier draft of this report stated Phase 2.5 made no commits. That was true only before landing; the implementation is represented by **`583b57a`**.
 
 ## 2. Files inspected and changed
 
@@ -66,7 +68,7 @@ Benchmark audit, ground-truth integrity, and fault-semantics hardening.
 | `artifact_corruption` | Hash → sentinel | expected/observed in GT | Hash anomaly only with GT expected |
 | `retry_storm` | Extra retry events + artifacts | retry ids; lineage retries | Yes (RETRIES edges) |
 | `delegation_failure` | Phantom INVOKES or callee `failure` | mode + ids | Yes |
-| `conflicting_agent_outputs` | `conflict_label` metadata | labels in parameters | Yes (observable labels) |
+| `conflicting_agent_outputs` | (Phase 2.5) used `conflict_label` — **superseded in 2.5.1** by structured `decision` values + distinct hashes; relation only in GT | expected_decisions / relation in GT | Yes, from decision/hash disagreement (2.5.1) |
 | `incomplete_trace` | Event removed | removed id + dependents | Yes (dangling deps) |
 | `misleading_delayed_observation` | `observed_after_event_ids` w/o DEPENDS_ON | observer/early ids | Yes; must not enter P1/P2 |
 
@@ -133,16 +135,16 @@ python experiments/scripts/validate_benchmark_pilot.py --pipeline
 
 See `docs/methodology/FINAL_EXPERIMENTAL_DATASET_PLAN.md`.
 
-- Feasible minimum ≈ **450** traces; stronger ≈ **1,100**
+- Feasible minimum ≈ **450** traces; stronger ≈ **1,110** traces
 - Trace-level analysis; seeds as generative replicates
 - Separate `pilot` / `eval` partitions; no GT leakage
 
 **Not generated in this phase.**
 
-## 12. Remaining limitations
+## 12. Remaining limitations (as of Phase 2.5 / `583b57a`)
 
-- On-disk pilot remains generator `2.4.0`; faulted traces do not match 2.5.0 semantics until a future regen into a new directory
-- Conflicting-output labels are still algorithm-visible planted metadata (by design as the observable effect)
+- On-disk pilot remains generator `2.4.0`; faulted traces do not match later generator semantics until a future regen into a new directory
+- Historical pilot validation without `--strict-fault-observables` does **not** certify Phase 2.5 fault-observable semantics
 - No statistical evaluation performed
 
 ## 13. Explicitly not implemented
@@ -152,4 +154,30 @@ See `docs/methodology/FINAL_EXPERIMENTAL_DATASET_PLAN.md`.
 - RPA/MFAV math changes
 - Final eval corpus generation
 - Causal attribution claims
-- Commit / push
+
+## 14. Phase 2.5.1 corrective follow-up
+
+**Base commit:** `583b57ad213c22f219eaa3cc906fd3569d9a3bbe`  
+**Active generator after 2.5.1:** `2.5.1`  
+**Pilot corpus:** unchanged (`2.4.0`)
+
+### Issues closed
+
+1. Removed `conflict_label` / equivalent answer markers from algorithm-facing conflicting-output artifacts; disagreement is carried by structured `decision` values and distinct `content_hash` values, with `relation=mutually_inconsistent_decisions` only in GT.
+2. Validator rejects `conflict_label`, `is_conflicting`, and related leakage keys.
+3. Documented and separated validation modes:
+   - **Mode A:** `validate_benchmark_pilot.py [--pipeline]` — historical pilot consistency / pipeline
+   - **Mode B:** `validate_phase25_fault_matrix.py` — fresh 2.5.x generator + strict fault observables
+4. Expanded per-fault semantics tests; dataset plan total corrected to ≈ **1,110**.
+
+### Commands and results (executed in Phase 2.5.1)
+
+See `docs/phase-reports/PHASE_2_5_1_IMPLEMENTATION_REPORT.md` for full tables.
+
+| Command | Result |
+|---------|--------|
+| `python -m pytest tests -q` | **262 passed**, exit 0 |
+| `validate_benchmark_pilot.py --pipeline` (Mode A) | 68 checked, 0 failures, 66 pipeline-eligible |
+| `validate_phase25_fault_matrix.py` (Mode B) | 10 checked, 0 failures, 9 fault types, 0 leakage violations |
+
+Historical pilot Mode A does **not** claim strict Phase 2.5.1 fault semantics for 2.4.0 fault fixtures (`conflict_label` may appear as warnings only).

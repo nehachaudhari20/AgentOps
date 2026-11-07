@@ -222,6 +222,55 @@ def test_adversarial_prohibited_gt_label():
     assert any("prohibited" in e for e in v.errors)
 
 
+def test_adversarial_conflict_label_rejected():
+    pkg = _clean_pkg()
+    if not pkg.artifacts:
+        pytest.skip("no artifacts")
+    pkg.artifacts[0].setdefault("metadata", {})
+    pkg.artifacts[0]["metadata"]["conflict_label"] = "approve"
+    v = validate_generated_trace(pkg, require_complete=False, load_provenance=False)
+    assert not v.ok
+    assert any("answer-revealing" in e or "conflict_label" in e for e in v.errors)
+
+
+def test_adversarial_is_conflicting_rejected():
+    pkg = _clean_pkg()
+    if not pkg.artifacts:
+        pytest.skip("no artifacts")
+    pkg.artifacts[0].setdefault("metadata", {})
+    pkg.artifacts[0]["metadata"]["is_conflicting"] = "true"
+    v = validate_generated_trace(pkg, require_complete=False, load_provenance=False)
+    assert not v.ok
+    assert any("answer-revealing" in e for e in v.errors)
+
+
+def test_conflicting_outputs_observable_without_gt_labels():
+    pkg = _clean_pkg(
+        fault_types=(FaultType.CONFLICTING_OUTPUTS.value,),
+        topology=TopologyId.SEQUENTIAL,
+        seed=77,
+    )
+    iv = next(i for i in pkg.ground_truth.interventions if i.fault_type == FaultType.CONFLICTING_OUTPUTS.value)
+    arts = [a for a in pkg.artifacts if a["artifact_id"] in iv.affected_artifact_ids]
+    assert len(arts) >= 2
+    # No answer-revealing markers in algorithm inputs
+    for a in arts:
+        meta = a.get("metadata") or {}
+        assert "conflict_label" not in meta
+        assert "is_conflicting" not in meta
+        assert not any(str(k).startswith("gt_") for k in meta)
+    # Conflict identifiable from observable decision values / hashes alone
+    decisions = {a["metadata"]["decision"] for a in arts}
+    hashes = {a["content_hash"] for a in arts}
+    assert len(decisions) >= 2
+    assert len(hashes) >= 2
+    # GT holds the semantic relation separately
+    assert iv.parameters.get("relation") == "mutually_inconsistent_decisions"
+    assert set(iv.parameters.get("expected_decisions", {}).values()) == decisions
+    v = validate_generated_trace(pkg, require_complete=False, check_fault_observables=True)
+    assert v.ok, v.errors
+
+
 def test_adversarial_intervention_without_observable_effect():
     pkg = _clean_pkg(fault_types=(FaultType.TOOL_CALL_FAILURE.value,))
     # Undo the observable failure

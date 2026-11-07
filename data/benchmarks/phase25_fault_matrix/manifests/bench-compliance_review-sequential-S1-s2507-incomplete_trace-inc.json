@@ -1,0 +1,33 @@
+{
+  "actual_event_count": 49,
+  "agent_count": 5,
+  "agent_ids": [
+    "coordinator",
+    "auditor",
+    "researcher",
+    "reviewer",
+    "executor"
+  ],
+  "artifact_count": 50,
+  "config_fingerprint": "0777a59fdc83d5e8903766c8315b20fbfb383182eebf00de5c383b30d5125768",
+  "expected_event_count": 50,
+  "fault_types": [
+    "incomplete_trace"
+  ],
+  "generator_version": "2.5.1",
+  "incomplete": true,
+  "intervention_count": 1,
+  "notes": [
+    "linear chain; each step depends on previous",
+    "incomplete_trace removed bench-compliance_review-sequential-S1-s2507-incomplete_trace-inc:e0024",
+    "linear chain; each step depends on previous"
+  ],
+  "outcome_event_ids": [
+    "bench-compliance_review-sequential-S1-s2507-incomplete_trace-inc:e0049"
+  ],
+  "scale_tier": "S1",
+  "scenario_id": "compliance_review",
+  "seed": 2507,
+  "topology_id": "sequential",
+  "trace_id": "bench-compliance_review-sequential-S1-s2507-incomplete_trace-inc"
+}

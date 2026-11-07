@@ -1,0 +1,138 @@
+{
+  "expected_generator_version": "2.5.1",
+  "failures": [],
+  "fault_types_exercised": [
+    "artifact_corruption",
+    "conflicting_agent_outputs",
+    "delegation_failure",
+    "incomplete_trace",
+    "incorrect_tool_output",
+    "misleading_delayed_observation",
+    "missing_dependency",
+    "retry_storm",
+    "tool_call_failure"
+  ],
+  "generator_version": "2.5.1",
+  "leakage_violations": 0,
+  "mode": "phase_2_5_strict_fault_observables",
+  "n_checked": 10,
+  "n_configs": 10,
+  "n_failures": 0,
+  "n_fault_types_exercised": 9,
+  "notes": [
+    "Historical pilot is validated separately without claiming 2.5 fault semantics.",
+    "This corpus is for strict generator validation only."
+  ],
+  "results": [
+    {
+      "errors": [],
+      "fault_types": [
+        "missing_dependency"
+      ],
+      "incomplete": true,
+      "intervention_count": 1,
+      "leakage_errors": [],
+      "ok": true,
+      "trace_id": "bench-financial_loan-sequential-S1-s2500-missing_dependency-cmp"
+    },
+    {
+      "errors": [],
+      "fault_types": [
+        "incorrect_tool_output"
+      ],
+      "incomplete": false,
+      "intervention_count": 1,
+      "leakage_errors": [],
+      "ok": true,
+      "trace_id": "bench-fraud_investigation-sequential-S1-s2501-incorrect_tool_output-cmp"
+    },
+    {
+      "errors": [],
+      "fault_types": [
+        "tool_call_failure"
+      ],
+      "incomplete": false,
+      "intervention_count": 1,
+      "leakage_errors": [],
+      "ok": true,
+      "trace_id": "bench-compliance_review-sequential-S1-s2502-tool_call_failure-cmp"
+    },
+    {
+      "errors": [],
+      "fault_types": [
+        "artifact_corruption"
+      ],
+      "incomplete": false,
+      "intervention_count": 1,
+      "leakage_errors": [],
+      "ok": true,
+      "trace_id": "bench-research_synthesis-sequential-S1-s2503-artifact_corruption-cmp"
+    },
+    {
+      "errors": [],
+      "fault_types": [
+        "retry_storm"
+      ],
+      "incomplete": false,
+      "intervention_count": 1,
+      "leakage_errors": [],
+      "ok": true,
+      "trace_id": "bench-transaction_execution-sequential-S1-s2504-retry_storm-cmp"
+    },
+    {
+      "errors": [],
+      "fault_types": [
+        "delegation_failure"
+      ],
+      "incomplete": false,
+      "intervention_count": 1,
+      "leakage_errors": [],
+      "ok": true,
+      "trace_id": "bench-financial_loan-mixed_realistic-S1-s2505-delegation_failure-cmp"
+    },
+    {
+      "errors": [],
+      "fault_types": [
+        "conflicting_agent_outputs"
+      ],
+      "incomplete": false,
+      "intervention_count": 1,
+      "leakage_errors": [],
+      "ok": true,
+      "trace_id": "bench-fraud_investigation-sequential-S1-s2506-conflicting_agent_outputs-cmp"
+    },
+    {
+      "errors": [],
+      "fault_types": [
+        "incomplete_trace"
+      ],
+      "incomplete": true,
+      "intervention_count": 1,
+      "leakage_errors": [],
+      "ok": true,
+      "trace_id": "bench-compliance_review-sequential-S1-s2507-incomplete_trace-inc"
+    },
+    {
+      "errors": [],
+      "fault_types": [
+        "misleading_delayed_observation"
+      ],
+      "incomplete": false,
+      "intervention_count": 1,
+      "leakage_errors": [],
+      "ok": true,
+      "trace_id": "bench-research_synthesis-sequential-S1-s2508-misleading_delayed_observation-cmp"
+    },
+    {
+      "errors": [],
+      "fault_types": [
+        "delegation_failure"
+      ],
+      "incomplete": false,
+      "intervention_count": 1,
+      "leakage_errors": [],
+      "ok": true,
+      "trace_id": "bench-financial_loan-sequential-S1-s2599-delegation_failure-cmp"
+    }
+  ]
+}

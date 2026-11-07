@@ -302,7 +302,10 @@
         "n_rpa_results": 1
       },
       "trace_id": "bench-financial_loan-mixed_realistic-S1-s105-conflicting_agent_outputs-cmp",
-      "warnings": []
+      "warnings": [
+        "Artifact bench-financial_loan-mixed_realistic-S1-s105-conflicting_agent_outputs-cmp:a0001 contains answer-revealing metadata key conflict_label [historical 2.4.0 fixture; not 2.5.1-clean]",
+        "Artifact bench-financial_loan-mixed_realistic-S1-s105-conflicting_agent_outputs-cmp:a0003 contains answer-revealing metadata key conflict_label [historical 2.4.0 fixture; not 2.5.1-clean]"
+      ]
     },
     {
       "errors": [],

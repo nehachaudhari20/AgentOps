@@ -1,5 +1,17 @@
 #!/usr/bin/env python3
-"""Validate an on-disk Phase 2.4/2.5 pilot corpus and optionally run pipeline checks."""
+"""
+Historical Phase 2.4 pilot validation (Mode A).
+
+Validates package consistency, schema load, ground-truth IDs/manifests, and optional
+P1/P2/RPA/MFAV pipeline compatibility for the checked-in pilot under
+``data/benchmarks/pilot/``.
+
+By default ``--strict-fault-observables`` is OFF: this command does **not** claim that
+historical 2.4.0 fault fixtures satisfy Phase 2.5.1 fault-observable semantics.
+
+For strict fresh generator fault validation (Mode B), use:
+``python experiments/scripts/validate_phase25_fault_matrix.py``
+"""
 
 from __future__ import annotations
 
