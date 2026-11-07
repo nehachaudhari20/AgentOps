@@ -6,7 +6,9 @@
 |------|--------|
 | Branch | `master` (only; no research branch) |
 | Start commit | `d871a4a1d7abbdf222c4266a403971fd60f5b329` (Phase 2.3 MFAV) |
-| Commits by agent | **None** (uncommitted work on `master`) |
+| Implementation landing commit | `77aa635ac32ac6945ef88a923ea9553b1b04acfa` — `Add benchmark` |
+
+> **Phase 2.5 note:** An earlier draft of this report stated that Phase 2.4 work was left uncommitted. That statement was incorrect relative to the repository state after `77aa635`. The statistics below remain the **Phase 2.4 implementation-reported** pilot figures (generator `2.4.0`).
 
 ## 2. Repository changes
 

@@ -8,7 +8,7 @@ from dataclasses import asdict, dataclass, field
 from enum import Enum
 from typing import Any, Optional
 
-GENERATOR_VERSION = "2.4.0"
+GENERATOR_VERSION = "2.5.0"
 
 
 class ScaleTier(str, Enum):

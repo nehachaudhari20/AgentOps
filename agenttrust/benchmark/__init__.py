@@ -1,5 +1,5 @@
 """
-Synthetic multi-agent benchmark generation (Phase 2.4).
+Synthetic multi-agent benchmark generation (Phase 2.4+) with Phase 2.5 integrity hardening.
 
 Produces schema-valid traces and separate ground-truth packages.
 Does not evaluate AgentTrust performance or claim causal attribution.
@@ -17,7 +17,12 @@ from agenttrust.benchmark.manifest import (
     TopologyId,
     TraceManifest,
 )
-from agenttrust.benchmark.validation import BenchmarkValidationResult, validate_generated_trace
+from agenttrust.benchmark.validation import (
+    BenchmarkValidationResult,
+    load_and_validate_trace_dir,
+    validate_generated_trace,
+    validate_package,
+)
 
 __all__ = [
     "GENERATOR_VERSION",
@@ -35,4 +40,6 @@ __all__ = [
     "BenchmarkGroundTruth",
     "BenchmarkValidationResult",
     "validate_generated_trace",
+    "validate_package",
+    "load_and_validate_trace_dir",
 ]

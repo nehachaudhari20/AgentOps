@@ -87,7 +87,7 @@ def main() -> int:
         summary["traces"].append(
             {
                 "trace_id": m.trace_id,
-                "paths": {k: str(p.relative_to(ROOT)) for k, p in paths.items()},
+                "paths": {k: p.relative_to(ROOT).as_posix() for k, p in paths.items()},
                 "actual_event_count": m.actual_event_count,
                 "agent_count": m.agent_count,
                 "artifact_count": m.artifact_count,

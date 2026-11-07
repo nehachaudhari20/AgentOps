@@ -161,11 +161,17 @@ class BenchmarkGenerator:
                 if d not in known:
                     missing_dep_refs.append(d)
 
-        corrupted = [
-            a["artifact_id"]
-            for a in artifacts
-            if isinstance(a.get("metadata"), dict) and a["metadata"].get("corrupted") == "true"
-        ]
+        corrupted: list[str] = []
+        for iv in interventions:
+            if iv.fault_type in (
+                FaultType.ARTIFACT_CORRUPTION.value,
+                FaultType.INCORRECT_TOOL_OUTPUT.value,
+            ):
+                if iv.parameters.get("artifact_id"):
+                    corrupted.append(str(iv.parameters["artifact_id"]))
+                else:
+                    corrupted.extend(str(a) for a in iv.affected_artifact_ids)
+        corrupted = sorted(set(corrupted))
 
         quality = TraceQualityGroundTruth(
             intentionally_incomplete=bool(config.incomplete or missing_events or missing_dep_refs),
@@ -211,8 +217,7 @@ class BenchmarkGenerator:
             intervention_count=len(interventions),
             outcome_event_ids=outcomes,
             incomplete=quality.intentionally_incomplete,
-            fault_types=[f.value if isinstance(f, FaultType) else str(f) for f in fault_types]
-            + (["incomplete_trace"] if config.incomplete and "incomplete_trace" not in [x.value for x in fault_types] else []),
+            fault_types=sorted({i.fault_type for i in interventions}),
             agent_ids=list(agents),
             notes=pre_gt_notes + fault_notes + blueprint.notes,
         )

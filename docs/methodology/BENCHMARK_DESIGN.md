@@ -59,7 +59,7 @@ Actual generated counts may differ slightly by topology construction; manifests 
 
 Faults are planted as explicit `InterventionRecord` objects with IDs, locations, parameters, and expected *observable* effects.
 
-Ground truth is stored in **separate files** under `ground_truth/`, never as answer labels inside algorithm-facing event metadata.
+Ground truth is stored in **separate files** under `ground_truth/`, never as answer labels inside algorithm-facing event metadata (`gt_*` keys are rejected by the Phase 2.5 validator).
 
 Categories:
 
@@ -70,13 +70,39 @@ Categories:
 
 **Non-claim:** graph reachability from an intervention to an outcome is **not** causal ground truth.
 
+### Phase 2.5 fault-semantics notes
+
+| Fault | Meaning (hardened) |
+|-------|--------------------|
+| `incorrect_tool_output` | Successful tool call with wrong content hash (expected hash only in GT) |
+| `tool_call_failure` | Tool/transport failure (`status=failure`) — distinct from incorrect content |
+| `artifact_corruption` | Hash replacement; expected vs observed hashes retained in GT only |
+| `retry_storm` | Unique retry events + artifacts; MLPG `RETRIES` edges required |
+| `delegation_failure` | Modes `missing_callee` vs `callee_failed` |
+| `misleading_delayed_observation` | `OBSERVED_AFTER` without `DEPENDS_ON`; excluded from P1/P2 |
+| `missing_dependency` / `incomplete_trace` | Intentional defects; validator must not silently repair |
+
+Active generator version: **`2.5.0`**. The checked-in pilot corpus remains **`2.4.0`** historical data (not overwritten in Phase 2.5).
+
 ## Reproducibility
 
-Identical `BenchmarkConfig` (scenario, topology, scale, seed, faults, incomplete flag, generator version) regenerates identical logical records. Manifests include config fingerprint, expected vs actual event counts, and generator version `2.4.0`.
+Identical `BenchmarkConfig` (scenario, topology, scale, seed, faults, incomplete flag, generator version) regenerates identical logical records. Manifests include config fingerprint, expected vs actual event counts, and generator version.
+
+Phase 2.5 verification: all **60 clean** pilot traces regenerate with matching stripped logical payloads under generator `2.5.0` (faulted traces intentionally diverge due to semantic fixes). See `data/benchmarks/pilot/reproducibility_check.json`.
 
 ## Trace completeness
 
-Complete traces have valid in-trace dependency references. Incomplete / missing-dependency interventions are marked in the manifest and quality GT. Validators must **not** silently repair them. RPA remains gated by existing completeness guards.
+Complete traces have valid in-trace dependency references. Incomplete / missing-dependency interventions are marked in the manifest and quality GT. Validators must **not** silently repair them. RPA remains gated by existing completeness guards. The validator distinguishes **intentional** missing refs (declared by interventions) from **accidental** generator defects.
+
+## Graph / projection fidelity
+
+- MLPG retains `DEPENDS_ON`, `PRODUCES`, `CONSUMES`, `INVOKES`, `RETRIES`, `OBSERVED_AFTER` as distinct MultiDiGraph edge keys.
+- P1 uses explicit `DEPENDS_ON` only; P2 adds verified artifact bridges.
+- `OBSERVED_AFTER` is never treated as structural responsibility dependence.
+
+## Final evaluation corpus
+
+See [FINAL_EXPERIMENTAL_DATASET_PLAN.md](FINAL_EXPERIMENTAL_DATASET_PLAN.md) — design only; not generated in Phase 2.5.
 
 ## Limitations of synthetic data
 

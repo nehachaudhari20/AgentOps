@@ -35,6 +35,7 @@ AgentTrust **does not**:
 | Conserved RPA (α=0 baseline) | **Phase 2.2 — active** (`agenttrust/attribution/`) |
 | MFAV (exclusive factor aggregation) | **Phase 2.3 — active** (`agenttrust/accountability/`) |
 | Synthetic benchmark generator + pilot | **Phase 2.4 — active** (`agenttrust/benchmark/`) |
+| Benchmark GT integrity + fault semantics | **Phase 2.5 — active** (validator/fault hardening; pilot retained) |
 | Assurance / CTSM redesign | Not implemented (package reserved) |
 | PLHC redesign | Not implemented (package reserved) |
 | Legacy prototype | Preserved under `legacy/` (historical only) |
@@ -168,6 +169,8 @@ python experiments/scripts/validate_benchmark_pilot.py --pipeline
 Pilot outputs live under `data/benchmarks/pilot/` with **ground truth in a separate directory** from algorithm inputs. See [docs/methodology/BENCHMARK_DESIGN.md](docs/methodology/BENCHMARK_DESIGN.md).
 
 Scale tiers S1–S5 (5–50 agents, ~50–1000 events), six topologies, five domain scenarios, and controlled fault injection are supported. The pilot validates the generator; it is **not** a final experimental evaluation.
+
+Phase 2.5 hardens ground-truth consistency checks and fault semantics (e.g. incorrect successful tool content vs tool-call failure). The checked-in pilot remains the Phase 2.4 (`2.4.0`) corpus; active generation uses generator `2.5.0`. See [BENCHMARK_DESIGN.md](docs/methodology/BENCHMARK_DESIGN.md) and [FINAL_EXPERIMENTAL_DATASET_PLAN.md](docs/methodology/FINAL_EXPERIMENTAL_DATASET_PLAN.md).
 
 ## Tests
 

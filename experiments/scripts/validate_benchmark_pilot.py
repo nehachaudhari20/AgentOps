@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate an on-disk Phase 2.4 pilot corpus and optionally run pipeline checks."""
+"""Validate an on-disk Phase 2.4/2.5 pilot corpus and optionally run pipeline checks."""
 
 from __future__ import annotations
 
@@ -14,70 +14,50 @@ if str(ROOT) not in sys.path:
 
 from agenttrust import ConservedRPA, MFAV, ProvenanceTrace
 from agenttrust.benchmark.ground_truth import BenchmarkGroundTruth
-from agenttrust.benchmark.manifest import TraceManifest
+from agenttrust.benchmark.manifest import (
+    BenchmarkConfig,
+    ScenarioId,
+    ScaleTier,
+    TopologyId,
+    TraceManifest,
+)
+from agenttrust.benchmark.validation import validate_package
 from agenttrust.mlpg.projections import ProjectionKind
 
 
-def _load_trace_dir(tdir: Path) -> tuple[list, list, TraceManifest, BenchmarkGroundTruth]:
+def _validate_dir(tdir: Path, pilot_root: Path, *, strict_fault_observables: bool):
     events = json.loads((tdir / "events.json").read_text(encoding="utf-8"))["events"]
     arts = json.loads((tdir / "artifacts.json").read_text(encoding="utf-8"))["artifacts"]
-    tid = tdir.name
-    pilot = tdir.parent.parent
     man = TraceManifest.from_dict(
-        json.loads((pilot / "manifests" / f"{tid}.json").read_text(encoding="utf-8"))
+        json.loads((pilot_root / "manifests" / f"{tdir.name}.json").read_text(encoding="utf-8"))
     )
     gt = BenchmarkGroundTruth.from_dict(
-        json.loads((pilot / "ground_truth" / f"{tid}.json").read_text(encoding="utf-8"))
+        json.loads((pilot_root / "ground_truth" / f"{tdir.name}.json").read_text(encoding="utf-8"))
     )
-    return events, arts, man, gt
-
-
-def validate_one(tdir: Path, *, run_pipeline: bool) -> dict:
-    events, arts, man, gt = _load_trace_dir(tdir)
-    errors: list[str] = []
-    warnings: list[str] = []
-
-    if man.trace_id != tdir.name:
-        errors.append("manifest trace_id != directory name")
-    if gt.trace_id != man.trace_id:
-        errors.append("ground_truth trace_id mismatch")
-
-    # Ensure GT not embedded as algorithm-facing answer labels in events
-    for e in events:
-        meta = e.get("metadata") or {}
-        if isinstance(meta, dict) and any(k.startswith("gt_") for k in meta):
-            errors.append(f"event {e.get('event_id')} contains gt_* metadata")
-
-    pt = ProvenanceTrace()
-    pt.load_records(events, arts)
-    comp = pt.completeness()
-
-    pipeline = {}
-    if run_pipeline and comp.suitable_for_dag_attribution and not comp.incomplete:
-        before = pt.fingerprint()
-        _ = pt.project(ProjectionKind.P1_DIRECT)
-        _ = pt.project(ProjectionKind.P2_ARTIFACT_BRIDGE)
-        results = ConservedRPA().allocate_from_trace(pt, projection_kind=ProjectionKind.P1_DIRECT)
-        profiles = [MFAV().compute(r, trace=pt) for r in results]
-        pipeline = {
-            "n_rpa_results": len(results),
-            "n_mfav_profiles": len(profiles),
-            "fingerprint_unchanged": pt.fingerprint() == before,
-        }
-        if not pipeline["fingerprint_unchanged"]:
-            errors.append("pipeline mutated provenance fingerprint")
-    elif run_pipeline:
-        warnings.append("skipped RPA/MFAV (incomplete or unsuitable DAG)")
-
-    ok = len(errors) == 0
-    return {
-        "trace_id": man.trace_id,
-        "ok": ok,
-        "errors": errors,
-        "warnings": warnings,
-        "incomplete": comp.incomplete,
-        "pipeline": pipeline,
-    }
+    try:
+        cfg = BenchmarkConfig(
+            scenario_id=ScenarioId(man.scenario_id),
+            topology_id=TopologyId(man.topology_id),
+            scale_tier=ScaleTier(man.scale_tier),
+            seed=man.seed,
+            fault_types=tuple(man.fault_types),
+            incomplete=man.incomplete,
+            generator_version=man.generator_version,
+        )
+    except Exception:
+        cfg = None
+    return validate_package(
+        events=events,
+        artifacts=arts,
+        manifest=man,
+        ground_truth=gt,
+        config=cfg,
+        require_complete=False,
+        load_provenance=True,
+        verify_fingerprint=cfg is not None,
+        check_fault_observables=strict_fault_observables,
+        expected_trace_dirname=tdir.name,
+    )
 
 
 def main() -> int:
@@ -89,6 +69,11 @@ def main() -> int:
     )
     parser.add_argument("--pipeline", action="store_true", help="Run P1/P2/RPA/MFAV on complete traces")
     parser.add_argument("--limit", type=int, default=0, help="Optional max traces to check")
+    parser.add_argument(
+        "--strict-fault-observables",
+        action="store_true",
+        help="Enforce Phase 2.5 fault observable semantics (fails on 2.4.0 planted effects)",
+    )
     args = parser.parse_args()
 
     traces_root = args.pilot_root / "traces"
@@ -100,16 +85,71 @@ def main() -> int:
     if args.limit > 0:
         dirs = dirs[: args.limit]
 
-    report = {"n": len(dirs), "failures": [], "results": []}
+    report: dict = {
+        "n": len(dirs),
+        "failures": [],
+        "ground_truth_failures": 0,
+        "pipeline_eligible": 0,
+        "intentionally_incomplete": 0,
+        "strict_fault_observables": bool(args.strict_fault_observables),
+        "results": [],
+    }
+
     for tdir in dirs:
-        item = validate_one(tdir, run_pipeline=args.pipeline)
-        report["results"].append(item)
-        if not item["ok"]:
-            report["failures"].append(item)
+        item_result = _validate_dir(
+            tdir,
+            args.pilot_root,
+            strict_fault_observables=args.strict_fault_observables,
+        )
+        pipeline = {}
+        warnings = list(item_result.warnings)
+        if item_result.incomplete:
+            report["intentionally_incomplete"] += 1
+
+        if args.pipeline and item_result.suitable_for_dag_attribution and not item_result.incomplete:
+            events = json.loads((tdir / "events.json").read_text(encoding="utf-8"))["events"]
+            arts = json.loads((tdir / "artifacts.json").read_text(encoding="utf-8"))["artifacts"]
+            pt = ProvenanceTrace()
+            pt.load_records(events, arts)
+            before = pt.fingerprint()
+            _ = pt.project(ProjectionKind.P1_DIRECT)
+            _ = pt.project(ProjectionKind.P2_ARTIFACT_BRIDGE)
+            results = ConservedRPA().allocate_from_trace(pt, projection_kind=ProjectionKind.P1_DIRECT)
+            profiles = [MFAV().compute(r, trace=pt) for r in results]
+            pipeline = {
+                "n_rpa_results": len(results),
+                "n_mfav_profiles": len(profiles),
+                "fingerprint_unchanged": pt.fingerprint() == before,
+            }
+            report["pipeline_eligible"] += 1
+            if not pipeline["fingerprint_unchanged"]:
+                item_result.errors.append("pipeline mutated provenance fingerprint")
+                item_result.ok = False
+        elif args.pipeline:
+            warnings.append("skipped RPA/MFAV (incomplete or unsuitable DAG)")
+
+        entry = {
+            "trace_id": tdir.name,
+            "ok": item_result.ok,
+            "errors": item_result.errors,
+            "warnings": warnings,
+            "incomplete": item_result.incomplete,
+            "ground_truth_failures": item_result.ground_truth_failures,
+            "pipeline": pipeline,
+        }
+        report["results"].append(entry)
+        report["ground_truth_failures"] += item_result.ground_truth_failures
+        if not item_result.ok:
+            report["failures"].append(entry)
 
     out = args.pilot_root / "validation_report.json"
     out.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-    print(f"checked={len(dirs)} failures={len(report['failures'])} report={out}")
+    print(
+        f"checked={len(dirs)} failures={len(report['failures'])} "
+        f"gt_error_total={report['ground_truth_failures']} "
+        f"incomplete={report['intentionally_incomplete']} "
+        f"pipeline_eligible={report['pipeline_eligible']} report={out}"
+    )
     return 1 if report["failures"] else 0
 
 
