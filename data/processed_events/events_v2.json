@@ -1,0 +1,274 @@
+{
+  "events": [
+    {
+      "agent_id": "User",
+      "category": "instruction",
+      "dependency_event_ids": [],
+      "event_id": "44678994-ca69-40ae-8227-5fc5518e58f8",
+      "event_type": "prompt",
+      "input_artifact_ids": [
+        "legacy:44678994-ca69-40ae-8227-5fc5518e58f8:input:10b08b31adb1bfa4"
+      ],
+      "output_artifact_ids": [
+        "legacy:44678994-ca69-40ae-8227-5fc5518e58f8:output:7f01e909c02db11a"
+      ],
+      "schema_version": "2.1.0",
+      "trace_id": "legacy-raw-events",
+      "ts_end": 1771159232.6315105,
+      "ts_start": 1771159232.6315105
+    },
+    {
+      "agent_id": "System",
+      "category": "instruction",
+      "dependency_event_ids": [
+        "44678994-ca69-40ae-8227-5fc5518e58f8"
+      ],
+      "event_id": "f1f551f5-58b3-4166-9993-971c15e8e265",
+      "event_type": "prompt",
+      "input_artifact_ids": [
+        "legacy:f1f551f5-58b3-4166-9993-971c15e8e265:input:f5f6fbba678a197c"
+      ],
+      "output_artifact_ids": [
+        "legacy:f1f551f5-58b3-4166-9993-971c15e8e265:output:ad66273f483d20e9"
+      ],
+      "schema_version": "2.1.0",
+      "trace_id": "legacy-raw-events",
+      "ts_end": 1771159232.6315105,
+      "ts_start": 1771159232.6315105
+    },
+    {
+      "agent_id": "PolicyEngine",
+      "category": "knowledge",
+      "dependency_event_ids": [
+        "f1f551f5-58b3-4166-9993-971c15e8e265"
+      ],
+      "event_id": "6556b292-8294-4cc5-9003-ec24a757d240",
+      "event_type": "document",
+      "input_artifact_ids": [
+        "legacy:6556b292-8294-4cc5-9003-ec24a757d240:input:3760bf4e4112b75f"
+      ],
+      "output_artifact_ids": [
+        "legacy:6556b292-8294-4cc5-9003-ec24a757d240:output:761efa40e20ae0b9"
+      ],
+      "schema_version": "2.1.0",
+      "trace_id": "legacy-raw-events",
+      "ts_end": 1771159232.6315105,
+      "ts_start": 1771159232.6315105
+    },
+    {
+      "agent_id": "Planner",
+      "category": "reasoning",
+      "dependency_event_ids": [
+        "f1f551f5-58b3-4166-9993-971c15e8e265",
+        "6556b292-8294-4cc5-9003-ec24a757d240"
+      ],
+      "event_id": "a2ed4960-626c-495c-bdd5-1aa29e792766",
+      "event_type": "reasoning",
+      "input_artifact_ids": [
+        "legacy:a2ed4960-626c-495c-bdd5-1aa29e792766:input:5bca61ca78b7a10b"
+      ],
+      "output_artifact_ids": [
+        "legacy:a2ed4960-626c-495c-bdd5-1aa29e792766:output:364955b7b6e852b7"
+      ],
+      "schema_version": "2.1.0",
+      "trace_id": "legacy-raw-events",
+      "ts_end": 1771159232.6315105,
+      "ts_start": 1771159232.6315105
+    },
+    {
+      "agent_id": "Memory",
+      "category": "retrieval",
+      "dependency_event_ids": [
+        "a2ed4960-626c-495c-bdd5-1aa29e792766"
+      ],
+      "event_id": "0a654dc3-eb0d-4fa2-830e-5e09a55fbc68",
+      "event_type": "retrieval",
+      "input_artifact_ids": [
+        "legacy:0a654dc3-eb0d-4fa2-830e-5e09a55fbc68:input:a147e0f983a78b78"
+      ],
+      "output_artifact_ids": [
+        "legacy:0a654dc3-eb0d-4fa2-830e-5e09a55fbc68:output:6eda216574f07ac1"
+      ],
+      "schema_version": "2.1.0",
+      "trace_id": "legacy-raw-events",
+      "ts_end": 1771159232.6315105,
+      "ts_start": 1771159232.6315105
+    },
+    {
+      "agent_id": "Researcher",
+      "category": "retrieval",
+      "dependency_event_ids": [
+        "a2ed4960-626c-495c-bdd5-1aa29e792766"
+      ],
+      "event_id": "e11b8f63-367d-4194-8f7b-d9206b11e07b",
+      "event_type": "retrieval",
+      "input_artifact_ids": [
+        "legacy:e11b8f63-367d-4194-8f7b-d9206b11e07b:input:1d6722345935e7b6"
+      ],
+      "output_artifact_ids": [
+        "legacy:e11b8f63-367d-4194-8f7b-d9206b11e07b:output:54dd41719af97585"
+      ],
+      "schema_version": "2.1.0",
+      "trace_id": "legacy-raw-events",
+      "ts_end": 1771159232.6315105,
+      "ts_start": 1771159232.6315105
+    },
+    {
+      "agent_id": "KB",
+      "category": "knowledge",
+      "dependency_event_ids": [
+        "e11b8f63-367d-4194-8f7b-d9206b11e07b"
+      ],
+      "event_id": "d396b7ec-7657-41ea-a101-65f788aadc0d",
+      "event_type": "document",
+      "input_artifact_ids": [
+        "legacy:d396b7ec-7657-41ea-a101-65f788aadc0d:input:0e308327b25f3f4c"
+      ],
+      "output_artifact_ids": [
+        "legacy:d396b7ec-7657-41ea-a101-65f788aadc0d:output:63e8a53d6b2c25e6"
+      ],
+      "schema_version": "2.1.0",
+      "trace_id": "legacy-raw-events",
+      "ts_end": 1771159232.6315105,
+      "ts_start": 1771159232.6315105
+    },
+    {
+      "agent_id": "KB",
+      "category": "knowledge",
+      "dependency_event_ids": [
+        "e11b8f63-367d-4194-8f7b-d9206b11e07b"
+      ],
+      "event_id": "6d302c37-acd5-4edc-b925-949bb767b078",
+      "event_type": "document",
+      "input_artifact_ids": [
+        "legacy:6d302c37-acd5-4edc-b925-949bb767b078:input:0d504f36ea2cc421"
+      ],
+      "output_artifact_ids": [
+        "legacy:6d302c37-acd5-4edc-b925-949bb767b078:output:9511666c94aabefe"
+      ],
+      "schema_version": "2.1.0",
+      "trace_id": "legacy-raw-events",
+      "ts_end": 1771159232.6315105,
+      "ts_start": 1771159232.6315105
+    },
+    {
+      "agent_id": "Embedder",
+      "category": "transformation",
+      "dependency_event_ids": [
+        "d396b7ec-7657-41ea-a101-65f788aadc0d"
+      ],
+      "event_id": "46d71968-f5ef-4c90-9579-04bcfc762b17",
+      "event_type": "embedding",
+      "input_artifact_ids": [
+        "legacy:46d71968-f5ef-4c90-9579-04bcfc762b17:input:e23690051935c4f1"
+      ],
+      "output_artifact_ids": [
+        "legacy:46d71968-f5ef-4c90-9579-04bcfc762b17:output:d913d79d71076929"
+      ],
+      "schema_version": "2.1.0",
+      "trace_id": "legacy-raw-events",
+      "ts_end": 1771159232.6315105,
+      "ts_start": 1771159232.6315105
+    },
+    {
+      "agent_id": "Embedder",
+      "category": "transformation",
+      "dependency_event_ids": [
+        "6d302c37-acd5-4edc-b925-949bb767b078"
+      ],
+      "event_id": "dcc3921d-7ca0-4813-8a6c-b7d16e310389",
+      "event_type": "embedding",
+      "input_artifact_ids": [
+        "legacy:dcc3921d-7ca0-4813-8a6c-b7d16e310389:input:0118c16a5ac2afef"
+      ],
+      "output_artifact_ids": [
+        "legacy:dcc3921d-7ca0-4813-8a6c-b7d16e310389:output:d9c8513a5b226c2a"
+      ],
+      "schema_version": "2.1.0",
+      "trace_id": "legacy-raw-events",
+      "ts_end": 1771159232.6315105,
+      "ts_start": 1771159232.6315105
+    },
+    {
+      "agent_id": "Researcher",
+      "category": "reasoning",
+      "dependency_event_ids": [
+        "46d71968-f5ef-4c90-9579-04bcfc762b17",
+        "dcc3921d-7ca0-4813-8a6c-b7d16e310389",
+        "0a654dc3-eb0d-4fa2-830e-5e09a55fbc68"
+      ],
+      "event_id": "8820e235-da17-4378-89b0-7aa6ee60c576",
+      "event_type": "reasoning",
+      "input_artifact_ids": [
+        "legacy:8820e235-da17-4378-89b0-7aa6ee60c576:input:631c9bec2830fa1d"
+      ],
+      "output_artifact_ids": [
+        "legacy:8820e235-da17-4378-89b0-7aa6ee60c576:output:ba13e1e7445776c1"
+      ],
+      "schema_version": "2.1.0",
+      "trace_id": "legacy-raw-events",
+      "ts_end": 1771159232.6315105,
+      "ts_start": 1771159232.6315105
+    },
+    {
+      "agent_id": "RiskTool",
+      "category": "tool",
+      "dependency_event_ids": [
+        "8820e235-da17-4378-89b0-7aa6ee60c576"
+      ],
+      "event_id": "ba589def-9f13-4f8b-942d-e8b9d7d656a2",
+      "event_type": "tool_call",
+      "input_artifact_ids": [
+        "legacy:ba589def-9f13-4f8b-942d-e8b9d7d656a2:input:627520ec1af1e2fc"
+      ],
+      "output_artifact_ids": [
+        "legacy:ba589def-9f13-4f8b-942d-e8b9d7d656a2:output:7e344506473c52b8"
+      ],
+      "schema_version": "2.1.0",
+      "trace_id": "legacy-raw-events",
+      "ts_end": 1771159232.6315105,
+      "ts_start": 1771159232.6315105
+    },
+    {
+      "agent_id": "ComplianceTool",
+      "category": "tool",
+      "dependency_event_ids": [
+        "8820e235-da17-4378-89b0-7aa6ee60c576"
+      ],
+      "event_id": "d165d060-23db-4f15-ac27-dcd9f8d3dedd",
+      "event_type": "tool_call",
+      "input_artifact_ids": [
+        "legacy:d165d060-23db-4f15-ac27-dcd9f8d3dedd:input:aa39fbe8656a8b2d"
+      ],
+      "output_artifact_ids": [
+        "legacy:d165d060-23db-4f15-ac27-dcd9f8d3dedd:output:08c0ff1bf1527434"
+      ],
+      "schema_version": "2.1.0",
+      "trace_id": "legacy-raw-events",
+      "ts_end": 1771159232.6315105,
+      "ts_start": 1771159232.6315105
+    },
+    {
+      "agent_id": "Executor",
+      "category": "decision",
+      "dependency_event_ids": [
+        "ba589def-9f13-4f8b-942d-e8b9d7d656a2",
+        "d165d060-23db-4f15-ac27-dcd9f8d3dedd"
+      ],
+      "event_id": "013b9854-41a8-46a1-bebe-b06bb4eb45cd",
+      "event_type": "action",
+      "input_artifact_ids": [
+        "legacy:013b9854-41a8-46a1-bebe-b06bb4eb45cd:input:23b6b217760647a5"
+      ],
+      "output_artifact_ids": [
+        "legacy:013b9854-41a8-46a1-bebe-b06bb4eb45cd:output:ef01eabb3009dda6"
+      ],
+      "schema_version": "2.1.0",
+      "trace_id": "legacy-raw-events",
+      "ts_end": 1771159232.6315105,
+      "ts_start": 1771159232.6315105
+    }
+  ],
+  "schema_version": "2.1.0",
+  "trace_id": "legacy-raw-events"
+}

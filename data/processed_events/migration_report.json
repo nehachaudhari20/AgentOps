@@ -1,0 +1,144 @@
+{
+  "category_mappings": [
+    {
+      "category": "instruction",
+      "event_id": "44678994-ca69-40ae-8227-5fc5518e58f8",
+      "event_type": "prompt"
+    },
+    {
+      "category": "instruction",
+      "event_id": "f1f551f5-58b3-4166-9993-971c15e8e265",
+      "event_type": "prompt"
+    },
+    {
+      "category": "knowledge",
+      "event_id": "6556b292-8294-4cc5-9003-ec24a757d240",
+      "event_type": "document"
+    },
+    {
+      "category": "reasoning",
+      "event_id": "a2ed4960-626c-495c-bdd5-1aa29e792766",
+      "event_type": "reasoning"
+    },
+    {
+      "category": "retrieval",
+      "event_id": "0a654dc3-eb0d-4fa2-830e-5e09a55fbc68",
+      "event_type": "retrieval"
+    },
+    {
+      "category": "retrieval",
+      "event_id": "e11b8f63-367d-4194-8f7b-d9206b11e07b",
+      "event_type": "retrieval"
+    },
+    {
+      "category": "knowledge",
+      "event_id": "d396b7ec-7657-41ea-a101-65f788aadc0d",
+      "event_type": "document"
+    },
+    {
+      "category": "knowledge",
+      "event_id": "6d302c37-acd5-4edc-b925-949bb767b078",
+      "event_type": "document"
+    },
+    {
+      "category": "transformation",
+      "event_id": "46d71968-f5ef-4c90-9579-04bcfc762b17",
+      "event_type": "embedding"
+    },
+    {
+      "category": "transformation",
+      "event_id": "dcc3921d-7ca0-4813-8a6c-b7d16e310389",
+      "event_type": "embedding"
+    },
+    {
+      "category": "reasoning",
+      "event_id": "8820e235-da17-4378-89b0-7aa6ee60c576",
+      "event_type": "reasoning"
+    },
+    {
+      "category": "tool",
+      "event_id": "ba589def-9f13-4f8b-942d-e8b9d7d656a2",
+      "event_type": "tool_call"
+    },
+    {
+      "category": "tool",
+      "event_id": "d165d060-23db-4f15-ac27-dcd9f8d3dedd",
+      "event_type": "tool_call"
+    },
+    {
+      "category": "decision",
+      "event_id": "013b9854-41a8-46a1-bebe-b06bb4eb45cd",
+      "event_type": "action"
+    }
+  ],
+  "limitations": [
+    "Legacy records lack explicit status; migrated records omit status so validators mark unknown.",
+    "Inline input_data/output_data are converted to content-addressed artifacts; raw text is not stored on graph nodes.",
+    "Numeric timestamps are preserved via format conversion to ISO 8601 during validation/parse.",
+    "No INVOKES, RETRIES, or OBSERVED_AFTER relationships exist in the legacy source.",
+    "Artifact IDs are derived deterministically from event_id, role, and content hash (not present in raw JSON)."
+  ],
+  "migrated_artifact_count": 28,
+  "migrated_event_count": 14,
+  "omissions": [
+    {
+      "event_id": "44678994-ca69-40ae-8227-5fc5518e58f8",
+      "reason": "status_absent_in_source"
+    },
+    {
+      "event_id": "f1f551f5-58b3-4166-9993-971c15e8e265",
+      "reason": "status_absent_in_source"
+    },
+    {
+      "event_id": "6556b292-8294-4cc5-9003-ec24a757d240",
+      "reason": "status_absent_in_source"
+    },
+    {
+      "event_id": "a2ed4960-626c-495c-bdd5-1aa29e792766",
+      "reason": "status_absent_in_source"
+    },
+    {
+      "event_id": "0a654dc3-eb0d-4fa2-830e-5e09a55fbc68",
+      "reason": "status_absent_in_source"
+    },
+    {
+      "event_id": "e11b8f63-367d-4194-8f7b-d9206b11e07b",
+      "reason": "status_absent_in_source"
+    },
+    {
+      "event_id": "d396b7ec-7657-41ea-a101-65f788aadc0d",
+      "reason": "status_absent_in_source"
+    },
+    {
+      "event_id": "6d302c37-acd5-4edc-b925-949bb767b078",
+      "reason": "status_absent_in_source"
+    },
+    {
+      "event_id": "46d71968-f5ef-4c90-9579-04bcfc762b17",
+      "reason": "status_absent_in_source"
+    },
+    {
+      "event_id": "dcc3921d-7ca0-4813-8a6c-b7d16e310389",
+      "reason": "status_absent_in_source"
+    },
+    {
+      "event_id": "8820e235-da17-4378-89b0-7aa6ee60c576",
+      "reason": "status_absent_in_source"
+    },
+    {
+      "event_id": "ba589def-9f13-4f8b-942d-e8b9d7d656a2",
+      "reason": "status_absent_in_source"
+    },
+    {
+      "event_id": "d165d060-23db-4f15-ac27-dcd9f8d3dedd",
+      "reason": "status_absent_in_source"
+    },
+    {
+      "event_id": "013b9854-41a8-46a1-bebe-b06bb4eb45cd",
+      "reason": "status_absent_in_source"
+    }
+  ],
+  "schema_version": "2.1.0",
+  "source_event_count": 14,
+  "trace_id": "legacy-raw-events"
+}

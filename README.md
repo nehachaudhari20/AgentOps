@@ -1,10 +1,32 @@
 # AgentOps
 
-AgentOps is a Python framework for **governance, accountability, and auditability** of multi-agent AI workflows. It ingests agent event logs, builds a Multi-Layer Provenance Graph (MLPG), propagates responsibility backward from outcomes, computes accountability and trust scores, and verifies audit integrity via a cryptographic hash chain.
+AgentOps is the implementation repository for the **AgentTrust** research framework (governance, provenance, accountability, and auditability for multi-agent AI workflows).
 
-## Features
+## Phase 2.1 — Research MLPG (current foundation)
 
-- **Provenance graph (MLPG)** — Directed graph of agent events with typed nodes, dependency edges, and edge weights
+The `agenttrust/` package is the Phase 2.1 provenance layer:
+
+- Versioned **EVENT + ARTIFACT** schema with strict validation
+- Typed, **unweighted** MultiDiGraph (no random edge weights)
+- `ProvenanceTrace` API with completeness / cycle diagnostics
+- Attribution projections **P1** (direct `DEPENDS_ON`) and **P2** (plus verified artifact bridges)
+- Non-destructive migration: `data/raw_events/events.json` → `data/processed_events/`
+
+**Documentation:** [docs/PHASE_2_1_MLPG.md](docs/PHASE_2_1_MLPG.md)
+
+```bash
+pip install -r requirements.txt
+python -m agenttrust.migration.cli
+python -m pytest tests/ -q
+```
+
+**Important limitations (Phase 2.1):** the graph represents *observable* lineage only. It does not reconstruct hidden LLM reasoning, prove causality, or compute responsibility / trust / cryptographic integrity. Redesigned RPA, MFAV, Assurance, and PLHC are **not** implemented in this phase.
+
+Legacy demo modules below (`provenance_graph/`, `attribution/`, …) remain for historical experiments and are separate from the Phase 2.1 API.
+
+## Features (legacy prototype + Phase 2.1)
+
+- **Provenance graph (MLPG)** — Phase 2.1: typed EVENT+ARTIFACT graph; legacy: event-only graph with edge weights
 - **Responsibility Propagation Algorithm (RPA)** — Backward propagation of responsibility from outcome nodes to upstream contributors
 - **Multi-Factor Accountability Vector (MFAV)** — Aggregates node-level responsibility into accountability factors (agent, prompt, data, tool, memory, execution)
 - **Trust scoring** — Weighted composite score from evidence strength, causality confidence, tool reliability, policy compliance, and model confidence, with risk classification
