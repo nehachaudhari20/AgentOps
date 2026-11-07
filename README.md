@@ -13,6 +13,7 @@ Provide a reproducible stack that:
 3. Allocates **structural** responsibility on event projections (conserved RPA)
 4. Aggregates RPA allocations into an exclusive **MFAV** factor profile
 5. Generates controlled **synthetic multi-agent benchmarks** with separate ground truth
+6. Computes an evidence-bounded **Assurance Profile** over observable records
 
 ## Explicit non-claims
 
@@ -24,6 +25,7 @@ AgentTrust **does not**:
 - Claim W3C PROV compliance (design is PROV-inspired only)
 - Treat `OBSERVED_AFTER` as causal dependence
 - Treat MFAV as fault probability, trust scoring, or legal accountability
+- Treat Assurance Profile scores as agent trustworthiness
 - Treat synthetic pilot benchmarks as production-scale validation
 
 ## Current implementation status
@@ -35,8 +37,8 @@ AgentTrust **does not**:
 | Conserved RPA (α=0 baseline) | **Phase 2.2 — active** (`agenttrust/attribution/`) |
 | MFAV (exclusive factor aggregation) | **Phase 2.3 — active** (`agenttrust/accountability/`) |
 | Synthetic benchmark generator + pilot | **Phase 2.4 — active** (`agenttrust/benchmark/`) |
-| Benchmark GT integrity + fault semantics | **Phase 2.5 — active** (validator/fault hardening; pilot retained) |
-| Assurance / CTSM redesign | Not implemented (package reserved) |
+| Benchmark GT integrity + fault semantics | **Phase 2.5 / 2.5.1 — active** |
+| Evidence-bounded Assurance Profile | **Phase 2.6 — active** (`agenttrust/assurance/`) |
 | PLHC redesign | Not implemented (package reserved) |
 | Legacy prototype | Preserved under `legacy/` (historical only) |
 
@@ -63,6 +65,11 @@ Raw / processed / pilot events
           ▼
 ┌───────────────────┐
 │  MFAV             │  exclusive factor + entity aggregation
+└─────────┬─────────┘
+          │
+          ▼
+┌───────────────────┐
+│  Assurance Profile│  evidence-bounded dimension statuses
 └───────────────────┘
 ```
 
@@ -77,7 +84,7 @@ AgentOps/
 │   ├── attribution/      # Conserved RPA (Phase 2.2)
 │   ├── accountability/   # MFAV (Phase 2.3)
 │   ├── benchmark/        # Synthetic corpus generator (Phase 2.4)
-│   ├── assurance/        # Reserved
+│   ├── assurance/        # Assurance Profile (Phase 2.6)
 │   ├── integrity/        # Reserved
 │   ├── migration/
 │   └── provenance_trace.py
@@ -134,6 +141,26 @@ rpa_results = ConservedRPA().allocate_from_trace(
 )
 profiles = [MFAV().compute(r, trace=trace) for r in rpa_results]
 ```
+
+## Phase 2.6 usage — Assurance Profile
+
+```python
+from agenttrust import AssuranceProfileCalculator, ConservedRPA, MFAV, ProvenanceTrace
+from agenttrust.mlpg.projections import ProjectionKind
+
+trace = ProvenanceTrace()
+trace.load_records(events, artifacts)
+rpa = ConservedRPA().allocate_from_trace(trace, projection_kind=ProjectionKind.P1_DIRECT)[0]
+mfav = MFAV().compute(rpa, trace=trace)
+assurance = AssuranceProfileCalculator().compute(
+    trace, rpa_result=rpa, mfav_result=mfav
+)
+print(assurance.overall_status, assurance.dimensions["provenance_coverage"].value)
+```
+
+The Assurance Profile reports evidence availability and structural consistency. It is **not** a trust score.
+
+Architecture: [docs/architecture/PHASE_2_6_ASSURANCE_PROFILE.md](docs/architecture/PHASE_2_6_ASSURANCE_PROFILE.md)
 
 ## Phase 2.4 usage — synthetic benchmarks
 

@@ -1,6 +1,7 @@
-"""AgentTrust: provenance, conserved RPA, MFAV, and synthetic benchmarks."""
+"""AgentTrust: provenance, conserved RPA, MFAV, benchmarks, and Assurance Profile."""
 
 from agenttrust.accountability import MFAV, MFAVResult, MFAVStatus
+from agenttrust.assurance import AssuranceProfile, AssuranceProfileCalculator, AssuranceStatus
 from agenttrust.attribution.rpa import ConservedRPA, RPAConfig, RPAResult
 from agenttrust.provenance_trace import ProvenanceTrace
 from agenttrust.schema.enums import (
@@ -19,6 +20,9 @@ __all__ = [
     "MFAV",
     "MFAVResult",
     "MFAVStatus",
+    "AssuranceProfileCalculator",
+    "AssuranceProfile",
+    "AssuranceStatus",
     "EventCategory",
     "EventStatus",
     "NodeKind",
@@ -26,4 +30,4 @@ __all__ = [
     "SCHEMA_VERSION",
 ]
 
-__version__ = "2.4.0"
+__version__ = "2.6.0"

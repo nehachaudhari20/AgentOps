@@ -33,6 +33,21 @@ from agenttrust.benchmark import (
 )
 
 
+def require_matching_generator_version(actual: str, expected: str = GENERATOR_VERSION) -> None:
+    """
+    Hard-fail before any generation/validation when versions differ.
+
+    Raises SystemExit with code 2 (does not mutate prior Phase 2.5.1 reports).
+    """
+    if actual != expected:
+        print(
+            f"ERROR: generator version mismatch: expected={expected!r} actual={actual!r}. "
+            "Refusing to generate or validate the Phase 2.5 fault matrix.",
+            file=sys.stderr,
+        )
+        raise SystemExit(2)
+
+
 def fault_matrix_configs() -> list[BenchmarkConfig]:
     """One S1 trace per fault type (+ dedicated delegation modes via topology choice)."""
     configs: list[BenchmarkConfig] = []
@@ -73,6 +88,8 @@ def main() -> int:
     traces_dir.mkdir(parents=True, exist_ok=True)
 
     gen = BenchmarkGenerator()
+    require_matching_generator_version(gen.generator_version, GENERATOR_VERSION)
+
     configs = fault_matrix_configs()
     report: dict = {
         "generator_version": gen.generator_version,
@@ -86,11 +103,9 @@ def main() -> int:
         "notes": [
             "Historical pilot is validated separately without claiming 2.5 fault semantics.",
             "This corpus is for strict generator validation only.",
+            "Generator version mismatch exits before generation (exit code 2).",
         ],
     }
-
-    if gen.generator_version != GENERATOR_VERSION:
-        print(f"WARNING: runtime generator {gen.generator_version} != {GENERATOR_VERSION}", file=sys.stderr)
 
     fault_seen: set[str] = set()
     for cfg in configs:
