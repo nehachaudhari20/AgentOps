@@ -9,7 +9,9 @@ MFAV conservation integrity closure (event assignments ↔ factor totals).
 | Branch | `master` (no branch created or switched) |
 | Start / expected HEAD | `ed69eb1fa667177f4a8a9658d3a040295ab3c344` — Evluation hardening |
 | Working tree at start | Clean |
-| Commit/push this phase | **Not performed** |
+| Implementation commit | `421a55cfb4e0e07113c7374e064cd28df72f16bd` — MFAV intregrity closure |
+
+**Historical note (corrected in Phase 2.7):** The original 2.6.2.1 working session left a dirty tree and did not itself run `git commit`/`git push`. The Phase 2.6.2.1 implementation was subsequently committed on `master` as `421a55c` and is present in the repository.
 
 ## 2. Objective
 
@@ -118,9 +120,8 @@ python experiments/scripts/evaluate_assurance_profiles.py
 - No PLHC / trust score / causal claims.
 - Historical corpora unmodified.
 
-## 8. Stop
+## 8. Stop (original session vs repository)
 
-- Working tree: dirty (2.6.2.1 uncommitted).
-- No branch created or switched.
-- No commit or push performed.
-- STOP after Phase 2.6.2.1 — wait for review before PLHC.
+- Original working session: dirty tree; no commit/push in that session.
+- Repository fact: implementation included in `421a55cfb4e0e07113c7374e064cd28df72f16bd`.
+- No branch created or switched during 2.6.2.1 work.

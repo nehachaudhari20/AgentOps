@@ -210,6 +210,10 @@ When claiming `verified` for a complete profile, validate:
 
 Value embeds raw/normalized factors (including `other`), conservation error, MFAV status, assignment count. Factor concentration/entropy are **not** computed as trust scores.
 
+## Dimension F — Audit integrity (Phase 2.7)
+
+**Rule `assurance.audit_integrity.v1`:** maps an optional PLHC `IntegrityVerificationResult` into Assurance statuses. Absent PLHC → `unavailable`. Valid retained checkpoint match → `verified`. Tampering / broken chain → `contradicted`. Never claims immutability or external trust. See [PHASE_2_7_PLHC.md](PHASE_2_7_PLHC.md).
+
 ## Profile API
 
 ```text
@@ -220,6 +224,7 @@ AssuranceProfileCalculator.compute(
     mfav_result: MFAVResult | None = None,
     mfav_p1: MFAVResult | None = None,
     mfav_p2: MFAVResult | None = None,
+    plhc_result: IntegrityVerificationResult | None = None,
 ) -> AssuranceProfile
 ```
 
@@ -227,7 +232,7 @@ AssuranceProfileCalculator.compute(
 - Does not mutate trace/graph/RPA/MFAV
 - Does not read benchmark ground truth
 - No single scalar “trust score”
-- Algorithm version `2.6.2.1`
+- Algorithm version `2.7.0`
 
 ## Evaluation runner (fail-closed)
 

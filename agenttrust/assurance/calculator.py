@@ -1,5 +1,5 @@
 """
-Assurance Profile calculator (Phase 2.6.1).
+Assurance Profile calculator (Phase 2.7).
 
 Does not mutate inputs. Does not read benchmark ground truth.
 Does not produce a trust score.
@@ -14,6 +14,7 @@ from agenttrust.accountability.result import MFAVResult
 from agenttrust.assurance.dimensions import (
     evaluate_attribution_computability,
     evaluate_attribution_sensitivity,
+    evaluate_audit_integrity,
     evaluate_factor_profile,
     evaluate_reference_integrity,
     evaluate_trace_completeness,
@@ -24,6 +25,7 @@ from agenttrust.assurance.models import (
 )
 from agenttrust.assurance.result import AssuranceProfile
 from agenttrust.attribution.rpa import RPAResult
+from agenttrust.integrity.result import IntegrityVerificationResult
 from agenttrust.provenance_trace import ProvenanceTrace
 
 
@@ -38,30 +40,29 @@ class AssuranceProfileCalculator:
         mfav_result: Optional[MFAVResult] = None,
         mfav_p1: Optional[MFAVResult] = None,
         mfav_p2: Optional[MFAVResult] = None,
+        plhc_result: Optional[IntegrityVerificationResult] = None,
     ) -> AssuranceProfile:
         """
         Compute an Assurance Profile from a loaded ProvenanceTrace and optional
-        RPA/MFAV results supplied by the caller.
+        RPA/MFAV/PLHC results supplied by the caller.
 
         Ground-truth labels are never consulted.
         """
         before_fp = trace.fingerprint()
 
-        # Five dimensions after consolidating provenance_coverage into reference_integrity
         dims = {
             "trace_completeness": evaluate_trace_completeness(trace),
             "reference_integrity": evaluate_reference_integrity(trace),
             "attribution_computability": evaluate_attribution_computability(rpa_result),
             "attribution_sensitivity": evaluate_attribution_sensitivity(mfav_p1, mfav_p2),
             "factor_profile": evaluate_factor_profile(mfav_result),
+            "audit_integrity": evaluate_audit_integrity(plhc_result),
         }
 
         after_fp = trace.fingerprint()
         if before_fp != after_fp:
             raise RuntimeError("AssuranceProfileCalculator mutated provenance graph.")
 
-        # worst_status precedence ensures overall is never verified when any
-        # dimension is contradicted or incomplete.
         overall = AssuranceProfile.compute_overall(dims)
 
         profile = AssuranceProfile(
@@ -84,6 +85,7 @@ class AssuranceProfileCalculator:
                 "has_mfav": mfav_result is not None,
                 "has_mfav_p1": mfav_p1 is not None,
                 "has_mfav_p2": mfav_p2 is not None,
+                "has_plhc": plhc_result is not None,
                 "dimension_ids": sorted(dims.keys()),
             },
         )

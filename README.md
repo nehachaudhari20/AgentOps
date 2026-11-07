@@ -38,8 +38,8 @@ AgentTrust **does not**:
 | MFAV (exclusive factor aggregation) | **Phase 2.3 — active** (`agenttrust/accountability/`) |
 | Synthetic benchmark generator + pilot | **Phase 2.4 — active** (`agenttrust/benchmark/`) |
 | Benchmark GT integrity + fault semantics | **Phase 2.5 / 2.5.1 — active** |
-| Evidence-bounded Assurance Profile | **Phase 2.6.2.1 — active** (`agenttrust/assurance/`) |
-| PLHC redesign | Not implemented (package reserved) |
+| Evidence-bounded Assurance Profile | **Phase 2.7 — active** (`agenttrust/assurance/`) |
+| PLHC (Merkle + linked checkpoints) | **Phase 2.7 — active** (`agenttrust/integrity/`) |
 | Legacy prototype | Preserved under `legacy/` (historical only) |
 
 ## Active architecture
@@ -70,6 +70,11 @@ Raw / processed / pilot events
           ▼
 ┌───────────────────┐
 │  Assurance Profile│  evidence-bounded dimension statuses
+└─────────┬─────────┘
+          │
+          ▼
+┌───────────────────┐
+│  PLHC             │  Merkle root + linked checkpoints (tamper-evident)
 └───────────────────┘
 ```
 
@@ -84,8 +89,8 @@ AgentOps/
 │   ├── attribution/      # Conserved RPA (Phase 2.2)
 │   ├── accountability/   # MFAV (Phase 2.3)
 │   ├── benchmark/        # Synthetic corpus generator (Phase 2.4)
-│   ├── assurance/        # Assurance Profile (Phase 2.6)
-│   ├── integrity/        # Reserved
+│   ├── assurance/        # Assurance Profile (Phase 2.6–2.7)
+│   ├── integrity/        # PLHC (Phase 2.7)
 │   ├── migration/
 │   └── provenance_trace.py
 ├── legacy/               # Original prototype (not active)
@@ -158,9 +163,27 @@ assurance = AssuranceProfileCalculator().compute(
 print(assurance.overall_status, assurance.dimensions["reference_integrity"].value)
 ```
 
-The Assurance Profile reports typed evidence availability and structural consistency (algorithm `2.6.2.1`). It is **not** a trust score. Phase 2.6.2.1 independently verifies MFAV event-assignment ↔ factor-total conservation.
+The Assurance Profile reports typed evidence availability and structural consistency (algorithm `2.7.0`), including optional `audit_integrity` from PLHC. It is **not** a trust score.
 
 Architecture: [docs/architecture/PHASE_2_6_ASSURANCE_PROFILE.md](docs/architecture/PHASE_2_6_ASSURANCE_PROFILE.md)
+
+## Phase 2.7 usage — PLHC
+
+```python
+from agenttrust import PLHC, ProvenanceTrace
+
+trace = ProvenanceTrace()
+trace.load_records(events, artifacts)
+plhc = PLHC()
+snap = plhc.build_snapshot(trace)
+cp = plhc.create_checkpoint(snap, sequence_number=0)
+result = plhc.verify_against_checkpoint(trace, cp)
+print(result.status, snap.merkle_root)
+```
+
+PLHC is **tamper-evident** relative to a retained checkpoint. It is **not** immutable and does not prove causation or event occurrence.
+
+Architecture: [docs/architecture/PHASE_2_7_PLHC.md](docs/architecture/PHASE_2_7_PLHC.md)
 
 ## Phase 2.4 usage — synthetic benchmarks
 

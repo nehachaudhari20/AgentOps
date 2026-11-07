@@ -22,6 +22,7 @@ from agenttrust import (
     AssuranceProfileCalculator,
     ConservedRPA,
     MFAV,
+    PLHC,
     ProvenanceTrace,
 )
 from agenttrust.assurance.models import ASSURANCE_ALGORITHM_VERSION
@@ -144,12 +145,26 @@ def _evaluate_dir(traces_root: Path, gt_dir: Path | None, label: str) -> dict:
                     except Exception as exc2:
                         entry["rpa_override_error"] = str(exc2)
 
+            # PLHC: build snapshot + genesis checkpoint, verify round-trip (fail-closed on mismatch)
+            plhc = PLHC()
+            snap = plhc.build_snapshot(pt)
+            cp = plhc.create_checkpoint(snap, sequence_number=0)
+            plhc_result = plhc.verify_against_checkpoint(pt, cp)
+            entry["plhc_status"] = plhc_result.status.value
+            entry["plhc_merkle_root"] = snap.merkle_root
+            entry["plhc_leaf_count"] = snap.leaf_count
+            if plhc_result.status.value != "verified":
+                raise RuntimeError(
+                    f"PLHC round-trip failed: {plhc_result.status.value}: {plhc_result.explanation}"
+                )
+
             profile = calc.compute(
                 pt,
                 rpa_result=rpa,
                 mfav_result=mfav,
                 mfav_p1=mfav_p1,
                 mfav_p2=mfav_p2,
+                plhc_result=plhc_result,
             )
             entry["ok"] = True
             entry["overall_status"] = profile.overall_status.value

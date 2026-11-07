@@ -1,7 +1,7 @@
 """
-Assurance dimension evaluators (Phase 2.6.2).
+Assurance dimension evaluators (Phase 2.7).
 
-Uses only ProvenanceTrace / RPAResult / MFAVResult.
+Uses ProvenanceTrace / RPAResult / MFAVResult / optional PLHC result.
 Must not import or read benchmark ground truth.
 """
 
@@ -20,6 +20,7 @@ from agenttrust.assurance.models import (
 )
 from agenttrust.assurance.result import DimensionResult
 from agenttrust.attribution.rpa import RPAResult
+from agenttrust.integrity.result import IntegrityStatus, IntegrityVerificationResult
 from agenttrust.mlpg.projections import ProjectionKind
 from agenttrust.provenance_trace import ProvenanceTrace
 from agenttrust.schema.event import EventRecord
@@ -793,4 +794,71 @@ def evaluate_factor_profile(mfav: Optional[MFAVResult]) -> DimensionResult:
         explanation=f"MFAV status {mfav.status.value}; cannot verify factor profile.",
         limitations=limitations,
         warnings=list(mfav.classification_warnings)[:5],
+    )
+
+
+def evaluate_audit_integrity(
+    plhc_result: Optional[IntegrityVerificationResult],
+) -> DimensionResult:
+    """
+    Map a PLHC verification result into the Assurance Profile (rule v1).
+
+    Local hash verification is not immutability or independent trust.
+    """
+    limitations = [
+        "PLHC verification is tamper-evident relative to a retained checkpoint only.",
+        "Does not imply immutability, external anchoring, or causal validity.",
+        "No PLHC result → unavailable (never invented as verified).",
+    ]
+    if plhc_result is None:
+        return DimensionResult(
+            dimension_id="audit_integrity",
+            status=AssuranceStatus.UNAVAILABLE,
+            value=None,
+            rule_id="assurance.audit_integrity.v1",
+            explanation="No PLHC IntegrityVerificationResult provided.",
+            limitations=limitations,
+        )
+
+    value = {
+        "plhc_status": plhc_result.status.value,
+        "merkle_root": (
+            None
+            if plhc_result.snapshot is None
+            else plhc_result.snapshot.merkle_root
+        ),
+        "leaf_count": (
+            None
+            if plhc_result.snapshot is None
+            else plhc_result.snapshot.leaf_count
+        ),
+        "checkpoint_hash": (
+            None
+            if plhc_result.checkpoint is None
+            else plhc_result.checkpoint.checkpoint_hash
+        ),
+        "diagnostics": list(plhc_result.diagnostics)[:12],
+    }
+    evidence: list[str] = []
+    if plhc_result.snapshot is not None:
+        evidence.append(plhc_result.snapshot.merkle_root)
+    if plhc_result.checkpoint is not None:
+        evidence.append(plhc_result.checkpoint.checkpoint_hash)
+
+    mapping = {
+        IntegrityStatus.VERIFIED: AssuranceStatus.VERIFIED,
+        IntegrityStatus.CONTRADICTED: AssuranceStatus.CONTRADICTED,
+        IntegrityStatus.INCOMPLETE: AssuranceStatus.INCOMPLETE,
+        IntegrityStatus.UNAVAILABLE: AssuranceStatus.UNAVAILABLE,
+    }
+    status = mapping.get(plhc_result.status, AssuranceStatus.UNAVAILABLE)
+    return DimensionResult(
+        dimension_id="audit_integrity",
+        status=status,
+        value=value,
+        evidence_refs=evidence,
+        rule_id="assurance.audit_integrity.v1",
+        explanation=plhc_result.explanation,
+        limitations=limitations + list(plhc_result.limitations)[:4],
+        warnings=list(plhc_result.diagnostics)[:5],
     )
