@@ -1,21 +1,26 @@
 """
-End-to-end PLHC integrity builder and verifier.
+End-to-end PLHC integrity builder and verifier (Phase 2.7.1).
 
 Does not mutate ProvenanceTrace. Does not claim immutability or external trust.
+Fail-closed public verification APIs.
 """
 
 from __future__ import annotations
 
 from typing import Optional, Sequence
 
+from agenttrust.integrity.canonicalization import CANONICALIZATION_VERSION
 from agenttrust.integrity.checkpoint import (
     IntegrityCheckpoint,
     create_checkpoint,
     verify_checkpoint,
     verify_checkpoint_chain,
 )
+from agenttrust.integrity.digests import DigestError, is_valid_sha256_hex
+from agenttrust.integrity.hashing import HASH_ALGORITHM
 from agenttrust.integrity.leaves import LeafConstructionError, build_all_leaves
 from agenttrust.integrity.merkle import (
+    MERKLE_FORMAT_VERSION,
     InclusionProof,
     MerkleError,
     build_merkle_tree,
@@ -60,12 +65,17 @@ class PLHC:
             leaf_count=snapshot.leaf_count,
             previous_checkpoint=previous_checkpoint,
             created_at=created_at,
+            canonicalization_version=snapshot.canonicalization_version,
+            hash_algorithm=snapshot.hash_algorithm,
+            merkle_format_version=snapshot.merkle_format_version,
         )
 
     def prove_inclusion(self, snapshot: IntegritySnapshot, leaf_id: str) -> InclusionProof:
         tree = build_merkle_tree(snapshot.leaves)
         if tree.root != snapshot.merkle_root:
             raise MerkleError("snapshot merkle_root does not match rebuilt tree")
+        if tree.merkle_format_version != snapshot.merkle_format_version:
+            raise MerkleError("snapshot merkle_format_version mismatch")
         return prove_inclusion(tree, leaf_id)
 
     def verify_inclusion(
@@ -74,7 +84,10 @@ class PLHC:
         *,
         expected_root: Optional[str] = None,
     ) -> bool:
-        return verify_inclusion(proof, expected_root=expected_root)
+        try:
+            return verify_inclusion(proof, expected_root=expected_root)
+        except Exception:
+            return False
 
     def verify_against_checkpoint(
         self,
@@ -102,22 +115,32 @@ class PLHC:
                 status=IntegrityStatus.CONTRADICTED,
                 explanation=f"Checkpoint verification failed: {reason_cp}",
                 checkpoint=checkpoint,
+                previous_checkpoint=previous_checkpoint,
+                checkpoint_link_verified=False,
                 diagnostics=[reason_cp],
                 limitations=limitations,
             )
 
         try:
             snapshot = self.build_snapshot(trace)
-        except LeafConstructionError as exc:
+        except (LeafConstructionError, MerkleError, DigestError, ValueError) as exc:
             return IntegrityVerificationResult(
                 status=IntegrityStatus.CONTRADICTED,
-                explanation=f"Leaf construction failed: {exc}",
+                explanation=f"Snapshot rebuild failed: {exc}",
                 checkpoint=checkpoint,
+                previous_checkpoint=previous_checkpoint,
+                checkpoint_link_verified=True,
                 diagnostics=[str(exc)],
                 limitations=limitations,
             )
 
         diags: list[str] = []
+        if snapshot.canonicalization_version != checkpoint.canonicalization_version:
+            diags.append("canonicalization_version mismatch")
+        if snapshot.hash_algorithm != checkpoint.hash_algorithm:
+            diags.append("hash_algorithm mismatch")
+        if snapshot.merkle_format_version != checkpoint.merkle_format_version:
+            diags.append("merkle_format_version mismatch")
         if snapshot.merkle_root != checkpoint.merkle_root:
             diags.append(
                 f"merkle_root mismatch rebuilt={snapshot.merkle_root} "
@@ -135,15 +158,22 @@ class PLHC:
                 explanation="Rebuilt evidence conflicts with retained checkpoint.",
                 snapshot=snapshot,
                 checkpoint=checkpoint,
+                previous_checkpoint=previous_checkpoint,
+                checkpoint_link_verified=True,
                 diagnostics=diags,
                 limitations=limitations,
             )
 
         return IntegrityVerificationResult(
             status=IntegrityStatus.VERIFIED,
-            explanation="Rebuilt evidence matches retained checkpoint Merkle root and leaf count.",
+            explanation=(
+                "Rebuilt evidence matches retained checkpoint "
+                "(root, leaf count, formats); checkpoint link verified."
+            ),
             snapshot=snapshot,
             checkpoint=checkpoint,
+            previous_checkpoint=previous_checkpoint,
+            checkpoint_link_verified=True,
             diagnostics=[],
             limitations=limitations,
         )
@@ -163,14 +193,19 @@ class PLHC:
             return IntegrityVerificationResult(
                 status=IntegrityStatus.CONTRADICTED,
                 explanation=f"Checkpoint chain verification failed: {reason}",
-                checkpoint=checkpoints[-1],
+                checkpoint=checkpoints[-1] if checkpoints else None,
                 diagnostics=[reason],
                 limitations=list(DEFAULT_LIMITATIONS),
             )
         return IntegrityVerificationResult(
             status=IntegrityStatus.VERIFIED,
-            explanation=f"Checkpoint chain of length {len(checkpoints)} verified.",
+            explanation=(
+                f"Checkpoint chain prefix of length {len(checkpoints)} verified. "
+                "This does not prove absence of later checkpoints."
+            ),
             checkpoint=checkpoints[-1],
+            previous_checkpoint=checkpoints[-2] if len(checkpoints) > 1 else None,
+            checkpoint_link_verified=True,
             limitations=list(DEFAULT_LIMITATIONS),
         )
 
@@ -180,6 +215,12 @@ class PLHC:
         retained: IntegritySnapshot,
     ) -> IntegrityVerificationResult:
         diags: list[str] = []
+        if rebuilt.canonicalization_version != retained.canonicalization_version:
+            diags.append("canonicalization_version mismatch")
+        if rebuilt.hash_algorithm != retained.hash_algorithm:
+            diags.append("hash_algorithm mismatch")
+        if rebuilt.merkle_format_version != retained.merkle_format_version:
+            diags.append("merkle_format_version mismatch")
         if rebuilt.merkle_root != retained.merkle_root:
             diags.append("merkle_root mismatch")
         if rebuilt.leaf_count != retained.leaf_count:
@@ -193,23 +234,13 @@ class PLHC:
         if extra:
             diags.append(f"extra leaves: {extra[:8]}")
         if diags:
-            status = (
-                IntegrityStatus.INCOMPLETE
-                if missing and not extra and rebuilt.merkle_root != retained.merkle_root
-                else IntegrityStatus.CONTRADICTED
-            )
-            # Deletion/insertion that changes the root is contradicted; explicit
-            # partial coverage without a conflicting retained root is incomplete.
-            if missing and not extra:
-                status = IntegrityStatus.CONTRADICTED  # evidence removed vs retained commitment
             return IntegrityVerificationResult(
-                status=status,
+                status=IntegrityStatus.CONTRADICTED,
                 explanation="Snapshot mismatch against retained commitment.",
                 snapshot=rebuilt,
                 diagnostics=diags,
                 limitations=list(DEFAULT_LIMITATIONS),
             )
-        # Compare content hashes for shared IDs
         retained_by_id = {leaf.leaf_id: leaf for leaf in retained.leaves}
         for leaf in rebuilt.leaves:
             other = retained_by_id[leaf.leaf_id]
@@ -227,3 +258,28 @@ class PLHC:
             snapshot=rebuilt,
             limitations=list(DEFAULT_LIMITATIONS),
         )
+
+
+def validate_snapshot_internal_consistency(snapshot: IntegritySnapshot) -> tuple[bool, str]:
+    """Rebuild Merkle tree from snapshot leaves and compare root/count/formats."""
+    try:
+        if snapshot.canonicalization_version != CANONICALIZATION_VERSION:
+            return False, "unsupported snapshot canonicalization_version"
+        if snapshot.hash_algorithm != HASH_ALGORITHM:
+            return False, "unsupported snapshot hash_algorithm"
+        if snapshot.merkle_format_version != MERKLE_FORMAT_VERSION:
+            return False, "unsupported snapshot merkle_format_version"
+        if not is_valid_sha256_hex(snapshot.merkle_root):
+            return False, "malformed snapshot merkle_root"
+        if not isinstance(snapshot.leaf_count, int) or isinstance(snapshot.leaf_count, bool):
+            return False, "invalid snapshot leaf_count"
+        if snapshot.leaf_count != len(snapshot.leaves):
+            return False, "snapshot leaf_count != len(leaves)"
+        tree = build_merkle_tree(list(snapshot.leaves))
+        if tree.leaf_count != snapshot.leaf_count:
+            return False, "rebuilt leaf_count mismatch"
+        if tree.root != snapshot.merkle_root:
+            return False, "rebuilt merkle_root mismatch"
+        return True, "ok"
+    except Exception as exc:
+        return False, str(exc)

@@ -37,7 +37,7 @@ def worst_status(statuses: list[AssuranceStatus]) -> AssuranceStatus:
 
 
 ASSURANCE_ALGORITHM_NAME = "evidence_bounded_assurance_profile"
-ASSURANCE_ALGORITHM_VERSION = "2.7.0"
+ASSURANCE_ALGORITHM_VERSION = "2.7.1"
 
 # Conservation / agreement tolerances (absolute). Do not weaken to pass tests.
 CONSERVATION_ABS_TOL = 1e-9

@@ -797,68 +797,229 @@ def evaluate_factor_profile(mfav: Optional[MFAVResult]) -> DimensionResult:
     )
 
 
-def evaluate_audit_integrity(
-    plhc_result: Optional[IntegrityVerificationResult],
-) -> DimensionResult:
-    """
-    Map a PLHC verification result into the Assurance Profile (rule v1).
-
-    Local hash verification is not immutability or independent trust.
-    """
-    limitations = [
-        "PLHC verification is tamper-evident relative to a retained checkpoint only.",
-        "Does not imply immutability, external anchoring, or causal validity.",
-        "No PLHC result → unavailable (never invented as verified).",
-    ]
-    if plhc_result is None:
-        return DimensionResult(
-            dimension_id="audit_integrity",
-            status=AssuranceStatus.UNAVAILABLE,
-            value=None,
-            rule_id="assurance.audit_integrity.v1",
-            explanation="No PLHC IntegrityVerificationResult provided.",
-            limitations=limitations,
-        )
-
-    value = {
+def _plhc_evidence_value(plhc_result: IntegrityVerificationResult) -> dict[str, Any]:
+    return {
         "plhc_status": plhc_result.status.value,
         "merkle_root": (
-            None
-            if plhc_result.snapshot is None
-            else plhc_result.snapshot.merkle_root
+            None if plhc_result.snapshot is None else plhc_result.snapshot.merkle_root
         ),
         "leaf_count": (
-            None
-            if plhc_result.snapshot is None
-            else plhc_result.snapshot.leaf_count
+            None if plhc_result.snapshot is None else plhc_result.snapshot.leaf_count
         ),
         "checkpoint_hash": (
             None
             if plhc_result.checkpoint is None
             else plhc_result.checkpoint.checkpoint_hash
         ),
+        "checkpoint_link_verified": bool(
+            getattr(plhc_result, "checkpoint_link_verified", False)
+        ),
         "diagnostics": list(plhc_result.diagnostics)[:12],
     }
+
+
+def _validate_plhc_verified_evidence(
+    plhc_result: IntegrityVerificationResult,
+) -> tuple[Optional[str], Optional[str]]:
+    """
+    Independently validate evidence before accepting a claimed VERIFIED status.
+
+    Returns (kind, reason) where kind is None if acceptable for VERIFIED,
+    else "unavailable" / "contradicted" / "incomplete".
+    """
+    from agenttrust.integrity.checkpoint import GENESIS_PREV_HASH, verify_checkpoint
+    from agenttrust.integrity.digests import is_valid_sha256_hex
+    from agenttrust.integrity.verifier import validate_snapshot_internal_consistency
+
+    snap = plhc_result.snapshot
+    cp = plhc_result.checkpoint
+    if snap is None and cp is None:
+        return "unavailable", "claimed VERIFIED but snapshot and checkpoint missing"
+    if snap is None:
+        return "unavailable", "claimed VERIFIED but snapshot missing"
+    if cp is None:
+        return "unavailable", "claimed VERIFIED but checkpoint missing"
+
+    if not is_valid_sha256_hex(snap.merkle_root):
+        return "contradicted", "snapshot merkle_root is not a valid SHA-256 digest"
+    if not is_valid_sha256_hex(cp.merkle_root):
+        return "contradicted", "checkpoint merkle_root is not a valid SHA-256 digest"
+    if not is_valid_sha256_hex(cp.checkpoint_hash):
+        return "contradicted", "checkpoint_hash is not a valid SHA-256 digest"
+
+    if snap.leaf_count != cp.leaf_count:
+        return "contradicted", "snapshot/checkpoint leaf_count mismatch"
+    if snap.merkle_root != cp.merkle_root:
+        return "contradicted", "snapshot/checkpoint merkle_root mismatch"
+    if snap.merkle_format_version != cp.merkle_format_version:
+        return "contradicted", "snapshot/checkpoint merkle_format_version mismatch"
+    if snap.canonicalization_version != cp.canonicalization_version:
+        return "contradicted", "snapshot/checkpoint canonicalization_version mismatch"
+    if snap.hash_algorithm != cp.hash_algorithm:
+        return "contradicted", "snapshot/checkpoint hash_algorithm mismatch"
+
+    ok_snap, reason_snap = validate_snapshot_internal_consistency(snap)
+    if not ok_snap:
+        return "contradicted", f"snapshot internal consistency failed: {reason_snap}"
+
+    prev = getattr(plhc_result, "previous_checkpoint", None)
+    link_ok = bool(getattr(plhc_result, "checkpoint_link_verified", False))
+
+    if cp.sequence_number == 0:
+        ok_cp, reason_cp = verify_checkpoint(cp, previous=None)
+        if not ok_cp:
+            return "contradicted", f"genesis checkpoint invalid: {reason_cp}"
+        if cp.previous_checkpoint_hash != GENESIS_PREV_HASH:
+            return "contradicted", "genesis previous hash must be GENESIS"
+        if not link_ok:
+            # Genesis self-check is sufficient; treat as link-verified if self-ok
+            pass
+        return None, None
+
+    # Non-genesis requires verified predecessor link
+    if prev is None:
+        return (
+            "incomplete",
+            "non-genesis checkpoint without preceding checkpoint; "
+            "chain link cannot be verified",
+        )
+    ok_cp, reason_cp = verify_checkpoint(cp, previous=prev)
+    if not ok_cp:
+        return "contradicted", f"checkpoint link invalid: {reason_cp}"
+    if not link_ok:
+        return (
+            "incomplete",
+            "checkpoint_link_verified is false for non-genesis checkpoint",
+        )
+    return None, None
+
+
+def evaluate_audit_integrity(
+    plhc_result: Optional[IntegrityVerificationResult],
+) -> DimensionResult:
+    """
+    Map a PLHC verification result into the Assurance Profile (rule v1_1).
+
+    Does not trust a caller-supplied VERIFIED status alone. Revalidates
+    snapshot/checkpoint evidence. Local verification ≠ immutability.
+    """
+    limitations = [
+        "PLHC verification is tamper-evident relative to a retained checkpoint only.",
+        "Does not imply immutability, external anchoring, or causal validity.",
+        "No PLHC result → unavailable (never invented as verified).",
+        "Caller-constructed VERIFIED status is not cryptographic proof; evidence is rechecked.",
+        "In-process objects are not a substitute for a trusted external checkpoint.",
+    ]
+    rule_id = "assurance.audit_integrity.v1_1"
+    if plhc_result is None:
+        return DimensionResult(
+            dimension_id="audit_integrity",
+            status=AssuranceStatus.UNAVAILABLE,
+            value=None,
+            rule_id=rule_id,
+            explanation="No PLHC IntegrityVerificationResult provided.",
+            limitations=limitations,
+        )
+
+    value = _plhc_evidence_value(plhc_result)
     evidence: list[str] = []
-    if plhc_result.snapshot is not None:
+    if plhc_result.snapshot is not None and isinstance(
+        plhc_result.snapshot.merkle_root, str
+    ):
         evidence.append(plhc_result.snapshot.merkle_root)
-    if plhc_result.checkpoint is not None:
+    if plhc_result.checkpoint is not None and isinstance(
+        plhc_result.checkpoint.checkpoint_hash, str
+    ):
         evidence.append(plhc_result.checkpoint.checkpoint_hash)
 
-    mapping = {
-        IntegrityStatus.VERIFIED: AssuranceStatus.VERIFIED,
-        IntegrityStatus.CONTRADICTED: AssuranceStatus.CONTRADICTED,
-        IntegrityStatus.INCOMPLETE: AssuranceStatus.INCOMPLETE,
-        IntegrityStatus.UNAVAILABLE: AssuranceStatus.UNAVAILABLE,
-    }
-    status = mapping.get(plhc_result.status, AssuranceStatus.UNAVAILABLE)
+    claimed = plhc_result.status
+
+    if claimed == IntegrityStatus.UNAVAILABLE:
+        return DimensionResult(
+            dimension_id="audit_integrity",
+            status=AssuranceStatus.UNAVAILABLE,
+            value=value,
+            evidence_refs=evidence,
+            rule_id=rule_id,
+            explanation=plhc_result.explanation,
+            limitations=limitations + list(plhc_result.limitations)[:4],
+            warnings=list(plhc_result.diagnostics)[:5],
+        )
+    if claimed == IntegrityStatus.INCOMPLETE:
+        return DimensionResult(
+            dimension_id="audit_integrity",
+            status=AssuranceStatus.INCOMPLETE,
+            value=value,
+            evidence_refs=evidence,
+            rule_id=rule_id,
+            explanation=plhc_result.explanation,
+            limitations=limitations + list(plhc_result.limitations)[:4],
+            warnings=list(plhc_result.diagnostics)[:5],
+        )
+    if claimed == IntegrityStatus.CONTRADICTED:
+        return DimensionResult(
+            dimension_id="audit_integrity",
+            status=AssuranceStatus.CONTRADICTED,
+            value=value,
+            evidence_refs=evidence,
+            rule_id=rule_id,
+            explanation=plhc_result.explanation,
+            limitations=limitations + list(plhc_result.limitations)[:4],
+            warnings=list(plhc_result.diagnostics)[:5],
+        )
+
+    if claimed == IntegrityStatus.VERIFIED:
+        kind, reason = _validate_plhc_verified_evidence(plhc_result)
+        if kind == "unavailable":
+            return DimensionResult(
+                dimension_id="audit_integrity",
+                status=AssuranceStatus.UNAVAILABLE,
+                value=value,
+                evidence_refs=evidence,
+                rule_id=rule_id,
+                explanation=reason or "PLHC VERIFIED claim missing required evidence.",
+                limitations=limitations,
+                warnings=list(plhc_result.diagnostics)[:5],
+            )
+        if kind == "incomplete":
+            return DimensionResult(
+                dimension_id="audit_integrity",
+                status=AssuranceStatus.INCOMPLETE,
+                value=value,
+                evidence_refs=evidence,
+                rule_id=rule_id,
+                explanation=reason or "PLHC VERIFIED claim incomplete.",
+                limitations=limitations,
+                warnings=list(plhc_result.diagnostics)[:5],
+            )
+        if kind == "contradicted":
+            return DimensionResult(
+                dimension_id="audit_integrity",
+                status=AssuranceStatus.CONTRADICTED,
+                value=value,
+                evidence_refs=evidence,
+                rule_id=rule_id,
+                explanation=reason or "PLHC VERIFIED claim contradicted by evidence.",
+                limitations=limitations,
+                warnings=list(plhc_result.diagnostics)[:5],
+            )
+        return DimensionResult(
+            dimension_id="audit_integrity",
+            status=AssuranceStatus.VERIFIED,
+            value=value,
+            evidence_refs=evidence,
+            rule_id=rule_id,
+            explanation=plhc_result.explanation,
+            limitations=limitations + list(plhc_result.limitations)[:4],
+            warnings=list(plhc_result.diagnostics)[:5],
+        )
+
     return DimensionResult(
         dimension_id="audit_integrity",
-        status=status,
+        status=AssuranceStatus.UNAVAILABLE,
         value=value,
         evidence_refs=evidence,
-        rule_id="assurance.audit_integrity.v1",
-        explanation=plhc_result.explanation,
-        limitations=limitations + list(plhc_result.limitations)[:4],
-        warnings=list(plhc_result.diagnostics)[:5],
+        rule_id=rule_id,
+        explanation=f"Unrecognized PLHC status {claimed!r}.",
+        limitations=limitations,
     )

@@ -9,7 +9,9 @@ PLHC: Provenance-Linked Hash Chain and Merkle integrity layer.
 | Branch | `master` (no branch created or switched) |
 | Start / expected HEAD | `421a55cfb4e0e07113c7374e064cd28df72f16bd` — MFAV intregrity closure |
 | Working tree at start | Clean |
-| Commit/push this phase | **Not performed** |
+| Implementation commit | `3b9ee6f8645a4c4c6a8b607ca24e908dbcf68f05` — Add PLHC layer |
+
+**Historical note (corrected in Phase 2.7.1):** The original 2.7 working session left a dirty tree and did not itself run `git commit`/`git push`. The Phase 2.7 implementation was subsequently committed on `master` as `3b9ee6f` and is present in the repository. Further hardening is Phase **2.7.1**.
 
 ## 2. Files changed / added
 
@@ -83,9 +85,9 @@ Determinism: repeated `build_snapshot` yields identical roots (unit tests + PLHC
 - Not RFC 6962.
 - Does not prove occurrence, content truth, or causation.
 
-## 7. Stop conditions
+## 7. Stop conditions (original session vs repository)
 
-- Working tree: **dirty** (Phase 2.7 uncommitted).
-- Remained on `master`; no branch created or switched.
-- No commit or push performed.
-- STOP after Phase 2.7 — do not begin Phase 2.8 until review.
+- Original working session: dirty tree; no commit/push in that session.
+- Repository fact: implementation included in `3b9ee6f8645a4c4c6a8b607ca24e908dbcf68f05`.
+- No branch created or switched during 2.7 work.
+- Cryptographic hardening continues in Phase 2.7.1.

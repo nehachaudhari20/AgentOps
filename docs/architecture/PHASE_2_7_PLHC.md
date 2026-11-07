@@ -27,8 +27,8 @@
 
 - PLHC does not replace RPA/MFAV mathematics.
 - No CTSM trust score.
-- No Merkle consistency proofs (inclusion only in 2.7).
-- No RFC 6962 compliance claim (construction is AgentTrust Merkle v1).
+- No Merkle consistency proofs (inclusion only in 2.7 / 2.7.1).
+- No RFC 6962 compliance claim (construction is AgentTrust Merkle **v2**).
 - No signing / TSA / blockchain anchoring.
 
 ## Canonicalization profile (`agenttrust-canonical-json-v1`)
@@ -82,50 +82,58 @@ Namespaces: EVENT↔EVENT for DEPENDS_ON/INVOKES/RETRIES/OBSERVED_AFTER; EVENT�
 
 Duplicate stable IDs rejected before tree construction. Leaves ordered by `leaf_id`.
 
-## Merkle construction (`agenttrust-merkle-v1`)
+## Merkle construction (`agenttrust-merkle-v2`)
 
-- Leaf hash: `SHA-256(AT|MERKLE|LEAF|v1| || content_hash_hex)`
-- Node hash: `SHA-256(AT|MERKLE|NODE|v1| || left || "|" || right)`
+Phase 2.7.1 migration from v1 → v2 (breaking hash change; old roots are not reinterpreted).
+
+- Leaf hash: `SHA-256(AT|MERKLE|LEAF|v2| || canonicalize({leaf_id, content_hash}))`  
+  **Binds leaf identity** — changing only `leaf_id` on a proof fails.
+- Node hash: `SHA-256(AT|MERKLE|NODE|v2| || left || "|" || right)`
 - Odd count: last hash **promoted** unchanged
-- Empty tree root: `SHA-256(AT|MERKLE|EMPTY|v1|)`
-- Inclusion proof steps: `L`/`R` (combine with sibling) or `P` (promote, no combine)
+- Empty tree root: `SHA-256(AT|MERKLE|EMPTY|v2|)`
+- Inclusion proof steps: `L`/`R` (combine) or `P` (promote)
+
+**Structural proof validation:** from `(leaf_index, leaf_count)` reconstruct the exact expected `L`/`R`/`P` sequence; reject extra/missing/wrong steps even if a forged root could otherwise be computed. Historical `agenttrust-merkle-v1` proofs are **rejected**, never silently verified under v2.
 
 **Not** claiming RFC 6962. Consistency proofs not implemented.
 
-## Checkpoint chain (`agenttrust-checkpoint-v1`)
+## Checkpoint chain (`agenttrust-checkpoint-v2`)
 
-Bound fields: `sequence_number`, `previous_checkpoint_hash`, `merkle_root`, `leaf_count`, `canonicalization_version`, `hash_algorithm`, `checkpoint_format_version`, `created_at` (optional explicit input).
+Bound fields: `sequence_number`, `previous_checkpoint_hash`, `merkle_root`, `leaf_count`, `canonicalization_version`, `hash_algorithm`, `checkpoint_format_version`, **`merkle_format_version`**, `created_at` (optional ISO-8601).
+
+Digests must be exactly 64 hex chars (normalized lowercase). Integers must be non-boolean and non-negative. Unsupported algorithms/versions are rejected at creation and verification.
 
 - Genesis: `sequence_number=0`, `previous_checkpoint_hash="GENESIS"`.
-- Contiguous sequences required.
+- Contiguous sequences required; self-hash recomputed.
+- A valid chain **prefix** proves integrity of the supplied sequence only — **not** that no later checkpoint exists.
 - Checkpoint hash: `SHA-256(AT|CHECKPOINT|v1| || canonicalize(payload))`.
-- Identical evidence with different `created_at` → different checkpoint hashes, same Merkle root.
-
-No wall-clock nondeterminism: timestamps only if explicitly supplied.
 
 ## Verification procedure
 
 1. Rebuild leaves from `ProvenanceTrace` (no mutation).
-2. Rebuild Merkle root.
-3. Verify checkpoint self-hash and previous link.
-4. Compare rebuilt root and leaf count to checkpoint.
-5. Optionally verify inclusion proofs.
+2. Rebuild Merkle root (v2).
+3. Verify checkpoint field validity, self-hash, and previous link.
+4. Compare rebuilt root, leaf count, **and format/algorithm versions** to checkpoint.
+5. Optionally verify structurally validated inclusion proofs.
 
 Statuses: `verified` | `contradicted` | `unavailable` | `incomplete`.
 
 ## Assurance Profile integration
 
-Dimension `audit_integrity` (`assurance.audit_integrity.v1`):
+Dimension `audit_integrity` (`assurance.audit_integrity.v1_1`):
 
-| PLHC result | Assurance status |
-|-------------|------------------|
-| absent | `unavailable` |
-| verified | `verified` |
-| contradicted | `contradicted` |
-| incomplete | `incomplete` |
-| unavailable | `unavailable` |
+Caller-supplied `IntegrityVerificationResult.status == VERIFIED` is **not** trusted alone. Before mapping to Assurance `verified`, the calculator rechecks snapshot/checkpoint digests, format agreement, rebuilt Merkle root, checkpoint self-hash, and genesis/predecessor link evidence (`checkpoint_link_verified` / `previous_checkpoint`).
 
-Never infers immutability or external trust from local verification.
+| Condition | Assurance status |
+|-----------|------------------|
+| absent PLHC result | `unavailable` |
+| claimed VERIFIED + complete consistent evidence | `verified` |
+| claimed VERIFIED + missing snapshot/checkpoint | `unavailable` |
+| claimed VERIFIED + non-genesis without predecessor | `incomplete` |
+| malformed / mismatched evidence | `contradicted` |
+| claimed incomplete / unavailable / contradicted | same |
+
+Never infers immutability or external trust from local verification. In-process objects ≠ trusted external checkpoint.
 
 ## Complexity
 

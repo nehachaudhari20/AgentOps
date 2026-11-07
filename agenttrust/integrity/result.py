@@ -1,4 +1,4 @@
-"""Typed PLHC result and diagnostic structures."""
+"""Typed PLHC result and diagnostic structures (Phase 2.7.1)."""
 
 from __future__ import annotations
 
@@ -54,6 +54,8 @@ class IntegrityVerificationResult:
     explanation: str
     snapshot: Optional[IntegritySnapshot] = None
     checkpoint: Optional[IntegrityCheckpoint] = None
+    previous_checkpoint: Optional[IntegrityCheckpoint] = None
+    checkpoint_link_verified: bool = False
     diagnostics: list[str] = field(default_factory=list)
     limitations: list[str] = field(default_factory=list)
 
@@ -63,6 +65,12 @@ class IntegrityVerificationResult:
             "explanation": self.explanation,
             "snapshot": None if self.snapshot is None else self.snapshot.to_dict(),
             "checkpoint": None if self.checkpoint is None else self.checkpoint.to_dict(),
+            "previous_checkpoint": (
+                None
+                if self.previous_checkpoint is None
+                else self.previous_checkpoint.to_dict()
+            ),
+            "checkpoint_link_verified": self.checkpoint_link_verified,
             "diagnostics": list(self.diagnostics),
             "limitations": list(self.limitations),
         }
@@ -73,7 +81,9 @@ DEFAULT_LIMITATIONS = [
     "a local-only chain is not inherently immutable.",
     "PLHC does not prove that an event occurred, that artifact content is truthful, "
     "or that a relationship is causally valid.",
-    "No external signature or anchoring is implemented in Phase 2.7.",
+    "No external signature or anchoring is implemented in Phase 2.7 / 2.7.1.",
+    "A verified checkpoint prefix proves integrity of the supplied sequence only, "
+    "not that no later checkpoint exists.",
 ]
 
 

@@ -212,7 +212,7 @@ Value embeds raw/normalized factors (including `other`), conservation error, MFA
 
 ## Dimension F — Audit integrity (Phase 2.7)
 
-**Rule `assurance.audit_integrity.v1`:** maps an optional PLHC `IntegrityVerificationResult` into Assurance statuses. Absent PLHC → `unavailable`. Valid retained checkpoint match → `verified`. Tampering / broken chain → `contradicted`. Never claims immutability or external trust. See [PHASE_2_7_PLHC.md](PHASE_2_7_PLHC.md).
+**Rule `assurance.audit_integrity.v1_1`:** maps an optional PLHC `IntegrityVerificationResult` into Assurance statuses after revalidating snapshot/checkpoint evidence (Phase 2.7.1). Absent PLHC → `unavailable`. Caller-claimed VERIFIED without evidence → not verified. Never claims immutability or external trust. See [PHASE_2_7_PLHC.md](PHASE_2_7_PLHC.md).
 
 ## Profile API
 
@@ -232,7 +232,7 @@ AssuranceProfileCalculator.compute(
 - Does not mutate trace/graph/RPA/MFAV
 - Does not read benchmark ground truth
 - No single scalar “trust score”
-- Algorithm version `2.7.0`
+- Algorithm version `2.7.1`
 
 ## Evaluation runner (fail-closed)
 

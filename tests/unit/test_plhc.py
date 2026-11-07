@@ -429,6 +429,7 @@ def test_modified_checkpoint_root_fails():
         canonicalization_version=c0.canonicalization_version,
         hash_algorithm=c0.hash_algorithm,
         checkpoint_format_version=c0.checkpoint_format_version,
+        merkle_format_version=c0.merkle_format_version,
         created_at=c0.created_at,
         checkpoint_hash=c0.checkpoint_hash,  # stale hash
     )
@@ -462,8 +463,8 @@ def test_created_at_affects_checkpoint_hash_not_root():
     t = _simple_trace()
     plhc = PLHC()
     snap = plhc.build_snapshot(t)
-    c_a = plhc.create_checkpoint(snap, sequence_number=0, created_at="t0")
-    c_b = plhc.create_checkpoint(snap, sequence_number=0, created_at="t1")
+    c_a = plhc.create_checkpoint(snap, sequence_number=0, created_at="2024-01-01T00:00:00Z")
+    c_b = plhc.create_checkpoint(snap, sequence_number=0, created_at="2024-01-02T00:00:00Z")
     assert c_a.merkle_root == c_b.merkle_root
     assert c_a.checkpoint_hash != c_b.checkpoint_hash
 

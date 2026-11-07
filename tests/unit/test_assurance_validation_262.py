@@ -586,11 +586,11 @@ def test_no_fabricated_zero_for_missing_conservation():
     # Must not claim verified with invented zero error
 
 
-def test_algorithm_version_270():
-    assert ASSURANCE_ALGORITHM_VERSION == "2.7.0"
+def test_algorithm_version_271():
+    assert ASSURANCE_ALGORITHM_VERSION == "2.7.1"
     t = _complete_trace()
     profile = AssuranceProfileCalculator().compute(t)
-    assert profile.algorithm_version == "2.7.0"
+    assert profile.algorithm_version == "2.7.1"
     blob = json.dumps(profile.to_dict())
     assert '"value": null' in blob or profile.dimensions["attribution_computability"].value is None
 

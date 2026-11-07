@@ -38,8 +38,8 @@ AgentTrust **does not**:
 | MFAV (exclusive factor aggregation) | **Phase 2.3 — active** (`agenttrust/accountability/`) |
 | Synthetic benchmark generator + pilot | **Phase 2.4 — active** (`agenttrust/benchmark/`) |
 | Benchmark GT integrity + fault semantics | **Phase 2.5 / 2.5.1 — active** |
-| Evidence-bounded Assurance Profile | **Phase 2.7 — active** (`agenttrust/assurance/`) |
-| PLHC (Merkle + linked checkpoints) | **Phase 2.7 — active** (`agenttrust/integrity/`) |
+| Evidence-bounded Assurance Profile | **Phase 2.7.1 — active** (`agenttrust/assurance/`) |
+| PLHC (Merkle + linked checkpoints) | **Phase 2.7.1 — active** (`agenttrust/integrity/`) |
 | Legacy prototype | Preserved under `legacy/` (historical only) |
 
 ## Active architecture
@@ -163,7 +163,7 @@ assurance = AssuranceProfileCalculator().compute(
 print(assurance.overall_status, assurance.dimensions["reference_integrity"].value)
 ```
 
-The Assurance Profile reports typed evidence availability and structural consistency (algorithm `2.7.0`), including optional `audit_integrity` from PLHC. It is **not** a trust score.
+The Assurance Profile reports typed evidence availability and structural consistency (algorithm `2.7.1`), including optional `audit_integrity` from PLHC (Merkle v2). It is **not** a trust score.
 
 Architecture: [docs/architecture/PHASE_2_6_ASSURANCE_PROFILE.md](docs/architecture/PHASE_2_6_ASSURANCE_PROFILE.md)
 
